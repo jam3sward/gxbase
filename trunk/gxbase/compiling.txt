@@ -1,0 +1,68 @@
+How to compile + link the gxbase libraries
+JWW 27/10/03
+
+Microsoft Visual Studio .NET 2003
+---------------------------------
+  0. Check the doc\readme.txt for detailed
+     information about the current version.
+  1. Double-click on 'gxbase
+.sln'
+  2. From the menu select:
+       Build, Batch Build...
+  3. Make sure that there is a tick next to the
+     following four configurations:
+       Debug
+       Debug Multithreaded DLL
+       Release
+       Release Multithreaded DLL
+  4. Select 'Rebuild' to rebuild all four
+     configurations. Note: it is important to
+     select 'Rebuild' rather than 'Build', or
+     the libraries may be broken.
+  5. Wait until the build operation completes,
+     and it should say:
+       "Rebuild All: 4 succeeded, 0 failed.."
+  6. Close Visual Studio .NET
+  7. Double-click on 'dist.bat' which will
+     copy the headers/libraries/docs into
+     the distribution folder:
+       dist
+     The dist folder contains everything needed
+     to use gxbase, so it isn't necessary to
+     distribute the entire source.
+  8. Note: the VS.NET libraries will not be
+     compatible with VC++ 6.0 owing to changes to
+     the standard template library support.
+
+Microsoft Visual C++ 6.0
+------------------------
+  0. Check the doc\readme.txt for detailed
+     information about the current version.
+  1. Right click on 'gxbase.dsw' and select
+     Open With.. "Microsoft (R) Developer Studio"
+     (to avoid opening with .NET if installed)
+  2. From the menu select:
+       Build, Batch Build...
+  3. Make sure that there is a tick next to the
+     following four configurations:
+       Release
+       Debug
+       Debug Multithreaded DLL
+       Release Multithreaded DLL
+  4. Select 'Rebuild All' to rebuild all four
+     configurations. Note: it is important to
+     select 'Rebuild' rather than 'Build', or
+     the libraries may be broken.
+  5. Wait until the build operation completes,
+     and it should say:
+  6. Close Visual C++ 6.0
+  7. Double-click on 'dist.bat' which will
+     copy the headers/libraries/docs into
+     the distribution folder:
+       dist
+     The dist folder contains everything needed
+     to use gxbase, so it isn't necessary to
+     distribute the entire source.
+  8. Note: the VC++ 6.0 libraries will not be
+     compatible with VS.NET owing to changes to
+     the standard template library support.
