@@ -1,0 +1,38 @@
+Updating OpenGL Extension Support
+---------------------------------
+
+Procedure for updating GXBase with latest OpenGL
+extension support. This involves using an external
+utility 'glext' to auto-generate code from the
+OpenGL extension headers, and building into GXBase.
+  JWW 16/09/04
+
+1. Obtain 'glext' utility program (eg. glext008)
+
+2. Download latest headers from:
+     http://oss.sgi.com/projects/ogl-sample/registry
+   Including:
+     glext.h
+     wglext.h
+
+3. Copy headers into glext\GL folder
+
+4. Run glext: this will parse the OpenGL header
+   files and auto-generate the following:
+     glex.h
+     glexfp.h
+     glexfp.cpp
+     glexfplib.cpp
+
+5. Copy those files into GXBase, replacing the
+   existing files in the project. You should also
+   copy the glext.h and wglext.h, so that they
+   match those used to generate the library.
+     glext.h
+     wglext.h
+     glex.h
+     glexfp.h
+     glexfp.cpp
+     glexfplib.cpp
+
+6. Rebuild GXBase

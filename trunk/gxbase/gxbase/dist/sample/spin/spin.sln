@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spin", "spin.vcproj", "{7B117DF6-CB1C-48B9-992E-380D5B73BB56}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7B117DF6-CB1C-48B9-992E-380D5B73BB56}.Debug.ActiveCfg = Debug|Win32
+		{7B117DF6-CB1C-48B9-992E-380D5B73BB56}.Debug.Build.0 = Debug|Win32
+		{7B117DF6-CB1C-48B9-992E-380D5B73BB56}.Release.ActiveCfg = Release|Win32
+		{7B117DF6-CB1C-48B9-992E-380D5B73BB56}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
