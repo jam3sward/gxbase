@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Q0001OnDestroy", "Q0001OnDestroy.vcproj", "{2FAFA368-670F-4894-9D85-1EA413EE0D85}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2FAFA368-670F-4894-9D85-1EA413EE0D85}.Debug.ActiveCfg = Debug|Win32
+		{2FAFA368-670F-4894-9D85-1EA413EE0D85}.Debug.Build.0 = Debug|Win32
+		{2FAFA368-670F-4894-9D85-1EA413EE0D85}.Release.ActiveCfg = Release|Win32
+		{2FAFA368-670F-4894-9D85-1EA413EE0D85}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

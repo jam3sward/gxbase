@@ -1,0 +1,128 @@
+--------------------------------------------------------------------------
+
+Design Related Questions
+------------------------
+  Q1.1. Why not use a base image class, and derive different classes to
+        represent (for example) RGB, Greyscale image types?
+
+  Q1.2. Why use Clear3b, Clear3f instead of overloading?
+
+  Q1.3. Why shouldn't you call SetDepthBits, SetAlphaBits,
+        SetStencilBits or SetStereo from within GLWindow::OnCreate?
+
+  Q1.4. Why shouldn't you allocate memory in GLWindow::OnCreate?
+
+Image Class
+-----------
+  Q2.1. What image file types are supported?
+
+OpenGL Extensions
+-----------------
+  Q3.1. How can you use OpenGL extensions from a class that isn't
+        derived from GLWindowEx?
+
+--------------------------------------------------------------------------
+
+Q1.1. Why not use a base image class, and derive different classes to
+represent (for example) RGB, Greyscale image types?
+
+A. I've used this system in the past, but find it less convenient to
+use. For example, to convert to greyscale, it seems easier to type
+image.SetFormat(LUM) than to construct a greyscale picture object
+from a colour picture object. Also, with the current version, it is
+easy to avoid using new/delete operators. The image class really
+functions as an interface, and is small enough to create on the
+stack, or as a member variable of another class.
+
+--------------------------------------------------------------------------
+
+Q1.2. Why use Clear3b, Clear3f instead of overloading?
+
+A. When using overloaded functions, it can be confusing, because the
+compiler might not select the version of the function that you
+intend. Secondly, the naming convention is familiar to OpenGL users.
+For example, you might write Clear(1,0,0) meaning full-red, but these
+are integer constants and you might actually be selecting a function
+that gives 1/255 red. Forcing people to write Clear(1.0f,0.0f,0.0f)
+is an alternative, but seems pedantic.
+
+--------------------------------------------------------------------------
+
+Q1.3. Why shouldn't you call SetDepthBits(), SetAlphaBits(), SetStencilBits()
+or SetStereo() from within the GLWindow::OnCreate() handler?
+
+A. These functions need to change the pixel format of the window, which
+means that the window must be destroyed and recreated with the new pixel
+format (this is a limitation of the Windows OS). However, when the window
+is recreated, the OnCreate() handler would be called: causing an infinite
+loop to develop. In fact, gxbase has built in protection for this case, but
+it still isn't advisable to call these functions here. The OnCreate() handler
+is intended to be used only to set up OpenGL (for example, using glEnable()
+or glNewList() calls) when the window is created. If you want to set the pixel
+format, you should do this from the window constructor, from App::OnCreate(),
+or from some other event handler (eg. toggle settings when a key is pressed).
+
+--------------------------------------------------------------------------
+
+Q1.4. Why shouldn't you allocate memory in GLWindow::OnCreate()?
+
+A. Because it might get called more than once: if you change the pixel
+format of the window, it must be recreated. This will result in OnCreate()
+being called again for that window. Memory allocation is probably best done
+in the window constructor.
+
+--------------------------------------------------------------------------
+
+Q2.1. What image file types are supported?
+
+A. The following file types are supported by the image class at the time
+of writing:
+  BMP, JPG, GIF, ICO, WMF, EMF
+
+--------------------------------------------------------------------------
+
+Q3.1. How can you use OpenGL extensions from a class that isn't
+      derived from GLWindowEx?
+
+A. When OpenGL extension functions are loaded, they are only valid for a
+particular OpenGL context (a window, in practical terms). This is why the
+OpenGL extension loader is usually associated with a window by using the
+GLWindowEx class.
+One solution (there are many others) is to:
+  1) Derive your window class from GLWindow normally
+  2) Create a member variable of your window class, of type 'glex'.
+     This will provide access to the OpenGL extensions.
+  3) Load the extensions in your window OnCreate handler.
+  4) When another class wishes to use your extensions, pass it a
+     reference to the 'glex' extension class. It can then call
+     extensions from this class.
+
+For example:
+
+  class MyWindow :public GLWindow {
+  public:
+    void OnCreate() {
+      m_glex.Load();	// load OpenGL extensions
+    }
+
+    void OnDisplay() {
+      // ask object to draw itself: pass it our extensions
+      m_object.Draw( m_glex );
+    }
+
+  private:
+    glex m_glex;  		///< this holds our OpenGL extensions
+    SomeObject m_object;	///< some object that needs extensions
+  };
+
+  SomeObject::Draw( glex &g ) {
+    // here we can call extension functions on 'g'
+    g.glSingingMonkeys();
+  }
+
+IMPORTANT NOTE: In practice, it would be better to store 'SomeObject' on
+the application class, rather than the window class. This would allow
+multiple views of the same object. The example shown above is condensed
+for reasons of space..
+
+--------------------------------------------------------------------------
