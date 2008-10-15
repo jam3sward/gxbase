@@ -220,10 +220,10 @@
 			Name="Source Files"
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
 			<File
-				RelativePath=".\load3ds\3dsdef.cpp">
+				RelativePath="src\load3ds\3dsdef.cpp">
 			</File>
 			<File
-				RelativePath="App.cpp">
+				RelativePath="src\App.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -256,13 +256,13 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\load3ds\Box3f.cpp">
+				RelativePath="src\load3ds\Box3f.cpp">
 			</File>
 			<File
-				RelativePath=".\Dialog.cpp">
+				RelativePath="src\Dialog.cpp">
 			</File>
 			<File
-				RelativePath="ErrDbg.cpp">
+				RelativePath="src\ErrDbg.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -295,10 +295,10 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\load3ds\glcontextls.cpp">
+				RelativePath="src\load3ds\glcontextls.cpp">
 			</File>
 			<File
-				RelativePath="glexfp.cpp">
+				RelativePath="src\glexfp.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -331,7 +331,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="glexfplib.cpp">
+				RelativePath="src\glexfplib.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -364,7 +364,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="GLWindow.cpp">
+				RelativePath="src\GLWindow.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -397,7 +397,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Image.cpp">
+				RelativePath="src\Image.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -430,10 +430,10 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\Joystick.cpp">
+				RelativePath="src\Joystick.cpp">
 			</File>
 			<File
-				RelativePath="Main.cpp">
+				RelativePath="src\Main.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -466,22 +466,22 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\load3ds\Matrix44f.cpp">
+				RelativePath="src\load3ds\Matrix44f.cpp">
 			</File>
 			<File
-				RelativePath=".\load3ds\Model.cpp">
+				RelativePath="src\load3ds\Model.cpp">
 			</File>
 			<File
-				RelativePath=".\load3ds\TMaterial.cpp">
+				RelativePath="src\load3ds\TMaterial.cpp">
 			</File>
 			<File
-				RelativePath=".\load3ds\TModel.cpp">
+				RelativePath="src\load3ds\TModel.cpp">
 			</File>
 			<File
-				RelativePath=".\load3ds\TObject.cpp">
+				RelativePath="src\load3ds\TObject.cpp">
 			</File>
 			<File
-				RelativePath="WindowEx.cpp">
+				RelativePath="src\WindowEx.cpp">
 				<FileConfiguration
 					Name="Debug Multithreaded DLL|Win32">
 					<Tool
@@ -518,73 +518,73 @@
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl">
 			<File
-				RelativePath=".\load3ds\3dsdef.h">
+				RelativePath="src\load3ds\3dsdef.h">
 			</File>
 			<File
-				RelativePath="App.h">
+				RelativePath="src\App.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\Box3f.h">
+				RelativePath="src\load3ds\Box3f.h">
 			</File>
 			<File
-				RelativePath="ErrDbg.h">
+				RelativePath="src\ErrDbg.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\glcontextls.h">
+				RelativePath="src\load3ds\glcontextls.h">
 			</File>
 			<File
-				RelativePath="glex.h">
+				RelativePath="src\glex.h">
 			</File>
 			<File
-				RelativePath="glexfp.h">
+				RelativePath="src\glexfp.h">
 			</File>
 			<File
-				RelativePath="GLExWindow.h">
+				RelativePath="src\GLExWindow.h">
 			</File>
 			<File
-				RelativePath="GLWindow.h">
+				RelativePath="src\GLWindow.h">
 			</File>
 			<File
-				RelativePath="GLWindowEx.h">
+				RelativePath="src\GLWindowEx.h">
 			</File>
 			<File
-				RelativePath="GXBase.h">
+				RelativePath="src\GXBase.h">
 			</File>
 			<File
-				RelativePath="Image.h">
+				RelativePath="src\Image.h">
 			</File>
 			<File
-				RelativePath="Main.h">
+				RelativePath="src\Main.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\MathCon.h">
+				RelativePath="src\load3ds\MathCon.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\Matrix44f.h">
+				RelativePath="src\load3ds\Matrix44f.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\TFace.h">
+				RelativePath="src\load3ds\TFace.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\TMaterial.h">
+				RelativePath="src\load3ds\TMaterial.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\TModel.h">
+				RelativePath="src\load3ds\TModel.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\TObject.h">
+				RelativePath="src\load3ds\TObject.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\Vector2f.h">
+				RelativePath="src\load3ds\Vector2f.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\Vector3f.h">
+				RelativePath="src\load3ds\Vector3f.h">
 			</File>
 			<File
-				RelativePath=".\load3ds\Vector4f.h">
+				RelativePath="src\load3ds\Vector4f.h">
 			</File>
 			<File
-				RelativePath="WindowEx.h">
+				RelativePath="src\WindowEx.h">
 			</File>
 		</Filter>
 		<File

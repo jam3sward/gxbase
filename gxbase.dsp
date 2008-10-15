@@ -135,35 +135,35 @@ LIB32=snLib.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\App.cpp
+SOURCE=src\App.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\ErrDbg.cpp
+SOURCE=src\ErrDbg.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\glexfp.cpp
+SOURCE=src\glexfp.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\glexfplib.cpp
+SOURCE=src\glexfplib.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\GLWindow.cpp
+SOURCE=src\GLWindow.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Image.cpp
+SOURCE=src\Image.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\Main.cpp
+SOURCE=src\Main.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\WindowEx.cpp
+SOURCE=src\WindowEx.cpp
 # End Source File
 # End Group
 # Begin Group "Header Files"
@@ -171,52 +171,52 @@ SOURCE=.\WindowEx.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\App.h
+SOURCE=src\App.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\ErrDbg.h
+SOURCE=src\ErrDbg.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\glex.h
+SOURCE=src\glex.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\glexfp.h
+SOURCE=src\glexfp.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\GLExWindow.h
+SOURCE=src\GLExWindow.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\GLWindow.h
+SOURCE=src\GLWindow.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\GLWindowEx.h
+SOURCE=src\GLWindowEx.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\GXBase.h
+SOURCE=src\GXBase.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Image.h
+SOURCE=src\Image.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Main.h
+SOURCE=src\Main.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\WindowEx.h
+SOURCE=src\WindowEx.h
 # End Source File
 # End Group
 # Begin Source File
 
-SOURCE=.\doc\readme.txt
+SOURCE=doc\readme.txt
 # End Source File
 # End Target
 # End Project
