@@ -39,7 +39,7 @@ public:
 	TModel(const TModel &rhs);
 	virtual ~TModel();
 
-	TModel & operator = (const TModel &rhs);
+	const TModel & operator = (const TModel &rhs);
 
 	void Free();
 
@@ -73,9 +73,10 @@ inline TModel::TModel(const TModel &rhs) {
 	*this = rhs;
 }
 
-inline TModel & TModel::operator = (const TModel &rhs) {
+inline const TModel & TModel::operator = (const TModel &rhs) {
 	m_material = rhs.m_material;
 	m_object   = rhs.m_object;
+	return rhs;
 }
 
 //-----------------------------------------------------------------------------

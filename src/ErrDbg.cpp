@@ -22,12 +22,13 @@
  *
  \**************************************************************************/
 
-#ifdef  _DEBUG
+#ifndef NDEBUG
 // JWW 29/10/03 introduced debug message level, to avoid spewing messages
 // (this allows the error message level to be set externally in debug mode
 // setting to zero disables)
 int s_dbgMsgLevel = 0;
 
+#ifdef __WIN32__
 void dbg_W32LastError(const char *message) {
 	LPVOID lpMsgBuf;
 	FormatMessage( 
@@ -45,5 +46,6 @@ void dbg_W32LastError(const char *message) {
 	// Free the buffer.
 	LocalFree( lpMsgBuf );
 }//dbg_W32LastError
+#endif	// __WIN32__
 
-#endif//_DEBUG
+#endif //NDEBUG

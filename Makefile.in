@@ -1,0 +1,45 @@
+src = $(wildcard src/*.cpp src/load3ds/*.cpp)
+obj = $(src:.cpp=.o)
+lib_a = libgxbase.a
+lib_so = libgxbase.$(so)
+
+CXX = g++
+AR = ar
+CXXFLAGS = -ansi -pedantic -Wall $(dbg) $(opt) $(pic) \
+	`pkg-config --cflags sdl` $(extra_defs) -Isrc
+LDFLAGS = `pkg-config --libs sdl`
+
+.PHONY: all
+all: $(lib_a) $(lib_so)
+
+$(lib_a): src/glexfp.h $(obj)
+	$(AR) rcs $@ $(obj)
+
+$(lib_so): src/glexfp.h $(obj)
+	$(CXX) $(shared) -o $@ $(obj) $(LDFLAGS)
+
+src/glexfplib.o: src/glexfplib.cpp src/glexfp.h
+
+src/glexfp.h: glext_gen/glext_gen
+	cd src; ../glext_gen/glext_gen ../glext_gen/GL/glext.h >/dev/null
+
+glext_gen/glext_gen: glext_gen/glext_gen.cpp
+	cd glext_gen; $(MAKE)
+
+
+.PHONY: clean
+clean:
+	rm -f $(obj) $(lib_a) $(lib_so)
+
+.PHONY: install
+install: $(lib_a) $(lib_so)
+	install -d $(PREFIX)/lib
+	install -d $(PREFIX)/include/GX
+	install -m 644 $(lib_a) $(lib_so) $(PREFIX)/lib
+	cd src; install -m 644 *.h $(PREFIX)/include/GX
+
+.PHONY: uninstall
+uninstall:
+	rm -f $(PREFIX)/lib/$(lib_a)
+	rm -f $(PREFIX)/lib/$(lib_so)
+	rm -rf $(PREFIX)/include/GX

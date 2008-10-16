@@ -1,11 +1,10 @@
-#include "Main.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
  * Copyright (C) 2003-2006 James Ward, Department of Computer Science,
  * University of Hull. All rights reserved.
+ *
+ * UNIX port Copyright (C) 2008 John Tsiombikas <nuclear@member.fsf.org>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -23,6 +22,9 @@ using namespace gxbase;
  *
  \**************************************************************************/
 
+#include "Main.h"
+using namespace gxbase;
+
 //-----------------------------------------------------------------------------
 
 /**
@@ -36,6 +38,33 @@ Main *Main::self = NULL;
 #endif//_WIN32
 
 //-----------------------------------------------------------------------------
+
+Main::Main() {
+	dbg_printf("Main\n");
+	m_pApp  = NULL;
+	m_hInst = 0;
+
+#ifdef __WIN32__
+	m_hWndClass = 0;
+	m_hWndHid = NULL;
+	m_timerId = 0;
+	m_bConsole = false;
+#else
+	m_bConsole = true;
+#endif
+
+	m_argc  = 0;
+	m_argv  = NULL;
+	m_pMainWnd = NULL;
+	m_timerPeriod = 0;
+}
+
+Main::~Main() {
+	dbg_printf("~Main\n");
+#ifdef __WIN32__
+	DeleteWndClass();
+#endif
+}
 
 /**
  * This is the entry point for Main, it gets called once and returns when the
@@ -64,7 +93,7 @@ int Main::Execute(int argc, char **argv) {
 	// user went and created them anywhere else, they will need to manually
 	// show the windows
 	for (unsigned int n=0; n<m_wins.size(); n++)
-		if (!m_wins[n]->m_hwnd) m_wins[n]->Create();
+		if (!m_wins[n]->HaveContext()) m_wins[n]->Create();
 
 	int exitCode = 0;
 	// only start the message loop if we have one or more windows: otherwise
@@ -75,9 +104,9 @@ int Main::Execute(int argc, char **argv) {
 	} else if (!Main::Get()->GetConsole()) {
 		// no windows created, and this isn't a console app.
 		// display a warning message in debug mode
-		#ifdef  _DEBUG
+		#ifndef NDEBUG
 			App::MsgPrintf("No windows were created, exiting.");
-		#endif//_DEBUG
+		#endif
 	}
 
 	// release any timer that was created
@@ -106,6 +135,9 @@ void Main::OnIdle() {
  * This is the main message loop. It exits on receiving the WM_QUIT message.
  */
 int Main::MessageLoop() {
+	int res;
+
+#ifdef __WIN32__
 	MSG msg;
 
 	do {
@@ -120,6 +152,41 @@ int Main::MessageLoop() {
 		}
 	} while (msg.message != WM_QUIT);
 
+	// WM_QUIT wParam is the parameter passed to PostQuitMessage() which
+	// is an int, although WPARAM is a UINT_PTR hence this cast
+	res = (int)msg.wParam;
+#endif
+#ifdef __X11__
+	bool quit = false;
+	Display *dpy = m_pMainWnd->dpy;
+	while(!quit) {
+		// [JT] it's better to handle all pending events before calling
+		// the idle function. I suggest doing the same on win32 as well.
+		while(XPending(dpy)) {
+			XEvent xev;
+			XNextEvent(dpy, &xev);
+
+			// find the appropriate window and call its handle_events function
+			for(unsigned int i=0; i<m_wins.size(); i++) {
+				if(xev.xany.window == m_wins[i]->win) {
+					if(!m_wins[i]->HandleEvents(&xev)) {
+						quit = true;
+					}
+					break;
+				}
+			}
+
+			unsigned int msec = App::GetTime();
+			if(m_timerPeriod && msec >= timer_exp) {
+				m_timerPeriod = 0;
+				timer_callback(msec);
+			}
+		}
+		if(!quit) OnIdle();
+	}
+	res = 0;
+#endif
+
 	// JWW 18/10/05 added this to delete any windows left at end. this is
 	// necessary because we don't handle WM_CLOSE normally, and because we
 	// can't call virtual functions from the window destructors
@@ -128,13 +195,12 @@ int Main::MessageLoop() {
 	for (unsigned i=0; i<m_wins.size(); i++)
 		if (!m_wins[i]->IsMainWnd()) m_wins[i]->Delete();
 
-	// WM_QUIT wParam is the parameter passed to PostQuitMessage() which
-	// is an int, although WPARAM is a UINT_PTR hence this cast
-	return (int)msg.wParam;
+	return res;
 }//MessageLoop
 
 //-----------------------------------------------------------------------------
 
+#ifdef __WIN32__
 /**
  * Register the window class. Returns true for success (or already done),
  * false in case of error.
@@ -193,6 +259,8 @@ void Main::DeleteHidden() {
 	m_hWndHid = NULL;
 }//CreateHidden
 
+#endif	// __WIN32__
+
 //-----------------------------------------------------------------------------
 
 /**
@@ -205,8 +273,8 @@ bool Main::AddWnd(WindowEx *window) {
 		// add window to list
 		m_wins.push_back(window);
 		return true;
-	} else
-		return false;
+	}
+	return false;
 }//AddWnd
 
 //-----------------------------------------------------------------------------
@@ -233,6 +301,7 @@ bool Main::SetMainWnd(WindowEx *window) {
 		// it already is!
 		if (m_pMainWnd == window) return true;
 
+#ifdef __WIN32__
 		if (m_pMainWnd && m_hWndHid) {
 			// make existing window a child of the hidden window
 			HWND hChild = m_pMainWnd->m_hwnd;
@@ -259,13 +328,14 @@ bool Main::SetMainWnd(WindowEx *window) {
 		dwStyle |=  WS_POPUP;
 		SetWindowLong( hParent, GWL_STYLE, dwStyle );
 		// TODO: check that this doesn't mess up fullscreen mode
+#endif
 
 		// store pointer to new main window
 		m_pMainWnd = window;
 
 		return true;
-	} else
-		return false;
+	}
+	return false;
 }//SetMainWnd
 
 //-----------------------------------------------------------------------------
@@ -276,6 +346,7 @@ WindowEx *Main::GetMainWnd() {
 
 //-----------------------------------------------------------------------------
 
+#ifdef __WIN32__
 VOID CALLBACK Main::TimerCB(
 	HWND /*hwnd*/,
 	UINT /*uMsg*/,
@@ -285,6 +356,17 @@ VOID CALLBACK Main::TimerCB(
 	App *pApp = Main::Get()->GetApp();
 	if (pApp) pApp->OnTimer( (double)dwTime / 1000.0 );
 }//TimerCB
+#endif
+
+#ifdef __unix__
+void Main::timer_callback(unsigned int msec)
+{
+	App *app = Main::Get()->GetApp();
+	if(app) {
+		app->OnTimer((double)msec / 1000.0);
+	}
+}
+#endif
 
 //-----------------------------------------------------------------------------
 
@@ -292,9 +374,11 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 	// check for noop
 	if (ms == m_timerPeriod) return ms;
 
+#ifdef __WIN32__
 	// destroy any existing timer
 	if (m_timerId) ::KillTimer(NULL, m_timerId);
 	m_timerId = 0;
+#endif
 
 	// user wants to disable the timer
 	if (!ms) {
@@ -303,8 +387,10 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 	}
 
 	// limit to 10ms minimum on all systems
+	// [JT] why?
 	if (ms < 10) ms=10;
 
+#ifdef __WIN32__
 	// we don't use a window handle because it would be tedious to manage
 	// switching timers around when the user creates/destroys/switches main
 	// windows while a timer is in use. therefore, we don't use the timer
@@ -315,9 +401,11 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 		m_timerPeriod = 0;
 		return 0;
 	}
+#endif
 
 	// store it (we cap to 10ms on all systems currently)
 	m_timerPeriod = ms;
+	timer_exp = App::GetTime() + ms;
 	return m_timerPeriod;
 }//SetTimerPeriod
 
@@ -329,6 +417,7 @@ unsigned Main::GetTimerPeriod() const {
 
 //-----------------------------------------------------------------------------
 
+#ifdef __WIN32__
 /**
  * WindowProc: decode and handle windows messages
  */
@@ -359,12 +448,13 @@ LRESULT CALLBACK Main::WindowProc(
 	// pass message onto the window, or fallback to default
 	if (pWndEx)
 		return pWndEx->WindowProc(hWnd, uMsg, wParam, lParam);
-	else
-		return DefWindowProc(hWnd, uMsg, wParam, lParam);
+	return DefWindowProc(hWnd, uMsg, wParam, lParam);
 }//WindowProc
+#endif
 
 //---- WinMain ----------------------------------------------------------------
 
+#ifdef __WIN32__
 /**
  * program entry point when building WIN32 application
  */
@@ -378,6 +468,7 @@ int WINAPI WinMain(
 	Main::Get()->SetConsole(false);
 	return Main::Get()->Execute(__argc,__argv);
 }//WinMain
+#endif
 
 //---- main -------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 #include <assert.h>
-#include <windows.h>
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <stdarg.h>
 using namespace std;
 
 /**************************************************************************\
@@ -10,6 +10,8 @@ using namespace std;
  * This file is part of the GXBase graphics library.
  * Copyright (C) 2003-2006 James Ward, Department of Computer Science,
  * University of Hull. All rights reserved.
+ *
+ * UNIX port copyright (C) 2008 John Tsiombikas <nuclear@member.fsf.org>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -30,7 +32,10 @@ using namespace std;
 #include "GXBase.h"
 #include "ErrDbg.h"
 #include "Main.h"
+#include "WindowEx.h"
 using namespace gxbase;
+
+static unsigned int sys_get_msec();
 
 //---- App --------------------------------------------------------------------
 
@@ -63,14 +68,14 @@ const char *App::Arg(int n) const {
 }
 
 double App::GetTime() {
-	return (double)timeGetTime() / 1000.0;
+	return (double)sys_get_msec() / 1000.0;
 }
 
 // JWW 29/10/03 added
 void App::SetDebugMessageLevel(int level) {
-#ifdef  _DEBUG
+#ifndef NDEBUG
 	s_dbgMsgLevel = (level>=0)?level:0;
-#endif//_DEBUG
+#endif
 }
 
 /**
@@ -79,7 +84,7 @@ void App::SetDebugMessageLevel(int level) {
  * default interval of 1/50th of a second.
  */
 double App::GetDeltaTime() {
-	double timeNow = (double)timeGetTime() / 1000.0;
+	double timeNow = (double)sys_get_msec() / 1000.0;
 	static double timeOld = timeNow - (1.0/50.0);
 
 	double delta = timeNow - timeOld;
@@ -98,15 +103,7 @@ void App::MsgPrintf(const char* format, ...)
 	char *buffer = new char[count];
 	if (!buffer) return;
 
-	// MS VC++ _vsnprintf(...) returns one of:
-	//   * string length, not including terminating null
-	//   * negative value if error occurs
-	//   * returns 1 if too big for buffer (fills buffer, doesn't terminate)
-	#if (_MSC_VER >= 1400)
-		int res = _vsnprintf_s(buffer,count,_TRUNCATE,format,parms);
-	#else
-		int res = _vsnprintf(buffer,count,format,parms);
-	#endif
+	int res = vsnprintf(buffer, count, format, parms);
 
 	if (res < 0) {
 		delete [] buffer;
@@ -120,8 +117,10 @@ void App::MsgPrintf(const char* format, ...)
 
 	if (Main::Get()->GetConsole())
 		printf(buffer);
+#ifdef __WIN32__
 	else
 		MessageBox(NULL, buffer, "Message", MB_OK);
+#endif
 
 	// release buffer
 	delete [] buffer;
@@ -138,7 +137,7 @@ void App::Close() {
 	// get main window extended structure
 	WindowEx *pWindowEx = Main::Get()->GetMainWnd();
 	// get parent window
-	GLWindow *pWindow = pWindowEx?pWindowEx->m_pWindow:0;
+	GLWindow *pWindow = pWindowEx ? pWindowEx->m_pWindow : 0;
 	// send close message
 	if (pWindow) pWindow->Close();
 }//Close
@@ -152,3 +151,26 @@ unsigned App::SetTimerPeriod(unsigned ms) {
 unsigned App::GetTimerPeriod() const {
 	return Main::Get()->GetTimerPeriod();
 }//GetTimerPeriod
+
+
+#if defined(unix) || defined(__unix__) || defined(__MACH__)
+#include <sys/time.h>
+
+static unsigned int sys_get_msec()
+{
+	static struct timeval tv0;
+	struct timeval tv;
+
+	gettimeofday(&tv, 0);
+	if(tv0.tv_sec == 0) {
+		tv0 = tv;
+	}
+	return (tv.tv_sec - tv0.tv_sec) * 1000 + (tv.tv_usec - tv0.tv_usec) / 1000;
+}
+#else	/* assume win32 */
+
+static unsigned int sys_get_msec()
+{
+	return timeGetTime();
+}
+#endif
