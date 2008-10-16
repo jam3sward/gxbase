@@ -188,7 +188,7 @@ private:
 	/**
 	 * Assignment operator not implemented
 	 */
-	FileDialog & operator = (const FileDialog &) {}
+	FileDialog & operator = (const FileDialog &) { return *this; }
 
 private:
 	FileDialogEx *extra;

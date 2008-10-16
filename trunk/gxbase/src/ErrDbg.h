@@ -25,12 +25,12 @@
 
 //-----------------------------------------------------------------------------
 
-#include <windows.h>
+#include "port.h"
 #include <stdio.h>
 
 //---- message output ---------------------------------------------------------
 
-#ifdef _DEBUG
+#ifndef NDEBUG
 extern int s_dbgMsgLevel;
 // use the dbg_printf() macro with care, since it is open ended
 #define dbg_printf if (s_dbgMsgLevel) printf
@@ -43,7 +43,7 @@ extern int s_dbgMsgLevel;
 #define err_printf printf
 #define msg_printf printf
 
-#ifndef _DEBUG
+#if defined(NDEBUG) || !defined(__WIN32__)
 	// release mode
 	//inline void dbg_W32LastError(const char *) {}
 	#define dbg_W32LastError(a) do {} while (0)

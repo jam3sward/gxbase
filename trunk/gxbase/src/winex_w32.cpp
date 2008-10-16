@@ -1,7 +1,3 @@
-#include "WindowEx.h"
-#include "Main.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -24,6 +20,14 @@ using namespace gxbase;
  *
  \**************************************************************************/
 
+#include "port.h"
+
+#ifdef __WIN32__
+
+#include "winex_w32.h"
+#include "Main.h"
+using namespace gxbase;
+
 //-----------------------------------------------------------------------------
 
 // define GLAPP_CHILDREN=1 externally to enable use of child windows
@@ -37,6 +41,11 @@ using namespace gxbase;
 #endif
 
 //-----------------------------------------------------------------------------
+
+bool WindowEx::HaveContext() const
+{
+	return m_hdc != 0;
+}
 
 /**
  * Returns true if it is safe to change the pixel format at
@@ -61,6 +70,45 @@ bool WindowEx::Safe2ChangePF() const {
 		return false;
 	}
 }//Safe2ChangePF
+
+//-----------------------------------------------------------------------------
+
+/**
+ * Enable or disable the 'stay on top' property of the window. This
+ * works by adding or removing the topmost extended style.
+ */
+bool WindowEx::SetOnTop(bool bTop)
+{
+	if (!m_hwnd) {
+		m_bOnTop = bTop;
+		return true;
+	}
+
+	if (bTop) {
+		if (!SetWindowPos(
+			m_hwnd, HWND_TOPMOST, 0,0,0,0, SWP_NOMOVE | SWP_NOSIZE
+		)) return false;
+	} else {
+		if (!SetWindowPos(
+			m_hwnd, HWND_NOTOPMOST, 0,0,0,0, SWP_NOMOVE | SWP_NOSIZE
+		)) return false;
+	}
+
+	// record state (in case window is recreated: to preserve state)
+	m_bOnTop = bTop;
+	return true;
+}
+
+bool WindowEx::GetOnTop() const
+{
+	// if we don't have a window yet, return cached value
+	if (!extra->m_hwnd) return extra->m_bOnTop;
+
+	// look at window style
+	DWORD dwExStyle = GetWindowLong(extra->m_hwnd, GWL_EXSTYLE);
+	// return true if window has top-most extended style
+	return ((dwExStyle & WS_EX_TOPMOST) != 0);
+}
 
 //-----------------------------------------------------------------------------
 
@@ -298,6 +346,97 @@ void WindowEx::DeleteGL() {
 	m_hdc   = NULL;
 }//DeleteGL
 
+
+
+bool WindowEx::SetFullscreen(bool bFull) {
+	HWND hWnd = m_hwnd;
+
+	// if we don't have an HDC, just store setting for later
+	if (!hWnd) {
+		m_bWantFull = bFull;
+		return true;
+	}
+
+	// anything to do?
+	if (bFull == GetFullscreen()) return true;
+
+	// get current window style, so we can modify it
+	DWORD dwStyle = GetWindowLong(hWnd, GWL_STYLE);
+	if (!dwStyle) {
+		dbg_W32LastError("GetWindowLong(GWL_STYLE) failed");
+		return false;
+	}
+
+	if (bFull) {
+		//-- enter fullscreen mode --
+
+		DEVMODE dm;
+		// query display settings
+		if (!EnumDisplaySettings(
+			NULL,					// current display device
+			ENUM_CURRENT_SETTINGS,	// current display settings
+			&dm)
+		) {
+			dbg_printf("EnumDisplaySettings failed\n");
+			return false;
+		}
+
+		// window size: fill screen
+		int
+			width  = dm.dmPelsWidth,
+			height = dm.dmPelsHeight;
+
+		// save window rect.
+		if ( !GetWindowRect(hWnd, &(m_oldRect)) ) {
+			dbg_printf("Unable to query window rectangle");
+			return false;
+		}
+
+		// remove caption, border and sizing frame
+		dwStyle &= ~(WS_CAPTION | WS_SIZEBOX);
+
+		// apply new style
+		if ( !SetWindowLong( hWnd, GWL_STYLE, dwStyle ) ) {
+			dbg_W32LastError("SetWindowLong(GWL_STYLE) failed");
+		}
+		// resize window and bring to top
+		if ( !SetWindowPos ( hWnd, HWND_TOP, 0,0, width,height, 0 ) ) {
+			dbg_W32LastError("SetWindowPos failed");
+		}
+
+		m_bWantFull = true;
+		m_bIsFull   = true;
+		return true;
+	} else {
+		//-- leave fullscreen mode --
+
+		// restore original window size
+		const RECT &R = m_oldRect;
+		int
+			x     = R.left,
+			y     = R.top,
+			width = R.right  - R.left,
+			height= R.bottom - R.top;
+
+		// add overlapped window attributes
+		dwStyle |= WS_OVERLAPPEDWINDOW;
+
+		// apply new style
+		if ( !SetWindowLong( hWnd, GWL_STYLE, dwStyle ) ) {
+			dbg_W32LastError("SetWindowLong(GWL_STYLE) failed");
+		}
+
+		// resize window and bring to top
+		if ( !SetWindowPos ( hWnd, 0, x,y, width,height, SWP_NOZORDER ) ) {
+			dbg_W32LastError("SetWindowPos failed");
+		}
+
+		m_bWantFull = false;
+		m_bIsFull   = false;
+		return true;
+	}
+}
+
 //-----------------------------------------------------------------------------
 
 bool WindowEx::IsMainWnd() const {
@@ -358,6 +497,31 @@ bool WindowEx::SetTitle(const char *title) {
 const char *WindowEx::GetTitle() const {
 	return m_title.c_str();
 }//GetTitle
+
+//-----------------------------------------------------------------------------
+
+bool WindowEx::SetCursor(GLWindow::Cursor c) {
+	LPCTSTR id;
+	switch (c) {
+	case CRArrow:	  id = IDC_ARROW; break;
+	case CRCross:	  id = IDC_CROSS; break;
+	case CRHourglass: id = IDC_WAIT;  break;
+	case CRHand:	  id = IDC_HAND;  break;
+	case CRNone:
+	default:
+		id = NULL;
+	}
+
+	HCURSOR hCursor = NULL;
+	if (id) hCursor = ::LoadCursor(NULL, id);
+
+	HCURSOR hOldCursor = ::SetCursor(hCursor);
+
+	extra->m_cursor  = c;
+	extra->m_hCursor = hCursor;
+
+	return (hOldCursor!=NULL);
+}
 
 //-----------------------------------------------------------------------------
 
@@ -505,6 +669,24 @@ GLuint WindowEx::print(const char *s) {
 	// return font list base
 	return m_nFontID;
 }//print
+
+//-----------------------------------------------------------------------------
+
+bool WindowEx::GetKeyState(int key) const {
+	return GetAsyncKeyState(key) != 0;
+}
+
+//-----------------------------------------------------------------------------
+
+void WindowEx::Redraw() {
+	if (m_hwnd) ::InvalidateRect(m_hwnd, NULL, FALSE);
+}
+
+//-----------------------------------------------------------------------------
+
+void WindowEx::Close() {
+	if (m_hwnd) ::PostMessage( m_hwnd, WM_CLOSE, 0,0 );
+}
 
 //-----------------------------------------------------------------------------
 
@@ -977,3 +1159,4 @@ bool WindowEx::SetupPalette() {
 }//SetupPalette
 
 //---------------------------------------------------------------------------
+#endif	// __WIN32__

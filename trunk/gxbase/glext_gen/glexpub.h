@@ -1,0 +1,3602 @@
+#pragma once
+#ifndef __glexpub_h
+#define __glexpub_h
+
+#include "interceptor.h"
+#include <stdlib.h>
+
+/**
+ * This is an automatically generated file: do not edit
+ * Generated on Wed Oct 15 01:26:49 2008
+ * J.Ward, Computer Science, University of Hull, UK
+ * Visit the OpenGL Extensions Registry for detailed
+ * extension specifications:
+ *   http://www.opengl.org/registry
+ */
+
+//----------------------------------------------------------------------------
+
+namespace glext {
+
+inline void glBlendColor(GLclampf a, GLclampf b, GLclampf c, GLclampf d) {
+	interceptor::getCurrentExt()->glBlendColor(a,b,c,d);
+}
+inline void glBlendEquation(GLenum a) {
+	interceptor::getCurrentExt()->glBlendEquation(a);
+}
+inline void glDrawRangeElements(GLenum a, GLuint b, GLuint c, GLsizei d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glDrawRangeElements(a,b,c,d,e,f);
+}
+inline void glColorTable(GLenum a, GLenum b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glColorTable(a,b,c,d,e,f);
+}
+inline void glColorTableParameterfv(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glColorTableParameterfv(a,b,c);
+}
+inline void glColorTableParameteriv(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glColorTableParameteriv(a,b,c);
+}
+inline void glCopyColorTable(GLenum a, GLenum b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyColorTable(a,b,c,d,e);
+}
+inline void glGetColorTable(GLenum a, GLenum b, GLenum c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetColorTable(a,b,c,d);
+}
+inline void glGetColorTableParameterfv(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameterfv(a,b,c);
+}
+inline void glGetColorTableParameteriv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameteriv(a,b,c);
+}
+inline void glColorSubTable(GLenum a, GLsizei b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glColorSubTable(a,b,c,d,e,f);
+}
+inline void glCopyColorSubTable(GLenum a, GLsizei b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyColorSubTable(a,b,c,d,e);
+}
+inline void glConvolutionFilter1D(GLenum a, GLenum b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glConvolutionFilter1D(a,b,c,d,e,f);
+}
+inline void glConvolutionFilter2D(GLenum a, GLenum b, GLsizei c, GLsizei d, GLenum e, GLenum f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glConvolutionFilter2D(a,b,c,d,e,f,g);
+}
+inline void glConvolutionParameterf(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glConvolutionParameterf(a,b,c);
+}
+inline void glConvolutionParameterfv(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glConvolutionParameterfv(a,b,c);
+}
+inline void glConvolutionParameteri(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glConvolutionParameteri(a,b,c);
+}
+inline void glConvolutionParameteriv(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glConvolutionParameteriv(a,b,c);
+}
+inline void glCopyConvolutionFilter1D(GLenum a, GLenum b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyConvolutionFilter1D(a,b,c,d,e);
+}
+inline void glCopyConvolutionFilter2D(GLenum a, GLenum b, GLint c, GLint d, GLsizei e, GLsizei f) {
+	interceptor::getCurrentExt()->glCopyConvolutionFilter2D(a,b,c,d,e,f);
+}
+inline void glGetConvolutionFilter(GLenum a, GLenum b, GLenum c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetConvolutionFilter(a,b,c,d);
+}
+inline void glGetConvolutionParameterfv(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetConvolutionParameterfv(a,b,c);
+}
+inline void glGetConvolutionParameteriv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetConvolutionParameteriv(a,b,c);
+}
+inline void glGetSeparableFilter(GLenum a, GLenum b, GLenum c, GLvoid *d, GLvoid *e, GLvoid *f) {
+	interceptor::getCurrentExt()->glGetSeparableFilter(a,b,c,d,e,f);
+}
+inline void glSeparableFilter2D(GLenum a, GLenum b, GLsizei c, GLsizei d, GLenum e, GLenum f, const GLvoid *g, const GLvoid *h) {
+	interceptor::getCurrentExt()->glSeparableFilter2D(a,b,c,d,e,f,g,h);
+}
+inline void glGetHistogram(GLenum a, GLboolean b, GLenum c, GLenum d, GLvoid *e) {
+	interceptor::getCurrentExt()->glGetHistogram(a,b,c,d,e);
+}
+inline void glGetHistogramParameterfv(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetHistogramParameterfv(a,b,c);
+}
+inline void glGetHistogramParameteriv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetHistogramParameteriv(a,b,c);
+}
+inline void glGetMinmax(GLenum a, GLboolean b, GLenum c, GLenum d, GLvoid *e) {
+	interceptor::getCurrentExt()->glGetMinmax(a,b,c,d,e);
+}
+inline void glGetMinmaxParameterfv(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetMinmaxParameterfv(a,b,c);
+}
+inline void glGetMinmaxParameteriv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetMinmaxParameteriv(a,b,c);
+}
+inline void glHistogram(GLenum a, GLsizei b, GLenum c, GLboolean d) {
+	interceptor::getCurrentExt()->glHistogram(a,b,c,d);
+}
+inline void glMinmax(GLenum a, GLenum b, GLboolean c) {
+	interceptor::getCurrentExt()->glMinmax(a,b,c);
+}
+inline void glResetHistogram(GLenum a) {
+	interceptor::getCurrentExt()->glResetHistogram(a);
+}
+inline void glResetMinmax(GLenum a) {
+	interceptor::getCurrentExt()->glResetMinmax(a);
+}
+inline void glTexImage3D(GLenum a, GLint b, GLint c, GLsizei d, GLsizei e, GLsizei f, GLint g, GLenum h, GLenum i, const GLvoid *j) {
+	interceptor::getCurrentExt()->glTexImage3D(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glTexSubImage3D(GLenum a, GLint b, GLint c, GLint d, GLint e, GLsizei f, GLsizei g, GLsizei h, GLenum i, GLenum j, const GLvoid *k) {
+	interceptor::getCurrentExt()->glTexSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glCopyTexSubImage3D(GLenum a, GLint b, GLint c, GLint d, GLint e, GLint f, GLint g, GLsizei h, GLsizei i) {
+	interceptor::getCurrentExt()->glCopyTexSubImage3D(a,b,c,d,e,f,g,h,i);
+}
+inline void glActiveTexture(GLenum a) {
+	interceptor::getCurrentExt()->glActiveTexture(a);
+}
+inline void glClientActiveTexture(GLenum a) {
+	interceptor::getCurrentExt()->glClientActiveTexture(a);
+}
+inline void glMultiTexCoord1d(GLenum a, GLdouble b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1d(a,b);
+}
+inline void glMultiTexCoord1dv(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1dv(a,b);
+}
+inline void glMultiTexCoord1f(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1f(a,b);
+}
+inline void glMultiTexCoord1fv(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1fv(a,b);
+}
+inline void glMultiTexCoord1i(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1i(a,b);
+}
+inline void glMultiTexCoord1iv(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1iv(a,b);
+}
+inline void glMultiTexCoord1s(GLenum a, GLshort b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1s(a,b);
+}
+inline void glMultiTexCoord1sv(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1sv(a,b);
+}
+inline void glMultiTexCoord2d(GLenum a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2d(a,b,c);
+}
+inline void glMultiTexCoord2dv(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2dv(a,b);
+}
+inline void glMultiTexCoord2f(GLenum a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2f(a,b,c);
+}
+inline void glMultiTexCoord2fv(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2fv(a,b);
+}
+inline void glMultiTexCoord2i(GLenum a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2i(a,b,c);
+}
+inline void glMultiTexCoord2iv(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2iv(a,b);
+}
+inline void glMultiTexCoord2s(GLenum a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2s(a,b,c);
+}
+inline void glMultiTexCoord2sv(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2sv(a,b);
+}
+inline void glMultiTexCoord3d(GLenum a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3d(a,b,c,d);
+}
+inline void glMultiTexCoord3dv(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3dv(a,b);
+}
+inline void glMultiTexCoord3f(GLenum a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3f(a,b,c,d);
+}
+inline void glMultiTexCoord3fv(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3fv(a,b);
+}
+inline void glMultiTexCoord3i(GLenum a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3i(a,b,c,d);
+}
+inline void glMultiTexCoord3iv(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3iv(a,b);
+}
+inline void glMultiTexCoord3s(GLenum a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3s(a,b,c,d);
+}
+inline void glMultiTexCoord3sv(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3sv(a,b);
+}
+inline void glMultiTexCoord4d(GLenum a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4d(a,b,c,d,e);
+}
+inline void glMultiTexCoord4dv(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4dv(a,b);
+}
+inline void glMultiTexCoord4f(GLenum a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4f(a,b,c,d,e);
+}
+inline void glMultiTexCoord4fv(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4fv(a,b);
+}
+inline void glMultiTexCoord4i(GLenum a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4i(a,b,c,d,e);
+}
+inline void glMultiTexCoord4iv(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4iv(a,b);
+}
+inline void glMultiTexCoord4s(GLenum a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4s(a,b,c,d,e);
+}
+inline void glMultiTexCoord4sv(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4sv(a,b);
+}
+inline void glLoadTransposeMatrixf(const GLfloat *a) {
+	interceptor::getCurrentExt()->glLoadTransposeMatrixf(a);
+}
+inline void glLoadTransposeMatrixd(const GLdouble *a) {
+	interceptor::getCurrentExt()->glLoadTransposeMatrixd(a);
+}
+inline void glMultTransposeMatrixf(const GLfloat *a) {
+	interceptor::getCurrentExt()->glMultTransposeMatrixf(a);
+}
+inline void glMultTransposeMatrixd(const GLdouble *a) {
+	interceptor::getCurrentExt()->glMultTransposeMatrixd(a);
+}
+inline void glSampleCoverage(GLclampf a, GLboolean b) {
+	interceptor::getCurrentExt()->glSampleCoverage(a,b);
+}
+inline void glCompressedTexImage3D(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLsizei f, GLint g, GLsizei h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glCompressedTexImage3D(a,b,c,d,e,f,g,h,i);
+}
+inline void glCompressedTexImage2D(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLint f, GLsizei g, const GLvoid *h) {
+	interceptor::getCurrentExt()->glCompressedTexImage2D(a,b,c,d,e,f,g,h);
+}
+inline void glCompressedTexImage1D(GLenum a, GLint b, GLenum c, GLsizei d, GLint e, GLsizei f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glCompressedTexImage1D(a,b,c,d,e,f,g);
+}
+inline void glCompressedTexSubImage3D(GLenum a, GLint b, GLint c, GLint d, GLint e, GLsizei f, GLsizei g, GLsizei h, GLenum i, GLsizei j, const GLvoid *k) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glCompressedTexSubImage2D(GLenum a, GLint b, GLint c, GLint d, GLsizei e, GLsizei f, GLenum g, GLsizei h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage2D(a,b,c,d,e,f,g,h,i);
+}
+inline void glCompressedTexSubImage1D(GLenum a, GLint b, GLint c, GLsizei d, GLenum e, GLsizei f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage1D(a,b,c,d,e,f,g);
+}
+inline void glGetCompressedTexImage(GLenum a, GLint b, GLvoid *c) {
+	interceptor::getCurrentExt()->glGetCompressedTexImage(a,b,c);
+}
+inline void glBlendFuncSeparate(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glBlendFuncSeparate(a,b,c,d);
+}
+inline void glFogCoordf(GLfloat a) {
+	interceptor::getCurrentExt()->glFogCoordf(a);
+}
+inline void glFogCoordfv(const GLfloat *a) {
+	interceptor::getCurrentExt()->glFogCoordfv(a);
+}
+inline void glFogCoordd(GLdouble a) {
+	interceptor::getCurrentExt()->glFogCoordd(a);
+}
+inline void glFogCoorddv(const GLdouble *a) {
+	interceptor::getCurrentExt()->glFogCoorddv(a);
+}
+inline void glFogCoordPointer(GLenum a, GLsizei b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glFogCoordPointer(a,b,c);
+}
+inline void glMultiDrawArrays(GLenum a, GLint *b, GLsizei *c, GLsizei d) {
+	interceptor::getCurrentExt()->glMultiDrawArrays(a,b,c,d);
+}
+inline void glMultiDrawElements(GLenum a, const GLsizei *b, GLenum c, const GLvoid* *d, GLsizei e) {
+	interceptor::getCurrentExt()->glMultiDrawElements(a,b,c,d,e);
+}
+inline void glPointParameterf(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPointParameterf(a,b);
+}
+inline void glPointParameterfv(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glPointParameterfv(a,b);
+}
+inline void glPointParameteri(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glPointParameteri(a,b);
+}
+inline void glPointParameteriv(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glPointParameteriv(a,b);
+}
+inline void glSecondaryColor3b(GLbyte a, GLbyte b, GLbyte c) {
+	interceptor::getCurrentExt()->glSecondaryColor3b(a,b,c);
+}
+inline void glSecondaryColor3bv(const GLbyte *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3bv(a);
+}
+inline void glSecondaryColor3d(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glSecondaryColor3d(a,b,c);
+}
+inline void glSecondaryColor3dv(const GLdouble *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3dv(a);
+}
+inline void glSecondaryColor3f(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glSecondaryColor3f(a,b,c);
+}
+inline void glSecondaryColor3fv(const GLfloat *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3fv(a);
+}
+inline void glSecondaryColor3i(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glSecondaryColor3i(a,b,c);
+}
+inline void glSecondaryColor3iv(const GLint *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3iv(a);
+}
+inline void glSecondaryColor3s(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glSecondaryColor3s(a,b,c);
+}
+inline void glSecondaryColor3sv(const GLshort *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3sv(a);
+}
+inline void glSecondaryColor3ub(GLubyte a, GLubyte b, GLubyte c) {
+	interceptor::getCurrentExt()->glSecondaryColor3ub(a,b,c);
+}
+inline void glSecondaryColor3ubv(const GLubyte *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3ubv(a);
+}
+inline void glSecondaryColor3ui(GLuint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glSecondaryColor3ui(a,b,c);
+}
+inline void glSecondaryColor3uiv(const GLuint *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3uiv(a);
+}
+inline void glSecondaryColor3us(GLushort a, GLushort b, GLushort c) {
+	interceptor::getCurrentExt()->glSecondaryColor3us(a,b,c);
+}
+inline void glSecondaryColor3usv(const GLushort *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3usv(a);
+}
+inline void glSecondaryColorPointer(GLint a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glSecondaryColorPointer(a,b,c,d);
+}
+inline void glWindowPos2d(GLdouble a, GLdouble b) {
+	interceptor::getCurrentExt()->glWindowPos2d(a,b);
+}
+inline void glWindowPos2dv(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos2dv(a);
+}
+inline void glWindowPos2f(GLfloat a, GLfloat b) {
+	interceptor::getCurrentExt()->glWindowPos2f(a,b);
+}
+inline void glWindowPos2fv(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos2fv(a);
+}
+inline void glWindowPos2i(GLint a, GLint b) {
+	interceptor::getCurrentExt()->glWindowPos2i(a,b);
+}
+inline void glWindowPos2iv(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos2iv(a);
+}
+inline void glWindowPos2s(GLshort a, GLshort b) {
+	interceptor::getCurrentExt()->glWindowPos2s(a,b);
+}
+inline void glWindowPos2sv(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos2sv(a);
+}
+inline void glWindowPos3d(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glWindowPos3d(a,b,c);
+}
+inline void glWindowPos3dv(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos3dv(a);
+}
+inline void glWindowPos3f(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glWindowPos3f(a,b,c);
+}
+inline void glWindowPos3fv(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos3fv(a);
+}
+inline void glWindowPos3i(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glWindowPos3i(a,b,c);
+}
+inline void glWindowPos3iv(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos3iv(a);
+}
+inline void glWindowPos3s(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glWindowPos3s(a,b,c);
+}
+inline void glWindowPos3sv(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos3sv(a);
+}
+inline void glGenQueries(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenQueries(a,b);
+}
+inline void glDeleteQueries(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteQueries(a,b);
+}
+inline GLboolean glIsQuery(GLuint a) {
+	return interceptor::getCurrentExt()->glIsQuery(a);
+}
+inline void glBeginQuery(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBeginQuery(a,b);
+}
+inline void glEndQuery(GLenum a) {
+	interceptor::getCurrentExt()->glEndQuery(a);
+}
+inline void glGetQueryiv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetQueryiv(a,b,c);
+}
+inline void glGetQueryObjectiv(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetQueryObjectiv(a,b,c);
+}
+inline void glGetQueryObjectuiv(GLuint a, GLenum b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetQueryObjectuiv(a,b,c);
+}
+inline void glBindBuffer(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindBuffer(a,b);
+}
+inline void glDeleteBuffers(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteBuffers(a,b);
+}
+inline void glGenBuffers(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenBuffers(a,b);
+}
+inline GLboolean glIsBuffer(GLuint a) {
+	return interceptor::getCurrentExt()->glIsBuffer(a);
+}
+inline void glBufferData(GLenum a, GLsizeiptr b, const GLvoid *c, GLenum d) {
+	interceptor::getCurrentExt()->glBufferData(a,b,c,d);
+}
+inline void glBufferSubData(GLenum a, GLintptr b, GLsizeiptr c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glBufferSubData(a,b,c,d);
+}
+inline void glGetBufferSubData(GLenum a, GLintptr b, GLsizeiptr c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetBufferSubData(a,b,c,d);
+}
+inline GLvoid* glMapBuffer(GLenum a, GLenum b) {
+	return interceptor::getCurrentExt()->glMapBuffer(a,b);
+}
+inline GLboolean glUnmapBuffer(GLenum a) {
+	return interceptor::getCurrentExt()->glUnmapBuffer(a);
+}
+inline void glGetBufferParameteriv(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetBufferParameteriv(a,b,c);
+}
+inline void glGetBufferPointerv(GLenum a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetBufferPointerv(a,b,c);
+}
+inline void glBlendEquationSeparate(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glBlendEquationSeparate(a,b);
+}
+inline void glDrawBuffers(GLsizei a, const GLenum *b) {
+	interceptor::getCurrentExt()->glDrawBuffers(a,b);
+}
+inline void glStencilOpSeparate(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glStencilOpSeparate(a,b,c,d);
+}
+inline void glStencilFuncSeparate(GLenum a, GLenum b, GLint c, GLuint d) {
+	interceptor::getCurrentExt()->glStencilFuncSeparate(a,b,c,d);
+}
+inline void glStencilMaskSeparate(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glStencilMaskSeparate(a,b);
+}
+inline void glAttachShader(GLuint a, GLuint b) {
+	interceptor::getCurrentExt()->glAttachShader(a,b);
+}
+inline void glBindAttribLocation(GLuint a, GLuint b, const GLchar *c) {
+	interceptor::getCurrentExt()->glBindAttribLocation(a,b,c);
+}
+inline void glCompileShader(GLuint a) {
+	interceptor::getCurrentExt()->glCompileShader(a);
+}
+inline GLuint glCreateProgram(void) {
+	return interceptor::getCurrentExt()->glCreateProgram();
+}
+inline GLuint glCreateShader(GLenum a) {
+	return interceptor::getCurrentExt()->glCreateShader(a);
+}
+inline void glDeleteProgram(GLuint a) {
+	interceptor::getCurrentExt()->glDeleteProgram(a);
+}
+inline void glDeleteShader(GLuint a) {
+	interceptor::getCurrentExt()->glDeleteShader(a);
+}
+inline void glDetachShader(GLuint a, GLuint b) {
+	interceptor::getCurrentExt()->glDetachShader(a,b);
+}
+inline void glDisableVertexAttribArray(GLuint a) {
+	interceptor::getCurrentExt()->glDisableVertexAttribArray(a);
+}
+inline void glEnableVertexAttribArray(GLuint a) {
+	interceptor::getCurrentExt()->glEnableVertexAttribArray(a);
+}
+inline void glGetActiveAttrib(GLuint a, GLuint b, GLsizei c, GLsizei *d, GLint *e, GLenum *f, GLchar *g) {
+	interceptor::getCurrentExt()->glGetActiveAttrib(a,b,c,d,e,f,g);
+}
+inline void glGetActiveUniform(GLuint a, GLuint b, GLsizei c, GLsizei *d, GLint *e, GLenum *f, GLchar *g) {
+	interceptor::getCurrentExt()->glGetActiveUniform(a,b,c,d,e,f,g);
+}
+inline void glGetAttachedShaders(GLuint a, GLsizei b, GLsizei *c, GLuint *d) {
+	interceptor::getCurrentExt()->glGetAttachedShaders(a,b,c,d);
+}
+inline GLint glGetAttribLocation(GLuint a, const GLchar *b) {
+	return interceptor::getCurrentExt()->glGetAttribLocation(a,b);
+}
+inline void glGetProgramiv(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetProgramiv(a,b,c);
+}
+inline void glGetProgramInfoLog(GLuint a, GLsizei b, GLsizei *c, GLchar *d) {
+	interceptor::getCurrentExt()->glGetProgramInfoLog(a,b,c,d);
+}
+inline void glGetShaderiv(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetShaderiv(a,b,c);
+}
+inline void glGetShaderInfoLog(GLuint a, GLsizei b, GLsizei *c, GLchar *d) {
+	interceptor::getCurrentExt()->glGetShaderInfoLog(a,b,c,d);
+}
+inline void glGetShaderSource(GLuint a, GLsizei b, GLsizei *c, GLchar *d) {
+	interceptor::getCurrentExt()->glGetShaderSource(a,b,c,d);
+}
+inline GLint glGetUniformLocation(GLuint a, const GLchar *b) {
+	return interceptor::getCurrentExt()->glGetUniformLocation(a,b);
+}
+inline void glGetUniformfv(GLuint a, GLint b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetUniformfv(a,b,c);
+}
+inline void glGetUniformiv(GLuint a, GLint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetUniformiv(a,b,c);
+}
+inline void glGetVertexAttribdv(GLuint a, GLenum b, GLdouble *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribdv(a,b,c);
+}
+inline void glGetVertexAttribfv(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribfv(a,b,c);
+}
+inline void glGetVertexAttribiv(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribiv(a,b,c);
+}
+inline void glGetVertexAttribPointerv(GLuint a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribPointerv(a,b,c);
+}
+inline GLboolean glIsProgram(GLuint a) {
+	return interceptor::getCurrentExt()->glIsProgram(a);
+}
+inline GLboolean glIsShader(GLuint a) {
+	return interceptor::getCurrentExt()->glIsShader(a);
+}
+inline void glLinkProgram(GLuint a) {
+	interceptor::getCurrentExt()->glLinkProgram(a);
+}
+inline void glShaderSource(GLuint a, GLsizei b, const GLchar* *c, const GLint *d) {
+	interceptor::getCurrentExt()->glShaderSource(a,b,c,d);
+}
+inline void glUseProgram(GLuint a) {
+	interceptor::getCurrentExt()->glUseProgram(a);
+}
+inline void glUniform1f(GLint a, GLfloat b) {
+	interceptor::getCurrentExt()->glUniform1f(a,b);
+}
+inline void glUniform2f(GLint a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glUniform2f(a,b,c);
+}
+inline void glUniform3f(GLint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glUniform3f(a,b,c,d);
+}
+inline void glUniform4f(GLint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glUniform4f(a,b,c,d,e);
+}
+inline void glUniform1i(GLint a, GLint b) {
+	interceptor::getCurrentExt()->glUniform1i(a,b);
+}
+inline void glUniform2i(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glUniform2i(a,b,c);
+}
+inline void glUniform3i(GLint a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glUniform3i(a,b,c,d);
+}
+inline void glUniform4i(GLint a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glUniform4i(a,b,c,d,e);
+}
+inline void glUniform1fv(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform1fv(a,b,c);
+}
+inline void glUniform2fv(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform2fv(a,b,c);
+}
+inline void glUniform3fv(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform3fv(a,b,c);
+}
+inline void glUniform4fv(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform4fv(a,b,c);
+}
+inline void glUniform1iv(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform1iv(a,b,c);
+}
+inline void glUniform2iv(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform2iv(a,b,c);
+}
+inline void glUniform3iv(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform3iv(a,b,c);
+}
+inline void glUniform4iv(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform4iv(a,b,c);
+}
+inline void glUniformMatrix2fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix2fv(a,b,c,d);
+}
+inline void glUniformMatrix3fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix3fv(a,b,c,d);
+}
+inline void glUniformMatrix4fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix4fv(a,b,c,d);
+}
+inline void glValidateProgram(GLuint a) {
+	interceptor::getCurrentExt()->glValidateProgram(a);
+}
+inline void glVertexAttrib1d(GLuint a, GLdouble b) {
+	interceptor::getCurrentExt()->glVertexAttrib1d(a,b);
+}
+inline void glVertexAttrib1dv(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1dv(a,b);
+}
+inline void glVertexAttrib1f(GLuint a, GLfloat b) {
+	interceptor::getCurrentExt()->glVertexAttrib1f(a,b);
+}
+inline void glVertexAttrib1fv(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1fv(a,b);
+}
+inline void glVertexAttrib1s(GLuint a, GLshort b) {
+	interceptor::getCurrentExt()->glVertexAttrib1s(a,b);
+}
+inline void glVertexAttrib1sv(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1sv(a,b);
+}
+inline void glVertexAttrib2d(GLuint a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glVertexAttrib2d(a,b,c);
+}
+inline void glVertexAttrib2dv(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2dv(a,b);
+}
+inline void glVertexAttrib2f(GLuint a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glVertexAttrib2f(a,b,c);
+}
+inline void glVertexAttrib2fv(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2fv(a,b);
+}
+inline void glVertexAttrib2s(GLuint a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glVertexAttrib2s(a,b,c);
+}
+inline void glVertexAttrib2sv(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2sv(a,b);
+}
+inline void glVertexAttrib3d(GLuint a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glVertexAttrib3d(a,b,c,d);
+}
+inline void glVertexAttrib3dv(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3dv(a,b);
+}
+inline void glVertexAttrib3f(GLuint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glVertexAttrib3f(a,b,c,d);
+}
+inline void glVertexAttrib3fv(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3fv(a,b);
+}
+inline void glVertexAttrib3s(GLuint a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glVertexAttrib3s(a,b,c,d);
+}
+inline void glVertexAttrib3sv(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3sv(a,b);
+}
+inline void glVertexAttrib4Nbv(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nbv(a,b);
+}
+inline void glVertexAttrib4Niv(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Niv(a,b);
+}
+inline void glVertexAttrib4Nsv(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nsv(a,b);
+}
+inline void glVertexAttrib4Nub(GLuint a, GLubyte b, GLubyte c, GLubyte d, GLubyte e) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nub(a,b,c,d,e);
+}
+inline void glVertexAttrib4Nubv(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nubv(a,b);
+}
+inline void glVertexAttrib4Nuiv(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nuiv(a,b);
+}
+inline void glVertexAttrib4Nusv(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4Nusv(a,b);
+}
+inline void glVertexAttrib4bv(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4bv(a,b);
+}
+inline void glVertexAttrib4d(GLuint a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glVertexAttrib4d(a,b,c,d,e);
+}
+inline void glVertexAttrib4dv(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4dv(a,b);
+}
+inline void glVertexAttrib4f(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glVertexAttrib4f(a,b,c,d,e);
+}
+inline void glVertexAttrib4fv(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4fv(a,b);
+}
+inline void glVertexAttrib4iv(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4iv(a,b);
+}
+inline void glVertexAttrib4s(GLuint a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glVertexAttrib4s(a,b,c,d,e);
+}
+inline void glVertexAttrib4sv(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4sv(a,b);
+}
+inline void glVertexAttrib4ubv(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4ubv(a,b);
+}
+inline void glVertexAttrib4uiv(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4uiv(a,b);
+}
+inline void glVertexAttrib4usv(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4usv(a,b);
+}
+inline void glVertexAttribPointer(GLuint a, GLint b, GLenum c, GLboolean d, GLsizei e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glVertexAttribPointer(a,b,c,d,e,f);
+}
+inline void glUniformMatrix2x3fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix2x3fv(a,b,c,d);
+}
+inline void glUniformMatrix3x2fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix3x2fv(a,b,c,d);
+}
+inline void glUniformMatrix2x4fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix2x4fv(a,b,c,d);
+}
+inline void glUniformMatrix4x2fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix4x2fv(a,b,c,d);
+}
+inline void glUniformMatrix3x4fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix3x4fv(a,b,c,d);
+}
+inline void glUniformMatrix4x3fv(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix4x3fv(a,b,c,d);
+}
+inline void glActiveTextureARB(GLenum a) {
+	interceptor::getCurrentExt()->glActiveTextureARB(a);
+}
+inline void glClientActiveTextureARB(GLenum a) {
+	interceptor::getCurrentExt()->glClientActiveTextureARB(a);
+}
+inline void glMultiTexCoord1dARB(GLenum a, GLdouble b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1dARB(a,b);
+}
+inline void glMultiTexCoord1dvARB(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1dvARB(a,b);
+}
+inline void glMultiTexCoord1fARB(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1fARB(a,b);
+}
+inline void glMultiTexCoord1fvARB(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1fvARB(a,b);
+}
+inline void glMultiTexCoord1iARB(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1iARB(a,b);
+}
+inline void glMultiTexCoord1ivARB(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1ivARB(a,b);
+}
+inline void glMultiTexCoord1sARB(GLenum a, GLshort b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1sARB(a,b);
+}
+inline void glMultiTexCoord1svARB(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1svARB(a,b);
+}
+inline void glMultiTexCoord2dARB(GLenum a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2dARB(a,b,c);
+}
+inline void glMultiTexCoord2dvARB(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2dvARB(a,b);
+}
+inline void glMultiTexCoord2fARB(GLenum a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2fARB(a,b,c);
+}
+inline void glMultiTexCoord2fvARB(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2fvARB(a,b);
+}
+inline void glMultiTexCoord2iARB(GLenum a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2iARB(a,b,c);
+}
+inline void glMultiTexCoord2ivARB(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2ivARB(a,b);
+}
+inline void glMultiTexCoord2sARB(GLenum a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2sARB(a,b,c);
+}
+inline void glMultiTexCoord2svARB(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2svARB(a,b);
+}
+inline void glMultiTexCoord3dARB(GLenum a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3dARB(a,b,c,d);
+}
+inline void glMultiTexCoord3dvARB(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3dvARB(a,b);
+}
+inline void glMultiTexCoord3fARB(GLenum a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3fARB(a,b,c,d);
+}
+inline void glMultiTexCoord3fvARB(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3fvARB(a,b);
+}
+inline void glMultiTexCoord3iARB(GLenum a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3iARB(a,b,c,d);
+}
+inline void glMultiTexCoord3ivARB(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3ivARB(a,b);
+}
+inline void glMultiTexCoord3sARB(GLenum a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3sARB(a,b,c,d);
+}
+inline void glMultiTexCoord3svARB(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3svARB(a,b);
+}
+inline void glMultiTexCoord4dARB(GLenum a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4dARB(a,b,c,d,e);
+}
+inline void glMultiTexCoord4dvARB(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4dvARB(a,b);
+}
+inline void glMultiTexCoord4fARB(GLenum a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4fARB(a,b,c,d,e);
+}
+inline void glMultiTexCoord4fvARB(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4fvARB(a,b);
+}
+inline void glMultiTexCoord4iARB(GLenum a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4iARB(a,b,c,d,e);
+}
+inline void glMultiTexCoord4ivARB(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4ivARB(a,b);
+}
+inline void glMultiTexCoord4sARB(GLenum a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4sARB(a,b,c,d,e);
+}
+inline void glMultiTexCoord4svARB(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4svARB(a,b);
+}
+inline void glLoadTransposeMatrixfARB(const GLfloat *a) {
+	interceptor::getCurrentExt()->glLoadTransposeMatrixfARB(a);
+}
+inline void glLoadTransposeMatrixdARB(const GLdouble *a) {
+	interceptor::getCurrentExt()->glLoadTransposeMatrixdARB(a);
+}
+inline void glMultTransposeMatrixfARB(const GLfloat *a) {
+	interceptor::getCurrentExt()->glMultTransposeMatrixfARB(a);
+}
+inline void glMultTransposeMatrixdARB(const GLdouble *a) {
+	interceptor::getCurrentExt()->glMultTransposeMatrixdARB(a);
+}
+inline void glSampleCoverageARB(GLclampf a, GLboolean b) {
+	interceptor::getCurrentExt()->glSampleCoverageARB(a,b);
+}
+inline void glCompressedTexImage3DARB(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLsizei f, GLint g, GLsizei h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glCompressedTexImage3DARB(a,b,c,d,e,f,g,h,i);
+}
+inline void glCompressedTexImage2DARB(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLint f, GLsizei g, const GLvoid *h) {
+	interceptor::getCurrentExt()->glCompressedTexImage2DARB(a,b,c,d,e,f,g,h);
+}
+inline void glCompressedTexImage1DARB(GLenum a, GLint b, GLenum c, GLsizei d, GLint e, GLsizei f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glCompressedTexImage1DARB(a,b,c,d,e,f,g);
+}
+inline void glCompressedTexSubImage3DARB(GLenum a, GLint b, GLint c, GLint d, GLint e, GLsizei f, GLsizei g, GLsizei h, GLenum i, GLsizei j, const GLvoid *k) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage3DARB(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glCompressedTexSubImage2DARB(GLenum a, GLint b, GLint c, GLint d, GLsizei e, GLsizei f, GLenum g, GLsizei h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage2DARB(a,b,c,d,e,f,g,h,i);
+}
+inline void glCompressedTexSubImage1DARB(GLenum a, GLint b, GLint c, GLsizei d, GLenum e, GLsizei f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glCompressedTexSubImage1DARB(a,b,c,d,e,f,g);
+}
+inline void glGetCompressedTexImageARB(GLenum a, GLint b, GLvoid *c) {
+	interceptor::getCurrentExt()->glGetCompressedTexImageARB(a,b,c);
+}
+inline void glPointParameterfARB(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPointParameterfARB(a,b);
+}
+inline void glPointParameterfvARB(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glPointParameterfvARB(a,b);
+}
+inline void glWeightbvARB(GLint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glWeightbvARB(a,b);
+}
+inline void glWeightsvARB(GLint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glWeightsvARB(a,b);
+}
+inline void glWeightivARB(GLint a, const GLint *b) {
+	interceptor::getCurrentExt()->glWeightivARB(a,b);
+}
+inline void glWeightfvARB(GLint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glWeightfvARB(a,b);
+}
+inline void glWeightdvARB(GLint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glWeightdvARB(a,b);
+}
+inline void glWeightubvARB(GLint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glWeightubvARB(a,b);
+}
+inline void glWeightusvARB(GLint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glWeightusvARB(a,b);
+}
+inline void glWeightuivARB(GLint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glWeightuivARB(a,b);
+}
+inline void glWeightPointerARB(GLint a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glWeightPointerARB(a,b,c,d);
+}
+inline void glVertexBlendARB(GLint a) {
+	interceptor::getCurrentExt()->glVertexBlendARB(a);
+}
+inline void glCurrentPaletteMatrixARB(GLint a) {
+	interceptor::getCurrentExt()->glCurrentPaletteMatrixARB(a);
+}
+inline void glMatrixIndexubvARB(GLint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glMatrixIndexubvARB(a,b);
+}
+inline void glMatrixIndexusvARB(GLint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glMatrixIndexusvARB(a,b);
+}
+inline void glMatrixIndexuivARB(GLint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glMatrixIndexuivARB(a,b);
+}
+inline void glMatrixIndexPointerARB(GLint a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glMatrixIndexPointerARB(a,b,c,d);
+}
+inline void glWindowPos2dARB(GLdouble a, GLdouble b) {
+	interceptor::getCurrentExt()->glWindowPos2dARB(a,b);
+}
+inline void glWindowPos2dvARB(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos2dvARB(a);
+}
+inline void glWindowPos2fARB(GLfloat a, GLfloat b) {
+	interceptor::getCurrentExt()->glWindowPos2fARB(a,b);
+}
+inline void glWindowPos2fvARB(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos2fvARB(a);
+}
+inline void glWindowPos2iARB(GLint a, GLint b) {
+	interceptor::getCurrentExt()->glWindowPos2iARB(a,b);
+}
+inline void glWindowPos2ivARB(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos2ivARB(a);
+}
+inline void glWindowPos2sARB(GLshort a, GLshort b) {
+	interceptor::getCurrentExt()->glWindowPos2sARB(a,b);
+}
+inline void glWindowPos2svARB(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos2svARB(a);
+}
+inline void glWindowPos3dARB(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glWindowPos3dARB(a,b,c);
+}
+inline void glWindowPos3dvARB(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos3dvARB(a);
+}
+inline void glWindowPos3fARB(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glWindowPos3fARB(a,b,c);
+}
+inline void glWindowPos3fvARB(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos3fvARB(a);
+}
+inline void glWindowPos3iARB(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glWindowPos3iARB(a,b,c);
+}
+inline void glWindowPos3ivARB(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos3ivARB(a);
+}
+inline void glWindowPos3sARB(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glWindowPos3sARB(a,b,c);
+}
+inline void glWindowPos3svARB(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos3svARB(a);
+}
+inline void glVertexAttrib1dARB(GLuint a, GLdouble b) {
+	interceptor::getCurrentExt()->glVertexAttrib1dARB(a,b);
+}
+inline void glVertexAttrib1dvARB(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1dvARB(a,b);
+}
+inline void glVertexAttrib1fARB(GLuint a, GLfloat b) {
+	interceptor::getCurrentExt()->glVertexAttrib1fARB(a,b);
+}
+inline void glVertexAttrib1fvARB(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1fvARB(a,b);
+}
+inline void glVertexAttrib1sARB(GLuint a, GLshort b) {
+	interceptor::getCurrentExt()->glVertexAttrib1sARB(a,b);
+}
+inline void glVertexAttrib1svARB(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1svARB(a,b);
+}
+inline void glVertexAttrib2dARB(GLuint a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glVertexAttrib2dARB(a,b,c);
+}
+inline void glVertexAttrib2dvARB(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2dvARB(a,b);
+}
+inline void glVertexAttrib2fARB(GLuint a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glVertexAttrib2fARB(a,b,c);
+}
+inline void glVertexAttrib2fvARB(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2fvARB(a,b);
+}
+inline void glVertexAttrib2sARB(GLuint a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glVertexAttrib2sARB(a,b,c);
+}
+inline void glVertexAttrib2svARB(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2svARB(a,b);
+}
+inline void glVertexAttrib3dARB(GLuint a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glVertexAttrib3dARB(a,b,c,d);
+}
+inline void glVertexAttrib3dvARB(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3dvARB(a,b);
+}
+inline void glVertexAttrib3fARB(GLuint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glVertexAttrib3fARB(a,b,c,d);
+}
+inline void glVertexAttrib3fvARB(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3fvARB(a,b);
+}
+inline void glVertexAttrib3sARB(GLuint a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glVertexAttrib3sARB(a,b,c,d);
+}
+inline void glVertexAttrib3svARB(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3svARB(a,b);
+}
+inline void glVertexAttrib4NbvARB(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NbvARB(a,b);
+}
+inline void glVertexAttrib4NivARB(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NivARB(a,b);
+}
+inline void glVertexAttrib4NsvARB(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NsvARB(a,b);
+}
+inline void glVertexAttrib4NubARB(GLuint a, GLubyte b, GLubyte c, GLubyte d, GLubyte e) {
+	interceptor::getCurrentExt()->glVertexAttrib4NubARB(a,b,c,d,e);
+}
+inline void glVertexAttrib4NubvARB(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NubvARB(a,b);
+}
+inline void glVertexAttrib4NuivARB(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NuivARB(a,b);
+}
+inline void glVertexAttrib4NusvARB(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4NusvARB(a,b);
+}
+inline void glVertexAttrib4bvARB(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4bvARB(a,b);
+}
+inline void glVertexAttrib4dARB(GLuint a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glVertexAttrib4dARB(a,b,c,d,e);
+}
+inline void glVertexAttrib4dvARB(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4dvARB(a,b);
+}
+inline void glVertexAttrib4fARB(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glVertexAttrib4fARB(a,b,c,d,e);
+}
+inline void glVertexAttrib4fvARB(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4fvARB(a,b);
+}
+inline void glVertexAttrib4ivARB(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4ivARB(a,b);
+}
+inline void glVertexAttrib4sARB(GLuint a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glVertexAttrib4sARB(a,b,c,d,e);
+}
+inline void glVertexAttrib4svARB(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4svARB(a,b);
+}
+inline void glVertexAttrib4ubvARB(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4ubvARB(a,b);
+}
+inline void glVertexAttrib4uivARB(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4uivARB(a,b);
+}
+inline void glVertexAttrib4usvARB(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4usvARB(a,b);
+}
+inline void glVertexAttribPointerARB(GLuint a, GLint b, GLenum c, GLboolean d, GLsizei e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glVertexAttribPointerARB(a,b,c,d,e,f);
+}
+inline void glEnableVertexAttribArrayARB(GLuint a) {
+	interceptor::getCurrentExt()->glEnableVertexAttribArrayARB(a);
+}
+inline void glDisableVertexAttribArrayARB(GLuint a) {
+	interceptor::getCurrentExt()->glDisableVertexAttribArrayARB(a);
+}
+inline void glProgramStringARB(GLenum a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glProgramStringARB(a,b,c,d);
+}
+inline void glBindProgramARB(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindProgramARB(a,b);
+}
+inline void glDeleteProgramsARB(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteProgramsARB(a,b);
+}
+inline void glGenProgramsARB(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenProgramsARB(a,b);
+}
+inline void glProgramEnvParameter4dARB(GLenum a, GLuint b, GLdouble c, GLdouble d, GLdouble e, GLdouble f) {
+	interceptor::getCurrentExt()->glProgramEnvParameter4dARB(a,b,c,d,e,f);
+}
+inline void glProgramEnvParameter4dvARB(GLenum a, GLuint b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glProgramEnvParameter4dvARB(a,b,c);
+}
+inline void glProgramEnvParameter4fARB(GLenum a, GLuint b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glProgramEnvParameter4fARB(a,b,c,d,e,f);
+}
+inline void glProgramEnvParameter4fvARB(GLenum a, GLuint b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glProgramEnvParameter4fvARB(a,b,c);
+}
+inline void glProgramLocalParameter4dARB(GLenum a, GLuint b, GLdouble c, GLdouble d, GLdouble e, GLdouble f) {
+	interceptor::getCurrentExt()->glProgramLocalParameter4dARB(a,b,c,d,e,f);
+}
+inline void glProgramLocalParameter4dvARB(GLenum a, GLuint b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glProgramLocalParameter4dvARB(a,b,c);
+}
+inline void glProgramLocalParameter4fARB(GLenum a, GLuint b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glProgramLocalParameter4fARB(a,b,c,d,e,f);
+}
+inline void glProgramLocalParameter4fvARB(GLenum a, GLuint b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glProgramLocalParameter4fvARB(a,b,c);
+}
+inline void glGetProgramEnvParameterdvARB(GLenum a, GLuint b, GLdouble *c) {
+	interceptor::getCurrentExt()->glGetProgramEnvParameterdvARB(a,b,c);
+}
+inline void glGetProgramEnvParameterfvARB(GLenum a, GLuint b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetProgramEnvParameterfvARB(a,b,c);
+}
+inline void glGetProgramLocalParameterdvARB(GLenum a, GLuint b, GLdouble *c) {
+	interceptor::getCurrentExt()->glGetProgramLocalParameterdvARB(a,b,c);
+}
+inline void glGetProgramLocalParameterfvARB(GLenum a, GLuint b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetProgramLocalParameterfvARB(a,b,c);
+}
+inline void glGetProgramivARB(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetProgramivARB(a,b,c);
+}
+inline void glGetProgramStringARB(GLenum a, GLenum b, GLvoid *c) {
+	interceptor::getCurrentExt()->glGetProgramStringARB(a,b,c);
+}
+inline void glGetVertexAttribdvARB(GLuint a, GLenum b, GLdouble *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribdvARB(a,b,c);
+}
+inline void glGetVertexAttribfvARB(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribfvARB(a,b,c);
+}
+inline void glGetVertexAttribivARB(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribivARB(a,b,c);
+}
+inline void glGetVertexAttribPointervARB(GLuint a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribPointervARB(a,b,c);
+}
+inline GLboolean glIsProgramARB(GLuint a) {
+	return interceptor::getCurrentExt()->glIsProgramARB(a);
+}
+inline void glBindBufferARB(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindBufferARB(a,b);
+}
+inline void glDeleteBuffersARB(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteBuffersARB(a,b);
+}
+inline void glGenBuffersARB(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenBuffersARB(a,b);
+}
+inline GLboolean glIsBufferARB(GLuint a) {
+	return interceptor::getCurrentExt()->glIsBufferARB(a);
+}
+inline void glBufferDataARB(GLenum a, GLsizeiptrARB b, const GLvoid *c, GLenum d) {
+	interceptor::getCurrentExt()->glBufferDataARB(a,b,c,d);
+}
+inline void glBufferSubDataARB(GLenum a, GLintptrARB b, GLsizeiptrARB c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glBufferSubDataARB(a,b,c,d);
+}
+inline void glGetBufferSubDataARB(GLenum a, GLintptrARB b, GLsizeiptrARB c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetBufferSubDataARB(a,b,c,d);
+}
+inline GLvoid* glMapBufferARB(GLenum a, GLenum b) {
+	return interceptor::getCurrentExt()->glMapBufferARB(a,b);
+}
+inline GLboolean glUnmapBufferARB(GLenum a) {
+	return interceptor::getCurrentExt()->glUnmapBufferARB(a);
+}
+inline void glGetBufferParameterivARB(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetBufferParameterivARB(a,b,c);
+}
+inline void glGetBufferPointervARB(GLenum a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetBufferPointervARB(a,b,c);
+}
+inline void glGenQueriesARB(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenQueriesARB(a,b);
+}
+inline void glDeleteQueriesARB(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteQueriesARB(a,b);
+}
+inline GLboolean glIsQueryARB(GLuint a) {
+	return interceptor::getCurrentExt()->glIsQueryARB(a);
+}
+inline void glBeginQueryARB(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBeginQueryARB(a,b);
+}
+inline void glEndQueryARB(GLenum a) {
+	interceptor::getCurrentExt()->glEndQueryARB(a);
+}
+inline void glGetQueryivARB(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetQueryivARB(a,b,c);
+}
+inline void glGetQueryObjectivARB(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetQueryObjectivARB(a,b,c);
+}
+inline void glGetQueryObjectuivARB(GLuint a, GLenum b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetQueryObjectuivARB(a,b,c);
+}
+inline void glDeleteObjectARB(GLhandleARB a) {
+	interceptor::getCurrentExt()->glDeleteObjectARB(a);
+}
+inline GLhandleARB glGetHandleARB(GLenum a) {
+	return interceptor::getCurrentExt()->glGetHandleARB(a);
+}
+inline void glDetachObjectARB(GLhandleARB a, GLhandleARB b) {
+	interceptor::getCurrentExt()->glDetachObjectARB(a,b);
+}
+inline GLhandleARB glCreateShaderObjectARB(GLenum a) {
+	return interceptor::getCurrentExt()->glCreateShaderObjectARB(a);
+}
+inline void glShaderSourceARB(GLhandleARB a, GLsizei b, const GLcharARB* *c, const GLint *d) {
+	interceptor::getCurrentExt()->glShaderSourceARB(a,b,c,d);
+}
+inline void glCompileShaderARB(GLhandleARB a) {
+	interceptor::getCurrentExt()->glCompileShaderARB(a);
+}
+inline GLhandleARB glCreateProgramObjectARB(void) {
+	return interceptor::getCurrentExt()->glCreateProgramObjectARB();
+}
+inline void glAttachObjectARB(GLhandleARB a, GLhandleARB b) {
+	interceptor::getCurrentExt()->glAttachObjectARB(a,b);
+}
+inline void glLinkProgramARB(GLhandleARB a) {
+	interceptor::getCurrentExt()->glLinkProgramARB(a);
+}
+inline void glUseProgramObjectARB(GLhandleARB a) {
+	interceptor::getCurrentExt()->glUseProgramObjectARB(a);
+}
+inline void glValidateProgramARB(GLhandleARB a) {
+	interceptor::getCurrentExt()->glValidateProgramARB(a);
+}
+inline void glUniform1fARB(GLint a, GLfloat b) {
+	interceptor::getCurrentExt()->glUniform1fARB(a,b);
+}
+inline void glUniform2fARB(GLint a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glUniform2fARB(a,b,c);
+}
+inline void glUniform3fARB(GLint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glUniform3fARB(a,b,c,d);
+}
+inline void glUniform4fARB(GLint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glUniform4fARB(a,b,c,d,e);
+}
+inline void glUniform1iARB(GLint a, GLint b) {
+	interceptor::getCurrentExt()->glUniform1iARB(a,b);
+}
+inline void glUniform2iARB(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glUniform2iARB(a,b,c);
+}
+inline void glUniform3iARB(GLint a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glUniform3iARB(a,b,c,d);
+}
+inline void glUniform4iARB(GLint a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glUniform4iARB(a,b,c,d,e);
+}
+inline void glUniform1fvARB(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform1fvARB(a,b,c);
+}
+inline void glUniform2fvARB(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform2fvARB(a,b,c);
+}
+inline void glUniform3fvARB(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform3fvARB(a,b,c);
+}
+inline void glUniform4fvARB(GLint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glUniform4fvARB(a,b,c);
+}
+inline void glUniform1ivARB(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform1ivARB(a,b,c);
+}
+inline void glUniform2ivARB(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform2ivARB(a,b,c);
+}
+inline void glUniform3ivARB(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform3ivARB(a,b,c);
+}
+inline void glUniform4ivARB(GLint a, GLsizei b, const GLint *c) {
+	interceptor::getCurrentExt()->glUniform4ivARB(a,b,c);
+}
+inline void glUniformMatrix2fvARB(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix2fvARB(a,b,c,d);
+}
+inline void glUniformMatrix3fvARB(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix3fvARB(a,b,c,d);
+}
+inline void glUniformMatrix4fvARB(GLint a, GLsizei b, GLboolean c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glUniformMatrix4fvARB(a,b,c,d);
+}
+inline void glGetObjectParameterfvARB(GLhandleARB a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetObjectParameterfvARB(a,b,c);
+}
+inline void glGetObjectParameterivARB(GLhandleARB a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetObjectParameterivARB(a,b,c);
+}
+inline void glGetInfoLogARB(GLhandleARB a, GLsizei b, GLsizei *c, GLcharARB *d) {
+	interceptor::getCurrentExt()->glGetInfoLogARB(a,b,c,d);
+}
+inline void glGetAttachedObjectsARB(GLhandleARB a, GLsizei b, GLsizei *c, GLhandleARB *d) {
+	interceptor::getCurrentExt()->glGetAttachedObjectsARB(a,b,c,d);
+}
+inline GLint glGetUniformLocationARB(GLhandleARB a, const GLcharARB *b) {
+	return interceptor::getCurrentExt()->glGetUniformLocationARB(a,b);
+}
+inline void glGetActiveUniformARB(GLhandleARB a, GLuint b, GLsizei c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
+	interceptor::getCurrentExt()->glGetActiveUniformARB(a,b,c,d,e,f,g);
+}
+inline void glGetUniformfvARB(GLhandleARB a, GLint b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetUniformfvARB(a,b,c);
+}
+inline void glGetUniformivARB(GLhandleARB a, GLint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetUniformivARB(a,b,c);
+}
+inline void glGetShaderSourceARB(GLhandleARB a, GLsizei b, GLsizei *c, GLcharARB *d) {
+	interceptor::getCurrentExt()->glGetShaderSourceARB(a,b,c,d);
+}
+inline void glBindAttribLocationARB(GLhandleARB a, GLuint b, const GLcharARB *c) {
+	interceptor::getCurrentExt()->glBindAttribLocationARB(a,b,c);
+}
+inline void glGetActiveAttribARB(GLhandleARB a, GLuint b, GLsizei c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
+	interceptor::getCurrentExt()->glGetActiveAttribARB(a,b,c,d,e,f,g);
+}
+inline GLint glGetAttribLocationARB(GLhandleARB a, const GLcharARB *b) {
+	return interceptor::getCurrentExt()->glGetAttribLocationARB(a,b);
+}
+inline void glDrawBuffersARB(GLsizei a, const GLenum *b) {
+	interceptor::getCurrentExt()->glDrawBuffersARB(a,b);
+}
+inline void glClampColorARB(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glClampColorARB(a,b);
+}
+inline void glBlendColorEXT(GLclampf a, GLclampf b, GLclampf c, GLclampf d) {
+	interceptor::getCurrentExt()->glBlendColorEXT(a,b,c,d);
+}
+inline void glPolygonOffsetEXT(GLfloat a, GLfloat b) {
+	interceptor::getCurrentExt()->glPolygonOffsetEXT(a,b);
+}
+inline void glTexImage3DEXT(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLsizei f, GLint g, GLenum h, GLenum i, const GLvoid *j) {
+	interceptor::getCurrentExt()->glTexImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glTexSubImage3DEXT(GLenum a, GLint b, GLint c, GLint d, GLint e, GLsizei f, GLsizei g, GLsizei h, GLenum i, GLenum j, const GLvoid *k) {
+	interceptor::getCurrentExt()->glTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glGetTexFilterFuncSGIS(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetTexFilterFuncSGIS(a,b,c);
+}
+inline void glTexFilterFuncSGIS(GLenum a, GLenum b, GLsizei c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glTexFilterFuncSGIS(a,b,c,d);
+}
+inline void glTexSubImage1DEXT(GLenum a, GLint b, GLint c, GLsizei d, GLenum e, GLenum f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glTexSubImage1DEXT(a,b,c,d,e,f,g);
+}
+inline void glTexSubImage2DEXT(GLenum a, GLint b, GLint c, GLint d, GLsizei e, GLsizei f, GLenum g, GLenum h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glTexSubImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+inline void glCopyTexImage1DEXT(GLenum a, GLint b, GLenum c, GLint d, GLint e, GLsizei f, GLint g) {
+	interceptor::getCurrentExt()->glCopyTexImage1DEXT(a,b,c,d,e,f,g);
+}
+inline void glCopyTexImage2DEXT(GLenum a, GLint b, GLenum c, GLint d, GLint e, GLsizei f, GLsizei g, GLint h) {
+	interceptor::getCurrentExt()->glCopyTexImage2DEXT(a,b,c,d,e,f,g,h);
+}
+inline void glCopyTexSubImage1DEXT(GLenum a, GLint b, GLint c, GLint d, GLint e, GLsizei f) {
+	interceptor::getCurrentExt()->glCopyTexSubImage1DEXT(a,b,c,d,e,f);
+}
+inline void glCopyTexSubImage2DEXT(GLenum a, GLint b, GLint c, GLint d, GLint e, GLint f, GLsizei g, GLsizei h) {
+	interceptor::getCurrentExt()->glCopyTexSubImage2DEXT(a,b,c,d,e,f,g,h);
+}
+inline void glCopyTexSubImage3DEXT(GLenum a, GLint b, GLint c, GLint d, GLint e, GLint f, GLint g, GLsizei h, GLsizei i) {
+	interceptor::getCurrentExt()->glCopyTexSubImage3DEXT(a,b,c,d,e,f,g,h,i);
+}
+inline void glGetHistogramEXT(GLenum a, GLboolean b, GLenum c, GLenum d, GLvoid *e) {
+	interceptor::getCurrentExt()->glGetHistogramEXT(a,b,c,d,e);
+}
+inline void glGetHistogramParameterfvEXT(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetHistogramParameterfvEXT(a,b,c);
+}
+inline void glGetHistogramParameterivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetHistogramParameterivEXT(a,b,c);
+}
+inline void glGetMinmaxEXT(GLenum a, GLboolean b, GLenum c, GLenum d, GLvoid *e) {
+	interceptor::getCurrentExt()->glGetMinmaxEXT(a,b,c,d,e);
+}
+inline void glGetMinmaxParameterfvEXT(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetMinmaxParameterfvEXT(a,b,c);
+}
+inline void glGetMinmaxParameterivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetMinmaxParameterivEXT(a,b,c);
+}
+inline void glHistogramEXT(GLenum a, GLsizei b, GLenum c, GLboolean d) {
+	interceptor::getCurrentExt()->glHistogramEXT(a,b,c,d);
+}
+inline void glMinmaxEXT(GLenum a, GLenum b, GLboolean c) {
+	interceptor::getCurrentExt()->glMinmaxEXT(a,b,c);
+}
+inline void glResetHistogramEXT(GLenum a) {
+	interceptor::getCurrentExt()->glResetHistogramEXT(a);
+}
+inline void glResetMinmaxEXT(GLenum a) {
+	interceptor::getCurrentExt()->glResetMinmaxEXT(a);
+}
+inline void glConvolutionFilter1DEXT(GLenum a, GLenum b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glConvolutionFilter1DEXT(a,b,c,d,e,f);
+}
+inline void glConvolutionFilter2DEXT(GLenum a, GLenum b, GLsizei c, GLsizei d, GLenum e, GLenum f, const GLvoid *g) {
+	interceptor::getCurrentExt()->glConvolutionFilter2DEXT(a,b,c,d,e,f,g);
+}
+inline void glConvolutionParameterfEXT(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glConvolutionParameterfEXT(a,b,c);
+}
+inline void glConvolutionParameterfvEXT(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glConvolutionParameterfvEXT(a,b,c);
+}
+inline void glConvolutionParameteriEXT(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glConvolutionParameteriEXT(a,b,c);
+}
+inline void glConvolutionParameterivEXT(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glConvolutionParameterivEXT(a,b,c);
+}
+inline void glCopyConvolutionFilter1DEXT(GLenum a, GLenum b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyConvolutionFilter1DEXT(a,b,c,d,e);
+}
+inline void glCopyConvolutionFilter2DEXT(GLenum a, GLenum b, GLint c, GLint d, GLsizei e, GLsizei f) {
+	interceptor::getCurrentExt()->glCopyConvolutionFilter2DEXT(a,b,c,d,e,f);
+}
+inline void glGetConvolutionFilterEXT(GLenum a, GLenum b, GLenum c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetConvolutionFilterEXT(a,b,c,d);
+}
+inline void glGetConvolutionParameterfvEXT(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetConvolutionParameterfvEXT(a,b,c);
+}
+inline void glGetConvolutionParameterivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetConvolutionParameterivEXT(a,b,c);
+}
+inline void glGetSeparableFilterEXT(GLenum a, GLenum b, GLenum c, GLvoid *d, GLvoid *e, GLvoid *f) {
+	interceptor::getCurrentExt()->glGetSeparableFilterEXT(a,b,c,d,e,f);
+}
+inline void glSeparableFilter2DEXT(GLenum a, GLenum b, GLsizei c, GLsizei d, GLenum e, GLenum f, const GLvoid *g, const GLvoid *h) {
+	interceptor::getCurrentExt()->glSeparableFilter2DEXT(a,b,c,d,e,f,g,h);
+}
+inline void glColorTableSGI(GLenum a, GLenum b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glColorTableSGI(a,b,c,d,e,f);
+}
+inline void glColorTableParameterfvSGI(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glColorTableParameterfvSGI(a,b,c);
+}
+inline void glColorTableParameterivSGI(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glColorTableParameterivSGI(a,b,c);
+}
+inline void glCopyColorTableSGI(GLenum a, GLenum b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyColorTableSGI(a,b,c,d,e);
+}
+inline void glGetColorTableSGI(GLenum a, GLenum b, GLenum c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetColorTableSGI(a,b,c,d);
+}
+inline void glGetColorTableParameterfvSGI(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameterfvSGI(a,b,c);
+}
+inline void glGetColorTableParameterivSGI(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameterivSGI(a,b,c);
+}
+inline void glPixelTexGenSGIX(GLenum a) {
+	interceptor::getCurrentExt()->glPixelTexGenSGIX(a);
+}
+inline void glPixelTexGenParameteriSGIS(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glPixelTexGenParameteriSGIS(a,b);
+}
+inline void glPixelTexGenParameterivSGIS(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glPixelTexGenParameterivSGIS(a,b);
+}
+inline void glPixelTexGenParameterfSGIS(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPixelTexGenParameterfSGIS(a,b);
+}
+inline void glPixelTexGenParameterfvSGIS(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glPixelTexGenParameterfvSGIS(a,b);
+}
+inline void glGetPixelTexGenParameterivSGIS(GLenum a, GLint *b) {
+	interceptor::getCurrentExt()->glGetPixelTexGenParameterivSGIS(a,b);
+}
+inline void glGetPixelTexGenParameterfvSGIS(GLenum a, GLfloat *b) {
+	interceptor::getCurrentExt()->glGetPixelTexGenParameterfvSGIS(a,b);
+}
+inline void glTexImage4DSGIS(GLenum a, GLint b, GLenum c, GLsizei d, GLsizei e, GLsizei f, GLsizei g, GLint h, GLenum i, GLenum j, const GLvoid *k) {
+	interceptor::getCurrentExt()->glTexImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glTexSubImage4DSGIS(GLenum a, GLint b, GLint c, GLint d, GLint e, GLint f, GLsizei g, GLsizei h, GLsizei i, GLsizei j, GLenum k, GLenum l, const GLvoid *m) {
+	interceptor::getCurrentExt()->glTexSubImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k,l,m);
+}
+inline GLboolean glAreTexturesResidentEXT(GLsizei a, const GLuint *b, GLboolean *c) {
+	return interceptor::getCurrentExt()->glAreTexturesResidentEXT(a,b,c);
+}
+inline void glBindTextureEXT(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindTextureEXT(a,b);
+}
+inline void glDeleteTexturesEXT(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteTexturesEXT(a,b);
+}
+inline void glGenTexturesEXT(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenTexturesEXT(a,b);
+}
+inline GLboolean glIsTextureEXT(GLuint a) {
+	return interceptor::getCurrentExt()->glIsTextureEXT(a);
+}
+inline void glPrioritizeTexturesEXT(GLsizei a, const GLuint *b, const GLclampf *c) {
+	interceptor::getCurrentExt()->glPrioritizeTexturesEXT(a,b,c);
+}
+inline void glDetailTexFuncSGIS(GLenum a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glDetailTexFuncSGIS(a,b,c);
+}
+inline void glGetDetailTexFuncSGIS(GLenum a, GLfloat *b) {
+	interceptor::getCurrentExt()->glGetDetailTexFuncSGIS(a,b);
+}
+inline void glSharpenTexFuncSGIS(GLenum a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glSharpenTexFuncSGIS(a,b,c);
+}
+inline void glGetSharpenTexFuncSGIS(GLenum a, GLfloat *b) {
+	interceptor::getCurrentExt()->glGetSharpenTexFuncSGIS(a,b);
+}
+inline void glSampleMaskSGIS(GLclampf a, GLboolean b) {
+	interceptor::getCurrentExt()->glSampleMaskSGIS(a,b);
+}
+inline void glSamplePatternSGIS(GLenum a) {
+	interceptor::getCurrentExt()->glSamplePatternSGIS(a);
+}
+inline void glArrayElementEXT(GLint a) {
+	interceptor::getCurrentExt()->glArrayElementEXT(a);
+}
+inline void glColorPointerEXT(GLint a, GLenum b, GLsizei c, GLsizei d, const GLvoid *e) {
+	interceptor::getCurrentExt()->glColorPointerEXT(a,b,c,d,e);
+}
+inline void glDrawArraysEXT(GLenum a, GLint b, GLsizei c) {
+	interceptor::getCurrentExt()->glDrawArraysEXT(a,b,c);
+}
+inline void glEdgeFlagPointerEXT(GLsizei a, GLsizei b, const GLboolean *c) {
+	interceptor::getCurrentExt()->glEdgeFlagPointerEXT(a,b,c);
+}
+inline void glGetPointervEXT(GLenum a, GLvoid* *b) {
+	interceptor::getCurrentExt()->glGetPointervEXT(a,b);
+}
+inline void glIndexPointerEXT(GLenum a, GLsizei b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glIndexPointerEXT(a,b,c,d);
+}
+inline void glNormalPointerEXT(GLenum a, GLsizei b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glNormalPointerEXT(a,b,c,d);
+}
+inline void glTexCoordPointerEXT(GLint a, GLenum b, GLsizei c, GLsizei d, const GLvoid *e) {
+	interceptor::getCurrentExt()->glTexCoordPointerEXT(a,b,c,d,e);
+}
+inline void glVertexPointerEXT(GLint a, GLenum b, GLsizei c, GLsizei d, const GLvoid *e) {
+	interceptor::getCurrentExt()->glVertexPointerEXT(a,b,c,d,e);
+}
+inline void glBlendEquationEXT(GLenum a) {
+	interceptor::getCurrentExt()->glBlendEquationEXT(a);
+}
+inline void glSpriteParameterfSGIX(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glSpriteParameterfSGIX(a,b);
+}
+inline void glSpriteParameterfvSGIX(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glSpriteParameterfvSGIX(a,b);
+}
+inline void glSpriteParameteriSGIX(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glSpriteParameteriSGIX(a,b);
+}
+inline void glSpriteParameterivSGIX(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glSpriteParameterivSGIX(a,b);
+}
+inline void glPointParameterfEXT(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPointParameterfEXT(a,b);
+}
+inline void glPointParameterfvEXT(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glPointParameterfvEXT(a,b);
+}
+inline void glPointParameterfSGIS(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPointParameterfSGIS(a,b);
+}
+inline void glPointParameterfvSGIS(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glPointParameterfvSGIS(a,b);
+}
+inline GLint glGetInstrumentsSGIX(void) {
+	return interceptor::getCurrentExt()->glGetInstrumentsSGIX();
+}
+inline void glInstrumentsBufferSGIX(GLsizei a, GLint *b) {
+	interceptor::getCurrentExt()->glInstrumentsBufferSGIX(a,b);
+}
+inline GLint glPollInstrumentsSGIX(GLint *a) {
+	return interceptor::getCurrentExt()->glPollInstrumentsSGIX(a);
+}
+inline void glReadInstrumentsSGIX(GLint a) {
+	interceptor::getCurrentExt()->glReadInstrumentsSGIX(a);
+}
+inline void glStartInstrumentsSGIX(void) {
+	interceptor::getCurrentExt()->glStartInstrumentsSGIX();
+}
+inline void glStopInstrumentsSGIX(GLint a) {
+	interceptor::getCurrentExt()->glStopInstrumentsSGIX(a);
+}
+inline void glFrameZoomSGIX(GLint a) {
+	interceptor::getCurrentExt()->glFrameZoomSGIX(a);
+}
+inline void glTagSampleBufferSGIX(void) {
+	interceptor::getCurrentExt()->glTagSampleBufferSGIX();
+}
+inline void glDeformationMap3dSGIX(GLenum a, GLdouble b, GLdouble c, GLint d, GLint e, GLdouble f, GLdouble g, GLint h, GLint i, GLdouble j, GLdouble k, GLint l, GLint m, const GLdouble *n) {
+	interceptor::getCurrentExt()->glDeformationMap3dSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
+}
+inline void glDeformationMap3fSGIX(GLenum a, GLfloat b, GLfloat c, GLint d, GLint e, GLfloat f, GLfloat g, GLint h, GLint i, GLfloat j, GLfloat k, GLint l, GLint m, const GLfloat *n) {
+	interceptor::getCurrentExt()->glDeformationMap3fSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
+}
+inline void glDeformSGIX(GLbitfield a) {
+	interceptor::getCurrentExt()->glDeformSGIX(a);
+}
+inline void glLoadIdentityDeformationMapSGIX(GLbitfield a) {
+	interceptor::getCurrentExt()->glLoadIdentityDeformationMapSGIX(a);
+}
+inline void glReferencePlaneSGIX(const GLdouble *a) {
+	interceptor::getCurrentExt()->glReferencePlaneSGIX(a);
+}
+inline void glFlushRasterSGIX(void) {
+	interceptor::getCurrentExt()->glFlushRasterSGIX();
+}
+inline void glFogFuncSGIS(GLsizei a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glFogFuncSGIS(a,b);
+}
+inline void glGetFogFuncSGIS(GLfloat *a) {
+	interceptor::getCurrentExt()->glGetFogFuncSGIS(a);
+}
+inline void glImageTransformParameteriHP(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glImageTransformParameteriHP(a,b,c);
+}
+inline void glImageTransformParameterfHP(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glImageTransformParameterfHP(a,b,c);
+}
+inline void glImageTransformParameterivHP(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glImageTransformParameterivHP(a,b,c);
+}
+inline void glImageTransformParameterfvHP(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glImageTransformParameterfvHP(a,b,c);
+}
+inline void glGetImageTransformParameterivHP(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetImageTransformParameterivHP(a,b,c);
+}
+inline void glGetImageTransformParameterfvHP(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetImageTransformParameterfvHP(a,b,c);
+}
+inline void glColorSubTableEXT(GLenum a, GLsizei b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glColorSubTableEXT(a,b,c,d,e,f);
+}
+inline void glCopyColorSubTableEXT(GLenum a, GLsizei b, GLint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glCopyColorSubTableEXT(a,b,c,d,e);
+}
+inline void glHintPGI(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glHintPGI(a,b);
+}
+inline void glColorTableEXT(GLenum a, GLenum b, GLsizei c, GLenum d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glColorTableEXT(a,b,c,d,e,f);
+}
+inline void glGetColorTableEXT(GLenum a, GLenum b, GLenum c, GLvoid *d) {
+	interceptor::getCurrentExt()->glGetColorTableEXT(a,b,c,d);
+}
+inline void glGetColorTableParameterivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameterivEXT(a,b,c);
+}
+inline void glGetColorTableParameterfvEXT(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetColorTableParameterfvEXT(a,b,c);
+}
+inline void glGetListParameterfvSGIX(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetListParameterfvSGIX(a,b,c);
+}
+inline void glGetListParameterivSGIX(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetListParameterivSGIX(a,b,c);
+}
+inline void glListParameterfSGIX(GLuint a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glListParameterfSGIX(a,b,c);
+}
+inline void glListParameterfvSGIX(GLuint a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glListParameterfvSGIX(a,b,c);
+}
+inline void glListParameteriSGIX(GLuint a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glListParameteriSGIX(a,b,c);
+}
+inline void glListParameterivSGIX(GLuint a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glListParameterivSGIX(a,b,c);
+}
+inline void glIndexMaterialEXT(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glIndexMaterialEXT(a,b);
+}
+inline void glIndexFuncEXT(GLenum a, GLclampf b) {
+	interceptor::getCurrentExt()->glIndexFuncEXT(a,b);
+}
+inline void glLockArraysEXT(GLint a, GLsizei b) {
+	interceptor::getCurrentExt()->glLockArraysEXT(a,b);
+}
+inline void glUnlockArraysEXT(void) {
+	interceptor::getCurrentExt()->glUnlockArraysEXT();
+}
+inline void glCullParameterdvEXT(GLenum a, GLdouble *b) {
+	interceptor::getCurrentExt()->glCullParameterdvEXT(a,b);
+}
+inline void glCullParameterfvEXT(GLenum a, GLfloat *b) {
+	interceptor::getCurrentExt()->glCullParameterfvEXT(a,b);
+}
+inline void glFragmentColorMaterialSGIX(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glFragmentColorMaterialSGIX(a,b);
+}
+inline void glFragmentLightfSGIX(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glFragmentLightfSGIX(a,b,c);
+}
+inline void glFragmentLightfvSGIX(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glFragmentLightfvSGIX(a,b,c);
+}
+inline void glFragmentLightiSGIX(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glFragmentLightiSGIX(a,b,c);
+}
+inline void glFragmentLightivSGIX(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glFragmentLightivSGIX(a,b,c);
+}
+inline void glFragmentLightModelfSGIX(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glFragmentLightModelfSGIX(a,b);
+}
+inline void glFragmentLightModelfvSGIX(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glFragmentLightModelfvSGIX(a,b);
+}
+inline void glFragmentLightModeliSGIX(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glFragmentLightModeliSGIX(a,b);
+}
+inline void glFragmentLightModelivSGIX(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glFragmentLightModelivSGIX(a,b);
+}
+inline void glFragmentMaterialfSGIX(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glFragmentMaterialfSGIX(a,b,c);
+}
+inline void glFragmentMaterialfvSGIX(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glFragmentMaterialfvSGIX(a,b,c);
+}
+inline void glFragmentMaterialiSGIX(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glFragmentMaterialiSGIX(a,b,c);
+}
+inline void glFragmentMaterialivSGIX(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glFragmentMaterialivSGIX(a,b,c);
+}
+inline void glGetFragmentLightfvSGIX(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetFragmentLightfvSGIX(a,b,c);
+}
+inline void glGetFragmentLightivSGIX(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetFragmentLightivSGIX(a,b,c);
+}
+inline void glGetFragmentMaterialfvSGIX(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetFragmentMaterialfvSGIX(a,b,c);
+}
+inline void glGetFragmentMaterialivSGIX(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetFragmentMaterialivSGIX(a,b,c);
+}
+inline void glLightEnviSGIX(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glLightEnviSGIX(a,b);
+}
+inline void glDrawRangeElementsEXT(GLenum a, GLuint b, GLuint c, GLsizei d, GLenum e, const GLvoid *f) {
+	interceptor::getCurrentExt()->glDrawRangeElementsEXT(a,b,c,d,e,f);
+}
+inline void glApplyTextureEXT(GLenum a) {
+	interceptor::getCurrentExt()->glApplyTextureEXT(a);
+}
+inline void glTextureLightEXT(GLenum a) {
+	interceptor::getCurrentExt()->glTextureLightEXT(a);
+}
+inline void glTextureMaterialEXT(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glTextureMaterialEXT(a,b);
+}
+inline void glAsyncMarkerSGIX(GLuint a) {
+	interceptor::getCurrentExt()->glAsyncMarkerSGIX(a);
+}
+inline GLint glFinishAsyncSGIX(GLuint *a) {
+	return interceptor::getCurrentExt()->glFinishAsyncSGIX(a);
+}
+inline GLint glPollAsyncSGIX(GLuint *a) {
+	return interceptor::getCurrentExt()->glPollAsyncSGIX(a);
+}
+inline GLuint glGenAsyncMarkersSGIX(GLsizei a) {
+	return interceptor::getCurrentExt()->glGenAsyncMarkersSGIX(a);
+}
+inline void glDeleteAsyncMarkersSGIX(GLuint a, GLsizei b) {
+	interceptor::getCurrentExt()->glDeleteAsyncMarkersSGIX(a,b);
+}
+inline GLboolean glIsAsyncMarkerSGIX(GLuint a) {
+	return interceptor::getCurrentExt()->glIsAsyncMarkerSGIX(a);
+}
+inline void glVertexPointervINTEL(GLint a, GLenum b, const GLvoid* *c) {
+	interceptor::getCurrentExt()->glVertexPointervINTEL(a,b,c);
+}
+inline void glNormalPointervINTEL(GLenum a, const GLvoid* *b) {
+	interceptor::getCurrentExt()->glNormalPointervINTEL(a,b);
+}
+inline void glColorPointervINTEL(GLint a, GLenum b, const GLvoid* *c) {
+	interceptor::getCurrentExt()->glColorPointervINTEL(a,b,c);
+}
+inline void glTexCoordPointervINTEL(GLint a, GLenum b, const GLvoid* *c) {
+	interceptor::getCurrentExt()->glTexCoordPointervINTEL(a,b,c);
+}
+inline void glPixelTransformParameteriEXT(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glPixelTransformParameteriEXT(a,b,c);
+}
+inline void glPixelTransformParameterfEXT(GLenum a, GLenum b, GLfloat c) {
+	interceptor::getCurrentExt()->glPixelTransformParameterfEXT(a,b,c);
+}
+inline void glPixelTransformParameterivEXT(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glPixelTransformParameterivEXT(a,b,c);
+}
+inline void glPixelTransformParameterfvEXT(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glPixelTransformParameterfvEXT(a,b,c);
+}
+inline void glSecondaryColor3bEXT(GLbyte a, GLbyte b, GLbyte c) {
+	interceptor::getCurrentExt()->glSecondaryColor3bEXT(a,b,c);
+}
+inline void glSecondaryColor3bvEXT(const GLbyte *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3bvEXT(a);
+}
+inline void glSecondaryColor3dEXT(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glSecondaryColor3dEXT(a,b,c);
+}
+inline void glSecondaryColor3dvEXT(const GLdouble *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3dvEXT(a);
+}
+inline void glSecondaryColor3fEXT(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glSecondaryColor3fEXT(a,b,c);
+}
+inline void glSecondaryColor3fvEXT(const GLfloat *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3fvEXT(a);
+}
+inline void glSecondaryColor3iEXT(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glSecondaryColor3iEXT(a,b,c);
+}
+inline void glSecondaryColor3ivEXT(const GLint *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3ivEXT(a);
+}
+inline void glSecondaryColor3sEXT(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glSecondaryColor3sEXT(a,b,c);
+}
+inline void glSecondaryColor3svEXT(const GLshort *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3svEXT(a);
+}
+inline void glSecondaryColor3ubEXT(GLubyte a, GLubyte b, GLubyte c) {
+	interceptor::getCurrentExt()->glSecondaryColor3ubEXT(a,b,c);
+}
+inline void glSecondaryColor3ubvEXT(const GLubyte *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3ubvEXT(a);
+}
+inline void glSecondaryColor3uiEXT(GLuint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glSecondaryColor3uiEXT(a,b,c);
+}
+inline void glSecondaryColor3uivEXT(const GLuint *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3uivEXT(a);
+}
+inline void glSecondaryColor3usEXT(GLushort a, GLushort b, GLushort c) {
+	interceptor::getCurrentExt()->glSecondaryColor3usEXT(a,b,c);
+}
+inline void glSecondaryColor3usvEXT(const GLushort *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3usvEXT(a);
+}
+inline void glSecondaryColorPointerEXT(GLint a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glSecondaryColorPointerEXT(a,b,c,d);
+}
+inline void glTextureNormalEXT(GLenum a) {
+	interceptor::getCurrentExt()->glTextureNormalEXT(a);
+}
+inline void glMultiDrawArraysEXT(GLenum a, GLint *b, GLsizei *c, GLsizei d) {
+	interceptor::getCurrentExt()->glMultiDrawArraysEXT(a,b,c,d);
+}
+inline void glMultiDrawElementsEXT(GLenum a, const GLsizei *b, GLenum c, const GLvoid* *d, GLsizei e) {
+	interceptor::getCurrentExt()->glMultiDrawElementsEXT(a,b,c,d,e);
+}
+inline void glFogCoordfEXT(GLfloat a) {
+	interceptor::getCurrentExt()->glFogCoordfEXT(a);
+}
+inline void glFogCoordfvEXT(const GLfloat *a) {
+	interceptor::getCurrentExt()->glFogCoordfvEXT(a);
+}
+inline void glFogCoorddEXT(GLdouble a) {
+	interceptor::getCurrentExt()->glFogCoorddEXT(a);
+}
+inline void glFogCoorddvEXT(const GLdouble *a) {
+	interceptor::getCurrentExt()->glFogCoorddvEXT(a);
+}
+inline void glFogCoordPointerEXT(GLenum a, GLsizei b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glFogCoordPointerEXT(a,b,c);
+}
+inline void glTangent3bEXT(GLbyte a, GLbyte b, GLbyte c) {
+	interceptor::getCurrentExt()->glTangent3bEXT(a,b,c);
+}
+inline void glTangent3bvEXT(const GLbyte *a) {
+	interceptor::getCurrentExt()->glTangent3bvEXT(a);
+}
+inline void glTangent3dEXT(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glTangent3dEXT(a,b,c);
+}
+inline void glTangent3dvEXT(const GLdouble *a) {
+	interceptor::getCurrentExt()->glTangent3dvEXT(a);
+}
+inline void glTangent3fEXT(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glTangent3fEXT(a,b,c);
+}
+inline void glTangent3fvEXT(const GLfloat *a) {
+	interceptor::getCurrentExt()->glTangent3fvEXT(a);
+}
+inline void glTangent3iEXT(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glTangent3iEXT(a,b,c);
+}
+inline void glTangent3ivEXT(const GLint *a) {
+	interceptor::getCurrentExt()->glTangent3ivEXT(a);
+}
+inline void glTangent3sEXT(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glTangent3sEXT(a,b,c);
+}
+inline void glTangent3svEXT(const GLshort *a) {
+	interceptor::getCurrentExt()->glTangent3svEXT(a);
+}
+inline void glBinormal3bEXT(GLbyte a, GLbyte b, GLbyte c) {
+	interceptor::getCurrentExt()->glBinormal3bEXT(a,b,c);
+}
+inline void glBinormal3bvEXT(const GLbyte *a) {
+	interceptor::getCurrentExt()->glBinormal3bvEXT(a);
+}
+inline void glBinormal3dEXT(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glBinormal3dEXT(a,b,c);
+}
+inline void glBinormal3dvEXT(const GLdouble *a) {
+	interceptor::getCurrentExt()->glBinormal3dvEXT(a);
+}
+inline void glBinormal3fEXT(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glBinormal3fEXT(a,b,c);
+}
+inline void glBinormal3fvEXT(const GLfloat *a) {
+	interceptor::getCurrentExt()->glBinormal3fvEXT(a);
+}
+inline void glBinormal3iEXT(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glBinormal3iEXT(a,b,c);
+}
+inline void glBinormal3ivEXT(const GLint *a) {
+	interceptor::getCurrentExt()->glBinormal3ivEXT(a);
+}
+inline void glBinormal3sEXT(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glBinormal3sEXT(a,b,c);
+}
+inline void glBinormal3svEXT(const GLshort *a) {
+	interceptor::getCurrentExt()->glBinormal3svEXT(a);
+}
+inline void glTangentPointerEXT(GLenum a, GLsizei b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glTangentPointerEXT(a,b,c);
+}
+inline void glBinormalPointerEXT(GLenum a, GLsizei b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glBinormalPointerEXT(a,b,c);
+}
+inline void glFinishTextureSUNX(void) {
+	interceptor::getCurrentExt()->glFinishTextureSUNX();
+}
+inline void glGlobalAlphaFactorbSUN(GLbyte a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactorbSUN(a);
+}
+inline void glGlobalAlphaFactorsSUN(GLshort a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactorsSUN(a);
+}
+inline void glGlobalAlphaFactoriSUN(GLint a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactoriSUN(a);
+}
+inline void glGlobalAlphaFactorfSUN(GLfloat a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactorfSUN(a);
+}
+inline void glGlobalAlphaFactordSUN(GLdouble a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactordSUN(a);
+}
+inline void glGlobalAlphaFactorubSUN(GLubyte a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactorubSUN(a);
+}
+inline void glGlobalAlphaFactorusSUN(GLushort a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactorusSUN(a);
+}
+inline void glGlobalAlphaFactoruiSUN(GLuint a) {
+	interceptor::getCurrentExt()->glGlobalAlphaFactoruiSUN(a);
+}
+inline void glReplacementCodeuiSUN(GLuint a) {
+	interceptor::getCurrentExt()->glReplacementCodeuiSUN(a);
+}
+inline void glReplacementCodeusSUN(GLushort a) {
+	interceptor::getCurrentExt()->glReplacementCodeusSUN(a);
+}
+inline void glReplacementCodeubSUN(GLubyte a) {
+	interceptor::getCurrentExt()->glReplacementCodeubSUN(a);
+}
+inline void glReplacementCodeuivSUN(const GLuint *a) {
+	interceptor::getCurrentExt()->glReplacementCodeuivSUN(a);
+}
+inline void glReplacementCodeusvSUN(const GLushort *a) {
+	interceptor::getCurrentExt()->glReplacementCodeusvSUN(a);
+}
+inline void glReplacementCodeubvSUN(const GLubyte *a) {
+	interceptor::getCurrentExt()->glReplacementCodeubvSUN(a);
+}
+inline void glReplacementCodePointerSUN(GLenum a, GLsizei b, const GLvoid* *c) {
+	interceptor::getCurrentExt()->glReplacementCodePointerSUN(a,b,c);
+}
+inline void glColor4ubVertex2fSUN(GLubyte a, GLubyte b, GLubyte c, GLubyte d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glColor4ubVertex2fSUN(a,b,c,d,e,f);
+}
+inline void glColor4ubVertex2fvSUN(const GLubyte *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glColor4ubVertex2fvSUN(a,b);
+}
+inline void glColor4ubVertex3fSUN(GLubyte a, GLubyte b, GLubyte c, GLubyte d, GLfloat e, GLfloat f, GLfloat g) {
+	interceptor::getCurrentExt()->glColor4ubVertex3fSUN(a,b,c,d,e,f,g);
+}
+inline void glColor4ubVertex3fvSUN(const GLubyte *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glColor4ubVertex3fvSUN(a,b);
+}
+inline void glColor3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glColor3fVertex3fSUN(a,b,c,d,e,f);
+}
+inline void glColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glColor3fVertex3fvSUN(a,b);
+}
+inline void glNormal3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glNormal3fVertex3fSUN(a,b,c,d,e,f);
+}
+inline void glNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glNormal3fVertex3fvSUN(a,b);
+}
+inline void glColor4fNormal3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i, GLfloat j) {
+	interceptor::getCurrentExt()->glColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glColor4fNormal3fVertex3fvSUN(a,b,c);
+}
+inline void glTexCoord2fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glTexCoord2fVertex3fSUN(a,b,c,d,e);
+}
+inline void glTexCoord2fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glTexCoord2fVertex3fvSUN(a,b);
+}
+inline void glTexCoord4fVertex4fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h) {
+	interceptor::getCurrentExt()->glTexCoord4fVertex4fSUN(a,b,c,d,e,f,g,h);
+}
+inline void glTexCoord4fVertex4fvSUN(const GLfloat *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glTexCoord4fVertex4fvSUN(a,b);
+}
+inline void glTexCoord2fColor4ubVertex3fSUN(GLfloat a, GLfloat b, GLubyte c, GLubyte d, GLubyte e, GLubyte f, GLfloat g, GLfloat h, GLfloat i) {
+	interceptor::getCurrentExt()->glTexCoord2fColor4ubVertex3fSUN(a,b,c,d,e,f,g,h,i);
+}
+inline void glTexCoord2fColor4ubVertex3fvSUN(const GLfloat *a, const GLubyte *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glTexCoord2fColor4ubVertex3fvSUN(a,b,c);
+}
+inline void glTexCoord2fColor3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h) {
+	interceptor::getCurrentExt()->glTexCoord2fColor3fVertex3fSUN(a,b,c,d,e,f,g,h);
+}
+inline void glTexCoord2fColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glTexCoord2fColor3fVertex3fvSUN(a,b,c);
+}
+inline void glTexCoord2fNormal3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h) {
+	interceptor::getCurrentExt()->glTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h);
+}
+inline void glTexCoord2fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glTexCoord2fNormal3fVertex3fvSUN(a,b,c);
+}
+inline void glTexCoord2fColor4fNormal3fVertex3fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i, GLfloat j, GLfloat k, GLfloat l) {
+	interceptor::getCurrentExt()->glTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+inline void glTexCoord2fColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d);
+}
+inline void glTexCoord4fColor4fNormal3fVertex4fSUN(GLfloat a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i, GLfloat j, GLfloat k, GLfloat l, GLfloat m, GLfloat n, GLfloat o) {
+	interceptor::getCurrentExt()->glTexCoord4fColor4fNormal3fVertex4fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
+}
+inline void glTexCoord4fColor4fNormal3fVertex4fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glTexCoord4fColor4fNormal3fVertex4fvSUN(a,b,c,d);
+}
+inline void glReplacementCodeuiVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glReplacementCodeuiVertex3fSUN(a,b,c,d);
+}
+inline void glReplacementCodeuiVertex3fvSUN(const GLuint *a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glReplacementCodeuiVertex3fvSUN(a,b);
+}
+inline void glReplacementCodeuiColor4ubVertex3fSUN(GLuint a, GLubyte b, GLubyte c, GLubyte d, GLubyte e, GLfloat f, GLfloat g, GLfloat h) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor4ubVertex3fSUN(a,b,c,d,e,f,g,h);
+}
+inline void glReplacementCodeuiColor4ubVertex3fvSUN(const GLuint *a, const GLubyte *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor4ubVertex3fvSUN(a,b,c);
+}
+inline void glReplacementCodeuiColor3fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor3fVertex3fSUN(a,b,c,d,e,f,g);
+}
+inline void glReplacementCodeuiColor3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor3fVertex3fvSUN(a,b,c);
+}
+inline void glReplacementCodeuiNormal3fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g) {
+	interceptor::getCurrentExt()->glReplacementCodeuiNormal3fVertex3fSUN(a,b,c,d,e,f,g);
+}
+inline void glReplacementCodeuiNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glReplacementCodeuiNormal3fVertex3fvSUN(a,b,c);
+}
+inline void glReplacementCodeuiColor4fNormal3fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i, GLfloat j, GLfloat k) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline void glReplacementCodeuiColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glReplacementCodeuiColor4fNormal3fVertex3fvSUN(a,b,c,d);
+}
+inline void glReplacementCodeuiTexCoord2fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fVertex3fSUN(a,b,c,d,e,f);
+}
+inline void glReplacementCodeuiTexCoord2fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fVertex3fvSUN(a,b,c);
+}
+inline void glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i);
+}
+inline void glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(a,b,c,d);
+}
+inline void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e, GLfloat f, GLfloat g, GLfloat h, GLfloat i, GLfloat j, GLfloat k, GLfloat l, GLfloat m) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m);
+}
+inline void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d, const GLfloat *e) {
+	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d,e);
+}
+inline void glBlendFuncSeparateEXT(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glBlendFuncSeparateEXT(a,b,c,d);
+}
+inline void glBlendFuncSeparateINGR(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glBlendFuncSeparateINGR(a,b,c,d);
+}
+inline void glVertexWeightfEXT(GLfloat a) {
+	interceptor::getCurrentExt()->glVertexWeightfEXT(a);
+}
+inline void glVertexWeightfvEXT(const GLfloat *a) {
+	interceptor::getCurrentExt()->glVertexWeightfvEXT(a);
+}
+inline void glVertexWeightPointerEXT(GLsizei a, GLenum b, GLsizei c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glVertexWeightPointerEXT(a,b,c,d);
+}
+inline void glFlushVertexArrayRangeNV(void) {
+	interceptor::getCurrentExt()->glFlushVertexArrayRangeNV();
+}
+inline void glVertexArrayRangeNV(GLsizei a, const GLvoid *b) {
+	interceptor::getCurrentExt()->glVertexArrayRangeNV(a,b);
+}
+inline void glCombinerParameterfvNV(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glCombinerParameterfvNV(a,b);
+}
+inline void glCombinerParameterfNV(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glCombinerParameterfNV(a,b);
+}
+inline void glCombinerParameterivNV(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glCombinerParameterivNV(a,b);
+}
+inline void glCombinerParameteriNV(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glCombinerParameteriNV(a,b);
+}
+inline void glCombinerInputNV(GLenum a, GLenum b, GLenum c, GLenum d, GLenum e, GLenum f) {
+	interceptor::getCurrentExt()->glCombinerInputNV(a,b,c,d,e,f);
+}
+inline void glCombinerOutputNV(GLenum a, GLenum b, GLenum c, GLenum d, GLenum e, GLenum f, GLenum g, GLboolean h, GLboolean i, GLboolean j) {
+	interceptor::getCurrentExt()->glCombinerOutputNV(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glFinalCombinerInputNV(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glFinalCombinerInputNV(a,b,c,d);
+}
+inline void glGetCombinerInputParameterfvNV(GLenum a, GLenum b, GLenum c, GLenum d, GLfloat *e) {
+	interceptor::getCurrentExt()->glGetCombinerInputParameterfvNV(a,b,c,d,e);
+}
+inline void glGetCombinerInputParameterivNV(GLenum a, GLenum b, GLenum c, GLenum d, GLint *e) {
+	interceptor::getCurrentExt()->glGetCombinerInputParameterivNV(a,b,c,d,e);
+}
+inline void glGetCombinerOutputParameterfvNV(GLenum a, GLenum b, GLenum c, GLfloat *d) {
+	interceptor::getCurrentExt()->glGetCombinerOutputParameterfvNV(a,b,c,d);
+}
+inline void glGetCombinerOutputParameterivNV(GLenum a, GLenum b, GLenum c, GLint *d) {
+	interceptor::getCurrentExt()->glGetCombinerOutputParameterivNV(a,b,c,d);
+}
+inline void glGetFinalCombinerInputParameterfvNV(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetFinalCombinerInputParameterfvNV(a,b,c);
+}
+inline void glGetFinalCombinerInputParameterivNV(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetFinalCombinerInputParameterivNV(a,b,c);
+}
+inline void glResizeBuffersMESA(void) {
+	interceptor::getCurrentExt()->glResizeBuffersMESA();
+}
+inline void glWindowPos2dMESA(GLdouble a, GLdouble b) {
+	interceptor::getCurrentExt()->glWindowPos2dMESA(a,b);
+}
+inline void glWindowPos2dvMESA(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos2dvMESA(a);
+}
+inline void glWindowPos2fMESA(GLfloat a, GLfloat b) {
+	interceptor::getCurrentExt()->glWindowPos2fMESA(a,b);
+}
+inline void glWindowPos2fvMESA(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos2fvMESA(a);
+}
+inline void glWindowPos2iMESA(GLint a, GLint b) {
+	interceptor::getCurrentExt()->glWindowPos2iMESA(a,b);
+}
+inline void glWindowPos2ivMESA(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos2ivMESA(a);
+}
+inline void glWindowPos2sMESA(GLshort a, GLshort b) {
+	interceptor::getCurrentExt()->glWindowPos2sMESA(a,b);
+}
+inline void glWindowPos2svMESA(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos2svMESA(a);
+}
+inline void glWindowPos3dMESA(GLdouble a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glWindowPos3dMESA(a,b,c);
+}
+inline void glWindowPos3dvMESA(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos3dvMESA(a);
+}
+inline void glWindowPos3fMESA(GLfloat a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glWindowPos3fMESA(a,b,c);
+}
+inline void glWindowPos3fvMESA(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos3fvMESA(a);
+}
+inline void glWindowPos3iMESA(GLint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glWindowPos3iMESA(a,b,c);
+}
+inline void glWindowPos3ivMESA(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos3ivMESA(a);
+}
+inline void glWindowPos3sMESA(GLshort a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glWindowPos3sMESA(a,b,c);
+}
+inline void glWindowPos3svMESA(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos3svMESA(a);
+}
+inline void glWindowPos4dMESA(GLdouble a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glWindowPos4dMESA(a,b,c,d);
+}
+inline void glWindowPos4dvMESA(const GLdouble *a) {
+	interceptor::getCurrentExt()->glWindowPos4dvMESA(a);
+}
+inline void glWindowPos4fMESA(GLfloat a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glWindowPos4fMESA(a,b,c,d);
+}
+inline void glWindowPos4fvMESA(const GLfloat *a) {
+	interceptor::getCurrentExt()->glWindowPos4fvMESA(a);
+}
+inline void glWindowPos4iMESA(GLint a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glWindowPos4iMESA(a,b,c,d);
+}
+inline void glWindowPos4ivMESA(const GLint *a) {
+	interceptor::getCurrentExt()->glWindowPos4ivMESA(a);
+}
+inline void glWindowPos4sMESA(GLshort a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glWindowPos4sMESA(a,b,c,d);
+}
+inline void glWindowPos4svMESA(const GLshort *a) {
+	interceptor::getCurrentExt()->glWindowPos4svMESA(a);
+}
+inline void glMultiModeDrawArraysIBM(const GLenum *a, const GLint *b, const GLsizei *c, GLsizei d, GLint e) {
+	interceptor::getCurrentExt()->glMultiModeDrawArraysIBM(a,b,c,d,e);
+}
+inline void glMultiModeDrawElementsIBM(const GLenum *a, const GLsizei *b, GLenum c, const GLvoid* const *d, GLsizei e, GLint f) {
+	interceptor::getCurrentExt()->glMultiModeDrawElementsIBM(a,b,c,d,e,f);
+}
+inline void glColorPointerListIBM(GLint a, GLenum b, GLint c, const GLvoid* *d, GLint e) {
+	interceptor::getCurrentExt()->glColorPointerListIBM(a,b,c,d,e);
+}
+inline void glSecondaryColorPointerListIBM(GLint a, GLenum b, GLint c, const GLvoid* *d, GLint e) {
+	interceptor::getCurrentExt()->glSecondaryColorPointerListIBM(a,b,c,d,e);
+}
+inline void glEdgeFlagPointerListIBM(GLint a, const GLboolean* *b, GLint c) {
+	interceptor::getCurrentExt()->glEdgeFlagPointerListIBM(a,b,c);
+}
+inline void glFogCoordPointerListIBM(GLenum a, GLint b, const GLvoid* *c, GLint d) {
+	interceptor::getCurrentExt()->glFogCoordPointerListIBM(a,b,c,d);
+}
+inline void glIndexPointerListIBM(GLenum a, GLint b, const GLvoid* *c, GLint d) {
+	interceptor::getCurrentExt()->glIndexPointerListIBM(a,b,c,d);
+}
+inline void glNormalPointerListIBM(GLenum a, GLint b, const GLvoid* *c, GLint d) {
+	interceptor::getCurrentExt()->glNormalPointerListIBM(a,b,c,d);
+}
+inline void glTexCoordPointerListIBM(GLint a, GLenum b, GLint c, const GLvoid* *d, GLint e) {
+	interceptor::getCurrentExt()->glTexCoordPointerListIBM(a,b,c,d,e);
+}
+inline void glVertexPointerListIBM(GLint a, GLenum b, GLint c, const GLvoid* *d, GLint e) {
+	interceptor::getCurrentExt()->glVertexPointerListIBM(a,b,c,d,e);
+}
+inline void glTbufferMask3DFX(GLuint a) {
+	interceptor::getCurrentExt()->glTbufferMask3DFX(a);
+}
+inline void glSampleMaskEXT(GLclampf a, GLboolean b) {
+	interceptor::getCurrentExt()->glSampleMaskEXT(a,b);
+}
+inline void glSamplePatternEXT(GLenum a) {
+	interceptor::getCurrentExt()->glSamplePatternEXT(a);
+}
+inline void glTextureColorMaskSGIS(GLboolean a, GLboolean b, GLboolean c, GLboolean d) {
+	interceptor::getCurrentExt()->glTextureColorMaskSGIS(a,b,c,d);
+}
+inline void glIglooInterfaceSGIX(GLenum a, const GLvoid *b) {
+	interceptor::getCurrentExt()->glIglooInterfaceSGIX(a,b);
+}
+inline void glDeleteFencesNV(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteFencesNV(a,b);
+}
+inline void glGenFencesNV(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenFencesNV(a,b);
+}
+inline GLboolean glIsFenceNV(GLuint a) {
+	return interceptor::getCurrentExt()->glIsFenceNV(a);
+}
+inline GLboolean glTestFenceNV(GLuint a) {
+	return interceptor::getCurrentExt()->glTestFenceNV(a);
+}
+inline void glGetFenceivNV(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetFenceivNV(a,b,c);
+}
+inline void glFinishFenceNV(GLuint a) {
+	interceptor::getCurrentExt()->glFinishFenceNV(a);
+}
+inline void glSetFenceNV(GLuint a, GLenum b) {
+	interceptor::getCurrentExt()->glSetFenceNV(a,b);
+}
+inline void glMapControlPointsNV(GLenum a, GLuint b, GLenum c, GLsizei d, GLsizei e, GLint f, GLint g, GLboolean h, const GLvoid *i) {
+	interceptor::getCurrentExt()->glMapControlPointsNV(a,b,c,d,e,f,g,h,i);
+}
+inline void glMapParameterivNV(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glMapParameterivNV(a,b,c);
+}
+inline void glMapParameterfvNV(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glMapParameterfvNV(a,b,c);
+}
+inline void glGetMapControlPointsNV(GLenum a, GLuint b, GLenum c, GLsizei d, GLsizei e, GLboolean f, GLvoid *g) {
+	interceptor::getCurrentExt()->glGetMapControlPointsNV(a,b,c,d,e,f,g);
+}
+inline void glGetMapParameterivNV(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetMapParameterivNV(a,b,c);
+}
+inline void glGetMapParameterfvNV(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetMapParameterfvNV(a,b,c);
+}
+inline void glGetMapAttribParameterivNV(GLenum a, GLuint b, GLenum c, GLint *d) {
+	interceptor::getCurrentExt()->glGetMapAttribParameterivNV(a,b,c,d);
+}
+inline void glGetMapAttribParameterfvNV(GLenum a, GLuint b, GLenum c, GLfloat *d) {
+	interceptor::getCurrentExt()->glGetMapAttribParameterfvNV(a,b,c,d);
+}
+inline void glEvalMapsNV(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glEvalMapsNV(a,b);
+}
+inline void glCombinerStageParameterfvNV(GLenum a, GLenum b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glCombinerStageParameterfvNV(a,b,c);
+}
+inline void glGetCombinerStageParameterfvNV(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetCombinerStageParameterfvNV(a,b,c);
+}
+inline GLboolean glAreProgramsResidentNV(GLsizei a, const GLuint *b, GLboolean *c) {
+	return interceptor::getCurrentExt()->glAreProgramsResidentNV(a,b,c);
+}
+inline void glBindProgramNV(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindProgramNV(a,b);
+}
+inline void glDeleteProgramsNV(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteProgramsNV(a,b);
+}
+inline void glExecuteProgramNV(GLenum a, GLuint b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glExecuteProgramNV(a,b,c);
+}
+inline void glGenProgramsNV(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenProgramsNV(a,b);
+}
+inline void glGetProgramParameterdvNV(GLenum a, GLuint b, GLenum c, GLdouble *d) {
+	interceptor::getCurrentExt()->glGetProgramParameterdvNV(a,b,c,d);
+}
+inline void glGetProgramParameterfvNV(GLenum a, GLuint b, GLenum c, GLfloat *d) {
+	interceptor::getCurrentExt()->glGetProgramParameterfvNV(a,b,c,d);
+}
+inline void glGetProgramivNV(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetProgramivNV(a,b,c);
+}
+inline void glGetProgramStringNV(GLuint a, GLenum b, GLubyte *c) {
+	interceptor::getCurrentExt()->glGetProgramStringNV(a,b,c);
+}
+inline void glGetTrackMatrixivNV(GLenum a, GLuint b, GLenum c, GLint *d) {
+	interceptor::getCurrentExt()->glGetTrackMatrixivNV(a,b,c,d);
+}
+inline void glGetVertexAttribdvNV(GLuint a, GLenum b, GLdouble *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribdvNV(a,b,c);
+}
+inline void glGetVertexAttribfvNV(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribfvNV(a,b,c);
+}
+inline void glGetVertexAttribivNV(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribivNV(a,b,c);
+}
+inline void glGetVertexAttribPointervNV(GLuint a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribPointervNV(a,b,c);
+}
+inline GLboolean glIsProgramNV(GLuint a) {
+	return interceptor::getCurrentExt()->glIsProgramNV(a);
+}
+inline void glLoadProgramNV(GLenum a, GLuint b, GLsizei c, const GLubyte *d) {
+	interceptor::getCurrentExt()->glLoadProgramNV(a,b,c,d);
+}
+inline void glProgramParameter4dNV(GLenum a, GLuint b, GLdouble c, GLdouble d, GLdouble e, GLdouble f) {
+	interceptor::getCurrentExt()->glProgramParameter4dNV(a,b,c,d,e,f);
+}
+inline void glProgramParameter4dvNV(GLenum a, GLuint b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glProgramParameter4dvNV(a,b,c);
+}
+inline void glProgramParameter4fNV(GLenum a, GLuint b, GLfloat c, GLfloat d, GLfloat e, GLfloat f) {
+	interceptor::getCurrentExt()->glProgramParameter4fNV(a,b,c,d,e,f);
+}
+inline void glProgramParameter4fvNV(GLenum a, GLuint b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glProgramParameter4fvNV(a,b,c);
+}
+inline void glProgramParameters4dvNV(GLenum a, GLuint b, GLuint c, const GLdouble *d) {
+	interceptor::getCurrentExt()->glProgramParameters4dvNV(a,b,c,d);
+}
+inline void glProgramParameters4fvNV(GLenum a, GLuint b, GLuint c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glProgramParameters4fvNV(a,b,c,d);
+}
+inline void glRequestResidentProgramsNV(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glRequestResidentProgramsNV(a,b);
+}
+inline void glTrackMatrixNV(GLenum a, GLuint b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glTrackMatrixNV(a,b,c,d);
+}
+inline void glVertexAttribPointerNV(GLuint a, GLint b, GLenum c, GLsizei d, const GLvoid *e) {
+	interceptor::getCurrentExt()->glVertexAttribPointerNV(a,b,c,d,e);
+}
+inline void glVertexAttrib1dNV(GLuint a, GLdouble b) {
+	interceptor::getCurrentExt()->glVertexAttrib1dNV(a,b);
+}
+inline void glVertexAttrib1dvNV(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1dvNV(a,b);
+}
+inline void glVertexAttrib1fNV(GLuint a, GLfloat b) {
+	interceptor::getCurrentExt()->glVertexAttrib1fNV(a,b);
+}
+inline void glVertexAttrib1fvNV(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1fvNV(a,b);
+}
+inline void glVertexAttrib1sNV(GLuint a, GLshort b) {
+	interceptor::getCurrentExt()->glVertexAttrib1sNV(a,b);
+}
+inline void glVertexAttrib1svNV(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1svNV(a,b);
+}
+inline void glVertexAttrib2dNV(GLuint a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glVertexAttrib2dNV(a,b,c);
+}
+inline void glVertexAttrib2dvNV(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2dvNV(a,b);
+}
+inline void glVertexAttrib2fNV(GLuint a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glVertexAttrib2fNV(a,b,c);
+}
+inline void glVertexAttrib2fvNV(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2fvNV(a,b);
+}
+inline void glVertexAttrib2sNV(GLuint a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glVertexAttrib2sNV(a,b,c);
+}
+inline void glVertexAttrib2svNV(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2svNV(a,b);
+}
+inline void glVertexAttrib3dNV(GLuint a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glVertexAttrib3dNV(a,b,c,d);
+}
+inline void glVertexAttrib3dvNV(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3dvNV(a,b);
+}
+inline void glVertexAttrib3fNV(GLuint a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glVertexAttrib3fNV(a,b,c,d);
+}
+inline void glVertexAttrib3fvNV(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3fvNV(a,b);
+}
+inline void glVertexAttrib3sNV(GLuint a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glVertexAttrib3sNV(a,b,c,d);
+}
+inline void glVertexAttrib3svNV(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3svNV(a,b);
+}
+inline void glVertexAttrib4dNV(GLuint a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glVertexAttrib4dNV(a,b,c,d,e);
+}
+inline void glVertexAttrib4dvNV(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4dvNV(a,b);
+}
+inline void glVertexAttrib4fNV(GLuint a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glVertexAttrib4fNV(a,b,c,d,e);
+}
+inline void glVertexAttrib4fvNV(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4fvNV(a,b);
+}
+inline void glVertexAttrib4sNV(GLuint a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glVertexAttrib4sNV(a,b,c,d,e);
+}
+inline void glVertexAttrib4svNV(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4svNV(a,b);
+}
+inline void glVertexAttrib4ubNV(GLuint a, GLubyte b, GLubyte c, GLubyte d, GLubyte e) {
+	interceptor::getCurrentExt()->glVertexAttrib4ubNV(a,b,c,d,e);
+}
+inline void glVertexAttrib4ubvNV(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4ubvNV(a,b);
+}
+inline void glVertexAttribs1dvNV(GLuint a, GLsizei b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glVertexAttribs1dvNV(a,b,c);
+}
+inline void glVertexAttribs1fvNV(GLuint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glVertexAttribs1fvNV(a,b,c);
+}
+inline void glVertexAttribs1svNV(GLuint a, GLsizei b, const GLshort *c) {
+	interceptor::getCurrentExt()->glVertexAttribs1svNV(a,b,c);
+}
+inline void glVertexAttribs2dvNV(GLuint a, GLsizei b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glVertexAttribs2dvNV(a,b,c);
+}
+inline void glVertexAttribs2fvNV(GLuint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glVertexAttribs2fvNV(a,b,c);
+}
+inline void glVertexAttribs2svNV(GLuint a, GLsizei b, const GLshort *c) {
+	interceptor::getCurrentExt()->glVertexAttribs2svNV(a,b,c);
+}
+inline void glVertexAttribs3dvNV(GLuint a, GLsizei b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glVertexAttribs3dvNV(a,b,c);
+}
+inline void glVertexAttribs3fvNV(GLuint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glVertexAttribs3fvNV(a,b,c);
+}
+inline void glVertexAttribs3svNV(GLuint a, GLsizei b, const GLshort *c) {
+	interceptor::getCurrentExt()->glVertexAttribs3svNV(a,b,c);
+}
+inline void glVertexAttribs4dvNV(GLuint a, GLsizei b, const GLdouble *c) {
+	interceptor::getCurrentExt()->glVertexAttribs4dvNV(a,b,c);
+}
+inline void glVertexAttribs4fvNV(GLuint a, GLsizei b, const GLfloat *c) {
+	interceptor::getCurrentExt()->glVertexAttribs4fvNV(a,b,c);
+}
+inline void glVertexAttribs4svNV(GLuint a, GLsizei b, const GLshort *c) {
+	interceptor::getCurrentExt()->glVertexAttribs4svNV(a,b,c);
+}
+inline void glVertexAttribs4ubvNV(GLuint a, GLsizei b, const GLubyte *c) {
+	interceptor::getCurrentExt()->glVertexAttribs4ubvNV(a,b,c);
+}
+inline void glTexBumpParameterivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glTexBumpParameterivATI(a,b);
+}
+inline void glTexBumpParameterfvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glTexBumpParameterfvATI(a,b);
+}
+inline void glGetTexBumpParameterivATI(GLenum a, GLint *b) {
+	interceptor::getCurrentExt()->glGetTexBumpParameterivATI(a,b);
+}
+inline void glGetTexBumpParameterfvATI(GLenum a, GLfloat *b) {
+	interceptor::getCurrentExt()->glGetTexBumpParameterfvATI(a,b);
+}
+inline GLuint glGenFragmentShadersATI(GLuint a) {
+	return interceptor::getCurrentExt()->glGenFragmentShadersATI(a);
+}
+inline void glBindFragmentShaderATI(GLuint a) {
+	interceptor::getCurrentExt()->glBindFragmentShaderATI(a);
+}
+inline void glDeleteFragmentShaderATI(GLuint a) {
+	interceptor::getCurrentExt()->glDeleteFragmentShaderATI(a);
+}
+inline void glBeginFragmentShaderATI(void) {
+	interceptor::getCurrentExt()->glBeginFragmentShaderATI();
+}
+inline void glEndFragmentShaderATI(void) {
+	interceptor::getCurrentExt()->glEndFragmentShaderATI();
+}
+inline void glPassTexCoordATI(GLuint a, GLuint b, GLenum c) {
+	interceptor::getCurrentExt()->glPassTexCoordATI(a,b,c);
+}
+inline void glSampleMapATI(GLuint a, GLuint b, GLenum c) {
+	interceptor::getCurrentExt()->glSampleMapATI(a,b,c);
+}
+inline void glColorFragmentOp1ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f, GLuint g) {
+	interceptor::getCurrentExt()->glColorFragmentOp1ATI(a,b,c,d,e,f,g);
+}
+inline void glColorFragmentOp2ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f, GLuint g, GLuint h, GLuint i, GLuint j) {
+	interceptor::getCurrentExt()->glColorFragmentOp2ATI(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glColorFragmentOp3ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f, GLuint g, GLuint h, GLuint i, GLuint j, GLuint k, GLuint l, GLuint m) {
+	interceptor::getCurrentExt()->glColorFragmentOp3ATI(a,b,c,d,e,f,g,h,i,j,k,l,m);
+}
+inline void glAlphaFragmentOp1ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f) {
+	interceptor::getCurrentExt()->glAlphaFragmentOp1ATI(a,b,c,d,e,f);
+}
+inline void glAlphaFragmentOp2ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f, GLuint g, GLuint h, GLuint i) {
+	interceptor::getCurrentExt()->glAlphaFragmentOp2ATI(a,b,c,d,e,f,g,h,i);
+}
+inline void glAlphaFragmentOp3ATI(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f, GLuint g, GLuint h, GLuint i, GLuint j, GLuint k, GLuint l) {
+	interceptor::getCurrentExt()->glAlphaFragmentOp3ATI(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+inline void glSetFragmentShaderConstantATI(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glSetFragmentShaderConstantATI(a,b);
+}
+inline void glPNTrianglesiATI(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glPNTrianglesiATI(a,b);
+}
+inline void glPNTrianglesfATI(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glPNTrianglesfATI(a,b);
+}
+inline GLuint glNewObjectBufferATI(GLsizei a, const GLvoid *b, GLenum c) {
+	return interceptor::getCurrentExt()->glNewObjectBufferATI(a,b,c);
+}
+inline GLboolean glIsObjectBufferATI(GLuint a) {
+	return interceptor::getCurrentExt()->glIsObjectBufferATI(a);
+}
+inline void glUpdateObjectBufferATI(GLuint a, GLuint b, GLsizei c, const GLvoid *d, GLenum e) {
+	interceptor::getCurrentExt()->glUpdateObjectBufferATI(a,b,c,d,e);
+}
+inline void glGetObjectBufferfvATI(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetObjectBufferfvATI(a,b,c);
+}
+inline void glGetObjectBufferivATI(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetObjectBufferivATI(a,b,c);
+}
+inline void glFreeObjectBufferATI(GLuint a) {
+	interceptor::getCurrentExt()->glFreeObjectBufferATI(a);
+}
+inline void glArrayObjectATI(GLenum a, GLint b, GLenum c, GLsizei d, GLuint e, GLuint f) {
+	interceptor::getCurrentExt()->glArrayObjectATI(a,b,c,d,e,f);
+}
+inline void glGetArrayObjectfvATI(GLenum a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetArrayObjectfvATI(a,b,c);
+}
+inline void glGetArrayObjectivATI(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetArrayObjectivATI(a,b,c);
+}
+inline void glVariantArrayObjectATI(GLuint a, GLenum b, GLsizei c, GLuint d, GLuint e) {
+	interceptor::getCurrentExt()->glVariantArrayObjectATI(a,b,c,d,e);
+}
+inline void glGetVariantArrayObjectfvATI(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVariantArrayObjectfvATI(a,b,c);
+}
+inline void glGetVariantArrayObjectivATI(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVariantArrayObjectivATI(a,b,c);
+}
+inline void glBeginVertexShaderEXT(void) {
+	interceptor::getCurrentExt()->glBeginVertexShaderEXT();
+}
+inline void glEndVertexShaderEXT(void) {
+	interceptor::getCurrentExt()->glEndVertexShaderEXT();
+}
+inline void glBindVertexShaderEXT(GLuint a) {
+	interceptor::getCurrentExt()->glBindVertexShaderEXT(a);
+}
+inline GLuint glGenVertexShadersEXT(GLuint a) {
+	return interceptor::getCurrentExt()->glGenVertexShadersEXT(a);
+}
+inline void glDeleteVertexShaderEXT(GLuint a) {
+	interceptor::getCurrentExt()->glDeleteVertexShaderEXT(a);
+}
+inline void glShaderOp1EXT(GLenum a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glShaderOp1EXT(a,b,c);
+}
+inline void glShaderOp2EXT(GLenum a, GLuint b, GLuint c, GLuint d) {
+	interceptor::getCurrentExt()->glShaderOp2EXT(a,b,c,d);
+}
+inline void glShaderOp3EXT(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e) {
+	interceptor::getCurrentExt()->glShaderOp3EXT(a,b,c,d,e);
+}
+inline void glSwizzleEXT(GLuint a, GLuint b, GLenum c, GLenum d, GLenum e, GLenum f) {
+	interceptor::getCurrentExt()->glSwizzleEXT(a,b,c,d,e,f);
+}
+inline void glWriteMaskEXT(GLuint a, GLuint b, GLenum c, GLenum d, GLenum e, GLenum f) {
+	interceptor::getCurrentExt()->glWriteMaskEXT(a,b,c,d,e,f);
+}
+inline void glInsertComponentEXT(GLuint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glInsertComponentEXT(a,b,c);
+}
+inline void glExtractComponentEXT(GLuint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glExtractComponentEXT(a,b,c);
+}
+inline GLuint glGenSymbolsEXT(GLenum a, GLenum b, GLenum c, GLuint d) {
+	return interceptor::getCurrentExt()->glGenSymbolsEXT(a,b,c,d);
+}
+inline void glSetInvariantEXT(GLuint a, GLenum b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glSetInvariantEXT(a,b,c);
+}
+inline void glSetLocalConstantEXT(GLuint a, GLenum b, const GLvoid *c) {
+	interceptor::getCurrentExt()->glSetLocalConstantEXT(a,b,c);
+}
+inline void glVariantbvEXT(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVariantbvEXT(a,b);
+}
+inline void glVariantsvEXT(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVariantsvEXT(a,b);
+}
+inline void glVariantivEXT(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVariantivEXT(a,b);
+}
+inline void glVariantfvEXT(GLuint a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVariantfvEXT(a,b);
+}
+inline void glVariantdvEXT(GLuint a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVariantdvEXT(a,b);
+}
+inline void glVariantubvEXT(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVariantubvEXT(a,b);
+}
+inline void glVariantusvEXT(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVariantusvEXT(a,b);
+}
+inline void glVariantuivEXT(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVariantuivEXT(a,b);
+}
+inline void glVariantPointerEXT(GLuint a, GLenum b, GLuint c, const GLvoid *d) {
+	interceptor::getCurrentExt()->glVariantPointerEXT(a,b,c,d);
+}
+inline void glEnableVariantClientStateEXT(GLuint a) {
+	interceptor::getCurrentExt()->glEnableVariantClientStateEXT(a);
+}
+inline void glDisableVariantClientStateEXT(GLuint a) {
+	interceptor::getCurrentExt()->glDisableVariantClientStateEXT(a);
+}
+inline GLuint glBindLightParameterEXT(GLenum a, GLenum b) {
+	return interceptor::getCurrentExt()->glBindLightParameterEXT(a,b);
+}
+inline GLuint glBindMaterialParameterEXT(GLenum a, GLenum b) {
+	return interceptor::getCurrentExt()->glBindMaterialParameterEXT(a,b);
+}
+inline GLuint glBindTexGenParameterEXT(GLenum a, GLenum b, GLenum c) {
+	return interceptor::getCurrentExt()->glBindTexGenParameterEXT(a,b,c);
+}
+inline GLuint glBindTextureUnitParameterEXT(GLenum a, GLenum b) {
+	return interceptor::getCurrentExt()->glBindTextureUnitParameterEXT(a,b);
+}
+inline GLuint glBindParameterEXT(GLenum a) {
+	return interceptor::getCurrentExt()->glBindParameterEXT(a);
+}
+inline GLboolean glIsVariantEnabledEXT(GLuint a, GLenum b) {
+	return interceptor::getCurrentExt()->glIsVariantEnabledEXT(a,b);
+}
+inline void glGetVariantBooleanvEXT(GLuint a, GLenum b, GLboolean *c) {
+	interceptor::getCurrentExt()->glGetVariantBooleanvEXT(a,b,c);
+}
+inline void glGetVariantIntegervEXT(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVariantIntegervEXT(a,b,c);
+}
+inline void glGetVariantFloatvEXT(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVariantFloatvEXT(a,b,c);
+}
+inline void glGetVariantPointervEXT(GLuint a, GLenum b, GLvoid* *c) {
+	interceptor::getCurrentExt()->glGetVariantPointervEXT(a,b,c);
+}
+inline void glGetInvariantBooleanvEXT(GLuint a, GLenum b, GLboolean *c) {
+	interceptor::getCurrentExt()->glGetInvariantBooleanvEXT(a,b,c);
+}
+inline void glGetInvariantIntegervEXT(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetInvariantIntegervEXT(a,b,c);
+}
+inline void glGetInvariantFloatvEXT(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetInvariantFloatvEXT(a,b,c);
+}
+inline void glGetLocalConstantBooleanvEXT(GLuint a, GLenum b, GLboolean *c) {
+	interceptor::getCurrentExt()->glGetLocalConstantBooleanvEXT(a,b,c);
+}
+inline void glGetLocalConstantIntegervEXT(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetLocalConstantIntegervEXT(a,b,c);
+}
+inline void glGetLocalConstantFloatvEXT(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetLocalConstantFloatvEXT(a,b,c);
+}
+inline void glVertexStream1sATI(GLenum a, GLshort b) {
+	interceptor::getCurrentExt()->glVertexStream1sATI(a,b);
+}
+inline void glVertexStream1svATI(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexStream1svATI(a,b);
+}
+inline void glVertexStream1iATI(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glVertexStream1iATI(a,b);
+}
+inline void glVertexStream1ivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexStream1ivATI(a,b);
+}
+inline void glVertexStream1fATI(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glVertexStream1fATI(a,b);
+}
+inline void glVertexStream1fvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexStream1fvATI(a,b);
+}
+inline void glVertexStream1dATI(GLenum a, GLdouble b) {
+	interceptor::getCurrentExt()->glVertexStream1dATI(a,b);
+}
+inline void glVertexStream1dvATI(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexStream1dvATI(a,b);
+}
+inline void glVertexStream2sATI(GLenum a, GLshort b, GLshort c) {
+	interceptor::getCurrentExt()->glVertexStream2sATI(a,b,c);
+}
+inline void glVertexStream2svATI(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexStream2svATI(a,b);
+}
+inline void glVertexStream2iATI(GLenum a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glVertexStream2iATI(a,b,c);
+}
+inline void glVertexStream2ivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexStream2ivATI(a,b);
+}
+inline void glVertexStream2fATI(GLenum a, GLfloat b, GLfloat c) {
+	interceptor::getCurrentExt()->glVertexStream2fATI(a,b,c);
+}
+inline void glVertexStream2fvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexStream2fvATI(a,b);
+}
+inline void glVertexStream2dATI(GLenum a, GLdouble b, GLdouble c) {
+	interceptor::getCurrentExt()->glVertexStream2dATI(a,b,c);
+}
+inline void glVertexStream2dvATI(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexStream2dvATI(a,b);
+}
+inline void glVertexStream3sATI(GLenum a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glVertexStream3sATI(a,b,c,d);
+}
+inline void glVertexStream3svATI(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexStream3svATI(a,b);
+}
+inline void glVertexStream3iATI(GLenum a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glVertexStream3iATI(a,b,c,d);
+}
+inline void glVertexStream3ivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexStream3ivATI(a,b);
+}
+inline void glVertexStream3fATI(GLenum a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glVertexStream3fATI(a,b,c,d);
+}
+inline void glVertexStream3fvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexStream3fvATI(a,b);
+}
+inline void glVertexStream3dATI(GLenum a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glVertexStream3dATI(a,b,c,d);
+}
+inline void glVertexStream3dvATI(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexStream3dvATI(a,b);
+}
+inline void glVertexStream4sATI(GLenum a, GLshort b, GLshort c, GLshort d, GLshort e) {
+	interceptor::getCurrentExt()->glVertexStream4sATI(a,b,c,d,e);
+}
+inline void glVertexStream4svATI(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexStream4svATI(a,b);
+}
+inline void glVertexStream4iATI(GLenum a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glVertexStream4iATI(a,b,c,d,e);
+}
+inline void glVertexStream4ivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexStream4ivATI(a,b);
+}
+inline void glVertexStream4fATI(GLenum a, GLfloat b, GLfloat c, GLfloat d, GLfloat e) {
+	interceptor::getCurrentExt()->glVertexStream4fATI(a,b,c,d,e);
+}
+inline void glVertexStream4fvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glVertexStream4fvATI(a,b);
+}
+inline void glVertexStream4dATI(GLenum a, GLdouble b, GLdouble c, GLdouble d, GLdouble e) {
+	interceptor::getCurrentExt()->glVertexStream4dATI(a,b,c,d,e);
+}
+inline void glVertexStream4dvATI(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glVertexStream4dvATI(a,b);
+}
+inline void glNormalStream3bATI(GLenum a, GLbyte b, GLbyte c, GLbyte d) {
+	interceptor::getCurrentExt()->glNormalStream3bATI(a,b,c,d);
+}
+inline void glNormalStream3bvATI(GLenum a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glNormalStream3bvATI(a,b);
+}
+inline void glNormalStream3sATI(GLenum a, GLshort b, GLshort c, GLshort d) {
+	interceptor::getCurrentExt()->glNormalStream3sATI(a,b,c,d);
+}
+inline void glNormalStream3svATI(GLenum a, const GLshort *b) {
+	interceptor::getCurrentExt()->glNormalStream3svATI(a,b);
+}
+inline void glNormalStream3iATI(GLenum a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glNormalStream3iATI(a,b,c,d);
+}
+inline void glNormalStream3ivATI(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glNormalStream3ivATI(a,b);
+}
+inline void glNormalStream3fATI(GLenum a, GLfloat b, GLfloat c, GLfloat d) {
+	interceptor::getCurrentExt()->glNormalStream3fATI(a,b,c,d);
+}
+inline void glNormalStream3fvATI(GLenum a, const GLfloat *b) {
+	interceptor::getCurrentExt()->glNormalStream3fvATI(a,b);
+}
+inline void glNormalStream3dATI(GLenum a, GLdouble b, GLdouble c, GLdouble d) {
+	interceptor::getCurrentExt()->glNormalStream3dATI(a,b,c,d);
+}
+inline void glNormalStream3dvATI(GLenum a, const GLdouble *b) {
+	interceptor::getCurrentExt()->glNormalStream3dvATI(a,b);
+}
+inline void glClientActiveVertexStreamATI(GLenum a) {
+	interceptor::getCurrentExt()->glClientActiveVertexStreamATI(a);
+}
+inline void glVertexBlendEnviATI(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glVertexBlendEnviATI(a,b);
+}
+inline void glVertexBlendEnvfATI(GLenum a, GLfloat b) {
+	interceptor::getCurrentExt()->glVertexBlendEnvfATI(a,b);
+}
+inline void glElementPointerATI(GLenum a, const GLvoid *b) {
+	interceptor::getCurrentExt()->glElementPointerATI(a,b);
+}
+inline void glDrawElementArrayATI(GLenum a, GLsizei b) {
+	interceptor::getCurrentExt()->glDrawElementArrayATI(a,b);
+}
+inline void glDrawRangeElementArrayATI(GLenum a, GLuint b, GLuint c, GLsizei d) {
+	interceptor::getCurrentExt()->glDrawRangeElementArrayATI(a,b,c,d);
+}
+inline void glDrawMeshArraysSUN(GLenum a, GLint b, GLsizei c, GLsizei d) {
+	interceptor::getCurrentExt()->glDrawMeshArraysSUN(a,b,c,d);
+}
+inline void glGenOcclusionQueriesNV(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenOcclusionQueriesNV(a,b);
+}
+inline void glDeleteOcclusionQueriesNV(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteOcclusionQueriesNV(a,b);
+}
+inline GLboolean glIsOcclusionQueryNV(GLuint a) {
+	return interceptor::getCurrentExt()->glIsOcclusionQueryNV(a);
+}
+inline void glBeginOcclusionQueryNV(GLuint a) {
+	interceptor::getCurrentExt()->glBeginOcclusionQueryNV(a);
+}
+inline void glEndOcclusionQueryNV(void) {
+	interceptor::getCurrentExt()->glEndOcclusionQueryNV();
+}
+inline void glGetOcclusionQueryivNV(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetOcclusionQueryivNV(a,b,c);
+}
+inline void glGetOcclusionQueryuivNV(GLuint a, GLenum b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetOcclusionQueryuivNV(a,b,c);
+}
+inline void glPointParameteriNV(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glPointParameteriNV(a,b);
+}
+inline void glPointParameterivNV(GLenum a, const GLint *b) {
+	interceptor::getCurrentExt()->glPointParameterivNV(a,b);
+}
+inline void glActiveStencilFaceEXT(GLenum a) {
+	interceptor::getCurrentExt()->glActiveStencilFaceEXT(a);
+}
+inline void glElementPointerAPPLE(GLenum a, const GLvoid *b) {
+	interceptor::getCurrentExt()->glElementPointerAPPLE(a,b);
+}
+inline void glDrawElementArrayAPPLE(GLenum a, GLint b, GLsizei c) {
+	interceptor::getCurrentExt()->glDrawElementArrayAPPLE(a,b,c);
+}
+inline void glDrawRangeElementArrayAPPLE(GLenum a, GLuint b, GLuint c, GLint d, GLsizei e) {
+	interceptor::getCurrentExt()->glDrawRangeElementArrayAPPLE(a,b,c,d,e);
+}
+inline void glMultiDrawElementArrayAPPLE(GLenum a, const GLint *b, const GLsizei *c, GLsizei d) {
+	interceptor::getCurrentExt()->glMultiDrawElementArrayAPPLE(a,b,c,d);
+}
+inline void glMultiDrawRangeElementArrayAPPLE(GLenum a, GLuint b, GLuint c, const GLint *d, const GLsizei *e, GLsizei f) {
+	interceptor::getCurrentExt()->glMultiDrawRangeElementArrayAPPLE(a,b,c,d,e,f);
+}
+inline void glGenFencesAPPLE(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenFencesAPPLE(a,b);
+}
+inline void glDeleteFencesAPPLE(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteFencesAPPLE(a,b);
+}
+inline void glSetFenceAPPLE(GLuint a) {
+	interceptor::getCurrentExt()->glSetFenceAPPLE(a);
+}
+inline GLboolean glIsFenceAPPLE(GLuint a) {
+	return interceptor::getCurrentExt()->glIsFenceAPPLE(a);
+}
+inline GLboolean glTestFenceAPPLE(GLuint a) {
+	return interceptor::getCurrentExt()->glTestFenceAPPLE(a);
+}
+inline void glFinishFenceAPPLE(GLuint a) {
+	interceptor::getCurrentExt()->glFinishFenceAPPLE(a);
+}
+inline GLboolean glTestObjectAPPLE(GLenum a, GLuint b) {
+	return interceptor::getCurrentExt()->glTestObjectAPPLE(a,b);
+}
+inline void glFinishObjectAPPLE(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glFinishObjectAPPLE(a,b);
+}
+inline void glBindVertexArrayAPPLE(GLuint a) {
+	interceptor::getCurrentExt()->glBindVertexArrayAPPLE(a);
+}
+inline void glDeleteVertexArraysAPPLE(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteVertexArraysAPPLE(a,b);
+}
+inline void glGenVertexArraysAPPLE(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenVertexArraysAPPLE(a,b);
+}
+inline GLboolean glIsVertexArrayAPPLE(GLuint a) {
+	return interceptor::getCurrentExt()->glIsVertexArrayAPPLE(a);
+}
+inline void glVertexArrayRangeAPPLE(GLsizei a, GLvoid *b) {
+	interceptor::getCurrentExt()->glVertexArrayRangeAPPLE(a,b);
+}
+inline void glFlushVertexArrayRangeAPPLE(GLsizei a, GLvoid *b) {
+	interceptor::getCurrentExt()->glFlushVertexArrayRangeAPPLE(a,b);
+}
+inline void glVertexArrayParameteriAPPLE(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glVertexArrayParameteriAPPLE(a,b);
+}
+inline void glDrawBuffersATI(GLsizei a, const GLenum *b) {
+	interceptor::getCurrentExt()->glDrawBuffersATI(a,b);
+}
+inline void glProgramNamedParameter4fNV(GLuint a, GLsizei b, const GLubyte *c, GLfloat d, GLfloat e, GLfloat f, GLfloat g) {
+	interceptor::getCurrentExt()->glProgramNamedParameter4fNV(a,b,c,d,e,f,g);
+}
+inline void glProgramNamedParameter4dNV(GLuint a, GLsizei b, const GLubyte *c, GLdouble d, GLdouble e, GLdouble f, GLdouble g) {
+	interceptor::getCurrentExt()->glProgramNamedParameter4dNV(a,b,c,d,e,f,g);
+}
+inline void glProgramNamedParameter4fvNV(GLuint a, GLsizei b, const GLubyte *c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glProgramNamedParameter4fvNV(a,b,c,d);
+}
+inline void glProgramNamedParameter4dvNV(GLuint a, GLsizei b, const GLubyte *c, const GLdouble *d) {
+	interceptor::getCurrentExt()->glProgramNamedParameter4dvNV(a,b,c,d);
+}
+inline void glGetProgramNamedParameterfvNV(GLuint a, GLsizei b, const GLubyte *c, GLfloat *d) {
+	interceptor::getCurrentExt()->glGetProgramNamedParameterfvNV(a,b,c,d);
+}
+inline void glGetProgramNamedParameterdvNV(GLuint a, GLsizei b, const GLubyte *c, GLdouble *d) {
+	interceptor::getCurrentExt()->glGetProgramNamedParameterdvNV(a,b,c,d);
+}
+inline void glVertex2hNV(GLhalfNV a, GLhalfNV b) {
+	interceptor::getCurrentExt()->glVertex2hNV(a,b);
+}
+inline void glVertex2hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glVertex2hvNV(a);
+}
+inline void glVertex3hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glVertex3hNV(a,b,c);
+}
+inline void glVertex3hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glVertex3hvNV(a);
+}
+inline void glVertex4hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c, GLhalfNV d) {
+	interceptor::getCurrentExt()->glVertex4hNV(a,b,c,d);
+}
+inline void glVertex4hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glVertex4hvNV(a);
+}
+inline void glNormal3hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glNormal3hNV(a,b,c);
+}
+inline void glNormal3hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glNormal3hvNV(a);
+}
+inline void glColor3hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glColor3hNV(a,b,c);
+}
+inline void glColor3hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glColor3hvNV(a);
+}
+inline void glColor4hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c, GLhalfNV d) {
+	interceptor::getCurrentExt()->glColor4hNV(a,b,c,d);
+}
+inline void glColor4hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glColor4hvNV(a);
+}
+inline void glTexCoord1hNV(GLhalfNV a) {
+	interceptor::getCurrentExt()->glTexCoord1hNV(a);
+}
+inline void glTexCoord1hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glTexCoord1hvNV(a);
+}
+inline void glTexCoord2hNV(GLhalfNV a, GLhalfNV b) {
+	interceptor::getCurrentExt()->glTexCoord2hNV(a,b);
+}
+inline void glTexCoord2hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glTexCoord2hvNV(a);
+}
+inline void glTexCoord3hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glTexCoord3hNV(a,b,c);
+}
+inline void glTexCoord3hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glTexCoord3hvNV(a);
+}
+inline void glTexCoord4hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c, GLhalfNV d) {
+	interceptor::getCurrentExt()->glTexCoord4hNV(a,b,c,d);
+}
+inline void glTexCoord4hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glTexCoord4hvNV(a);
+}
+inline void glMultiTexCoord1hNV(GLenum a, GLhalfNV b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1hNV(a,b);
+}
+inline void glMultiTexCoord1hvNV(GLenum a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord1hvNV(a,b);
+}
+inline void glMultiTexCoord2hNV(GLenum a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glMultiTexCoord2hNV(a,b,c);
+}
+inline void glMultiTexCoord2hvNV(GLenum a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord2hvNV(a,b);
+}
+inline void glMultiTexCoord3hNV(GLenum a, GLhalfNV b, GLhalfNV c, GLhalfNV d) {
+	interceptor::getCurrentExt()->glMultiTexCoord3hNV(a,b,c,d);
+}
+inline void glMultiTexCoord3hvNV(GLenum a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord3hvNV(a,b);
+}
+inline void glMultiTexCoord4hNV(GLenum a, GLhalfNV b, GLhalfNV c, GLhalfNV d, GLhalfNV e) {
+	interceptor::getCurrentExt()->glMultiTexCoord4hNV(a,b,c,d,e);
+}
+inline void glMultiTexCoord4hvNV(GLenum a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glMultiTexCoord4hvNV(a,b);
+}
+inline void glFogCoordhNV(GLhalfNV a) {
+	interceptor::getCurrentExt()->glFogCoordhNV(a);
+}
+inline void glFogCoordhvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glFogCoordhvNV(a);
+}
+inline void glSecondaryColor3hNV(GLhalfNV a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glSecondaryColor3hNV(a,b,c);
+}
+inline void glSecondaryColor3hvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glSecondaryColor3hvNV(a);
+}
+inline void glVertexWeighthNV(GLhalfNV a) {
+	interceptor::getCurrentExt()->glVertexWeighthNV(a);
+}
+inline void glVertexWeighthvNV(const GLhalfNV *a) {
+	interceptor::getCurrentExt()->glVertexWeighthvNV(a);
+}
+inline void glVertexAttrib1hNV(GLuint a, GLhalfNV b) {
+	interceptor::getCurrentExt()->glVertexAttrib1hNV(a,b);
+}
+inline void glVertexAttrib1hvNV(GLuint a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glVertexAttrib1hvNV(a,b);
+}
+inline void glVertexAttrib2hNV(GLuint a, GLhalfNV b, GLhalfNV c) {
+	interceptor::getCurrentExt()->glVertexAttrib2hNV(a,b,c);
+}
+inline void glVertexAttrib2hvNV(GLuint a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glVertexAttrib2hvNV(a,b);
+}
+inline void glVertexAttrib3hNV(GLuint a, GLhalfNV b, GLhalfNV c, GLhalfNV d) {
+	interceptor::getCurrentExt()->glVertexAttrib3hNV(a,b,c,d);
+}
+inline void glVertexAttrib3hvNV(GLuint a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glVertexAttrib3hvNV(a,b);
+}
+inline void glVertexAttrib4hNV(GLuint a, GLhalfNV b, GLhalfNV c, GLhalfNV d, GLhalfNV e) {
+	interceptor::getCurrentExt()->glVertexAttrib4hNV(a,b,c,d,e);
+}
+inline void glVertexAttrib4hvNV(GLuint a, const GLhalfNV *b) {
+	interceptor::getCurrentExt()->glVertexAttrib4hvNV(a,b);
+}
+inline void glVertexAttribs1hvNV(GLuint a, GLsizei b, const GLhalfNV *c) {
+	interceptor::getCurrentExt()->glVertexAttribs1hvNV(a,b,c);
+}
+inline void glVertexAttribs2hvNV(GLuint a, GLsizei b, const GLhalfNV *c) {
+	interceptor::getCurrentExt()->glVertexAttribs2hvNV(a,b,c);
+}
+inline void glVertexAttribs3hvNV(GLuint a, GLsizei b, const GLhalfNV *c) {
+	interceptor::getCurrentExt()->glVertexAttribs3hvNV(a,b,c);
+}
+inline void glVertexAttribs4hvNV(GLuint a, GLsizei b, const GLhalfNV *c) {
+	interceptor::getCurrentExt()->glVertexAttribs4hvNV(a,b,c);
+}
+inline void glPixelDataRangeNV(GLenum a, GLsizei b, GLvoid *c) {
+	interceptor::getCurrentExt()->glPixelDataRangeNV(a,b,c);
+}
+inline void glFlushPixelDataRangeNV(GLenum a) {
+	interceptor::getCurrentExt()->glFlushPixelDataRangeNV(a);
+}
+inline void glPrimitiveRestartNV(void) {
+	interceptor::getCurrentExt()->glPrimitiveRestartNV();
+}
+inline void glPrimitiveRestartIndexNV(GLuint a) {
+	interceptor::getCurrentExt()->glPrimitiveRestartIndexNV(a);
+}
+inline GLvoid* glMapObjectBufferATI(GLuint a) {
+	return interceptor::getCurrentExt()->glMapObjectBufferATI(a);
+}
+inline void glUnmapObjectBufferATI(GLuint a) {
+	interceptor::getCurrentExt()->glUnmapObjectBufferATI(a);
+}
+inline void glStencilOpSeparateATI(GLenum a, GLenum b, GLenum c, GLenum d) {
+	interceptor::getCurrentExt()->glStencilOpSeparateATI(a,b,c,d);
+}
+inline void glStencilFuncSeparateATI(GLenum a, GLenum b, GLint c, GLuint d) {
+	interceptor::getCurrentExt()->glStencilFuncSeparateATI(a,b,c,d);
+}
+inline void glVertexAttribArrayObjectATI(GLuint a, GLint b, GLenum c, GLboolean d, GLsizei e, GLuint f, GLuint g) {
+	interceptor::getCurrentExt()->glVertexAttribArrayObjectATI(a,b,c,d,e,f,g);
+}
+inline void glGetVertexAttribArrayObjectfvATI(GLuint a, GLenum b, GLfloat *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribArrayObjectfvATI(a,b,c);
+}
+inline void glGetVertexAttribArrayObjectivATI(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribArrayObjectivATI(a,b,c);
+}
+inline void glDepthBoundsEXT(GLclampd a, GLclampd b) {
+	interceptor::getCurrentExt()->glDepthBoundsEXT(a,b);
+}
+inline void glBlendEquationSeparateEXT(GLenum a, GLenum b) {
+	interceptor::getCurrentExt()->glBlendEquationSeparateEXT(a,b);
+}
+inline GLboolean glIsRenderbufferEXT(GLuint a) {
+	return interceptor::getCurrentExt()->glIsRenderbufferEXT(a);
+}
+inline void glBindRenderbufferEXT(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindRenderbufferEXT(a,b);
+}
+inline void glDeleteRenderbuffersEXT(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteRenderbuffersEXT(a,b);
+}
+inline void glGenRenderbuffersEXT(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenRenderbuffersEXT(a,b);
+}
+inline void glRenderbufferStorageEXT(GLenum a, GLenum b, GLsizei c, GLsizei d) {
+	interceptor::getCurrentExt()->glRenderbufferStorageEXT(a,b,c,d);
+}
+inline void glGetRenderbufferParameterivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetRenderbufferParameterivEXT(a,b,c);
+}
+inline GLboolean glIsFramebufferEXT(GLuint a) {
+	return interceptor::getCurrentExt()->glIsFramebufferEXT(a);
+}
+inline void glBindFramebufferEXT(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glBindFramebufferEXT(a,b);
+}
+inline void glDeleteFramebuffersEXT(GLsizei a, const GLuint *b) {
+	interceptor::getCurrentExt()->glDeleteFramebuffersEXT(a,b);
+}
+inline void glGenFramebuffersEXT(GLsizei a, GLuint *b) {
+	interceptor::getCurrentExt()->glGenFramebuffersEXT(a,b);
+}
+inline GLenum glCheckFramebufferStatusEXT(GLenum a) {
+	return interceptor::getCurrentExt()->glCheckFramebufferStatusEXT(a);
+}
+inline void glFramebufferTexture1DEXT(GLenum a, GLenum b, GLenum c, GLuint d, GLint e) {
+	interceptor::getCurrentExt()->glFramebufferTexture1DEXT(a,b,c,d,e);
+}
+inline void glFramebufferTexture2DEXT(GLenum a, GLenum b, GLenum c, GLuint d, GLint e) {
+	interceptor::getCurrentExt()->glFramebufferTexture2DEXT(a,b,c,d,e);
+}
+inline void glFramebufferTexture3DEXT(GLenum a, GLenum b, GLenum c, GLuint d, GLint e, GLint f) {
+	interceptor::getCurrentExt()->glFramebufferTexture3DEXT(a,b,c,d,e,f);
+}
+inline void glFramebufferRenderbufferEXT(GLenum a, GLenum b, GLenum c, GLuint d) {
+	interceptor::getCurrentExt()->glFramebufferRenderbufferEXT(a,b,c,d);
+}
+inline void glGetFramebufferAttachmentParameterivEXT(GLenum a, GLenum b, GLenum c, GLint *d) {
+	interceptor::getCurrentExt()->glGetFramebufferAttachmentParameterivEXT(a,b,c,d);
+}
+inline void glGenerateMipmapEXT(GLenum a) {
+	interceptor::getCurrentExt()->glGenerateMipmapEXT(a);
+}
+inline void glStringMarkerGREMEDY(GLsizei a, const GLvoid *b) {
+	interceptor::getCurrentExt()->glStringMarkerGREMEDY(a,b);
+}
+inline void glStencilClearTagEXT(GLsizei a, GLuint b) {
+	interceptor::getCurrentExt()->glStencilClearTagEXT(a,b);
+}
+inline void glBlitFramebufferEXT(GLint a, GLint b, GLint c, GLint d, GLint e, GLint f, GLint g, GLint h, GLbitfield i, GLenum j) {
+	interceptor::getCurrentExt()->glBlitFramebufferEXT(a,b,c,d,e,f,g,h,i,j);
+}
+inline void glRenderbufferStorageMultisampleEXT(GLenum a, GLsizei b, GLenum c, GLsizei d, GLsizei e) {
+	interceptor::getCurrentExt()->glRenderbufferStorageMultisampleEXT(a,b,c,d,e);
+}
+inline void glGetQueryObjecti64vEXT(GLuint a, GLenum b, GLint64EXT *c) {
+	interceptor::getCurrentExt()->glGetQueryObjecti64vEXT(a,b,c);
+}
+inline void glGetQueryObjectui64vEXT(GLuint a, GLenum b, GLuint64EXT *c) {
+	interceptor::getCurrentExt()->glGetQueryObjectui64vEXT(a,b,c);
+}
+inline void glProgramEnvParameters4fvEXT(GLenum a, GLuint b, GLsizei c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glProgramEnvParameters4fvEXT(a,b,c,d);
+}
+inline void glProgramLocalParameters4fvEXT(GLenum a, GLuint b, GLsizei c, const GLfloat *d) {
+	interceptor::getCurrentExt()->glProgramLocalParameters4fvEXT(a,b,c,d);
+}
+inline void glBufferParameteriAPPLE(GLenum a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glBufferParameteriAPPLE(a,b,c);
+}
+inline void glFlushMappedBufferRangeAPPLE(GLenum a, GLintptr b, GLsizeiptr c) {
+	interceptor::getCurrentExt()->glFlushMappedBufferRangeAPPLE(a,b,c);
+}
+inline void glProgramLocalParameterI4iNV(GLenum a, GLuint b, GLint c, GLint d, GLint e, GLint f) {
+	interceptor::getCurrentExt()->glProgramLocalParameterI4iNV(a,b,c,d,e,f);
+}
+inline void glProgramLocalParameterI4ivNV(GLenum a, GLuint b, const GLint *c) {
+	interceptor::getCurrentExt()->glProgramLocalParameterI4ivNV(a,b,c);
+}
+inline void glProgramLocalParametersI4ivNV(GLenum a, GLuint b, GLsizei c, const GLint *d) {
+	interceptor::getCurrentExt()->glProgramLocalParametersI4ivNV(a,b,c,d);
+}
+inline void glProgramLocalParameterI4uiNV(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f) {
+	interceptor::getCurrentExt()->glProgramLocalParameterI4uiNV(a,b,c,d,e,f);
+}
+inline void glProgramLocalParameterI4uivNV(GLenum a, GLuint b, const GLuint *c) {
+	interceptor::getCurrentExt()->glProgramLocalParameterI4uivNV(a,b,c);
+}
+inline void glProgramLocalParametersI4uivNV(GLenum a, GLuint b, GLsizei c, const GLuint *d) {
+	interceptor::getCurrentExt()->glProgramLocalParametersI4uivNV(a,b,c,d);
+}
+inline void glProgramEnvParameterI4iNV(GLenum a, GLuint b, GLint c, GLint d, GLint e, GLint f) {
+	interceptor::getCurrentExt()->glProgramEnvParameterI4iNV(a,b,c,d,e,f);
+}
+inline void glProgramEnvParameterI4ivNV(GLenum a, GLuint b, const GLint *c) {
+	interceptor::getCurrentExt()->glProgramEnvParameterI4ivNV(a,b,c);
+}
+inline void glProgramEnvParametersI4ivNV(GLenum a, GLuint b, GLsizei c, const GLint *d) {
+	interceptor::getCurrentExt()->glProgramEnvParametersI4ivNV(a,b,c,d);
+}
+inline void glProgramEnvParameterI4uiNV(GLenum a, GLuint b, GLuint c, GLuint d, GLuint e, GLuint f) {
+	interceptor::getCurrentExt()->glProgramEnvParameterI4uiNV(a,b,c,d,e,f);
+}
+inline void glProgramEnvParameterI4uivNV(GLenum a, GLuint b, const GLuint *c) {
+	interceptor::getCurrentExt()->glProgramEnvParameterI4uivNV(a,b,c);
+}
+inline void glProgramEnvParametersI4uivNV(GLenum a, GLuint b, GLsizei c, const GLuint *d) {
+	interceptor::getCurrentExt()->glProgramEnvParametersI4uivNV(a,b,c,d);
+}
+inline void glGetProgramLocalParameterIivNV(GLenum a, GLuint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetProgramLocalParameterIivNV(a,b,c);
+}
+inline void glGetProgramLocalParameterIuivNV(GLenum a, GLuint b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetProgramLocalParameterIuivNV(a,b,c);
+}
+inline void glGetProgramEnvParameterIivNV(GLenum a, GLuint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetProgramEnvParameterIivNV(a,b,c);
+}
+inline void glGetProgramEnvParameterIuivNV(GLenum a, GLuint b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetProgramEnvParameterIuivNV(a,b,c);
+}
+inline void glProgramVertexLimitNV(GLenum a, GLint b) {
+	interceptor::getCurrentExt()->glProgramVertexLimitNV(a,b);
+}
+inline void glFramebufferTextureEXT(GLenum a, GLenum b, GLuint c, GLint d) {
+	interceptor::getCurrentExt()->glFramebufferTextureEXT(a,b,c,d);
+}
+inline void glFramebufferTextureLayerEXT(GLenum a, GLenum b, GLuint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glFramebufferTextureLayerEXT(a,b,c,d,e);
+}
+inline void glFramebufferTextureFaceEXT(GLenum a, GLenum b, GLuint c, GLint d, GLenum e) {
+	interceptor::getCurrentExt()->glFramebufferTextureFaceEXT(a,b,c,d,e);
+}
+inline void glProgramParameteriEXT(GLuint a, GLenum b, GLint c) {
+	interceptor::getCurrentExt()->glProgramParameteriEXT(a,b,c);
+}
+inline void glVertexAttribI1iEXT(GLuint a, GLint b) {
+	interceptor::getCurrentExt()->glVertexAttribI1iEXT(a,b);
+}
+inline void glVertexAttribI2iEXT(GLuint a, GLint b, GLint c) {
+	interceptor::getCurrentExt()->glVertexAttribI2iEXT(a,b,c);
+}
+inline void glVertexAttribI3iEXT(GLuint a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glVertexAttribI3iEXT(a,b,c,d);
+}
+inline void glVertexAttribI4iEXT(GLuint a, GLint b, GLint c, GLint d, GLint e) {
+	interceptor::getCurrentExt()->glVertexAttribI4iEXT(a,b,c,d,e);
+}
+inline void glVertexAttribI1uiEXT(GLuint a, GLuint b) {
+	interceptor::getCurrentExt()->glVertexAttribI1uiEXT(a,b);
+}
+inline void glVertexAttribI2uiEXT(GLuint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glVertexAttribI2uiEXT(a,b,c);
+}
+inline void glVertexAttribI3uiEXT(GLuint a, GLuint b, GLuint c, GLuint d) {
+	interceptor::getCurrentExt()->glVertexAttribI3uiEXT(a,b,c,d);
+}
+inline void glVertexAttribI4uiEXT(GLuint a, GLuint b, GLuint c, GLuint d, GLuint e) {
+	interceptor::getCurrentExt()->glVertexAttribI4uiEXT(a,b,c,d,e);
+}
+inline void glVertexAttribI1ivEXT(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI1ivEXT(a,b);
+}
+inline void glVertexAttribI2ivEXT(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI2ivEXT(a,b);
+}
+inline void glVertexAttribI3ivEXT(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI3ivEXT(a,b);
+}
+inline void glVertexAttribI4ivEXT(GLuint a, const GLint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4ivEXT(a,b);
+}
+inline void glVertexAttribI1uivEXT(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI1uivEXT(a,b);
+}
+inline void glVertexAttribI2uivEXT(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI2uivEXT(a,b);
+}
+inline void glVertexAttribI3uivEXT(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI3uivEXT(a,b);
+}
+inline void glVertexAttribI4uivEXT(GLuint a, const GLuint *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4uivEXT(a,b);
+}
+inline void glVertexAttribI4bvEXT(GLuint a, const GLbyte *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4bvEXT(a,b);
+}
+inline void glVertexAttribI4svEXT(GLuint a, const GLshort *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4svEXT(a,b);
+}
+inline void glVertexAttribI4ubvEXT(GLuint a, const GLubyte *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4ubvEXT(a,b);
+}
+inline void glVertexAttribI4usvEXT(GLuint a, const GLushort *b) {
+	interceptor::getCurrentExt()->glVertexAttribI4usvEXT(a,b);
+}
+inline void glVertexAttribIPointerEXT(GLuint a, GLint b, GLenum c, GLsizei d, const GLvoid *e) {
+	interceptor::getCurrentExt()->glVertexAttribIPointerEXT(a,b,c,d,e);
+}
+inline void glGetVertexAttribIivEXT(GLuint a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribIivEXT(a,b,c);
+}
+inline void glGetVertexAttribIuivEXT(GLuint a, GLenum b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetVertexAttribIuivEXT(a,b,c);
+}
+inline void glGetUniformuivEXT(GLuint a, GLint b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetUniformuivEXT(a,b,c);
+}
+inline void glBindFragDataLocationEXT(GLuint a, GLuint b, const GLchar *c) {
+	interceptor::getCurrentExt()->glBindFragDataLocationEXT(a,b,c);
+}
+inline GLint glGetFragDataLocationEXT(GLuint a, const GLchar *b) {
+	return interceptor::getCurrentExt()->glGetFragDataLocationEXT(a,b);
+}
+inline void glUniform1uiEXT(GLint a, GLuint b) {
+	interceptor::getCurrentExt()->glUniform1uiEXT(a,b);
+}
+inline void glUniform2uiEXT(GLint a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glUniform2uiEXT(a,b,c);
+}
+inline void glUniform3uiEXT(GLint a, GLuint b, GLuint c, GLuint d) {
+	interceptor::getCurrentExt()->glUniform3uiEXT(a,b,c,d);
+}
+inline void glUniform4uiEXT(GLint a, GLuint b, GLuint c, GLuint d, GLuint e) {
+	interceptor::getCurrentExt()->glUniform4uiEXT(a,b,c,d,e);
+}
+inline void glUniform1uivEXT(GLint a, GLsizei b, const GLuint *c) {
+	interceptor::getCurrentExt()->glUniform1uivEXT(a,b,c);
+}
+inline void glUniform2uivEXT(GLint a, GLsizei b, const GLuint *c) {
+	interceptor::getCurrentExt()->glUniform2uivEXT(a,b,c);
+}
+inline void glUniform3uivEXT(GLint a, GLsizei b, const GLuint *c) {
+	interceptor::getCurrentExt()->glUniform3uivEXT(a,b,c);
+}
+inline void glUniform4uivEXT(GLint a, GLsizei b, const GLuint *c) {
+	interceptor::getCurrentExt()->glUniform4uivEXT(a,b,c);
+}
+inline void glDrawArraysInstancedEXT(GLenum a, GLint b, GLsizei c, GLsizei d) {
+	interceptor::getCurrentExt()->glDrawArraysInstancedEXT(a,b,c,d);
+}
+inline void glDrawElementsInstancedEXT(GLenum a, GLsizei b, GLenum c, const GLvoid *d, GLsizei e) {
+	interceptor::getCurrentExt()->glDrawElementsInstancedEXT(a,b,c,d,e);
+}
+inline void glTexBufferEXT(GLenum a, GLenum b, GLuint c) {
+	interceptor::getCurrentExt()->glTexBufferEXT(a,b,c);
+}
+inline void glDepthRangedNV(GLdouble a, GLdouble b) {
+	interceptor::getCurrentExt()->glDepthRangedNV(a,b);
+}
+inline void glClearDepthdNV(GLdouble a) {
+	interceptor::getCurrentExt()->glClearDepthdNV(a);
+}
+inline void glDepthBoundsdNV(GLdouble a, GLdouble b) {
+	interceptor::getCurrentExt()->glDepthBoundsdNV(a,b);
+}
+inline void glRenderbufferStorageMultisampleCoverageNV(GLenum a, GLsizei b, GLsizei c, GLenum d, GLsizei e, GLsizei f) {
+	interceptor::getCurrentExt()->glRenderbufferStorageMultisampleCoverageNV(a,b,c,d,e,f);
+}
+inline void glProgramBufferParametersfvNV(GLenum a, GLuint b, GLuint c, GLsizei d, const GLfloat *e) {
+	interceptor::getCurrentExt()->glProgramBufferParametersfvNV(a,b,c,d,e);
+}
+inline void glProgramBufferParametersIivNV(GLenum a, GLuint b, GLuint c, GLsizei d, const GLint *e) {
+	interceptor::getCurrentExt()->glProgramBufferParametersIivNV(a,b,c,d,e);
+}
+inline void glProgramBufferParametersIuivNV(GLenum a, GLuint b, GLuint c, GLsizei d, const GLuint *e) {
+	interceptor::getCurrentExt()->glProgramBufferParametersIuivNV(a,b,c,d,e);
+}
+inline void glColorMaskIndexedEXT(GLuint a, GLboolean b, GLboolean c, GLboolean d, GLboolean e) {
+	interceptor::getCurrentExt()->glColorMaskIndexedEXT(a,b,c,d,e);
+}
+inline void glGetBooleanIndexedvEXT(GLenum a, GLuint b, GLboolean *c) {
+	interceptor::getCurrentExt()->glGetBooleanIndexedvEXT(a,b,c);
+}
+inline void glGetIntegerIndexedvEXT(GLenum a, GLuint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetIntegerIndexedvEXT(a,b,c);
+}
+inline void glEnableIndexedEXT(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glEnableIndexedEXT(a,b);
+}
+inline void glDisableIndexedEXT(GLenum a, GLuint b) {
+	interceptor::getCurrentExt()->glDisableIndexedEXT(a,b);
+}
+inline GLboolean glIsEnabledIndexedEXT(GLenum a, GLuint b) {
+	return interceptor::getCurrentExt()->glIsEnabledIndexedEXT(a,b);
+}
+inline void glBeginTransformFeedbackNV(GLenum a) {
+	interceptor::getCurrentExt()->glBeginTransformFeedbackNV(a);
+}
+inline void glEndTransformFeedbackNV(void) {
+	interceptor::getCurrentExt()->glEndTransformFeedbackNV();
+}
+inline void glTransformFeedbackAttribsNV(GLuint a, const GLint *b, GLenum c) {
+	interceptor::getCurrentExt()->glTransformFeedbackAttribsNV(a,b,c);
+}
+inline void glBindBufferRangeNV(GLenum a, GLuint b, GLuint c, GLintptr d, GLsizeiptr e) {
+	interceptor::getCurrentExt()->glBindBufferRangeNV(a,b,c,d,e);
+}
+inline void glBindBufferOffsetNV(GLenum a, GLuint b, GLuint c, GLintptr d) {
+	interceptor::getCurrentExt()->glBindBufferOffsetNV(a,b,c,d);
+}
+inline void glBindBufferBaseNV(GLenum a, GLuint b, GLuint c) {
+	interceptor::getCurrentExt()->glBindBufferBaseNV(a,b,c);
+}
+inline void glTransformFeedbackVaryingsNV(GLuint a, GLsizei b, const GLint *c, GLenum d) {
+	interceptor::getCurrentExt()->glTransformFeedbackVaryingsNV(a,b,c,d);
+}
+inline void glActiveVaryingNV(GLuint a, const GLchar *b) {
+	interceptor::getCurrentExt()->glActiveVaryingNV(a,b);
+}
+inline GLint glGetVaryingLocationNV(GLuint a, const GLchar *b) {
+	return interceptor::getCurrentExt()->glGetVaryingLocationNV(a,b);
+}
+inline void glGetActiveVaryingNV(GLuint a, GLuint b, GLsizei c, GLsizei *d, GLsizei *e, GLenum *f, GLchar *g) {
+	interceptor::getCurrentExt()->glGetActiveVaryingNV(a,b,c,d,e,f,g);
+}
+inline void glGetTransformFeedbackVaryingNV(GLuint a, GLuint b, GLint *c) {
+	interceptor::getCurrentExt()->glGetTransformFeedbackVaryingNV(a,b,c);
+}
+inline void glUniformBufferEXT(GLuint a, GLint b, GLuint c) {
+	interceptor::getCurrentExt()->glUniformBufferEXT(a,b,c);
+}
+inline GLint glGetUniformBufferSizeEXT(GLuint a, GLint b) {
+	return interceptor::getCurrentExt()->glGetUniformBufferSizeEXT(a,b);
+}
+inline GLintptr glGetUniformOffsetEXT(GLuint a, GLint b) {
+	return interceptor::getCurrentExt()->glGetUniformOffsetEXT(a,b);
+}
+inline void glTexParameterIivEXT(GLenum a, GLenum b, const GLint *c) {
+	interceptor::getCurrentExt()->glTexParameterIivEXT(a,b,c);
+}
+inline void glTexParameterIuivEXT(GLenum a, GLenum b, const GLuint *c) {
+	interceptor::getCurrentExt()->glTexParameterIuivEXT(a,b,c);
+}
+inline void glGetTexParameterIivEXT(GLenum a, GLenum b, GLint *c) {
+	interceptor::getCurrentExt()->glGetTexParameterIivEXT(a,b,c);
+}
+inline void glGetTexParameterIuivEXT(GLenum a, GLenum b, GLuint *c) {
+	interceptor::getCurrentExt()->glGetTexParameterIuivEXT(a,b,c);
+}
+inline void glClearColorIiEXT(GLint a, GLint b, GLint c, GLint d) {
+	interceptor::getCurrentExt()->glClearColorIiEXT(a,b,c,d);
+}
+inline void glClearColorIuiEXT(GLuint a, GLuint b, GLuint c, GLuint d) {
+	interceptor::getCurrentExt()->glClearColorIuiEXT(a,b,c,d);
+}
+
+}//namespace glext
+
+//----------------------------------------------------------------------------
+
+#endif//__glexpub_h

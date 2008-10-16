@@ -52,6 +52,8 @@
  * University of Hull, Hull, UK.
  */
 
+#include "port.h"
+
 // Include windows ahead of GL to avoid problems
 #ifdef  _WIN32
 #include <windows.h>

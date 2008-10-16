@@ -1,6 +1,3 @@
-#include "Model.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -31,8 +28,11 @@ using namespace gxbase;
 #include <stdio.h>
 #include <assert.h>
 
+#include "Model.h"
 #include "TModel.h"
 #include "glcontextls.h"
+
+using namespace gxbase;
 
 //-----------------------------------------------------------------------------
 
@@ -276,7 +276,7 @@ bool ModelEx::Load(const char *name) {
 		return false;
 	}
 
-	dbg_printf("3ds: file size = %ld\n", chunk.Size());
+	dbg_printf("3ds: file size = %ld\n", (long)chunk.Size());
 
 	// parse the remainder of the file
 	Parse(&chunk);

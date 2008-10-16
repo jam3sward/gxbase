@@ -23,10 +23,8 @@
  *
  \**************************************************************************/
 
-#ifdef _WIN32
-#include <windows.h>
-#endif//_WIN32
-
+#include "port.h"
+#include <stdlib.h>
 #include <assert.h>
 #include <vector>
 using namespace std;
@@ -67,7 +65,13 @@ public:
 	int Execute(int argc, char **argv);
 
 	HINSTANCE GetInstanceHandle() {
-		if (!m_hInst) m_hInst = GetModuleHandle(NULL);
+		if(!m_hInst) {
+#ifdef __WIN32__
+			m_hInst = GetModuleHandle(NULL);
+#else	/* unix */
+			m_hInst = getpid();
+#endif
+		}
 		return m_hInst;
 	}
 
@@ -79,17 +83,21 @@ public:
 		return ((n>=0)&&(n<ArgCount())&&m_argv) ? m_argv[n]:"";
 	}
 
+#ifdef __WIN32__
 	bool CreateWndClass();
 	void DeleteWndClass();
 
 	bool CreateHidden();
 	void DeleteHidden();
+#endif
 
 	bool AddWnd(WindowEx *window);
 	void DelWnd(WindowEx *window);
 	bool SetMainWnd(WindowEx *window);
 	WindowEx *GetMainWnd();
+#ifdef __WIN32__
 	HWND GetHiddenWnd() const { return m_hWndHid; }
+#endif
 
 	void SetConsole(bool isConsole) { m_bConsole=isConsole; }
 	bool GetConsole() const { return m_bConsole; }
@@ -97,39 +105,32 @@ public:
 	unsigned SetTimerPeriod(unsigned ms);
 	unsigned GetTimerPeriod() const;
 
+#ifdef __WIN32__
 	static VOID CALLBACK TimerCB(
 		HWND hwnd,
 		UINT uMsg,
 		UINT_PTR idEvent,
 		DWORD dwTime
 	);
+#else	/* any UNIX */
+	static void timer_callback(unsigned int msec);
+#endif
 
 private:
 	int MessageLoop();
 
 	void OnIdle();
 
+#ifdef __WIN32__
 	static LRESULT CALLBACK WindowProc(HWND, UINT, WPARAM, LPARAM);
+#endif
+#ifdef __X11__
+	static int handle_events(Display *dpy, XEvent *ev);
+#endif
 
 private:
-	Main() {
-		dbg_printf("Main\n");
-		m_pApp  = NULL;
-		m_hInst = NULL;
-		m_hWndClass = 0;
-		m_argc  = 0;
-		m_argv  = NULL;
-		m_bConsole = false;
-		m_pMainWnd = NULL;
-		m_hWndHid = NULL;
-		m_timerPeriod = 0;
-		m_timerId = 0;
-	}
-
-	virtual ~Main() {
-		dbg_printf("~Main\n");
-		DeleteWndClass();
-	}
+	Main();
+	virtual ~Main();
 
 	static void Destroy() {
 		delete self;
@@ -138,15 +139,22 @@ private:
 private:
 	App *m_pApp;
 	HINSTANCE m_hInst;			// application instance handle
+#ifdef __WIN32__
 	ATOM	  m_hWndClass;		// window class atom
 	HWND	  m_hWndHid;		// hidden window
+#endif
+
 	static Main *self;
 	int	   m_argc;				// argument count
 	char **m_argv;				// pointer to arguments
 	vector<WindowEx*> m_wins;	// vector of window pointers
 	bool	m_bConsole;			// is this a console app?
 	WindowEx *m_pMainWnd;		// pointer to main windowex object	
+#ifdef __WIN32__
 	UINT_PTR m_timerId;			// timer id or zero
+#else
+	unsigned int timer_exp;
+#endif
 	unsigned m_timerPeriod;		// timer period (ms) or zero (disabled)
 };
 _GXBASE_END

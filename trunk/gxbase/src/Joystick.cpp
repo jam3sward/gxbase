@@ -87,7 +87,7 @@ Joystick::~Joystick() {
 //-----------------------------------------------------------------------------
 
 #ifdef GXB_JOY_SDL
-	bool Joystick::Open() {
+	bool Joystick::Open(int n) {
 		if (_joy) return true;
 
 		// number of joysticks
@@ -137,7 +137,7 @@ int Joystick::Count() {
 	#ifdef _WIN32
 		// number of joysticks
 		return joyGetNumDevs(); 
-	#else if defined(GXB_JOY_SDL)
+	#elif defined(GXB_JOY_SDL)
 		// number of joysticks
 		return SDL_NumJoysticks();
 	#endif

@@ -1,11 +1,10 @@
-#include "GXBase.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
  * Copyright (C) 2003-2006 James Ward, Department of Computer Science,
  * University of Hull. All rights reserved.
+ *
+ * UNIX port copyright (C) 2008 John Tsiombikas <nuclear@member.fsf.org>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -23,8 +22,17 @@ using namespace gxbase;
  *
  \**************************************************************************/
 
+// [JT] every platform-specific thing in here should be moved into WindowEx
+//      that's what I did with the X11 version, see win_x11.h/win_x11.cpp
+
+#include <string.h>
+#include <stdarg.h>
+#include "GXBase.h"
 #include "ErrDbg.h"
 #include "Main.h"
+#include "WindowEx.h"
+
+using namespace gxbase;
 
 //---- Window -----------------------------------------------------------------
 
@@ -35,14 +43,17 @@ GLWindow::GLWindow() {
 	//dbg_printf("CreateWnd(0x%08lX)\n", (long)window);
 	//if (!window) return NULL;
 
+#ifdef __WIN32__
 	if (!Main::Get()->CreateWndClass()) {
 		err_printf("Failed to register window class\n");
 		//return NULL;
 		return;
 	}
+#endif
 
 	// create WindowEx instance to hold all the platform specific complexity
 	extra = new WindowEx(this);
+	// [JT] BUG: the following won't work, new doesn't return 0, it throws an exception
 	assert(extra!=NULL);
 
 	// add windowex to internal window list of main app
@@ -66,12 +77,13 @@ void GLWindow::OnCreate()  {
 	dbg_printf("GLWindow::OnCreate\n");
 }
 void GLWindow::OnDestroy() {
-	dbg_printf("GLWindow::OnDestroy 0x%08lX\n",this);
+	dbg_printf("GLWindow::OnDestroy 0x%08lX\n", (unsigned long)this);
 }
 
 void GLWindow::OnDisplay() {
 	dbg_printf("GLWindow::OnDisplay\n");
 	glClear(GL_COLOR_BUFFER_BIT);
+
 	SwapBuffers();
 }
 
@@ -154,7 +166,7 @@ bool GLWindow::HasExtension(const char *name) {
 //-----------------------------------------------------------------------------
 
 void GLWindow::Redraw() {
-	if (extra->m_hwnd) ::InvalidateRect(extra->m_hwnd,NULL,FALSE);
+	extra->Redraw();
 }//Redraw
 
 //-----------------------------------------------------------------------------
@@ -183,8 +195,7 @@ void GLWindow::Hide() {
  * should call the Hide() method instead.
  */
 void GLWindow::Close() {
-	// JWW 22/09/03 added this method
-	if (extra->m_hwnd) ::PostMessage( extra->m_hwnd, WM_CLOSE, 0,0 );
+	extra->Close();
 }//Close
 
 //-----------------------------------------------------------------------------
@@ -195,10 +206,15 @@ void GLWindow::Close() {
  * be covered by other windows.
  */
 bool GLWindow::IsVisible() const {
+#ifdef __WIN32__
 	// does window even exist?
 	if (!extra || !extra->m_hwnd) return false;
 	// if it exists, is it visible?
 	return (IsWindowVisible( extra->m_hwnd ) == TRUE);
+#endif
+#ifdef __X11__
+	return extra->is_mapped;
+#endif
 }//IsVisible
 
 //-----------------------------------------------------------------------------
@@ -223,16 +239,20 @@ void GLWindow::SetPosition(int x, int y) {
  * Get the window position. Returns the current window position.
  */
 void GLWindow::GetPosition(int &x, int &y) {
+#ifdef __WIN32__
 	RECT rc;
 	if (extra->m_hwnd && GetWindowRect(extra->m_hwnd, &rc)) {
 		// current position
 		x = rc.left;
 		y = rc.top;
 	} else {
+#endif
 		// cached position
 		x = extra->m_nXPos;
 		y = extra->m_nYPos;
+#ifdef __WIN32__
 	}
+#endif
 }//GetPosition
 
 /**
@@ -265,6 +285,7 @@ float GLWindow::Aspect() const {
  * case of failure.
  */
 bool GLWindow::SetStereo(bool stereo) {
+#ifdef __WIN32__
 	// anything to do?
 	if (stereo == GetStereo()) return true;
 
@@ -297,6 +318,9 @@ bool GLWindow::SetStereo(bool stereo) {
 		// setting until the window is created)
 		return true;
 	}
+#else
+	return false;
+#endif
 }//SetStereo
 
 /**
@@ -304,6 +328,7 @@ bool GLWindow::SetStereo(bool stereo) {
  * false otherwise.
  */
 bool GLWindow::GetStereo() const {
+#ifdef __WIN32__
 	// if we don't have an HDC return whatever preference was set
 	// with SetStereo
 	if (!extra->m_hdc)
@@ -319,6 +344,7 @@ bool GLWindow::GetStereo() const {
 	if (DescribePixelFormat(extra->m_hdc, pix, sizeof(pfd), &pfd) != 0)
 		return ((pfd.dwFlags & PFD_STEREO) != 0);
 	else
+#endif
 		return false;
 }//GetStereo
 
@@ -346,7 +372,7 @@ bool GLWindow::SetDoubleBuffer(bool bDouble) {
 
 	// recreate window if required: if not, we just cache the setting
 	// until the window is created
-	if (extra->m_hdc) {
+	if (extra->HaveContext()) {
 		if (extra->Create())
 			return true;
 		else {
@@ -369,11 +395,14 @@ bool GLWindow::SetDoubleBuffer(bool bDouble) {
  */
 bool GLWindow::GetDoubleBuffer() const {
 	// if we don't have an HDC return whatever preference was set
-	if (!extra->m_hdc)
+#ifdef __WIN32__
+	if (!extra->HaveContext())
+#endif
 		return ((extra->m_mode & GLAPP_DOUBLE) != 0);
 	
-	// otherwise, we look to see if the window really is stereo
+	// otherwise, we look to see if the window really is doublebuffered
 
+#ifdef __WIN32__
 	// get the pixel format of the window
 	int pix = GetPixelFormat(extra->m_hdc);
 
@@ -383,6 +412,7 @@ bool GLWindow::GetDoubleBuffer() const {
 		return ((pfd.dwFlags & PFD_DOUBLEBUFFER) != 0);
 	else
 		return false;
+#endif
 }//GetDoubleBuffer
 
 /**
@@ -399,7 +429,7 @@ bool GLWindow::SetDepthBits(int nBits) {
 	if ((nBits < 0) || (nBits > 255)) return false;
 
 	// if we don't have an HDC, just store setting for later
-	if (!extra->m_hdc) {
+	if (!extra->HaveContext()) {
 		extra->m_dbits = nBits;
 		return true;
 	}
@@ -432,8 +462,12 @@ bool GLWindow::SetDepthBits(int nBits) {
  */
 int GLWindow::GetDepthBits() const {
 	// if we don't have an HDC return whatever preference was set
-	if (!extra->m_hdc) return extra->m_dbits;
+#ifdef __WIN32__
+	if (!extra->m_hdc)
+#endif
+		return extra->m_dbits;
 
+#ifdef __WIN32__
 	// get the pixel format of the window
 	int pix = GetPixelFormat(extra->m_hdc);
 
@@ -443,6 +477,7 @@ int GLWindow::GetDepthBits() const {
 		return pfd.cDepthBits;
 	else
 		return 0;
+#endif
 }//GetDepthBits
 
 /**
@@ -455,7 +490,7 @@ bool GLWindow::SetStencilBits(int nBits) {
 	if ((nBits < 0) || (nBits > 255)) return false;
 
 	// if we don't have an HDC, just store setting for later
-	if (!extra->m_hdc) {
+	if (!extra->HaveContext()) {
 		extra->m_sbits = nBits;
 		return true;
 	}
@@ -485,8 +520,12 @@ bool GLWindow::SetStencilBits(int nBits) {
  */
 int GLWindow::GetStencilBits() const {
 	// if we don't have an HDC return whatever preference was set
-	if (!extra->m_hdc) return extra->m_sbits;
+#ifdef __WIN32__
+	if (!extra->m_hdc)
+#endif
+		return extra->m_sbits;
 
+#ifdef __WIN32__
 	// get the pixel format of the window
 	int pix = GetPixelFormat(extra->m_hdc);
 
@@ -496,6 +535,7 @@ int GLWindow::GetStencilBits() const {
 		return pfd.cStencilBits;
 	else
 		return 0;
+#endif
 }//GetStencilBits
 
 /**
@@ -508,7 +548,7 @@ bool GLWindow::SetAlphaBits(int nBits) {
 	if ((nBits < 0) || (nBits > 255)) return false;
 
 	// if we don't have an HDC, just store setting for later
-	if (!extra->m_hdc) {
+	if (!extra->HaveContext()) {
 		extra->m_albits = nBits;
 		return true;
 	}
@@ -541,8 +581,12 @@ bool GLWindow::SetAlphaBits(int nBits) {
  */
 int GLWindow::GetAlphaBits() const {
 	// if we don't have an HDC return whatever preference was set
-	if (!extra->m_hdc) return extra->m_albits;
+#ifdef __WIN32__
+	if (!extra->m_hdc)
+#endif
+		return extra->m_albits;
 
+#ifdef __WIN32__
 	// get the pixel format of the window
 	int pix = GetPixelFormat(extra->m_hdc);
 
@@ -552,6 +596,7 @@ int GLWindow::GetAlphaBits() const {
 		return pfd.cAlphaBits;
 	else
 		return 0;
+#endif
 }//GetAlphaBits
 
 bool GLWindow::SetAccumBits(int nBits) {
@@ -559,7 +604,7 @@ bool GLWindow::SetAccumBits(int nBits) {
 	if ((nBits < 0) || (nBits > 255)) return false;
 
 	// if we don't have an HDC, just store setting for later
-	if (!extra->m_hdc) {
+	if (!extra->HaveContext()) {
 		extra->m_acbits = nBits;
 		return true;
 	}
@@ -589,8 +634,12 @@ bool GLWindow::SetAccumBits(int nBits) {
 
 int GLWindow::GetAccumBits() const {
 	// if we don't have an HDC return whatever preference was set
-	if (!extra->m_hdc) return extra->m_acbits;
+#ifdef __WIN32__
+	if (!extra->m_hdc)
+#endif
+		return extra->m_acbits;
 
+#ifdef __WIN32__
 	// get the pixel format of the window
 	int pix = GetPixelFormat(extra->m_hdc);
 
@@ -600,6 +649,7 @@ int GLWindow::GetAccumBits() const {
 		return pfd.cAccumBits;
 	} else
 		return 0;
+#endif
 }//GetAccumBits
 
 /**
@@ -640,92 +690,7 @@ const char *GLWindow::GetTitle() const {
  * When disabled, the window reverts to its original size and shape.
  */
 bool GLWindow::SetFullscreen(bool bFull) {
-	HWND hWnd = extra->m_hwnd;
-
-	// if we don't have an HDC, just store setting for later
-	if (!hWnd) {
-		extra->m_bWantFull = bFull;
-		return true;
-	}
-
-	// anything to do?
-	if (bFull == GetFullscreen()) return true;
-
-	// get current window style, so we can modify it
-	DWORD dwStyle = GetWindowLong(hWnd, GWL_STYLE);
-	if (!dwStyle) {
-		dbg_W32LastError("GetWindowLong(GWL_STYLE) failed");
-		return false;
-	}
-
-	if (bFull) {
-		//-- enter fullscreen mode --
-
-		DEVMODE dm;
-		// query display settings
-		if (!EnumDisplaySettings(
-			NULL,					// current display device
-			ENUM_CURRENT_SETTINGS,	// current display settings
-			&dm)
-		) {
-			dbg_printf("EnumDisplaySettings failed\n");
-			return false;
-		}
-
-		// window size: fill screen
-		int
-			width  = dm.dmPelsWidth,
-			height = dm.dmPelsHeight;
-
-		// save window rect.
-		if ( !GetWindowRect(hWnd, &(extra->m_oldRect)) ) {
-			dbg_printf("Unable to query window rectangle");
-			return false;
-		}
-
-		// remove caption, border and sizing frame
-		dwStyle &= ~(WS_CAPTION | WS_SIZEBOX);
-
-		// apply new style
-		if ( !SetWindowLong( hWnd, GWL_STYLE, dwStyle ) ) {
-			dbg_W32LastError("SetWindowLong(GWL_STYLE) failed");
-		}
-		// resize window and bring to top
-		if ( !SetWindowPos ( hWnd, HWND_TOP, 0,0, width,height, 0 ) ) {
-			dbg_W32LastError("SetWindowPos failed");
-		}
-
-		extra->m_bWantFull = true;
-		extra->m_bIsFull   = true;
-		return true;
-	} else {
-		//-- leave fullscreen mode --
-
-		// restore original window size
-		const RECT &R = extra->m_oldRect;
-		int
-			x     = R.left,
-			y     = R.top,
-			width = R.right  - R.left,
-			height= R.bottom - R.top;
-
-		// add overlapped window attributes
-		dwStyle |= WS_OVERLAPPEDWINDOW;
-
-		// apply new style
-		if ( !SetWindowLong( hWnd, GWL_STYLE, dwStyle ) ) {
-			dbg_W32LastError("SetWindowLong(GWL_STYLE) failed");
-		}
-
-		// resize window and bring to top
-		if ( !SetWindowPos ( hWnd, 0, x,y, width,height, SWP_NOZORDER ) ) {
-			dbg_W32LastError("SetWindowPos failed");
-		}
-
-		extra->m_bWantFull = false;
-		extra->m_bIsFull   = false;
-		return true;
-	}
+	return extra->SetFullscreen(bFull);
 }//SetFullscreen
 
 /**
@@ -736,28 +701,10 @@ bool GLWindow::GetFullscreen() const {
 }//GetFullscreen
 
 /**
- * Enable or disable the 'stay on top' property of the window. This
- * works by adding or removing the topmost extended style.
+ * Enable or disable the 'stay on top' property of the window.
  */
 bool GLWindow::SetOnTop(bool bTop) {
-	if (!extra->m_hwnd) {
-		extra->m_bOnTop = bTop;
-		return true;
-	}
-
-	if (bTop) {
-		if (!SetWindowPos(
-			extra->m_hwnd, HWND_TOPMOST, 0,0,0,0, SWP_NOMOVE | SWP_NOSIZE
-		)) return false;
-	} else {
-		if (!SetWindowPos(
-			extra->m_hwnd, HWND_NOTOPMOST, 0,0,0,0, SWP_NOMOVE | SWP_NOSIZE
-		)) return false;
-	}
-
-	// record state (in case window is recreated: to preserve state)
-	extra->m_bOnTop = bTop;
-	return true;
+	return extra->SetOnTop(bTop);
 }//SetStayOnTop
 
 /**
@@ -765,13 +712,7 @@ bool GLWindow::SetOnTop(bool bTop) {
  * otherwise.
  */
 bool GLWindow::GetOnTop() const {
-	// if we don't have a window yet, return cached value
-	if (!extra->m_hwnd) return extra->m_bOnTop;
-
-	// look at window style
-	DWORD dwExStyle = GetWindowLong(extra->m_hwnd, GWL_EXSTYLE);
-	// return true if window has top-most extended style
-	return ((dwExStyle & WS_EX_TOPMOST) != 0);
+	return extra->GetOnTop();
 }//GetStayOnTop
 
 /**
@@ -810,15 +751,7 @@ unsigned int GLWindow::Printf(const char* format, ...) {
 		return 0;
 	}
 
-	// MS VC++ _vsnprintf(...) returns one of:
-	//   * string length, not including terminating null
-	//   * negative value if error occurs
-	//   * returns 1 if too big for buffer (fills buffer, doesn't terminate)
-	#if (_MSC_VER >= 1400)
-		int res = _vsnprintf_s(buffer,count,_TRUNCATE,format,parms);
-	#else
-		int res = _vsnprintf(buffer,count,format,parms);
-	#endif
+	int res = vsnprintf(buffer, count, format, parms);
 
 	if (res < 0) {
 		// an error occurred
@@ -853,12 +786,31 @@ unsigned int GLWindow::Printf(const char* format, ...) {
 
 //-----------------------------------------------------------------------------
 
+enum ModKeys {
+#ifdef __WIN32__
+	KEY_SHIFT_L		= VK_SHIFT,
+	KEY_SHIFT_R		= VK_SHIFT,
+	KEY_CONTROL_L	= VK_CONTROL,
+	KEY_CONTROL_R	= VK_CONTROL,
+	KEY_ALT_L		= VK_MENU,
+	KEY_ALT_R		= VK_MENU
+#endif
+#ifdef __X11__
+	KEY_SHIFT_L		= XK_Shift_L,
+	KEY_SHIFT_R		= XK_Shift_R,
+	KEY_CONTROL_L	= XK_Control_L,
+	KEY_CONTROL_R	= XK_Control_R,
+	KEY_ALT_L		= XK_Alt_L,
+	KEY_ALT_R		= XK_Alt_R
+#endif
+};
+
 /**
  * This method can be called from OnKeyboard() to test whether the SHIFT
  * key is pressed. It returns true if the key is down, false otherwise.
  */
 bool GLWindow::GetShiftKey() const {
-	return (GetAsyncKeyState(VK_SHIFT) != 0);
+	return extra->GetKeyState(KEY_SHIFT_L) || extra->GetKeyState(KEY_SHIFT_R);
 }
 
 /**
@@ -866,7 +818,7 @@ bool GLWindow::GetShiftKey() const {
  * key is pressed. It returns true if the key is down, false otherwise.
  */
 bool GLWindow::GetCtrlKey() const {
-	return (GetAsyncKeyState(VK_CONTROL) != 0);
+	return extra->GetKeyState(KEY_CONTROL_L) || extra->GetKeyState(KEY_CONTROL_R);
 }
 
 /**
@@ -874,7 +826,7 @@ bool GLWindow::GetCtrlKey() const {
  * key is pressed. It returns true if the key is down, false otherwise.
  */
 bool GLWindow::GetAltKey() const {
-	return (GetAsyncKeyState(VK_MENU) != 0);
+	return extra->GetKeyState(KEY_ALT_L) || extra->GetKeyState(KEY_ALT_R);
 }
 
 /**
@@ -883,11 +835,15 @@ bool GLWindow::GetAltKey() const {
  * events, particularly for interactive use such as in a game.
  */
 bool GLWindow::GetKey(int key) const {
+#ifdef __WIN32__
 	SHORT state = GetAsyncKeyState(key);
 	if (state)
 		return (state & 0x8000) != 0;
 	else	// fallback code
 		return (::GetKeyState(key) & 0x8000) != 0;
+#else
+	return extra->GetKeyState(key);
+#endif
 }//GetKeyState
 
 //-----------------------------------------------------------------------------
@@ -896,26 +852,7 @@ bool GLWindow::GetKey(int key) const {
  * Set the window mouse cursor type.
  */
 bool GLWindow::SetCursor(Cursor c) {
-	LPCTSTR id;
-	switch (c) {
-	case CRArrow:	  id = IDC_ARROW; break;
-	case CRCross:	  id = IDC_CROSS; break;
-	case CRHourglass: id = IDC_WAIT;  break;
-	case CRHand:	  id = IDC_HAND;  break;
-	case CRNone:
-	default:
-		id = NULL;
-	}
-
-	HCURSOR hCursor = NULL;
-	if (id) hCursor = ::LoadCursor(NULL, id);
-
-	HCURSOR hOldCursor = ::SetCursor(hCursor);
-
-	extra->m_cursor  = c;
-	extra->m_hCursor = hCursor;
-
-	return (hOldCursor!=NULL);
+	return extra->SetCursor(c);
 }//SetCursor
 
 //-----------------------------------------------------------------------------

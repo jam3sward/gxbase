@@ -1,5 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <stack>
@@ -11,6 +13,8 @@ using namespace std;
  * This file is part of the GXBase graphics library.
  * Copyright (C) 2003-2006 James Ward, Department of Computer Science,
  * University of Hull. All rights reserved.
+ *
+ * UNIX port copyright (C) 2008 John Tsiombikas <nuclear@member.fsf.org>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -75,7 +79,7 @@ using namespace gxbase;
 
 //-----------------------------------------------------------------------------
 
-#ifdef _DEBUG
+#ifndef NDEBUG
 #define dbg_printf printf
 #else
 #define dbg_printf if (0) printf
@@ -140,7 +144,9 @@ public:
 	bool SaveBMP(const char *name);
 
 	bool HasBGRA();
+#ifdef __WIN32__
 	static HWND GetHWNDFromHDC(HDC hdc);
+#endif
 
 	struct pixel;		///< (x,y) pixel coordinate for flood fill stack
 	struct FF_RGB;		///< RGB pixel helper for drawing functions
@@ -247,6 +253,45 @@ Image & Image::operator = (const Image &rhs) {
 }
 
 //-----------------------------------------------------------------------------
+
+#ifndef __WIN32__
+struct RGBQUAD {
+	BYTE rgbBlue;
+	BYTE rgbGreen;
+	BYTE rgbRed;
+	BYTE rgbReserved;
+} PACKED_STRUCT;
+
+struct BITMAPFILEHEADER { 
+	uint16_t bfType; 
+	uint32_t bfSize; 
+	uint16_t bfReserved1; 
+	uint16_t bfReserved2; 
+	uint32_t bfOffBits; 
+} PACKED_STRUCT;
+
+struct BITMAPINFOHEADER {
+	uint32_t biSize; 
+	int32_t biWidth; 
+	int32_t biHeight; 
+	uint16_t biPlanes; 
+	uint16_t biBitCount; 
+	uint32_t biCompression; 
+	uint32_t biSizeImage; 
+	int32_t biXPelsPerMeter; 
+	int32_t biYPelsPerMeter; 
+	uint32_t biClrUsed; 
+	uint32_t biClrImportant; 
+} PACKED_STRUCT;
+
+/* constants for the biCompression field */
+#define BI_RGB        0
+#define BI_RLE8       1
+#define BI_RLE4       2
+#define BI_BITFIELDS  3
+#define BI_JPEG       4
+#define BI_PNG        5
+#endif	// !__WIN32__
 
 /**
  * Load a bitmap image from file. This method attempts to load BMP files
@@ -489,6 +534,7 @@ bool ImageEx::LoadBMPDirect(const char *name) {
  * Load a bitmap image from file.
  */
 bool ImageEx::LoadBMP(const char *name) {
+#ifdef __WIN32__
 	HDC		hDC  = NULL;
 	HANDLE	hBMP = NULL;
 	HGDIOBJ	old  = NULL;
@@ -549,6 +595,9 @@ bool ImageEx::LoadBMP(const char *name) {
 
 	// return status
 	return done;
+#else
+	return LoadBMPDirect(name);
+#endif
 }//LoadBMP
 
 //-----------------------------------------------------------------------------
@@ -584,7 +633,7 @@ bool ImageEx::LoadTGA(const char *name) {
 		WORD nHeight;			// height (pixels)
 		BYTE nBitsPixel;		// bits per pixel: 8,16,24,32
 		BYTE nDescript;			// image descriptor flags (ID_xx)
-	};
+	} PACKED_STRUCT;
 	// TGA footer
 	struct TGAFooter {
 		DWORD dwExtOffset;	// extension area offset
@@ -592,7 +641,7 @@ bool ImageEx::LoadTGA(const char *name) {
 		char  signature[16];// signature 'TRUEVISION-XFILE'
 		BYTE  dot;			// dot character
 		BYTE  nullTerm;		// null terminator
-	};
+	} PACKED_STRUCT;
 #pragma pack (pop)
 
 	// does it have TGA extension?
@@ -1132,6 +1181,7 @@ bool ImageEx::HasBGRA() {
  * from a class that doesn't have direct access to the window handle.
  * Returns NULL if the window cannot be found.
  */
+#ifdef __WIN32__
 HWND ImageEx::GetHWNDFromHDC(HDC hdc) {
 	struct tagLocal {
 		tagLocal() :m_hwnd(NULL),m_hdc(NULL) {}
@@ -1175,6 +1225,7 @@ HWND ImageEx::GetHWNDFromHDC(HDC hdc) {
 
 	return local.Find(hdc);
 }//GetHWNDFromHDC
+#endif
 
 //-----------------------------------------------------------------------------
 
@@ -1211,6 +1262,7 @@ bool Image::Save(const char *name) const {
 bool Image::GrabScreen() {
 	bool done=false;
 
+#ifdef __WIN32__
 	// create DC for screen, and compatible memory DC
 	// according to the WIN32 help, this should handle
 	// multi-monitor setups for W2K up (but I haven't tried yet)
@@ -1283,7 +1335,7 @@ bool Image::GrabScreen() {
 
 	// if we failed, free the (possibly broken) image
 	if (!done) Free();
-
+#endif
 	return done;
 }//GrabScreen
 
@@ -1314,6 +1366,7 @@ bool Image::GrabGLViewport() {
  * context.
  */
 bool Image::GrabGLWindow() {
+#ifdef __WIN32__
 	// get DC of current OpenGL window
 	HDC hDC = wglGetCurrentDC();
 	if (!hDC) return false;
@@ -1338,6 +1391,9 @@ bool Image::GrabGLWindow() {
 		GrabGLViewport();
 		return false;
 	}
+#else
+	return false;
+#endif
 }//GrabGLWindow
 
 //-----------------------------------------------------------------------------
@@ -1676,7 +1732,7 @@ bool Image::SetFormat(Format fmt) {
 		}														\
 		} while (0)
 	// JWW 13/11/03 removed:
-	//  dbg_printf("ConvertImage(" #g ", " #c ", " #p ")\n");	\
+	//  dbg_printf("ConvertImage(" #g ", " #c ", " #p ")\n");
 
 	// source and destination formats
 	const Format
@@ -1867,9 +1923,11 @@ int Image::gluScaleImage(long width, long height) {
 		return result;
 	}
 
+#ifdef __WIN32__
 	if (wglGetCurrentContext()==NULL) {
 		dbg_printf("Image::Rescale() called out of GL context\n");
 	} 
+#endif
 
 	// save old unpack alignment
 	GLint unpackAlign;
@@ -1917,7 +1975,9 @@ bool Image::ScaleImagePow2() {
 
 	// get maximum OpenGL texture size, or zero
 	GLint nMaxSize=0;
+#ifdef __WIN32__
 	if (wglGetCurrentContext())
+#endif
 		glGetIntegerv(GL_MAX_TEXTURE_SIZE, &nMaxSize);
 
 	// closest power of two, or maximum size
@@ -3283,7 +3343,7 @@ struct ImageEx::FF_LUM {
  * Generic Bresenham line implementation for any pixel type
  */
 template <class T>
-static void ImageEx::draw_line(
+void ImageEx::draw_line(
 	Image &img, long x1, long y1, long x2, long y2, const T &fgcol
 ) {
 	// check for zero length

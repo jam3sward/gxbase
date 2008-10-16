@@ -1,7 +1,3 @@
-#ifdef  _WIN32
-#include <windows.h>
-#endif//_WIN32
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -28,6 +24,9 @@
 #include <GL/gl.h>
 #include "glcontextls.h"
 #include <vector>
+
+#include "port.h"
+
 using namespace std;
 
 //-----------------------------------------------------------------------------
@@ -54,7 +53,7 @@ bool Ctx::Alloc(long size) {
 }//Alloc
 
 void Ctx::Free() {
-	delete [] data;
+	delete [] (BYTE*)data;
 	data=0;
 }//Free
 
@@ -113,11 +112,13 @@ private:
 //-----------------------------------------------------------------------------
 
 inline void *GLContextLSEx::GetCurrentContext() {
-	#ifdef  _WIN32
-		return (void*)wglGetCurrentContext();
-	#else
-		return (void*)glxGetCurrentContext();
-	#endif//_WIN32
+#ifdef  _WIN32
+	return (void*)wglGetCurrentContext();
+#endif
+
+#ifdef __X11__
+	return (void*)glXGetCurrentContext();
+#endif
 }//GetCurrentContext
 
 //-----------------------------------------------------------------------------

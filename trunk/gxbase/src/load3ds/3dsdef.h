@@ -6,6 +6,8 @@
  * This file is part of the GXBase graphics library.
  * Copyright (C) 2003-2006 James Ward, Department of Computer Science,
  * University of Hull. All rights reserved.
+ *
+ * UNIX port copyright (C) 2008 John Tsiombikas <nuclear@member.fsf.org>
  * 
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -34,16 +36,8 @@ using namespace std;
 #include <windows.h>
 #endif
 #include <stdio.h>
+#include "port.h"
 
-//-----------------------------------------------------------------------------
-
-#ifndef WORD
-#define WORD unsigned short
-#endif//WORD
-
-#ifndef DWORD
-#define DWORD unsigned long
-#endif//DWORD
 
 //-----------------------------------------------------------------------------
 
@@ -118,7 +112,7 @@ enum T3DSChunkID {
 	struct Face {
 		WORD a,b,c;		// indices into vertex array
 		WORD flags;		// visibility flags
-	};
+	} PACKED_STRUCT;
 
 	struct Chunk {
 	public:
@@ -138,12 +132,12 @@ enum T3DSChunkID {
 		DWORD Size()	  const { return dwSize; }
 		DWORD BytesRead() const { return dwBytesRead; }
 		bool Read(void *pData, DWORD nBytes, FILE *fp);
-	};
+	} PACKED_STRUCT;
 
 	// 3DS Vector3
 	struct Vector3 {
 		float x,y,z;		// three component vector
-	};
+	} PACKED_STRUCT;
 #pragma pack(pop)
 
 //-----------------------------------------------------------------------------

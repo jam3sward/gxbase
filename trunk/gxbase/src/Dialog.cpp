@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <string>
+#include <string.h>
 using namespace std;
 
 /**************************************************************************\
@@ -26,6 +27,11 @@ using namespace std;
 
 #include "Dialog.h"
 using namespace gxbase;
+
+#ifdef __unix__
+#include <limits.h>
+#define MAX_PATH	PATH_MAX
+#endif
 
 //-----------------------------------------------------------------------------
 
@@ -118,6 +124,7 @@ bool FileDialog::Show(bool bOpenDlg) {
 	// null terminate 
 	szFile[nFileBuffSize]=0;	// (buffer really 1 byte larger)
 
+#ifdef __WIN32__
 	// fill in openfilename structure
 	OPENFILENAME ofn;
 	memset(&ofn,0,sizeof(ofn));
@@ -137,10 +144,12 @@ bool FileDialog::Show(bool bOpenDlg) {
 	// insert default file extension
 	if (extra->m_sDefExt.length())
 		ofn.lpstrDefExt = extra->m_sDefExt.c_str();
+#endif
 
 	// status flag
 	bool ok=false;
 
+#ifdef __WIN32__
 	// display open/save file dialog
 	if ( (bOpenDlg ? GetOpenFileName(&ofn) : GetSaveFileName(&ofn)) ) {
 		// save full pathname for later use
@@ -150,6 +159,7 @@ bool FileDialog::Show(bool bOpenDlg) {
 		// clear filename if nothing selected
 		extra->m_sPathname = "";
 	}
+#endif
 
 	// clean up
 	delete [] szFilter;
@@ -195,6 +205,7 @@ const char *FileDialog::GetDefaultExt() const {
 }
 
 bool FileDialog::SetFlags(Flags f) {
+#ifdef __WIN32__
 	// convert our flags to native windows format
 	extra->m_flags =
 		((f&PathMustExist)	? OFN_PATHMUSTEXIST : 0) |
@@ -204,12 +215,14 @@ bool FileDialog::SetFlags(Flags f) {
 		((f&NoChangeDir)	? OFN_NOCHANGEDIR	: 0) |
 		((f&OverwritePrompt)? OFN_OVERWRITEPROMPT : 0);
 	// always succeeds
+#endif
 	return true;
 }//SetFlags
 
 FileDialog::Flags FileDialog::GetFlags() const {
 	// used to accumulate flags, in our own format
 	Flags flags=0;
+#ifdef __WIN32__
 	// convert flags from native windows flags to our subset
 	if (extra->m_flags & OFN_PATHMUSTEXIST) flags |= PathMustExist;
 	if (extra->m_flags & OFN_FILEMUSTEXIST) flags |= FileMustExist;
@@ -218,6 +231,7 @@ FileDialog::Flags FileDialog::GetFlags() const {
 	if (extra->m_flags & OFN_NOCHANGEDIR)   flags |= NoChangeDir;
 	if (extra->m_flags & OFN_OVERWRITEPROMPT) flags |= OverwritePrompt;
 	// return flags to caller
+#endif
 	return flags;
 }//GetFlags
 
