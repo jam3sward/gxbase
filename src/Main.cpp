@@ -176,6 +176,8 @@ int Main::MessageLoop() {
 				}
 			}
 
+			if(quit) break;
+
 			unsigned int msec = App::GetTime();
 			if(m_timerPeriod && msec >= timer_exp) {
 				m_timerPeriod = 0;
