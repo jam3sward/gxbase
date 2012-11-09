@@ -121,7 +121,7 @@
 				RelativePath="..\glexfplib.cpp">
 			</File>
 			<File
-				RelativePath=".\main.cpp">
+				RelativePath=".\test.cpp">
 			</File>
 		</Filter>
 		<Filter

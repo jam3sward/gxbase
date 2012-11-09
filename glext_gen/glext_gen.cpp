@@ -7,10 +7,6 @@
 
 using namespace std;
 
-#ifdef __unix__
-#define stricmp(s1, s2)		strcasecmp(s1, s2)
-#endif
-
 //-----------------------------------------------------------------------------
 
 /**
@@ -635,14 +631,14 @@ bool MakeCPP(
 	fprintf(fp, "\tif (!wglGetCurrentContext()) return false;\n");
 #endif
 	// local vars
-#ifdef __WIN32__
-	fprintf(fp, "\tPROC *p=0;\n");
+#ifdef _WIN32
+	fprintf(fp, "\tPROC p=0;\n");
 #elif defined(__X11__)
 	fprintf(fp, "\tvoid (*p)() = 0;\n");
 #endif
 	for (unsigned n=0; n<g_name.size();n++) {
 		const char *sName = g_name[n].c_str();
-#ifdef __WIN32__
+#ifdef _WIN32
 		fprintf(fp, "\tp = wglGetProcAddress(\"%s\");\n", sName);
 #elif defined(__X11__)
 		fprintf(fp, "\tp = glXGetProcAddress((const unsigned char*)\"%s\");\n", sName);
