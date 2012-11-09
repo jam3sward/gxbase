@@ -102,10 +102,10 @@ bool WindowEx::SetOnTop(bool bTop)
 bool WindowEx::GetOnTop() const
 {
 	// if we don't have a window yet, return cached value
-	if (!extra->m_hwnd) return extra->m_bOnTop;
+	if (!m_hwnd) return m_bOnTop;
 
 	// look at window style
-	DWORD dwExStyle = GetWindowLong(extra->m_hwnd, GWL_EXSTYLE);
+	DWORD dwExStyle = GetWindowLong(m_hwnd, GWL_EXSTYLE);
 	// return true if window has top-most extended style
 	return ((dwExStyle & WS_EX_TOPMOST) != 0);
 }
@@ -358,7 +358,7 @@ bool WindowEx::SetFullscreen(bool bFull) {
 	}
 
 	// anything to do?
-	if (bFull == GetFullscreen()) return true;
+	if (bFull == m_bIsFull) return true;
 
 	// get current window style, so we can modify it
 	DWORD dwStyle = GetWindowLong(hWnd, GWL_STYLE);
@@ -503,11 +503,11 @@ const char *WindowEx::GetTitle() const {
 bool WindowEx::SetCursor(GLWindow::Cursor c) {
 	LPCTSTR id;
 	switch (c) {
-	case CRArrow:	  id = IDC_ARROW; break;
-	case CRCross:	  id = IDC_CROSS; break;
-	case CRHourglass: id = IDC_WAIT;  break;
-	case CRHand:	  id = IDC_HAND;  break;
-	case CRNone:
+	case GLWindow::CRArrow:		id = IDC_ARROW; break;
+	case GLWindow::CRCross:		id = IDC_CROSS; break;
+	case GLWindow::CRHourglass: id = IDC_WAIT;  break;
+	case GLWindow::CRHand:		id = IDC_HAND;  break;
+	case GLWindow::CRNone:
 	default:
 		id = NULL;
 	}
@@ -517,8 +517,8 @@ bool WindowEx::SetCursor(GLWindow::Cursor c) {
 
 	HCURSOR hOldCursor = ::SetCursor(hCursor);
 
-	extra->m_cursor  = c;
-	extra->m_hCursor = hCursor;
+	m_cursor  = c;
+	m_hCursor = hCursor;
 
 	return (hOldCursor!=NULL);
 }

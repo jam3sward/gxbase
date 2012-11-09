@@ -6,8 +6,13 @@
 #define __unix__
 #endif
 
+#if defined(_WIN32) && !defined(__WIN32__)
+#define __WIN32__
+#endif
+
 #ifdef _WIN32
 #include <windows.h>
+#include <stdio.h>
 #else
 #include <inttypes.h>
 
