@@ -6,7 +6,7 @@
 #define __unix__
 #endif
 
-#ifdef __WIN32__
+#ifdef _WIN32
 #include <windows.h>
 #else
 #include <inttypes.h>
@@ -46,5 +46,9 @@ typedef int HINSTANCE;
 #define vsnprintf(b, c, f, p)	_vsnprintf(b, c, f, p)
 #endif	// _MSC_VER >= 1400
 #endif	// _MSC_VER
+
+#ifdef __unix__
+#define stricmp(s1, s2)		strcasecmp(s1, s2)
+#endif
 
 #endif	/* GXBASE_PORT_H_ */
