@@ -21,11 +21,11 @@
  \**************************************************************************/
 
 #include <assert.h>
-#include <GL/gl.h>
 #include "glcontextls.h"
 #include <vector>
 
 #include "port.h"
+#include <GL/gl.h>
 
 using namespace std;
 

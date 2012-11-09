@@ -407,7 +407,11 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 
 	// store it (we cap to 10ms on all systems currently)
 	m_timerPeriod = ms;
+
+#ifndef __WIN32__
 	timer_exp = App::GetTime() + ms;
+#endif
+
 	return m_timerPeriod;
 }//SetTimerPeriod
 

@@ -139,6 +139,7 @@ public:
 
 	bool SetFullscreen(bool bFull);
 
+	bool HaveContext() const;
 	bool Safe2ChangePF() const;
 
 	bool SetOnTop(bool bTop);
