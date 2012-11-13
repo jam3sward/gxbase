@@ -6,22 +6,22 @@ lib_so = libgxbase.$(so)
 CXX = g++
 AR = ar
 CXXFLAGS = -ansi -pedantic -Wall $(dbg) $(opt) $(pic) \
-	`pkg-config --cflags sdl` $(extra_defs) -Isrc
+	`pkg-config --cflags sdl` $(extra_defs) -Isrc -Iglext_gen -Iglext_gen/GL
 LDFLAGS = `pkg-config --libs sdl`
 
 .PHONY: all
 all: $(lib_a) $(lib_so)
 
-$(lib_a): src/glexfp.h $(obj)
+$(lib_a): glext_gen/glexfp.h $(obj)
 	$(AR) rcs $@ $(obj)
 
-$(lib_so): src/glexfp.h $(obj)
+$(lib_so): glext_gen/glexfp.h $(obj)
 	$(CXX) $(shared) -o $@ $(obj) $(LDFLAGS)
 
-src/glexfplib.o: src/glexfplib.cpp src/glexfp.h
+src/glexfplib.o: glext_gen/glexfplib.cpp glext_gen/glexfp.h
 
-src/glexfp.h: glext_gen/glext_gen
-	cd src; ../glext_gen/glext_gen ../glext_gen/GL/glext.h >/dev/null
+glext_gen/glexfp.h: glext_gen/glext_gen glext_gen/GL/glext.h
+	glext_gen/glext_gen glext_gen/GL/glext.h >/dev/null
 
 glext_gen/glext_gen: glext_gen/glext_gen.cpp
 	cd glext_gen; $(MAKE)

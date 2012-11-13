@@ -3,7 +3,7 @@
 
 /**
  * This is an automatically generated file: do not edit
- * Generated on Wed Oct 15 01:26:49 2008
+ * Generated on Tue Nov 13 22:12:26 2012
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -26,7 +26,7 @@ long glexfp::Count() const {
 //----------------------------------------------------------------------------
 
 long glexfp::Known() const {
-	return 1192;
+	return 1564;
 }//Known
 
 //----------------------------------------------------------------------------
@@ -36,6 +36,12 @@ GLAPI void APIENTRY stub_glBlendColor (GLclampf, GLclampf, GLclampf, GLclampf) {
 GLAPI void APIENTRY stub_glBlendEquation (GLenum) {
 }
 GLAPI void APIENTRY stub_glDrawRangeElements (GLenum, GLuint, GLuint, GLsizei, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTexImage3D (GLenum, GLint, GLint, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCopyTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
 }
 GLAPI void APIENTRY stub_glColorTable (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
 }
@@ -101,13 +107,23 @@ GLAPI void APIENTRY stub_glResetHistogram (GLenum) {
 }
 GLAPI void APIENTRY stub_glResetMinmax (GLenum) {
 }
-GLAPI void APIENTRY stub_glTexImage3D (GLenum, GLint, GLint, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCopyTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
-}
 GLAPI void APIENTRY stub_glActiveTexture (GLenum) {
+}
+GLAPI void APIENTRY stub_glSampleCoverage (GLclampf, GLboolean) {
+}
+GLAPI void APIENTRY stub_glCompressedTexImage3D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTexImage2D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTexImage1D (GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTexSubImage2D (GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTexSubImage1D (GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetCompressedTexImage (GLenum, GLint, GLvoid *) {
 }
 GLAPI void APIENTRY stub_glClientActiveTexture (GLenum) {
 }
@@ -183,33 +199,7 @@ GLAPI void APIENTRY stub_glMultTransposeMatrixf (const GLfloat *) {
 }
 GLAPI void APIENTRY stub_glMultTransposeMatrixd (const GLdouble *) {
 }
-GLAPI void APIENTRY stub_glSampleCoverage (GLclampf, GLboolean) {
-}
-GLAPI void APIENTRY stub_glCompressedTexImage3D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCompressedTexImage2D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCompressedTexImage1D (GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCompressedTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCompressedTexSubImage2D (GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCompressedTexSubImage1D (GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetCompressedTexImage (GLenum, GLint, GLvoid *) {
-}
 GLAPI void APIENTRY stub_glBlendFuncSeparate (GLenum, GLenum, GLenum, GLenum) {
-}
-GLAPI void APIENTRY stub_glFogCoordf (GLfloat) {
-}
-GLAPI void APIENTRY stub_glFogCoordfv (const GLfloat *) {
-}
-GLAPI void APIENTRY stub_glFogCoordd (GLdouble) {
-}
-GLAPI void APIENTRY stub_glFogCoorddv (const GLdouble *) {
-}
-GLAPI void APIENTRY stub_glFogCoordPointer (GLenum, GLsizei, const GLvoid *) {
 }
 GLAPI void APIENTRY stub_glMultiDrawArrays (GLenum, GLint *, GLsizei *, GLsizei) {
 }
@@ -222,6 +212,16 @@ GLAPI void APIENTRY stub_glPointParameterfv (GLenum, const GLfloat *) {
 GLAPI void APIENTRY stub_glPointParameteri (GLenum, GLint) {
 }
 GLAPI void APIENTRY stub_glPointParameteriv (GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glFogCoordf (GLfloat) {
+}
+GLAPI void APIENTRY stub_glFogCoordfv (const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glFogCoordd (GLdouble) {
+}
+GLAPI void APIENTRY stub_glFogCoorddv (const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glFogCoordPointer (GLenum, GLsizei, const GLvoid *) {
 }
 GLAPI void APIENTRY stub_glSecondaryColor3b (GLbyte, GLbyte, GLbyte) {
 }
@@ -534,6 +534,143 @@ GLAPI void APIENTRY stub_glUniformMatrix4x2fv (GLint, GLsizei, GLboolean, const 
 GLAPI void APIENTRY stub_glUniformMatrix3x4fv (GLint, GLsizei, GLboolean, const GLfloat *) {
 }
 GLAPI void APIENTRY stub_glUniformMatrix4x3fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glColorMaski (GLuint, GLboolean, GLboolean, GLboolean, GLboolean) {
+}
+GLAPI void APIENTRY stub_glGetBooleani_v (GLenum, GLuint, GLboolean *) {
+}
+GLAPI void APIENTRY stub_glGetIntegeri_v (GLenum, GLuint, GLint *) {
+}
+GLAPI void APIENTRY stub_glEnablei (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glDisablei (GLenum, GLuint) {
+}
+GLAPI GLboolean APIENTRY stub_glIsEnabledi (GLenum, GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glBeginTransformFeedback (GLenum) {
+}
+GLAPI void APIENTRY stub_glEndTransformFeedback (void) {
+}
+GLAPI void APIENTRY stub_glBindBufferRange (GLenum, GLuint, GLuint, GLintptr, GLsizeiptr) {
+}
+GLAPI void APIENTRY stub_glBindBufferBase (GLenum, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glTransformFeedbackVaryings (GLuint, GLsizei, const GLchar* *, GLenum) {
+}
+GLAPI void APIENTRY stub_glGetTransformFeedbackVarying (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *) {
+}
+GLAPI void APIENTRY stub_glClampColor (GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glBeginConditionalRender (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glEndConditionalRender (void) {
+}
+GLAPI void APIENTRY stub_glVertexAttribIPointer (GLuint, GLint, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribIiv (GLuint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribIuiv (GLuint, GLenum, GLuint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI1i (GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI2i (GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI3i (GLuint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4i (GLuint, GLint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI1ui (GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI2ui (GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI3ui (GLuint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4ui (GLuint, GLuint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI1iv (GLuint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI2iv (GLuint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI3iv (GLuint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4iv (GLuint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI1uiv (GLuint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI2uiv (GLuint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI3uiv (GLuint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4uiv (GLuint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4bv (GLuint, const GLbyte *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4sv (GLuint, const GLshort *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4ubv (GLuint, const GLubyte *) {
+}
+GLAPI void APIENTRY stub_glVertexAttribI4usv (GLuint, const GLushort *) {
+}
+GLAPI void APIENTRY stub_glGetUniformuiv (GLuint, GLint, GLuint *) {
+}
+GLAPI void APIENTRY stub_glBindFragDataLocation (GLuint, GLuint, const GLchar *) {
+}
+GLAPI GLint APIENTRY stub_glGetFragDataLocation (GLuint, const GLchar *) {
+	return (GLint)0;
+}
+GLAPI void APIENTRY stub_glUniform1ui (GLint, GLuint) {
+}
+GLAPI void APIENTRY stub_glUniform2ui (GLint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glUniform3ui (GLint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glUniform4ui (GLint, GLuint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glUniform1uiv (GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glUniform2uiv (GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glUniform3uiv (GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glUniform4uiv (GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glTexParameterIiv (GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glTexParameterIuiv (GLenum, GLenum, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetTexParameterIiv (GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetTexParameterIuiv (GLenum, GLenum, GLuint *) {
+}
+GLAPI void APIENTRY stub_glClearBufferiv (GLenum, GLint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glClearBufferuiv (GLenum, GLint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glClearBufferfv (GLenum, GLint, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glClearBufferfi (GLenum, GLint, GLfloat, GLint) {
+}
+GLAPI const GLubyte * APIENTRY stub_glGetStringi (GLenum, GLuint) {
+	return (const GLubyte *)0;
+}
+GLAPI void APIENTRY stub_glDrawArraysInstanced (GLenum, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glDrawElementsInstanced (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei) {
+}
+GLAPI void APIENTRY stub_glTexBuffer (GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glPrimitiveRestartIndex (GLuint) {
+}
+GLAPI void APIENTRY stub_glGetInteger64i_v (GLenum, GLuint, GLint64 *) {
+}
+GLAPI void APIENTRY stub_glGetBufferParameteri64v (GLenum, GLenum, GLint64 *) {
+}
+GLAPI void APIENTRY stub_glProgramParameteri (GLuint, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTexture (GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTextureFace (GLenum, GLenum, GLuint, GLint, GLenum) {
 }
 GLAPI void APIENTRY stub_glActiveTextureARB (GLenum) {
 }
@@ -952,6 +1089,141 @@ GLAPI GLint APIENTRY stub_glGetAttribLocationARB (GLhandleARB, const GLcharARB *
 GLAPI void APIENTRY stub_glDrawBuffersARB (GLsizei, const GLenum *) {
 }
 GLAPI void APIENTRY stub_glClampColorARB (GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glDrawArraysInstancedARB (GLenum, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glDrawElementsInstancedARB (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei) {
+}
+GLAPI GLboolean APIENTRY stub_glIsRenderbuffer (GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glBindRenderbuffer (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glDeleteRenderbuffers (GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGenRenderbuffers (GLsizei, GLuint *) {
+}
+GLAPI void APIENTRY stub_glRenderbufferStorage (GLenum, GLenum, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glGetRenderbufferParameteriv (GLenum, GLenum, GLint *) {
+}
+GLAPI GLboolean APIENTRY stub_glIsFramebuffer (GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glBindFramebuffer (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glDeleteFramebuffers (GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGenFramebuffers (GLsizei, GLuint *) {
+}
+GLAPI GLenum APIENTRY stub_glCheckFramebufferStatus (GLenum) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glFramebufferTexture1D (GLenum, GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTexture2D (GLenum, GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTexture3D (GLenum, GLenum, GLenum, GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferRenderbuffer (GLenum, GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glGetFramebufferAttachmentParameteriv (GLenum, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGenerateMipmap (GLenum) {
+}
+GLAPI void APIENTRY stub_glBlitFramebuffer (GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLbitfield, GLenum) {
+}
+GLAPI void APIENTRY stub_glRenderbufferStorageMultisample (GLenum, GLsizei, GLenum, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glFramebufferTextureLayer (GLenum, GLenum, GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glProgramParameteriARB (GLuint, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTextureARB (GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTextureLayerARB (GLenum, GLenum, GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glFramebufferTextureFaceARB (GLenum, GLenum, GLuint, GLint, GLenum) {
+}
+GLAPI void APIENTRY stub_glVertexAttribDivisorARB (GLuint, GLuint) {
+}
+GLAPI GLvoid* APIENTRY stub_glMapBufferRange (GLenum, GLintptr, GLsizeiptr, GLbitfield) {
+	return (GLvoid*)0;
+}
+GLAPI void APIENTRY stub_glFlushMappedBufferRange (GLenum, GLintptr, GLsizeiptr) {
+}
+GLAPI void APIENTRY stub_glTexBufferARB (GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glBindVertexArray (GLuint) {
+}
+GLAPI void APIENTRY stub_glDeleteVertexArrays (GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGenVertexArrays (GLsizei, GLuint *) {
+}
+GLAPI GLboolean APIENTRY stub_glIsVertexArray (GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glGetUniformIndices (GLuint, GLsizei, const GLchar* *, GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetActiveUniformsiv (GLuint, GLsizei, const GLuint *, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetActiveUniformName (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+}
+GLAPI GLuint APIENTRY stub_glGetUniformBlockIndex (GLuint, const GLchar *) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glGetActiveUniformBlockiv (GLuint, GLuint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetActiveUniformBlockName (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+}
+GLAPI void APIENTRY stub_glUniformBlockBinding (GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glCopyBufferSubData (GLenum, GLenum, GLintptr, GLintptr, GLsizeiptr) {
+}
+GLAPI void APIENTRY stub_glDrawElementsBaseVertex (GLenum, GLsizei, GLenum, const GLvoid *, GLint) {
+}
+GLAPI void APIENTRY stub_glDrawRangeElementsBaseVertex (GLenum, GLuint, GLuint, GLsizei, GLenum, const GLvoid *, GLint) {
+}
+GLAPI void APIENTRY stub_glDrawElementsInstancedBaseVertex (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei, GLint) {
+}
+GLAPI void APIENTRY stub_glMultiDrawElementsBaseVertex (GLenum, const GLsizei *, GLenum, const GLvoid* *, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glProvokingVertex (GLenum) {
+}
+GLAPI GLsync APIENTRY stub_glFenceSync (GLenum, GLbitfield) {
+	return (GLsync)0;
+}
+GLAPI GLboolean APIENTRY stub_glIsSync (GLsync) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glDeleteSync (GLsync) {
+}
+GLAPI GLenum APIENTRY stub_glClientWaitSync (GLsync, GLbitfield, GLuint64) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glWaitSync (GLsync, GLbitfield, GLuint64) {
+}
+GLAPI void APIENTRY stub_glGetInteger64v (GLenum, GLint64 *) {
+}
+GLAPI void APIENTRY stub_glGetSynciv (GLsync, GLenum, GLsizei, GLsizei *, GLint *) {
+}
+GLAPI void APIENTRY stub_glTexImage2DMultisample (GLenum, GLsizei, GLint, GLsizei, GLsizei, GLboolean) {
+}
+GLAPI void APIENTRY stub_glTexImage3DMultisample (GLenum, GLsizei, GLint, GLsizei, GLsizei, GLsizei, GLboolean) {
+}
+GLAPI void APIENTRY stub_glGetMultisamplefv (GLenum, GLuint, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glSampleMaski (GLuint, GLbitfield) {
+}
+GLAPI void APIENTRY stub_glBlendEquationi (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendEquationSeparatei (GLuint, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendFunci (GLuint, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendFuncSeparatei (GLuint, GLenum, GLenum, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glMinSampleShading (GLclampf) {
 }
 GLAPI void APIENTRY stub_glBlendColorEXT (GLclampf, GLclampf, GLclampf, GLclampf) {
 }
@@ -2441,7 +2713,7 @@ GLAPI void APIENTRY stub_glBindBufferOffsetNV (GLenum, GLuint, GLuint, GLintptr)
 }
 GLAPI void APIENTRY stub_glBindBufferBaseNV (GLenum, GLuint, GLuint) {
 }
-GLAPI void APIENTRY stub_glTransformFeedbackVaryingsNV (GLuint, GLsizei, const GLint *, GLenum) {
+GLAPI void APIENTRY stub_glTransformFeedbackVaryingsNV (GLuint, GLsizei, const GLchar* *, GLenum) {
 }
 GLAPI void APIENTRY stub_glActiveVaryingNV (GLuint, const GLchar *) {
 }
@@ -2472,6 +2744,497 @@ GLAPI void APIENTRY stub_glClearColorIiEXT (GLint, GLint, GLint, GLint) {
 }
 GLAPI void APIENTRY stub_glClearColorIuiEXT (GLuint, GLuint, GLuint, GLuint) {
 }
+GLAPI void APIENTRY stub_glFrameTerminatorGREMEDY (void) {
+}
+GLAPI void APIENTRY stub_glBeginConditionalRenderNV (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glEndConditionalRenderNV (void) {
+}
+GLAPI void APIENTRY stub_glPresentFrameKeyedNV (GLuint, GLuint64EXT, GLuint, GLuint, GLenum, GLenum, GLuint, GLuint, GLenum, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glPresentFrameDualFillNV (GLuint, GLuint64EXT, GLuint, GLuint, GLenum, GLenum, GLuint, GLenum, GLuint, GLenum, GLuint, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glGetVideoivNV (GLuint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetVideouivNV (GLuint, GLenum, GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetVideoi64vNV (GLuint, GLenum, GLint64EXT *) {
+}
+GLAPI void APIENTRY stub_glGetVideoui64vNV (GLuint, GLenum, GLuint64EXT *) {
+}
+GLAPI void APIENTRY stub_glBeginTransformFeedbackEXT (GLenum) {
+}
+GLAPI void APIENTRY stub_glEndTransformFeedbackEXT (void) {
+}
+GLAPI void APIENTRY stub_glBindBufferRangeEXT (GLenum, GLuint, GLuint, GLintptr, GLsizeiptr) {
+}
+GLAPI void APIENTRY stub_glBindBufferOffsetEXT (GLenum, GLuint, GLuint, GLintptr) {
+}
+GLAPI void APIENTRY stub_glBindBufferBaseEXT (GLenum, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glTransformFeedbackVaryingsEXT (GLuint, GLsizei, const GLchar* *, GLenum) {
+}
+GLAPI void APIENTRY stub_glGetTransformFeedbackVaryingEXT (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *) {
+}
+GLAPI void APIENTRY stub_glClientAttribDefaultEXT (GLbitfield) {
+}
+GLAPI void APIENTRY stub_glPushClientAttribDefaultEXT (GLbitfield) {
+}
+GLAPI void APIENTRY stub_glMatrixLoadfEXT (GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMatrixLoaddEXT (GLenum, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMatrixMultfEXT (GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMatrixMultdEXT (GLenum, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMatrixLoadIdentityEXT (GLenum) {
+}
+GLAPI void APIENTRY stub_glMatrixRotatefEXT (GLenum, GLfloat, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMatrixRotatedEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMatrixScalefEXT (GLenum, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMatrixScaledEXT (GLenum, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMatrixTranslatefEXT (GLenum, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMatrixTranslatedEXT (GLenum, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMatrixFrustumEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMatrixOrthoEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMatrixPopEXT (GLenum) {
+}
+GLAPI void APIENTRY stub_glMatrixPushEXT (GLenum) {
+}
+GLAPI void APIENTRY stub_glMatrixLoadTransposefEXT (GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMatrixLoadTransposedEXT (GLenum, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMatrixMultTransposefEXT (GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMatrixMultTransposedEXT (GLenum, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glTextureParameterfEXT (GLuint, GLenum, GLenum, GLfloat) {
+}
+GLAPI void APIENTRY stub_glTextureParameterfvEXT (GLuint, GLenum, GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glTextureParameteriEXT (GLuint, GLenum, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glTextureParameterivEXT (GLuint, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCopyTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLint) {
+}
+GLAPI void APIENTRY stub_glCopyTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint) {
+}
+GLAPI void APIENTRY stub_glCopyTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei) {
+}
+GLAPI void APIENTRY stub_glCopyTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glGetTextureImageEXT (GLuint, GLenum, GLint, GLenum, GLenum, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetTextureParameterfvEXT (GLuint, GLenum, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetTextureParameterivEXT (GLuint, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetTextureLevelParameterfvEXT (GLuint, GLenum, GLint, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetTextureLevelParameterivEXT (GLuint, GLenum, GLint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glTextureImage3DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCopyTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameterfEXT (GLenum, GLenum, GLenum, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameterfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameteriEXT (GLenum, GLenum, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameterivEXT (GLenum, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCopyMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLint) {
+}
+GLAPI void APIENTRY stub_glCopyMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint) {
+}
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei) {
+}
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexImageEXT (GLenum, GLenum, GLint, GLenum, GLenum, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexParameterfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexParameterivEXT (GLenum, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexLevelParameterfvEXT (GLenum, GLenum, GLint, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexLevelParameterivEXT (GLenum, GLenum, GLint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glMultiTexImage3DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glBindMultiTextureEXT (GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glEnableClientStateIndexedEXT (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glDisableClientStateIndexedEXT (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordPointerEXT (GLenum, GLint, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glMultiTexEnvfEXT (GLenum, GLenum, GLenum, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMultiTexEnvfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMultiTexEnviEXT (GLenum, GLenum, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glMultiTexEnvivEXT (GLenum, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glMultiTexGendEXT (GLenum, GLenum, GLenum, GLdouble) {
+}
+GLAPI void APIENTRY stub_glMultiTexGendvEXT (GLenum, GLenum, GLenum, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMultiTexGenfEXT (GLenum, GLenum, GLenum, GLfloat) {
+}
+GLAPI void APIENTRY stub_glMultiTexGenfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMultiTexGeniEXT (GLenum, GLenum, GLenum, GLint) {
+}
+GLAPI void APIENTRY stub_glMultiTexGenivEXT (GLenum, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexEnvfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexEnvivEXT (GLenum, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexGendvEXT (GLenum, GLenum, GLenum, GLdouble *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexGenfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexGenivEXT (GLenum, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetFloatIndexedvEXT (GLenum, GLuint, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetDoubleIndexedvEXT (GLenum, GLuint, GLdouble *) {
+}
+GLAPI void APIENTRY stub_glGetPointerIndexedvEXT (GLenum, GLuint, GLvoid* *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureImage3DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetCompressedTextureImageEXT (GLuint, GLenum, GLint, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexImage3DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetCompressedMultiTexImageEXT (GLenum, GLenum, GLint, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramStringEXT (GLuint, GLenum, GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dEXT (GLuint, GLenum, GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dvEXT (GLuint, GLenum, GLuint, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fEXT (GLuint, GLenum, GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fvEXT (GLuint, GLenum, GLuint, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterdvEXT (GLuint, GLenum, GLuint, GLdouble *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterfvEXT (GLuint, GLenum, GLuint, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramivEXT (GLuint, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramStringEXT (GLuint, GLenum, GLenum, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameters4fvEXT (GLuint, GLenum, GLuint, GLsizei, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4iEXT (GLuint, GLenum, GLuint, GLint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4ivEXT (GLuint, GLenum, GLuint, const GLint *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4ivEXT (GLuint, GLenum, GLuint, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uiEXT (GLuint, GLenum, GLuint, GLuint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uivEXT (GLuint, GLenum, GLuint, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4uivEXT (GLuint, GLenum, GLuint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIivEXT (GLuint, GLenum, GLuint, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIuivEXT (GLuint, GLenum, GLuint, GLuint *) {
+}
+GLAPI void APIENTRY stub_glTextureParameterIivEXT (GLuint, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glTextureParameterIuivEXT (GLuint, GLenum, GLenum, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetTextureParameterIivEXT (GLuint, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetTextureParameterIuivEXT (GLuint, GLenum, GLenum, GLuint *) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameterIivEXT (GLenum, GLenum, GLenum, const GLint *) {
+}
+GLAPI void APIENTRY stub_glMultiTexParameterIuivEXT (GLenum, GLenum, GLenum, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexParameterIivEXT (GLenum, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetMultiTexParameterIuivEXT (GLenum, GLenum, GLenum, GLuint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1fEXT (GLuint, GLint, GLfloat) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2fEXT (GLuint, GLint, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3fEXT (GLuint, GLint, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4fEXT (GLuint, GLint, GLfloat, GLfloat, GLfloat, GLfloat) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1iEXT (GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2iEXT (GLuint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3iEXT (GLuint, GLint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4iEXT (GLuint, GLint, GLint, GLint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1uiEXT (GLuint, GLint, GLuint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2uiEXT (GLuint, GLint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3uiEXT (GLuint, GLint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4uiEXT (GLuint, GLint, GLuint, GLuint, GLuint, GLuint) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glNamedBufferDataEXT (GLuint, GLsizeiptr, const GLvoid *, GLenum) {
+}
+GLAPI void APIENTRY stub_glNamedBufferSubDataEXT (GLuint, GLintptr, GLsizeiptr, const GLvoid *) {
+}
+GLAPI GLvoid* APIENTRY stub_glMapNamedBufferEXT (GLuint, GLenum) {
+	return (GLvoid*)0;
+}
+GLAPI GLboolean APIENTRY stub_glUnmapNamedBufferEXT (GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glGetNamedBufferParameterivEXT (GLuint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGetNamedBufferPointervEXT (GLuint, GLenum, GLvoid* *) {
+}
+GLAPI void APIENTRY stub_glGetNamedBufferSubDataEXT (GLuint, GLintptr, GLsizeiptr, GLvoid *) {
+}
+GLAPI void APIENTRY stub_glTextureBufferEXT (GLuint, GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glMultiTexBufferEXT (GLenum, GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageEXT (GLuint, GLenum, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glGetNamedRenderbufferParameterivEXT (GLuint, GLenum, GLint *) {
+}
+GLAPI GLenum APIENTRY stub_glCheckNamedFramebufferStatusEXT (GLuint, GLenum) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTexture1DEXT (GLuint, GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTexture2DEXT (GLuint, GLenum, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTexture3DEXT (GLuint, GLenum, GLenum, GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferRenderbufferEXT (GLuint, GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glGetNamedFramebufferAttachmentParameterivEXT (GLuint, GLenum, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glGenerateTextureMipmapEXT (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glGenerateMultiTexMipmapEXT (GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glFramebufferDrawBufferEXT (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glFramebufferDrawBuffersEXT (GLuint, GLsizei, const GLenum *) {
+}
+GLAPI void APIENTRY stub_glFramebufferReadBufferEXT (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glGetFramebufferParameterivEXT (GLuint, GLenum, GLint *) {
+}
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleEXT (GLuint, GLsizei, GLenum, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleCoverageEXT (GLuint, GLsizei, GLsizei, GLenum, GLsizei, GLsizei) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTextureEXT (GLuint, GLenum, GLuint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTextureLayerEXT (GLuint, GLenum, GLuint, GLint, GLint) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferTextureFaceEXT (GLuint, GLenum, GLuint, GLint, GLenum) {
+}
+GLAPI void APIENTRY stub_glTextureRenderbufferEXT (GLuint, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glMultiTexRenderbufferEXT (GLenum, GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glGetMultisamplefvNV (GLenum, GLuint, GLfloat *) {
+}
+GLAPI void APIENTRY stub_glSampleMaskIndexedNV (GLuint, GLbitfield) {
+}
+GLAPI void APIENTRY stub_glTexRenderbufferNV (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glBindTransformFeedbackNV (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glDeleteTransformFeedbacksNV (GLsizei, const GLuint *) {
+}
+GLAPI void APIENTRY stub_glGenTransformFeedbacksNV (GLsizei, GLuint *) {
+}
+GLAPI GLboolean APIENTRY stub_glIsTransformFeedbackNV (GLuint) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glPauseTransformFeedbackNV (void) {
+}
+GLAPI void APIENTRY stub_glResumeTransformFeedbackNV (void) {
+}
+GLAPI void APIENTRY stub_glDrawTransformFeedbackNV (GLenum, GLuint) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorGroupsAMD (GLint *, GLsizei, GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorCountersAMD (GLuint, GLint *, GLint *, GLsizei, GLuint *) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorGroupStringAMD (GLuint, GLsizei, GLsizei *, GLchar *) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterStringAMD (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterInfoAMD (GLuint, GLuint, GLenum, void *) {
+}
+GLAPI void APIENTRY stub_glGenPerfMonitorsAMD (GLsizei, GLuint *) {
+}
+GLAPI void APIENTRY stub_glDeletePerfMonitorsAMD (GLsizei, GLuint *) {
+}
+GLAPI void APIENTRY stub_glSelectPerfMonitorCountersAMD (GLuint, GLboolean, GLuint, GLint, GLuint *) {
+}
+GLAPI void APIENTRY stub_glBeginPerfMonitorAMD (GLuint) {
+}
+GLAPI void APIENTRY stub_glEndPerfMonitorAMD (GLuint) {
+}
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterDataAMD (GLuint, GLenum, GLsizei, GLuint *, GLint *) {
+}
+GLAPI void APIENTRY stub_glTessellationFactorAMD (GLfloat) {
+}
+GLAPI void APIENTRY stub_glTessellationModeAMD (GLenum) {
+}
+GLAPI void APIENTRY stub_glProvokingVertexEXT (GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendFuncIndexedAMD (GLuint, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendFuncSeparateIndexedAMD (GLuint, GLenum, GLenum, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendEquationIndexedAMD (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glBlendEquationSeparateIndexedAMD (GLuint, GLenum, GLenum) {
+}
+GLAPI void APIENTRY stub_glTextureRangeAPPLE (GLenum, GLsizei, const GLvoid *) {
+}
+GLAPI void APIENTRY stub_glGetTexParameterPointervAPPLE (GLenum, GLenum, GLvoid* *) {
+}
+GLAPI void APIENTRY stub_glEnableVertexAttribAPPLE (GLuint, GLenum) {
+}
+GLAPI void APIENTRY stub_glDisableVertexAttribAPPLE (GLuint, GLenum) {
+}
+GLAPI GLboolean APIENTRY stub_glIsVertexAttribEnabledAPPLE (GLuint, GLenum) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glMapVertexAttrib1dAPPLE (GLuint, GLuint, GLdouble, GLdouble, GLint, GLint, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMapVertexAttrib1fAPPLE (GLuint, GLuint, GLfloat, GLfloat, GLint, GLint, const GLfloat *) {
+}
+GLAPI void APIENTRY stub_glMapVertexAttrib2dAPPLE (GLuint, GLuint, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, const GLdouble *) {
+}
+GLAPI void APIENTRY stub_glMapVertexAttrib2fAPPLE (GLuint, GLuint, GLfloat, GLfloat, GLint, GLint, GLfloat, GLfloat, GLint, GLint, const GLfloat *) {
+}
+GLAPI GLenum APIENTRY stub_glObjectPurgeableAPPLE (GLenum, GLuint, GLenum) {
+	return (GLenum)0;
+}
+GLAPI GLenum APIENTRY stub_glObjectUnpurgeableAPPLE (GLenum, GLuint, GLenum) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glGetObjectParameterivAPPLE (GLenum, GLuint, GLenum, GLint *) {
+}
 
 //----------------------------------------------------------------------------
 
@@ -2480,6 +3243,9 @@ void glexfp::Reset() {
 	glBlendColor = stub_glBlendColor;
 	glBlendEquation = stub_glBlendEquation;
 	glDrawRangeElements = stub_glDrawRangeElements;
+	glTexImage3D = stub_glTexImage3D;
+	glTexSubImage3D = stub_glTexSubImage3D;
+	glCopyTexSubImage3D = stub_glCopyTexSubImage3D;
 	glColorTable = stub_glColorTable;
 	glColorTableParameterfv = stub_glColorTableParameterfv;
 	glColorTableParameteriv = stub_glColorTableParameteriv;
@@ -2512,10 +3278,15 @@ void glexfp::Reset() {
 	glMinmax = stub_glMinmax;
 	glResetHistogram = stub_glResetHistogram;
 	glResetMinmax = stub_glResetMinmax;
-	glTexImage3D = stub_glTexImage3D;
-	glTexSubImage3D = stub_glTexSubImage3D;
-	glCopyTexSubImage3D = stub_glCopyTexSubImage3D;
 	glActiveTexture = stub_glActiveTexture;
+	glSampleCoverage = stub_glSampleCoverage;
+	glCompressedTexImage3D = stub_glCompressedTexImage3D;
+	glCompressedTexImage2D = stub_glCompressedTexImage2D;
+	glCompressedTexImage1D = stub_glCompressedTexImage1D;
+	glCompressedTexSubImage3D = stub_glCompressedTexSubImage3D;
+	glCompressedTexSubImage2D = stub_glCompressedTexSubImage2D;
+	glCompressedTexSubImage1D = stub_glCompressedTexSubImage1D;
+	glGetCompressedTexImage = stub_glGetCompressedTexImage;
 	glClientActiveTexture = stub_glClientActiveTexture;
 	glMultiTexCoord1d = stub_glMultiTexCoord1d;
 	glMultiTexCoord1dv = stub_glMultiTexCoord1dv;
@@ -2553,26 +3324,18 @@ void glexfp::Reset() {
 	glLoadTransposeMatrixd = stub_glLoadTransposeMatrixd;
 	glMultTransposeMatrixf = stub_glMultTransposeMatrixf;
 	glMultTransposeMatrixd = stub_glMultTransposeMatrixd;
-	glSampleCoverage = stub_glSampleCoverage;
-	glCompressedTexImage3D = stub_glCompressedTexImage3D;
-	glCompressedTexImage2D = stub_glCompressedTexImage2D;
-	glCompressedTexImage1D = stub_glCompressedTexImage1D;
-	glCompressedTexSubImage3D = stub_glCompressedTexSubImage3D;
-	glCompressedTexSubImage2D = stub_glCompressedTexSubImage2D;
-	glCompressedTexSubImage1D = stub_glCompressedTexSubImage1D;
-	glGetCompressedTexImage = stub_glGetCompressedTexImage;
 	glBlendFuncSeparate = stub_glBlendFuncSeparate;
-	glFogCoordf = stub_glFogCoordf;
-	glFogCoordfv = stub_glFogCoordfv;
-	glFogCoordd = stub_glFogCoordd;
-	glFogCoorddv = stub_glFogCoorddv;
-	glFogCoordPointer = stub_glFogCoordPointer;
 	glMultiDrawArrays = stub_glMultiDrawArrays;
 	glMultiDrawElements = stub_glMultiDrawElements;
 	glPointParameterf = stub_glPointParameterf;
 	glPointParameterfv = stub_glPointParameterfv;
 	glPointParameteri = stub_glPointParameteri;
 	glPointParameteriv = stub_glPointParameteriv;
+	glFogCoordf = stub_glFogCoordf;
+	glFogCoordfv = stub_glFogCoordfv;
+	glFogCoordd = stub_glFogCoordd;
+	glFogCoorddv = stub_glFogCoorddv;
+	glFogCoordPointer = stub_glFogCoordPointer;
 	glSecondaryColor3b = stub_glSecondaryColor3b;
 	glSecondaryColor3bv = stub_glSecondaryColor3bv;
 	glSecondaryColor3d = stub_glSecondaryColor3d;
@@ -2724,6 +3487,73 @@ void glexfp::Reset() {
 	glUniformMatrix4x2fv = stub_glUniformMatrix4x2fv;
 	glUniformMatrix3x4fv = stub_glUniformMatrix3x4fv;
 	glUniformMatrix4x3fv = stub_glUniformMatrix4x3fv;
+	glColorMaski = stub_glColorMaski;
+	glGetBooleani_v = stub_glGetBooleani_v;
+	glGetIntegeri_v = stub_glGetIntegeri_v;
+	glEnablei = stub_glEnablei;
+	glDisablei = stub_glDisablei;
+	glIsEnabledi = stub_glIsEnabledi;
+	glBeginTransformFeedback = stub_glBeginTransformFeedback;
+	glEndTransformFeedback = stub_glEndTransformFeedback;
+	glBindBufferRange = stub_glBindBufferRange;
+	glBindBufferBase = stub_glBindBufferBase;
+	glTransformFeedbackVaryings = stub_glTransformFeedbackVaryings;
+	glGetTransformFeedbackVarying = stub_glGetTransformFeedbackVarying;
+	glClampColor = stub_glClampColor;
+	glBeginConditionalRender = stub_glBeginConditionalRender;
+	glEndConditionalRender = stub_glEndConditionalRender;
+	glVertexAttribIPointer = stub_glVertexAttribIPointer;
+	glGetVertexAttribIiv = stub_glGetVertexAttribIiv;
+	glGetVertexAttribIuiv = stub_glGetVertexAttribIuiv;
+	glVertexAttribI1i = stub_glVertexAttribI1i;
+	glVertexAttribI2i = stub_glVertexAttribI2i;
+	glVertexAttribI3i = stub_glVertexAttribI3i;
+	glVertexAttribI4i = stub_glVertexAttribI4i;
+	glVertexAttribI1ui = stub_glVertexAttribI1ui;
+	glVertexAttribI2ui = stub_glVertexAttribI2ui;
+	glVertexAttribI3ui = stub_glVertexAttribI3ui;
+	glVertexAttribI4ui = stub_glVertexAttribI4ui;
+	glVertexAttribI1iv = stub_glVertexAttribI1iv;
+	glVertexAttribI2iv = stub_glVertexAttribI2iv;
+	glVertexAttribI3iv = stub_glVertexAttribI3iv;
+	glVertexAttribI4iv = stub_glVertexAttribI4iv;
+	glVertexAttribI1uiv = stub_glVertexAttribI1uiv;
+	glVertexAttribI2uiv = stub_glVertexAttribI2uiv;
+	glVertexAttribI3uiv = stub_glVertexAttribI3uiv;
+	glVertexAttribI4uiv = stub_glVertexAttribI4uiv;
+	glVertexAttribI4bv = stub_glVertexAttribI4bv;
+	glVertexAttribI4sv = stub_glVertexAttribI4sv;
+	glVertexAttribI4ubv = stub_glVertexAttribI4ubv;
+	glVertexAttribI4usv = stub_glVertexAttribI4usv;
+	glGetUniformuiv = stub_glGetUniformuiv;
+	glBindFragDataLocation = stub_glBindFragDataLocation;
+	glGetFragDataLocation = stub_glGetFragDataLocation;
+	glUniform1ui = stub_glUniform1ui;
+	glUniform2ui = stub_glUniform2ui;
+	glUniform3ui = stub_glUniform3ui;
+	glUniform4ui = stub_glUniform4ui;
+	glUniform1uiv = stub_glUniform1uiv;
+	glUniform2uiv = stub_glUniform2uiv;
+	glUniform3uiv = stub_glUniform3uiv;
+	glUniform4uiv = stub_glUniform4uiv;
+	glTexParameterIiv = stub_glTexParameterIiv;
+	glTexParameterIuiv = stub_glTexParameterIuiv;
+	glGetTexParameterIiv = stub_glGetTexParameterIiv;
+	glGetTexParameterIuiv = stub_glGetTexParameterIuiv;
+	glClearBufferiv = stub_glClearBufferiv;
+	glClearBufferuiv = stub_glClearBufferuiv;
+	glClearBufferfv = stub_glClearBufferfv;
+	glClearBufferfi = stub_glClearBufferfi;
+	glGetStringi = stub_glGetStringi;
+	glDrawArraysInstanced = stub_glDrawArraysInstanced;
+	glDrawElementsInstanced = stub_glDrawElementsInstanced;
+	glTexBuffer = stub_glTexBuffer;
+	glPrimitiveRestartIndex = stub_glPrimitiveRestartIndex;
+	glGetInteger64i_v = stub_glGetInteger64i_v;
+	glGetBufferParameteri64v = stub_glGetBufferParameteri64v;
+	glProgramParameteri = stub_glProgramParameteri;
+	glFramebufferTexture = stub_glFramebufferTexture;
+	glFramebufferTextureFace = stub_glFramebufferTextureFace;
 	glActiveTextureARB = stub_glActiveTextureARB;
 	glClientActiveTextureARB = stub_glClientActiveTextureARB;
 	glMultiTexCoord1dARB = stub_glMultiTexCoord1dARB;
@@ -2928,6 +3758,69 @@ void glexfp::Reset() {
 	glGetAttribLocationARB = stub_glGetAttribLocationARB;
 	glDrawBuffersARB = stub_glDrawBuffersARB;
 	glClampColorARB = stub_glClampColorARB;
+	glDrawArraysInstancedARB = stub_glDrawArraysInstancedARB;
+	glDrawElementsInstancedARB = stub_glDrawElementsInstancedARB;
+	glIsRenderbuffer = stub_glIsRenderbuffer;
+	glBindRenderbuffer = stub_glBindRenderbuffer;
+	glDeleteRenderbuffers = stub_glDeleteRenderbuffers;
+	glGenRenderbuffers = stub_glGenRenderbuffers;
+	glRenderbufferStorage = stub_glRenderbufferStorage;
+	glGetRenderbufferParameteriv = stub_glGetRenderbufferParameteriv;
+	glIsFramebuffer = stub_glIsFramebuffer;
+	glBindFramebuffer = stub_glBindFramebuffer;
+	glDeleteFramebuffers = stub_glDeleteFramebuffers;
+	glGenFramebuffers = stub_glGenFramebuffers;
+	glCheckFramebufferStatus = stub_glCheckFramebufferStatus;
+	glFramebufferTexture1D = stub_glFramebufferTexture1D;
+	glFramebufferTexture2D = stub_glFramebufferTexture2D;
+	glFramebufferTexture3D = stub_glFramebufferTexture3D;
+	glFramebufferRenderbuffer = stub_glFramebufferRenderbuffer;
+	glGetFramebufferAttachmentParameteriv = stub_glGetFramebufferAttachmentParameteriv;
+	glGenerateMipmap = stub_glGenerateMipmap;
+	glBlitFramebuffer = stub_glBlitFramebuffer;
+	glRenderbufferStorageMultisample = stub_glRenderbufferStorageMultisample;
+	glFramebufferTextureLayer = stub_glFramebufferTextureLayer;
+	glProgramParameteriARB = stub_glProgramParameteriARB;
+	glFramebufferTextureARB = stub_glFramebufferTextureARB;
+	glFramebufferTextureLayerARB = stub_glFramebufferTextureLayerARB;
+	glFramebufferTextureFaceARB = stub_glFramebufferTextureFaceARB;
+	glVertexAttribDivisorARB = stub_glVertexAttribDivisorARB;
+	glMapBufferRange = stub_glMapBufferRange;
+	glFlushMappedBufferRange = stub_glFlushMappedBufferRange;
+	glTexBufferARB = stub_glTexBufferARB;
+	glBindVertexArray = stub_glBindVertexArray;
+	glDeleteVertexArrays = stub_glDeleteVertexArrays;
+	glGenVertexArrays = stub_glGenVertexArrays;
+	glIsVertexArray = stub_glIsVertexArray;
+	glGetUniformIndices = stub_glGetUniformIndices;
+	glGetActiveUniformsiv = stub_glGetActiveUniformsiv;
+	glGetActiveUniformName = stub_glGetActiveUniformName;
+	glGetUniformBlockIndex = stub_glGetUniformBlockIndex;
+	glGetActiveUniformBlockiv = stub_glGetActiveUniformBlockiv;
+	glGetActiveUniformBlockName = stub_glGetActiveUniformBlockName;
+	glUniformBlockBinding = stub_glUniformBlockBinding;
+	glCopyBufferSubData = stub_glCopyBufferSubData;
+	glDrawElementsBaseVertex = stub_glDrawElementsBaseVertex;
+	glDrawRangeElementsBaseVertex = stub_glDrawRangeElementsBaseVertex;
+	glDrawElementsInstancedBaseVertex = stub_glDrawElementsInstancedBaseVertex;
+	glMultiDrawElementsBaseVertex = stub_glMultiDrawElementsBaseVertex;
+	glProvokingVertex = stub_glProvokingVertex;
+	glFenceSync = stub_glFenceSync;
+	glIsSync = stub_glIsSync;
+	glDeleteSync = stub_glDeleteSync;
+	glClientWaitSync = stub_glClientWaitSync;
+	glWaitSync = stub_glWaitSync;
+	glGetInteger64v = stub_glGetInteger64v;
+	glGetSynciv = stub_glGetSynciv;
+	glTexImage2DMultisample = stub_glTexImage2DMultisample;
+	glTexImage3DMultisample = stub_glTexImage3DMultisample;
+	glGetMultisamplefv = stub_glGetMultisamplefv;
+	glSampleMaski = stub_glSampleMaski;
+	glBlendEquationi = stub_glBlendEquationi;
+	glBlendEquationSeparatei = stub_glBlendEquationSeparatei;
+	glBlendFunci = stub_glBlendFunci;
+	glBlendFuncSeparatei = stub_glBlendFuncSeparatei;
+	glMinSampleShading = stub_glMinSampleShading;
 	glBlendColorEXT = stub_glBlendColorEXT;
 	glPolygonOffsetEXT = stub_glPolygonOffsetEXT;
 	glTexImage3DEXT = stub_glTexImage3DEXT;
@@ -3669,6 +4562,248 @@ void glexfp::Reset() {
 	glGetTexParameterIuivEXT = stub_glGetTexParameterIuivEXT;
 	glClearColorIiEXT = stub_glClearColorIiEXT;
 	glClearColorIuiEXT = stub_glClearColorIuiEXT;
+	glFrameTerminatorGREMEDY = stub_glFrameTerminatorGREMEDY;
+	glBeginConditionalRenderNV = stub_glBeginConditionalRenderNV;
+	glEndConditionalRenderNV = stub_glEndConditionalRenderNV;
+	glPresentFrameKeyedNV = stub_glPresentFrameKeyedNV;
+	glPresentFrameDualFillNV = stub_glPresentFrameDualFillNV;
+	glGetVideoivNV = stub_glGetVideoivNV;
+	glGetVideouivNV = stub_glGetVideouivNV;
+	glGetVideoi64vNV = stub_glGetVideoi64vNV;
+	glGetVideoui64vNV = stub_glGetVideoui64vNV;
+	glBeginTransformFeedbackEXT = stub_glBeginTransformFeedbackEXT;
+	glEndTransformFeedbackEXT = stub_glEndTransformFeedbackEXT;
+	glBindBufferRangeEXT = stub_glBindBufferRangeEXT;
+	glBindBufferOffsetEXT = stub_glBindBufferOffsetEXT;
+	glBindBufferBaseEXT = stub_glBindBufferBaseEXT;
+	glTransformFeedbackVaryingsEXT = stub_glTransformFeedbackVaryingsEXT;
+	glGetTransformFeedbackVaryingEXT = stub_glGetTransformFeedbackVaryingEXT;
+	glClientAttribDefaultEXT = stub_glClientAttribDefaultEXT;
+	glPushClientAttribDefaultEXT = stub_glPushClientAttribDefaultEXT;
+	glMatrixLoadfEXT = stub_glMatrixLoadfEXT;
+	glMatrixLoaddEXT = stub_glMatrixLoaddEXT;
+	glMatrixMultfEXT = stub_glMatrixMultfEXT;
+	glMatrixMultdEXT = stub_glMatrixMultdEXT;
+	glMatrixLoadIdentityEXT = stub_glMatrixLoadIdentityEXT;
+	glMatrixRotatefEXT = stub_glMatrixRotatefEXT;
+	glMatrixRotatedEXT = stub_glMatrixRotatedEXT;
+	glMatrixScalefEXT = stub_glMatrixScalefEXT;
+	glMatrixScaledEXT = stub_glMatrixScaledEXT;
+	glMatrixTranslatefEXT = stub_glMatrixTranslatefEXT;
+	glMatrixTranslatedEXT = stub_glMatrixTranslatedEXT;
+	glMatrixFrustumEXT = stub_glMatrixFrustumEXT;
+	glMatrixOrthoEXT = stub_glMatrixOrthoEXT;
+	glMatrixPopEXT = stub_glMatrixPopEXT;
+	glMatrixPushEXT = stub_glMatrixPushEXT;
+	glMatrixLoadTransposefEXT = stub_glMatrixLoadTransposefEXT;
+	glMatrixLoadTransposedEXT = stub_glMatrixLoadTransposedEXT;
+	glMatrixMultTransposefEXT = stub_glMatrixMultTransposefEXT;
+	glMatrixMultTransposedEXT = stub_glMatrixMultTransposedEXT;
+	glTextureParameterfEXT = stub_glTextureParameterfEXT;
+	glTextureParameterfvEXT = stub_glTextureParameterfvEXT;
+	glTextureParameteriEXT = stub_glTextureParameteriEXT;
+	glTextureParameterivEXT = stub_glTextureParameterivEXT;
+	glTextureImage1DEXT = stub_glTextureImage1DEXT;
+	glTextureImage2DEXT = stub_glTextureImage2DEXT;
+	glTextureSubImage1DEXT = stub_glTextureSubImage1DEXT;
+	glTextureSubImage2DEXT = stub_glTextureSubImage2DEXT;
+	glCopyTextureImage1DEXT = stub_glCopyTextureImage1DEXT;
+	glCopyTextureImage2DEXT = stub_glCopyTextureImage2DEXT;
+	glCopyTextureSubImage1DEXT = stub_glCopyTextureSubImage1DEXT;
+	glCopyTextureSubImage2DEXT = stub_glCopyTextureSubImage2DEXT;
+	glGetTextureImageEXT = stub_glGetTextureImageEXT;
+	glGetTextureParameterfvEXT = stub_glGetTextureParameterfvEXT;
+	glGetTextureParameterivEXT = stub_glGetTextureParameterivEXT;
+	glGetTextureLevelParameterfvEXT = stub_glGetTextureLevelParameterfvEXT;
+	glGetTextureLevelParameterivEXT = stub_glGetTextureLevelParameterivEXT;
+	glTextureImage3DEXT = stub_glTextureImage3DEXT;
+	glTextureSubImage3DEXT = stub_glTextureSubImage3DEXT;
+	glCopyTextureSubImage3DEXT = stub_glCopyTextureSubImage3DEXT;
+	glMultiTexParameterfEXT = stub_glMultiTexParameterfEXT;
+	glMultiTexParameterfvEXT = stub_glMultiTexParameterfvEXT;
+	glMultiTexParameteriEXT = stub_glMultiTexParameteriEXT;
+	glMultiTexParameterivEXT = stub_glMultiTexParameterivEXT;
+	glMultiTexImage1DEXT = stub_glMultiTexImage1DEXT;
+	glMultiTexImage2DEXT = stub_glMultiTexImage2DEXT;
+	glMultiTexSubImage1DEXT = stub_glMultiTexSubImage1DEXT;
+	glMultiTexSubImage2DEXT = stub_glMultiTexSubImage2DEXT;
+	glCopyMultiTexImage1DEXT = stub_glCopyMultiTexImage1DEXT;
+	glCopyMultiTexImage2DEXT = stub_glCopyMultiTexImage2DEXT;
+	glCopyMultiTexSubImage1DEXT = stub_glCopyMultiTexSubImage1DEXT;
+	glCopyMultiTexSubImage2DEXT = stub_glCopyMultiTexSubImage2DEXT;
+	glGetMultiTexImageEXT = stub_glGetMultiTexImageEXT;
+	glGetMultiTexParameterfvEXT = stub_glGetMultiTexParameterfvEXT;
+	glGetMultiTexParameterivEXT = stub_glGetMultiTexParameterivEXT;
+	glGetMultiTexLevelParameterfvEXT = stub_glGetMultiTexLevelParameterfvEXT;
+	glGetMultiTexLevelParameterivEXT = stub_glGetMultiTexLevelParameterivEXT;
+	glMultiTexImage3DEXT = stub_glMultiTexImage3DEXT;
+	glMultiTexSubImage3DEXT = stub_glMultiTexSubImage3DEXT;
+	glCopyMultiTexSubImage3DEXT = stub_glCopyMultiTexSubImage3DEXT;
+	glBindMultiTextureEXT = stub_glBindMultiTextureEXT;
+	glEnableClientStateIndexedEXT = stub_glEnableClientStateIndexedEXT;
+	glDisableClientStateIndexedEXT = stub_glDisableClientStateIndexedEXT;
+	glMultiTexCoordPointerEXT = stub_glMultiTexCoordPointerEXT;
+	glMultiTexEnvfEXT = stub_glMultiTexEnvfEXT;
+	glMultiTexEnvfvEXT = stub_glMultiTexEnvfvEXT;
+	glMultiTexEnviEXT = stub_glMultiTexEnviEXT;
+	glMultiTexEnvivEXT = stub_glMultiTexEnvivEXT;
+	glMultiTexGendEXT = stub_glMultiTexGendEXT;
+	glMultiTexGendvEXT = stub_glMultiTexGendvEXT;
+	glMultiTexGenfEXT = stub_glMultiTexGenfEXT;
+	glMultiTexGenfvEXT = stub_glMultiTexGenfvEXT;
+	glMultiTexGeniEXT = stub_glMultiTexGeniEXT;
+	glMultiTexGenivEXT = stub_glMultiTexGenivEXT;
+	glGetMultiTexEnvfvEXT = stub_glGetMultiTexEnvfvEXT;
+	glGetMultiTexEnvivEXT = stub_glGetMultiTexEnvivEXT;
+	glGetMultiTexGendvEXT = stub_glGetMultiTexGendvEXT;
+	glGetMultiTexGenfvEXT = stub_glGetMultiTexGenfvEXT;
+	glGetMultiTexGenivEXT = stub_glGetMultiTexGenivEXT;
+	glGetFloatIndexedvEXT = stub_glGetFloatIndexedvEXT;
+	glGetDoubleIndexedvEXT = stub_glGetDoubleIndexedvEXT;
+	glGetPointerIndexedvEXT = stub_glGetPointerIndexedvEXT;
+	glCompressedTextureImage3DEXT = stub_glCompressedTextureImage3DEXT;
+	glCompressedTextureImage2DEXT = stub_glCompressedTextureImage2DEXT;
+	glCompressedTextureImage1DEXT = stub_glCompressedTextureImage1DEXT;
+	glCompressedTextureSubImage3DEXT = stub_glCompressedTextureSubImage3DEXT;
+	glCompressedTextureSubImage2DEXT = stub_glCompressedTextureSubImage2DEXT;
+	glCompressedTextureSubImage1DEXT = stub_glCompressedTextureSubImage1DEXT;
+	glGetCompressedTextureImageEXT = stub_glGetCompressedTextureImageEXT;
+	glCompressedMultiTexImage3DEXT = stub_glCompressedMultiTexImage3DEXT;
+	glCompressedMultiTexImage2DEXT = stub_glCompressedMultiTexImage2DEXT;
+	glCompressedMultiTexImage1DEXT = stub_glCompressedMultiTexImage1DEXT;
+	glCompressedMultiTexSubImage3DEXT = stub_glCompressedMultiTexSubImage3DEXT;
+	glCompressedMultiTexSubImage2DEXT = stub_glCompressedMultiTexSubImage2DEXT;
+	glCompressedMultiTexSubImage1DEXT = stub_glCompressedMultiTexSubImage1DEXT;
+	glGetCompressedMultiTexImageEXT = stub_glGetCompressedMultiTexImageEXT;
+	glNamedProgramStringEXT = stub_glNamedProgramStringEXT;
+	glNamedProgramLocalParameter4dEXT = stub_glNamedProgramLocalParameter4dEXT;
+	glNamedProgramLocalParameter4dvEXT = stub_glNamedProgramLocalParameter4dvEXT;
+	glNamedProgramLocalParameter4fEXT = stub_glNamedProgramLocalParameter4fEXT;
+	glNamedProgramLocalParameter4fvEXT = stub_glNamedProgramLocalParameter4fvEXT;
+	glGetNamedProgramLocalParameterdvEXT = stub_glGetNamedProgramLocalParameterdvEXT;
+	glGetNamedProgramLocalParameterfvEXT = stub_glGetNamedProgramLocalParameterfvEXT;
+	glGetNamedProgramivEXT = stub_glGetNamedProgramivEXT;
+	glGetNamedProgramStringEXT = stub_glGetNamedProgramStringEXT;
+	glNamedProgramLocalParameters4fvEXT = stub_glNamedProgramLocalParameters4fvEXT;
+	glNamedProgramLocalParameterI4iEXT = stub_glNamedProgramLocalParameterI4iEXT;
+	glNamedProgramLocalParameterI4ivEXT = stub_glNamedProgramLocalParameterI4ivEXT;
+	glNamedProgramLocalParametersI4ivEXT = stub_glNamedProgramLocalParametersI4ivEXT;
+	glNamedProgramLocalParameterI4uiEXT = stub_glNamedProgramLocalParameterI4uiEXT;
+	glNamedProgramLocalParameterI4uivEXT = stub_glNamedProgramLocalParameterI4uivEXT;
+	glNamedProgramLocalParametersI4uivEXT = stub_glNamedProgramLocalParametersI4uivEXT;
+	glGetNamedProgramLocalParameterIivEXT = stub_glGetNamedProgramLocalParameterIivEXT;
+	glGetNamedProgramLocalParameterIuivEXT = stub_glGetNamedProgramLocalParameterIuivEXT;
+	glTextureParameterIivEXT = stub_glTextureParameterIivEXT;
+	glTextureParameterIuivEXT = stub_glTextureParameterIuivEXT;
+	glGetTextureParameterIivEXT = stub_glGetTextureParameterIivEXT;
+	glGetTextureParameterIuivEXT = stub_glGetTextureParameterIuivEXT;
+	glMultiTexParameterIivEXT = stub_glMultiTexParameterIivEXT;
+	glMultiTexParameterIuivEXT = stub_glMultiTexParameterIuivEXT;
+	glGetMultiTexParameterIivEXT = stub_glGetMultiTexParameterIivEXT;
+	glGetMultiTexParameterIuivEXT = stub_glGetMultiTexParameterIuivEXT;
+	glProgramUniform1fEXT = stub_glProgramUniform1fEXT;
+	glProgramUniform2fEXT = stub_glProgramUniform2fEXT;
+	glProgramUniform3fEXT = stub_glProgramUniform3fEXT;
+	glProgramUniform4fEXT = stub_glProgramUniform4fEXT;
+	glProgramUniform1iEXT = stub_glProgramUniform1iEXT;
+	glProgramUniform2iEXT = stub_glProgramUniform2iEXT;
+	glProgramUniform3iEXT = stub_glProgramUniform3iEXT;
+	glProgramUniform4iEXT = stub_glProgramUniform4iEXT;
+	glProgramUniform1fvEXT = stub_glProgramUniform1fvEXT;
+	glProgramUniform2fvEXT = stub_glProgramUniform2fvEXT;
+	glProgramUniform3fvEXT = stub_glProgramUniform3fvEXT;
+	glProgramUniform4fvEXT = stub_glProgramUniform4fvEXT;
+	glProgramUniform1ivEXT = stub_glProgramUniform1ivEXT;
+	glProgramUniform2ivEXT = stub_glProgramUniform2ivEXT;
+	glProgramUniform3ivEXT = stub_glProgramUniform3ivEXT;
+	glProgramUniform4ivEXT = stub_glProgramUniform4ivEXT;
+	glProgramUniformMatrix2fvEXT = stub_glProgramUniformMatrix2fvEXT;
+	glProgramUniformMatrix3fvEXT = stub_glProgramUniformMatrix3fvEXT;
+	glProgramUniformMatrix4fvEXT = stub_glProgramUniformMatrix4fvEXT;
+	glProgramUniformMatrix2x3fvEXT = stub_glProgramUniformMatrix2x3fvEXT;
+	glProgramUniformMatrix3x2fvEXT = stub_glProgramUniformMatrix3x2fvEXT;
+	glProgramUniformMatrix2x4fvEXT = stub_glProgramUniformMatrix2x4fvEXT;
+	glProgramUniformMatrix4x2fvEXT = stub_glProgramUniformMatrix4x2fvEXT;
+	glProgramUniformMatrix3x4fvEXT = stub_glProgramUniformMatrix3x4fvEXT;
+	glProgramUniformMatrix4x3fvEXT = stub_glProgramUniformMatrix4x3fvEXT;
+	glProgramUniform1uiEXT = stub_glProgramUniform1uiEXT;
+	glProgramUniform2uiEXT = stub_glProgramUniform2uiEXT;
+	glProgramUniform3uiEXT = stub_glProgramUniform3uiEXT;
+	glProgramUniform4uiEXT = stub_glProgramUniform4uiEXT;
+	glProgramUniform1uivEXT = stub_glProgramUniform1uivEXT;
+	glProgramUniform2uivEXT = stub_glProgramUniform2uivEXT;
+	glProgramUniform3uivEXT = stub_glProgramUniform3uivEXT;
+	glProgramUniform4uivEXT = stub_glProgramUniform4uivEXT;
+	glNamedBufferDataEXT = stub_glNamedBufferDataEXT;
+	glNamedBufferSubDataEXT = stub_glNamedBufferSubDataEXT;
+	glMapNamedBufferEXT = stub_glMapNamedBufferEXT;
+	glUnmapNamedBufferEXT = stub_glUnmapNamedBufferEXT;
+	glGetNamedBufferParameterivEXT = stub_glGetNamedBufferParameterivEXT;
+	glGetNamedBufferPointervEXT = stub_glGetNamedBufferPointervEXT;
+	glGetNamedBufferSubDataEXT = stub_glGetNamedBufferSubDataEXT;
+	glTextureBufferEXT = stub_glTextureBufferEXT;
+	glMultiTexBufferEXT = stub_glMultiTexBufferEXT;
+	glNamedRenderbufferStorageEXT = stub_glNamedRenderbufferStorageEXT;
+	glGetNamedRenderbufferParameterivEXT = stub_glGetNamedRenderbufferParameterivEXT;
+	glCheckNamedFramebufferStatusEXT = stub_glCheckNamedFramebufferStatusEXT;
+	glNamedFramebufferTexture1DEXT = stub_glNamedFramebufferTexture1DEXT;
+	glNamedFramebufferTexture2DEXT = stub_glNamedFramebufferTexture2DEXT;
+	glNamedFramebufferTexture3DEXT = stub_glNamedFramebufferTexture3DEXT;
+	glNamedFramebufferRenderbufferEXT = stub_glNamedFramebufferRenderbufferEXT;
+	glGetNamedFramebufferAttachmentParameterivEXT = stub_glGetNamedFramebufferAttachmentParameterivEXT;
+	glGenerateTextureMipmapEXT = stub_glGenerateTextureMipmapEXT;
+	glGenerateMultiTexMipmapEXT = stub_glGenerateMultiTexMipmapEXT;
+	glFramebufferDrawBufferEXT = stub_glFramebufferDrawBufferEXT;
+	glFramebufferDrawBuffersEXT = stub_glFramebufferDrawBuffersEXT;
+	glFramebufferReadBufferEXT = stub_glFramebufferReadBufferEXT;
+	glGetFramebufferParameterivEXT = stub_glGetFramebufferParameterivEXT;
+	glNamedRenderbufferStorageMultisampleEXT = stub_glNamedRenderbufferStorageMultisampleEXT;
+	glNamedRenderbufferStorageMultisampleCoverageEXT = stub_glNamedRenderbufferStorageMultisampleCoverageEXT;
+	glNamedFramebufferTextureEXT = stub_glNamedFramebufferTextureEXT;
+	glNamedFramebufferTextureLayerEXT = stub_glNamedFramebufferTextureLayerEXT;
+	glNamedFramebufferTextureFaceEXT = stub_glNamedFramebufferTextureFaceEXT;
+	glTextureRenderbufferEXT = stub_glTextureRenderbufferEXT;
+	glMultiTexRenderbufferEXT = stub_glMultiTexRenderbufferEXT;
+	glGetMultisamplefvNV = stub_glGetMultisamplefvNV;
+	glSampleMaskIndexedNV = stub_glSampleMaskIndexedNV;
+	glTexRenderbufferNV = stub_glTexRenderbufferNV;
+	glBindTransformFeedbackNV = stub_glBindTransformFeedbackNV;
+	glDeleteTransformFeedbacksNV = stub_glDeleteTransformFeedbacksNV;
+	glGenTransformFeedbacksNV = stub_glGenTransformFeedbacksNV;
+	glIsTransformFeedbackNV = stub_glIsTransformFeedbackNV;
+	glPauseTransformFeedbackNV = stub_glPauseTransformFeedbackNV;
+	glResumeTransformFeedbackNV = stub_glResumeTransformFeedbackNV;
+	glDrawTransformFeedbackNV = stub_glDrawTransformFeedbackNV;
+	glGetPerfMonitorGroupsAMD = stub_glGetPerfMonitorGroupsAMD;
+	glGetPerfMonitorCountersAMD = stub_glGetPerfMonitorCountersAMD;
+	glGetPerfMonitorGroupStringAMD = stub_glGetPerfMonitorGroupStringAMD;
+	glGetPerfMonitorCounterStringAMD = stub_glGetPerfMonitorCounterStringAMD;
+	glGetPerfMonitorCounterInfoAMD = stub_glGetPerfMonitorCounterInfoAMD;
+	glGenPerfMonitorsAMD = stub_glGenPerfMonitorsAMD;
+	glDeletePerfMonitorsAMD = stub_glDeletePerfMonitorsAMD;
+	glSelectPerfMonitorCountersAMD = stub_glSelectPerfMonitorCountersAMD;
+	glBeginPerfMonitorAMD = stub_glBeginPerfMonitorAMD;
+	glEndPerfMonitorAMD = stub_glEndPerfMonitorAMD;
+	glGetPerfMonitorCounterDataAMD = stub_glGetPerfMonitorCounterDataAMD;
+	glTessellationFactorAMD = stub_glTessellationFactorAMD;
+	glTessellationModeAMD = stub_glTessellationModeAMD;
+	glProvokingVertexEXT = stub_glProvokingVertexEXT;
+	glBlendFuncIndexedAMD = stub_glBlendFuncIndexedAMD;
+	glBlendFuncSeparateIndexedAMD = stub_glBlendFuncSeparateIndexedAMD;
+	glBlendEquationIndexedAMD = stub_glBlendEquationIndexedAMD;
+	glBlendEquationSeparateIndexedAMD = stub_glBlendEquationSeparateIndexedAMD;
+	glTextureRangeAPPLE = stub_glTextureRangeAPPLE;
+	glGetTexParameterPointervAPPLE = stub_glGetTexParameterPointervAPPLE;
+	glEnableVertexAttribAPPLE = stub_glEnableVertexAttribAPPLE;
+	glDisableVertexAttribAPPLE = stub_glDisableVertexAttribAPPLE;
+	glIsVertexAttribEnabledAPPLE = stub_glIsVertexAttribEnabledAPPLE;
+	glMapVertexAttrib1dAPPLE = stub_glMapVertexAttrib1dAPPLE;
+	glMapVertexAttrib1fAPPLE = stub_glMapVertexAttrib1fAPPLE;
+	glMapVertexAttrib2dAPPLE = stub_glMapVertexAttrib2dAPPLE;
+	glMapVertexAttrib2fAPPLE = stub_glMapVertexAttrib2fAPPLE;
+	glObjectPurgeableAPPLE = stub_glObjectPurgeableAPPLE;
+	glObjectUnpurgeableAPPLE = stub_glObjectUnpurgeableAPPLE;
+	glGetObjectParameterivAPPLE = stub_glGetObjectParameterivAPPLE;
 }//Reset
 
 //----------------------------------------------------------------------------
@@ -3689,6 +4824,21 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glDrawRangeElements");
 	if (p) {
 		glDrawRangeElements = (PFNGLDRAWRANGEELEMENTSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexImage3D");
+	if (p) {
+		glTexImage3D = (PFNGLTEXIMAGE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexSubImage3D");
+	if (p) {
+		glTexSubImage3D = (PFNGLTEXSUBIMAGE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTexSubImage3D");
+	if (p) {
+		glCopyTexSubImage3D = (PFNGLCOPYTEXSUBIMAGE3DPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glColorTable");
@@ -3851,24 +5001,49 @@ bool glexfp::Load() {
 		glResetMinmax = (PFNGLRESETMINMAXPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glTexImage3D");
-	if (p) {
-		glTexImage3D = (PFNGLTEXIMAGE3DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glTexSubImage3D");
-	if (p) {
-		glTexSubImage3D = (PFNGLTEXSUBIMAGE3DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCopyTexSubImage3D");
-	if (p) {
-		glCopyTexSubImage3D = (PFNGLCOPYTEXSUBIMAGE3DPROC)p;
-		m_count++;
-	}
 	p = glXGetProcAddress((const unsigned char*)"glActiveTexture");
 	if (p) {
 		glActiveTexture = (PFNGLACTIVETEXTUREPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSampleCoverage");
+	if (p) {
+		glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage3D");
+	if (p) {
+		glCompressedTexImage3D = (PFNGLCOMPRESSEDTEXIMAGE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage2D");
+	if (p) {
+		glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage1D");
+	if (p) {
+		glCompressedTexImage1D = (PFNGLCOMPRESSEDTEXIMAGE1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage3D");
+	if (p) {
+		glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage2D");
+	if (p) {
+		glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage1D");
+	if (p) {
+		glCompressedTexSubImage1D = (PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetCompressedTexImage");
+	if (p) {
+		glGetCompressedTexImage = (PFNGLGETCOMPRESSEDTEXIMAGEPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glClientActiveTexture");
@@ -4056,74 +5231,9 @@ bool glexfp::Load() {
 		glMultTransposeMatrixd = (PFNGLMULTTRANSPOSEMATRIXDPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glSampleCoverage");
-	if (p) {
-		glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage3D");
-	if (p) {
-		glCompressedTexImage3D = (PFNGLCOMPRESSEDTEXIMAGE3DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage2D");
-	if (p) {
-		glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexImage1D");
-	if (p) {
-		glCompressedTexImage1D = (PFNGLCOMPRESSEDTEXIMAGE1DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage3D");
-	if (p) {
-		glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage2D");
-	if (p) {
-		glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glCompressedTexSubImage1D");
-	if (p) {
-		glCompressedTexSubImage1D = (PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glGetCompressedTexImage");
-	if (p) {
-		glGetCompressedTexImage = (PFNGLGETCOMPRESSEDTEXIMAGEPROC)p;
-		m_count++;
-	}
 	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparate");
 	if (p) {
 		glBlendFuncSeparate = (PFNGLBLENDFUNCSEPARATEPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glFogCoordf");
-	if (p) {
-		glFogCoordf = (PFNGLFOGCOORDFPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glFogCoordfv");
-	if (p) {
-		glFogCoordfv = (PFNGLFOGCOORDFVPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glFogCoordd");
-	if (p) {
-		glFogCoordd = (PFNGLFOGCOORDDPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glFogCoorddv");
-	if (p) {
-		glFogCoorddv = (PFNGLFOGCOORDDVPROC)p;
-		m_count++;
-	}
-	p = glXGetProcAddress((const unsigned char*)"glFogCoordPointer");
-	if (p) {
-		glFogCoordPointer = (PFNGLFOGCOORDPOINTERPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glMultiDrawArrays");
@@ -4154,6 +5264,31 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glPointParameteriv");
 	if (p) {
 		glPointParameteriv = (PFNGLPOINTPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoordf");
+	if (p) {
+		glFogCoordf = (PFNGLFOGCOORDFPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoordfv");
+	if (p) {
+		glFogCoordfv = (PFNGLFOGCOORDFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoordd");
+	if (p) {
+		glFogCoordd = (PFNGLFOGCOORDDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoorddv");
+	if (p) {
+		glFogCoorddv = (PFNGLFOGCOORDDVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoordPointer");
+	if (p) {
+		glFogCoordPointer = (PFNGLFOGCOORDPOINTERPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glSecondaryColor3b");
@@ -4909,6 +6044,341 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix4x3fv");
 	if (p) {
 		glUniformMatrix4x3fv = (PFNGLUNIFORMMATRIX4X3FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorMaski");
+	if (p) {
+		glColorMaski = (PFNGLCOLORMASKIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetBooleani_v");
+	if (p) {
+		glGetBooleani_v = (PFNGLGETBOOLEANI_VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetIntegeri_v");
+	if (p) {
+		glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEnablei");
+	if (p) {
+		glEnablei = (PFNGLENABLEIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDisablei");
+	if (p) {
+		glDisablei = (PFNGLDISABLEIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsEnabledi");
+	if (p) {
+		glIsEnabledi = (PFNGLISENABLEDIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginTransformFeedback");
+	if (p) {
+		glBeginTransformFeedback = (PFNGLBEGINTRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndTransformFeedback");
+	if (p) {
+		glEndTransformFeedback = (PFNGLENDTRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindBufferRange");
+	if (p) {
+		glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindBufferBase");
+	if (p) {
+		glBindBufferBase = (PFNGLBINDBUFFERBASEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTransformFeedbackVaryings");
+	if (p) {
+		glTransformFeedbackVaryings = (PFNGLTRANSFORMFEEDBACKVARYINGSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTransformFeedbackVarying");
+	if (p) {
+		glGetTransformFeedbackVarying = (PFNGLGETTRANSFORMFEEDBACKVARYINGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClampColor");
+	if (p) {
+		glClampColor = (PFNGLCLAMPCOLORPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginConditionalRender");
+	if (p) {
+		glBeginConditionalRender = (PFNGLBEGINCONDITIONALRENDERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndConditionalRender");
+	if (p) {
+		glEndConditionalRender = (PFNGLENDCONDITIONALRENDERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribIPointer");
+	if (p) {
+		glVertexAttribIPointer = (PFNGLVERTEXATTRIBIPOINTERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribIiv");
+	if (p) {
+		glGetVertexAttribIiv = (PFNGLGETVERTEXATTRIBIIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribIuiv");
+	if (p) {
+		glGetVertexAttribIuiv = (PFNGLGETVERTEXATTRIBIUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI1i");
+	if (p) {
+		glVertexAttribI1i = (PFNGLVERTEXATTRIBI1IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI2i");
+	if (p) {
+		glVertexAttribI2i = (PFNGLVERTEXATTRIBI2IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI3i");
+	if (p) {
+		glVertexAttribI3i = (PFNGLVERTEXATTRIBI3IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4i");
+	if (p) {
+		glVertexAttribI4i = (PFNGLVERTEXATTRIBI4IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI1ui");
+	if (p) {
+		glVertexAttribI1ui = (PFNGLVERTEXATTRIBI1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI2ui");
+	if (p) {
+		glVertexAttribI2ui = (PFNGLVERTEXATTRIBI2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI3ui");
+	if (p) {
+		glVertexAttribI3ui = (PFNGLVERTEXATTRIBI3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4ui");
+	if (p) {
+		glVertexAttribI4ui = (PFNGLVERTEXATTRIBI4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI1iv");
+	if (p) {
+		glVertexAttribI1iv = (PFNGLVERTEXATTRIBI1IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI2iv");
+	if (p) {
+		glVertexAttribI2iv = (PFNGLVERTEXATTRIBI2IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI3iv");
+	if (p) {
+		glVertexAttribI3iv = (PFNGLVERTEXATTRIBI3IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4iv");
+	if (p) {
+		glVertexAttribI4iv = (PFNGLVERTEXATTRIBI4IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI1uiv");
+	if (p) {
+		glVertexAttribI1uiv = (PFNGLVERTEXATTRIBI1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI2uiv");
+	if (p) {
+		glVertexAttribI2uiv = (PFNGLVERTEXATTRIBI2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI3uiv");
+	if (p) {
+		glVertexAttribI3uiv = (PFNGLVERTEXATTRIBI3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4uiv");
+	if (p) {
+		glVertexAttribI4uiv = (PFNGLVERTEXATTRIBI4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4bv");
+	if (p) {
+		glVertexAttribI4bv = (PFNGLVERTEXATTRIBI4BVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4sv");
+	if (p) {
+		glVertexAttribI4sv = (PFNGLVERTEXATTRIBI4SVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4ubv");
+	if (p) {
+		glVertexAttribI4ubv = (PFNGLVERTEXATTRIBI4UBVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribI4usv");
+	if (p) {
+		glVertexAttribI4usv = (PFNGLVERTEXATTRIBI4USVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformuiv");
+	if (p) {
+		glGetUniformuiv = (PFNGLGETUNIFORMUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindFragDataLocation");
+	if (p) {
+		glBindFragDataLocation = (PFNGLBINDFRAGDATALOCATIONPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFragDataLocation");
+	if (p) {
+		glGetFragDataLocation = (PFNGLGETFRAGDATALOCATIONPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1ui");
+	if (p) {
+		glUniform1ui = (PFNGLUNIFORM1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2ui");
+	if (p) {
+		glUniform2ui = (PFNGLUNIFORM2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3ui");
+	if (p) {
+		glUniform3ui = (PFNGLUNIFORM3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4ui");
+	if (p) {
+		glUniform4ui = (PFNGLUNIFORM4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1uiv");
+	if (p) {
+		glUniform1uiv = (PFNGLUNIFORM1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2uiv");
+	if (p) {
+		glUniform2uiv = (PFNGLUNIFORM2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3uiv");
+	if (p) {
+		glUniform3uiv = (PFNGLUNIFORM3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4uiv");
+	if (p) {
+		glUniform4uiv = (PFNGLUNIFORM4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexParameterIiv");
+	if (p) {
+		glTexParameterIiv = (PFNGLTEXPARAMETERIIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexParameterIuiv");
+	if (p) {
+		glTexParameterIuiv = (PFNGLTEXPARAMETERIUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTexParameterIiv");
+	if (p) {
+		glGetTexParameterIiv = (PFNGLGETTEXPARAMETERIIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTexParameterIuiv");
+	if (p) {
+		glGetTexParameterIuiv = (PFNGLGETTEXPARAMETERIUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferiv");
+	if (p) {
+		glClearBufferiv = (PFNGLCLEARBUFFERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferuiv");
+	if (p) {
+		glClearBufferuiv = (PFNGLCLEARBUFFERUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferfv");
+	if (p) {
+		glClearBufferfv = (PFNGLCLEARBUFFERFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferfi");
+	if (p) {
+		glClearBufferfi = (PFNGLCLEARBUFFERFIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetStringi");
+	if (p) {
+		glGetStringi = (PFNGLGETSTRINGIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawArraysInstanced");
+	if (p) {
+		glDrawArraysInstanced = (PFNGLDRAWARRAYSINSTANCEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsInstanced");
+	if (p) {
+		glDrawElementsInstanced = (PFNGLDRAWELEMENTSINSTANCEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexBuffer");
+	if (p) {
+		glTexBuffer = (PFNGLTEXBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPrimitiveRestartIndex");
+	if (p) {
+		glPrimitiveRestartIndex = (PFNGLPRIMITIVERESTARTINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetInteger64i_v");
+	if (p) {
+		glGetInteger64i_v = (PFNGLGETINTEGER64I_VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetBufferParameteri64v");
+	if (p) {
+		glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramParameteri");
+	if (p) {
+		glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTexture");
+	if (p) {
+		glFramebufferTexture = (PFNGLFRAMEBUFFERTEXTUREPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureFace");
+	if (p) {
+		glFramebufferTextureFace = (PFNGLFRAMEBUFFERTEXTUREFACEPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glActiveTextureARB");
@@ -5929,6 +7399,321 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glClampColorARB");
 	if (p) {
 		glClampColorARB = (PFNGLCLAMPCOLORARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawArraysInstancedARB");
+	if (p) {
+		glDrawArraysInstancedARB = (PFNGLDRAWARRAYSINSTANCEDARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsInstancedARB");
+	if (p) {
+		glDrawElementsInstancedARB = (PFNGLDRAWELEMENTSINSTANCEDARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsRenderbuffer");
+	if (p) {
+		glIsRenderbuffer = (PFNGLISRENDERBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindRenderbuffer");
+	if (p) {
+		glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteRenderbuffers");
+	if (p) {
+		glDeleteRenderbuffers = (PFNGLDELETERENDERBUFFERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenRenderbuffers");
+	if (p) {
+		glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glRenderbufferStorage");
+	if (p) {
+		glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetRenderbufferParameteriv");
+	if (p) {
+		glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsFramebuffer");
+	if (p) {
+		glIsFramebuffer = (PFNGLISFRAMEBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindFramebuffer");
+	if (p) {
+		glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteFramebuffers");
+	if (p) {
+		glDeleteFramebuffers = (PFNGLDELETEFRAMEBUFFERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenFramebuffers");
+	if (p) {
+		glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCheckFramebufferStatus");
+	if (p) {
+		glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTexture1D");
+	if (p) {
+		glFramebufferTexture1D = (PFNGLFRAMEBUFFERTEXTURE1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTexture2D");
+	if (p) {
+		glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTexture3D");
+	if (p) {
+		glFramebufferTexture3D = (PFNGLFRAMEBUFFERTEXTURE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferRenderbuffer");
+	if (p) {
+		glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFramebufferAttachmentParameteriv");
+	if (p) {
+		glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenerateMipmap");
+	if (p) {
+		glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlitFramebuffer");
+	if (p) {
+		glBlitFramebuffer = (PFNGLBLITFRAMEBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glRenderbufferStorageMultisample");
+	if (p) {
+		glRenderbufferStorageMultisample = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureLayer");
+	if (p) {
+		glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramParameteriARB");
+	if (p) {
+		glProgramParameteriARB = (PFNGLPROGRAMPARAMETERIARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureARB");
+	if (p) {
+		glFramebufferTextureARB = (PFNGLFRAMEBUFFERTEXTUREARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureLayerARB");
+	if (p) {
+		glFramebufferTextureLayerARB = (PFNGLFRAMEBUFFERTEXTURELAYERARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureFaceARB");
+	if (p) {
+		glFramebufferTextureFaceARB = (PFNGLFRAMEBUFFERTEXTUREFACEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribDivisorARB");
+	if (p) {
+		glVertexAttribDivisorARB = (PFNGLVERTEXATTRIBDIVISORARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapBufferRange");
+	if (p) {
+		glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFlushMappedBufferRange");
+	if (p) {
+		glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexBufferARB");
+	if (p) {
+		glTexBufferARB = (PFNGLTEXBUFFERARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindVertexArray");
+	if (p) {
+		glBindVertexArray = (PFNGLBINDVERTEXARRAYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteVertexArrays");
+	if (p) {
+		glDeleteVertexArrays = (PFNGLDELETEVERTEXARRAYSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenVertexArrays");
+	if (p) {
+		glGenVertexArrays = (PFNGLGENVERTEXARRAYSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsVertexArray");
+	if (p) {
+		glIsVertexArray = (PFNGLISVERTEXARRAYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformIndices");
+	if (p) {
+		glGetUniformIndices = (PFNGLGETUNIFORMINDICESPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveUniformsiv");
+	if (p) {
+		glGetActiveUniformsiv = (PFNGLGETACTIVEUNIFORMSIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveUniformName");
+	if (p) {
+		glGetActiveUniformName = (PFNGLGETACTIVEUNIFORMNAMEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformBlockIndex");
+	if (p) {
+		glGetUniformBlockIndex = (PFNGLGETUNIFORMBLOCKINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveUniformBlockiv");
+	if (p) {
+		glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveUniformBlockName");
+	if (p) {
+		glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformBlockBinding");
+	if (p) {
+		glUniformBlockBinding = (PFNGLUNIFORMBLOCKBINDINGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyBufferSubData");
+	if (p) {
+		glCopyBufferSubData = (PFNGLCOPYBUFFERSUBDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsBaseVertex");
+	if (p) {
+		glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawRangeElementsBaseVertex");
+	if (p) {
+		glDrawRangeElementsBaseVertex = (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsInstancedBaseVertex");
+	if (p) {
+		glDrawElementsInstancedBaseVertex = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiDrawElementsBaseVertex");
+	if (p) {
+		glMultiDrawElementsBaseVertex = (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProvokingVertex");
+	if (p) {
+		glProvokingVertex = (PFNGLPROVOKINGVERTEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFenceSync");
+	if (p) {
+		glFenceSync = (PFNGLFENCESYNCPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsSync");
+	if (p) {
+		glIsSync = (PFNGLISSYNCPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteSync");
+	if (p) {
+		glDeleteSync = (PFNGLDELETESYNCPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClientWaitSync");
+	if (p) {
+		glClientWaitSync = (PFNGLCLIENTWAITSYNCPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glWaitSync");
+	if (p) {
+		glWaitSync = (PFNGLWAITSYNCPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetInteger64v");
+	if (p) {
+		glGetInteger64v = (PFNGLGETINTEGER64VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSynciv");
+	if (p) {
+		glGetSynciv = (PFNGLGETSYNCIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexImage2DMultisample");
+	if (p) {
+		glTexImage2DMultisample = (PFNGLTEXIMAGE2DMULTISAMPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexImage3DMultisample");
+	if (p) {
+		glTexImage3DMultisample = (PFNGLTEXIMAGE3DMULTISAMPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultisamplefv");
+	if (p) {
+		glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSampleMaski");
+	if (p) {
+		glSampleMaski = (PFNGLSAMPLEMASKIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationi");
+	if (p) {
+		glBlendEquationi = (PFNGLBLENDEQUATIONIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationSeparatei");
+	if (p) {
+		glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFunci");
+	if (p) {
+		glBlendFunci = (PFNGLBLENDFUNCIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparatei");
+	if (p) {
+		glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMinSampleShading");
+	if (p) {
+		glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glBlendColorEXT");
@@ -9634,6 +11419,1216 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glClearColorIuiEXT");
 	if (p) {
 		glClearColorIuiEXT = (PFNGLCLEARCOLORIUIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFrameTerminatorGREMEDY");
+	if (p) {
+		glFrameTerminatorGREMEDY = (PFNGLFRAMETERMINATORGREMEDYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginConditionalRenderNV");
+	if (p) {
+		glBeginConditionalRenderNV = (PFNGLBEGINCONDITIONALRENDERNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndConditionalRenderNV");
+	if (p) {
+		glEndConditionalRenderNV = (PFNGLENDCONDITIONALRENDERNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPresentFrameKeyedNV");
+	if (p) {
+		glPresentFrameKeyedNV = (PFNGLPRESENTFRAMEKEYEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPresentFrameDualFillNV");
+	if (p) {
+		glPresentFrameDualFillNV = (PFNGLPRESENTFRAMEDUALFILLNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoivNV");
+	if (p) {
+		glGetVideoivNV = (PFNGLGETVIDEOIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideouivNV");
+	if (p) {
+		glGetVideouivNV = (PFNGLGETVIDEOUIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoi64vNV");
+	if (p) {
+		glGetVideoi64vNV = (PFNGLGETVIDEOI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoui64vNV");
+	if (p) {
+		glGetVideoui64vNV = (PFNGLGETVIDEOUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginTransformFeedbackEXT");
+	if (p) {
+		glBeginTransformFeedbackEXT = (PFNGLBEGINTRANSFORMFEEDBACKEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndTransformFeedbackEXT");
+	if (p) {
+		glEndTransformFeedbackEXT = (PFNGLENDTRANSFORMFEEDBACKEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindBufferRangeEXT");
+	if (p) {
+		glBindBufferRangeEXT = (PFNGLBINDBUFFERRANGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindBufferOffsetEXT");
+	if (p) {
+		glBindBufferOffsetEXT = (PFNGLBINDBUFFEROFFSETEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindBufferBaseEXT");
+	if (p) {
+		glBindBufferBaseEXT = (PFNGLBINDBUFFERBASEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTransformFeedbackVaryingsEXT");
+	if (p) {
+		glTransformFeedbackVaryingsEXT = (PFNGLTRANSFORMFEEDBACKVARYINGSEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTransformFeedbackVaryingEXT");
+	if (p) {
+		glGetTransformFeedbackVaryingEXT = (PFNGLGETTRANSFORMFEEDBACKVARYINGEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClientAttribDefaultEXT");
+	if (p) {
+		glClientAttribDefaultEXT = (PFNGLCLIENTATTRIBDEFAULTEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPushClientAttribDefaultEXT");
+	if (p) {
+		glPushClientAttribDefaultEXT = (PFNGLPUSHCLIENTATTRIBDEFAULTEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixLoadfEXT");
+	if (p) {
+		glMatrixLoadfEXT = (PFNGLMATRIXLOADFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixLoaddEXT");
+	if (p) {
+		glMatrixLoaddEXT = (PFNGLMATRIXLOADDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixMultfEXT");
+	if (p) {
+		glMatrixMultfEXT = (PFNGLMATRIXMULTFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixMultdEXT");
+	if (p) {
+		glMatrixMultdEXT = (PFNGLMATRIXMULTDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixLoadIdentityEXT");
+	if (p) {
+		glMatrixLoadIdentityEXT = (PFNGLMATRIXLOADIDENTITYEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixRotatefEXT");
+	if (p) {
+		glMatrixRotatefEXT = (PFNGLMATRIXROTATEFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixRotatedEXT");
+	if (p) {
+		glMatrixRotatedEXT = (PFNGLMATRIXROTATEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixScalefEXT");
+	if (p) {
+		glMatrixScalefEXT = (PFNGLMATRIXSCALEFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixScaledEXT");
+	if (p) {
+		glMatrixScaledEXT = (PFNGLMATRIXSCALEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixTranslatefEXT");
+	if (p) {
+		glMatrixTranslatefEXT = (PFNGLMATRIXTRANSLATEFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixTranslatedEXT");
+	if (p) {
+		glMatrixTranslatedEXT = (PFNGLMATRIXTRANSLATEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixFrustumEXT");
+	if (p) {
+		glMatrixFrustumEXT = (PFNGLMATRIXFRUSTUMEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixOrthoEXT");
+	if (p) {
+		glMatrixOrthoEXT = (PFNGLMATRIXORTHOEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixPopEXT");
+	if (p) {
+		glMatrixPopEXT = (PFNGLMATRIXPOPEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixPushEXT");
+	if (p) {
+		glMatrixPushEXT = (PFNGLMATRIXPUSHEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixLoadTransposefEXT");
+	if (p) {
+		glMatrixLoadTransposefEXT = (PFNGLMATRIXLOADTRANSPOSEFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixLoadTransposedEXT");
+	if (p) {
+		glMatrixLoadTransposedEXT = (PFNGLMATRIXLOADTRANSPOSEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixMultTransposefEXT");
+	if (p) {
+		glMatrixMultTransposefEXT = (PFNGLMATRIXMULTTRANSPOSEFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMatrixMultTransposedEXT");
+	if (p) {
+		glMatrixMultTransposedEXT = (PFNGLMATRIXMULTTRANSPOSEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameterfEXT");
+	if (p) {
+		glTextureParameterfEXT = (PFNGLTEXTUREPARAMETERFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameterfvEXT");
+	if (p) {
+		glTextureParameterfvEXT = (PFNGLTEXTUREPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameteriEXT");
+	if (p) {
+		glTextureParameteriEXT = (PFNGLTEXTUREPARAMETERIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameterivEXT");
+	if (p) {
+		glTextureParameterivEXT = (PFNGLTEXTUREPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage1DEXT");
+	if (p) {
+		glTextureImage1DEXT = (PFNGLTEXTUREIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage2DEXT");
+	if (p) {
+		glTextureImage2DEXT = (PFNGLTEXTUREIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureSubImage1DEXT");
+	if (p) {
+		glTextureSubImage1DEXT = (PFNGLTEXTURESUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureSubImage2DEXT");
+	if (p) {
+		glTextureSubImage2DEXT = (PFNGLTEXTURESUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTextureImage1DEXT");
+	if (p) {
+		glCopyTextureImage1DEXT = (PFNGLCOPYTEXTUREIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTextureImage2DEXT");
+	if (p) {
+		glCopyTextureImage2DEXT = (PFNGLCOPYTEXTUREIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTextureSubImage1DEXT");
+	if (p) {
+		glCopyTextureSubImage1DEXT = (PFNGLCOPYTEXTURESUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTextureSubImage2DEXT");
+	if (p) {
+		glCopyTextureSubImage2DEXT = (PFNGLCOPYTEXTURESUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureImageEXT");
+	if (p) {
+		glGetTextureImageEXT = (PFNGLGETTEXTUREIMAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureParameterfvEXT");
+	if (p) {
+		glGetTextureParameterfvEXT = (PFNGLGETTEXTUREPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureParameterivEXT");
+	if (p) {
+		glGetTextureParameterivEXT = (PFNGLGETTEXTUREPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureLevelParameterfvEXT");
+	if (p) {
+		glGetTextureLevelParameterfvEXT = (PFNGLGETTEXTURELEVELPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureLevelParameterivEXT");
+	if (p) {
+		glGetTextureLevelParameterivEXT = (PFNGLGETTEXTURELEVELPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage3DEXT");
+	if (p) {
+		glTextureImage3DEXT = (PFNGLTEXTUREIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureSubImage3DEXT");
+	if (p) {
+		glTextureSubImage3DEXT = (PFNGLTEXTURESUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyTextureSubImage3DEXT");
+	if (p) {
+		glCopyTextureSubImage3DEXT = (PFNGLCOPYTEXTURESUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameterfEXT");
+	if (p) {
+		glMultiTexParameterfEXT = (PFNGLMULTITEXPARAMETERFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameterfvEXT");
+	if (p) {
+		glMultiTexParameterfvEXT = (PFNGLMULTITEXPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameteriEXT");
+	if (p) {
+		glMultiTexParameteriEXT = (PFNGLMULTITEXPARAMETERIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameterivEXT");
+	if (p) {
+		glMultiTexParameterivEXT = (PFNGLMULTITEXPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexImage1DEXT");
+	if (p) {
+		glMultiTexImage1DEXT = (PFNGLMULTITEXIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexImage2DEXT");
+	if (p) {
+		glMultiTexImage2DEXT = (PFNGLMULTITEXIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexSubImage1DEXT");
+	if (p) {
+		glMultiTexSubImage1DEXT = (PFNGLMULTITEXSUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexSubImage2DEXT");
+	if (p) {
+		glMultiTexSubImage2DEXT = (PFNGLMULTITEXSUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyMultiTexImage1DEXT");
+	if (p) {
+		glCopyMultiTexImage1DEXT = (PFNGLCOPYMULTITEXIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyMultiTexImage2DEXT");
+	if (p) {
+		glCopyMultiTexImage2DEXT = (PFNGLCOPYMULTITEXIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyMultiTexSubImage1DEXT");
+	if (p) {
+		glCopyMultiTexSubImage1DEXT = (PFNGLCOPYMULTITEXSUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyMultiTexSubImage2DEXT");
+	if (p) {
+		glCopyMultiTexSubImage2DEXT = (PFNGLCOPYMULTITEXSUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexImageEXT");
+	if (p) {
+		glGetMultiTexImageEXT = (PFNGLGETMULTITEXIMAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexParameterfvEXT");
+	if (p) {
+		glGetMultiTexParameterfvEXT = (PFNGLGETMULTITEXPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexParameterivEXT");
+	if (p) {
+		glGetMultiTexParameterivEXT = (PFNGLGETMULTITEXPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexLevelParameterfvEXT");
+	if (p) {
+		glGetMultiTexLevelParameterfvEXT = (PFNGLGETMULTITEXLEVELPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexLevelParameterivEXT");
+	if (p) {
+		glGetMultiTexLevelParameterivEXT = (PFNGLGETMULTITEXLEVELPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexImage3DEXT");
+	if (p) {
+		glMultiTexImage3DEXT = (PFNGLMULTITEXIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexSubImage3DEXT");
+	if (p) {
+		glMultiTexSubImage3DEXT = (PFNGLMULTITEXSUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyMultiTexSubImage3DEXT");
+	if (p) {
+		glCopyMultiTexSubImage3DEXT = (PFNGLCOPYMULTITEXSUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindMultiTextureEXT");
+	if (p) {
+		glBindMultiTextureEXT = (PFNGLBINDMULTITEXTUREEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEnableClientStateIndexedEXT");
+	if (p) {
+		glEnableClientStateIndexedEXT = (PFNGLENABLECLIENTSTATEINDEXEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDisableClientStateIndexedEXT");
+	if (p) {
+		glDisableClientStateIndexedEXT = (PFNGLDISABLECLIENTSTATEINDEXEDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordPointerEXT");
+	if (p) {
+		glMultiTexCoordPointerEXT = (PFNGLMULTITEXCOORDPOINTEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexEnvfEXT");
+	if (p) {
+		glMultiTexEnvfEXT = (PFNGLMULTITEXENVFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexEnvfvEXT");
+	if (p) {
+		glMultiTexEnvfvEXT = (PFNGLMULTITEXENVFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexEnviEXT");
+	if (p) {
+		glMultiTexEnviEXT = (PFNGLMULTITEXENVIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexEnvivEXT");
+	if (p) {
+		glMultiTexEnvivEXT = (PFNGLMULTITEXENVIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGendEXT");
+	if (p) {
+		glMultiTexGendEXT = (PFNGLMULTITEXGENDEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGendvEXT");
+	if (p) {
+		glMultiTexGendvEXT = (PFNGLMULTITEXGENDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGenfEXT");
+	if (p) {
+		glMultiTexGenfEXT = (PFNGLMULTITEXGENFEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGenfvEXT");
+	if (p) {
+		glMultiTexGenfvEXT = (PFNGLMULTITEXGENFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGeniEXT");
+	if (p) {
+		glMultiTexGeniEXT = (PFNGLMULTITEXGENIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexGenivEXT");
+	if (p) {
+		glMultiTexGenivEXT = (PFNGLMULTITEXGENIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexEnvfvEXT");
+	if (p) {
+		glGetMultiTexEnvfvEXT = (PFNGLGETMULTITEXENVFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexEnvivEXT");
+	if (p) {
+		glGetMultiTexEnvivEXT = (PFNGLGETMULTITEXENVIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexGendvEXT");
+	if (p) {
+		glGetMultiTexGendvEXT = (PFNGLGETMULTITEXGENDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexGenfvEXT");
+	if (p) {
+		glGetMultiTexGenfvEXT = (PFNGLGETMULTITEXGENFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexGenivEXT");
+	if (p) {
+		glGetMultiTexGenivEXT = (PFNGLGETMULTITEXGENIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFloatIndexedvEXT");
+	if (p) {
+		glGetFloatIndexedvEXT = (PFNGLGETFLOATINDEXEDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetDoubleIndexedvEXT");
+	if (p) {
+		glGetDoubleIndexedvEXT = (PFNGLGETDOUBLEINDEXEDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPointerIndexedvEXT");
+	if (p) {
+		glGetPointerIndexedvEXT = (PFNGLGETPOINTERINDEXEDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureImage3DEXT");
+	if (p) {
+		glCompressedTextureImage3DEXT = (PFNGLCOMPRESSEDTEXTUREIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureImage2DEXT");
+	if (p) {
+		glCompressedTextureImage2DEXT = (PFNGLCOMPRESSEDTEXTUREIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureImage1DEXT");
+	if (p) {
+		glCompressedTextureImage1DEXT = (PFNGLCOMPRESSEDTEXTUREIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureSubImage3DEXT");
+	if (p) {
+		glCompressedTextureSubImage3DEXT = (PFNGLCOMPRESSEDTEXTURESUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureSubImage2DEXT");
+	if (p) {
+		glCompressedTextureSubImage2DEXT = (PFNGLCOMPRESSEDTEXTURESUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedTextureSubImage1DEXT");
+	if (p) {
+		glCompressedTextureSubImage1DEXT = (PFNGLCOMPRESSEDTEXTURESUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetCompressedTextureImageEXT");
+	if (p) {
+		glGetCompressedTextureImageEXT = (PFNGLGETCOMPRESSEDTEXTUREIMAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexImage3DEXT");
+	if (p) {
+		glCompressedMultiTexImage3DEXT = (PFNGLCOMPRESSEDMULTITEXIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexImage2DEXT");
+	if (p) {
+		glCompressedMultiTexImage2DEXT = (PFNGLCOMPRESSEDMULTITEXIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexImage1DEXT");
+	if (p) {
+		glCompressedMultiTexImage1DEXT = (PFNGLCOMPRESSEDMULTITEXIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexSubImage3DEXT");
+	if (p) {
+		glCompressedMultiTexSubImage3DEXT = (PFNGLCOMPRESSEDMULTITEXSUBIMAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexSubImage2DEXT");
+	if (p) {
+		glCompressedMultiTexSubImage2DEXT = (PFNGLCOMPRESSEDMULTITEXSUBIMAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompressedMultiTexSubImage1DEXT");
+	if (p) {
+		glCompressedMultiTexSubImage1DEXT = (PFNGLCOMPRESSEDMULTITEXSUBIMAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetCompressedMultiTexImageEXT");
+	if (p) {
+		glGetCompressedMultiTexImageEXT = (PFNGLGETCOMPRESSEDMULTITEXIMAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramStringEXT");
+	if (p) {
+		glNamedProgramStringEXT = (PFNGLNAMEDPROGRAMSTRINGEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameter4dEXT");
+	if (p) {
+		glNamedProgramLocalParameter4dEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETER4DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameter4dvEXT");
+	if (p) {
+		glNamedProgramLocalParameter4dvEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETER4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameter4fEXT");
+	if (p) {
+		glNamedProgramLocalParameter4fEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETER4FEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameter4fvEXT");
+	if (p) {
+		glNamedProgramLocalParameter4fvEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETER4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramLocalParameterdvEXT");
+	if (p) {
+		glGetNamedProgramLocalParameterdvEXT = (PFNGLGETNAMEDPROGRAMLOCALPARAMETERDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramLocalParameterfvEXT");
+	if (p) {
+		glGetNamedProgramLocalParameterfvEXT = (PFNGLGETNAMEDPROGRAMLOCALPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramivEXT");
+	if (p) {
+		glGetNamedProgramivEXT = (PFNGLGETNAMEDPROGRAMIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramStringEXT");
+	if (p) {
+		glGetNamedProgramStringEXT = (PFNGLGETNAMEDPROGRAMSTRINGEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameters4fvEXT");
+	if (p) {
+		glNamedProgramLocalParameters4fvEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERS4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameterI4iEXT");
+	if (p) {
+		glNamedProgramLocalParameterI4iEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERI4IEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameterI4ivEXT");
+	if (p) {
+		glNamedProgramLocalParameterI4ivEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERI4IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParametersI4ivEXT");
+	if (p) {
+		glNamedProgramLocalParametersI4ivEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERSI4IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameterI4uiEXT");
+	if (p) {
+		glNamedProgramLocalParameterI4uiEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERI4UIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParameterI4uivEXT");
+	if (p) {
+		glNamedProgramLocalParameterI4uivEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERI4UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedProgramLocalParametersI4uivEXT");
+	if (p) {
+		glNamedProgramLocalParametersI4uivEXT = (PFNGLNAMEDPROGRAMLOCALPARAMETERSI4UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramLocalParameterIivEXT");
+	if (p) {
+		glGetNamedProgramLocalParameterIivEXT = (PFNGLGETNAMEDPROGRAMLOCALPARAMETERIIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedProgramLocalParameterIuivEXT");
+	if (p) {
+		glGetNamedProgramLocalParameterIuivEXT = (PFNGLGETNAMEDPROGRAMLOCALPARAMETERIUIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameterIivEXT");
+	if (p) {
+		glTextureParameterIivEXT = (PFNGLTEXTUREPARAMETERIIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureParameterIuivEXT");
+	if (p) {
+		glTextureParameterIuivEXT = (PFNGLTEXTUREPARAMETERIUIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureParameterIivEXT");
+	if (p) {
+		glGetTextureParameterIivEXT = (PFNGLGETTEXTUREPARAMETERIIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureParameterIuivEXT");
+	if (p) {
+		glGetTextureParameterIuivEXT = (PFNGLGETTEXTUREPARAMETERIUIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameterIivEXT");
+	if (p) {
+		glMultiTexParameterIivEXT = (PFNGLMULTITEXPARAMETERIIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexParameterIuivEXT");
+	if (p) {
+		glMultiTexParameterIuivEXT = (PFNGLMULTITEXPARAMETERIUIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexParameterIivEXT");
+	if (p) {
+		glGetMultiTexParameterIivEXT = (PFNGLGETMULTITEXPARAMETERIIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultiTexParameterIuivEXT");
+	if (p) {
+		glGetMultiTexParameterIuivEXT = (PFNGLGETMULTITEXPARAMETERIUIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1fEXT");
+	if (p) {
+		glProgramUniform1fEXT = (PFNGLPROGRAMUNIFORM1FEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2fEXT");
+	if (p) {
+		glProgramUniform2fEXT = (PFNGLPROGRAMUNIFORM2FEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3fEXT");
+	if (p) {
+		glProgramUniform3fEXT = (PFNGLPROGRAMUNIFORM3FEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4fEXT");
+	if (p) {
+		glProgramUniform4fEXT = (PFNGLPROGRAMUNIFORM4FEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1iEXT");
+	if (p) {
+		glProgramUniform1iEXT = (PFNGLPROGRAMUNIFORM1IEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2iEXT");
+	if (p) {
+		glProgramUniform2iEXT = (PFNGLPROGRAMUNIFORM2IEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3iEXT");
+	if (p) {
+		glProgramUniform3iEXT = (PFNGLPROGRAMUNIFORM3IEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4iEXT");
+	if (p) {
+		glProgramUniform4iEXT = (PFNGLPROGRAMUNIFORM4IEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1fvEXT");
+	if (p) {
+		glProgramUniform1fvEXT = (PFNGLPROGRAMUNIFORM1FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2fvEXT");
+	if (p) {
+		glProgramUniform2fvEXT = (PFNGLPROGRAMUNIFORM2FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3fvEXT");
+	if (p) {
+		glProgramUniform3fvEXT = (PFNGLPROGRAMUNIFORM3FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4fvEXT");
+	if (p) {
+		glProgramUniform4fvEXT = (PFNGLPROGRAMUNIFORM4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1ivEXT");
+	if (p) {
+		glProgramUniform1ivEXT = (PFNGLPROGRAMUNIFORM1IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2ivEXT");
+	if (p) {
+		glProgramUniform2ivEXT = (PFNGLPROGRAMUNIFORM2IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3ivEXT");
+	if (p) {
+		glProgramUniform3ivEXT = (PFNGLPROGRAMUNIFORM3IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4ivEXT");
+	if (p) {
+		glProgramUniform4ivEXT = (PFNGLPROGRAMUNIFORM4IVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2fvEXT");
+	if (p) {
+		glProgramUniformMatrix2fvEXT = (PFNGLPROGRAMUNIFORMMATRIX2FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3fvEXT");
+	if (p) {
+		glProgramUniformMatrix3fvEXT = (PFNGLPROGRAMUNIFORMMATRIX3FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4fvEXT");
+	if (p) {
+		glProgramUniformMatrix4fvEXT = (PFNGLPROGRAMUNIFORMMATRIX4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x3fvEXT");
+	if (p) {
+		glProgramUniformMatrix2x3fvEXT = (PFNGLPROGRAMUNIFORMMATRIX2X3FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x2fvEXT");
+	if (p) {
+		glProgramUniformMatrix3x2fvEXT = (PFNGLPROGRAMUNIFORMMATRIX3X2FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x4fvEXT");
+	if (p) {
+		glProgramUniformMatrix2x4fvEXT = (PFNGLPROGRAMUNIFORMMATRIX2X4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x2fvEXT");
+	if (p) {
+		glProgramUniformMatrix4x2fvEXT = (PFNGLPROGRAMUNIFORMMATRIX4X2FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x4fvEXT");
+	if (p) {
+		glProgramUniformMatrix3x4fvEXT = (PFNGLPROGRAMUNIFORMMATRIX3X4FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x3fvEXT");
+	if (p) {
+		glProgramUniformMatrix4x3fvEXT = (PFNGLPROGRAMUNIFORMMATRIX4X3FVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1uiEXT");
+	if (p) {
+		glProgramUniform1uiEXT = (PFNGLPROGRAMUNIFORM1UIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2uiEXT");
+	if (p) {
+		glProgramUniform2uiEXT = (PFNGLPROGRAMUNIFORM2UIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3uiEXT");
+	if (p) {
+		glProgramUniform3uiEXT = (PFNGLPROGRAMUNIFORM3UIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4uiEXT");
+	if (p) {
+		glProgramUniform4uiEXT = (PFNGLPROGRAMUNIFORM4UIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1uivEXT");
+	if (p) {
+		glProgramUniform1uivEXT = (PFNGLPROGRAMUNIFORM1UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2uivEXT");
+	if (p) {
+		glProgramUniform2uivEXT = (PFNGLPROGRAMUNIFORM2UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3uivEXT");
+	if (p) {
+		glProgramUniform3uivEXT = (PFNGLPROGRAMUNIFORM3UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4uivEXT");
+	if (p) {
+		glProgramUniform4uivEXT = (PFNGLPROGRAMUNIFORM4UIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedBufferDataEXT");
+	if (p) {
+		glNamedBufferDataEXT = (PFNGLNAMEDBUFFERDATAEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedBufferSubDataEXT");
+	if (p) {
+		glNamedBufferSubDataEXT = (PFNGLNAMEDBUFFERSUBDATAEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapNamedBufferEXT");
+	if (p) {
+		glMapNamedBufferEXT = (PFNGLMAPNAMEDBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUnmapNamedBufferEXT");
+	if (p) {
+		glUnmapNamedBufferEXT = (PFNGLUNMAPNAMEDBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedBufferParameterivEXT");
+	if (p) {
+		glGetNamedBufferParameterivEXT = (PFNGLGETNAMEDBUFFERPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedBufferPointervEXT");
+	if (p) {
+		glGetNamedBufferPointervEXT = (PFNGLGETNAMEDBUFFERPOINTERVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedBufferSubDataEXT");
+	if (p) {
+		glGetNamedBufferSubDataEXT = (PFNGLGETNAMEDBUFFERSUBDATAEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureBufferEXT");
+	if (p) {
+		glTextureBufferEXT = (PFNGLTEXTUREBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexBufferEXT");
+	if (p) {
+		glMultiTexBufferEXT = (PFNGLMULTITEXBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedRenderbufferStorageEXT");
+	if (p) {
+		glNamedRenderbufferStorageEXT = (PFNGLNAMEDRENDERBUFFERSTORAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedRenderbufferParameterivEXT");
+	if (p) {
+		glGetNamedRenderbufferParameterivEXT = (PFNGLGETNAMEDRENDERBUFFERPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCheckNamedFramebufferStatusEXT");
+	if (p) {
+		glCheckNamedFramebufferStatusEXT = (PFNGLCHECKNAMEDFRAMEBUFFERSTATUSEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTexture1DEXT");
+	if (p) {
+		glNamedFramebufferTexture1DEXT = (PFNGLNAMEDFRAMEBUFFERTEXTURE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTexture2DEXT");
+	if (p) {
+		glNamedFramebufferTexture2DEXT = (PFNGLNAMEDFRAMEBUFFERTEXTURE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTexture3DEXT");
+	if (p) {
+		glNamedFramebufferTexture3DEXT = (PFNGLNAMEDFRAMEBUFFERTEXTURE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferRenderbufferEXT");
+	if (p) {
+		glNamedFramebufferRenderbufferEXT = (PFNGLNAMEDFRAMEBUFFERRENDERBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedFramebufferAttachmentParameterivEXT");
+	if (p) {
+		glGetNamedFramebufferAttachmentParameterivEXT = (PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenerateTextureMipmapEXT");
+	if (p) {
+		glGenerateTextureMipmapEXT = (PFNGLGENERATETEXTUREMIPMAPEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenerateMultiTexMipmapEXT");
+	if (p) {
+		glGenerateMultiTexMipmapEXT = (PFNGLGENERATEMULTITEXMIPMAPEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferDrawBufferEXT");
+	if (p) {
+		glFramebufferDrawBufferEXT = (PFNGLFRAMEBUFFERDRAWBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferDrawBuffersEXT");
+	if (p) {
+		glFramebufferDrawBuffersEXT = (PFNGLFRAMEBUFFERDRAWBUFFERSEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferReadBufferEXT");
+	if (p) {
+		glFramebufferReadBufferEXT = (PFNGLFRAMEBUFFERREADBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFramebufferParameterivEXT");
+	if (p) {
+		glGetFramebufferParameterivEXT = (PFNGLGETFRAMEBUFFERPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedRenderbufferStorageMultisampleEXT");
+	if (p) {
+		glNamedRenderbufferStorageMultisampleEXT = (PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedRenderbufferStorageMultisampleCoverageEXT");
+	if (p) {
+		glNamedRenderbufferStorageMultisampleCoverageEXT = (PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLECOVERAGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTextureEXT");
+	if (p) {
+		glNamedFramebufferTextureEXT = (PFNGLNAMEDFRAMEBUFFERTEXTUREEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTextureLayerEXT");
+	if (p) {
+		glNamedFramebufferTextureLayerEXT = (PFNGLNAMEDFRAMEBUFFERTEXTURELAYEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferTextureFaceEXT");
+	if (p) {
+		glNamedFramebufferTextureFaceEXT = (PFNGLNAMEDFRAMEBUFFERTEXTUREFACEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureRenderbufferEXT");
+	if (p) {
+		glTextureRenderbufferEXT = (PFNGLTEXTURERENDERBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexRenderbufferEXT");
+	if (p) {
+		glMultiTexRenderbufferEXT = (PFNGLMULTITEXRENDERBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetMultisamplefvNV");
+	if (p) {
+		glGetMultisamplefvNV = (PFNGLGETMULTISAMPLEFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSampleMaskIndexedNV");
+	if (p) {
+		glSampleMaskIndexedNV = (PFNGLSAMPLEMASKINDEXEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexRenderbufferNV");
+	if (p) {
+		glTexRenderbufferNV = (PFNGLTEXRENDERBUFFERNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindTransformFeedbackNV");
+	if (p) {
+		glBindTransformFeedbackNV = (PFNGLBINDTRANSFORMFEEDBACKNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteTransformFeedbacksNV");
+	if (p) {
+		glDeleteTransformFeedbacksNV = (PFNGLDELETETRANSFORMFEEDBACKSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenTransformFeedbacksNV");
+	if (p) {
+		glGenTransformFeedbacksNV = (PFNGLGENTRANSFORMFEEDBACKSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsTransformFeedbackNV");
+	if (p) {
+		glIsTransformFeedbackNV = (PFNGLISTRANSFORMFEEDBACKNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPauseTransformFeedbackNV");
+	if (p) {
+		glPauseTransformFeedbackNV = (PFNGLPAUSETRANSFORMFEEDBACKNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glResumeTransformFeedbackNV");
+	if (p) {
+		glResumeTransformFeedbackNV = (PFNGLRESUMETRANSFORMFEEDBACKNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawTransformFeedbackNV");
+	if (p) {
+		glDrawTransformFeedbackNV = (PFNGLDRAWTRANSFORMFEEDBACKNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorGroupsAMD");
+	if (p) {
+		glGetPerfMonitorGroupsAMD = (PFNGLGETPERFMONITORGROUPSAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorCountersAMD");
+	if (p) {
+		glGetPerfMonitorCountersAMD = (PFNGLGETPERFMONITORCOUNTERSAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorGroupStringAMD");
+	if (p) {
+		glGetPerfMonitorGroupStringAMD = (PFNGLGETPERFMONITORGROUPSTRINGAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorCounterStringAMD");
+	if (p) {
+		glGetPerfMonitorCounterStringAMD = (PFNGLGETPERFMONITORCOUNTERSTRINGAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorCounterInfoAMD");
+	if (p) {
+		glGetPerfMonitorCounterInfoAMD = (PFNGLGETPERFMONITORCOUNTERINFOAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenPerfMonitorsAMD");
+	if (p) {
+		glGenPerfMonitorsAMD = (PFNGLGENPERFMONITORSAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeletePerfMonitorsAMD");
+	if (p) {
+		glDeletePerfMonitorsAMD = (PFNGLDELETEPERFMONITORSAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSelectPerfMonitorCountersAMD");
+	if (p) {
+		glSelectPerfMonitorCountersAMD = (PFNGLSELECTPERFMONITORCOUNTERSAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginPerfMonitorAMD");
+	if (p) {
+		glBeginPerfMonitorAMD = (PFNGLBEGINPERFMONITORAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndPerfMonitorAMD");
+	if (p) {
+		glEndPerfMonitorAMD = (PFNGLENDPERFMONITORAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPerfMonitorCounterDataAMD");
+	if (p) {
+		glGetPerfMonitorCounterDataAMD = (PFNGLGETPERFMONITORCOUNTERDATAAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTessellationFactorAMD");
+	if (p) {
+		glTessellationFactorAMD = (PFNGLTESSELLATIONFACTORAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTessellationModeAMD");
+	if (p) {
+		glTessellationModeAMD = (PFNGLTESSELLATIONMODEAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProvokingVertexEXT");
+	if (p) {
+		glProvokingVertexEXT = (PFNGLPROVOKINGVERTEXEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFuncIndexedAMD");
+	if (p) {
+		glBlendFuncIndexedAMD = (PFNGLBLENDFUNCINDEXEDAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparateIndexedAMD");
+	if (p) {
+		glBlendFuncSeparateIndexedAMD = (PFNGLBLENDFUNCSEPARATEINDEXEDAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationIndexedAMD");
+	if (p) {
+		glBlendEquationIndexedAMD = (PFNGLBLENDEQUATIONINDEXEDAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationSeparateIndexedAMD");
+	if (p) {
+		glBlendEquationSeparateIndexedAMD = (PFNGLBLENDEQUATIONSEPARATEINDEXEDAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureRangeAPPLE");
+	if (p) {
+		glTextureRangeAPPLE = (PFNGLTEXTURERANGEAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTexParameterPointervAPPLE");
+	if (p) {
+		glGetTexParameterPointervAPPLE = (PFNGLGETTEXPARAMETERPOINTERVAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEnableVertexAttribAPPLE");
+	if (p) {
+		glEnableVertexAttribAPPLE = (PFNGLENABLEVERTEXATTRIBAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDisableVertexAttribAPPLE");
+	if (p) {
+		glDisableVertexAttribAPPLE = (PFNGLDISABLEVERTEXATTRIBAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsVertexAttribEnabledAPPLE");
+	if (p) {
+		glIsVertexAttribEnabledAPPLE = (PFNGLISVERTEXATTRIBENABLEDAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapVertexAttrib1dAPPLE");
+	if (p) {
+		glMapVertexAttrib1dAPPLE = (PFNGLMAPVERTEXATTRIB1DAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapVertexAttrib1fAPPLE");
+	if (p) {
+		glMapVertexAttrib1fAPPLE = (PFNGLMAPVERTEXATTRIB1FAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapVertexAttrib2dAPPLE");
+	if (p) {
+		glMapVertexAttrib2dAPPLE = (PFNGLMAPVERTEXATTRIB2DAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMapVertexAttrib2fAPPLE");
+	if (p) {
+		glMapVertexAttrib2fAPPLE = (PFNGLMAPVERTEXATTRIB2FAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glObjectPurgeableAPPLE");
+	if (p) {
+		glObjectPurgeableAPPLE = (PFNGLOBJECTPURGEABLEAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glObjectUnpurgeableAPPLE");
+	if (p) {
+		glObjectUnpurgeableAPPLE = (PFNGLOBJECTUNPURGEABLEAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetObjectParameterivAPPLE");
+	if (p) {
+		glGetObjectParameterivAPPLE = (PFNGLGETOBJECTPARAMETERIVAPPLEPROC)p;
 		m_count++;
 	}
 	return (m_count > 0);

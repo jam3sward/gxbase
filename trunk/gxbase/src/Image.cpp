@@ -382,7 +382,7 @@ bool ImageEx::LoadBMPDirect(const char *name) {
 			}
 
 			if (stride>=width*3) {
-				dbg_printf("bmp: loaded (0x%08p, %dx%d)\n",buffer,width,height);
+				dbg_printf("bmp: loaded (0x%8p, %dx%d)\n",buffer,width,height);
 				if (Alloc(width,height,Image::BGR,0)) {
 					for (long y=0; y<m_nHeight; y++) {
 						BYTE
@@ -2052,6 +2052,8 @@ int Image::gluBuild1DMipmaps() {
 			case BGRA:
 				if (!tmp.SetFormat(RGBA)) return result;
 				break;
+			default:
+				break;
 			}
 		}
 
@@ -2182,6 +2184,8 @@ int Image::gluBuild2DMipmaps() {
 				break;
 			case BGRA:
 				if (!tmp.SetFormat(RGBA)) return result;
+				break;
+			default:
 				break;
 			}
 		}
@@ -2323,6 +2327,8 @@ bool Image::glTexImage1D(int level) {
 			case BGRA:
 				if (!tmp.SetFormat(RGBA)) return false;
 				break;
+			default:
+				break;
 			}
 		}
 
@@ -2460,6 +2466,8 @@ bool Image::glTexImage2D(int level) {
 			case BGRA:
 				if (!tmp.SetFormat(RGBA)) return false;
 				break;
+			default:
+				break;
 			}
 		}
 
@@ -2596,6 +2604,8 @@ bool Image::glDrawPixels() {
 				break;
 			case BGRA:
 				if (!tmp.SetFormat(RGBA)) return false;
+				break;
+			default:
 				break;
 			}
 		}
@@ -3344,7 +3354,7 @@ struct ImageEx::FF_LUM {
  * Generic Bresenham line implementation for any pixel type
  */
 template <class T>
-static void ImageEx::draw_line(
+void ImageEx::draw_line(
 	Image &img, long x1, long y1, long x2, long y2, const T &fgcol
 ) {
 	// check for zero length
@@ -3612,7 +3622,7 @@ bool Kernel1D::makeGaussian(float radius) {
 		sigma22 = 2.0f*sigma*sigma,
 		sigmaPI2 = 2.0f*(float)M_PI*sigma,
 		sqrtSigmaPI2 = sqrt(sigmaPI2),
-		radius2 = radius*radius,
+		//radius2 = radius*radius,
 		total = 0.0f;
 	int
 		index = 0;
@@ -3699,7 +3709,7 @@ void Image::GaussBlur(float radius) {
 				BYTE *src = tmp.GetData() + x*pixSize + chan;
 				long sum = 0;
 				for (int c=0; c<size; c++) {
-					float k = kernel[c];
+					//float k = kernel[c];
 					// coordinate in source
 					int v=y+c-half;
 					if (v < 0)
@@ -3723,8 +3733,10 @@ bool Image::Average(const Image &rhs) {
 
 	BYTE *dst = GetData();
 	const BYTE *src = rhs.GetData();
-	for (long i=0; i<Size(); i++)
-		*dst++ = (BYTE)(((WORD)*dst + (WORD)*src++)>>1);
+	for (long i=0; i<Size(); i++) {
+		*dst = (BYTE)(((WORD)*dst + (WORD)*src++)>>1);
+		++dst;
+	}
 
 	return true;
 }//Average
@@ -3991,6 +4003,8 @@ bool Image::CopyAlpha(const Image &source) {
 	case BGR:
 	case LUM:
 		return false;
+	default:
+		break;
 	}
 
 	// source and destination must have same size
@@ -4010,6 +4024,8 @@ bool Image::CopyAlpha(const Image &source) {
 		break;
 	case LUM:
 		if (!SetFormat(LUMALP)) return false;
+		break;
+	default:
 		break;
 	}
 
@@ -4032,6 +4048,8 @@ bool Image::CopyAlpha(const Image &source) {
 				return 1;
 			case Image::ALPHA:
 				return 0;
+			default:
+				break;
 			};
 			return 0;
 		};
