@@ -22,6 +22,7 @@
 #define GXBASE_WIN_X11_H_
 
 #include <string>
+#include <vector>
 #include <X11/Xlib.h>
 #include <GL/glx.h>
 
@@ -71,6 +72,7 @@ public:
 	bool m_bOnTop;			// always-on-top?
 	bool m_bOnCreate;
 	GLWindow::Cursor m_cursor;
+	std::vector<int> m_attribs;	///< OpenGL context creation attributes
 
 	WindowEx(GLWindow *parent);
 	virtual ~WindowEx();

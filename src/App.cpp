@@ -116,7 +116,7 @@ void App::MsgPrintf(const char* format, ...)
     }
 
 	if (Main::Get()->GetConsole())
-		printf(buffer);
+		printf("%s", buffer);
 #ifdef __WIN32__
 	else
 		MessageBox(NULL, buffer, "Message", MB_OK);
