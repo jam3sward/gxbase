@@ -290,7 +290,47 @@ bool WindowEx::CreateGL() {
 		err_printf("Failed to make GL context current\n");
 		return false;
 	}
- 
+
+#ifdef __WIN32__
+	// have context creation attributes been supplied?
+	if ( m_attribs.size() > 0 ) {
+		// yes: load the extensions, and check to see if the
+		// ARB create context function is available
+		glex gx;
+		if ( gx.Load() && gx.Supports("WGL_ARB_create_context") )
+		{
+			// convert attributes to a simple integer list, leaving extra
+			// space for null terminator
+			int *attribs = new int[ m_attribs.size()+1 ];
+			for (unsigned i=0; i<m_attribs.size(); ++i)
+				attribs[i] = m_attribs[i];
+
+			// null terminate the array
+			attribs[ m_attribs.size() ] = 0;
+
+			// create new attributed context
+			HGLRC hrcNew = gx.wglCreateContextAttribsARB( m_hdc, 0, attribs );
+
+			// delete temporary attributes
+			delete [] attribs;
+			attribs = 0;
+
+			// delete the original context
+			MakeCurrent(false);
+			wglDeleteContext( m_hglrc );
+
+			// replace with new context
+			m_hglrc = hrcNew;
+
+			// attempt to make current
+			if ( !MakeCurrent() ) {
+				err_printf("Failed to make attributed GL context current\n");
+				return false;
+			}
+		}
+	}//if (using attribs)
+#endif//__WIN32__
+
 	// show the window
     if (m_bShow) ShowWindow(m_hwnd, SW_SHOW);
 

@@ -73,6 +73,11 @@ Main::~Main() {
 int Main::Execute(int argc, char **argv) {
 	dbg_printf("Main::Execute\n");
 
+	// initialise COM if we are using IPicture control
+#if defined(__WIN32__) && defined(GXBASE_JPEG_IPIC)
+	CoInitialize(0);
+#endif
+
 	// JWW 24/02/05 added more meaningful message than assert
 	//assert(m_pApp!=NULL);
 	if (m_pApp == NULL) {
@@ -114,6 +119,11 @@ int Main::Execute(int argc, char **argv) {
 
 	// call user App::OnDestroy handler
 	m_pApp->OnDestroy();
+
+	// uninitialise COM if we are using IPicture control
+#if defined(__WIN32__) && defined(GXBASE_JPEG_IPIC)
+	CoUninitialize();
+#endif
 
 	return exitCode;
 }//Execute

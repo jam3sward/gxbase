@@ -10,7 +10,7 @@
 #define __WIN32__
 #endif
 
-#ifdef _WIN32
+#ifdef __WIN32__
 #include <windows.h>
 #include <stdio.h>
 #else
@@ -54,6 +54,9 @@ typedef int HINSTANCE;
 
 #ifdef __unix__
 #define stricmp(s1, s2)		strcasecmp(s1, s2)
-#endif
+
+#include <limits.h>
+#define MAX_PATH	PATH_MAX
+#endif//__unix__
 
 #endif	/* GXBASE_PORT_H_ */

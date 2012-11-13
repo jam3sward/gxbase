@@ -79,28 +79,58 @@
 	// Automatically link the required libraries, if the project settings
 	// are correct, otherwise issues an error message.
 	// Supported libraries:
-	//   LIBC    (/ML)  Single Threaded
-	//   LIBCD   (/MLd) Debug Single Threaded
+	//   LIBC    (/ML)  Single Threaded (<= VS.NET 2005)
+	//   LIBCD   (/MLd) Debug Single Threaded (<= VS.NET 2005)
+	//	 LIBCMT	 (/MT)	Multithreaded, static link (>= VS.NET 2008)
+	//	 LIBCMTD (/MTd) Multithreaded Debug, static link (>= VS.NET 2008)
 	//   MSVCRT  (/MD)  Multithreaded DLL
 	//	 MSVCRTD (/MDd) Debug Multithreaded DLL
 	//
-	#if defined(_MT) && defined(_DLL)
-		// Multithreaded DLL (/MD or /MDd)
-		#if defined(_DEBUG)
-			// MSVCRTD (/MDd) Debug Multithreaded DLL
-			#pragma comment (lib, "gxbasemd")
-			#ifdef GXBASE_JPEG
-				#pragma comment (lib, "libjpegmd")
+	// Note:
+	//	 * On VS.NET 2008 upwards, use Multithreaded (static/DLL) runtime libaries
+	//   * On VS.NET 2003 or 2005, use Single Threaded (static), or Multithreaded DLL
+	//
+	#if defined(_MT)
+		// Multithreaded
+
+		#if defined(_DLL)
+			// Multithreaded DLL (/MD or /MDd)
+
+			#if defined(_DEBUG)
+				// MSVCRTD (/MDd) Debug Multithreaded DLL
+				#pragma comment (lib, "gxbasemd")
+				#ifdef GXBASE_JPEG
+					#pragma comment (lib, "libjpegmd")
+				#endif
+			#else
+				// MSVCRT (/MD) Multithreaded DLL
+				#pragma comment (lib, "gxbasem")
+				#ifdef GXBASE_JPEG
+					#pragma comment (lib, "libjpegm")
+				#endif
 			#endif
 		#else
-			// MSVCRT (/MD) Multithreaded DLL
-			#pragma comment (lib, "gxbasem")
-			#ifdef GXBASE_JPEG
-				#pragma comment (lib, "libjpegm")
+			#if (_MSC_VER < 1500)
+				// On compilers earlier than VS.NET 2008, we only support Single Threaded
+				// or Multithreaded DLL runtime. Under Project.. Properties.. Code Generation
+				// you need to select the appropriate runtime library
+				#error Please use either Single Threaded or Multithreaded DLL runtime
+			#else
+				// On VS.NET 2008 and above, we support Multithreaded or Multithreaded
+				// DLL runtime, but there is no Single Threaded support
+				#if defined(_DEBUG)
+					// Debug Multithreaded (static)
+					#pragma comment (lib, "gxbased")
+				#else
+					// Multithreaded (static)
+					#pragma comment (lib, "gxbase")
+				#endif
 			#endif
 		#endif
 	#else
-		#if !defined(_MT)
+		// Single Threaded
+
+		#if (_MSC_VER < 1500)
 			// Single Threaded (/ML or /MLd)
 			#if defined(_DEBUG)
 				// LIBCD (/MLd) Debug Single Threaded
@@ -116,16 +146,8 @@
 				#endif
 			#endif
 		#else
-			// Multithreaded (/MT or /MTd)
-			// Oops, you are using one of these unsupported
-			// runtime libraries:
-			//	 LIBCMT  (/MT)  Multithreaded
-			//	 LIBCMTD (/MTd)	Debug Multithreaded
-			//
-			// The project settings will need to be changed to one of the
-			// supported cases listed above.
-			//
-			#error Please use either Single Threaded or Multithreaded DLL runtime
+			// Need to select Multithread or Multithread DLL runtime in project settings
+			#error Single Thread runtime is not supported, please choose a Multhreaded runtime
 		#endif
 	#endif
 #endif//auto-link
