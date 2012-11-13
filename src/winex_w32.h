@@ -26,6 +26,7 @@
 //-----------------------------------------------------------------------------
 
 #include <string>
+#include <vector>
 using namespace std;
 
 #include "GXBase.h"
@@ -85,6 +86,7 @@ public:
 	HCURSOR m_hCursor;	///< handle to cursor (or NULL)
 	HCURSOR m_hOldCursor;	///< handle to old cursor (or NULL)
 	GLWindow::Cursor m_cursor;	///< cursor type
+	std::vector<int> m_attribs;	///< OpenGL context creation attributes
 
 	WindowEx(GLWindow *parent) {
 		m_pWindow = parent;

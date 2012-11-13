@@ -43,8 +43,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen"
-				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;GXBASE_JPEG_IPIC"
+				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen/win32;./glext_gen/GL"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"
@@ -117,8 +117,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;GXBASE_JPEG_IPIC"
+				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen/win32;./glext_gen/GL"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -191,8 +191,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;GXBASE_JPEG_IPIC"
+				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen/win32;./glext_gen/GL"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				StringPooling="true"
 				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
@@ -264,8 +264,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen"
-				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;GXBASE_JPEG_IPIC"
+				AdditionalIncludeDirectories=".\;load3ds;./src;./glext_gen/win32;./glext_gen/GL"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
 				UsePrecompiledHeader="0"
@@ -418,50 +418,12 @@
 				>
 			</File>
 			<File
-				RelativePath=".\glext_gen\glexfp.cpp"
+				RelativePath=".\glext_gen\win32\glexfp.cpp"
 				>
 			</File>
 			<File
-				RelativePath="src\glexfplib.cpp"
+				RelativePath=".\glext_gen\glexfplib.cpp"
 				>
-				<FileConfiguration
-					Name="Debug Multithreaded DLL|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="0"
-						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release Multithreaded DLL|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						PreprocessorDefinitions=""
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="0"
-						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath="src\GLWindow.cpp"
@@ -643,11 +605,15 @@
 				>
 			</File>
 			<File
-				RelativePath="src\glex.h"
+				RelativePath=".\glext_gen\win32\glex.h"
 				>
 			</File>
 			<File
-				RelativePath="src\glexfp.h"
+				RelativePath=".\glext_gen\win32\glexfp.h"
+				>
+			</File>
+			<File
+				RelativePath=".\glext_gen\win32\glexpub.h"
 				>
 			</File>
 			<File
@@ -680,6 +646,10 @@
 			</File>
 			<File
 				RelativePath="src\load3ds\Matrix44f.h"
+				>
+			</File>
+			<File
+				RelativePath=".\src\port.h"
 				>
 			</File>
 			<File

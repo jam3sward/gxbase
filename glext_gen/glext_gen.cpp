@@ -87,9 +87,8 @@ bool Parse(const char *name) {
 		return false;
 	}
 
-	char str[256];
-	str[255]=0;
-	while ( fscanf(fp, " %255s", str)==1 ) {
+	char str[1024]={};
+	while ( fscanf(fp, " %1023s", str)==1 ) {
 		if ( str[0]=='#' ) {
 			// pre-processor: skip line
 			fgets(str, 256, fp);

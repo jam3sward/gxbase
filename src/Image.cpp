@@ -7,6 +7,7 @@
 #include <stack>
 using namespace std;
 #include "Image.h"
+#include "port.h"
 
 /**************************************************************************\
  *
@@ -3343,7 +3344,7 @@ struct ImageEx::FF_LUM {
  * Generic Bresenham line implementation for any pixel type
  */
 template <class T>
-void ImageEx::draw_line(
+static void ImageEx::draw_line(
 	Image &img, long x1, long y1, long x2, long y2, const T &fgcol
 ) {
 	// check for zero length

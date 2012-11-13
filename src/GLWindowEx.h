@@ -24,8 +24,7 @@
  \**************************************************************************/
 
 // Include style would ideally change to <GX/base.h>
-//#include "GXBase.h"
-#include "GLWindow.h"
+#include "GXBase.h"
 #include "glex.h"
 
 //-----------------------------------------------------------------------------

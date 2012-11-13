@@ -21,9 +21,7 @@
  \**************************************************************************/
 
 #include "3dsdef.h"
-#ifdef  _WIN32
-#include <windows.h>
-#endif//_WIN32
+#include "port.h"
 #include <GL/gl.h>
 #include <stdio.h>
 #include <assert.h>

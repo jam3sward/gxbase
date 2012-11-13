@@ -27,11 +27,7 @@ using namespace std;
 
 #include "Dialog.h"
 using namespace gxbase;
-
-#ifdef __unix__
-#include <limits.h>
-#define MAX_PATH	PATH_MAX
-#endif
+#include "port.h"
 
 //-----------------------------------------------------------------------------
 

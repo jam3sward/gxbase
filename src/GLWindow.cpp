@@ -1,3 +1,6 @@
+#include "GXBase.h"
+using namespace gxbase;
+
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -651,6 +654,20 @@ int GLWindow::GetAccumBits() const {
 		return 0;
 #endif
 }//GetAccumBits
+
+void GLWindow::SetContextAttribs( const int *attribs )
+{
+	// clear attribute list
+	extra->m_attribs.clear();
+
+	// null pointer is accepted (means an empty list)
+	if ( attribs == 0 ) return;
+
+	// store them in the attributes vector for later use when creating
+	// the OpenGL context. note: the terminating 0 is not stored
+	for (unsigned i=0; attribs[i] != 0; ++i)
+		extra->m_attribs.push_back( attribs[i] );
+}//SetContextAttribs
 
 /**
  * Nominate main window. One window can be nominated as the 'main' window.
