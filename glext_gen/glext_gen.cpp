@@ -617,7 +617,7 @@ bool MakeCPP(
 			);
 
 			// close function def. (with return 0; if needed)
-			if ( stricmp(sRetType.c_str(),"void")!=0 ) {
+			if ( _stricmp(sRetType.c_str(),"void")!=0 ) {
 				fprintf(fp,
 					"\treturn (%s)0;\n"
 					"}\n",
@@ -776,7 +776,7 @@ bool MakeH_public(
 			fprintf(fp, " {\n");
 
 			// if not a void return type, we need to output 'return'
-			if ( stricmp(sRetType.c_str(),"void")!=0 )
+			if ( _stricmp(sRetType.c_str(),"void")!=0 )
 				fprintf(fp, "\treturn ");
 			else
 				fprintf(fp, "\t");
@@ -973,7 +973,7 @@ bool MakeH2(const char *name, const char *hName) {
 			fprintf(fp, " {\n");
 
 			// if not a void return type, we need to output 'return'
-			if ( stricmp(sRetType.c_str(),"void")!=0 )
+			if ( _stricmp(sRetType.c_str(),"void")!=0 )
 				fprintf(fp, "\treturn ");
 			else
 				fprintf(fp, "\t");

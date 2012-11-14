@@ -53,7 +53,7 @@ typedef int HINSTANCE;
 #endif	// _MSC_VER
 
 #ifdef __unix__
-#define stricmp(s1, s2)		strcasecmp(s1, s2)
+#define _stricmp(s1, s2)		strcasecmp(s1, s2)
 
 #include <limits.h>
 #define MAX_PATH	PATH_MAX
