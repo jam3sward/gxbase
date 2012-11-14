@@ -146,7 +146,7 @@ private:
 	static Main *self;
 	int	   m_argc;				// argument count
 	char **m_argv;				// pointer to arguments
-	vector<WindowEx*> m_wins;	// vector of window pointers
+	std::vector<WindowEx*> m_wins;	// vector of window pointers
 	bool	m_bConsole;			// is this a console app?
 	WindowEx *m_pMainWnd;		// pointer to main windowex object	
 #ifdef __WIN32__
