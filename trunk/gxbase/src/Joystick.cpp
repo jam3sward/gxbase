@@ -1,6 +1,3 @@
-#include "GXBase.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -22,6 +19,9 @@ using namespace gxbase;
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  \**************************************************************************/
+
+#include "GXBase.h"
+using namespace gxbase;
 
 //-----------------------------------------------------------------------------
 

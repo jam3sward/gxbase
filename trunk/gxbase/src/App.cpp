@@ -1,10 +1,3 @@
-#include <assert.h>
-#include <stdio.h>
-#include <string>
-#include <vector>
-#include <stdarg.h>
-using namespace std;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -29,10 +22,18 @@ using namespace std;
  *
  \**************************************************************************/
 
+#include <assert.h>
+#include <stdio.h>
+#include <string>
+#include <vector>
+#include <stdarg.h>
+
 #include "GXBase.h"
 #include "ErrDbg.h"
 #include "Main.h"
 #include "WindowEx.h"
+
+using namespace std;
 using namespace gxbase;
 
 static unsigned int sys_get_msec();

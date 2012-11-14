@@ -1,14 +1,3 @@
-#include <assert.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#define _USE_MATH_DEFINES
-#include <math.h>
-#include <stack>
-using namespace std;
-#include "Image.h"
-#include "port.h"
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -32,6 +21,17 @@ using namespace std;
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  \**************************************************************************/
+
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define _USE_MATH_DEFINES
+#include <math.h>
+#include <stack>
+#include "Image.h"
+#include "port.h"
+using namespace std;
 
 //-----------------------------------------------------------------------------
 

@@ -617,10 +617,6 @@
 				>
 			</File>
 			<File
-				RelativePath="src\GLExWindow.h"
-				>
-			</File>
-			<File
 				RelativePath="src\GLWindow.h"
 				>
 			</File>

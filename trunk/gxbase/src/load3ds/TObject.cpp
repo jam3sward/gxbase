@@ -1,8 +1,3 @@
-#ifdef  _WIN32
-#include <windows.h>
-#endif//_WIN32
-#include <GL/gl.h>
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -26,6 +21,9 @@
  \**************************************************************************/
 
 //-----------------------------------------------------------------------------
+
+#include "port.h"
+#include <GL/gl.h>
 
 #include "TObject.h"
 using namespace std;

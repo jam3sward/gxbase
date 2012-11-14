@@ -1,6 +1,3 @@
-#include "GXBase.h"
-using namespace gxbase;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
