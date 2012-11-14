@@ -26,7 +26,6 @@
 //-----------------------------------------------------------------------------
 
 #include <vector>
-using namespace std;
 
 #include "TMaterial.h"
 #include "TObject.h"
@@ -43,13 +42,13 @@ public:
 
 	void Free();
 
-	vector<TMaterial> & Materials() { return m_material; }
-	const vector<TMaterial> & Materials() const { return m_material; }
-	vector<TObject>   & Objects()   { return m_object; }
-	const vector<TObject>   & Objects() const  { return m_object; }
+	std::vector<TMaterial> & Materials() { return m_material; }
+	const std::vector<TMaterial> & Materials() const { return m_material; }
+	std::vector<TObject>   & Objects()   { return m_object; }
+	const std::vector<TObject>   & Objects() const  { return m_object; }
 
-	int FindMaterial(const string &name);
-	int FindObject(const string &name);
+	int FindMaterial(const std::string &name);
+	int FindObject(const std::string &name);
 
 	long CountVertices() const;
 	long CountNormals() const;
@@ -60,8 +59,8 @@ public:
 	bool SplitByMat();
 
 private:
-	vector<TMaterial> m_material;	// array of materials
-	vector<TObject>   m_object;		// array of objects
+	std::vector<TMaterial> m_material;	// array of materials
+	std::vector<TObject>   m_object;		// array of objects
 };
 
 //-----------------------------------------------------------------------------

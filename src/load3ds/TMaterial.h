@@ -24,7 +24,6 @@
  \**************************************************************************/
 
 #include <string>
-using namespace std;
 
 #include "GXBase.h"
 using namespace gxbase;
@@ -41,8 +40,8 @@ public:
 
 	TMaterial & operator = (const TMaterial &);
 
-	void SetName(const string &name);
-	const string & GetName() const;
+	void SetName(const std::string &name);
+	const std::string & GetName() const;
 
 	void SetAmbient( const Vector3f &rhs ) { m_ambient=rhs; }
 	const Vector3f & GetAmbient() const { return m_ambient; }
@@ -74,7 +73,7 @@ public:
 	void SetTwoSide( bool on ) { m_b2side=on; }
 	bool GetTwoSide() const { return m_b2side; }
 
-	bool LoadTexture( const string &name );
+	bool LoadTexture( const std::string &name );
 
 	/**
 	 * Apply material using OpenGL calls. Must be called from a valid
@@ -86,8 +85,8 @@ public:
 	void GLApplyTex() const;
 
 private:
-	string	m_sName;			///> material name
-	string  m_sTexName;			///> texture map filename
+	std::string	m_sName;		///> material name
+	std::string	m_sTexName;		///> texture map filename
 	Vector3f m_ambient;
 	Vector3f m_diffuse;
 	Vector3f m_specular;
@@ -139,11 +138,11 @@ inline TMaterial & TMaterial::operator = (const TMaterial &rhs) {
 	return *this;
 }
 
-inline void TMaterial::SetName(const string &name) {
+inline void TMaterial::SetName(const std::string &name) {
 	m_sName = name;
 }
 
-inline const string & TMaterial::GetName() const {
+inline const std::string & TMaterial::GetName() const {
 	return m_sName;
 }
 

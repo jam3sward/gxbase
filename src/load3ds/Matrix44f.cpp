@@ -2,6 +2,7 @@
 
 #include "MathCon.h"
 #include "Matrix44f.h"
+using namespace std;
 
 /**************************************************************************\
  *
