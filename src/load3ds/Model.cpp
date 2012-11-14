@@ -188,6 +188,7 @@ private:
 	Box3f  m_box;
 	DWORD  m_sequence;
 	GLContextLS m_context;			///< Context local storage
+	std::string m_directory;		///< Working directory during load
 };
 _GXBASE_END
 
@@ -266,6 +267,17 @@ bool ModelEx::Load(const char *name) {
 	// attempt to open file
 	fp = fopen(name,"rb");
 	if (!fp) return false;
+
+#ifdef __WIN32__
+	char drive[_MAX_DRIVE];
+	char dir[_MAX_DIR];
+	_splitpath(name, drive, dir, NULL, NULL);
+	m_directory.assign( string(drive) + dir );
+#else
+	char *path = strdup(name);
+	m_directory.assign( string(dirname(path)) + '/' );
+	free(path);
+#endif
 
 	// check file header
 	Chunk chunk;
@@ -622,7 +634,7 @@ void ModelEx::ParseMatTexmap(Chunk *pChunk, TMaterial &material) {
 			//dbg_printf("MAT_MAPNAME(%s)\n", s.c_str());
 			if (material.LoadTexture(s)) {
 				dbg_printf("loaded texture %s\n", s.c_str());
-			} else {
+			} else if ( !material.LoadTexture(m_directory + s) ) {
 				printf("warning: Unable to load texture %s\n", s.c_str());
 			}
 			} break;
