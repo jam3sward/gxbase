@@ -27,7 +27,6 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <vector>
-using namespace std;
 
 #include "GXBase.h"
 #include "ErrDbg.h"

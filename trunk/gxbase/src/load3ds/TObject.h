@@ -25,7 +25,6 @@
 
 #include <vector>
 #include <string>
-using namespace std;
 
 //-----------------------------------------------------------------------------
 
@@ -48,23 +47,23 @@ public:
 
 	const Box3f &Box() const;
 
-	void SetName(const string &name);
-	const string & GetName() const;
+	void SetName(const std::string &name);
+	const std::string & GetName() const;
 
 	void SetMaterialID(int id) { m_nMatId=id; }
 	int GetMaterialID() const { return m_nMatId; }
 
-	vector<Vector3f> & Vertices();
-	const vector<Vector3f> & Vertices() const;
+	std::vector<Vector3f> & Vertices();
+	const std::vector<Vector3f> & Vertices() const;
 
-	vector<Vector3f> & Normals();
-	const vector<Vector3f> & Normals() const;
+	std::vector<Vector3f> & Normals();
+	const std::vector<Vector3f> & Normals() const;
 
-	vector<Vector2f> & TexCoords();
-	const vector<Vector2f> & TexCoords() const;
+	std::vector<Vector2f> & TexCoords();
+	const std::vector<Vector2f> & TexCoords() const;
 
-	vector<TFace> & Faces();
-	const vector<TFace> & Faces() const;
+	std::vector<TFace> & Faces();
+	const std::vector<TFace> & Faces() const;
 
 	void SetPivot(const Vector3f &p);
 	const Vector3f &GetPivot() const;
@@ -136,17 +135,17 @@ private:
 
 private:
 	int		m_nMatId;		// material ID
-	string	m_sName;		// object name
+	std::string	m_sName;	// object name
 
 	Matrix44f m_matrix;		// object transformation matrix
 	Vector3f  m_pivot;		// pivot point
 	Matrix44f m_matrixGL;	// final OpenGL matrix
 	GLfloat   m_glmat[16];	// final OpenGL matrix
 
-	vector<Vector3f> m_verts;	// object vertices
-	vector<Vector3f> m_norms;	// object normals
-	vector<Vector2f> m_texuv;	// texture UV coords.
-	vector<TFace>	 m_faces;	// faces (triangles)
+	std::vector<Vector3f> m_verts;	// object vertices
+	std::vector<Vector3f> m_norms;	// object normals
+	std::vector<Vector2f> m_texuv;	// texture UV coords.
+	std::vector<TFace>	 m_faces;	// faces (triangles)
 
 	Box3f m_box;		// object bounding box
 	bool  m_bBoxValid;	// is box valid?
@@ -189,16 +188,16 @@ inline const Box3f &TObject::Box() const {
 	return m_box;
 }
 
-inline vector<Vector3f> & TObject::Vertices() {
+inline std::vector<Vector3f> & TObject::Vertices() {
 	m_bBoxValid=false;
 	return m_verts;
 }
 
-inline void TObject::SetName(const string &name) {
+inline void TObject::SetName(const std::string &name) {
 	m_sName = name;
 }
 
-inline const string & TObject::GetName() const {
+inline const std::string & TObject::GetName() const {
 	return m_sName;
 }
 
@@ -206,16 +205,16 @@ inline const Matrix44f &TObject::GetMatrixGL() const {
 	return m_matrixGL;
 }
 
-inline const vector<Vector3f> & TObject::Vertices() const { return m_verts; }
+inline const std::vector<Vector3f> & TObject::Vertices() const { return m_verts; }
 
-inline vector<Vector3f> & TObject::Normals() { return m_norms; }
-inline const vector<Vector3f> & TObject::Normals() const { return m_norms; }
+inline std::vector<Vector3f> & TObject::Normals() { return m_norms; }
+inline const std::vector<Vector3f> & TObject::Normals() const { return m_norms; }
 
-inline vector<Vector2f> & TObject::TexCoords() { return m_texuv; }
-inline const vector<Vector2f> & TObject::TexCoords() const { return m_texuv; }
+inline std::vector<Vector2f> & TObject::TexCoords() { return m_texuv; }
+inline const std::vector<Vector2f> & TObject::TexCoords() const { return m_texuv; }
 
-inline vector<TFace> & TObject::Faces() { return m_faces; }
-inline const vector<TFace> & TObject::Faces() const { return m_faces; }
+inline std::vector<TFace> & TObject::Faces() { return m_faces; }
+inline const std::vector<TFace> & TObject::Faces() const { return m_faces; }
 
 inline void TObject::SetSubObjTex(bool bSubTex) { m_bSubObjTex=bSubTex; }
 inline bool TObject::GetSubObjTex() const { return m_bSubObjTex; }

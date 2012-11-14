@@ -359,14 +359,14 @@ public:
 	 * header is included prior to this header. This allows the vector classes
 	 * to be used on systems where iostream is not available.
 	 */
-	friend ostream & operator << (ostream &, const Vector3f &);
+	friend std::ostream & operator << (std::ostream &, const Vector3f &);
 
 	/**
 	 * Input stream operator. This operator is only provided when the iostream
 	 * header is included prior to this header. This allows the vector classes
 	 * to be used on systems where iostream is not available.
 	 */
-	friend istream & operator >> (istream &, Vector3f &);
+	friend std::istream & operator >> (std::istream &, Vector3f &);
 #endif//VECTOR3F_IOSTREAM
 };
 
@@ -682,12 +682,12 @@ inline bool Vector3f::IsValid () const
 //-----------------------------------------------------------------------------
 
 #ifdef  VECTOR3F_IOSTREAM
-inline ostream & operator << (ostream &o, const Vector3f &v) {
+inline std::ostream & operator << (std::ostream &o, const Vector3f &v) {
 	o<<v.x<<','<<v.y<<','<<v.z;
 	return o;
 }
 
-inline istream & operator >> (istream &i, Vector3f &v) {
+inline std::istream & operator >> (std::istream &i, Vector3f &v) {
 	char ch;
 	i>>v.x>>ch>>v.y>>ch>>v.z;
 	return i;

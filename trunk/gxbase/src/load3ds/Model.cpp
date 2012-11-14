@@ -30,6 +30,7 @@
 #include "TModel.h"
 #include "glcontextls.h"
 
+using namespace std;
 using namespace gxbase;
 
 //-----------------------------------------------------------------------------

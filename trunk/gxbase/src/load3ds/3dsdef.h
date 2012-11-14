@@ -28,7 +28,6 @@
 //-----------------------------------------------------------------------------
 
 #include <string>
-using namespace std;
 
 //-----------------------------------------------------------------------------
 
@@ -127,7 +126,7 @@ enum T3DSChunkID {
 		WORD   ReadWord(FILE *fp);
 		DWORD  ReadDWord(FILE *fp);
 		float  ReadFloat(FILE *fp);
-		string ReadString(FILE *fp);
+		std::string ReadString(FILE *fp);
 		WORD  ID()		  const { return nID; }
 		DWORD Size()	  const { return dwSize; }
 		DWORD BytesRead() const { return dwBytesRead; }

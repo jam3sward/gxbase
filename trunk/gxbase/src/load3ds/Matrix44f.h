@@ -26,7 +26,6 @@
 //-----------------------------------------------------------------------------
 
 #include <iostream>
-using namespace std;
 
 #include "MathCon.h"
 #include "Vector3f.h"
@@ -170,8 +169,8 @@ public:
 
     //---- Stream --------------------------------------------------------------
 
-    friend ostream & operator << (ostream &out, const Matrix44f &o);
-	friend istream & operator >> (istream &in, Matrix44f &o);
+	friend std::ostream & operator << (std::ostream &out, const Matrix44f &o);
+	friend std::istream & operator >> (std::istream &in, Matrix44f &o);
 
 private:
 	Vector4f m[4];	// rows
