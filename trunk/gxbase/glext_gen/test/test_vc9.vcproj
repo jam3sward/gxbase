@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="test"
 	ProjectGUID="{0345115E-3E10-47B2-BF49-59F5DF825185}"
+	RootNamespace="test"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="131072"
 	>
@@ -41,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\;..\GL"
+				AdditionalIncludeDirectories="..\win32;..\GL"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -118,7 +119,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\"
+				AdditionalIncludeDirectories="..\win32;..\GL"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				RuntimeLibrary="0"
 				UsePrecompiledHeader="0"
@@ -179,7 +180,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\glexfp.cpp"
+				RelativePath="..\win32\glexfp.cpp"
 				>
 			</File>
 			<File
@@ -197,11 +198,15 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath="..\glex.h"
+				RelativePath="..\win32\glex.h"
 				>
 			</File>
 			<File
-				RelativePath="..\glexfp.h"
+				RelativePath="..\win32\glexfp.h"
+				>
+			</File>
+			<File
+				RelativePath="..\win32\glexpub.h"
 				>
 			</File>
 		</Filter>

@@ -91,7 +91,7 @@ bool Parse(const char *name) {
 	while ( fscanf(fp, " %1023s", str)==1 ) {
 		if ( str[0]=='#' ) {
 			// pre-processor: skip line
-			fgets(str, 256, fp);
+			fgets(str, sizeof(str), fp);
 		} else if ( strstr(str, "/*")==str ) {
 			// start of comment: skip until */
 			// this is wrong, but it works without it anyway
@@ -99,7 +99,7 @@ bool Parse(const char *name) {
 		} else if ( strstr(str, "typedef") ) {
 			// start of typedef
 			string s(str);
-			fgets(str, 256, fp);	// get rest of line
+			fgets(str, sizeof(str), fp);	// get rest of line
 			s += string(str);
 			// does it have a ' PFNGL...' or ' PFNWGL' name?
 			if(strstr(str, " PFNGL")) {
@@ -117,7 +117,7 @@ bool Parse(const char *name) {
 		) {
 			// start of function declaration
 			string s(str);
-			fgets(str, 256, fp);	// get rest of line
+			fgets(str, sizeof(str), fp);	// get rest of line
 			s += string(str);
 
 			bool ok = false;
@@ -219,6 +219,40 @@ string GetParamList(const char *glFuncDecl) {
 //-----------------------------------------------------------------------------
 
 /**
+ * Get the plain parameter list with names stripped out
+ * eg. "(GLenum, GLint)"
+ */
+string GetParamListPlain(const char *glFuncDecl) {
+	// get parameters (which may contain type names)
+	string params( GetParamList(glFuncDecl) );
+
+	// if parameter list is empty, just return it
+	if (params.size() <= 2) return params;
+
+	size_t pos = 0;
+	string output;
+	do {
+		if (pos > 0) output += ',';
+
+		size_t block = params.find_first_of(",)",pos);
+		if (block == params.npos) break;
+		
+		string token( params.substr(pos,block-pos) );
+
+		size_t end = token.find_last_of("*& ");
+		if (end != token.npos) token.erase(end+1);
+
+		output += token;
+
+		pos = block+1;
+	} while (pos < params.size());
+
+	return output + ')';
+}//GetParamList
+
+//-----------------------------------------------------------------------------
+
+/**
  * Get the parameter list with inserted parameter names.
  * note: assumes the parameter list doesn't contain names!
  * eg. "(GLenum, GLint)" becomes "(GLenum a, GLint b)"
@@ -228,7 +262,7 @@ string GetParamList(const char *glFuncDecl) {
 string GetParamListNamed(const char *glFuncDecl, int *nParams=NULL) {
 	if (nParams) *nParams=0;
 	// get the plain parameter list (GLenum, GLint)
-	string s(GetParamList(glFuncDecl));
+	string s(GetParamListPlain(glFuncDecl));
 	if (!s.size()) return "()";
 
 	// check for (void) or (VOID)
