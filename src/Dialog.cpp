@@ -1,8 +1,3 @@
-#include <assert.h>
-#include <string>
-#include <string.h>
-using namespace std;
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -25,9 +20,15 @@ using namespace std;
  *
  \**************************************************************************/
 
+#include <assert.h>
+#include <string>
+#include <string.h>
+
 #include "Dialog.h"
-using namespace gxbase;
 #include "port.h"
+
+using namespace std;
+using namespace gxbase;
 
 //-----------------------------------------------------------------------------
 

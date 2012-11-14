@@ -1,5 +1,3 @@
-#include "ErrDbg.h"
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -21,6 +19,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  \**************************************************************************/
+
+#include "ErrDbg.h"
 
 #ifndef NDEBUG
 // JWW 29/10/03 introduced debug message level, to avoid spewing messages

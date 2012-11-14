@@ -1,5 +1,3 @@
-#include "Box3f.h"
-
 /**************************************************************************\
  *
  * This file is part of the GXBase graphics library.
@@ -22,11 +20,8 @@
  *
  \**************************************************************************/
 
-#ifdef  _WIN32
-	#define WIN32_LEAN_AND_MEAN
-	#include <windows.h>
-#endif//_WIN32
-
+#include "Box3f.h"
+#include "port.h"
 #include <GL/gl.h>
 
 //-----------------------------------------------------------------------------
