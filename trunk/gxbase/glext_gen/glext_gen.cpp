@@ -382,6 +382,38 @@ void fprintf_break(FILE *fp) {
 	);
 }//fprintf_break
 
+//-----------------------------------------------------------------------------
+
+/**
+ * Write a list of GL function pointer declarations to the file
+ */
+void writeFunctionPointers(FILE *fp) {
+	if (fp == NULL) return;
+
+	// for every function
+	for (unsigned n=0; n<g_func.size(); n++) {
+		// get function return type
+		string returnType( GetReturnType(g_func[n].c_str()) );
+
+		// function pointer type
+		string pointerType( GetPFNType(g_name[n].c_str()) );
+
+		// function parameters (in brackets)
+		string parameters( GetParamList(g_func[n].c_str()) );
+
+		// output function pointer declaration, for example:
+		// typedef void (APIENTRYP PFNGLBLENDEQUATIONPROC) (GLenum mode);
+		fprintf(fp,
+			"typedef %s (APIENTRYP %s) %s;\n",
+			returnType.c_str(),		// return type
+			pointerType.c_str(),	// function name
+			parameters.c_str()		// function parameters
+		);
+	}
+}//writeFunctionPointers
+
+//-----------------------------------------------------------------------------
+
 /**
  * Generate header file: don't use a path, only a simple filename!
  */
@@ -463,6 +495,9 @@ bool MakeH(const char *name) {
 	}
 
 	fprintf(fp,"\n");
+
+	// write function pointer declarations
+	writeFunctionPointers(fp);
 
 	// output class definition
 	fprintf(fp,

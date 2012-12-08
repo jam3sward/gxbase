@@ -2,7 +2,7 @@ obj = glext_gen.o
 bin = glext_gen
 
 CXX = g++
-CXXFLAGS = -pedantic -Wall -g -I../src
+CXXFLAGS = -pedantic -Wall -g -IGL -Ilinux -I../src
 LDFLAGS = -lGL -lX11
 
 $(bin): $(obj)

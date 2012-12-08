@@ -13,6 +13,8 @@
 #ifdef __WIN32__
 #include <windows.h>
 #include <stdio.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 #else
 #include <inttypes.h>
 
@@ -31,6 +33,8 @@ typedef int HINSTANCE;
 #define __X11__
 
 #include <X11/Xlib.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 #include <GL/glx.h>
 #endif
 
@@ -54,7 +58,7 @@ typedef int HINSTANCE;
 
 #ifdef __unix__
 #define _stricmp(s1, s2)		strcasecmp(s1, s2)
-
+#include <libgen.h>	// for dirname()
 #include <limits.h>
 #define MAX_PATH	PATH_MAX
 #endif//__unix__

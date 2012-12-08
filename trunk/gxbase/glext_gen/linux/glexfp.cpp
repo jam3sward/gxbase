@@ -3,7 +3,7 @@
 
 /**
  * This is an automatically generated file: do not edit
- * Generated on Tue Nov 13 22:12:26 2012
+ * Generated on Sat Dec  8 21:07:16 2012
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -26,3214 +26,4284 @@ long glexfp::Count() const {
 //----------------------------------------------------------------------------
 
 long glexfp::Known() const {
-	return 1564;
+	return 2081;
 }//Known
 
 //----------------------------------------------------------------------------
 
-GLAPI void APIENTRY stub_glBlendColor (GLclampf, GLclampf, GLclampf, GLclampf) {
+GLAPI void APIENTRY stub_glBlendColor (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha) {
 }
-GLAPI void APIENTRY stub_glBlendEquation (GLenum) {
+GLAPI void APIENTRY stub_glBlendEquation (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glDrawRangeElements (GLenum, GLuint, GLuint, GLsizei, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glDrawRangeElements (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices) {
 }
-GLAPI void APIENTRY stub_glTexImage3D (GLenum, GLint, GLint, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTexImage3D (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glCopyTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glColorTable (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glColorTable (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table) {
 }
-GLAPI void APIENTRY stub_glColorTableParameterfv (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glColorTableParameterfv (GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glColorTableParameteriv (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glColorTableParameteriv (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glCopyColorTable (GLenum, GLenum, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyColorTable (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glGetColorTable (GLenum, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetColorTable (GLenum target, GLenum format, GLenum type, GLvoid *table) {
 }
-GLAPI void APIENTRY stub_glGetColorTableParameterfv (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetColorTableParameterfv (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetColorTableParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetColorTableParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glColorSubTable (GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glColorSubTable (GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCopyColorSubTable (GLenum, GLsizei, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyColorSubTable (GLenum target, GLsizei start, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glConvolutionFilter1D (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glConvolutionFilter1D (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image) {
 }
-GLAPI void APIENTRY stub_glConvolutionFilter2D (GLenum, GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glConvolutionFilter2D (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image) {
 }
-GLAPI void APIENTRY stub_glConvolutionParameterf (GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glConvolutionParameterf (GLenum target, GLenum pname, GLfloat params) {
 }
-GLAPI void APIENTRY stub_glConvolutionParameterfv (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glConvolutionParameterfv (GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glConvolutionParameteri (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glConvolutionParameteri (GLenum target, GLenum pname, GLint params) {
 }
-GLAPI void APIENTRY stub_glConvolutionParameteriv (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glConvolutionParameteriv (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glCopyConvolutionFilter1D (GLenum, GLenum, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyConvolutionFilter1D (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glCopyConvolutionFilter2D (GLenum, GLenum, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyConvolutionFilter2D (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetConvolutionFilter (GLenum, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetConvolutionFilter (GLenum target, GLenum format, GLenum type, GLvoid *image) {
 }
-GLAPI void APIENTRY stub_glGetConvolutionParameterfv (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetConvolutionParameterfv (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetConvolutionParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetConvolutionParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetSeparableFilter (GLenum, GLenum, GLenum, GLvoid *, GLvoid *, GLvoid *) {
+GLAPI void APIENTRY stub_glGetSeparableFilter (GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span) {
 }
-GLAPI void APIENTRY stub_glSeparableFilter2D (GLenum, GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *, const GLvoid *) {
+GLAPI void APIENTRY stub_glSeparableFilter2D (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column) {
 }
-GLAPI void APIENTRY stub_glGetHistogram (GLenum, GLboolean, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetHistogram (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values) {
 }
-GLAPI void APIENTRY stub_glGetHistogramParameterfv (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetHistogramParameterfv (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetHistogramParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetHistogramParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMinmax (GLenum, GLboolean, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetMinmax (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values) {
 }
-GLAPI void APIENTRY stub_glGetMinmaxParameterfv (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMinmaxParameterfv (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMinmaxParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMinmaxParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glHistogram (GLenum, GLsizei, GLenum, GLboolean) {
+GLAPI void APIENTRY stub_glHistogram (GLenum target, GLsizei width, GLenum internalformat, GLboolean sink) {
 }
-GLAPI void APIENTRY stub_glMinmax (GLenum, GLenum, GLboolean) {
+GLAPI void APIENTRY stub_glMinmax (GLenum target, GLenum internalformat, GLboolean sink) {
 }
-GLAPI void APIENTRY stub_glResetHistogram (GLenum) {
+GLAPI void APIENTRY stub_glResetHistogram (GLenum target) {
 }
-GLAPI void APIENTRY stub_glResetMinmax (GLenum) {
+GLAPI void APIENTRY stub_glResetMinmax (GLenum target) {
 }
-GLAPI void APIENTRY stub_glActiveTexture (GLenum) {
+GLAPI void APIENTRY stub_glActiveTexture (GLenum texture) {
 }
-GLAPI void APIENTRY stub_glSampleCoverage (GLclampf, GLboolean) {
+GLAPI void APIENTRY stub_glSampleCoverage (GLfloat value, GLboolean invert) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage3D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage3D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage2D (GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage2D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage1D (GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage1D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage3D (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage2D (GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage2D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage1D (GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage1D (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetCompressedTexImage (GLenum, GLint, GLvoid *) {
+GLAPI void APIENTRY stub_glGetCompressedTexImage (GLenum target, GLint level, GLvoid *img) {
 }
-GLAPI void APIENTRY stub_glClientActiveTexture (GLenum) {
+GLAPI void APIENTRY stub_glClientActiveTexture (GLenum texture) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1d (GLenum, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord1d (GLenum target, GLdouble s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1dv (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1dv (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1f (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord1f (GLenum target, GLfloat s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1fv (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1fv (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1i (GLenum, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord1i (GLenum target, GLint s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1iv (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1iv (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1s (GLenum, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord1s (GLenum target, GLshort s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1sv (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1sv (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2d (GLenum, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord2d (GLenum target, GLdouble s, GLdouble t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2dv (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2dv (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2f (GLenum, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord2f (GLenum target, GLfloat s, GLfloat t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2fv (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2fv (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2i (GLenum, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord2i (GLenum target, GLint s, GLint t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2iv (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2iv (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2s (GLenum, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord2s (GLenum target, GLshort s, GLshort t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2sv (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2sv (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3d (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord3d (GLenum target, GLdouble s, GLdouble t, GLdouble r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3dv (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3dv (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3f (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord3f (GLenum target, GLfloat s, GLfloat t, GLfloat r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3fv (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3fv (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3i (GLenum, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord3i (GLenum target, GLint s, GLint t, GLint r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3iv (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3iv (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3s (GLenum, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord3s (GLenum target, GLshort s, GLshort t, GLshort r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3sv (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3sv (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4d (GLenum, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord4d (GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4dv (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4dv (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4f (GLenum, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord4f (GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4fv (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4fv (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4i (GLenum, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord4i (GLenum target, GLint s, GLint t, GLint r, GLint q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4iv (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4iv (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4s (GLenum, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord4s (GLenum target, GLshort s, GLshort t, GLshort r, GLshort q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4sv (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4sv (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glLoadTransposeMatrixf (const GLfloat *) {
+GLAPI void APIENTRY stub_glLoadTransposeMatrixf (const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glLoadTransposeMatrixd (const GLdouble *) {
+GLAPI void APIENTRY stub_glLoadTransposeMatrixd (const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glMultTransposeMatrixf (const GLfloat *) {
+GLAPI void APIENTRY stub_glMultTransposeMatrixf (const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glMultTransposeMatrixd (const GLdouble *) {
+GLAPI void APIENTRY stub_glMultTransposeMatrixd (const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glBlendFuncSeparate (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncSeparate (GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha) {
 }
-GLAPI void APIENTRY stub_glMultiDrawArrays (GLenum, GLint *, GLsizei *, GLsizei) {
+GLAPI void APIENTRY stub_glMultiDrawArrays (GLenum mode, const GLint *first, const GLsizei *count, GLsizei drawcount) {
 }
-GLAPI void APIENTRY stub_glMultiDrawElements (GLenum, const GLsizei *, GLenum, const GLvoid* *, GLsizei) {
+GLAPI void APIENTRY stub_glMultiDrawElements (GLenum mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei drawcount) {
 }
-GLAPI void APIENTRY stub_glPointParameterf (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glPointParameterf (GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glPointParameterfv (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glPointParameterfv (GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glPointParameteri (GLenum, GLint) {
+GLAPI void APIENTRY stub_glPointParameteri (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glPointParameteriv (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glPointParameteriv (GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glFogCoordf (GLfloat) {
+GLAPI void APIENTRY stub_glFogCoordf (GLfloat coord) {
 }
-GLAPI void APIENTRY stub_glFogCoordfv (const GLfloat *) {
+GLAPI void APIENTRY stub_glFogCoordfv (const GLfloat *coord) {
 }
-GLAPI void APIENTRY stub_glFogCoordd (GLdouble) {
+GLAPI void APIENTRY stub_glFogCoordd (GLdouble coord) {
 }
-GLAPI void APIENTRY stub_glFogCoorddv (const GLdouble *) {
+GLAPI void APIENTRY stub_glFogCoorddv (const GLdouble *coord) {
 }
-GLAPI void APIENTRY stub_glFogCoordPointer (GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glFogCoordPointer (GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3b (GLbyte, GLbyte, GLbyte) {
+GLAPI void APIENTRY stub_glSecondaryColor3b (GLbyte red, GLbyte green, GLbyte blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3bv (const GLbyte *) {
+GLAPI void APIENTRY stub_glSecondaryColor3bv (const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3d (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glSecondaryColor3d (GLdouble red, GLdouble green, GLdouble blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3dv (const GLdouble *) {
+GLAPI void APIENTRY stub_glSecondaryColor3dv (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3f (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glSecondaryColor3f (GLfloat red, GLfloat green, GLfloat blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3fv (const GLfloat *) {
+GLAPI void APIENTRY stub_glSecondaryColor3fv (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3i (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glSecondaryColor3i (GLint red, GLint green, GLint blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3iv (const GLint *) {
+GLAPI void APIENTRY stub_glSecondaryColor3iv (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3s (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glSecondaryColor3s (GLshort red, GLshort green, GLshort blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3sv (const GLshort *) {
+GLAPI void APIENTRY stub_glSecondaryColor3sv (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ub (GLubyte, GLubyte, GLubyte) {
+GLAPI void APIENTRY stub_glSecondaryColor3ub (GLubyte red, GLubyte green, GLubyte blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ubv (const GLubyte *) {
+GLAPI void APIENTRY stub_glSecondaryColor3ubv (const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ui (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glSecondaryColor3ui (GLuint red, GLuint green, GLuint blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3uiv (const GLuint *) {
+GLAPI void APIENTRY stub_glSecondaryColor3uiv (const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3us (GLushort, GLushort, GLushort) {
+GLAPI void APIENTRY stub_glSecondaryColor3us (GLushort red, GLushort green, GLushort blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3usv (const GLushort *) {
+GLAPI void APIENTRY stub_glSecondaryColor3usv (const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColorPointer (GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glSecondaryColorPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glWindowPos2d (GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos2d (GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2dv (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos2dv (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2f (GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos2f (GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2fv (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos2fv (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2i (GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos2i (GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2iv (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos2iv (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2s (GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos2s (GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2sv (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos2sv (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3d (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos3d (GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3dv (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos3dv (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3f (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos3f (GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3fv (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos3fv (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3i (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos3i (GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3iv (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos3iv (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3s (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos3s (GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3sv (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos3sv (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glGenQueries (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenQueries (GLsizei n, GLuint *ids) {
 }
-GLAPI void APIENTRY stub_glDeleteQueries (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteQueries (GLsizei n, const GLuint *ids) {
 }
-GLAPI GLboolean APIENTRY stub_glIsQuery (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsQuery (GLuint id) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBeginQuery (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBeginQuery (GLenum target, GLuint id) {
 }
-GLAPI void APIENTRY stub_glEndQuery (GLenum) {
+GLAPI void APIENTRY stub_glEndQuery (GLenum target) {
 }
-GLAPI void APIENTRY stub_glGetQueryiv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetQueryiv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjectiv (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetQueryObjectiv (GLuint id, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjectuiv (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetQueryObjectuiv (GLuint id, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glBindBuffer (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindBuffer (GLenum target, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glDeleteBuffers (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteBuffers (GLsizei n, const GLuint *buffers) {
 }
-GLAPI void APIENTRY stub_glGenBuffers (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenBuffers (GLsizei n, GLuint *buffers) {
 }
-GLAPI GLboolean APIENTRY stub_glIsBuffer (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsBuffer (GLuint buffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBufferData (GLenum, GLsizeiptr, const GLvoid *, GLenum) {
+GLAPI void APIENTRY stub_glBufferData (GLenum target, GLsizeiptr size, const GLvoid *data, GLenum usage) {
 }
-GLAPI void APIENTRY stub_glBufferSubData (GLenum, GLintptr, GLsizeiptr, const GLvoid *) {
+GLAPI void APIENTRY stub_glBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetBufferSubData (GLenum, GLintptr, GLsizeiptr, GLvoid *) {
+GLAPI void APIENTRY stub_glGetBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, GLvoid *data) {
 }
-GLAPI GLvoid* APIENTRY stub_glMapBuffer (GLenum, GLenum) {
+GLAPI GLvoid* APIENTRY stub_glMapBuffer (GLenum target, GLenum access) {
 	return (GLvoid*)0;
 }
-GLAPI GLboolean APIENTRY stub_glUnmapBuffer (GLenum) {
+GLAPI GLboolean APIENTRY stub_glUnmapBuffer (GLenum target) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetBufferParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetBufferParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetBufferPointerv (GLenum, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetBufferPointerv (GLenum target, GLenum pname, GLvoid* *params) {
 }
-GLAPI void APIENTRY stub_glBlendEquationSeparate (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationSeparate (GLenum modeRGB, GLenum modeAlpha) {
 }
-GLAPI void APIENTRY stub_glDrawBuffers (GLsizei, const GLenum *) {
+GLAPI void APIENTRY stub_glDrawBuffers (GLsizei n, const GLenum *bufs) {
 }
-GLAPI void APIENTRY stub_glStencilOpSeparate (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glStencilOpSeparate (GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass) {
 }
-GLAPI void APIENTRY stub_glStencilFuncSeparate (GLenum, GLenum, GLint, GLuint) {
+GLAPI void APIENTRY stub_glStencilFuncSeparate (GLenum face, GLenum func, GLint ref, GLuint mask) {
 }
-GLAPI void APIENTRY stub_glStencilMaskSeparate (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glStencilMaskSeparate (GLenum face, GLuint mask) {
 }
-GLAPI void APIENTRY stub_glAttachShader (GLuint, GLuint) {
+GLAPI void APIENTRY stub_glAttachShader (GLuint program, GLuint shader) {
 }
-GLAPI void APIENTRY stub_glBindAttribLocation (GLuint, GLuint, const GLchar *) {
+GLAPI void APIENTRY stub_glBindAttribLocation (GLuint program, GLuint index, const GLchar *name) {
 }
-GLAPI void APIENTRY stub_glCompileShader (GLuint) {
+GLAPI void APIENTRY stub_glCompileShader (GLuint shader) {
 }
 GLAPI GLuint APIENTRY stub_glCreateProgram (void) {
 	return (GLuint)0;
 }
-GLAPI GLuint APIENTRY stub_glCreateShader (GLenum) {
+GLAPI GLuint APIENTRY stub_glCreateShader (GLenum type) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glDeleteProgram (GLuint) {
+GLAPI void APIENTRY stub_glDeleteProgram (GLuint program) {
 }
-GLAPI void APIENTRY stub_glDeleteShader (GLuint) {
+GLAPI void APIENTRY stub_glDeleteShader (GLuint shader) {
 }
-GLAPI void APIENTRY stub_glDetachShader (GLuint, GLuint) {
+GLAPI void APIENTRY stub_glDetachShader (GLuint program, GLuint shader) {
 }
-GLAPI void APIENTRY stub_glDisableVertexAttribArray (GLuint) {
+GLAPI void APIENTRY stub_glDisableVertexAttribArray (GLuint index) {
 }
-GLAPI void APIENTRY stub_glEnableVertexAttribArray (GLuint) {
+GLAPI void APIENTRY stub_glEnableVertexAttribArray (GLuint index) {
 }
-GLAPI void APIENTRY stub_glGetActiveAttrib (GLuint, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, GLchar *) {
+GLAPI void APIENTRY stub_glGetActiveAttrib (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name) {
 }
-GLAPI void APIENTRY stub_glGetActiveUniform (GLuint, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, GLchar *) {
+GLAPI void APIENTRY stub_glGetActiveUniform (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name) {
 }
-GLAPI void APIENTRY stub_glGetAttachedShaders (GLuint, GLsizei, GLsizei *, GLuint *) {
+GLAPI void APIENTRY stub_glGetAttachedShaders (GLuint program, GLsizei maxCount, GLsizei *count, GLuint *obj) {
 }
-GLAPI GLint APIENTRY stub_glGetAttribLocation (GLuint, const GLchar *) {
+GLAPI GLint APIENTRY stub_glGetAttribLocation (GLuint program, const GLchar *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glGetProgramiv (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramiv (GLuint program, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramInfoLog (GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetProgramInfoLog (GLuint program, GLsizei bufSize, GLsizei *length, GLchar *infoLog) {
 }
-GLAPI void APIENTRY stub_glGetShaderiv (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetShaderiv (GLuint shader, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetShaderInfoLog (GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetShaderInfoLog (GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *infoLog) {
 }
-GLAPI void APIENTRY stub_glGetShaderSource (GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetShaderSource (GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source) {
 }
-GLAPI GLint APIENTRY stub_glGetUniformLocation (GLuint, const GLchar *) {
+GLAPI GLint APIENTRY stub_glGetUniformLocation (GLuint program, const GLchar *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glGetUniformfv (GLuint, GLint, GLfloat *) {
+GLAPI void APIENTRY stub_glGetUniformfv (GLuint program, GLint location, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetUniformiv (GLuint, GLint, GLint *) {
+GLAPI void APIENTRY stub_glGetUniformiv (GLuint program, GLint location, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribdv (GLuint, GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glGetVertexAttribdv (GLuint index, GLenum pname, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribfv (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetVertexAttribfv (GLuint index, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribiv (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribiv (GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribPointerv (GLuint, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetVertexAttribPointerv (GLuint index, GLenum pname, GLvoid* *pointer) {
 }
-GLAPI GLboolean APIENTRY stub_glIsProgram (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsProgram (GLuint program) {
 	return (GLboolean)0;
 }
-GLAPI GLboolean APIENTRY stub_glIsShader (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsShader (GLuint shader) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glLinkProgram (GLuint) {
+GLAPI void APIENTRY stub_glLinkProgram (GLuint program) {
 }
-GLAPI void APIENTRY stub_glShaderSource (GLuint, GLsizei, const GLchar* *, const GLint *) {
+GLAPI void APIENTRY stub_glShaderSource (GLuint shader, GLsizei count, const GLchar* const *string, const GLint *length) {
 }
-GLAPI void APIENTRY stub_glUseProgram (GLuint) {
+GLAPI void APIENTRY stub_glUseProgram (GLuint program) {
 }
-GLAPI void APIENTRY stub_glUniform1f (GLint, GLfloat) {
+GLAPI void APIENTRY stub_glUniform1f (GLint location, GLfloat v0) {
 }
-GLAPI void APIENTRY stub_glUniform2f (GLint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform2f (GLint location, GLfloat v0, GLfloat v1) {
 }
-GLAPI void APIENTRY stub_glUniform3f (GLint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform3f (GLint location, GLfloat v0, GLfloat v1, GLfloat v2) {
 }
-GLAPI void APIENTRY stub_glUniform4f (GLint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform4f (GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) {
 }
-GLAPI void APIENTRY stub_glUniform1i (GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform1i (GLint location, GLint v0) {
 }
-GLAPI void APIENTRY stub_glUniform2i (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform2i (GLint location, GLint v0, GLint v1) {
 }
-GLAPI void APIENTRY stub_glUniform3i (GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform3i (GLint location, GLint v0, GLint v1, GLint v2) {
 }
-GLAPI void APIENTRY stub_glUniform4i (GLint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform4i (GLint location, GLint v0, GLint v1, GLint v2, GLint v3) {
 }
-GLAPI void APIENTRY stub_glUniform1fv (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform1fv (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform2fv (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform2fv (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform3fv (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform3fv (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform4fv (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform4fv (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform1iv (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform1iv (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform2iv (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform2iv (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform3iv (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform3iv (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform4iv (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform4iv (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix2fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix3fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix4fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glValidateProgram (GLuint) {
+GLAPI void APIENTRY stub_glValidateProgram (GLuint program) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1d (GLuint, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib1d (GLuint index, GLdouble x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1dv (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib1dv (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1f (GLuint, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib1f (GLuint index, GLfloat x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1fv (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib1fv (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1s (GLuint, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib1s (GLuint index, GLshort x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1sv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib1sv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2d (GLuint, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib2d (GLuint index, GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2dv (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib2dv (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2f (GLuint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib2f (GLuint index, GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2fv (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib2fv (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2s (GLuint, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib2s (GLuint index, GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2sv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib2sv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3d (GLuint, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib3d (GLuint index, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3dv (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib3dv (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3f (GLuint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib3f (GLuint index, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3fv (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib3fv (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3s (GLuint, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib3s (GLuint index, GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3sv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib3sv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nbv (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nbv (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Niv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Niv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nsv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nsv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nub (GLuint, GLubyte, GLubyte, GLubyte, GLubyte) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nub (GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nubv (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nubv (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nuiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nuiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4Nusv (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4Nusv (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4bv (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4bv (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4d (GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib4d (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4dv (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib4dv (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4f (GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib4f (GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4fv (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib4fv (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4iv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4iv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4s (GLuint, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib4s (GLuint index, GLshort x, GLshort y, GLshort z, GLshort w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4sv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4sv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4ubv (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4ubv (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4uiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4uiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4usv (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4usv (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribPointer (GLuint, GLint, GLenum, GLboolean, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttribPointer (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix2x3fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix2x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix3x2fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix3x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix2x4fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix2x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix4x2fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix4x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix3x4fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix3x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix4x3fv (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix4x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glColorMaski (GLuint, GLboolean, GLboolean, GLboolean, GLboolean) {
+GLAPI void APIENTRY stub_glColorMaski (GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a) {
 }
-GLAPI void APIENTRY stub_glGetBooleani_v (GLenum, GLuint, GLboolean *) {
+GLAPI void APIENTRY stub_glGetBooleani_v (GLenum target, GLuint index, GLboolean *data) {
 }
-GLAPI void APIENTRY stub_glGetIntegeri_v (GLenum, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetIntegeri_v (GLenum target, GLuint index, GLint *data) {
 }
-GLAPI void APIENTRY stub_glEnablei (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glEnablei (GLenum target, GLuint index) {
 }
-GLAPI void APIENTRY stub_glDisablei (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glDisablei (GLenum target, GLuint index) {
 }
-GLAPI GLboolean APIENTRY stub_glIsEnabledi (GLenum, GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsEnabledi (GLenum target, GLuint index) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBeginTransformFeedback (GLenum) {
+GLAPI void APIENTRY stub_glBeginTransformFeedback (GLenum primitiveMode) {
 }
 GLAPI void APIENTRY stub_glEndTransformFeedback (void) {
 }
-GLAPI void APIENTRY stub_glBindBufferRange (GLenum, GLuint, GLuint, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glBindBufferRange (GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glBindBufferBase (GLenum, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glBindBufferBase (GLenum target, GLuint index, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glTransformFeedbackVaryings (GLuint, GLsizei, const GLchar* *, GLenum) {
+GLAPI void APIENTRY stub_glTransformFeedbackVaryings (GLuint program, GLsizei count, const GLchar* const *varyings, GLenum bufferMode) {
 }
-GLAPI void APIENTRY stub_glGetTransformFeedbackVarying (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *) {
+GLAPI void APIENTRY stub_glGetTransformFeedbackVarying (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name) {
 }
-GLAPI void APIENTRY stub_glClampColor (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glClampColor (GLenum target, GLenum clamp) {
 }
-GLAPI void APIENTRY stub_glBeginConditionalRender (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glBeginConditionalRender (GLuint id, GLenum mode) {
 }
 GLAPI void APIENTRY stub_glEndConditionalRender (void) {
 }
-GLAPI void APIENTRY stub_glVertexAttribIPointer (GLuint, GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttribIPointer (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribIiv (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribIiv (GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribIuiv (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribIuiv (GLuint index, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1i (GLuint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI1i (GLuint index, GLint x) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2i (GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI2i (GLuint index, GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3i (GLuint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI3i (GLuint index, GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4i (GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI4i (GLuint index, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1ui (GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI1ui (GLuint index, GLuint x) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2ui (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI2ui (GLuint index, GLuint x, GLuint y) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3ui (GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI3ui (GLuint index, GLuint x, GLuint y, GLuint z) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4ui (GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI4ui (GLuint index, GLuint x, GLuint y, GLuint z, GLuint w) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1iv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI1iv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2iv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI2iv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3iv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI3iv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4iv (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI4iv (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1uiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI1uiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2uiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI2uiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3uiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI3uiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4uiv (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI4uiv (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4bv (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttribI4bv (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4sv (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribI4sv (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4ubv (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttribI4ubv (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4usv (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttribI4usv (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glGetUniformuiv (GLuint, GLint, GLuint *) {
+GLAPI void APIENTRY stub_glGetUniformuiv (GLuint program, GLint location, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glBindFragDataLocation (GLuint, GLuint, const GLchar *) {
+GLAPI void APIENTRY stub_glBindFragDataLocation (GLuint program, GLuint color, const GLchar *name) {
 }
-GLAPI GLint APIENTRY stub_glGetFragDataLocation (GLuint, const GLchar *) {
+GLAPI GLint APIENTRY stub_glGetFragDataLocation (GLuint program, const GLchar *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glUniform1ui (GLint, GLuint) {
+GLAPI void APIENTRY stub_glUniform1ui (GLint location, GLuint v0) {
 }
-GLAPI void APIENTRY stub_glUniform2ui (GLint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform2ui (GLint location, GLuint v0, GLuint v1) {
 }
-GLAPI void APIENTRY stub_glUniform3ui (GLint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform3ui (GLint location, GLuint v0, GLuint v1, GLuint v2) {
 }
-GLAPI void APIENTRY stub_glUniform4ui (GLint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform4ui (GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3) {
 }
-GLAPI void APIENTRY stub_glUniform1uiv (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform1uiv (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform2uiv (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform2uiv (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform3uiv (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform3uiv (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform4uiv (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform4uiv (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glTexParameterIiv (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTexParameterIiv (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glTexParameterIuiv (GLenum, GLenum, const GLuint *) {
+GLAPI void APIENTRY stub_glTexParameterIuiv (GLenum target, GLenum pname, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetTexParameterIiv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTexParameterIiv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetTexParameterIuiv (GLenum, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetTexParameterIuiv (GLenum target, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glClearBufferiv (GLenum, GLint, const GLint *) {
+GLAPI void APIENTRY stub_glClearBufferiv (GLenum buffer, GLint drawbuffer, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glClearBufferuiv (GLenum, GLint, const GLuint *) {
+GLAPI void APIENTRY stub_glClearBufferuiv (GLenum buffer, GLint drawbuffer, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glClearBufferfv (GLenum, GLint, const GLfloat *) {
+GLAPI void APIENTRY stub_glClearBufferfv (GLenum buffer, GLint drawbuffer, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glClearBufferfi (GLenum, GLint, GLfloat, GLint) {
+GLAPI void APIENTRY stub_glClearBufferfi (GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil) {
 }
-GLAPI const GLubyte * APIENTRY stub_glGetStringi (GLenum, GLuint) {
+GLAPI const GLubyte * APIENTRY stub_glGetStringi (GLenum name, GLuint index) {
 	return (const GLubyte *)0;
 }
-GLAPI void APIENTRY stub_glDrawArraysInstanced (GLenum, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glDrawArraysInstanced (GLenum mode, GLint first, GLsizei count, GLsizei instancecount) {
 }
-GLAPI void APIENTRY stub_glDrawElementsInstanced (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei) {
+GLAPI void APIENTRY stub_glDrawElementsInstanced (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei instancecount) {
 }
-GLAPI void APIENTRY stub_glTexBuffer (GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glTexBuffer (GLenum target, GLenum internalformat, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glPrimitiveRestartIndex (GLuint) {
+GLAPI void APIENTRY stub_glPrimitiveRestartIndex (GLuint index) {
 }
-GLAPI void APIENTRY stub_glGetInteger64i_v (GLenum, GLuint, GLint64 *) {
+GLAPI void APIENTRY stub_glGetInteger64i_v (GLenum target, GLuint index, GLint64 *data) {
 }
-GLAPI void APIENTRY stub_glGetBufferParameteri64v (GLenum, GLenum, GLint64 *) {
+GLAPI void APIENTRY stub_glGetBufferParameteri64v (GLenum target, GLenum pname, GLint64 *params) {
 }
-GLAPI void APIENTRY stub_glProgramParameteri (GLuint, GLenum, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture (GLenum target, GLenum attachment, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTexture (GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribDivisor (GLuint index, GLuint divisor) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureFace (GLenum, GLenum, GLuint, GLint, GLenum) {
+GLAPI void APIENTRY stub_glMinSampleShading (GLfloat value) {
 }
-GLAPI void APIENTRY stub_glActiveTextureARB (GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationi (GLuint buf, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glClientActiveTextureARB (GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationSeparatei (GLuint buf, GLenum modeRGB, GLenum modeAlpha) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1dARB (GLenum, GLdouble) {
+GLAPI void APIENTRY stub_glBlendFunci (GLuint buf, GLenum src, GLenum dst) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1dvARB (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glBlendFuncSeparatei (GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1fARB (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glActiveTextureARB (GLenum texture) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1fvARB (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glClientActiveTextureARB (GLenum texture) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1iARB (GLenum, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord1dARB (GLenum target, GLdouble s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1ivARB (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1dvARB (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1sARB (GLenum, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord1fARB (GLenum target, GLfloat s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1svARB (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1fvARB (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2dARB (GLenum, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord1iARB (GLenum target, GLint s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2dvARB (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1ivARB (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2fARB (GLenum, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord1sARB (GLenum target, GLshort s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2fvARB (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1svARB (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2iARB (GLenum, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord2dARB (GLenum target, GLdouble s, GLdouble t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2ivARB (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2dvARB (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2sARB (GLenum, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord2fARB (GLenum target, GLfloat s, GLfloat t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2svARB (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2fvARB (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3dARB (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord2iARB (GLenum target, GLint s, GLint t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3dvARB (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2ivARB (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3fARB (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord2sARB (GLenum target, GLshort s, GLshort t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3fvARB (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2svARB (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3iARB (GLenum, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord3dARB (GLenum target, GLdouble s, GLdouble t, GLdouble r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3ivARB (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3dvARB (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3sARB (GLenum, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord3fARB (GLenum target, GLfloat s, GLfloat t, GLfloat r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3svARB (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3fvARB (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4dARB (GLenum, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexCoord3iARB (GLenum target, GLint s, GLint t, GLint r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4dvARB (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3ivARB (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4fARB (GLenum, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexCoord3sARB (GLenum target, GLshort s, GLshort t, GLshort r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4fvARB (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3svARB (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4iARB (GLenum, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glMultiTexCoord4dARB (GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4ivARB (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4dvARB (GLenum target, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4sARB (GLenum, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glMultiTexCoord4fARB (GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4svARB (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4fvARB (GLenum target, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glLoadTransposeMatrixfARB (const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4iARB (GLenum target, GLint s, GLint t, GLint r, GLint q) {
 }
-GLAPI void APIENTRY stub_glLoadTransposeMatrixdARB (const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4ivARB (GLenum target, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glMultTransposeMatrixfARB (const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4sARB (GLenum target, GLshort s, GLshort t, GLshort r, GLshort q) {
 }
-GLAPI void APIENTRY stub_glMultTransposeMatrixdARB (const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4svARB (GLenum target, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glSampleCoverageARB (GLclampf, GLboolean) {
+GLAPI void APIENTRY stub_glLoadTransposeMatrixfARB (const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage3DARB (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glLoadTransposeMatrixdARB (const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage2DARB (GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultTransposeMatrixfARB (const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glCompressedTexImage1DARB (GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultTransposeMatrixdARB (const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage3DARB (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glSampleCoverageARB (GLfloat value, GLboolean invert) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage2DARB (GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage3DARB (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTexSubImage1DARB (GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage2DARB (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetCompressedTexImageARB (GLenum, GLint, GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTexImage1DARB (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glPointParameterfARB (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage3DARB (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glPointParameterfvARB (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage2DARB (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glWeightbvARB (GLint, const GLbyte *) {
+GLAPI void APIENTRY stub_glCompressedTexSubImage1DARB (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glWeightsvARB (GLint, const GLshort *) {
+GLAPI void APIENTRY stub_glGetCompressedTexImageARB (GLenum target, GLint level, GLvoid *img) {
 }
-GLAPI void APIENTRY stub_glWeightivARB (GLint, const GLint *) {
+GLAPI void APIENTRY stub_glPointParameterfARB (GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glWeightfvARB (GLint, const GLfloat *) {
+GLAPI void APIENTRY stub_glPointParameterfvARB (GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glWeightdvARB (GLint, const GLdouble *) {
+GLAPI void APIENTRY stub_glWeightbvARB (GLint size, const GLbyte *weights) {
 }
-GLAPI void APIENTRY stub_glWeightubvARB (GLint, const GLubyte *) {
+GLAPI void APIENTRY stub_glWeightsvARB (GLint size, const GLshort *weights) {
 }
-GLAPI void APIENTRY stub_glWeightusvARB (GLint, const GLushort *) {
+GLAPI void APIENTRY stub_glWeightivARB (GLint size, const GLint *weights) {
 }
-GLAPI void APIENTRY stub_glWeightuivARB (GLint, const GLuint *) {
+GLAPI void APIENTRY stub_glWeightfvARB (GLint size, const GLfloat *weights) {
 }
-GLAPI void APIENTRY stub_glWeightPointerARB (GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glWeightdvARB (GLint size, const GLdouble *weights) {
 }
-GLAPI void APIENTRY stub_glVertexBlendARB (GLint) {
+GLAPI void APIENTRY stub_glWeightubvARB (GLint size, const GLubyte *weights) {
 }
-GLAPI void APIENTRY stub_glCurrentPaletteMatrixARB (GLint) {
+GLAPI void APIENTRY stub_glWeightusvARB (GLint size, const GLushort *weights) {
 }
-GLAPI void APIENTRY stub_glMatrixIndexubvARB (GLint, const GLubyte *) {
+GLAPI void APIENTRY stub_glWeightuivARB (GLint size, const GLuint *weights) {
 }
-GLAPI void APIENTRY stub_glMatrixIndexusvARB (GLint, const GLushort *) {
+GLAPI void APIENTRY stub_glWeightPointerARB (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glMatrixIndexuivARB (GLint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexBlendARB (GLint count) {
 }
-GLAPI void APIENTRY stub_glMatrixIndexPointerARB (GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCurrentPaletteMatrixARB (GLint index) {
 }
-GLAPI void APIENTRY stub_glWindowPos2dARB (GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixIndexubvARB (GLint size, const GLubyte *indices) {
 }
-GLAPI void APIENTRY stub_glWindowPos2dvARB (const GLdouble *) {
+GLAPI void APIENTRY stub_glMatrixIndexusvARB (GLint size, const GLushort *indices) {
 }
-GLAPI void APIENTRY stub_glWindowPos2fARB (GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMatrixIndexuivARB (GLint size, const GLuint *indices) {
 }
-GLAPI void APIENTRY stub_glWindowPos2fvARB (const GLfloat *) {
+GLAPI void APIENTRY stub_glMatrixIndexPointerARB (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glWindowPos2iARB (GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos2dARB (GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2ivARB (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos2dvARB (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2sARB (GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos2fARB (GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2svARB (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos2fvARB (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3dARB (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos2iARB (GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glWindowPos3dvARB (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos2ivARB (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3fARB (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos2sARB (GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glWindowPos3fvARB (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos2svARB (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3iARB (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos3dARB (GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3ivARB (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos3dvARB (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3sARB (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos3fARB (GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3svARB (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos3fvARB (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1dARB (GLuint, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos3iARB (GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1dvARB (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos3ivARB (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1fARB (GLuint, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos3sARB (GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1fvARB (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos3svARB (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1sARB (GLuint, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib1dARB (GLuint index, GLdouble x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1svARB (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib1dvARB (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2dARB (GLuint, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib1fARB (GLuint index, GLfloat x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2dvARB (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib1fvARB (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2fARB (GLuint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib1sARB (GLuint index, GLshort x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2fvARB (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib1svARB (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2sARB (GLuint, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib2dARB (GLuint index, GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2svARB (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib2dvARB (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3dARB (GLuint, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib2fARB (GLuint index, GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3dvARB (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib2fvARB (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3fARB (GLuint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib2sARB (GLuint index, GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3fvARB (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib2svARB (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3sARB (GLuint, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib3dARB (GLuint index, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3svARB (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib3dvARB (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NbvARB (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib3fARB (GLuint index, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NivARB (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttrib3fvARB (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NsvARB (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib3sARB (GLuint index, GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NubARB (GLuint, GLubyte, GLubyte, GLubyte, GLubyte) {
+GLAPI void APIENTRY stub_glVertexAttrib3svARB (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NubvARB (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4NbvARB (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NuivARB (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4NivARB (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4NusvARB (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4NsvARB (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4bvARB (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4NubARB (GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4dARB (GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib4NubvARB (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4dvARB (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib4NuivARB (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4fARB (GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib4NusvARB (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4fvARB (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib4bvARB (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4ivARB (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4dARB (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4sARB (GLuint, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib4dvARB (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4svARB (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4fARB (GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4ubvARB (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4fvARB (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4uivARB (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttrib4ivARB (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4usvARB (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4sARB (GLuint index, GLshort x, GLshort y, GLshort z, GLshort w) {
 }
-GLAPI void APIENTRY stub_glVertexAttribPointerARB (GLuint, GLint, GLenum, GLboolean, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttrib4svARB (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glEnableVertexAttribArrayARB (GLuint) {
+GLAPI void APIENTRY stub_glVertexAttrib4ubvARB (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glDisableVertexAttribArrayARB (GLuint) {
+GLAPI void APIENTRY stub_glVertexAttrib4uivARB (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glProgramStringARB (GLenum, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttrib4usvARB (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glBindProgramARB (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribPointerARB (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glDeleteProgramsARB (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glEnableVertexAttribArrayARB (GLuint index) {
 }
-GLAPI void APIENTRY stub_glGenProgramsARB (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glDisableVertexAttribArrayARB (GLuint index) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameter4dARB (GLenum, GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glProgramStringARB (GLenum target, GLenum format, GLsizei len, const GLvoid *string) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameter4dvARB (GLenum, GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glBindProgramARB (GLenum target, GLuint program) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameter4fARB (GLenum, GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glDeleteProgramsARB (GLsizei n, const GLuint *programs) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameter4fvARB (GLenum, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glGenProgramsARB (GLsizei n, GLuint *programs) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameter4dARB (GLenum, GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glProgramEnvParameter4dARB (GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameter4dvARB (GLenum, GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glProgramEnvParameter4dvARB (GLenum target, GLuint index, const GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameter4fARB (GLenum, GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramEnvParameter4fARB (GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameter4fvARB (GLenum, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramEnvParameter4fvARB (GLenum target, GLuint index, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramEnvParameterdvARB (GLenum, GLuint, GLdouble *) {
+GLAPI void APIENTRY stub_glProgramLocalParameter4dARB (GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glGetProgramEnvParameterfvARB (GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glProgramLocalParameter4dvARB (GLenum target, GLuint index, const GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramLocalParameterdvARB (GLenum, GLuint, GLdouble *) {
+GLAPI void APIENTRY stub_glProgramLocalParameter4fARB (GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glGetProgramLocalParameterfvARB (GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glProgramLocalParameter4fvARB (GLenum target, GLuint index, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramivARB (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramEnvParameterdvARB (GLenum target, GLuint index, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramStringARB (GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetProgramEnvParameterfvARB (GLenum target, GLuint index, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribdvARB (GLuint, GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glGetProgramLocalParameterdvARB (GLenum target, GLuint index, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribfvARB (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetProgramLocalParameterfvARB (GLenum target, GLuint index, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribivARB (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramivARB (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribPointervARB (GLuint, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetProgramStringARB (GLenum target, GLenum pname, GLvoid *string) {
 }
-GLAPI GLboolean APIENTRY stub_glIsProgramARB (GLuint) {
+GLAPI void APIENTRY stub_glGetVertexAttribdvARB (GLuint index, GLenum pname, GLdouble *params) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribfvARB (GLuint index, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribivARB (GLuint index, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribPointervARB (GLuint index, GLenum pname, GLvoid* *pointer) {
+}
+GLAPI GLboolean APIENTRY stub_glIsProgramARB (GLuint program) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindBufferARB (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindBufferARB (GLenum target, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glDeleteBuffersARB (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteBuffersARB (GLsizei n, const GLuint *buffers) {
 }
-GLAPI void APIENTRY stub_glGenBuffersARB (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenBuffersARB (GLsizei n, GLuint *buffers) {
 }
-GLAPI GLboolean APIENTRY stub_glIsBufferARB (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsBufferARB (GLuint buffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBufferDataARB (GLenum, GLsizeiptrARB, const GLvoid *, GLenum) {
+GLAPI void APIENTRY stub_glBufferDataARB (GLenum target, GLsizeiptrARB size, const GLvoid *data, GLenum usage) {
 }
-GLAPI void APIENTRY stub_glBufferSubDataARB (GLenum, GLintptrARB, GLsizeiptrARB, const GLvoid *) {
+GLAPI void APIENTRY stub_glBufferSubDataARB (GLenum target, GLintptrARB offset, GLsizeiptrARB size, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetBufferSubDataARB (GLenum, GLintptrARB, GLsizeiptrARB, GLvoid *) {
+GLAPI void APIENTRY stub_glGetBufferSubDataARB (GLenum target, GLintptrARB offset, GLsizeiptrARB size, GLvoid *data) {
 }
-GLAPI GLvoid* APIENTRY stub_glMapBufferARB (GLenum, GLenum) {
+GLAPI GLvoid* APIENTRY stub_glMapBufferARB (GLenum target, GLenum access) {
 	return (GLvoid*)0;
 }
-GLAPI GLboolean APIENTRY stub_glUnmapBufferARB (GLenum) {
+GLAPI GLboolean APIENTRY stub_glUnmapBufferARB (GLenum target) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetBufferParameterivARB (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetBufferParameterivARB (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetBufferPointervARB (GLenum, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetBufferPointervARB (GLenum target, GLenum pname, GLvoid* *params) {
 }
-GLAPI void APIENTRY stub_glGenQueriesARB (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenQueriesARB (GLsizei n, GLuint *ids) {
 }
-GLAPI void APIENTRY stub_glDeleteQueriesARB (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteQueriesARB (GLsizei n, const GLuint *ids) {
 }
-GLAPI GLboolean APIENTRY stub_glIsQueryARB (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsQueryARB (GLuint id) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBeginQueryARB (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBeginQueryARB (GLenum target, GLuint id) {
 }
-GLAPI void APIENTRY stub_glEndQueryARB (GLenum) {
+GLAPI void APIENTRY stub_glEndQueryARB (GLenum target) {
 }
-GLAPI void APIENTRY stub_glGetQueryivARB (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetQueryivARB (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjectivARB (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetQueryObjectivARB (GLuint id, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjectuivARB (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetQueryObjectuivARB (GLuint id, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glDeleteObjectARB (GLhandleARB) {
+GLAPI void APIENTRY stub_glDeleteObjectARB (GLhandleARB obj) {
 }
-GLAPI GLhandleARB APIENTRY stub_glGetHandleARB (GLenum) {
+GLAPI GLhandleARB APIENTRY stub_glGetHandleARB (GLenum pname) {
 	return (GLhandleARB)0;
 }
-GLAPI void APIENTRY stub_glDetachObjectARB (GLhandleARB, GLhandleARB) {
+GLAPI void APIENTRY stub_glDetachObjectARB (GLhandleARB containerObj, GLhandleARB attachedObj) {
 }
-GLAPI GLhandleARB APIENTRY stub_glCreateShaderObjectARB (GLenum) {
+GLAPI GLhandleARB APIENTRY stub_glCreateShaderObjectARB (GLenum shaderType) {
 	return (GLhandleARB)0;
 }
-GLAPI void APIENTRY stub_glShaderSourceARB (GLhandleARB, GLsizei, const GLcharARB* *, const GLint *) {
+GLAPI void APIENTRY stub_glShaderSourceARB (GLhandleARB shaderObj, GLsizei count, const GLcharARB* *string, const GLint *length) {
 }
-GLAPI void APIENTRY stub_glCompileShaderARB (GLhandleARB) {
+GLAPI void APIENTRY stub_glCompileShaderARB (GLhandleARB shaderObj) {
 }
 GLAPI GLhandleARB APIENTRY stub_glCreateProgramObjectARB (void) {
 	return (GLhandleARB)0;
 }
-GLAPI void APIENTRY stub_glAttachObjectARB (GLhandleARB, GLhandleARB) {
+GLAPI void APIENTRY stub_glAttachObjectARB (GLhandleARB containerObj, GLhandleARB obj) {
 }
-GLAPI void APIENTRY stub_glLinkProgramARB (GLhandleARB) {
+GLAPI void APIENTRY stub_glLinkProgramARB (GLhandleARB programObj) {
 }
-GLAPI void APIENTRY stub_glUseProgramObjectARB (GLhandleARB) {
+GLAPI void APIENTRY stub_glUseProgramObjectARB (GLhandleARB programObj) {
 }
-GLAPI void APIENTRY stub_glValidateProgramARB (GLhandleARB) {
+GLAPI void APIENTRY stub_glValidateProgramARB (GLhandleARB programObj) {
 }
-GLAPI void APIENTRY stub_glUniform1fARB (GLint, GLfloat) {
+GLAPI void APIENTRY stub_glUniform1fARB (GLint location, GLfloat v0) {
 }
-GLAPI void APIENTRY stub_glUniform2fARB (GLint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform2fARB (GLint location, GLfloat v0, GLfloat v1) {
 }
-GLAPI void APIENTRY stub_glUniform3fARB (GLint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform3fARB (GLint location, GLfloat v0, GLfloat v1, GLfloat v2) {
 }
-GLAPI void APIENTRY stub_glUniform4fARB (GLint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glUniform4fARB (GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) {
 }
-GLAPI void APIENTRY stub_glUniform1iARB (GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform1iARB (GLint location, GLint v0) {
 }
-GLAPI void APIENTRY stub_glUniform2iARB (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform2iARB (GLint location, GLint v0, GLint v1) {
 }
-GLAPI void APIENTRY stub_glUniform3iARB (GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform3iARB (GLint location, GLint v0, GLint v1, GLint v2) {
 }
-GLAPI void APIENTRY stub_glUniform4iARB (GLint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glUniform4iARB (GLint location, GLint v0, GLint v1, GLint v2, GLint v3) {
 }
-GLAPI void APIENTRY stub_glUniform1fvARB (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform1fvARB (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform2fvARB (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform2fvARB (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform3fvARB (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform3fvARB (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform4fvARB (GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniform4fvARB (GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniform1ivARB (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform1ivARB (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform2ivARB (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform2ivARB (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform3ivARB (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform3ivARB (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniform4ivARB (GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glUniform4ivARB (GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix2fvARB (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix2fvARB (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix3fvARB (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix3fvARB (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glUniformMatrix4fvARB (GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glUniformMatrix4fvARB (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glGetObjectParameterfvARB (GLhandleARB, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetObjectParameterfvARB (GLhandleARB obj, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetObjectParameterivARB (GLhandleARB, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetObjectParameterivARB (GLhandleARB obj, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetInfoLogARB (GLhandleARB, GLsizei, GLsizei *, GLcharARB *) {
+GLAPI void APIENTRY stub_glGetInfoLogARB (GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *infoLog) {
 }
-GLAPI void APIENTRY stub_glGetAttachedObjectsARB (GLhandleARB, GLsizei, GLsizei *, GLhandleARB *) {
+GLAPI void APIENTRY stub_glGetAttachedObjectsARB (GLhandleARB containerObj, GLsizei maxCount, GLsizei *count, GLhandleARB *obj) {
 }
-GLAPI GLint APIENTRY stub_glGetUniformLocationARB (GLhandleARB, const GLcharARB *) {
+GLAPI GLint APIENTRY stub_glGetUniformLocationARB (GLhandleARB programObj, const GLcharARB *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glGetActiveUniformARB (GLhandleARB, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, GLcharARB *) {
+GLAPI void APIENTRY stub_glGetActiveUniformARB (GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name) {
 }
-GLAPI void APIENTRY stub_glGetUniformfvARB (GLhandleARB, GLint, GLfloat *) {
+GLAPI void APIENTRY stub_glGetUniformfvARB (GLhandleARB programObj, GLint location, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetUniformivARB (GLhandleARB, GLint, GLint *) {
+GLAPI void APIENTRY stub_glGetUniformivARB (GLhandleARB programObj, GLint location, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetShaderSourceARB (GLhandleARB, GLsizei, GLsizei *, GLcharARB *) {
+GLAPI void APIENTRY stub_glGetShaderSourceARB (GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *source) {
 }
-GLAPI void APIENTRY stub_glBindAttribLocationARB (GLhandleARB, GLuint, const GLcharARB *) {
+GLAPI void APIENTRY stub_glBindAttribLocationARB (GLhandleARB programObj, GLuint index, const GLcharARB *name) {
 }
-GLAPI void APIENTRY stub_glGetActiveAttribARB (GLhandleARB, GLuint, GLsizei, GLsizei *, GLint *, GLenum *, GLcharARB *) {
+GLAPI void APIENTRY stub_glGetActiveAttribARB (GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name) {
 }
-GLAPI GLint APIENTRY stub_glGetAttribLocationARB (GLhandleARB, const GLcharARB *) {
+GLAPI GLint APIENTRY stub_glGetAttribLocationARB (GLhandleARB programObj, const GLcharARB *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glDrawBuffersARB (GLsizei, const GLenum *) {
+GLAPI void APIENTRY stub_glDrawBuffersARB (GLsizei n, const GLenum *bufs) {
 }
-GLAPI void APIENTRY stub_glClampColorARB (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glClampColorARB (GLenum target, GLenum clamp) {
 }
-GLAPI void APIENTRY stub_glDrawArraysInstancedARB (GLenum, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glDrawArraysInstancedARB (GLenum mode, GLint first, GLsizei count, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glDrawElementsInstancedARB (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei) {
+GLAPI void APIENTRY stub_glDrawElementsInstancedARB (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei primcount) {
 }
-GLAPI GLboolean APIENTRY stub_glIsRenderbuffer (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsRenderbuffer (GLuint renderbuffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindRenderbuffer (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindRenderbuffer (GLenum target, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glDeleteRenderbuffers (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteRenderbuffers (GLsizei n, const GLuint *renderbuffers) {
 }
-GLAPI void APIENTRY stub_glGenRenderbuffers (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenRenderbuffers (GLsizei n, GLuint *renderbuffers) {
 }
-GLAPI void APIENTRY stub_glRenderbufferStorage (GLenum, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glRenderbufferStorage (GLenum target, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetRenderbufferParameteriv (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetRenderbufferParameteriv (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI GLboolean APIENTRY stub_glIsFramebuffer (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsFramebuffer (GLuint framebuffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindFramebuffer (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindFramebuffer (GLenum target, GLuint framebuffer) {
 }
-GLAPI void APIENTRY stub_glDeleteFramebuffers (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteFramebuffers (GLsizei n, const GLuint *framebuffers) {
 }
-GLAPI void APIENTRY stub_glGenFramebuffers (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenFramebuffers (GLsizei n, GLuint *framebuffers) {
 }
-GLAPI GLenum APIENTRY stub_glCheckFramebufferStatus (GLenum) {
+GLAPI GLenum APIENTRY stub_glCheckFramebufferStatus (GLenum target) {
 	return (GLenum)0;
 }
-GLAPI void APIENTRY stub_glFramebufferTexture1D (GLenum, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture1D (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTexture2D (GLenum, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture2D (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTexture3D (GLenum, GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture3D (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset) {
 }
-GLAPI void APIENTRY stub_glFramebufferRenderbuffer (GLenum, GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glFramebufferRenderbuffer (GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glGetFramebufferAttachmentParameteriv (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFramebufferAttachmentParameteriv (GLenum target, GLenum attachment, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGenerateMipmap (GLenum) {
+GLAPI void APIENTRY stub_glGenerateMipmap (GLenum target) {
 }
-GLAPI void APIENTRY stub_glBlitFramebuffer (GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLbitfield, GLenum) {
+GLAPI void APIENTRY stub_glBlitFramebuffer (GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter) {
 }
-GLAPI void APIENTRY stub_glRenderbufferStorageMultisample (GLenum, GLsizei, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glRenderbufferStorageMultisample (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureLayer (GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTextureLayer (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer) {
 }
-GLAPI void APIENTRY stub_glProgramParameteriARB (GLuint, GLenum, GLint) {
+GLAPI void APIENTRY stub_glProgramParameteriARB (GLuint program, GLenum pname, GLint value) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureARB (GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTextureARB (GLenum target, GLenum attachment, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureLayerARB (GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTextureLayerARB (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureFaceARB (GLenum, GLenum, GLuint, GLint, GLenum) {
+GLAPI void APIENTRY stub_glFramebufferTextureFaceARB (GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face) {
 }
-GLAPI void APIENTRY stub_glVertexAttribDivisorARB (GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribDivisorARB (GLuint index, GLuint divisor) {
 }
-GLAPI GLvoid* APIENTRY stub_glMapBufferRange (GLenum, GLintptr, GLsizeiptr, GLbitfield) {
+GLAPI GLvoid* APIENTRY stub_glMapBufferRange (GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access) {
 	return (GLvoid*)0;
 }
-GLAPI void APIENTRY stub_glFlushMappedBufferRange (GLenum, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glFlushMappedBufferRange (GLenum target, GLintptr offset, GLsizeiptr length) {
 }
-GLAPI void APIENTRY stub_glTexBufferARB (GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glTexBufferARB (GLenum target, GLenum internalformat, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glBindVertexArray (GLuint) {
+GLAPI void APIENTRY stub_glBindVertexArray (GLuint array) {
 }
-GLAPI void APIENTRY stub_glDeleteVertexArrays (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteVertexArrays (GLsizei n, const GLuint *arrays) {
 }
-GLAPI void APIENTRY stub_glGenVertexArrays (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenVertexArrays (GLsizei n, GLuint *arrays) {
 }
-GLAPI GLboolean APIENTRY stub_glIsVertexArray (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsVertexArray (GLuint array) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetUniformIndices (GLuint, GLsizei, const GLchar* *, GLuint *) {
+GLAPI void APIENTRY stub_glGetUniformIndices (GLuint program, GLsizei uniformCount, const GLchar* const *uniformNames, GLuint *uniformIndices) {
 }
-GLAPI void APIENTRY stub_glGetActiveUniformsiv (GLuint, GLsizei, const GLuint *, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetActiveUniformsiv (GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetActiveUniformName (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetActiveUniformName (GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName) {
 }
-GLAPI GLuint APIENTRY stub_glGetUniformBlockIndex (GLuint, const GLchar *) {
+GLAPI GLuint APIENTRY stub_glGetUniformBlockIndex (GLuint program, const GLchar *uniformBlockName) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glGetActiveUniformBlockiv (GLuint, GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetActiveUniformBlockiv (GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetActiveUniformBlockName (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetActiveUniformBlockName (GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName) {
 }
-GLAPI void APIENTRY stub_glUniformBlockBinding (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniformBlockBinding (GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding) {
 }
-GLAPI void APIENTRY stub_glCopyBufferSubData (GLenum, GLenum, GLintptr, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glCopyBufferSubData (GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glDrawElementsBaseVertex (GLenum, GLsizei, GLenum, const GLvoid *, GLint) {
+GLAPI void APIENTRY stub_glDrawElementsBaseVertex (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLint basevertex) {
 }
-GLAPI void APIENTRY stub_glDrawRangeElementsBaseVertex (GLenum, GLuint, GLuint, GLsizei, GLenum, const GLvoid *, GLint) {
+GLAPI void APIENTRY stub_glDrawRangeElementsBaseVertex (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices, GLint basevertex) {
 }
-GLAPI void APIENTRY stub_glDrawElementsInstancedBaseVertex (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glDrawElementsInstancedBaseVertex (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei instancecount, GLint basevertex) {
 }
-GLAPI void APIENTRY stub_glMultiDrawElementsBaseVertex (GLenum, const GLsizei *, GLenum, const GLvoid* *, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glMultiDrawElementsBaseVertex (GLenum mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei drawcount, const GLint *basevertex) {
 }
-GLAPI void APIENTRY stub_glProvokingVertex (GLenum) {
+GLAPI void APIENTRY stub_glProvokingVertex (GLenum mode) {
 }
-GLAPI GLsync APIENTRY stub_glFenceSync (GLenum, GLbitfield) {
+GLAPI GLsync APIENTRY stub_glFenceSync (GLenum condition, GLbitfield flags) {
 	return (GLsync)0;
 }
-GLAPI GLboolean APIENTRY stub_glIsSync (GLsync) {
+GLAPI GLboolean APIENTRY stub_glIsSync (GLsync sync) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glDeleteSync (GLsync) {
+GLAPI void APIENTRY stub_glDeleteSync (GLsync sync) {
 }
-GLAPI GLenum APIENTRY stub_glClientWaitSync (GLsync, GLbitfield, GLuint64) {
+GLAPI GLenum APIENTRY stub_glClientWaitSync (GLsync sync, GLbitfield flags, GLuint64 timeout) {
 	return (GLenum)0;
 }
-GLAPI void APIENTRY stub_glWaitSync (GLsync, GLbitfield, GLuint64) {
+GLAPI void APIENTRY stub_glWaitSync (GLsync sync, GLbitfield flags, GLuint64 timeout) {
 }
-GLAPI void APIENTRY stub_glGetInteger64v (GLenum, GLint64 *) {
+GLAPI void APIENTRY stub_glGetInteger64v (GLenum pname, GLint64 *params) {
 }
-GLAPI void APIENTRY stub_glGetSynciv (GLsync, GLenum, GLsizei, GLsizei *, GLint *) {
+GLAPI void APIENTRY stub_glGetSynciv (GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values) {
 }
-GLAPI void APIENTRY stub_glTexImage2DMultisample (GLenum, GLsizei, GLint, GLsizei, GLsizei, GLboolean) {
+GLAPI void APIENTRY stub_glTexImage2DMultisample (GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations) {
 }
-GLAPI void APIENTRY stub_glTexImage3DMultisample (GLenum, GLsizei, GLint, GLsizei, GLsizei, GLsizei, GLboolean) {
+GLAPI void APIENTRY stub_glTexImage3DMultisample (GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations) {
 }
-GLAPI void APIENTRY stub_glGetMultisamplefv (GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMultisamplefv (GLenum pname, GLuint index, GLfloat *val) {
 }
-GLAPI void APIENTRY stub_glSampleMaski (GLuint, GLbitfield) {
+GLAPI void APIENTRY stub_glSampleMaski (GLuint index, GLbitfield mask) {
 }
-GLAPI void APIENTRY stub_glBlendEquationi (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationiARB (GLuint buf, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glBlendEquationSeparatei (GLuint, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationSeparateiARB (GLuint buf, GLenum modeRGB, GLenum modeAlpha) {
 }
-GLAPI void APIENTRY stub_glBlendFunci (GLuint, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFunciARB (GLuint buf, GLenum src, GLenum dst) {
 }
-GLAPI void APIENTRY stub_glBlendFuncSeparatei (GLuint, GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncSeparateiARB (GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha) {
 }
-GLAPI void APIENTRY stub_glMinSampleShading (GLclampf) {
+GLAPI void APIENTRY stub_glMinSampleShadingARB (GLfloat value) {
 }
-GLAPI void APIENTRY stub_glBlendColorEXT (GLclampf, GLclampf, GLclampf, GLclampf) {
+GLAPI void APIENTRY stub_glNamedStringARB (GLenum type, GLint namelen, const GLchar *name, GLint stringlen, const GLchar *string) {
 }
-GLAPI void APIENTRY stub_glPolygonOffsetEXT (GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glDeleteNamedStringARB (GLint namelen, const GLchar *name) {
 }
-GLAPI void APIENTRY stub_glTexImage3DEXT (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompileShaderIncludeARB (GLuint shader, GLsizei count, const GLchar* *path, const GLint *length) {
 }
-GLAPI void APIENTRY stub_glTexSubImage3DEXT (GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetTexFilterFuncSGIS (GLenum, GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glTexFilterFuncSGIS (GLenum, GLenum, GLsizei, const GLfloat *) {
-}
-GLAPI void APIENTRY stub_glTexSubImage1DEXT (GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glTexSubImage2DEXT (GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glCopyTexImage1DEXT (GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLint) {
-}
-GLAPI void APIENTRY stub_glCopyTexImage2DEXT (GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint) {
-}
-GLAPI void APIENTRY stub_glCopyTexSubImage1DEXT (GLenum, GLint, GLint, GLint, GLint, GLsizei) {
-}
-GLAPI void APIENTRY stub_glCopyTexSubImage2DEXT (GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
-}
-GLAPI void APIENTRY stub_glCopyTexSubImage3DEXT (GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
-}
-GLAPI void APIENTRY stub_glGetHistogramEXT (GLenum, GLboolean, GLenum, GLenum, GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetHistogramParameterfvEXT (GLenum, GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glGetHistogramParameterivEXT (GLenum, GLenum, GLint *) {
-}
-GLAPI void APIENTRY stub_glGetMinmaxEXT (GLenum, GLboolean, GLenum, GLenum, GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetMinmaxParameterfvEXT (GLenum, GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glGetMinmaxParameterivEXT (GLenum, GLenum, GLint *) {
-}
-GLAPI void APIENTRY stub_glHistogramEXT (GLenum, GLsizei, GLenum, GLboolean) {
-}
-GLAPI void APIENTRY stub_glMinmaxEXT (GLenum, GLenum, GLboolean) {
-}
-GLAPI void APIENTRY stub_glResetHistogramEXT (GLenum) {
-}
-GLAPI void APIENTRY stub_glResetMinmaxEXT (GLenum) {
-}
-GLAPI void APIENTRY stub_glConvolutionFilter1DEXT (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glConvolutionFilter2DEXT (GLenum, GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glConvolutionParameterfEXT (GLenum, GLenum, GLfloat) {
-}
-GLAPI void APIENTRY stub_glConvolutionParameterfvEXT (GLenum, GLenum, const GLfloat *) {
-}
-GLAPI void APIENTRY stub_glConvolutionParameteriEXT (GLenum, GLenum, GLint) {
-}
-GLAPI void APIENTRY stub_glConvolutionParameterivEXT (GLenum, GLenum, const GLint *) {
-}
-GLAPI void APIENTRY stub_glCopyConvolutionFilter1DEXT (GLenum, GLenum, GLint, GLint, GLsizei) {
-}
-GLAPI void APIENTRY stub_glCopyConvolutionFilter2DEXT (GLenum, GLenum, GLint, GLint, GLsizei, GLsizei) {
-}
-GLAPI void APIENTRY stub_glGetConvolutionFilterEXT (GLenum, GLenum, GLenum, GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetConvolutionParameterfvEXT (GLenum, GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glGetConvolutionParameterivEXT (GLenum, GLenum, GLint *) {
-}
-GLAPI void APIENTRY stub_glGetSeparableFilterEXT (GLenum, GLenum, GLenum, GLvoid *, GLvoid *, GLvoid *) {
-}
-GLAPI void APIENTRY stub_glSeparableFilter2DEXT (GLenum, GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glColorTableSGI (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glColorTableParameterfvSGI (GLenum, GLenum, const GLfloat *) {
-}
-GLAPI void APIENTRY stub_glColorTableParameterivSGI (GLenum, GLenum, const GLint *) {
-}
-GLAPI void APIENTRY stub_glCopyColorTableSGI (GLenum, GLenum, GLint, GLint, GLsizei) {
-}
-GLAPI void APIENTRY stub_glGetColorTableSGI (GLenum, GLenum, GLenum, GLvoid *) {
-}
-GLAPI void APIENTRY stub_glGetColorTableParameterfvSGI (GLenum, GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glGetColorTableParameterivSGI (GLenum, GLenum, GLint *) {
-}
-GLAPI void APIENTRY stub_glPixelTexGenSGIX (GLenum) {
-}
-GLAPI void APIENTRY stub_glPixelTexGenParameteriSGIS (GLenum, GLint) {
-}
-GLAPI void APIENTRY stub_glPixelTexGenParameterivSGIS (GLenum, const GLint *) {
-}
-GLAPI void APIENTRY stub_glPixelTexGenParameterfSGIS (GLenum, GLfloat) {
-}
-GLAPI void APIENTRY stub_glPixelTexGenParameterfvSGIS (GLenum, const GLfloat *) {
-}
-GLAPI void APIENTRY stub_glGetPixelTexGenParameterivSGIS (GLenum, GLint *) {
-}
-GLAPI void APIENTRY stub_glGetPixelTexGenParameterfvSGIS (GLenum, GLfloat *) {
-}
-GLAPI void APIENTRY stub_glTexImage4DSGIS (GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI void APIENTRY stub_glTexSubImage4DSGIS (GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
-}
-GLAPI GLboolean APIENTRY stub_glAreTexturesResidentEXT (GLsizei, const GLuint *, GLboolean *) {
+GLAPI GLboolean APIENTRY stub_glIsNamedStringARB (GLint namelen, const GLchar *name) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindTextureEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glGetNamedStringARB (GLint namelen, const GLchar *name, GLsizei bufSize, GLint *stringlen, GLchar *string) {
 }
-GLAPI void APIENTRY stub_glDeleteTexturesEXT (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glGetNamedStringivARB (GLint namelen, const GLchar *name, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGenTexturesEXT (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glBindFragDataLocationIndexed (GLuint program, GLuint colorNumber, GLuint index, const GLchar *name) {
 }
-GLAPI GLboolean APIENTRY stub_glIsTextureEXT (GLuint) {
+GLAPI GLint APIENTRY stub_glGetFragDataIndex (GLuint program, const GLchar *name) {
+	return (GLint)0;
+}
+GLAPI void APIENTRY stub_glGenSamplers (GLsizei count, GLuint *samplers) {
+}
+GLAPI void APIENTRY stub_glDeleteSamplers (GLsizei count, const GLuint *samplers) {
+}
+GLAPI GLboolean APIENTRY stub_glIsSampler (GLuint sampler) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glPrioritizeTexturesEXT (GLsizei, const GLuint *, const GLclampf *) {
+GLAPI void APIENTRY stub_glBindSampler (GLuint unit, GLuint sampler) {
 }
-GLAPI void APIENTRY stub_glDetailTexFuncSGIS (GLenum, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glSamplerParameteri (GLuint sampler, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glGetDetailTexFuncSGIS (GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glSamplerParameteriv (GLuint sampler, GLenum pname, const GLint *param) {
 }
-GLAPI void APIENTRY stub_glSharpenTexFuncSGIS (GLenum, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glSamplerParameterf (GLuint sampler, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glGetSharpenTexFuncSGIS (GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glSamplerParameterfv (GLuint sampler, GLenum pname, const GLfloat *param) {
 }
-GLAPI void APIENTRY stub_glSampleMaskSGIS (GLclampf, GLboolean) {
+GLAPI void APIENTRY stub_glSamplerParameterIiv (GLuint sampler, GLenum pname, const GLint *param) {
 }
-GLAPI void APIENTRY stub_glSamplePatternSGIS (GLenum) {
+GLAPI void APIENTRY stub_glSamplerParameterIuiv (GLuint sampler, GLenum pname, const GLuint *param) {
 }
-GLAPI void APIENTRY stub_glArrayElementEXT (GLint) {
+GLAPI void APIENTRY stub_glGetSamplerParameteriv (GLuint sampler, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glColorPointerEXT (GLint, GLenum, GLsizei, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glGetSamplerParameterIiv (GLuint sampler, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glDrawArraysEXT (GLenum, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glGetSamplerParameterfv (GLuint sampler, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glEdgeFlagPointerEXT (GLsizei, GLsizei, const GLboolean *) {
+GLAPI void APIENTRY stub_glGetSamplerParameterIuiv (GLuint sampler, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetPointervEXT (GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glQueryCounter (GLuint id, GLenum target) {
 }
-GLAPI void APIENTRY stub_glIndexPointerEXT (GLenum, GLsizei, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glGetQueryObjecti64v (GLuint id, GLenum pname, GLint64 *params) {
 }
-GLAPI void APIENTRY stub_glNormalPointerEXT (GLenum, GLsizei, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glGetQueryObjectui64v (GLuint id, GLenum pname, GLuint64 *params) {
 }
-GLAPI void APIENTRY stub_glTexCoordPointerEXT (GLint, GLenum, GLsizei, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexP2ui (GLenum type, GLuint value) {
 }
-GLAPI void APIENTRY stub_glVertexPointerEXT (GLint, GLenum, GLsizei, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexP2uiv (GLenum type, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glBlendEquationEXT (GLenum) {
+GLAPI void APIENTRY stub_glVertexP3ui (GLenum type, GLuint value) {
 }
-GLAPI void APIENTRY stub_glSpriteParameterfSGIX (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glVertexP3uiv (GLenum type, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glSpriteParameterfvSGIX (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexP4ui (GLenum type, GLuint value) {
 }
-GLAPI void APIENTRY stub_glSpriteParameteriSGIX (GLenum, GLint) {
+GLAPI void APIENTRY stub_glVertexP4uiv (GLenum type, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glSpriteParameterivSGIX (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTexCoordP1ui (GLenum type, GLuint coords) {
 }
-GLAPI void APIENTRY stub_glPointParameterfEXT (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoordP1uiv (GLenum type, const GLuint *coords) {
 }
-GLAPI void APIENTRY stub_glPointParameterfvEXT (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoordP2ui (GLenum type, GLuint coords) {
 }
-GLAPI void APIENTRY stub_glPointParameterfSGIS (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoordP2uiv (GLenum type, const GLuint *coords) {
 }
-GLAPI void APIENTRY stub_glPointParameterfvSGIS (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoordP3ui (GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glTexCoordP3uiv (GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glTexCoordP4ui (GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glTexCoordP4uiv (GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP1ui (GLenum texture, GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP1uiv (GLenum texture, GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP2ui (GLenum texture, GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP2uiv (GLenum texture, GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP3ui (GLenum texture, GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP3uiv (GLenum texture, GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP4ui (GLenum texture, GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glMultiTexCoordP4uiv (GLenum texture, GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glNormalP3ui (GLenum type, GLuint coords) {
+}
+GLAPI void APIENTRY stub_glNormalP3uiv (GLenum type, const GLuint *coords) {
+}
+GLAPI void APIENTRY stub_glColorP3ui (GLenum type, GLuint color) {
+}
+GLAPI void APIENTRY stub_glColorP3uiv (GLenum type, const GLuint *color) {
+}
+GLAPI void APIENTRY stub_glColorP4ui (GLenum type, GLuint color) {
+}
+GLAPI void APIENTRY stub_glColorP4uiv (GLenum type, const GLuint *color) {
+}
+GLAPI void APIENTRY stub_glSecondaryColorP3ui (GLenum type, GLuint color) {
+}
+GLAPI void APIENTRY stub_glSecondaryColorP3uiv (GLenum type, const GLuint *color) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP1ui (GLuint index, GLenum type, GLboolean normalized, GLuint value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP1uiv (GLuint index, GLenum type, GLboolean normalized, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP2ui (GLuint index, GLenum type, GLboolean normalized, GLuint value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP2uiv (GLuint index, GLenum type, GLboolean normalized, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP3ui (GLuint index, GLenum type, GLboolean normalized, GLuint value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP3uiv (GLuint index, GLenum type, GLboolean normalized, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP4ui (GLuint index, GLenum type, GLboolean normalized, GLuint value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribP4uiv (GLuint index, GLenum type, GLboolean normalized, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glDrawArraysIndirect (GLenum mode, const GLvoid *indirect) {
+}
+GLAPI void APIENTRY stub_glDrawElementsIndirect (GLenum mode, GLenum type, const GLvoid *indirect) {
+}
+GLAPI void APIENTRY stub_glUniform1d (GLint location, GLdouble x) {
+}
+GLAPI void APIENTRY stub_glUniform2d (GLint location, GLdouble x, GLdouble y) {
+}
+GLAPI void APIENTRY stub_glUniform3d (GLint location, GLdouble x, GLdouble y, GLdouble z) {
+}
+GLAPI void APIENTRY stub_glUniform4d (GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
+}
+GLAPI void APIENTRY stub_glUniform1dv (GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniform2dv (GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniform3dv (GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniform4dv (GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix2dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix3dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix4dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix2x3dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix2x4dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix3x2dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix3x4dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix4x2dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glUniformMatrix4x3dv (GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glGetUniformdv (GLuint program, GLint location, GLdouble *params) {
+}
+GLAPI GLint APIENTRY stub_glGetSubroutineUniformLocation (GLuint program, GLenum shadertype, const GLchar *name) {
+	return (GLint)0;
+}
+GLAPI GLuint APIENTRY stub_glGetSubroutineIndex (GLuint program, GLenum shadertype, const GLchar *name) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glGetActiveSubroutineUniformiv (GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values) {
+}
+GLAPI void APIENTRY stub_glGetActiveSubroutineUniformName (GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei *length, GLchar *name) {
+}
+GLAPI void APIENTRY stub_glGetActiveSubroutineName (GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei *length, GLchar *name) {
+}
+GLAPI void APIENTRY stub_glUniformSubroutinesuiv (GLenum shadertype, GLsizei count, const GLuint *indices) {
+}
+GLAPI void APIENTRY stub_glGetUniformSubroutineuiv (GLenum shadertype, GLint location, GLuint *params) {
+}
+GLAPI void APIENTRY stub_glGetProgramStageiv (GLuint program, GLenum shadertype, GLenum pname, GLint *values) {
+}
+GLAPI void APIENTRY stub_glPatchParameteri (GLenum pname, GLint value) {
+}
+GLAPI void APIENTRY stub_glPatchParameterfv (GLenum pname, const GLfloat *values) {
+}
+GLAPI void APIENTRY stub_glBindTransformFeedback (GLenum target, GLuint id) {
+}
+GLAPI void APIENTRY stub_glDeleteTransformFeedbacks (GLsizei n, const GLuint *ids) {
+}
+GLAPI void APIENTRY stub_glGenTransformFeedbacks (GLsizei n, GLuint *ids) {
+}
+GLAPI GLboolean APIENTRY stub_glIsTransformFeedback (GLuint id) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glPauseTransformFeedback (void) {
+}
+GLAPI void APIENTRY stub_glResumeTransformFeedback (void) {
+}
+GLAPI void APIENTRY stub_glDrawTransformFeedback (GLenum mode, GLuint id) {
+}
+GLAPI void APIENTRY stub_glDrawTransformFeedbackStream (GLenum mode, GLuint id, GLuint stream) {
+}
+GLAPI void APIENTRY stub_glBeginQueryIndexed (GLenum target, GLuint index, GLuint id) {
+}
+GLAPI void APIENTRY stub_glEndQueryIndexed (GLenum target, GLuint index) {
+}
+GLAPI void APIENTRY stub_glGetQueryIndexediv (GLenum target, GLuint index, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glReleaseShaderCompiler (void) {
+}
+GLAPI void APIENTRY stub_glShaderBinary (GLsizei count, const GLuint *shaders, GLenum binaryformat, const GLvoid *binary, GLsizei length) {
+}
+GLAPI void APIENTRY stub_glGetShaderPrecisionFormat (GLenum shadertype, GLenum precisiontype, GLint *range, GLint *precision) {
+}
+GLAPI void APIENTRY stub_glDepthRangef (GLfloat n, GLfloat f) {
+}
+GLAPI void APIENTRY stub_glClearDepthf (GLfloat d) {
+}
+GLAPI void APIENTRY stub_glGetProgramBinary (GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, GLvoid *binary) {
+}
+GLAPI void APIENTRY stub_glProgramBinary (GLuint program, GLenum binaryFormat, const GLvoid *binary, GLsizei length) {
+}
+GLAPI void APIENTRY stub_glProgramParameteri (GLuint program, GLenum pname, GLint value) {
+}
+GLAPI void APIENTRY stub_glUseProgramStages (GLuint pipeline, GLbitfield stages, GLuint program) {
+}
+GLAPI void APIENTRY stub_glActiveShaderProgram (GLuint pipeline, GLuint program) {
+}
+GLAPI GLuint APIENTRY stub_glCreateShaderProgramv (GLenum type, GLsizei count, const GLchar* const *strings) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glBindProgramPipeline (GLuint pipeline) {
+}
+GLAPI void APIENTRY stub_glDeleteProgramPipelines (GLsizei n, const GLuint *pipelines) {
+}
+GLAPI void APIENTRY stub_glGenProgramPipelines (GLsizei n, GLuint *pipelines) {
+}
+GLAPI GLboolean APIENTRY stub_glIsProgramPipeline (GLuint pipeline) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glGetProgramPipelineiv (GLuint pipeline, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1i (GLuint program, GLint location, GLint v0) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1iv (GLuint program, GLint location, GLsizei count, const GLint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1f (GLuint program, GLint location, GLfloat v0) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1fv (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1d (GLuint program, GLint location, GLdouble v0) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1dv (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1ui (GLuint program, GLint location, GLuint v0) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1uiv (GLuint program, GLint location, GLsizei count, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2i (GLuint program, GLint location, GLint v0, GLint v1) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2iv (GLuint program, GLint location, GLsizei count, const GLint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2f (GLuint program, GLint location, GLfloat v0, GLfloat v1) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2fv (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2d (GLuint program, GLint location, GLdouble v0, GLdouble v1) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2dv (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2ui (GLuint program, GLint location, GLuint v0, GLuint v1) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2uiv (GLuint program, GLint location, GLsizei count, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3i (GLuint program, GLint location, GLint v0, GLint v1, GLint v2) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3iv (GLuint program, GLint location, GLsizei count, const GLint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3f (GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3fv (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3d (GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3dv (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3ui (GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3uiv (GLuint program, GLint location, GLsizei count, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4i (GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4iv (GLuint program, GLint location, GLsizei count, const GLint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4f (GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4fv (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4d (GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4dv (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4ui (GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4uiv (GLuint program, GLint location, GLsizei count, const GLuint *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glValidateProgramPipeline (GLuint pipeline) {
+}
+GLAPI void APIENTRY stub_glGetProgramPipelineInfoLog (GLuint pipeline, GLsizei bufSize, GLsizei *length, GLchar *infoLog) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1d (GLuint index, GLdouble x) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2d (GLuint index, GLdouble x, GLdouble y) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3d (GLuint index, GLdouble x, GLdouble y, GLdouble z) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4d (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1dv (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2dv (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3dv (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4dv (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribLPointer (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribLdv (GLuint index, GLenum pname, GLdouble *params) {
+}
+GLAPI void APIENTRY stub_glViewportArrayv (GLuint first, GLsizei count, const GLfloat *v) {
+}
+GLAPI void APIENTRY stub_glViewportIndexedf (GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h) {
+}
+GLAPI void APIENTRY stub_glViewportIndexedfv (GLuint index, const GLfloat *v) {
+}
+GLAPI void APIENTRY stub_glScissorArrayv (GLuint first, GLsizei count, const GLint *v) {
+}
+GLAPI void APIENTRY stub_glScissorIndexed (GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glScissorIndexedv (GLuint index, const GLint *v) {
+}
+GLAPI void APIENTRY stub_glDepthRangeArrayv (GLuint first, GLsizei count, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glDepthRangeIndexed (GLuint index, GLdouble n, GLdouble f) {
+}
+GLAPI void APIENTRY stub_glGetFloati_v (GLenum target, GLuint index, GLfloat *data) {
+}
+GLAPI void APIENTRY stub_glGetDoublei_v (GLenum target, GLuint index, GLdouble *data) {
+}
+GLAPI GLsync APIENTRY stub_glCreateSyncFromCLeventARB (struct _cl_context * context, struct _cl_event * event, GLbitfield flags) {
+	return (GLsync)0;
+}
+GLAPI void APIENTRY stub_glDebugMessageControlARB (GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled) {
+}
+GLAPI void APIENTRY stub_glDebugMessageInsertARB (GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf) {
+}
+GLAPI void APIENTRY stub_glDebugMessageCallbackARB (GLDEBUGPROCARB callback, const GLvoid *userParam) {
+}
+GLAPI GLuint APIENTRY stub_glGetDebugMessageLogARB (GLuint count, GLsizei bufsize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog) {
+	return (GLuint)0;
+}
+GLAPI GLenum APIENTRY stub_glGetGraphicsResetStatusARB (void) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glGetnMapdvARB (GLenum target, GLenum query, GLsizei bufSize, GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glGetnMapfvARB (GLenum target, GLenum query, GLsizei bufSize, GLfloat *v) {
+}
+GLAPI void APIENTRY stub_glGetnMapivARB (GLenum target, GLenum query, GLsizei bufSize, GLint *v) {
+}
+GLAPI void APIENTRY stub_glGetnPixelMapfvARB (GLenum map, GLsizei bufSize, GLfloat *values) {
+}
+GLAPI void APIENTRY stub_glGetnPixelMapuivARB (GLenum map, GLsizei bufSize, GLuint *values) {
+}
+GLAPI void APIENTRY stub_glGetnPixelMapusvARB (GLenum map, GLsizei bufSize, GLushort *values) {
+}
+GLAPI void APIENTRY stub_glGetnPolygonStippleARB (GLsizei bufSize, GLubyte *pattern) {
+}
+GLAPI void APIENTRY stub_glGetnColorTableARB (GLenum target, GLenum format, GLenum type, GLsizei bufSize, GLvoid *table) {
+}
+GLAPI void APIENTRY stub_glGetnConvolutionFilterARB (GLenum target, GLenum format, GLenum type, GLsizei bufSize, GLvoid *image) {
+}
+GLAPI void APIENTRY stub_glGetnSeparableFilterARB (GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, GLvoid *row, GLsizei columnBufSize, GLvoid *column, GLvoid *span) {
+}
+GLAPI void APIENTRY stub_glGetnHistogramARB (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, GLvoid *values) {
+}
+GLAPI void APIENTRY stub_glGetnMinmaxARB (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, GLvoid *values) {
+}
+GLAPI void APIENTRY stub_glGetnTexImageARB (GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, GLvoid *img) {
+}
+GLAPI void APIENTRY stub_glReadnPixelsARB (GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, GLvoid *data) {
+}
+GLAPI void APIENTRY stub_glGetnCompressedTexImageARB (GLenum target, GLint lod, GLsizei bufSize, GLvoid *img) {
+}
+GLAPI void APIENTRY stub_glGetnUniformfvARB (GLuint program, GLint location, GLsizei bufSize, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetnUniformivARB (GLuint program, GLint location, GLsizei bufSize, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetnUniformuivARB (GLuint program, GLint location, GLsizei bufSize, GLuint *params) {
+}
+GLAPI void APIENTRY stub_glGetnUniformdvARB (GLuint program, GLint location, GLsizei bufSize, GLdouble *params) {
+}
+GLAPI void APIENTRY stub_glDrawArraysInstancedBaseInstance (GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance) {
+}
+GLAPI void APIENTRY stub_glDrawElementsInstancedBaseInstance (GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLuint baseinstance) {
+}
+GLAPI void APIENTRY stub_glDrawElementsInstancedBaseVertexBaseInstance (GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance) {
+}
+GLAPI void APIENTRY stub_glDrawTransformFeedbackInstanced (GLenum mode, GLuint id, GLsizei instancecount) {
+}
+GLAPI void APIENTRY stub_glDrawTransformFeedbackStreamInstanced (GLenum mode, GLuint id, GLuint stream, GLsizei instancecount) {
+}
+GLAPI void APIENTRY stub_glGetInternalformativ (GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetActiveAtomicCounterBufferiv (GLuint program, GLuint bufferIndex, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glBindImageTexture (GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format) {
+}
+GLAPI void APIENTRY stub_glMemoryBarrier (GLbitfield barriers) {
+}
+GLAPI void APIENTRY stub_glTexStorage1D (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width) {
+}
+GLAPI void APIENTRY stub_glTexStorage2D (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glTexStorage3D (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth) {
+}
+GLAPI void APIENTRY stub_glTextureStorage1DEXT (GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width) {
+}
+GLAPI void APIENTRY stub_glTextureStorage2DEXT (GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glTextureStorage3DEXT (GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth) {
+}
+GLAPI void APIENTRY stub_glDebugMessageControl (GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled) {
+}
+GLAPI void APIENTRY stub_glDebugMessageInsert (GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf) {
+}
+GLAPI void APIENTRY stub_glDebugMessageCallback (GLDEBUGPROC callback, const void *userParam) {
+}
+GLAPI GLuint APIENTRY stub_glGetDebugMessageLog (GLuint count, GLsizei bufsize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glPushDebugGroup (GLenum source, GLuint id, GLsizei length, const GLchar *message) {
+}
+GLAPI void APIENTRY stub_glPopDebugGroup (void) {
+}
+GLAPI void APIENTRY stub_glObjectLabel (GLenum identifier, GLuint name, GLsizei length, const GLchar *label) {
+}
+GLAPI void APIENTRY stub_glGetObjectLabel (GLenum identifier, GLuint name, GLsizei bufSize, GLsizei *length, GLchar *label) {
+}
+GLAPI void APIENTRY stub_glObjectPtrLabel (const void *ptr, GLsizei length, const GLchar *label) {
+}
+GLAPI void APIENTRY stub_glGetObjectPtrLabel (const void *ptr, GLsizei bufSize, GLsizei *length, GLchar *label) {
+}
+GLAPI void APIENTRY stub_glClearBufferData (GLenum target, GLenum internalformat, GLenum format, GLenum type, const void *data) {
+}
+GLAPI void APIENTRY stub_glClearBufferSubData (GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data) {
+}
+GLAPI void APIENTRY stub_glClearNamedBufferDataEXT (GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data) {
+}
+GLAPI void APIENTRY stub_glClearNamedBufferSubDataEXT (GLuint buffer, GLenum internalformat, GLenum format, GLenum type, GLsizeiptr offset, GLsizeiptr size, const void *data) {
+}
+GLAPI void APIENTRY stub_glDispatchCompute (GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z) {
+}
+GLAPI void APIENTRY stub_glDispatchComputeIndirect (GLintptr indirect) {
+}
+GLAPI void APIENTRY stub_glCopyImageSubData (GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth) {
+}
+GLAPI void APIENTRY stub_glTextureView (GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers) {
+}
+GLAPI void APIENTRY stub_glBindVertexBuffer (GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glVertexAttribFormat (GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexAttribIFormat (GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexAttribLFormat (GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexAttribBinding (GLuint attribindex, GLuint bindingindex) {
+}
+GLAPI void APIENTRY stub_glVertexBindingDivisor (GLuint bindingindex, GLuint divisor) {
+}
+GLAPI void APIENTRY stub_glVertexArrayBindVertexBufferEXT (GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexAttribFormatEXT (GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexAttribIFormatEXT (GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexAttribLFormatEXT (GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexAttribBindingEXT (GLuint vaobj, GLuint attribindex, GLuint bindingindex) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexBindingDivisorEXT (GLuint vaobj, GLuint bindingindex, GLuint divisor) {
+}
+GLAPI void APIENTRY stub_glFramebufferParameteri (GLenum target, GLenum pname, GLint param) {
+}
+GLAPI void APIENTRY stub_glGetFramebufferParameteriv (GLenum target, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glNamedFramebufferParameteriEXT (GLuint framebuffer, GLenum pname, GLint param) {
+}
+GLAPI void APIENTRY stub_glGetNamedFramebufferParameterivEXT (GLuint framebuffer, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetInternalformati64v (GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params) {
+}
+GLAPI void APIENTRY stub_glInvalidateTexSubImage (GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth) {
+}
+GLAPI void APIENTRY stub_glInvalidateTexImage (GLuint texture, GLint level) {
+}
+GLAPI void APIENTRY stub_glInvalidateBufferSubData (GLuint buffer, GLintptr offset, GLsizeiptr length) {
+}
+GLAPI void APIENTRY stub_glInvalidateBufferData (GLuint buffer) {
+}
+GLAPI void APIENTRY stub_glInvalidateFramebuffer (GLenum target, GLsizei numAttachments, const GLenum *attachments) {
+}
+GLAPI void APIENTRY stub_glInvalidateSubFramebuffer (GLenum target, GLsizei numAttachments, const GLenum *attachments, GLint x, GLint y, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glMultiDrawArraysIndirect (GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glMultiDrawElementsIndirect (GLenum mode, GLenum type, const void *indirect, GLsizei drawcount, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glGetProgramInterfaceiv (GLuint program, GLenum programInterface, GLenum pname, GLint *params) {
+}
+GLAPI GLuint APIENTRY stub_glGetProgramResourceIndex (GLuint program, GLenum programInterface, const GLchar *name) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glGetProgramResourceName (GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei *length, GLchar *name) {
+}
+GLAPI void APIENTRY stub_glGetProgramResourceiv (GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum *props, GLsizei bufSize, GLsizei *length, GLint *params) {
+}
+GLAPI GLint APIENTRY stub_glGetProgramResourceLocation (GLuint program, GLenum programInterface, const GLchar *name) {
+	return (GLint)0;
+}
+GLAPI GLint APIENTRY stub_glGetProgramResourceLocationIndex (GLuint program, GLenum programInterface, const GLchar *name) {
+	return (GLint)0;
+}
+GLAPI void APIENTRY stub_glShaderStorageBlockBinding (GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding) {
+}
+GLAPI void APIENTRY stub_glTexBufferRange (GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size) {
+}
+GLAPI void APIENTRY stub_glTextureBufferRangeEXT (GLuint texture, GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size) {
+}
+GLAPI void APIENTRY stub_glTexStorage2DMultisample (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations) {
+}
+GLAPI void APIENTRY stub_glTexStorage3DMultisample (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations) {
+}
+GLAPI void APIENTRY stub_glTextureStorage2DMultisampleEXT (GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations) {
+}
+GLAPI void APIENTRY stub_glTextureStorage3DMultisampleEXT (GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations) {
+}
+GLAPI void APIENTRY stub_glBlendColorEXT (GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha) {
+}
+GLAPI void APIENTRY stub_glPolygonOffsetEXT (GLfloat factor, GLfloat bias) {
+}
+GLAPI void APIENTRY stub_glTexImage3DEXT (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI void APIENTRY stub_glTexSubImage3DEXT (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI void APIENTRY stub_glGetTexFilterFuncSGIS (GLenum target, GLenum filter, GLfloat *weights) {
+}
+GLAPI void APIENTRY stub_glTexFilterFuncSGIS (GLenum target, GLenum filter, GLsizei n, const GLfloat *weights) {
+}
+GLAPI void APIENTRY stub_glTexSubImage1DEXT (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI void APIENTRY stub_glTexSubImage2DEXT (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI void APIENTRY stub_glCopyTexImage1DEXT (GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border) {
+}
+GLAPI void APIENTRY stub_glCopyTexImage2DEXT (GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border) {
+}
+GLAPI void APIENTRY stub_glCopyTexSubImage1DEXT (GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width) {
+}
+GLAPI void APIENTRY stub_glCopyTexSubImage2DEXT (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glCopyTexSubImage3DEXT (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glGetHistogramEXT (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values) {
+}
+GLAPI void APIENTRY stub_glGetHistogramParameterfvEXT (GLenum target, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetHistogramParameterivEXT (GLenum target, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetMinmaxEXT (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values) {
+}
+GLAPI void APIENTRY stub_glGetMinmaxParameterfvEXT (GLenum target, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetMinmaxParameterivEXT (GLenum target, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glHistogramEXT (GLenum target, GLsizei width, GLenum internalformat, GLboolean sink) {
+}
+GLAPI void APIENTRY stub_glMinmaxEXT (GLenum target, GLenum internalformat, GLboolean sink) {
+}
+GLAPI void APIENTRY stub_glResetHistogramEXT (GLenum target) {
+}
+GLAPI void APIENTRY stub_glResetMinmaxEXT (GLenum target) {
+}
+GLAPI void APIENTRY stub_glConvolutionFilter1DEXT (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image) {
+}
+GLAPI void APIENTRY stub_glConvolutionFilter2DEXT (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image) {
+}
+GLAPI void APIENTRY stub_glConvolutionParameterfEXT (GLenum target, GLenum pname, GLfloat params) {
+}
+GLAPI void APIENTRY stub_glConvolutionParameterfvEXT (GLenum target, GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glConvolutionParameteriEXT (GLenum target, GLenum pname, GLint params) {
+}
+GLAPI void APIENTRY stub_glConvolutionParameterivEXT (GLenum target, GLenum pname, const GLint *params) {
+}
+GLAPI void APIENTRY stub_glCopyConvolutionFilter1DEXT (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width) {
+}
+GLAPI void APIENTRY stub_glCopyConvolutionFilter2DEXT (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glGetConvolutionFilterEXT (GLenum target, GLenum format, GLenum type, GLvoid *image) {
+}
+GLAPI void APIENTRY stub_glGetConvolutionParameterfvEXT (GLenum target, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetConvolutionParameterivEXT (GLenum target, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetSeparableFilterEXT (GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span) {
+}
+GLAPI void APIENTRY stub_glSeparableFilter2DEXT (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column) {
+}
+GLAPI void APIENTRY stub_glColorTableSGI (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table) {
+}
+GLAPI void APIENTRY stub_glColorTableParameterfvSGI (GLenum target, GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glColorTableParameterivSGI (GLenum target, GLenum pname, const GLint *params) {
+}
+GLAPI void APIENTRY stub_glCopyColorTableSGI (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width) {
+}
+GLAPI void APIENTRY stub_glGetColorTableSGI (GLenum target, GLenum format, GLenum type, GLvoid *table) {
+}
+GLAPI void APIENTRY stub_glGetColorTableParameterfvSGI (GLenum target, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetColorTableParameterivSGI (GLenum target, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glPixelTexGenSGIX (GLenum mode) {
+}
+GLAPI void APIENTRY stub_glPixelTexGenParameteriSGIS (GLenum pname, GLint param) {
+}
+GLAPI void APIENTRY stub_glPixelTexGenParameterivSGIS (GLenum pname, const GLint *params) {
+}
+GLAPI void APIENTRY stub_glPixelTexGenParameterfSGIS (GLenum pname, GLfloat param) {
+}
+GLAPI void APIENTRY stub_glPixelTexGenParameterfvSGIS (GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetPixelTexGenParameterivSGIS (GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetPixelTexGenParameterfvSGIS (GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glTexImage4DSGIS (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI void APIENTRY stub_glTexSubImage4DSGIS (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint woffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLenum format, GLenum type, const GLvoid *pixels) {
+}
+GLAPI GLboolean APIENTRY stub_glAreTexturesResidentEXT (GLsizei n, const GLuint *textures, GLboolean *residences) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glBindTextureEXT (GLenum target, GLuint texture) {
+}
+GLAPI void APIENTRY stub_glDeleteTexturesEXT (GLsizei n, const GLuint *textures) {
+}
+GLAPI void APIENTRY stub_glGenTexturesEXT (GLsizei n, GLuint *textures) {
+}
+GLAPI GLboolean APIENTRY stub_glIsTextureEXT (GLuint texture) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glPrioritizeTexturesEXT (GLsizei n, const GLuint *textures, const GLclampf *priorities) {
+}
+GLAPI void APIENTRY stub_glDetailTexFuncSGIS (GLenum target, GLsizei n, const GLfloat *points) {
+}
+GLAPI void APIENTRY stub_glGetDetailTexFuncSGIS (GLenum target, GLfloat *points) {
+}
+GLAPI void APIENTRY stub_glSharpenTexFuncSGIS (GLenum target, GLsizei n, const GLfloat *points) {
+}
+GLAPI void APIENTRY stub_glGetSharpenTexFuncSGIS (GLenum target, GLfloat *points) {
+}
+GLAPI void APIENTRY stub_glSampleMaskSGIS (GLclampf value, GLboolean invert) {
+}
+GLAPI void APIENTRY stub_glSamplePatternSGIS (GLenum pattern) {
+}
+GLAPI void APIENTRY stub_glArrayElementEXT (GLint i) {
+}
+GLAPI void APIENTRY stub_glColorPointerEXT (GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glDrawArraysEXT (GLenum mode, GLint first, GLsizei count) {
+}
+GLAPI void APIENTRY stub_glEdgeFlagPointerEXT (GLsizei stride, GLsizei count, const GLboolean *pointer) {
+}
+GLAPI void APIENTRY stub_glGetPointervEXT (GLenum pname, GLvoid* *params) {
+}
+GLAPI void APIENTRY stub_glIndexPointerEXT (GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glNormalPointerEXT (GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glTexCoordPointerEXT (GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glVertexPointerEXT (GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glBlendEquationEXT (GLenum mode) {
+}
+GLAPI void APIENTRY stub_glSpriteParameterfSGIX (GLenum pname, GLfloat param) {
+}
+GLAPI void APIENTRY stub_glSpriteParameterfvSGIX (GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glSpriteParameteriSGIX (GLenum pname, GLint param) {
+}
+GLAPI void APIENTRY stub_glSpriteParameterivSGIX (GLenum pname, const GLint *params) {
+}
+GLAPI void APIENTRY stub_glPointParameterfEXT (GLenum pname, GLfloat param) {
+}
+GLAPI void APIENTRY stub_glPointParameterfvEXT (GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glPointParameterfSGIS (GLenum pname, GLfloat param) {
+}
+GLAPI void APIENTRY stub_glPointParameterfvSGIS (GLenum pname, const GLfloat *params) {
 }
 GLAPI GLint APIENTRY stub_glGetInstrumentsSGIX (void) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glInstrumentsBufferSGIX (GLsizei, GLint *) {
+GLAPI void APIENTRY stub_glInstrumentsBufferSGIX (GLsizei size, GLint *buffer) {
 }
-GLAPI GLint APIENTRY stub_glPollInstrumentsSGIX (GLint *) {
+GLAPI GLint APIENTRY stub_glPollInstrumentsSGIX (GLint *marker_p) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glReadInstrumentsSGIX (GLint) {
+GLAPI void APIENTRY stub_glReadInstrumentsSGIX (GLint marker) {
 }
 GLAPI void APIENTRY stub_glStartInstrumentsSGIX (void) {
 }
-GLAPI void APIENTRY stub_glStopInstrumentsSGIX (GLint) {
+GLAPI void APIENTRY stub_glStopInstrumentsSGIX (GLint marker) {
 }
-GLAPI void APIENTRY stub_glFrameZoomSGIX (GLint) {
+GLAPI void APIENTRY stub_glFrameZoomSGIX (GLint factor) {
 }
 GLAPI void APIENTRY stub_glTagSampleBufferSGIX (void) {
 }
-GLAPI void APIENTRY stub_glDeformationMap3dSGIX (GLenum, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, const GLdouble *) {
+GLAPI void APIENTRY stub_glDeformationMap3dSGIX (GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, GLdouble w1, GLdouble w2, GLint wstride, GLint worder, const GLdouble *points) {
 }
-GLAPI void APIENTRY stub_glDeformationMap3fSGIX (GLenum, GLfloat, GLfloat, GLint, GLint, GLfloat, GLfloat, GLint, GLint, GLfloat, GLfloat, GLint, GLint, const GLfloat *) {
+GLAPI void APIENTRY stub_glDeformationMap3fSGIX (GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, GLfloat w1, GLfloat w2, GLint wstride, GLint worder, const GLfloat *points) {
 }
-GLAPI void APIENTRY stub_glDeformSGIX (GLbitfield) {
+GLAPI void APIENTRY stub_glDeformSGIX (GLbitfield mask) {
 }
-GLAPI void APIENTRY stub_glLoadIdentityDeformationMapSGIX (GLbitfield) {
+GLAPI void APIENTRY stub_glLoadIdentityDeformationMapSGIX (GLbitfield mask) {
 }
-GLAPI void APIENTRY stub_glReferencePlaneSGIX (const GLdouble *) {
+GLAPI void APIENTRY stub_glReferencePlaneSGIX (const GLdouble *equation) {
 }
 GLAPI void APIENTRY stub_glFlushRasterSGIX (void) {
 }
-GLAPI void APIENTRY stub_glFogFuncSGIS (GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glFogFuncSGIS (GLsizei n, const GLfloat *points) {
 }
-GLAPI void APIENTRY stub_glGetFogFuncSGIS (GLfloat *) {
+GLAPI void APIENTRY stub_glGetFogFuncSGIS (GLfloat *points) {
 }
-GLAPI void APIENTRY stub_glImageTransformParameteriHP (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glImageTransformParameteriHP (GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glImageTransformParameterfHP (GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glImageTransformParameterfHP (GLenum target, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glImageTransformParameterivHP (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glImageTransformParameterivHP (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glImageTransformParameterfvHP (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glImageTransformParameterfvHP (GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetImageTransformParameterivHP (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetImageTransformParameterivHP (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetImageTransformParameterfvHP (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetImageTransformParameterfvHP (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glColorSubTableEXT (GLenum, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glColorSubTableEXT (GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glCopyColorSubTableEXT (GLenum, GLsizei, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyColorSubTableEXT (GLenum target, GLsizei start, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glHintPGI (GLenum, GLint) {
+GLAPI void APIENTRY stub_glHintPGI (GLenum target, GLint mode) {
 }
-GLAPI void APIENTRY stub_glColorTableEXT (GLenum, GLenum, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glColorTableEXT (GLenum target, GLenum internalFormat, GLsizei width, GLenum format, GLenum type, const GLvoid *table) {
 }
-GLAPI void APIENTRY stub_glGetColorTableEXT (GLenum, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetColorTableEXT (GLenum target, GLenum format, GLenum type, GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetColorTableParameterivEXT (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetColorTableParameterivEXT (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetColorTableParameterfvEXT (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetColorTableParameterfvEXT (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetListParameterfvSGIX (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetListParameterfvSGIX (GLuint list, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetListParameterivSGIX (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetListParameterivSGIX (GLuint list, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glListParameterfSGIX (GLuint, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glListParameterfSGIX (GLuint list, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glListParameterfvSGIX (GLuint, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glListParameterfvSGIX (GLuint list, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glListParameteriSGIX (GLuint, GLenum, GLint) {
+GLAPI void APIENTRY stub_glListParameteriSGIX (GLuint list, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glListParameterivSGIX (GLuint, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glListParameterivSGIX (GLuint list, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glIndexMaterialEXT (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glIndexMaterialEXT (GLenum face, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glIndexFuncEXT (GLenum, GLclampf) {
+GLAPI void APIENTRY stub_glIndexFuncEXT (GLenum func, GLclampf ref) {
 }
-GLAPI void APIENTRY stub_glLockArraysEXT (GLint, GLsizei) {
+GLAPI void APIENTRY stub_glLockArraysEXT (GLint first, GLsizei count) {
 }
 GLAPI void APIENTRY stub_glUnlockArraysEXT (void) {
 }
-GLAPI void APIENTRY stub_glCullParameterdvEXT (GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glCullParameterdvEXT (GLenum pname, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glCullParameterfvEXT (GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glCullParameterfvEXT (GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glFragmentColorMaterialSGIX (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glFragmentColorMaterialSGIX (GLenum face, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glFragmentLightfSGIX (GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glFragmentLightfSGIX (GLenum light, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glFragmentLightfvSGIX (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glFragmentLightfvSGIX (GLenum light, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glFragmentLightiSGIX (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glFragmentLightiSGIX (GLenum light, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glFragmentLightivSGIX (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glFragmentLightivSGIX (GLenum light, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glFragmentLightModelfSGIX (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glFragmentLightModelfSGIX (GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glFragmentLightModelfvSGIX (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glFragmentLightModelfvSGIX (GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glFragmentLightModeliSGIX (GLenum, GLint) {
+GLAPI void APIENTRY stub_glFragmentLightModeliSGIX (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glFragmentLightModelivSGIX (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glFragmentLightModelivSGIX (GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glFragmentMaterialfSGIX (GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glFragmentMaterialfSGIX (GLenum face, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glFragmentMaterialfvSGIX (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glFragmentMaterialfvSGIX (GLenum face, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glFragmentMaterialiSGIX (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glFragmentMaterialiSGIX (GLenum face, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glFragmentMaterialivSGIX (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glFragmentMaterialivSGIX (GLenum face, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetFragmentLightfvSGIX (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetFragmentLightfvSGIX (GLenum light, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetFragmentLightivSGIX (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFragmentLightivSGIX (GLenum light, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetFragmentMaterialfvSGIX (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetFragmentMaterialfvSGIX (GLenum face, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetFragmentMaterialivSGIX (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFragmentMaterialivSGIX (GLenum face, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glLightEnviSGIX (GLenum, GLint) {
+GLAPI void APIENTRY stub_glLightEnviSGIX (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glDrawRangeElementsEXT (GLenum, GLuint, GLuint, GLsizei, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glDrawRangeElementsEXT (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices) {
 }
-GLAPI void APIENTRY stub_glApplyTextureEXT (GLenum) {
+GLAPI void APIENTRY stub_glApplyTextureEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glTextureLightEXT (GLenum) {
+GLAPI void APIENTRY stub_glTextureLightEXT (GLenum pname) {
 }
-GLAPI void APIENTRY stub_glTextureMaterialEXT (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glTextureMaterialEXT (GLenum face, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glAsyncMarkerSGIX (GLuint) {
+GLAPI void APIENTRY stub_glAsyncMarkerSGIX (GLuint marker) {
 }
-GLAPI GLint APIENTRY stub_glFinishAsyncSGIX (GLuint *) {
+GLAPI GLint APIENTRY stub_glFinishAsyncSGIX (GLuint *markerp) {
 	return (GLint)0;
 }
-GLAPI GLint APIENTRY stub_glPollAsyncSGIX (GLuint *) {
+GLAPI GLint APIENTRY stub_glPollAsyncSGIX (GLuint *markerp) {
 	return (GLint)0;
 }
-GLAPI GLuint APIENTRY stub_glGenAsyncMarkersSGIX (GLsizei) {
+GLAPI GLuint APIENTRY stub_glGenAsyncMarkersSGIX (GLsizei range) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glDeleteAsyncMarkersSGIX (GLuint, GLsizei) {
+GLAPI void APIENTRY stub_glDeleteAsyncMarkersSGIX (GLuint marker, GLsizei range) {
 }
-GLAPI GLboolean APIENTRY stub_glIsAsyncMarkerSGIX (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsAsyncMarkerSGIX (GLuint marker) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glVertexPointervINTEL (GLint, GLenum, const GLvoid* *) {
+GLAPI void APIENTRY stub_glVertexPointervINTEL (GLint size, GLenum type, const GLvoid* *pointer) {
 }
-GLAPI void APIENTRY stub_glNormalPointervINTEL (GLenum, const GLvoid* *) {
+GLAPI void APIENTRY stub_glNormalPointervINTEL (GLenum type, const GLvoid* *pointer) {
 }
-GLAPI void APIENTRY stub_glColorPointervINTEL (GLint, GLenum, const GLvoid* *) {
+GLAPI void APIENTRY stub_glColorPointervINTEL (GLint size, GLenum type, const GLvoid* *pointer) {
 }
-GLAPI void APIENTRY stub_glTexCoordPointervINTEL (GLint, GLenum, const GLvoid* *) {
+GLAPI void APIENTRY stub_glTexCoordPointervINTEL (GLint size, GLenum type, const GLvoid* *pointer) {
 }
-GLAPI void APIENTRY stub_glPixelTransformParameteriEXT (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glPixelTransformParameteriEXT (GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glPixelTransformParameterfEXT (GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glPixelTransformParameterfEXT (GLenum target, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glPixelTransformParameterivEXT (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glPixelTransformParameterivEXT (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glPixelTransformParameterfvEXT (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glPixelTransformParameterfvEXT (GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3bEXT (GLbyte, GLbyte, GLbyte) {
+GLAPI void APIENTRY stub_glGetPixelTransformParameterivEXT (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3bvEXT (const GLbyte *) {
+GLAPI void APIENTRY stub_glGetPixelTransformParameterfvEXT (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3dEXT (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glSecondaryColor3bEXT (GLbyte red, GLbyte green, GLbyte blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3dvEXT (const GLdouble *) {
+GLAPI void APIENTRY stub_glSecondaryColor3bvEXT (const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3fEXT (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glSecondaryColor3dEXT (GLdouble red, GLdouble green, GLdouble blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3fvEXT (const GLfloat *) {
+GLAPI void APIENTRY stub_glSecondaryColor3dvEXT (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3iEXT (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glSecondaryColor3fEXT (GLfloat red, GLfloat green, GLfloat blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ivEXT (const GLint *) {
+GLAPI void APIENTRY stub_glSecondaryColor3fvEXT (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3sEXT (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glSecondaryColor3iEXT (GLint red, GLint green, GLint blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3svEXT (const GLshort *) {
+GLAPI void APIENTRY stub_glSecondaryColor3ivEXT (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ubEXT (GLubyte, GLubyte, GLubyte) {
+GLAPI void APIENTRY stub_glSecondaryColor3sEXT (GLshort red, GLshort green, GLshort blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3ubvEXT (const GLubyte *) {
+GLAPI void APIENTRY stub_glSecondaryColor3svEXT (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3uiEXT (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glSecondaryColor3ubEXT (GLubyte red, GLubyte green, GLubyte blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3uivEXT (const GLuint *) {
+GLAPI void APIENTRY stub_glSecondaryColor3ubvEXT (const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3usEXT (GLushort, GLushort, GLushort) {
+GLAPI void APIENTRY stub_glSecondaryColor3uiEXT (GLuint red, GLuint green, GLuint blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3usvEXT (const GLushort *) {
+GLAPI void APIENTRY stub_glSecondaryColor3uivEXT (const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glSecondaryColorPointerEXT (GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glSecondaryColor3usEXT (GLushort red, GLushort green, GLushort blue) {
 }
-GLAPI void APIENTRY stub_glTextureNormalEXT (GLenum) {
+GLAPI void APIENTRY stub_glSecondaryColor3usvEXT (const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glMultiDrawArraysEXT (GLenum, GLint *, GLsizei *, GLsizei) {
+GLAPI void APIENTRY stub_glSecondaryColorPointerEXT (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glMultiDrawElementsEXT (GLenum, const GLsizei *, GLenum, const GLvoid* *, GLsizei) {
+GLAPI void APIENTRY stub_glTextureNormalEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glFogCoordfEXT (GLfloat) {
+GLAPI void APIENTRY stub_glMultiDrawArraysEXT (GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glFogCoordfvEXT (const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiDrawElementsEXT (GLenum mode, const GLsizei *count, GLenum type, const GLvoid* *indices, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glFogCoorddEXT (GLdouble) {
+GLAPI void APIENTRY stub_glFogCoordfEXT (GLfloat coord) {
 }
-GLAPI void APIENTRY stub_glFogCoorddvEXT (const GLdouble *) {
+GLAPI void APIENTRY stub_glFogCoordfvEXT (const GLfloat *coord) {
 }
-GLAPI void APIENTRY stub_glFogCoordPointerEXT (GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glFogCoorddEXT (GLdouble coord) {
 }
-GLAPI void APIENTRY stub_glTangent3bEXT (GLbyte, GLbyte, GLbyte) {
+GLAPI void APIENTRY stub_glFogCoorddvEXT (const GLdouble *coord) {
 }
-GLAPI void APIENTRY stub_glTangent3bvEXT (const GLbyte *) {
+GLAPI void APIENTRY stub_glFogCoordPointerEXT (GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glTangent3dEXT (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glTangent3bEXT (GLbyte tx, GLbyte ty, GLbyte tz) {
 }
-GLAPI void APIENTRY stub_glTangent3dvEXT (const GLdouble *) {
+GLAPI void APIENTRY stub_glTangent3bvEXT (const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glTangent3fEXT (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTangent3dEXT (GLdouble tx, GLdouble ty, GLdouble tz) {
 }
-GLAPI void APIENTRY stub_glTangent3fvEXT (const GLfloat *) {
+GLAPI void APIENTRY stub_glTangent3dvEXT (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glTangent3iEXT (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glTangent3fEXT (GLfloat tx, GLfloat ty, GLfloat tz) {
 }
-GLAPI void APIENTRY stub_glTangent3ivEXT (const GLint *) {
+GLAPI void APIENTRY stub_glTangent3fvEXT (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTangent3sEXT (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glTangent3iEXT (GLint tx, GLint ty, GLint tz) {
 }
-GLAPI void APIENTRY stub_glTangent3svEXT (const GLshort *) {
+GLAPI void APIENTRY stub_glTangent3ivEXT (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glBinormal3bEXT (GLbyte, GLbyte, GLbyte) {
+GLAPI void APIENTRY stub_glTangent3sEXT (GLshort tx, GLshort ty, GLshort tz) {
 }
-GLAPI void APIENTRY stub_glBinormal3bvEXT (const GLbyte *) {
+GLAPI void APIENTRY stub_glTangent3svEXT (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glBinormal3dEXT (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glBinormal3bEXT (GLbyte bx, GLbyte by, GLbyte bz) {
 }
-GLAPI void APIENTRY stub_glBinormal3dvEXT (const GLdouble *) {
+GLAPI void APIENTRY stub_glBinormal3bvEXT (const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glBinormal3fEXT (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glBinormal3dEXT (GLdouble bx, GLdouble by, GLdouble bz) {
 }
-GLAPI void APIENTRY stub_glBinormal3fvEXT (const GLfloat *) {
+GLAPI void APIENTRY stub_glBinormal3dvEXT (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glBinormal3iEXT (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glBinormal3fEXT (GLfloat bx, GLfloat by, GLfloat bz) {
 }
-GLAPI void APIENTRY stub_glBinormal3ivEXT (const GLint *) {
+GLAPI void APIENTRY stub_glBinormal3fvEXT (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glBinormal3sEXT (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glBinormal3iEXT (GLint bx, GLint by, GLint bz) {
 }
-GLAPI void APIENTRY stub_glBinormal3svEXT (const GLshort *) {
+GLAPI void APIENTRY stub_glBinormal3ivEXT (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glTangentPointerEXT (GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glBinormal3sEXT (GLshort bx, GLshort by, GLshort bz) {
 }
-GLAPI void APIENTRY stub_glBinormalPointerEXT (GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glBinormal3svEXT (const GLshort *v) {
+}
+GLAPI void APIENTRY stub_glTangentPointerEXT (GLenum type, GLsizei stride, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glBinormalPointerEXT (GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
 GLAPI void APIENTRY stub_glFinishTextureSUNX (void) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactorbSUN (GLbyte) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactorbSUN (GLbyte factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactorsSUN (GLshort) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactorsSUN (GLshort factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactoriSUN (GLint) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactoriSUN (GLint factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactorfSUN (GLfloat) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactorfSUN (GLfloat factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactordSUN (GLdouble) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactordSUN (GLdouble factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactorubSUN (GLubyte) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactorubSUN (GLubyte factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactorusSUN (GLushort) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactorusSUN (GLushort factor) {
 }
-GLAPI void APIENTRY stub_glGlobalAlphaFactoruiSUN (GLuint) {
+GLAPI void APIENTRY stub_glGlobalAlphaFactoruiSUN (GLuint factor) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiSUN (GLuint) {
+GLAPI void APIENTRY stub_glReplacementCodeuiSUN (GLuint code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeusSUN (GLushort) {
+GLAPI void APIENTRY stub_glReplacementCodeusSUN (GLushort code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeubSUN (GLubyte) {
+GLAPI void APIENTRY stub_glReplacementCodeubSUN (GLubyte code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuivSUN (const GLuint *) {
+GLAPI void APIENTRY stub_glReplacementCodeuivSUN (const GLuint *code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeusvSUN (const GLushort *) {
+GLAPI void APIENTRY stub_glReplacementCodeusvSUN (const GLushort *code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeubvSUN (const GLubyte *) {
+GLAPI void APIENTRY stub_glReplacementCodeubvSUN (const GLubyte *code) {
 }
-GLAPI void APIENTRY stub_glReplacementCodePointerSUN (GLenum, GLsizei, const GLvoid* *) {
+GLAPI void APIENTRY stub_glReplacementCodePointerSUN (GLenum type, GLsizei stride, const GLvoid* *pointer) {
 }
-GLAPI void APIENTRY stub_glColor4ubVertex2fSUN (GLubyte, GLubyte, GLubyte, GLubyte, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glColor4ubVertex2fSUN (GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glColor4ubVertex2fvSUN (const GLubyte *, const GLfloat *) {
+GLAPI void APIENTRY stub_glColor4ubVertex2fvSUN (const GLubyte *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glColor4ubVertex3fSUN (GLubyte, GLubyte, GLubyte, GLubyte, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glColor4ubVertex3fSUN (GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glColor4ubVertex3fvSUN (const GLubyte *, const GLfloat *) {
+GLAPI void APIENTRY stub_glColor4ubVertex3fvSUN (const GLubyte *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glColor3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glColor3fVertex3fSUN (GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glColor3fVertex3fvSUN (const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glColor3fVertex3fvSUN (const GLfloat *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glNormal3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glNormal3fVertex3fSUN (GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glNormal3fVertex3fvSUN (const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glNormal3fVertex3fvSUN (const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glColor4fNormal3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glColor4fNormal3fVertex3fSUN (GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glColor4fNormal3fVertex3fvSUN (const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glColor4fNormal3fVertex3fvSUN (const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord2fVertex3fSUN (GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fVertex3fvSUN (const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord2fVertex3fvSUN (const GLfloat *tc, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord4fVertex4fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord4fVertex4fSUN (GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glTexCoord4fVertex4fvSUN (const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord4fVertex4fvSUN (const GLfloat *tc, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor4ubVertex3fSUN (GLfloat, GLfloat, GLubyte, GLubyte, GLubyte, GLubyte, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord2fColor4ubVertex3fSUN (GLfloat s, GLfloat t, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor4ubVertex3fvSUN (const GLfloat *, const GLubyte *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord2fColor4ubVertex3fvSUN (const GLfloat *tc, const GLubyte *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord2fColor3fVertex3fSUN (GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor3fVertex3fvSUN (const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord2fColor3fVertex3fvSUN (const GLfloat *tc, const GLfloat *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fNormal3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord2fNormal3fVertex3fSUN (GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fNormal3fVertex3fvSUN (const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord2fNormal3fVertex3fvSUN (const GLfloat *tc, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor4fNormal3fVertex3fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord2fColor4fNormal3fVertex3fSUN (GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glTexCoord2fColor4fNormal3fVertex3fvSUN (const GLfloat *, const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord2fColor4fNormal3fVertex3fvSUN (const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord4fColor4fNormal3fVertex4fSUN (GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glTexCoord4fColor4fNormal3fVertex4fSUN (GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glTexCoord4fColor4fNormal3fVertex4fvSUN (const GLfloat *, const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexCoord4fColor4fNormal3fVertex4fvSUN (const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiVertex3fSUN (GLuint rc, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiVertex3fvSUN (const GLuint *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiVertex3fvSUN (const GLuint *rc, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor4ubVertex3fSUN (GLuint, GLubyte, GLubyte, GLubyte, GLubyte, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor4ubVertex3fSUN (GLuint rc, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor4ubVertex3fvSUN (const GLuint *, const GLubyte *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor4ubVertex3fvSUN (const GLuint *rc, const GLubyte *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor3fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor3fVertex3fSUN (GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor3fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor3fVertex3fvSUN (const GLuint *rc, const GLfloat *c, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiNormal3fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiNormal3fVertex3fSUN (GLuint rc, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiNormal3fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiNormal3fVertex3fvSUN (const GLuint *rc, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor4fNormal3fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor4fNormal3fVertex3fSUN (GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiColor4fNormal3fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiColor4fNormal3fVertex3fvSUN (const GLuint *rc, const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fVertex3fSUN (GLuint rc, GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fVertex3fvSUN (const GLuint *rc, const GLfloat *tc, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN (GLuint rc, GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN (const GLuint *rc, const GLfloat *tc, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN (GLuint, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN (GLuint rc, GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN (const GLuint *, const GLfloat *, const GLfloat *, const GLfloat *, const GLfloat *) {
+GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN (const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glBlendFuncSeparateEXT (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncSeparateEXT (GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha) {
 }
-GLAPI void APIENTRY stub_glBlendFuncSeparateINGR (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncSeparateINGR (GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha) {
 }
-GLAPI void APIENTRY stub_glVertexWeightfEXT (GLfloat) {
+GLAPI void APIENTRY stub_glVertexWeightfEXT (GLfloat weight) {
 }
-GLAPI void APIENTRY stub_glVertexWeightfvEXT (const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexWeightfvEXT (const GLfloat *weight) {
 }
-GLAPI void APIENTRY stub_glVertexWeightPointerEXT (GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexWeightPointerEXT (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
 GLAPI void APIENTRY stub_glFlushVertexArrayRangeNV (void) {
 }
-GLAPI void APIENTRY stub_glVertexArrayRangeNV (GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexArrayRangeNV (GLsizei length, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glCombinerParameterfvNV (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glCombinerParameterfvNV (GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glCombinerParameterfNV (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glCombinerParameterfNV (GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glCombinerParameterivNV (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glCombinerParameterivNV (GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glCombinerParameteriNV (GLenum, GLint) {
+GLAPI void APIENTRY stub_glCombinerParameteriNV (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glCombinerInputNV (GLenum, GLenum, GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glCombinerInputNV (GLenum stage, GLenum portion, GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage) {
 }
-GLAPI void APIENTRY stub_glCombinerOutputNV (GLenum, GLenum, GLenum, GLenum, GLenum, GLenum, GLenum, GLboolean, GLboolean, GLboolean) {
+GLAPI void APIENTRY stub_glCombinerOutputNV (GLenum stage, GLenum portion, GLenum abOutput, GLenum cdOutput, GLenum sumOutput, GLenum scale, GLenum bias, GLboolean abDotProduct, GLboolean cdDotProduct, GLboolean muxSum) {
 }
-GLAPI void APIENTRY stub_glFinalCombinerInputNV (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glFinalCombinerInputNV (GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage) {
 }
-GLAPI void APIENTRY stub_glGetCombinerInputParameterfvNV (GLenum, GLenum, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetCombinerInputParameterfvNV (GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetCombinerInputParameterivNV (GLenum, GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetCombinerInputParameterivNV (GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetCombinerOutputParameterfvNV (GLenum, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetCombinerOutputParameterfvNV (GLenum stage, GLenum portion, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetCombinerOutputParameterivNV (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetCombinerOutputParameterivNV (GLenum stage, GLenum portion, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetFinalCombinerInputParameterfvNV (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetFinalCombinerInputParameterfvNV (GLenum variable, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetFinalCombinerInputParameterivNV (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFinalCombinerInputParameterivNV (GLenum variable, GLenum pname, GLint *params) {
 }
 GLAPI void APIENTRY stub_glResizeBuffersMESA (void) {
 }
-GLAPI void APIENTRY stub_glWindowPos2dMESA (GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos2dMESA (GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2dvMESA (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos2dvMESA (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2fMESA (GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos2fMESA (GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2fvMESA (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos2fvMESA (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2iMESA (GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos2iMESA (GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2ivMESA (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos2ivMESA (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos2sMESA (GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos2sMESA (GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glWindowPos2svMESA (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos2svMESA (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3dMESA (GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos3dMESA (GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3dvMESA (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos3dvMESA (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3fMESA (GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos3fMESA (GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3fvMESA (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos3fvMESA (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3iMESA (GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos3iMESA (GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3ivMESA (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos3ivMESA (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos3sMESA (GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos3sMESA (GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glWindowPos3svMESA (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos3svMESA (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos4dMESA (GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glWindowPos4dMESA (GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glWindowPos4dvMESA (const GLdouble *) {
+GLAPI void APIENTRY stub_glWindowPos4dvMESA (const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos4fMESA (GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glWindowPos4fMESA (GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glWindowPos4fvMESA (const GLfloat *) {
+GLAPI void APIENTRY stub_glWindowPos4fvMESA (const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos4iMESA (GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glWindowPos4iMESA (GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glWindowPos4ivMESA (const GLint *) {
+GLAPI void APIENTRY stub_glWindowPos4ivMESA (const GLint *v) {
 }
-GLAPI void APIENTRY stub_glWindowPos4sMESA (GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glWindowPos4sMESA (GLshort x, GLshort y, GLshort z, GLshort w) {
 }
-GLAPI void APIENTRY stub_glWindowPos4svMESA (const GLshort *) {
+GLAPI void APIENTRY stub_glWindowPos4svMESA (const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glMultiModeDrawArraysIBM (const GLenum *, const GLint *, const GLsizei *, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glMultiModeDrawArraysIBM (const GLenum *mode, const GLint *first, const GLsizei *count, GLsizei primcount, GLint modestride) {
 }
-GLAPI void APIENTRY stub_glMultiModeDrawElementsIBM (const GLenum *, const GLsizei *, GLenum, const GLvoid* const *, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glMultiModeDrawElementsIBM (const GLenum *mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei primcount, GLint modestride) {
 }
-GLAPI void APIENTRY stub_glColorPointerListIBM (GLint, GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glColorPointerListIBM (GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glSecondaryColorPointerListIBM (GLint, GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glSecondaryColorPointerListIBM (GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glEdgeFlagPointerListIBM (GLint, const GLboolean* *, GLint) {
+GLAPI void APIENTRY stub_glEdgeFlagPointerListIBM (GLint stride, const GLboolean* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glFogCoordPointerListIBM (GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glFogCoordPointerListIBM (GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glIndexPointerListIBM (GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glIndexPointerListIBM (GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glNormalPointerListIBM (GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glNormalPointerListIBM (GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glTexCoordPointerListIBM (GLint, GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glTexCoordPointerListIBM (GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glVertexPointerListIBM (GLint, GLenum, GLint, const GLvoid* *, GLint) {
+GLAPI void APIENTRY stub_glVertexPointerListIBM (GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride) {
 }
-GLAPI void APIENTRY stub_glTbufferMask3DFX (GLuint) {
+GLAPI void APIENTRY stub_glTbufferMask3DFX (GLuint mask) {
 }
-GLAPI void APIENTRY stub_glSampleMaskEXT (GLclampf, GLboolean) {
+GLAPI void APIENTRY stub_glSampleMaskEXT (GLclampf value, GLboolean invert) {
 }
-GLAPI void APIENTRY stub_glSamplePatternEXT (GLenum) {
+GLAPI void APIENTRY stub_glSamplePatternEXT (GLenum pattern) {
 }
-GLAPI void APIENTRY stub_glTextureColorMaskSGIS (GLboolean, GLboolean, GLboolean, GLboolean) {
+GLAPI void APIENTRY stub_glTextureColorMaskSGIS (GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha) {
 }
-GLAPI void APIENTRY stub_glIglooInterfaceSGIX (GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glIglooInterfaceSGIX (GLenum pname, const GLvoid *params) {
 }
-GLAPI void APIENTRY stub_glDeleteFencesNV (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteFencesNV (GLsizei n, const GLuint *fences) {
 }
-GLAPI void APIENTRY stub_glGenFencesNV (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenFencesNV (GLsizei n, GLuint *fences) {
 }
-GLAPI GLboolean APIENTRY stub_glIsFenceNV (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsFenceNV (GLuint fence) {
 	return (GLboolean)0;
 }
-GLAPI GLboolean APIENTRY stub_glTestFenceNV (GLuint) {
+GLAPI GLboolean APIENTRY stub_glTestFenceNV (GLuint fence) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetFenceivNV (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFenceivNV (GLuint fence, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glFinishFenceNV (GLuint) {
+GLAPI void APIENTRY stub_glFinishFenceNV (GLuint fence) {
 }
-GLAPI void APIENTRY stub_glSetFenceNV (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glSetFenceNV (GLuint fence, GLenum condition) {
 }
-GLAPI void APIENTRY stub_glMapControlPointsNV (GLenum, GLuint, GLenum, GLsizei, GLsizei, GLint, GLint, GLboolean, const GLvoid *) {
+GLAPI void APIENTRY stub_glMapControlPointsNV (GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLint uorder, GLint vorder, GLboolean packed, const GLvoid *points) {
 }
-GLAPI void APIENTRY stub_glMapParameterivNV (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMapParameterivNV (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glMapParameterfvNV (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMapParameterfvNV (GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMapControlPointsNV (GLenum, GLuint, GLenum, GLsizei, GLsizei, GLboolean, GLvoid *) {
+GLAPI void APIENTRY stub_glGetMapControlPointsNV (GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLboolean packed, GLvoid *points) {
 }
-GLAPI void APIENTRY stub_glGetMapParameterivNV (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMapParameterivNV (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMapParameterfvNV (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMapParameterfvNV (GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMapAttribParameterivNV (GLenum, GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMapAttribParameterivNV (GLenum target, GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMapAttribParameterfvNV (GLenum, GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMapAttribParameterfvNV (GLenum target, GLuint index, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glEvalMapsNV (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glEvalMapsNV (GLenum target, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glCombinerStageParameterfvNV (GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glCombinerStageParameterfvNV (GLenum stage, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetCombinerStageParameterfvNV (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetCombinerStageParameterfvNV (GLenum stage, GLenum pname, GLfloat *params) {
 }
-GLAPI GLboolean APIENTRY stub_glAreProgramsResidentNV (GLsizei, const GLuint *, GLboolean *) {
+GLAPI GLboolean APIENTRY stub_glAreProgramsResidentNV (GLsizei n, const GLuint *programs, GLboolean *residences) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindProgramNV (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindProgramNV (GLenum target, GLuint id) {
 }
-GLAPI void APIENTRY stub_glDeleteProgramsNV (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteProgramsNV (GLsizei n, const GLuint *programs) {
 }
-GLAPI void APIENTRY stub_glExecuteProgramNV (GLenum, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glExecuteProgramNV (GLenum target, GLuint id, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGenProgramsNV (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenProgramsNV (GLsizei n, GLuint *programs) {
 }
-GLAPI void APIENTRY stub_glGetProgramParameterdvNV (GLenum, GLuint, GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glGetProgramParameterdvNV (GLenum target, GLuint index, GLenum pname, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramParameterfvNV (GLenum, GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetProgramParameterfvNV (GLenum target, GLuint index, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramivNV (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramivNV (GLuint id, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramStringNV (GLuint, GLenum, GLubyte *) {
+GLAPI void APIENTRY stub_glGetProgramStringNV (GLuint id, GLenum pname, GLubyte *program) {
 }
-GLAPI void APIENTRY stub_glGetTrackMatrixivNV (GLenum, GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTrackMatrixivNV (GLenum target, GLuint address, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribdvNV (GLuint, GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glGetVertexAttribdvNV (GLuint index, GLenum pname, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribfvNV (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetVertexAttribfvNV (GLuint index, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribivNV (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribivNV (GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribPointervNV (GLuint, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetVertexAttribPointervNV (GLuint index, GLenum pname, GLvoid* *pointer) {
 }
-GLAPI GLboolean APIENTRY stub_glIsProgramNV (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsProgramNV (GLuint id) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glLoadProgramNV (GLenum, GLuint, GLsizei, const GLubyte *) {
+GLAPI void APIENTRY stub_glLoadProgramNV (GLenum target, GLuint id, GLsizei len, const GLubyte *program) {
 }
-GLAPI void APIENTRY stub_glProgramParameter4dNV (GLenum, GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glProgramParameter4dNV (GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glProgramParameter4dvNV (GLenum, GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glProgramParameter4dvNV (GLenum target, GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glProgramParameter4fNV (GLenum, GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramParameter4fNV (GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glProgramParameter4fvNV (GLenum, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramParameter4fvNV (GLenum target, GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glProgramParameters4dvNV (GLenum, GLuint, GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glProgramParameters4dvNV (GLenum target, GLuint index, GLsizei count, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glProgramParameters4fvNV (GLenum, GLuint, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramParameters4fvNV (GLenum target, GLuint index, GLsizei count, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glRequestResidentProgramsNV (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glRequestResidentProgramsNV (GLsizei n, const GLuint *programs) {
 }
-GLAPI void APIENTRY stub_glTrackMatrixNV (GLenum, GLuint, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glTrackMatrixNV (GLenum target, GLuint address, GLenum matrix, GLenum transform) {
 }
-GLAPI void APIENTRY stub_glVertexAttribPointerNV (GLuint, GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttribPointerNV (GLuint index, GLint fsize, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1dNV (GLuint, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib1dNV (GLuint index, GLdouble x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1dvNV (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib1dvNV (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1fNV (GLuint, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib1fNV (GLuint index, GLfloat x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1fvNV (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib1fvNV (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1sNV (GLuint, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib1sNV (GLuint index, GLshort x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1svNV (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib1svNV (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2dNV (GLuint, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib2dNV (GLuint index, GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2dvNV (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib2dvNV (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2fNV (GLuint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib2fNV (GLuint index, GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2fvNV (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib2fvNV (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2sNV (GLuint, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib2sNV (GLuint index, GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2svNV (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib2svNV (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3dNV (GLuint, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib3dNV (GLuint index, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3dvNV (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib3dvNV (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3fNV (GLuint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib3fNV (GLuint index, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3fvNV (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib3fvNV (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3sNV (GLuint, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib3sNV (GLuint index, GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3svNV (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib3svNV (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4dNV (GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexAttrib4dNV (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4dvNV (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttrib4dvNV (GLuint index, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4fNV (GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexAttrib4fNV (GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4fvNV (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttrib4fvNV (GLuint index, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4sNV (GLuint, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexAttrib4sNV (GLuint index, GLshort x, GLshort y, GLshort z, GLshort w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4svNV (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttrib4svNV (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4ubNV (GLuint, GLubyte, GLubyte, GLubyte, GLubyte) {
+GLAPI void APIENTRY stub_glVertexAttrib4ubNV (GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4ubvNV (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttrib4ubvNV (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs1dvNV (GLuint, GLsizei, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttribs1dvNV (GLuint index, GLsizei count, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs1fvNV (GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttribs1fvNV (GLuint index, GLsizei count, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs1svNV (GLuint, GLsizei, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribs1svNV (GLuint index, GLsizei count, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs2dvNV (GLuint, GLsizei, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttribs2dvNV (GLuint index, GLsizei count, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs2fvNV (GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttribs2fvNV (GLuint index, GLsizei count, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs2svNV (GLuint, GLsizei, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribs2svNV (GLuint index, GLsizei count, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs3dvNV (GLuint, GLsizei, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttribs3dvNV (GLuint index, GLsizei count, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs3fvNV (GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttribs3fvNV (GLuint index, GLsizei count, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs3svNV (GLuint, GLsizei, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribs3svNV (GLuint index, GLsizei count, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs4dvNV (GLuint, GLsizei, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexAttribs4dvNV (GLuint index, GLsizei count, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs4fvNV (GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexAttribs4fvNV (GLuint index, GLsizei count, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs4svNV (GLuint, GLsizei, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribs4svNV (GLuint index, GLsizei count, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs4ubvNV (GLuint, GLsizei, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttribs4ubvNV (GLuint index, GLsizei count, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glTexBumpParameterivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTexBumpParameterivATI (GLenum pname, const GLint *param) {
 }
-GLAPI void APIENTRY stub_glTexBumpParameterfvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glTexBumpParameterfvATI (GLenum pname, const GLfloat *param) {
 }
-GLAPI void APIENTRY stub_glGetTexBumpParameterivATI (GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTexBumpParameterivATI (GLenum pname, GLint *param) {
 }
-GLAPI void APIENTRY stub_glGetTexBumpParameterfvATI (GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetTexBumpParameterfvATI (GLenum pname, GLfloat *param) {
 }
-GLAPI GLuint APIENTRY stub_glGenFragmentShadersATI (GLuint) {
+GLAPI GLuint APIENTRY stub_glGenFragmentShadersATI (GLuint range) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glBindFragmentShaderATI (GLuint) {
+GLAPI void APIENTRY stub_glBindFragmentShaderATI (GLuint id) {
 }
-GLAPI void APIENTRY stub_glDeleteFragmentShaderATI (GLuint) {
+GLAPI void APIENTRY stub_glDeleteFragmentShaderATI (GLuint id) {
 }
 GLAPI void APIENTRY stub_glBeginFragmentShaderATI (void) {
 }
 GLAPI void APIENTRY stub_glEndFragmentShaderATI (void) {
 }
-GLAPI void APIENTRY stub_glPassTexCoordATI (GLuint, GLuint, GLenum) {
+GLAPI void APIENTRY stub_glPassTexCoordATI (GLuint dst, GLuint coord, GLenum swizzle) {
 }
-GLAPI void APIENTRY stub_glSampleMapATI (GLuint, GLuint, GLenum) {
+GLAPI void APIENTRY stub_glSampleMapATI (GLuint dst, GLuint interp, GLenum swizzle) {
 }
-GLAPI void APIENTRY stub_glColorFragmentOp1ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glColorFragmentOp1ATI (GLenum op, GLuint dst, GLuint dstMask, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod) {
 }
-GLAPI void APIENTRY stub_glColorFragmentOp2ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glColorFragmentOp2ATI (GLenum op, GLuint dst, GLuint dstMask, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod) {
 }
-GLAPI void APIENTRY stub_glColorFragmentOp3ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glColorFragmentOp3ATI (GLenum op, GLuint dst, GLuint dstMask, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod, GLuint arg3, GLuint arg3Rep, GLuint arg3Mod) {
 }
-GLAPI void APIENTRY stub_glAlphaFragmentOp1ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glAlphaFragmentOp1ATI (GLenum op, GLuint dst, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod) {
 }
-GLAPI void APIENTRY stub_glAlphaFragmentOp2ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glAlphaFragmentOp2ATI (GLenum op, GLuint dst, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod) {
 }
-GLAPI void APIENTRY stub_glAlphaFragmentOp3ATI (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glAlphaFragmentOp3ATI (GLenum op, GLuint dst, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod, GLuint arg3, GLuint arg3Rep, GLuint arg3Mod) {
 }
-GLAPI void APIENTRY stub_glSetFragmentShaderConstantATI (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glSetFragmentShaderConstantATI (GLuint dst, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glPNTrianglesiATI (GLenum, GLint) {
+GLAPI void APIENTRY stub_glPNTrianglesiATI (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glPNTrianglesfATI (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glPNTrianglesfATI (GLenum pname, GLfloat param) {
 }
-GLAPI GLuint APIENTRY stub_glNewObjectBufferATI (GLsizei, const GLvoid *, GLenum) {
+GLAPI GLuint APIENTRY stub_glNewObjectBufferATI (GLsizei size, const GLvoid *pointer, GLenum usage) {
 	return (GLuint)0;
 }
-GLAPI GLboolean APIENTRY stub_glIsObjectBufferATI (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsObjectBufferATI (GLuint buffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glUpdateObjectBufferATI (GLuint, GLuint, GLsizei, const GLvoid *, GLenum) {
+GLAPI void APIENTRY stub_glUpdateObjectBufferATI (GLuint buffer, GLuint offset, GLsizei size, const GLvoid *pointer, GLenum preserve) {
 }
-GLAPI void APIENTRY stub_glGetObjectBufferfvATI (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetObjectBufferfvATI (GLuint buffer, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetObjectBufferivATI (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetObjectBufferivATI (GLuint buffer, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glFreeObjectBufferATI (GLuint) {
+GLAPI void APIENTRY stub_glFreeObjectBufferATI (GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glArrayObjectATI (GLenum, GLint, GLenum, GLsizei, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glArrayObjectATI (GLenum array, GLint size, GLenum type, GLsizei stride, GLuint buffer, GLuint offset) {
 }
-GLAPI void APIENTRY stub_glGetArrayObjectfvATI (GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetArrayObjectfvATI (GLenum array, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetArrayObjectivATI (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetArrayObjectivATI (GLenum array, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glVariantArrayObjectATI (GLuint, GLenum, GLsizei, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVariantArrayObjectATI (GLuint id, GLenum type, GLsizei stride, GLuint buffer, GLuint offset) {
 }
-GLAPI void APIENTRY stub_glGetVariantArrayObjectfvATI (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetVariantArrayObjectfvATI (GLuint id, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVariantArrayObjectivATI (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVariantArrayObjectivATI (GLuint id, GLenum pname, GLint *params) {
 }
 GLAPI void APIENTRY stub_glBeginVertexShaderEXT (void) {
 }
 GLAPI void APIENTRY stub_glEndVertexShaderEXT (void) {
 }
-GLAPI void APIENTRY stub_glBindVertexShaderEXT (GLuint) {
+GLAPI void APIENTRY stub_glBindVertexShaderEXT (GLuint id) {
 }
-GLAPI GLuint APIENTRY stub_glGenVertexShadersEXT (GLuint) {
+GLAPI GLuint APIENTRY stub_glGenVertexShadersEXT (GLuint range) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glDeleteVertexShaderEXT (GLuint) {
+GLAPI void APIENTRY stub_glDeleteVertexShaderEXT (GLuint id) {
 }
-GLAPI void APIENTRY stub_glShaderOp1EXT (GLenum, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glShaderOp1EXT (GLenum op, GLuint res, GLuint arg1) {
 }
-GLAPI void APIENTRY stub_glShaderOp2EXT (GLenum, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glShaderOp2EXT (GLenum op, GLuint res, GLuint arg1, GLuint arg2) {
 }
-GLAPI void APIENTRY stub_glShaderOp3EXT (GLenum, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glShaderOp3EXT (GLenum op, GLuint res, GLuint arg1, GLuint arg2, GLuint arg3) {
 }
-GLAPI void APIENTRY stub_glSwizzleEXT (GLuint, GLuint, GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glSwizzleEXT (GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW) {
 }
-GLAPI void APIENTRY stub_glWriteMaskEXT (GLuint, GLuint, GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glWriteMaskEXT (GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW) {
 }
-GLAPI void APIENTRY stub_glInsertComponentEXT (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glInsertComponentEXT (GLuint res, GLuint src, GLuint num) {
 }
-GLAPI void APIENTRY stub_glExtractComponentEXT (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glExtractComponentEXT (GLuint res, GLuint src, GLuint num) {
 }
-GLAPI GLuint APIENTRY stub_glGenSymbolsEXT (GLenum, GLenum, GLenum, GLuint) {
+GLAPI GLuint APIENTRY stub_glGenSymbolsEXT (GLenum datatype, GLenum storagetype, GLenum range, GLuint components) {
 	return (GLuint)0;
 }
-GLAPI void APIENTRY stub_glSetInvariantEXT (GLuint, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glSetInvariantEXT (GLuint id, GLenum type, const GLvoid *addr) {
 }
-GLAPI void APIENTRY stub_glSetLocalConstantEXT (GLuint, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glSetLocalConstantEXT (GLuint id, GLenum type, const GLvoid *addr) {
 }
-GLAPI void APIENTRY stub_glVariantbvEXT (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVariantbvEXT (GLuint id, const GLbyte *addr) {
 }
-GLAPI void APIENTRY stub_glVariantsvEXT (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVariantsvEXT (GLuint id, const GLshort *addr) {
 }
-GLAPI void APIENTRY stub_glVariantivEXT (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVariantivEXT (GLuint id, const GLint *addr) {
 }
-GLAPI void APIENTRY stub_glVariantfvEXT (GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glVariantfvEXT (GLuint id, const GLfloat *addr) {
 }
-GLAPI void APIENTRY stub_glVariantdvEXT (GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glVariantdvEXT (GLuint id, const GLdouble *addr) {
 }
-GLAPI void APIENTRY stub_glVariantubvEXT (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVariantubvEXT (GLuint id, const GLubyte *addr) {
 }
-GLAPI void APIENTRY stub_glVariantusvEXT (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVariantusvEXT (GLuint id, const GLushort *addr) {
 }
-GLAPI void APIENTRY stub_glVariantuivEXT (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVariantuivEXT (GLuint id, const GLuint *addr) {
 }
-GLAPI void APIENTRY stub_glVariantPointerEXT (GLuint, GLenum, GLuint, const GLvoid *) {
+GLAPI void APIENTRY stub_glVariantPointerEXT (GLuint id, GLenum type, GLuint stride, const GLvoid *addr) {
 }
-GLAPI void APIENTRY stub_glEnableVariantClientStateEXT (GLuint) {
+GLAPI void APIENTRY stub_glEnableVariantClientStateEXT (GLuint id) {
 }
-GLAPI void APIENTRY stub_glDisableVariantClientStateEXT (GLuint) {
+GLAPI void APIENTRY stub_glDisableVariantClientStateEXT (GLuint id) {
 }
-GLAPI GLuint APIENTRY stub_glBindLightParameterEXT (GLenum, GLenum) {
+GLAPI GLuint APIENTRY stub_glBindLightParameterEXT (GLenum light, GLenum value) {
 	return (GLuint)0;
 }
-GLAPI GLuint APIENTRY stub_glBindMaterialParameterEXT (GLenum, GLenum) {
+GLAPI GLuint APIENTRY stub_glBindMaterialParameterEXT (GLenum face, GLenum value) {
 	return (GLuint)0;
 }
-GLAPI GLuint APIENTRY stub_glBindTexGenParameterEXT (GLenum, GLenum, GLenum) {
+GLAPI GLuint APIENTRY stub_glBindTexGenParameterEXT (GLenum unit, GLenum coord, GLenum value) {
 	return (GLuint)0;
 }
-GLAPI GLuint APIENTRY stub_glBindTextureUnitParameterEXT (GLenum, GLenum) {
+GLAPI GLuint APIENTRY stub_glBindTextureUnitParameterEXT (GLenum unit, GLenum value) {
 	return (GLuint)0;
 }
-GLAPI GLuint APIENTRY stub_glBindParameterEXT (GLenum) {
+GLAPI GLuint APIENTRY stub_glBindParameterEXT (GLenum value) {
 	return (GLuint)0;
 }
-GLAPI GLboolean APIENTRY stub_glIsVariantEnabledEXT (GLuint, GLenum) {
+GLAPI GLboolean APIENTRY stub_glIsVariantEnabledEXT (GLuint id, GLenum cap) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetVariantBooleanvEXT (GLuint, GLenum, GLboolean *) {
+GLAPI void APIENTRY stub_glGetVariantBooleanvEXT (GLuint id, GLenum value, GLboolean *data) {
 }
-GLAPI void APIENTRY stub_glGetVariantIntegervEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVariantIntegervEXT (GLuint id, GLenum value, GLint *data) {
 }
-GLAPI void APIENTRY stub_glGetVariantFloatvEXT (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetVariantFloatvEXT (GLuint id, GLenum value, GLfloat *data) {
 }
-GLAPI void APIENTRY stub_glGetVariantPointervEXT (GLuint, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetVariantPointervEXT (GLuint id, GLenum value, GLvoid* *data) {
 }
-GLAPI void APIENTRY stub_glGetInvariantBooleanvEXT (GLuint, GLenum, GLboolean *) {
+GLAPI void APIENTRY stub_glGetInvariantBooleanvEXT (GLuint id, GLenum value, GLboolean *data) {
 }
-GLAPI void APIENTRY stub_glGetInvariantIntegervEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetInvariantIntegervEXT (GLuint id, GLenum value, GLint *data) {
 }
-GLAPI void APIENTRY stub_glGetInvariantFloatvEXT (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetInvariantFloatvEXT (GLuint id, GLenum value, GLfloat *data) {
 }
-GLAPI void APIENTRY stub_glGetLocalConstantBooleanvEXT (GLuint, GLenum, GLboolean *) {
+GLAPI void APIENTRY stub_glGetLocalConstantBooleanvEXT (GLuint id, GLenum value, GLboolean *data) {
 }
-GLAPI void APIENTRY stub_glGetLocalConstantIntegervEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetLocalConstantIntegervEXT (GLuint id, GLenum value, GLint *data) {
 }
-GLAPI void APIENTRY stub_glGetLocalConstantFloatvEXT (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetLocalConstantFloatvEXT (GLuint id, GLenum value, GLfloat *data) {
 }
-GLAPI void APIENTRY stub_glVertexStream1sATI (GLenum, GLshort) {
+GLAPI void APIENTRY stub_glVertexStream1sATI (GLenum stream, GLshort x) {
 }
-GLAPI void APIENTRY stub_glVertexStream1svATI (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexStream1svATI (GLenum stream, const GLshort *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream1iATI (GLenum, GLint) {
+GLAPI void APIENTRY stub_glVertexStream1iATI (GLenum stream, GLint x) {
 }
-GLAPI void APIENTRY stub_glVertexStream1ivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glVertexStream1ivATI (GLenum stream, const GLint *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream1fATI (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glVertexStream1fATI (GLenum stream, GLfloat x) {
 }
-GLAPI void APIENTRY stub_glVertexStream1fvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexStream1fvATI (GLenum stream, const GLfloat *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream1dATI (GLenum, GLdouble) {
+GLAPI void APIENTRY stub_glVertexStream1dATI (GLenum stream, GLdouble x) {
 }
-GLAPI void APIENTRY stub_glVertexStream1dvATI (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexStream1dvATI (GLenum stream, const GLdouble *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream2sATI (GLenum, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexStream2sATI (GLenum stream, GLshort x, GLshort y) {
 }
-GLAPI void APIENTRY stub_glVertexStream2svATI (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexStream2svATI (GLenum stream, const GLshort *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream2iATI (GLenum, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexStream2iATI (GLenum stream, GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glVertexStream2ivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glVertexStream2ivATI (GLenum stream, const GLint *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream2fATI (GLenum, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexStream2fATI (GLenum stream, GLfloat x, GLfloat y) {
 }
-GLAPI void APIENTRY stub_glVertexStream2fvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexStream2fvATI (GLenum stream, const GLfloat *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream2dATI (GLenum, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexStream2dATI (GLenum stream, GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glVertexStream2dvATI (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexStream2dvATI (GLenum stream, const GLdouble *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream3sATI (GLenum, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexStream3sATI (GLenum stream, GLshort x, GLshort y, GLshort z) {
 }
-GLAPI void APIENTRY stub_glVertexStream3svATI (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexStream3svATI (GLenum stream, const GLshort *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream3iATI (GLenum, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexStream3iATI (GLenum stream, GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glVertexStream3ivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glVertexStream3ivATI (GLenum stream, const GLint *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream3fATI (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexStream3fATI (GLenum stream, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glVertexStream3fvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexStream3fvATI (GLenum stream, const GLfloat *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream3dATI (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexStream3dATI (GLenum stream, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glVertexStream3dvATI (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexStream3dvATI (GLenum stream, const GLdouble *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream4sATI (GLenum, GLshort, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glVertexStream4sATI (GLenum stream, GLshort x, GLshort y, GLshort z, GLshort w) {
 }
-GLAPI void APIENTRY stub_glVertexStream4svATI (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexStream4svATI (GLenum stream, const GLshort *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream4iATI (GLenum, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexStream4iATI (GLenum stream, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glVertexStream4ivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glVertexStream4ivATI (GLenum stream, const GLint *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream4fATI (GLenum, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glVertexStream4fATI (GLenum stream, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glVertexStream4fvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glVertexStream4fvATI (GLenum stream, const GLfloat *coords) {
 }
-GLAPI void APIENTRY stub_glVertexStream4dATI (GLenum, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glVertexStream4dATI (GLenum stream, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glVertexStream4dvATI (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glVertexStream4dvATI (GLenum stream, const GLdouble *coords) {
 }
-GLAPI void APIENTRY stub_glNormalStream3bATI (GLenum, GLbyte, GLbyte, GLbyte) {
+GLAPI void APIENTRY stub_glNormalStream3bATI (GLenum stream, GLbyte nx, GLbyte ny, GLbyte nz) {
 }
-GLAPI void APIENTRY stub_glNormalStream3bvATI (GLenum, const GLbyte *) {
+GLAPI void APIENTRY stub_glNormalStream3bvATI (GLenum stream, const GLbyte *coords) {
 }
-GLAPI void APIENTRY stub_glNormalStream3sATI (GLenum, GLshort, GLshort, GLshort) {
+GLAPI void APIENTRY stub_glNormalStream3sATI (GLenum stream, GLshort nx, GLshort ny, GLshort nz) {
 }
-GLAPI void APIENTRY stub_glNormalStream3svATI (GLenum, const GLshort *) {
+GLAPI void APIENTRY stub_glNormalStream3svATI (GLenum stream, const GLshort *coords) {
 }
-GLAPI void APIENTRY stub_glNormalStream3iATI (GLenum, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glNormalStream3iATI (GLenum stream, GLint nx, GLint ny, GLint nz) {
 }
-GLAPI void APIENTRY stub_glNormalStream3ivATI (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glNormalStream3ivATI (GLenum stream, const GLint *coords) {
 }
-GLAPI void APIENTRY stub_glNormalStream3fATI (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glNormalStream3fATI (GLenum stream, GLfloat nx, GLfloat ny, GLfloat nz) {
 }
-GLAPI void APIENTRY stub_glNormalStream3fvATI (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glNormalStream3fvATI (GLenum stream, const GLfloat *coords) {
 }
-GLAPI void APIENTRY stub_glNormalStream3dATI (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glNormalStream3dATI (GLenum stream, GLdouble nx, GLdouble ny, GLdouble nz) {
 }
-GLAPI void APIENTRY stub_glNormalStream3dvATI (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glNormalStream3dvATI (GLenum stream, const GLdouble *coords) {
 }
-GLAPI void APIENTRY stub_glClientActiveVertexStreamATI (GLenum) {
+GLAPI void APIENTRY stub_glClientActiveVertexStreamATI (GLenum stream) {
 }
-GLAPI void APIENTRY stub_glVertexBlendEnviATI (GLenum, GLint) {
+GLAPI void APIENTRY stub_glVertexBlendEnviATI (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glVertexBlendEnvfATI (GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glVertexBlendEnvfATI (GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glElementPointerATI (GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glElementPointerATI (GLenum type, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glDrawElementArrayATI (GLenum, GLsizei) {
+GLAPI void APIENTRY stub_glDrawElementArrayATI (GLenum mode, GLsizei count) {
 }
-GLAPI void APIENTRY stub_glDrawRangeElementArrayATI (GLenum, GLuint, GLuint, GLsizei) {
+GLAPI void APIENTRY stub_glDrawRangeElementArrayATI (GLenum mode, GLuint start, GLuint end, GLsizei count) {
 }
-GLAPI void APIENTRY stub_glDrawMeshArraysSUN (GLenum, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glDrawMeshArraysSUN (GLenum mode, GLint first, GLsizei count, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glGenOcclusionQueriesNV (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenOcclusionQueriesNV (GLsizei n, GLuint *ids) {
 }
-GLAPI void APIENTRY stub_glDeleteOcclusionQueriesNV (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteOcclusionQueriesNV (GLsizei n, const GLuint *ids) {
 }
-GLAPI GLboolean APIENTRY stub_glIsOcclusionQueryNV (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsOcclusionQueryNV (GLuint id) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBeginOcclusionQueryNV (GLuint) {
+GLAPI void APIENTRY stub_glBeginOcclusionQueryNV (GLuint id) {
 }
 GLAPI void APIENTRY stub_glEndOcclusionQueryNV (void) {
 }
-GLAPI void APIENTRY stub_glGetOcclusionQueryivNV (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetOcclusionQueryivNV (GLuint id, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetOcclusionQueryuivNV (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetOcclusionQueryuivNV (GLuint id, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glPointParameteriNV (GLenum, GLint) {
+GLAPI void APIENTRY stub_glPointParameteriNV (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glPointParameterivNV (GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glPointParameterivNV (GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glActiveStencilFaceEXT (GLenum) {
+GLAPI void APIENTRY stub_glActiveStencilFaceEXT (GLenum face) {
 }
-GLAPI void APIENTRY stub_glElementPointerAPPLE (GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glElementPointerAPPLE (GLenum type, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glDrawElementArrayAPPLE (GLenum, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glDrawElementArrayAPPLE (GLenum mode, GLint first, GLsizei count) {
 }
-GLAPI void APIENTRY stub_glDrawRangeElementArrayAPPLE (GLenum, GLuint, GLuint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glDrawRangeElementArrayAPPLE (GLenum mode, GLuint start, GLuint end, GLint first, GLsizei count) {
 }
-GLAPI void APIENTRY stub_glMultiDrawElementArrayAPPLE (GLenum, const GLint *, const GLsizei *, GLsizei) {
+GLAPI void APIENTRY stub_glMultiDrawElementArrayAPPLE (GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glMultiDrawRangeElementArrayAPPLE (GLenum, GLuint, GLuint, const GLint *, const GLsizei *, GLsizei) {
+GLAPI void APIENTRY stub_glMultiDrawRangeElementArrayAPPLE (GLenum mode, GLuint start, GLuint end, const GLint *first, const GLsizei *count, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glGenFencesAPPLE (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenFencesAPPLE (GLsizei n, GLuint *fences) {
 }
-GLAPI void APIENTRY stub_glDeleteFencesAPPLE (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteFencesAPPLE (GLsizei n, const GLuint *fences) {
 }
-GLAPI void APIENTRY stub_glSetFenceAPPLE (GLuint) {
+GLAPI void APIENTRY stub_glSetFenceAPPLE (GLuint fence) {
 }
-GLAPI GLboolean APIENTRY stub_glIsFenceAPPLE (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsFenceAPPLE (GLuint fence) {
 	return (GLboolean)0;
 }
-GLAPI GLboolean APIENTRY stub_glTestFenceAPPLE (GLuint) {
+GLAPI GLboolean APIENTRY stub_glTestFenceAPPLE (GLuint fence) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glFinishFenceAPPLE (GLuint) {
+GLAPI void APIENTRY stub_glFinishFenceAPPLE (GLuint fence) {
 }
-GLAPI GLboolean APIENTRY stub_glTestObjectAPPLE (GLenum, GLuint) {
+GLAPI GLboolean APIENTRY stub_glTestObjectAPPLE (GLenum object, GLuint name) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glFinishObjectAPPLE (GLenum, GLint) {
+GLAPI void APIENTRY stub_glFinishObjectAPPLE (GLenum object, GLint name) {
 }
-GLAPI void APIENTRY stub_glBindVertexArrayAPPLE (GLuint) {
+GLAPI void APIENTRY stub_glBindVertexArrayAPPLE (GLuint array) {
 }
-GLAPI void APIENTRY stub_glDeleteVertexArraysAPPLE (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteVertexArraysAPPLE (GLsizei n, const GLuint *arrays) {
 }
-GLAPI void APIENTRY stub_glGenVertexArraysAPPLE (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenVertexArraysAPPLE (GLsizei n, GLuint *arrays) {
 }
-GLAPI GLboolean APIENTRY stub_glIsVertexArrayAPPLE (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsVertexArrayAPPLE (GLuint array) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glVertexArrayRangeAPPLE (GLsizei, GLvoid *) {
+GLAPI void APIENTRY stub_glVertexArrayRangeAPPLE (GLsizei length, GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glFlushVertexArrayRangeAPPLE (GLsizei, GLvoid *) {
+GLAPI void APIENTRY stub_glFlushVertexArrayRangeAPPLE (GLsizei length, GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glVertexArrayParameteriAPPLE (GLenum, GLint) {
+GLAPI void APIENTRY stub_glVertexArrayParameteriAPPLE (GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glDrawBuffersATI (GLsizei, const GLenum *) {
+GLAPI void APIENTRY stub_glDrawBuffersATI (GLsizei n, const GLenum *bufs) {
 }
-GLAPI void APIENTRY stub_glProgramNamedParameter4fNV (GLuint, GLsizei, const GLubyte *, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramNamedParameter4fNV (GLuint id, GLsizei len, const GLubyte *name, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glProgramNamedParameter4dNV (GLuint, GLsizei, const GLubyte *, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glProgramNamedParameter4dNV (GLuint id, GLsizei len, const GLubyte *name, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glProgramNamedParameter4fvNV (GLuint, GLsizei, const GLubyte *, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramNamedParameter4fvNV (GLuint id, GLsizei len, const GLubyte *name, const GLfloat *v) {
 }
-GLAPI void APIENTRY stub_glProgramNamedParameter4dvNV (GLuint, GLsizei, const GLubyte *, const GLdouble *) {
+GLAPI void APIENTRY stub_glProgramNamedParameter4dvNV (GLuint id, GLsizei len, const GLubyte *name, const GLdouble *v) {
 }
-GLAPI void APIENTRY stub_glGetProgramNamedParameterfvNV (GLuint, GLsizei, const GLubyte *, GLfloat *) {
+GLAPI void APIENTRY stub_glGetProgramNamedParameterfvNV (GLuint id, GLsizei len, const GLubyte *name, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramNamedParameterdvNV (GLuint, GLsizei, const GLubyte *, GLdouble *) {
+GLAPI void APIENTRY stub_glGetProgramNamedParameterdvNV (GLuint id, GLsizei len, const GLubyte *name, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glVertex2hNV (GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertex2hNV (GLhalfNV x, GLhalfNV y) {
 }
-GLAPI void APIENTRY stub_glVertex2hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertex2hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertex3hNV (GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertex3hNV (GLhalfNV x, GLhalfNV y, GLhalfNV z) {
 }
-GLAPI void APIENTRY stub_glVertex3hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertex3hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertex4hNV (GLhalfNV, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertex4hNV (GLhalfNV x, GLhalfNV y, GLhalfNV z, GLhalfNV w) {
 }
-GLAPI void APIENTRY stub_glVertex4hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertex4hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glNormal3hNV (GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glNormal3hNV (GLhalfNV nx, GLhalfNV ny, GLhalfNV nz) {
 }
-GLAPI void APIENTRY stub_glNormal3hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glNormal3hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glColor3hNV (GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glColor3hNV (GLhalfNV red, GLhalfNV green, GLhalfNV blue) {
 }
-GLAPI void APIENTRY stub_glColor3hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glColor3hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glColor4hNV (GLhalfNV, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glColor4hNV (GLhalfNV red, GLhalfNV green, GLhalfNV blue, GLhalfNV alpha) {
 }
-GLAPI void APIENTRY stub_glColor4hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glColor4hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord1hNV (GLhalfNV) {
+GLAPI void APIENTRY stub_glTexCoord1hNV (GLhalfNV s) {
 }
-GLAPI void APIENTRY stub_glTexCoord1hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glTexCoord1hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord2hNV (GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glTexCoord2hNV (GLhalfNV s, GLhalfNV t) {
 }
-GLAPI void APIENTRY stub_glTexCoord2hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glTexCoord2hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord3hNV (GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glTexCoord3hNV (GLhalfNV s, GLhalfNV t, GLhalfNV r) {
 }
-GLAPI void APIENTRY stub_glTexCoord3hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glTexCoord3hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glTexCoord4hNV (GLhalfNV, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glTexCoord4hNV (GLhalfNV s, GLhalfNV t, GLhalfNV r, GLhalfNV q) {
 }
-GLAPI void APIENTRY stub_glTexCoord4hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glTexCoord4hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1hNV (GLenum, GLhalfNV) {
+GLAPI void APIENTRY stub_glMultiTexCoord1hNV (GLenum target, GLhalfNV s) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord1hvNV (GLenum, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glMultiTexCoord1hvNV (GLenum target, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2hNV (GLenum, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glMultiTexCoord2hNV (GLenum target, GLhalfNV s, GLhalfNV t) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord2hvNV (GLenum, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glMultiTexCoord2hvNV (GLenum target, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3hNV (GLenum, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glMultiTexCoord3hNV (GLenum target, GLhalfNV s, GLhalfNV t, GLhalfNV r) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord3hvNV (GLenum, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glMultiTexCoord3hvNV (GLenum target, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4hNV (GLenum, GLhalfNV, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glMultiTexCoord4hNV (GLenum target, GLhalfNV s, GLhalfNV t, GLhalfNV r, GLhalfNV q) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoord4hvNV (GLenum, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glMultiTexCoord4hvNV (GLenum target, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glFogCoordhNV (GLhalfNV) {
+GLAPI void APIENTRY stub_glFogCoordhNV (GLhalfNV fog) {
 }
-GLAPI void APIENTRY stub_glFogCoordhvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glFogCoordhvNV (const GLhalfNV *fog) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3hNV (GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glSecondaryColor3hNV (GLhalfNV red, GLhalfNV green, GLhalfNV blue) {
 }
-GLAPI void APIENTRY stub_glSecondaryColor3hvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glSecondaryColor3hvNV (const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexWeighthNV (GLhalfNV) {
+GLAPI void APIENTRY stub_glVertexWeighthNV (GLhalfNV weight) {
 }
-GLAPI void APIENTRY stub_glVertexWeighthvNV (const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexWeighthvNV (const GLhalfNV *weight) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1hNV (GLuint, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertexAttrib1hNV (GLuint index, GLhalfNV x) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib1hvNV (GLuint, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttrib1hvNV (GLuint index, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2hNV (GLuint, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertexAttrib2hNV (GLuint index, GLhalfNV x, GLhalfNV y) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib2hvNV (GLuint, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttrib2hvNV (GLuint index, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3hNV (GLuint, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertexAttrib3hNV (GLuint index, GLhalfNV x, GLhalfNV y, GLhalfNV z) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib3hvNV (GLuint, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttrib3hvNV (GLuint index, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4hNV (GLuint, GLhalfNV, GLhalfNV, GLhalfNV, GLhalfNV) {
+GLAPI void APIENTRY stub_glVertexAttrib4hNV (GLuint index, GLhalfNV x, GLhalfNV y, GLhalfNV z, GLhalfNV w) {
 }
-GLAPI void APIENTRY stub_glVertexAttrib4hvNV (GLuint, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttrib4hvNV (GLuint index, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs1hvNV (GLuint, GLsizei, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttribs1hvNV (GLuint index, GLsizei n, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs2hvNV (GLuint, GLsizei, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttribs2hvNV (GLuint index, GLsizei n, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs3hvNV (GLuint, GLsizei, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttribs3hvNV (GLuint index, GLsizei n, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribs4hvNV (GLuint, GLsizei, const GLhalfNV *) {
+GLAPI void APIENTRY stub_glVertexAttribs4hvNV (GLuint index, GLsizei n, const GLhalfNV *v) {
 }
-GLAPI void APIENTRY stub_glPixelDataRangeNV (GLenum, GLsizei, GLvoid *) {
+GLAPI void APIENTRY stub_glPixelDataRangeNV (GLenum target, GLsizei length, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glFlushPixelDataRangeNV (GLenum) {
+GLAPI void APIENTRY stub_glFlushPixelDataRangeNV (GLenum target) {
 }
 GLAPI void APIENTRY stub_glPrimitiveRestartNV (void) {
 }
-GLAPI void APIENTRY stub_glPrimitiveRestartIndexNV (GLuint) {
+GLAPI void APIENTRY stub_glPrimitiveRestartIndexNV (GLuint index) {
 }
-GLAPI GLvoid* APIENTRY stub_glMapObjectBufferATI (GLuint) {
+GLAPI GLvoid* APIENTRY stub_glMapObjectBufferATI (GLuint buffer) {
 	return (GLvoid*)0;
 }
-GLAPI void APIENTRY stub_glUnmapObjectBufferATI (GLuint) {
+GLAPI void APIENTRY stub_glUnmapObjectBufferATI (GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glStencilOpSeparateATI (GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glStencilOpSeparateATI (GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass) {
 }
-GLAPI void APIENTRY stub_glStencilFuncSeparateATI (GLenum, GLenum, GLint, GLuint) {
+GLAPI void APIENTRY stub_glStencilFuncSeparateATI (GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask) {
 }
-GLAPI void APIENTRY stub_glVertexAttribArrayObjectATI (GLuint, GLint, GLenum, GLboolean, GLsizei, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribArrayObjectATI (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLuint buffer, GLuint offset) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribArrayObjectfvATI (GLuint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetVertexAttribArrayObjectfvATI (GLuint index, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribArrayObjectivATI (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribArrayObjectivATI (GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glDepthBoundsEXT (GLclampd, GLclampd) {
+GLAPI void APIENTRY stub_glDepthBoundsEXT (GLclampd zmin, GLclampd zmax) {
 }
-GLAPI void APIENTRY stub_glBlendEquationSeparateEXT (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationSeparateEXT (GLenum modeRGB, GLenum modeAlpha) {
 }
-GLAPI GLboolean APIENTRY stub_glIsRenderbufferEXT (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsRenderbufferEXT (GLuint renderbuffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindRenderbufferEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindRenderbufferEXT (GLenum target, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glDeleteRenderbuffersEXT (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteRenderbuffersEXT (GLsizei n, const GLuint *renderbuffers) {
 }
-GLAPI void APIENTRY stub_glGenRenderbuffersEXT (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenRenderbuffersEXT (GLsizei n, GLuint *renderbuffers) {
 }
-GLAPI void APIENTRY stub_glRenderbufferStorageEXT (GLenum, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glRenderbufferStorageEXT (GLenum target, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetRenderbufferParameterivEXT (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetRenderbufferParameterivEXT (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI GLboolean APIENTRY stub_glIsFramebufferEXT (GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsFramebufferEXT (GLuint framebuffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBindFramebufferEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindFramebufferEXT (GLenum target, GLuint framebuffer) {
 }
-GLAPI void APIENTRY stub_glDeleteFramebuffersEXT (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glDeleteFramebuffersEXT (GLsizei n, const GLuint *framebuffers) {
 }
-GLAPI void APIENTRY stub_glGenFramebuffersEXT (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenFramebuffersEXT (GLsizei n, GLuint *framebuffers) {
 }
-GLAPI GLenum APIENTRY stub_glCheckFramebufferStatusEXT (GLenum) {
+GLAPI GLenum APIENTRY stub_glCheckFramebufferStatusEXT (GLenum target) {
 	return (GLenum)0;
 }
-GLAPI void APIENTRY stub_glFramebufferTexture1DEXT (GLenum, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture1DEXT (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTexture2DEXT (GLenum, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture2DEXT (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTexture3DEXT (GLenum, GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTexture3DEXT (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset) {
 }
-GLAPI void APIENTRY stub_glFramebufferRenderbufferEXT (GLenum, GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glFramebufferRenderbufferEXT (GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glGetFramebufferAttachmentParameterivEXT (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFramebufferAttachmentParameterivEXT (GLenum target, GLenum attachment, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGenerateMipmapEXT (GLenum) {
+GLAPI void APIENTRY stub_glGenerateMipmapEXT (GLenum target) {
 }
-GLAPI void APIENTRY stub_glStringMarkerGREMEDY (GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glStringMarkerGREMEDY (GLsizei len, const GLvoid *string) {
 }
-GLAPI void APIENTRY stub_glStencilClearTagEXT (GLsizei, GLuint) {
+GLAPI void APIENTRY stub_glStencilClearTagEXT (GLsizei stencilTagBits, GLuint stencilClearTag) {
 }
-GLAPI void APIENTRY stub_glBlitFramebufferEXT (GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLint, GLbitfield, GLenum) {
+GLAPI void APIENTRY stub_glBlitFramebufferEXT (GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter) {
 }
-GLAPI void APIENTRY stub_glRenderbufferStorageMultisampleEXT (GLenum, GLsizei, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glRenderbufferStorageMultisampleEXT (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjecti64vEXT (GLuint, GLenum, GLint64EXT *) {
+GLAPI void APIENTRY stub_glGetQueryObjecti64vEXT (GLuint id, GLenum pname, GLint64EXT *params) {
 }
-GLAPI void APIENTRY stub_glGetQueryObjectui64vEXT (GLuint, GLenum, GLuint64EXT *) {
+GLAPI void APIENTRY stub_glGetQueryObjectui64vEXT (GLuint id, GLenum pname, GLuint64EXT *params) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameters4fvEXT (GLenum, GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramEnvParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameters4fvEXT (GLenum, GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramLocalParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glBufferParameteriAPPLE (GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glBufferParameteriAPPLE (GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glFlushMappedBufferRangeAPPLE (GLenum, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glFlushMappedBufferRangeAPPLE (GLenum target, GLintptr offset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameterI4iNV (GLenum, GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramLocalParameterI4iNV (GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameterI4ivNV (GLenum, GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glProgramLocalParameterI4ivNV (GLenum target, GLuint index, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParametersI4ivNV (GLenum, GLuint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramLocalParametersI4ivNV (GLenum target, GLuint index, GLsizei count, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameterI4uiNV (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glProgramLocalParameterI4uiNV (GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParameterI4uivNV (GLenum, GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramLocalParameterI4uivNV (GLenum target, GLuint index, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glProgramLocalParametersI4uivNV (GLenum, GLuint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramLocalParametersI4uivNV (GLenum target, GLuint index, GLsizei count, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameterI4iNV (GLenum, GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramEnvParameterI4iNV (GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameterI4ivNV (GLenum, GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glProgramEnvParameterI4ivNV (GLenum target, GLuint index, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParametersI4ivNV (GLenum, GLuint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramEnvParametersI4ivNV (GLenum target, GLuint index, GLsizei count, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameterI4uiNV (GLenum, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glProgramEnvParameterI4uiNV (GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParameterI4uivNV (GLenum, GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramEnvParameterI4uivNV (GLenum target, GLuint index, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glProgramEnvParametersI4uivNV (GLenum, GLuint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramEnvParametersI4uivNV (GLenum target, GLuint index, GLsizei count, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramLocalParameterIivNV (GLenum, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramLocalParameterIivNV (GLenum target, GLuint index, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramLocalParameterIuivNV (GLenum, GLuint, GLuint *) {
+GLAPI void APIENTRY stub_glGetProgramLocalParameterIuivNV (GLenum target, GLuint index, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramEnvParameterIivNV (GLenum, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetProgramEnvParameterIivNV (GLenum target, GLuint index, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetProgramEnvParameterIuivNV (GLenum, GLuint, GLuint *) {
+GLAPI void APIENTRY stub_glGetProgramEnvParameterIuivNV (GLenum target, GLuint index, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glProgramVertexLimitNV (GLenum, GLint) {
+GLAPI void APIENTRY stub_glProgramVertexLimitNV (GLenum target, GLint limit) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureEXT (GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTextureEXT (GLenum target, GLenum attachment, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureLayerEXT (GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glFramebufferTextureLayerEXT (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer) {
 }
-GLAPI void APIENTRY stub_glFramebufferTextureFaceEXT (GLenum, GLenum, GLuint, GLint, GLenum) {
+GLAPI void APIENTRY stub_glFramebufferTextureFaceEXT (GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face) {
 }
-GLAPI void APIENTRY stub_glProgramParameteriEXT (GLuint, GLenum, GLint) {
+GLAPI void APIENTRY stub_glProgramParameteriEXT (GLuint program, GLenum pname, GLint value) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1iEXT (GLuint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI1iEXT (GLuint index, GLint x) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2iEXT (GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI2iEXT (GLuint index, GLint x, GLint y) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3iEXT (GLuint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI3iEXT (GLuint index, GLint x, GLint y, GLint z) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4iEXT (GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glVertexAttribI4iEXT (GLuint index, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1uiEXT (GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI1uiEXT (GLuint index, GLuint x) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2uiEXT (GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI2uiEXT (GLuint index, GLuint x, GLuint y) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3uiEXT (GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI3uiEXT (GLuint index, GLuint x, GLuint y, GLuint z) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4uiEXT (GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glVertexAttribI4uiEXT (GLuint index, GLuint x, GLuint y, GLuint z, GLuint w) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1ivEXT (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI1ivEXT (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2ivEXT (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI2ivEXT (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3ivEXT (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI3ivEXT (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4ivEXT (GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glVertexAttribI4ivEXT (GLuint index, const GLint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI1uivEXT (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI1uivEXT (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI2uivEXT (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI2uivEXT (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI3uivEXT (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI3uivEXT (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4uivEXT (GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glVertexAttribI4uivEXT (GLuint index, const GLuint *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4bvEXT (GLuint, const GLbyte *) {
+GLAPI void APIENTRY stub_glVertexAttribI4bvEXT (GLuint index, const GLbyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4svEXT (GLuint, const GLshort *) {
+GLAPI void APIENTRY stub_glVertexAttribI4svEXT (GLuint index, const GLshort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4ubvEXT (GLuint, const GLubyte *) {
+GLAPI void APIENTRY stub_glVertexAttribI4ubvEXT (GLuint index, const GLubyte *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribI4usvEXT (GLuint, const GLushort *) {
+GLAPI void APIENTRY stub_glVertexAttribI4usvEXT (GLuint index, const GLushort *v) {
 }
-GLAPI void APIENTRY stub_glVertexAttribIPointerEXT (GLuint, GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glVertexAttribIPointerEXT (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribIivEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribIivEXT (GLuint index, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVertexAttribIuivEXT (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetVertexAttribIuivEXT (GLuint index, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetUniformuivEXT (GLuint, GLint, GLuint *) {
+GLAPI void APIENTRY stub_glGetUniformuivEXT (GLuint program, GLint location, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glBindFragDataLocationEXT (GLuint, GLuint, const GLchar *) {
+GLAPI void APIENTRY stub_glBindFragDataLocationEXT (GLuint program, GLuint color, const GLchar *name) {
 }
-GLAPI GLint APIENTRY stub_glGetFragDataLocationEXT (GLuint, const GLchar *) {
+GLAPI GLint APIENTRY stub_glGetFragDataLocationEXT (GLuint program, const GLchar *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glUniform1uiEXT (GLint, GLuint) {
+GLAPI void APIENTRY stub_glUniform1uiEXT (GLint location, GLuint v0) {
 }
-GLAPI void APIENTRY stub_glUniform2uiEXT (GLint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform2uiEXT (GLint location, GLuint v0, GLuint v1) {
 }
-GLAPI void APIENTRY stub_glUniform3uiEXT (GLint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform3uiEXT (GLint location, GLuint v0, GLuint v1, GLuint v2) {
 }
-GLAPI void APIENTRY stub_glUniform4uiEXT (GLint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glUniform4uiEXT (GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3) {
 }
-GLAPI void APIENTRY stub_glUniform1uivEXT (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform1uivEXT (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform2uivEXT (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform2uivEXT (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform3uivEXT (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform3uivEXT (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glUniform4uivEXT (GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glUniform4uivEXT (GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glDrawArraysInstancedEXT (GLenum, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glDrawArraysInstancedEXT (GLenum mode, GLint start, GLsizei count, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glDrawElementsInstancedEXT (GLenum, GLsizei, GLenum, const GLvoid *, GLsizei) {
+GLAPI void APIENTRY stub_glDrawElementsInstancedEXT (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei primcount) {
 }
-GLAPI void APIENTRY stub_glTexBufferEXT (GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glTexBufferEXT (GLenum target, GLenum internalformat, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glDepthRangedNV (GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glDepthRangedNV (GLdouble zNear, GLdouble zFar) {
 }
-GLAPI void APIENTRY stub_glClearDepthdNV (GLdouble) {
+GLAPI void APIENTRY stub_glClearDepthdNV (GLdouble depth) {
 }
-GLAPI void APIENTRY stub_glDepthBoundsdNV (GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glDepthBoundsdNV (GLdouble zmin, GLdouble zmax) {
 }
-GLAPI void APIENTRY stub_glRenderbufferStorageMultisampleCoverageNV (GLenum, GLsizei, GLsizei, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glRenderbufferStorageMultisampleCoverageNV (GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glProgramBufferParametersfvNV (GLenum, GLuint, GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramBufferParametersfvNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glProgramBufferParametersIivNV (GLenum, GLuint, GLuint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramBufferParametersIivNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glProgramBufferParametersIuivNV (GLenum, GLuint, GLuint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramBufferParametersIuivNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glColorMaskIndexedEXT (GLuint, GLboolean, GLboolean, GLboolean, GLboolean) {
+GLAPI void APIENTRY stub_glColorMaskIndexedEXT (GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a) {
 }
-GLAPI void APIENTRY stub_glGetBooleanIndexedvEXT (GLenum, GLuint, GLboolean *) {
+GLAPI void APIENTRY stub_glGetBooleanIndexedvEXT (GLenum target, GLuint index, GLboolean *data) {
 }
-GLAPI void APIENTRY stub_glGetIntegerIndexedvEXT (GLenum, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetIntegerIndexedvEXT (GLenum target, GLuint index, GLint *data) {
 }
-GLAPI void APIENTRY stub_glEnableIndexedEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glEnableIndexedEXT (GLenum target, GLuint index) {
 }
-GLAPI void APIENTRY stub_glDisableIndexedEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glDisableIndexedEXT (GLenum target, GLuint index) {
 }
-GLAPI GLboolean APIENTRY stub_glIsEnabledIndexedEXT (GLenum, GLuint) {
+GLAPI GLboolean APIENTRY stub_glIsEnabledIndexedEXT (GLenum target, GLuint index) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glBeginTransformFeedbackNV (GLenum) {
+GLAPI void APIENTRY stub_glBeginTransformFeedbackNV (GLenum primitiveMode) {
 }
 GLAPI void APIENTRY stub_glEndTransformFeedbackNV (void) {
 }
-GLAPI void APIENTRY stub_glTransformFeedbackAttribsNV (GLuint, const GLint *, GLenum) {
+GLAPI void APIENTRY stub_glTransformFeedbackAttribsNV (GLuint count, const GLint *attribs, GLenum bufferMode) {
 }
-GLAPI void APIENTRY stub_glBindBufferRangeNV (GLenum, GLuint, GLuint, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glBindBufferRangeNV (GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glBindBufferOffsetNV (GLenum, GLuint, GLuint, GLintptr) {
+GLAPI void APIENTRY stub_glBindBufferOffsetNV (GLenum target, GLuint index, GLuint buffer, GLintptr offset) {
 }
-GLAPI void APIENTRY stub_glBindBufferBaseNV (GLenum, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glBindBufferBaseNV (GLenum target, GLuint index, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glTransformFeedbackVaryingsNV (GLuint, GLsizei, const GLchar* *, GLenum) {
+GLAPI void APIENTRY stub_glTransformFeedbackVaryingsNV (GLuint program, GLsizei count, const GLint *locations, GLenum bufferMode) {
 }
-GLAPI void APIENTRY stub_glActiveVaryingNV (GLuint, const GLchar *) {
+GLAPI void APIENTRY stub_glActiveVaryingNV (GLuint program, const GLchar *name) {
 }
-GLAPI GLint APIENTRY stub_glGetVaryingLocationNV (GLuint, const GLchar *) {
+GLAPI GLint APIENTRY stub_glGetVaryingLocationNV (GLuint program, const GLchar *name) {
 	return (GLint)0;
 }
-GLAPI void APIENTRY stub_glGetActiveVaryingNV (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *) {
+GLAPI void APIENTRY stub_glGetActiveVaryingNV (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name) {
 }
-GLAPI void APIENTRY stub_glGetTransformFeedbackVaryingNV (GLuint, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetTransformFeedbackVaryingNV (GLuint program, GLuint index, GLint *location) {
 }
-GLAPI void APIENTRY stub_glUniformBufferEXT (GLuint, GLint, GLuint) {
+GLAPI void APIENTRY stub_glTransformFeedbackStreamAttribsNV (GLsizei count, const GLint *attribs, GLsizei nbuffers, const GLint *bufstreams, GLenum bufferMode) {
 }
-GLAPI GLint APIENTRY stub_glGetUniformBufferSizeEXT (GLuint, GLint) {
+GLAPI void APIENTRY stub_glUniformBufferEXT (GLuint program, GLint location, GLuint buffer) {
+}
+GLAPI GLint APIENTRY stub_glGetUniformBufferSizeEXT (GLuint program, GLint location) {
 	return (GLint)0;
 }
-GLAPI GLintptr APIENTRY stub_glGetUniformOffsetEXT (GLuint, GLint) {
+GLAPI GLintptr APIENTRY stub_glGetUniformOffsetEXT (GLuint program, GLint location) {
 	return (GLintptr)0;
 }
-GLAPI void APIENTRY stub_glTexParameterIivEXT (GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTexParameterIivEXT (GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glTexParameterIuivEXT (GLenum, GLenum, const GLuint *) {
+GLAPI void APIENTRY stub_glTexParameterIuivEXT (GLenum target, GLenum pname, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetTexParameterIivEXT (GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTexParameterIivEXT (GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetTexParameterIuivEXT (GLenum, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetTexParameterIuivEXT (GLenum target, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glClearColorIiEXT (GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glClearColorIiEXT (GLint red, GLint green, GLint blue, GLint alpha) {
 }
-GLAPI void APIENTRY stub_glClearColorIuiEXT (GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glClearColorIuiEXT (GLuint red, GLuint green, GLuint blue, GLuint alpha) {
 }
 GLAPI void APIENTRY stub_glFrameTerminatorGREMEDY (void) {
 }
-GLAPI void APIENTRY stub_glBeginConditionalRenderNV (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glBeginConditionalRenderNV (GLuint id, GLenum mode) {
 }
 GLAPI void APIENTRY stub_glEndConditionalRenderNV (void) {
 }
-GLAPI void APIENTRY stub_glPresentFrameKeyedNV (GLuint, GLuint64EXT, GLuint, GLuint, GLenum, GLenum, GLuint, GLuint, GLenum, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glPresentFrameKeyedNV (GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLuint key0, GLenum target1, GLuint fill1, GLuint key1) {
 }
-GLAPI void APIENTRY stub_glPresentFrameDualFillNV (GLuint, GLuint64EXT, GLuint, GLuint, GLenum, GLenum, GLuint, GLenum, GLuint, GLenum, GLuint, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glPresentFrameDualFillNV (GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLenum target1, GLuint fill1, GLenum target2, GLuint fill2, GLenum target3, GLuint fill3) {
 }
-GLAPI void APIENTRY stub_glGetVideoivNV (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetVideoivNV (GLuint video_slot, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetVideouivNV (GLuint, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetVideouivNV (GLuint video_slot, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetVideoi64vNV (GLuint, GLenum, GLint64EXT *) {
+GLAPI void APIENTRY stub_glGetVideoi64vNV (GLuint video_slot, GLenum pname, GLint64EXT *params) {
 }
-GLAPI void APIENTRY stub_glGetVideoui64vNV (GLuint, GLenum, GLuint64EXT *) {
+GLAPI void APIENTRY stub_glGetVideoui64vNV (GLuint video_slot, GLenum pname, GLuint64EXT *params) {
 }
-GLAPI void APIENTRY stub_glBeginTransformFeedbackEXT (GLenum) {
+GLAPI void APIENTRY stub_glBeginTransformFeedbackEXT (GLenum primitiveMode) {
 }
 GLAPI void APIENTRY stub_glEndTransformFeedbackEXT (void) {
 }
-GLAPI void APIENTRY stub_glBindBufferRangeEXT (GLenum, GLuint, GLuint, GLintptr, GLsizeiptr) {
+GLAPI void APIENTRY stub_glBindBufferRangeEXT (GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glBindBufferOffsetEXT (GLenum, GLuint, GLuint, GLintptr) {
+GLAPI void APIENTRY stub_glBindBufferOffsetEXT (GLenum target, GLuint index, GLuint buffer, GLintptr offset) {
 }
-GLAPI void APIENTRY stub_glBindBufferBaseEXT (GLenum, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glBindBufferBaseEXT (GLenum target, GLuint index, GLuint buffer) {
 }
-GLAPI void APIENTRY stub_glTransformFeedbackVaryingsEXT (GLuint, GLsizei, const GLchar* *, GLenum) {
+GLAPI void APIENTRY stub_glTransformFeedbackVaryingsEXT (GLuint program, GLsizei count, const GLchar* *varyings, GLenum bufferMode) {
 }
-GLAPI void APIENTRY stub_glGetTransformFeedbackVaryingEXT (GLuint, GLuint, GLsizei, GLsizei *, GLsizei *, GLenum *, GLchar *) {
+GLAPI void APIENTRY stub_glGetTransformFeedbackVaryingEXT (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name) {
 }
-GLAPI void APIENTRY stub_glClientAttribDefaultEXT (GLbitfield) {
+GLAPI void APIENTRY stub_glClientAttribDefaultEXT (GLbitfield mask) {
 }
-GLAPI void APIENTRY stub_glPushClientAttribDefaultEXT (GLbitfield) {
+GLAPI void APIENTRY stub_glPushClientAttribDefaultEXT (GLbitfield mask) {
 }
-GLAPI void APIENTRY stub_glMatrixLoadfEXT (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMatrixLoadfEXT (GLenum mode, const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glMatrixLoaddEXT (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMatrixLoaddEXT (GLenum mode, const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glMatrixMultfEXT (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMatrixMultfEXT (GLenum mode, const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glMatrixMultdEXT (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMatrixMultdEXT (GLenum mode, const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glMatrixLoadIdentityEXT (GLenum) {
+GLAPI void APIENTRY stub_glMatrixLoadIdentityEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glMatrixRotatefEXT (GLenum, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMatrixRotatefEXT (GLenum mode, GLfloat angle, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glMatrixRotatedEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixRotatedEXT (GLenum mode, GLdouble angle, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glMatrixScalefEXT (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMatrixScalefEXT (GLenum mode, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glMatrixScaledEXT (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixScaledEXT (GLenum mode, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glMatrixTranslatefEXT (GLenum, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glMatrixTranslatefEXT (GLenum mode, GLfloat x, GLfloat y, GLfloat z) {
 }
-GLAPI void APIENTRY stub_glMatrixTranslatedEXT (GLenum, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixTranslatedEXT (GLenum mode, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glMatrixFrustumEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixFrustumEXT (GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar) {
 }
-GLAPI void APIENTRY stub_glMatrixOrthoEXT (GLenum, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glMatrixOrthoEXT (GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar) {
 }
-GLAPI void APIENTRY stub_glMatrixPopEXT (GLenum) {
+GLAPI void APIENTRY stub_glMatrixPopEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glMatrixPushEXT (GLenum) {
+GLAPI void APIENTRY stub_glMatrixPushEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glMatrixLoadTransposefEXT (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMatrixLoadTransposefEXT (GLenum mode, const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glMatrixLoadTransposedEXT (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMatrixLoadTransposedEXT (GLenum mode, const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glMatrixMultTransposefEXT (GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMatrixMultTransposefEXT (GLenum mode, const GLfloat *m) {
 }
-GLAPI void APIENTRY stub_glMatrixMultTransposedEXT (GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMatrixMultTransposedEXT (GLenum mode, const GLdouble *m) {
 }
-GLAPI void APIENTRY stub_glTextureParameterfEXT (GLuint, GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glTextureParameterfEXT (GLuint texture, GLenum target, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glTextureParameterfvEXT (GLuint, GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glTextureParameterfvEXT (GLuint texture, GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glTextureParameteriEXT (GLuint, GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glTextureParameteriEXT (GLuint texture, GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glTextureParameterivEXT (GLuint, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTextureParameterivEXT (GLuint texture, GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureImage1DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureImage2DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureSubImage1DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureSubImage2DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glCopyTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glCopyTextureImage1DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border) {
 }
-GLAPI void APIENTRY stub_glCopyTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glCopyTextureImage2DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border) {
 }
-GLAPI void APIENTRY stub_glCopyTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyTextureSubImage1DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glCopyTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyTextureSubImage2DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetTextureImageEXT (GLuint, GLenum, GLint, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetTextureImageEXT (GLuint texture, GLenum target, GLint level, GLenum format, GLenum type, GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glGetTextureParameterfvEXT (GLuint, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetTextureParameterfvEXT (GLuint texture, GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetTextureParameterivEXT (GLuint, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTextureParameterivEXT (GLuint texture, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetTextureLevelParameterfvEXT (GLuint, GLenum, GLint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetTextureLevelParameterfvEXT (GLuint texture, GLenum target, GLint level, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetTextureLevelParameterivEXT (GLuint, GLenum, GLint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTextureLevelParameterivEXT (GLuint texture, GLenum target, GLint level, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glTextureImage3DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureImage3DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureSubImage3DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glCopyTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyTextureSubImage3DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameterfEXT (GLenum, GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexParameterfEXT (GLenum texunit, GLenum target, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameterfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexParameterfvEXT (GLenum texunit, GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameteriEXT (GLenum, GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glMultiTexParameteriEXT (GLenum texunit, GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameterivEXT (GLenum, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexParameterivEXT (GLenum texunit, GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexImage1DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexImage2DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexSubImage1DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexSubImage2DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glCopyMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glCopyMultiTexImage1DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border) {
 }
-GLAPI void APIENTRY stub_glCopyMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLint, GLint, GLsizei, GLsizei, GLint) {
+GLAPI void APIENTRY stub_glCopyMultiTexImage2DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border) {
 }
-GLAPI void APIENTRY stub_glCopyMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei) {
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage1DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width) {
 }
-GLAPI void APIENTRY stub_glCopyMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage2DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexImageEXT (GLenum, GLenum, GLint, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetMultiTexImageEXT (GLenum texunit, GLenum target, GLint level, GLenum format, GLenum type, GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexParameterfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMultiTexParameterfvEXT (GLenum texunit, GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexParameterivEXT (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMultiTexParameterivEXT (GLenum texunit, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexLevelParameterfvEXT (GLenum, GLenum, GLint, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMultiTexLevelParameterfvEXT (GLenum texunit, GLenum target, GLint level, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexLevelParameterivEXT (GLenum, GLenum, GLint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMultiTexLevelParameterivEXT (GLenum texunit, GLenum target, GLint level, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexImage3DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexImage3DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLenum, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexSubImage3DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels) {
 }
-GLAPI void APIENTRY stub_glCopyMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLint, GLint, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glCopyMultiTexSubImage3DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glBindMultiTextureEXT (GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glBindMultiTextureEXT (GLenum texunit, GLenum target, GLuint texture) {
 }
-GLAPI void APIENTRY stub_glEnableClientStateIndexedEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glEnableClientStateIndexedEXT (GLenum array, GLuint index) {
 }
-GLAPI void APIENTRY stub_glDisableClientStateIndexedEXT (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glDisableClientStateIndexedEXT (GLenum array, GLuint index) {
 }
-GLAPI void APIENTRY stub_glMultiTexCoordPointerEXT (GLenum, GLint, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glMultiTexCoordPointerEXT (GLenum texunit, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glMultiTexEnvfEXT (GLenum, GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexEnvfEXT (GLenum texunit, GLenum target, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glMultiTexEnvfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexEnvfvEXT (GLenum texunit, GLenum target, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexEnviEXT (GLenum, GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glMultiTexEnviEXT (GLenum texunit, GLenum target, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glMultiTexEnvivEXT (GLenum, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexEnvivEXT (GLenum texunit, GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexGendEXT (GLenum, GLenum, GLenum, GLdouble) {
+GLAPI void APIENTRY stub_glMultiTexGendEXT (GLenum texunit, GLenum coord, GLenum pname, GLdouble param) {
 }
-GLAPI void APIENTRY stub_glMultiTexGendvEXT (GLenum, GLenum, GLenum, const GLdouble *) {
+GLAPI void APIENTRY stub_glMultiTexGendvEXT (GLenum texunit, GLenum coord, GLenum pname, const GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexGenfEXT (GLenum, GLenum, GLenum, GLfloat) {
+GLAPI void APIENTRY stub_glMultiTexGenfEXT (GLenum texunit, GLenum coord, GLenum pname, GLfloat param) {
 }
-GLAPI void APIENTRY stub_glMultiTexGenfvEXT (GLenum, GLenum, GLenum, const GLfloat *) {
+GLAPI void APIENTRY stub_glMultiTexGenfvEXT (GLenum texunit, GLenum coord, GLenum pname, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexGeniEXT (GLenum, GLenum, GLenum, GLint) {
+GLAPI void APIENTRY stub_glMultiTexGeniEXT (GLenum texunit, GLenum coord, GLenum pname, GLint param) {
 }
-GLAPI void APIENTRY stub_glMultiTexGenivEXT (GLenum, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexGenivEXT (GLenum texunit, GLenum coord, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexEnvfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMultiTexEnvfvEXT (GLenum texunit, GLenum target, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexEnvivEXT (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMultiTexEnvivEXT (GLenum texunit, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexGendvEXT (GLenum, GLenum, GLenum, GLdouble *) {
+GLAPI void APIENTRY stub_glGetMultiTexGendvEXT (GLenum texunit, GLenum coord, GLenum pname, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexGenfvEXT (GLenum, GLenum, GLenum, GLfloat *) {
+GLAPI void APIENTRY stub_glGetMultiTexGenfvEXT (GLenum texunit, GLenum coord, GLenum pname, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexGenivEXT (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMultiTexGenivEXT (GLenum texunit, GLenum coord, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetFloatIndexedvEXT (GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glGetFloatIndexedvEXT (GLenum target, GLuint index, GLfloat *data) {
 }
-GLAPI void APIENTRY stub_glGetDoubleIndexedvEXT (GLenum, GLuint, GLdouble *) {
+GLAPI void APIENTRY stub_glGetDoubleIndexedvEXT (GLenum target, GLuint index, GLdouble *data) {
 }
-GLAPI void APIENTRY stub_glGetPointerIndexedvEXT (GLenum, GLuint, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetPointerIndexedvEXT (GLenum target, GLuint index, GLvoid* *data) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureImage3DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureImage3DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureImage2DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureImage2DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureImage1DEXT (GLuint, GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureImage1DEXT (GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureSubImage3DEXT (GLuint, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureSubImage3DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureSubImage2DEXT (GLuint, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureSubImage2DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedTextureSubImage1DEXT (GLuint, GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedTextureSubImage1DEXT (GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glGetCompressedTextureImageEXT (GLuint, GLenum, GLint, GLvoid *) {
+GLAPI void APIENTRY stub_glGetCompressedTextureImageEXT (GLuint texture, GLenum target, GLint lod, GLvoid *img) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexImage3DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexImage3DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexImage2DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexImage2DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexImage1DEXT (GLenum, GLenum, GLint, GLenum, GLsizei, GLint, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexImage1DEXT (GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexSubImage3DEXT (GLenum, GLenum, GLint, GLint, GLint, GLint, GLsizei, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage3DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexSubImage2DEXT (GLenum, GLenum, GLint, GLint, GLint, GLsizei, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage2DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glCompressedMultiTexSubImage1DEXT (GLenum, GLenum, GLint, GLint, GLsizei, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glCompressedMultiTexSubImage1DEXT (GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *bits) {
 }
-GLAPI void APIENTRY stub_glGetCompressedMultiTexImageEXT (GLenum, GLenum, GLint, GLvoid *) {
+GLAPI void APIENTRY stub_glGetCompressedMultiTexImageEXT (GLenum texunit, GLenum target, GLint lod, GLvoid *img) {
 }
-GLAPI void APIENTRY stub_glNamedProgramStringEXT (GLuint, GLenum, GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glNamedProgramStringEXT (GLuint program, GLenum target, GLenum format, GLsizei len, const GLvoid *string) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dEXT (GLuint, GLenum, GLuint, GLdouble, GLdouble, GLdouble, GLdouble) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dEXT (GLuint program, GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dvEXT (GLuint, GLenum, GLuint, const GLdouble *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4dvEXT (GLuint program, GLenum target, GLuint index, const GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fEXT (GLuint, GLenum, GLuint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fEXT (GLuint program, GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fvEXT (GLuint, GLenum, GLuint, const GLfloat *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameter4fvEXT (GLuint program, GLenum target, GLuint index, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterdvEXT (GLuint, GLenum, GLuint, GLdouble *) {
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterdvEXT (GLuint program, GLenum target, GLuint index, GLdouble *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterfvEXT (GLuint, GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterfvEXT (GLuint program, GLenum target, GLuint index, GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramivEXT (GLuint, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetNamedProgramivEXT (GLuint program, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramStringEXT (GLuint, GLenum, GLenum, GLvoid *) {
+GLAPI void APIENTRY stub_glGetNamedProgramStringEXT (GLuint program, GLenum target, GLenum pname, GLvoid *string) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameters4fvEXT (GLuint, GLenum, GLuint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameters4fvEXT (GLuint program, GLenum target, GLuint index, GLsizei count, const GLfloat *params) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4iEXT (GLuint, GLenum, GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4iEXT (GLuint program, GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4ivEXT (GLuint, GLenum, GLuint, const GLint *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4ivEXT (GLuint program, GLenum target, GLuint index, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4ivEXT (GLuint, GLenum, GLuint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4ivEXT (GLuint program, GLenum target, GLuint index, GLsizei count, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uiEXT (GLuint, GLenum, GLuint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uiEXT (GLuint program, GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uivEXT (GLuint, GLenum, GLuint, const GLuint *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParameterI4uivEXT (GLuint program, GLenum target, GLuint index, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4uivEXT (GLuint, GLenum, GLuint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glNamedProgramLocalParametersI4uivEXT (GLuint program, GLenum target, GLuint index, GLsizei count, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIivEXT (GLuint, GLenum, GLuint, GLint *) {
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIivEXT (GLuint program, GLenum target, GLuint index, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIuivEXT (GLuint, GLenum, GLuint, GLuint *) {
+GLAPI void APIENTRY stub_glGetNamedProgramLocalParameterIuivEXT (GLuint program, GLenum target, GLuint index, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glTextureParameterIivEXT (GLuint, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glTextureParameterIivEXT (GLuint texture, GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glTextureParameterIuivEXT (GLuint, GLenum, GLenum, const GLuint *) {
+GLAPI void APIENTRY stub_glTextureParameterIuivEXT (GLuint texture, GLenum target, GLenum pname, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetTextureParameterIivEXT (GLuint, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetTextureParameterIivEXT (GLuint texture, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetTextureParameterIuivEXT (GLuint, GLenum, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetTextureParameterIuivEXT (GLuint texture, GLenum target, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameterIivEXT (GLenum, GLenum, GLenum, const GLint *) {
+GLAPI void APIENTRY stub_glMultiTexParameterIivEXT (GLenum texunit, GLenum target, GLenum pname, const GLint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexParameterIuivEXT (GLenum, GLenum, GLenum, const GLuint *) {
+GLAPI void APIENTRY stub_glMultiTexParameterIuivEXT (GLenum texunit, GLenum target, GLenum pname, const GLuint *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexParameterIivEXT (GLenum, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetMultiTexParameterIivEXT (GLenum texunit, GLenum target, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGetMultiTexParameterIuivEXT (GLenum, GLenum, GLenum, GLuint *) {
+GLAPI void APIENTRY stub_glGetMultiTexParameterIuivEXT (GLenum texunit, GLenum target, GLenum pname, GLuint *params) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1fEXT (GLuint, GLint, GLfloat) {
+GLAPI void APIENTRY stub_glProgramUniform1fEXT (GLuint program, GLint location, GLfloat v0) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2fEXT (GLuint, GLint, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramUniform2fEXT (GLuint program, GLint location, GLfloat v0, GLfloat v1) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3fEXT (GLuint, GLint, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramUniform3fEXT (GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4fEXT (GLuint, GLint, GLfloat, GLfloat, GLfloat, GLfloat) {
+GLAPI void APIENTRY stub_glProgramUniform4fEXT (GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1iEXT (GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramUniform1iEXT (GLuint program, GLint location, GLint v0) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2iEXT (GLuint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramUniform2iEXT (GLuint program, GLint location, GLint v0, GLint v1) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3iEXT (GLuint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramUniform3iEXT (GLuint program, GLint location, GLint v0, GLint v1, GLint v2) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4iEXT (GLuint, GLint, GLint, GLint, GLint, GLint) {
+GLAPI void APIENTRY stub_glProgramUniform4iEXT (GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniform1fvEXT (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniform2fvEXT (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniform3fvEXT (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4fvEXT (GLuint, GLint, GLsizei, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniform4fvEXT (GLuint program, GLint location, GLsizei count, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramUniform1ivEXT (GLuint program, GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramUniform2ivEXT (GLuint program, GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramUniform3ivEXT (GLuint program, GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4ivEXT (GLuint, GLint, GLsizei, const GLint *) {
+GLAPI void APIENTRY stub_glProgramUniform4ivEXT (GLuint program, GLint location, GLsizei count, const GLint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix2fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix3fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix4fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix2x3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x3fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix3x2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x2fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix2x4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x4fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix4x2fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x2fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix3x4fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x4fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniformMatrix4x3fvEXT (GLuint, GLint, GLsizei, GLboolean, const GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x3fvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1uiEXT (GLuint, GLint, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform1uiEXT (GLuint program, GLint location, GLuint v0) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2uiEXT (GLuint, GLint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform2uiEXT (GLuint program, GLint location, GLuint v0, GLuint v1) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3uiEXT (GLuint, GLint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform3uiEXT (GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4uiEXT (GLuint, GLint, GLuint, GLuint, GLuint, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform4uiEXT (GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3) {
 }
-GLAPI void APIENTRY stub_glProgramUniform1uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform1uivEXT (GLuint program, GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform2uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform2uivEXT (GLuint program, GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform3uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform3uivEXT (GLuint program, GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glProgramUniform4uivEXT (GLuint, GLint, GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform4uivEXT (GLuint program, GLint location, GLsizei count, const GLuint *value) {
 }
-GLAPI void APIENTRY stub_glNamedBufferDataEXT (GLuint, GLsizeiptr, const GLvoid *, GLenum) {
+GLAPI void APIENTRY stub_glNamedBufferDataEXT (GLuint buffer, GLsizeiptr size, const GLvoid *data, GLenum usage) {
 }
-GLAPI void APIENTRY stub_glNamedBufferSubDataEXT (GLuint, GLintptr, GLsizeiptr, const GLvoid *) {
+GLAPI void APIENTRY stub_glNamedBufferSubDataEXT (GLuint buffer, GLintptr offset, GLsizeiptr size, const GLvoid *data) {
 }
-GLAPI GLvoid* APIENTRY stub_glMapNamedBufferEXT (GLuint, GLenum) {
+GLAPI GLvoid* APIENTRY stub_glMapNamedBufferEXT (GLuint buffer, GLenum access) {
 	return (GLvoid*)0;
 }
-GLAPI GLboolean APIENTRY stub_glUnmapNamedBufferEXT (GLuint) {
+GLAPI GLboolean APIENTRY stub_glUnmapNamedBufferEXT (GLuint buffer) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glGetNamedBufferParameterivEXT (GLuint, GLenum, GLint *) {
+GLAPI GLvoid* APIENTRY stub_glMapNamedBufferRangeEXT (GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access) {
+	return (GLvoid*)0;
 }
-GLAPI void APIENTRY stub_glGetNamedBufferPointervEXT (GLuint, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glFlushMappedNamedBufferRangeEXT (GLuint buffer, GLintptr offset, GLsizeiptr length) {
 }
-GLAPI void APIENTRY stub_glGetNamedBufferSubDataEXT (GLuint, GLintptr, GLsizeiptr, GLvoid *) {
+GLAPI void APIENTRY stub_glNamedCopyBufferSubDataEXT (GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size) {
 }
-GLAPI void APIENTRY stub_glTextureBufferEXT (GLuint, GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glGetNamedBufferParameterivEXT (GLuint buffer, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glMultiTexBufferEXT (GLenum, GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glGetNamedBufferPointervEXT (GLuint buffer, GLenum pname, GLvoid* *params) {
 }
-GLAPI void APIENTRY stub_glNamedRenderbufferStorageEXT (GLuint, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glGetNamedBufferSubDataEXT (GLuint buffer, GLintptr offset, GLsizeiptr size, GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGetNamedRenderbufferParameterivEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glTextureBufferEXT (GLuint texture, GLenum target, GLenum internalformat, GLuint buffer) {
 }
-GLAPI GLenum APIENTRY stub_glCheckNamedFramebufferStatusEXT (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glMultiTexBufferEXT (GLenum texunit, GLenum target, GLenum internalformat, GLuint buffer) {
+}
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageEXT (GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height) {
+}
+GLAPI void APIENTRY stub_glGetNamedRenderbufferParameterivEXT (GLuint renderbuffer, GLenum pname, GLint *params) {
+}
+GLAPI GLenum APIENTRY stub_glCheckNamedFramebufferStatusEXT (GLuint framebuffer, GLenum target) {
 	return (GLenum)0;
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTexture1DEXT (GLuint, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glNamedFramebufferTexture1DEXT (GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTexture2DEXT (GLuint, GLenum, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glNamedFramebufferTexture2DEXT (GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTexture3DEXT (GLuint, GLenum, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glNamedFramebufferTexture3DEXT (GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferRenderbufferEXT (GLuint, GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glNamedFramebufferRenderbufferEXT (GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glGetNamedFramebufferAttachmentParameterivEXT (GLuint, GLenum, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetNamedFramebufferAttachmentParameterivEXT (GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glGenerateTextureMipmapEXT (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glGenerateTextureMipmapEXT (GLuint texture, GLenum target) {
 }
-GLAPI void APIENTRY stub_glGenerateMultiTexMipmapEXT (GLenum, GLenum) {
+GLAPI void APIENTRY stub_glGenerateMultiTexMipmapEXT (GLenum texunit, GLenum target) {
 }
-GLAPI void APIENTRY stub_glFramebufferDrawBufferEXT (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glFramebufferDrawBufferEXT (GLuint framebuffer, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glFramebufferDrawBuffersEXT (GLuint, GLsizei, const GLenum *) {
+GLAPI void APIENTRY stub_glFramebufferDrawBuffersEXT (GLuint framebuffer, GLsizei n, const GLenum *bufs) {
 }
-GLAPI void APIENTRY stub_glFramebufferReadBufferEXT (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glFramebufferReadBufferEXT (GLuint framebuffer, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glGetFramebufferParameterivEXT (GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetFramebufferParameterivEXT (GLuint framebuffer, GLenum pname, GLint *params) {
 }
-GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleEXT (GLuint, GLsizei, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleEXT (GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleCoverageEXT (GLuint, GLsizei, GLsizei, GLenum, GLsizei, GLsizei) {
+GLAPI void APIENTRY stub_glNamedRenderbufferStorageMultisampleCoverageEXT (GLuint renderbuffer, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTextureEXT (GLuint, GLenum, GLuint, GLint) {
+GLAPI void APIENTRY stub_glNamedFramebufferTextureEXT (GLuint framebuffer, GLenum attachment, GLuint texture, GLint level) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTextureLayerEXT (GLuint, GLenum, GLuint, GLint, GLint) {
+GLAPI void APIENTRY stub_glNamedFramebufferTextureLayerEXT (GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer) {
 }
-GLAPI void APIENTRY stub_glNamedFramebufferTextureFaceEXT (GLuint, GLenum, GLuint, GLint, GLenum) {
+GLAPI void APIENTRY stub_glNamedFramebufferTextureFaceEXT (GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLenum face) {
 }
-GLAPI void APIENTRY stub_glTextureRenderbufferEXT (GLuint, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glTextureRenderbufferEXT (GLuint texture, GLenum target, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glMultiTexRenderbufferEXT (GLenum, GLenum, GLuint) {
+GLAPI void APIENTRY stub_glMultiTexRenderbufferEXT (GLenum texunit, GLenum target, GLuint renderbuffer) {
 }
-GLAPI void APIENTRY stub_glGetMultisamplefvNV (GLenum, GLuint, GLfloat *) {
+GLAPI void APIENTRY stub_glProgramUniform1dEXT (GLuint program, GLint location, GLdouble x) {
 }
-GLAPI void APIENTRY stub_glSampleMaskIndexedNV (GLuint, GLbitfield) {
+GLAPI void APIENTRY stub_glProgramUniform2dEXT (GLuint program, GLint location, GLdouble x, GLdouble y) {
 }
-GLAPI void APIENTRY stub_glTexRenderbufferNV (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform3dEXT (GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z) {
 }
-GLAPI void APIENTRY stub_glBindTransformFeedbackNV (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform4dEXT (GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
-GLAPI void APIENTRY stub_glDeleteTransformFeedbacksNV (GLsizei, const GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform1dvEXT (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
 }
-GLAPI void APIENTRY stub_glGenTransformFeedbacksNV (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glProgramUniform2dvEXT (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
 }
-GLAPI GLboolean APIENTRY stub_glIsTransformFeedbackNV (GLuint) {
+GLAPI void APIENTRY stub_glProgramUniform3dvEXT (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4dvEXT (GLuint program, GLint location, GLsizei count, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x3dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix2x4dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x2dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix3x4dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x2dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformMatrix4x3dvEXT (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value) {
+}
+GLAPI void APIENTRY stub_glGetMultisamplefvNV (GLenum pname, GLuint index, GLfloat *val) {
+}
+GLAPI void APIENTRY stub_glSampleMaskIndexedNV (GLuint index, GLbitfield mask) {
+}
+GLAPI void APIENTRY stub_glTexRenderbufferNV (GLenum target, GLuint renderbuffer) {
+}
+GLAPI void APIENTRY stub_glBindTransformFeedbackNV (GLenum target, GLuint id) {
+}
+GLAPI void APIENTRY stub_glDeleteTransformFeedbacksNV (GLsizei n, const GLuint *ids) {
+}
+GLAPI void APIENTRY stub_glGenTransformFeedbacksNV (GLsizei n, GLuint *ids) {
+}
+GLAPI GLboolean APIENTRY stub_glIsTransformFeedbackNV (GLuint id) {
 	return (GLboolean)0;
 }
 GLAPI void APIENTRY stub_glPauseTransformFeedbackNV (void) {
 }
 GLAPI void APIENTRY stub_glResumeTransformFeedbackNV (void) {
 }
-GLAPI void APIENTRY stub_glDrawTransformFeedbackNV (GLenum, GLuint) {
+GLAPI void APIENTRY stub_glDrawTransformFeedbackNV (GLenum mode, GLuint id) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorGroupsAMD (GLint *, GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorGroupsAMD (GLint *numGroups, GLsizei groupsSize, GLuint *groups) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorCountersAMD (GLuint, GLint *, GLint *, GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorCountersAMD (GLuint group, GLint *numCounters, GLint *maxActiveCounters, GLsizei counterSize, GLuint *counters) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorGroupStringAMD (GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorGroupStringAMD (GLuint group, GLsizei bufSize, GLsizei *length, GLchar *groupString) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorCounterStringAMD (GLuint, GLuint, GLsizei, GLsizei *, GLchar *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterStringAMD (GLuint group, GLuint counter, GLsizei bufSize, GLsizei *length, GLchar *counterString) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorCounterInfoAMD (GLuint, GLuint, GLenum, void *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterInfoAMD (GLuint group, GLuint counter, GLenum pname, GLvoid *data) {
 }
-GLAPI void APIENTRY stub_glGenPerfMonitorsAMD (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glGenPerfMonitorsAMD (GLsizei n, GLuint *monitors) {
 }
-GLAPI void APIENTRY stub_glDeletePerfMonitorsAMD (GLsizei, GLuint *) {
+GLAPI void APIENTRY stub_glDeletePerfMonitorsAMD (GLsizei n, GLuint *monitors) {
 }
-GLAPI void APIENTRY stub_glSelectPerfMonitorCountersAMD (GLuint, GLboolean, GLuint, GLint, GLuint *) {
+GLAPI void APIENTRY stub_glSelectPerfMonitorCountersAMD (GLuint monitor, GLboolean enable, GLuint group, GLint numCounters, GLuint *counterList) {
 }
-GLAPI void APIENTRY stub_glBeginPerfMonitorAMD (GLuint) {
+GLAPI void APIENTRY stub_glBeginPerfMonitorAMD (GLuint monitor) {
 }
-GLAPI void APIENTRY stub_glEndPerfMonitorAMD (GLuint) {
+GLAPI void APIENTRY stub_glEndPerfMonitorAMD (GLuint monitor) {
 }
-GLAPI void APIENTRY stub_glGetPerfMonitorCounterDataAMD (GLuint, GLenum, GLsizei, GLuint *, GLint *) {
+GLAPI void APIENTRY stub_glGetPerfMonitorCounterDataAMD (GLuint monitor, GLenum pname, GLsizei dataSize, GLuint *data, GLint *bytesWritten) {
 }
-GLAPI void APIENTRY stub_glTessellationFactorAMD (GLfloat) {
+GLAPI void APIENTRY stub_glTessellationFactorAMD (GLfloat factor) {
 }
-GLAPI void APIENTRY stub_glTessellationModeAMD (GLenum) {
+GLAPI void APIENTRY stub_glTessellationModeAMD (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glProvokingVertexEXT (GLenum) {
+GLAPI void APIENTRY stub_glProvokingVertexEXT (GLenum mode) {
 }
-GLAPI void APIENTRY stub_glBlendFuncIndexedAMD (GLuint, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncIndexedAMD (GLuint buf, GLenum src, GLenum dst) {
 }
-GLAPI void APIENTRY stub_glBlendFuncSeparateIndexedAMD (GLuint, GLenum, GLenum, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendFuncSeparateIndexedAMD (GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha) {
 }
-GLAPI void APIENTRY stub_glBlendEquationIndexedAMD (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationIndexedAMD (GLuint buf, GLenum mode) {
 }
-GLAPI void APIENTRY stub_glBlendEquationSeparateIndexedAMD (GLuint, GLenum, GLenum) {
+GLAPI void APIENTRY stub_glBlendEquationSeparateIndexedAMD (GLuint buf, GLenum modeRGB, GLenum modeAlpha) {
 }
-GLAPI void APIENTRY stub_glTextureRangeAPPLE (GLenum, GLsizei, const GLvoid *) {
+GLAPI void APIENTRY stub_glTextureRangeAPPLE (GLenum target, GLsizei length, const GLvoid *pointer) {
 }
-GLAPI void APIENTRY stub_glGetTexParameterPointervAPPLE (GLenum, GLenum, GLvoid* *) {
+GLAPI void APIENTRY stub_glGetTexParameterPointervAPPLE (GLenum target, GLenum pname, GLvoid* *params) {
 }
-GLAPI void APIENTRY stub_glEnableVertexAttribAPPLE (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glEnableVertexAttribAPPLE (GLuint index, GLenum pname) {
 }
-GLAPI void APIENTRY stub_glDisableVertexAttribAPPLE (GLuint, GLenum) {
+GLAPI void APIENTRY stub_glDisableVertexAttribAPPLE (GLuint index, GLenum pname) {
 }
-GLAPI GLboolean APIENTRY stub_glIsVertexAttribEnabledAPPLE (GLuint, GLenum) {
+GLAPI GLboolean APIENTRY stub_glIsVertexAttribEnabledAPPLE (GLuint index, GLenum pname) {
 	return (GLboolean)0;
 }
-GLAPI void APIENTRY stub_glMapVertexAttrib1dAPPLE (GLuint, GLuint, GLdouble, GLdouble, GLint, GLint, const GLdouble *) {
+GLAPI void APIENTRY stub_glMapVertexAttrib1dAPPLE (GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint stride, GLint order, const GLdouble *points) {
 }
-GLAPI void APIENTRY stub_glMapVertexAttrib1fAPPLE (GLuint, GLuint, GLfloat, GLfloat, GLint, GLint, const GLfloat *) {
+GLAPI void APIENTRY stub_glMapVertexAttrib1fAPPLE (GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint stride, GLint order, const GLfloat *points) {
 }
-GLAPI void APIENTRY stub_glMapVertexAttrib2dAPPLE (GLuint, GLuint, GLdouble, GLdouble, GLint, GLint, GLdouble, GLdouble, GLint, GLint, const GLdouble *) {
+GLAPI void APIENTRY stub_glMapVertexAttrib2dAPPLE (GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, const GLdouble *points) {
 }
-GLAPI void APIENTRY stub_glMapVertexAttrib2fAPPLE (GLuint, GLuint, GLfloat, GLfloat, GLint, GLint, GLfloat, GLfloat, GLint, GLint, const GLfloat *) {
+GLAPI void APIENTRY stub_glMapVertexAttrib2fAPPLE (GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, const GLfloat *points) {
 }
-GLAPI GLenum APIENTRY stub_glObjectPurgeableAPPLE (GLenum, GLuint, GLenum) {
+GLAPI GLenum APIENTRY stub_glObjectPurgeableAPPLE (GLenum objectType, GLuint name, GLenum option) {
 	return (GLenum)0;
 }
-GLAPI GLenum APIENTRY stub_glObjectUnpurgeableAPPLE (GLenum, GLuint, GLenum) {
+GLAPI GLenum APIENTRY stub_glObjectUnpurgeableAPPLE (GLenum objectType, GLuint name, GLenum option) {
 	return (GLenum)0;
 }
-GLAPI void APIENTRY stub_glGetObjectParameterivAPPLE (GLenum, GLuint, GLenum, GLint *) {
+GLAPI void APIENTRY stub_glGetObjectParameterivAPPLE (GLenum objectType, GLuint name, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glBeginVideoCaptureNV (GLuint video_capture_slot) {
+}
+GLAPI void APIENTRY stub_glBindVideoCaptureStreamBufferNV (GLuint video_capture_slot, GLuint stream, GLenum frame_region, GLintptrARB offset) {
+}
+GLAPI void APIENTRY stub_glBindVideoCaptureStreamTextureNV (GLuint video_capture_slot, GLuint stream, GLenum frame_region, GLenum target, GLuint texture) {
+}
+GLAPI void APIENTRY stub_glEndVideoCaptureNV (GLuint video_capture_slot) {
+}
+GLAPI void APIENTRY stub_glGetVideoCaptureivNV (GLuint video_capture_slot, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetVideoCaptureStreamivNV (GLuint video_capture_slot, GLuint stream, GLenum pname, GLint *params) {
+}
+GLAPI void APIENTRY stub_glGetVideoCaptureStreamfvNV (GLuint video_capture_slot, GLuint stream, GLenum pname, GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glGetVideoCaptureStreamdvNV (GLuint video_capture_slot, GLuint stream, GLenum pname, GLdouble *params) {
+}
+GLAPI GLenum APIENTRY stub_glVideoCaptureNV (GLuint video_capture_slot, GLuint *sequence_num, GLuint64EXT *capture_time) {
+	return (GLenum)0;
+}
+GLAPI void APIENTRY stub_glVideoCaptureStreamParameterivNV (GLuint video_capture_slot, GLuint stream, GLenum pname, const GLint *params) {
+}
+GLAPI void APIENTRY stub_glVideoCaptureStreamParameterfvNV (GLuint video_capture_slot, GLuint stream, GLenum pname, const GLfloat *params) {
+}
+GLAPI void APIENTRY stub_glVideoCaptureStreamParameterdvNV (GLuint video_capture_slot, GLuint stream, GLenum pname, const GLdouble *params) {
+}
+GLAPI void APIENTRY stub_glCopyImageSubDataNV (GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth) {
+}
+GLAPI void APIENTRY stub_glUseShaderProgramEXT (GLenum type, GLuint program) {
+}
+GLAPI void APIENTRY stub_glActiveProgramEXT (GLuint program) {
+}
+GLAPI GLuint APIENTRY stub_glCreateShaderProgramEXT (GLenum type, const GLchar *string) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glMakeBufferResidentNV (GLenum target, GLenum access) {
+}
+GLAPI void APIENTRY stub_glMakeBufferNonResidentNV (GLenum target) {
+}
+GLAPI GLboolean APIENTRY stub_glIsBufferResidentNV (GLenum target) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glMakeNamedBufferResidentNV (GLuint buffer, GLenum access) {
+}
+GLAPI void APIENTRY stub_glMakeNamedBufferNonResidentNV (GLuint buffer) {
+}
+GLAPI GLboolean APIENTRY stub_glIsNamedBufferResidentNV (GLuint buffer) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glGetBufferParameterui64vNV (GLenum target, GLenum pname, GLuint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glGetNamedBufferParameterui64vNV (GLuint buffer, GLenum pname, GLuint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glGetIntegerui64vNV (GLenum value, GLuint64EXT *result) {
+}
+GLAPI void APIENTRY stub_glUniformui64NV (GLint location, GLuint64EXT value) {
+}
+GLAPI void APIENTRY stub_glUniformui64vNV (GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glGetUniformui64vNV (GLuint program, GLint location, GLuint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glProgramUniformui64NV (GLuint program, GLint location, GLuint64EXT value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glBufferAddressRangeNV (GLenum pname, GLuint index, GLuint64EXT address, GLsizeiptr length) {
+}
+GLAPI void APIENTRY stub_glVertexFormatNV (GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glNormalFormatNV (GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glColorFormatNV (GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glIndexFormatNV (GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glTexCoordFormatNV (GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glEdgeFlagFormatNV (GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glSecondaryColorFormatNV (GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glFogCoordFormatNV (GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glVertexAttribFormatNV (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glVertexAttribIFormatNV (GLuint index, GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glGetIntegerui64i_vNV (GLenum value, GLuint index, GLuint64EXT *result) {
+}
+GLAPI void APIENTRY stub_glTextureBarrierNV (void) {
+}
+GLAPI void APIENTRY stub_glBindImageTextureEXT (GLuint index, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLint format) {
+}
+GLAPI void APIENTRY stub_glMemoryBarrierEXT (GLbitfield barriers) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1dEXT (GLuint index, GLdouble x) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2dEXT (GLuint index, GLdouble x, GLdouble y) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3dEXT (GLuint index, GLdouble x, GLdouble y, GLdouble z) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4dEXT (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1dvEXT (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2dvEXT (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3dvEXT (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4dvEXT (GLuint index, const GLdouble *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribLPointerEXT (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribLdvEXT (GLuint index, GLenum pname, GLdouble *params) {
+}
+GLAPI void APIENTRY stub_glVertexArrayVertexAttribLOffsetEXT (GLuint vaobj, GLuint buffer, GLuint index, GLint size, GLenum type, GLsizei stride, GLintptr offset) {
+}
+GLAPI void APIENTRY stub_glProgramSubroutineParametersuivNV (GLenum target, GLsizei count, const GLuint *params) {
+}
+GLAPI void APIENTRY stub_glGetProgramSubroutineParameteruivNV (GLenum target, GLuint index, GLuint *param) {
+}
+GLAPI void APIENTRY stub_glUniform1i64NV (GLint location, GLint64EXT x) {
+}
+GLAPI void APIENTRY stub_glUniform2i64NV (GLint location, GLint64EXT x, GLint64EXT y) {
+}
+GLAPI void APIENTRY stub_glUniform3i64NV (GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z) {
+}
+GLAPI void APIENTRY stub_glUniform4i64NV (GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w) {
+}
+GLAPI void APIENTRY stub_glUniform1i64vNV (GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform2i64vNV (GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform3i64vNV (GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform4i64vNV (GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform1ui64NV (GLint location, GLuint64EXT x) {
+}
+GLAPI void APIENTRY stub_glUniform2ui64NV (GLint location, GLuint64EXT x, GLuint64EXT y) {
+}
+GLAPI void APIENTRY stub_glUniform3ui64NV (GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z) {
+}
+GLAPI void APIENTRY stub_glUniform4ui64NV (GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w) {
+}
+GLAPI void APIENTRY stub_glUniform1ui64vNV (GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform2ui64vNV (GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform3ui64vNV (GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glUniform4ui64vNV (GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glGetUniformi64vNV (GLuint program, GLint location, GLint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1i64NV (GLuint program, GLint location, GLint64EXT x) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2i64NV (GLuint program, GLint location, GLint64EXT x, GLint64EXT y) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3i64NV (GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4i64NV (GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1i64vNV (GLuint program, GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2i64vNV (GLuint program, GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3i64vNV (GLuint program, GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4i64vNV (GLuint program, GLint location, GLsizei count, const GLint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1ui64NV (GLuint program, GLint location, GLuint64EXT x) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2ui64NV (GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3ui64NV (GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4ui64NV (GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w) {
+}
+GLAPI void APIENTRY stub_glProgramUniform1ui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform2ui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform3ui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniform4ui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64EXT *value) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1i64NV (GLuint index, GLint64EXT x) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2i64NV (GLuint index, GLint64EXT x, GLint64EXT y) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3i64NV (GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4i64NV (GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1i64vNV (GLuint index, const GLint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2i64vNV (GLuint index, const GLint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3i64vNV (GLuint index, const GLint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4i64vNV (GLuint index, const GLint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1ui64NV (GLuint index, GLuint64EXT x) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2ui64NV (GLuint index, GLuint64EXT x, GLuint64EXT y) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3ui64NV (GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4ui64NV (GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL1ui64vNV (GLuint index, const GLuint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL2ui64vNV (GLuint index, const GLuint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL3ui64vNV (GLuint index, const GLuint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glVertexAttribL4ui64vNV (GLuint index, const GLuint64EXT *v) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribLi64vNV (GLuint index, GLenum pname, GLint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glGetVertexAttribLui64vNV (GLuint index, GLenum pname, GLuint64EXT *params) {
+}
+GLAPI void APIENTRY stub_glVertexAttribLFormatNV (GLuint index, GLint size, GLenum type, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glGenNamesAMD (GLenum identifier, GLuint num, GLuint *names) {
+}
+GLAPI void APIENTRY stub_glDeleteNamesAMD (GLenum identifier, GLuint num, const GLuint *names) {
+}
+GLAPI GLboolean APIENTRY stub_glIsNameAMD (GLenum identifier, GLuint name) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glDebugMessageEnableAMD (GLenum category, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled) {
+}
+GLAPI void APIENTRY stub_glDebugMessageInsertAMD (GLenum category, GLenum severity, GLuint id, GLsizei length, const GLchar *buf) {
+}
+GLAPI void APIENTRY stub_glDebugMessageCallbackAMD (GLDEBUGPROCAMD callback, GLvoid *userParam) {
+}
+GLAPI GLuint APIENTRY stub_glGetDebugMessageLogAMD (GLuint count, GLsizei bufsize, GLenum *categories, GLuint *severities, GLuint *ids, GLsizei *lengths, GLchar *message) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glVDPAUInitNV (const GLvoid *vdpDevice, const GLvoid *getProcAddress) {
+}
+GLAPI void APIENTRY stub_glVDPAUFiniNV (void) {
+}
+GLAPI GLvdpauSurfaceNV APIENTRY stub_glVDPAURegisterVideoSurfaceNV (const GLvoid *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames) {
+	return (GLvdpauSurfaceNV)0;
+}
+GLAPI GLvdpauSurfaceNV APIENTRY stub_glVDPAURegisterOutputSurfaceNV (GLvoid *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames) {
+	return (GLvdpauSurfaceNV)0;
+}
+GLAPI void APIENTRY stub_glVDPAUIsSurfaceNV (GLvdpauSurfaceNV surface) {
+}
+GLAPI void APIENTRY stub_glVDPAUUnregisterSurfaceNV (GLvdpauSurfaceNV surface) {
+}
+GLAPI void APIENTRY stub_glVDPAUGetSurfaceivNV (GLvdpauSurfaceNV surface, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values) {
+}
+GLAPI void APIENTRY stub_glVDPAUSurfaceAccessNV (GLvdpauSurfaceNV surface, GLenum access) {
+}
+GLAPI void APIENTRY stub_glVDPAUMapSurfacesNV (GLsizei numSurfaces, const GLvdpauSurfaceNV *surfaces) {
+}
+GLAPI void APIENTRY stub_glVDPAUUnmapSurfacesNV (GLsizei numSurface, const GLvdpauSurfaceNV *surfaces) {
+}
+GLAPI void APIENTRY stub_glTexImage2DMultisampleCoverageNV (GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glTexImage3DMultisampleCoverageNV (GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glTextureImage2DMultisampleNV (GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glTextureImage3DMultisampleNV (GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glTextureImage2DMultisampleCoverageNV (GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glTextureImage3DMultisampleCoverageNV (GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations) {
+}
+GLAPI void APIENTRY stub_glSetMultisamplefvAMD (GLenum pname, GLuint index, const GLfloat *val) {
+}
+GLAPI GLsync APIENTRY stub_glImportSyncEXT (GLenum external_sync_type, GLintptr external_sync, GLbitfield flags) {
+	return (GLsync)0;
+}
+GLAPI void APIENTRY stub_glMultiDrawArraysIndirectAMD (GLenum mode, const GLvoid *indirect, GLsizei primcount, GLsizei stride) {
+}
+GLAPI void APIENTRY stub_glMultiDrawElementsIndirectAMD (GLenum mode, GLenum type, const GLvoid *indirect, GLsizei primcount, GLsizei stride) {
+}
+GLAPI GLuint APIENTRY stub_glGenPathsNV (GLsizei range) {
+	return (GLuint)0;
+}
+GLAPI void APIENTRY stub_glDeletePathsNV (GLuint path, GLsizei range) {
+}
+GLAPI GLboolean APIENTRY stub_glIsPathNV (GLuint path) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glPathCommandsNV (GLuint path, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const GLvoid *coords) {
+}
+GLAPI void APIENTRY stub_glPathCoordsNV (GLuint path, GLsizei numCoords, GLenum coordType, const GLvoid *coords) {
+}
+GLAPI void APIENTRY stub_glPathSubCommandsNV (GLuint path, GLsizei commandStart, GLsizei commandsToDelete, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const GLvoid *coords) {
+}
+GLAPI void APIENTRY stub_glPathSubCoordsNV (GLuint path, GLsizei coordStart, GLsizei numCoords, GLenum coordType, const GLvoid *coords) {
+}
+GLAPI void APIENTRY stub_glPathStringNV (GLuint path, GLenum format, GLsizei length, const GLvoid *pathString) {
+}
+GLAPI void APIENTRY stub_glPathGlyphsNV (GLuint firstPathName, GLenum fontTarget, const GLvoid *fontName, GLbitfield fontStyle, GLsizei numGlyphs, GLenum type, const GLvoid *charcodes, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale) {
+}
+GLAPI void APIENTRY stub_glPathGlyphRangeNV (GLuint firstPathName, GLenum fontTarget, const GLvoid *fontName, GLbitfield fontStyle, GLuint firstGlyph, GLsizei numGlyphs, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale) {
+}
+GLAPI void APIENTRY stub_glWeightPathsNV (GLuint resultPath, GLsizei numPaths, const GLuint *paths, const GLfloat *weights) {
+}
+GLAPI void APIENTRY stub_glCopyPathNV (GLuint resultPath, GLuint srcPath) {
+}
+GLAPI void APIENTRY stub_glInterpolatePathsNV (GLuint resultPath, GLuint pathA, GLuint pathB, GLfloat weight) {
+}
+GLAPI void APIENTRY stub_glTransformPathNV (GLuint resultPath, GLuint srcPath, GLenum transformType, const GLfloat *transformValues) {
+}
+GLAPI void APIENTRY stub_glPathParameterivNV (GLuint path, GLenum pname, const GLint *value) {
+}
+GLAPI void APIENTRY stub_glPathParameteriNV (GLuint path, GLenum pname, GLint value) {
+}
+GLAPI void APIENTRY stub_glPathParameterfvNV (GLuint path, GLenum pname, const GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glPathParameterfNV (GLuint path, GLenum pname, GLfloat value) {
+}
+GLAPI void APIENTRY stub_glPathDashArrayNV (GLuint path, GLsizei dashCount, const GLfloat *dashArray) {
+}
+GLAPI void APIENTRY stub_glPathStencilFuncNV (GLenum func, GLint ref, GLuint mask) {
+}
+GLAPI void APIENTRY stub_glPathStencilDepthOffsetNV (GLfloat factor, GLfloat units) {
+}
+GLAPI void APIENTRY stub_glStencilFillPathNV (GLuint path, GLenum fillMode, GLuint mask) {
+}
+GLAPI void APIENTRY stub_glStencilStrokePathNV (GLuint path, GLint reference, GLuint mask) {
+}
+GLAPI void APIENTRY stub_glStencilFillPathInstancedNV (GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum transformType, const GLfloat *transformValues) {
+}
+GLAPI void APIENTRY stub_glStencilStrokePathInstancedNV (GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum transformType, const GLfloat *transformValues) {
+}
+GLAPI void APIENTRY stub_glPathCoverDepthFuncNV (GLenum func) {
+}
+GLAPI void APIENTRY stub_glPathColorGenNV (GLenum color, GLenum genMode, GLenum colorFormat, const GLfloat *coeffs) {
+}
+GLAPI void APIENTRY stub_glPathTexGenNV (GLenum texCoordSet, GLenum genMode, GLint components, const GLfloat *coeffs) {
+}
+GLAPI void APIENTRY stub_glPathFogGenNV (GLenum genMode) {
+}
+GLAPI void APIENTRY stub_glCoverFillPathNV (GLuint path, GLenum coverMode) {
+}
+GLAPI void APIENTRY stub_glCoverStrokePathNV (GLuint path, GLenum coverMode) {
+}
+GLAPI void APIENTRY stub_glCoverFillPathInstancedNV (GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues) {
+}
+GLAPI void APIENTRY stub_glCoverStrokePathInstancedNV (GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues) {
+}
+GLAPI void APIENTRY stub_glGetPathParameterivNV (GLuint path, GLenum pname, GLint *value) {
+}
+GLAPI void APIENTRY stub_glGetPathParameterfvNV (GLuint path, GLenum pname, GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glGetPathCommandsNV (GLuint path, GLubyte *commands) {
+}
+GLAPI void APIENTRY stub_glGetPathCoordsNV (GLuint path, GLfloat *coords) {
+}
+GLAPI void APIENTRY stub_glGetPathDashArrayNV (GLuint path, GLfloat *dashArray) {
+}
+GLAPI void APIENTRY stub_glGetPathMetricsNV (GLbitfield metricQueryMask, GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLsizei stride, GLfloat *metrics) {
+}
+GLAPI void APIENTRY stub_glGetPathMetricRangeNV (GLbitfield metricQueryMask, GLuint firstPathName, GLsizei numPaths, GLsizei stride, GLfloat *metrics) {
+}
+GLAPI void APIENTRY stub_glGetPathSpacingNV (GLenum pathListMode, GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLfloat advanceScale, GLfloat kerningScale, GLenum transformType, GLfloat *returnedSpacing) {
+}
+GLAPI void APIENTRY stub_glGetPathColorGenivNV (GLenum color, GLenum pname, GLint *value) {
+}
+GLAPI void APIENTRY stub_glGetPathColorGenfvNV (GLenum color, GLenum pname, GLfloat *value) {
+}
+GLAPI void APIENTRY stub_glGetPathTexGenivNV (GLenum texCoordSet, GLenum pname, GLint *value) {
+}
+GLAPI void APIENTRY stub_glGetPathTexGenfvNV (GLenum texCoordSet, GLenum pname, GLfloat *value) {
+}
+GLAPI GLboolean APIENTRY stub_glIsPointInFillPathNV (GLuint path, GLuint mask, GLfloat x, GLfloat y) {
+	return (GLboolean)0;
+}
+GLAPI GLboolean APIENTRY stub_glIsPointInStrokePathNV (GLuint path, GLfloat x, GLfloat y) {
+	return (GLboolean)0;
+}
+GLAPI GLfloat APIENTRY stub_glGetPathLengthNV (GLuint path, GLsizei startSegment, GLsizei numSegments) {
+	return (GLfloat)0;
+}
+GLAPI GLboolean APIENTRY stub_glPointAlongPathNV (GLuint path, GLsizei startSegment, GLsizei numSegments, GLfloat distance, GLfloat *x, GLfloat *y, GLfloat *tangentX, GLfloat *tangentY) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glStencilOpValueAMD (GLenum face, GLuint value) {
+}
+GLAPI GLuint64 APIENTRY stub_glGetTextureHandleNV (GLuint texture) {
+	return (GLuint64)0;
+}
+GLAPI GLuint64 APIENTRY stub_glGetTextureSamplerHandleNV (GLuint texture, GLuint sampler) {
+	return (GLuint64)0;
+}
+GLAPI void APIENTRY stub_glMakeTextureHandleResidentNV (GLuint64 handle) {
+}
+GLAPI void APIENTRY stub_glMakeTextureHandleNonResidentNV (GLuint64 handle) {
+}
+GLAPI GLuint64 APIENTRY stub_glGetImageHandleNV (GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum format) {
+	return (GLuint64)0;
+}
+GLAPI void APIENTRY stub_glMakeImageHandleResidentNV (GLuint64 handle, GLenum access) {
+}
+GLAPI void APIENTRY stub_glMakeImageHandleNonResidentNV (GLuint64 handle) {
+}
+GLAPI void APIENTRY stub_glUniformHandleui64NV (GLint location, GLuint64 value) {
+}
+GLAPI void APIENTRY stub_glUniformHandleui64vNV (GLint location, GLsizei count, const GLuint64 *value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformHandleui64NV (GLuint program, GLint location, GLuint64 value) {
+}
+GLAPI void APIENTRY stub_glProgramUniformHandleui64vNV (GLuint program, GLint location, GLsizei count, const GLuint64 *values) {
+}
+GLAPI GLboolean APIENTRY stub_glIsTextureHandleResidentNV (GLuint64 handle) {
+	return (GLboolean)0;
+}
+GLAPI GLboolean APIENTRY stub_glIsImageHandleResidentNV (GLuint64 handle) {
+	return (GLboolean)0;
+}
+GLAPI void APIENTRY stub_glTexStorageSparseAMD (GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags) {
+}
+GLAPI void APIENTRY stub_glTextureStorageSparseAMD (GLuint texture, GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags) {
 }
 
 //----------------------------------------------------------------------------
@@ -3551,9 +4621,13 @@ void glexfp::Reset() {
 	glPrimitiveRestartIndex = stub_glPrimitiveRestartIndex;
 	glGetInteger64i_v = stub_glGetInteger64i_v;
 	glGetBufferParameteri64v = stub_glGetBufferParameteri64v;
-	glProgramParameteri = stub_glProgramParameteri;
 	glFramebufferTexture = stub_glFramebufferTexture;
-	glFramebufferTextureFace = stub_glFramebufferTextureFace;
+	glVertexAttribDivisor = stub_glVertexAttribDivisor;
+	glMinSampleShading = stub_glMinSampleShading;
+	glBlendEquationi = stub_glBlendEquationi;
+	glBlendEquationSeparatei = stub_glBlendEquationSeparatei;
+	glBlendFunci = stub_glBlendFunci;
+	glBlendFuncSeparatei = stub_glBlendFuncSeparatei;
 	glActiveTextureARB = stub_glActiveTextureARB;
 	glClientActiveTextureARB = stub_glClientActiveTextureARB;
 	glMultiTexCoord1dARB = stub_glMultiTexCoord1dARB;
@@ -3816,11 +4890,299 @@ void glexfp::Reset() {
 	glTexImage3DMultisample = stub_glTexImage3DMultisample;
 	glGetMultisamplefv = stub_glGetMultisamplefv;
 	glSampleMaski = stub_glSampleMaski;
-	glBlendEquationi = stub_glBlendEquationi;
-	glBlendEquationSeparatei = stub_glBlendEquationSeparatei;
-	glBlendFunci = stub_glBlendFunci;
-	glBlendFuncSeparatei = stub_glBlendFuncSeparatei;
-	glMinSampleShading = stub_glMinSampleShading;
+	glBlendEquationiARB = stub_glBlendEquationiARB;
+	glBlendEquationSeparateiARB = stub_glBlendEquationSeparateiARB;
+	glBlendFunciARB = stub_glBlendFunciARB;
+	glBlendFuncSeparateiARB = stub_glBlendFuncSeparateiARB;
+	glMinSampleShadingARB = stub_glMinSampleShadingARB;
+	glNamedStringARB = stub_glNamedStringARB;
+	glDeleteNamedStringARB = stub_glDeleteNamedStringARB;
+	glCompileShaderIncludeARB = stub_glCompileShaderIncludeARB;
+	glIsNamedStringARB = stub_glIsNamedStringARB;
+	glGetNamedStringARB = stub_glGetNamedStringARB;
+	glGetNamedStringivARB = stub_glGetNamedStringivARB;
+	glBindFragDataLocationIndexed = stub_glBindFragDataLocationIndexed;
+	glGetFragDataIndex = stub_glGetFragDataIndex;
+	glGenSamplers = stub_glGenSamplers;
+	glDeleteSamplers = stub_glDeleteSamplers;
+	glIsSampler = stub_glIsSampler;
+	glBindSampler = stub_glBindSampler;
+	glSamplerParameteri = stub_glSamplerParameteri;
+	glSamplerParameteriv = stub_glSamplerParameteriv;
+	glSamplerParameterf = stub_glSamplerParameterf;
+	glSamplerParameterfv = stub_glSamplerParameterfv;
+	glSamplerParameterIiv = stub_glSamplerParameterIiv;
+	glSamplerParameterIuiv = stub_glSamplerParameterIuiv;
+	glGetSamplerParameteriv = stub_glGetSamplerParameteriv;
+	glGetSamplerParameterIiv = stub_glGetSamplerParameterIiv;
+	glGetSamplerParameterfv = stub_glGetSamplerParameterfv;
+	glGetSamplerParameterIuiv = stub_glGetSamplerParameterIuiv;
+	glQueryCounter = stub_glQueryCounter;
+	glGetQueryObjecti64v = stub_glGetQueryObjecti64v;
+	glGetQueryObjectui64v = stub_glGetQueryObjectui64v;
+	glVertexP2ui = stub_glVertexP2ui;
+	glVertexP2uiv = stub_glVertexP2uiv;
+	glVertexP3ui = stub_glVertexP3ui;
+	glVertexP3uiv = stub_glVertexP3uiv;
+	glVertexP4ui = stub_glVertexP4ui;
+	glVertexP4uiv = stub_glVertexP4uiv;
+	glTexCoordP1ui = stub_glTexCoordP1ui;
+	glTexCoordP1uiv = stub_glTexCoordP1uiv;
+	glTexCoordP2ui = stub_glTexCoordP2ui;
+	glTexCoordP2uiv = stub_glTexCoordP2uiv;
+	glTexCoordP3ui = stub_glTexCoordP3ui;
+	glTexCoordP3uiv = stub_glTexCoordP3uiv;
+	glTexCoordP4ui = stub_glTexCoordP4ui;
+	glTexCoordP4uiv = stub_glTexCoordP4uiv;
+	glMultiTexCoordP1ui = stub_glMultiTexCoordP1ui;
+	glMultiTexCoordP1uiv = stub_glMultiTexCoordP1uiv;
+	glMultiTexCoordP2ui = stub_glMultiTexCoordP2ui;
+	glMultiTexCoordP2uiv = stub_glMultiTexCoordP2uiv;
+	glMultiTexCoordP3ui = stub_glMultiTexCoordP3ui;
+	glMultiTexCoordP3uiv = stub_glMultiTexCoordP3uiv;
+	glMultiTexCoordP4ui = stub_glMultiTexCoordP4ui;
+	glMultiTexCoordP4uiv = stub_glMultiTexCoordP4uiv;
+	glNormalP3ui = stub_glNormalP3ui;
+	glNormalP3uiv = stub_glNormalP3uiv;
+	glColorP3ui = stub_glColorP3ui;
+	glColorP3uiv = stub_glColorP3uiv;
+	glColorP4ui = stub_glColorP4ui;
+	glColorP4uiv = stub_glColorP4uiv;
+	glSecondaryColorP3ui = stub_glSecondaryColorP3ui;
+	glSecondaryColorP3uiv = stub_glSecondaryColorP3uiv;
+	glVertexAttribP1ui = stub_glVertexAttribP1ui;
+	glVertexAttribP1uiv = stub_glVertexAttribP1uiv;
+	glVertexAttribP2ui = stub_glVertexAttribP2ui;
+	glVertexAttribP2uiv = stub_glVertexAttribP2uiv;
+	glVertexAttribP3ui = stub_glVertexAttribP3ui;
+	glVertexAttribP3uiv = stub_glVertexAttribP3uiv;
+	glVertexAttribP4ui = stub_glVertexAttribP4ui;
+	glVertexAttribP4uiv = stub_glVertexAttribP4uiv;
+	glDrawArraysIndirect = stub_glDrawArraysIndirect;
+	glDrawElementsIndirect = stub_glDrawElementsIndirect;
+	glUniform1d = stub_glUniform1d;
+	glUniform2d = stub_glUniform2d;
+	glUniform3d = stub_glUniform3d;
+	glUniform4d = stub_glUniform4d;
+	glUniform1dv = stub_glUniform1dv;
+	glUniform2dv = stub_glUniform2dv;
+	glUniform3dv = stub_glUniform3dv;
+	glUniform4dv = stub_glUniform4dv;
+	glUniformMatrix2dv = stub_glUniformMatrix2dv;
+	glUniformMatrix3dv = stub_glUniformMatrix3dv;
+	glUniformMatrix4dv = stub_glUniformMatrix4dv;
+	glUniformMatrix2x3dv = stub_glUniformMatrix2x3dv;
+	glUniformMatrix2x4dv = stub_glUniformMatrix2x4dv;
+	glUniformMatrix3x2dv = stub_glUniformMatrix3x2dv;
+	glUniformMatrix3x4dv = stub_glUniformMatrix3x4dv;
+	glUniformMatrix4x2dv = stub_glUniformMatrix4x2dv;
+	glUniformMatrix4x3dv = stub_glUniformMatrix4x3dv;
+	glGetUniformdv = stub_glGetUniformdv;
+	glGetSubroutineUniformLocation = stub_glGetSubroutineUniformLocation;
+	glGetSubroutineIndex = stub_glGetSubroutineIndex;
+	glGetActiveSubroutineUniformiv = stub_glGetActiveSubroutineUniformiv;
+	glGetActiveSubroutineUniformName = stub_glGetActiveSubroutineUniformName;
+	glGetActiveSubroutineName = stub_glGetActiveSubroutineName;
+	glUniformSubroutinesuiv = stub_glUniformSubroutinesuiv;
+	glGetUniformSubroutineuiv = stub_glGetUniformSubroutineuiv;
+	glGetProgramStageiv = stub_glGetProgramStageiv;
+	glPatchParameteri = stub_glPatchParameteri;
+	glPatchParameterfv = stub_glPatchParameterfv;
+	glBindTransformFeedback = stub_glBindTransformFeedback;
+	glDeleteTransformFeedbacks = stub_glDeleteTransformFeedbacks;
+	glGenTransformFeedbacks = stub_glGenTransformFeedbacks;
+	glIsTransformFeedback = stub_glIsTransformFeedback;
+	glPauseTransformFeedback = stub_glPauseTransformFeedback;
+	glResumeTransformFeedback = stub_glResumeTransformFeedback;
+	glDrawTransformFeedback = stub_glDrawTransformFeedback;
+	glDrawTransformFeedbackStream = stub_glDrawTransformFeedbackStream;
+	glBeginQueryIndexed = stub_glBeginQueryIndexed;
+	glEndQueryIndexed = stub_glEndQueryIndexed;
+	glGetQueryIndexediv = stub_glGetQueryIndexediv;
+	glReleaseShaderCompiler = stub_glReleaseShaderCompiler;
+	glShaderBinary = stub_glShaderBinary;
+	glGetShaderPrecisionFormat = stub_glGetShaderPrecisionFormat;
+	glDepthRangef = stub_glDepthRangef;
+	glClearDepthf = stub_glClearDepthf;
+	glGetProgramBinary = stub_glGetProgramBinary;
+	glProgramBinary = stub_glProgramBinary;
+	glProgramParameteri = stub_glProgramParameteri;
+	glUseProgramStages = stub_glUseProgramStages;
+	glActiveShaderProgram = stub_glActiveShaderProgram;
+	glCreateShaderProgramv = stub_glCreateShaderProgramv;
+	glBindProgramPipeline = stub_glBindProgramPipeline;
+	glDeleteProgramPipelines = stub_glDeleteProgramPipelines;
+	glGenProgramPipelines = stub_glGenProgramPipelines;
+	glIsProgramPipeline = stub_glIsProgramPipeline;
+	glGetProgramPipelineiv = stub_glGetProgramPipelineiv;
+	glProgramUniform1i = stub_glProgramUniform1i;
+	glProgramUniform1iv = stub_glProgramUniform1iv;
+	glProgramUniform1f = stub_glProgramUniform1f;
+	glProgramUniform1fv = stub_glProgramUniform1fv;
+	glProgramUniform1d = stub_glProgramUniform1d;
+	glProgramUniform1dv = stub_glProgramUniform1dv;
+	glProgramUniform1ui = stub_glProgramUniform1ui;
+	glProgramUniform1uiv = stub_glProgramUniform1uiv;
+	glProgramUniform2i = stub_glProgramUniform2i;
+	glProgramUniform2iv = stub_glProgramUniform2iv;
+	glProgramUniform2f = stub_glProgramUniform2f;
+	glProgramUniform2fv = stub_glProgramUniform2fv;
+	glProgramUniform2d = stub_glProgramUniform2d;
+	glProgramUniform2dv = stub_glProgramUniform2dv;
+	glProgramUniform2ui = stub_glProgramUniform2ui;
+	glProgramUniform2uiv = stub_glProgramUniform2uiv;
+	glProgramUniform3i = stub_glProgramUniform3i;
+	glProgramUniform3iv = stub_glProgramUniform3iv;
+	glProgramUniform3f = stub_glProgramUniform3f;
+	glProgramUniform3fv = stub_glProgramUniform3fv;
+	glProgramUniform3d = stub_glProgramUniform3d;
+	glProgramUniform3dv = stub_glProgramUniform3dv;
+	glProgramUniform3ui = stub_glProgramUniform3ui;
+	glProgramUniform3uiv = stub_glProgramUniform3uiv;
+	glProgramUniform4i = stub_glProgramUniform4i;
+	glProgramUniform4iv = stub_glProgramUniform4iv;
+	glProgramUniform4f = stub_glProgramUniform4f;
+	glProgramUniform4fv = stub_glProgramUniform4fv;
+	glProgramUniform4d = stub_glProgramUniform4d;
+	glProgramUniform4dv = stub_glProgramUniform4dv;
+	glProgramUniform4ui = stub_glProgramUniform4ui;
+	glProgramUniform4uiv = stub_glProgramUniform4uiv;
+	glProgramUniformMatrix2fv = stub_glProgramUniformMatrix2fv;
+	glProgramUniformMatrix3fv = stub_glProgramUniformMatrix3fv;
+	glProgramUniformMatrix4fv = stub_glProgramUniformMatrix4fv;
+	glProgramUniformMatrix2dv = stub_glProgramUniformMatrix2dv;
+	glProgramUniformMatrix3dv = stub_glProgramUniformMatrix3dv;
+	glProgramUniformMatrix4dv = stub_glProgramUniformMatrix4dv;
+	glProgramUniformMatrix2x3fv = stub_glProgramUniformMatrix2x3fv;
+	glProgramUniformMatrix3x2fv = stub_glProgramUniformMatrix3x2fv;
+	glProgramUniformMatrix2x4fv = stub_glProgramUniformMatrix2x4fv;
+	glProgramUniformMatrix4x2fv = stub_glProgramUniformMatrix4x2fv;
+	glProgramUniformMatrix3x4fv = stub_glProgramUniformMatrix3x4fv;
+	glProgramUniformMatrix4x3fv = stub_glProgramUniformMatrix4x3fv;
+	glProgramUniformMatrix2x3dv = stub_glProgramUniformMatrix2x3dv;
+	glProgramUniformMatrix3x2dv = stub_glProgramUniformMatrix3x2dv;
+	glProgramUniformMatrix2x4dv = stub_glProgramUniformMatrix2x4dv;
+	glProgramUniformMatrix4x2dv = stub_glProgramUniformMatrix4x2dv;
+	glProgramUniformMatrix3x4dv = stub_glProgramUniformMatrix3x4dv;
+	glProgramUniformMatrix4x3dv = stub_glProgramUniformMatrix4x3dv;
+	glValidateProgramPipeline = stub_glValidateProgramPipeline;
+	glGetProgramPipelineInfoLog = stub_glGetProgramPipelineInfoLog;
+	glVertexAttribL1d = stub_glVertexAttribL1d;
+	glVertexAttribL2d = stub_glVertexAttribL2d;
+	glVertexAttribL3d = stub_glVertexAttribL3d;
+	glVertexAttribL4d = stub_glVertexAttribL4d;
+	glVertexAttribL1dv = stub_glVertexAttribL1dv;
+	glVertexAttribL2dv = stub_glVertexAttribL2dv;
+	glVertexAttribL3dv = stub_glVertexAttribL3dv;
+	glVertexAttribL4dv = stub_glVertexAttribL4dv;
+	glVertexAttribLPointer = stub_glVertexAttribLPointer;
+	glGetVertexAttribLdv = stub_glGetVertexAttribLdv;
+	glViewportArrayv = stub_glViewportArrayv;
+	glViewportIndexedf = stub_glViewportIndexedf;
+	glViewportIndexedfv = stub_glViewportIndexedfv;
+	glScissorArrayv = stub_glScissorArrayv;
+	glScissorIndexed = stub_glScissorIndexed;
+	glScissorIndexedv = stub_glScissorIndexedv;
+	glDepthRangeArrayv = stub_glDepthRangeArrayv;
+	glDepthRangeIndexed = stub_glDepthRangeIndexed;
+	glGetFloati_v = stub_glGetFloati_v;
+	glGetDoublei_v = stub_glGetDoublei_v;
+	glCreateSyncFromCLeventARB = stub_glCreateSyncFromCLeventARB;
+	glDebugMessageControlARB = stub_glDebugMessageControlARB;
+	glDebugMessageInsertARB = stub_glDebugMessageInsertARB;
+	glDebugMessageCallbackARB = stub_glDebugMessageCallbackARB;
+	glGetDebugMessageLogARB = stub_glGetDebugMessageLogARB;
+	glGetGraphicsResetStatusARB = stub_glGetGraphicsResetStatusARB;
+	glGetnMapdvARB = stub_glGetnMapdvARB;
+	glGetnMapfvARB = stub_glGetnMapfvARB;
+	glGetnMapivARB = stub_glGetnMapivARB;
+	glGetnPixelMapfvARB = stub_glGetnPixelMapfvARB;
+	glGetnPixelMapuivARB = stub_glGetnPixelMapuivARB;
+	glGetnPixelMapusvARB = stub_glGetnPixelMapusvARB;
+	glGetnPolygonStippleARB = stub_glGetnPolygonStippleARB;
+	glGetnColorTableARB = stub_glGetnColorTableARB;
+	glGetnConvolutionFilterARB = stub_glGetnConvolutionFilterARB;
+	glGetnSeparableFilterARB = stub_glGetnSeparableFilterARB;
+	glGetnHistogramARB = stub_glGetnHistogramARB;
+	glGetnMinmaxARB = stub_glGetnMinmaxARB;
+	glGetnTexImageARB = stub_glGetnTexImageARB;
+	glReadnPixelsARB = stub_glReadnPixelsARB;
+	glGetnCompressedTexImageARB = stub_glGetnCompressedTexImageARB;
+	glGetnUniformfvARB = stub_glGetnUniformfvARB;
+	glGetnUniformivARB = stub_glGetnUniformivARB;
+	glGetnUniformuivARB = stub_glGetnUniformuivARB;
+	glGetnUniformdvARB = stub_glGetnUniformdvARB;
+	glDrawArraysInstancedBaseInstance = stub_glDrawArraysInstancedBaseInstance;
+	glDrawElementsInstancedBaseInstance = stub_glDrawElementsInstancedBaseInstance;
+	glDrawElementsInstancedBaseVertexBaseInstance = stub_glDrawElementsInstancedBaseVertexBaseInstance;
+	glDrawTransformFeedbackInstanced = stub_glDrawTransformFeedbackInstanced;
+	glDrawTransformFeedbackStreamInstanced = stub_glDrawTransformFeedbackStreamInstanced;
+	glGetInternalformativ = stub_glGetInternalformativ;
+	glGetActiveAtomicCounterBufferiv = stub_glGetActiveAtomicCounterBufferiv;
+	glBindImageTexture = stub_glBindImageTexture;
+	glMemoryBarrier = stub_glMemoryBarrier;
+	glTexStorage1D = stub_glTexStorage1D;
+	glTexStorage2D = stub_glTexStorage2D;
+	glTexStorage3D = stub_glTexStorage3D;
+	glTextureStorage1DEXT = stub_glTextureStorage1DEXT;
+	glTextureStorage2DEXT = stub_glTextureStorage2DEXT;
+	glTextureStorage3DEXT = stub_glTextureStorage3DEXT;
+	glDebugMessageControl = stub_glDebugMessageControl;
+	glDebugMessageInsert = stub_glDebugMessageInsert;
+	glDebugMessageCallback = stub_glDebugMessageCallback;
+	glGetDebugMessageLog = stub_glGetDebugMessageLog;
+	glPushDebugGroup = stub_glPushDebugGroup;
+	glPopDebugGroup = stub_glPopDebugGroup;
+	glObjectLabel = stub_glObjectLabel;
+	glGetObjectLabel = stub_glGetObjectLabel;
+	glObjectPtrLabel = stub_glObjectPtrLabel;
+	glGetObjectPtrLabel = stub_glGetObjectPtrLabel;
+	glClearBufferData = stub_glClearBufferData;
+	glClearBufferSubData = stub_glClearBufferSubData;
+	glClearNamedBufferDataEXT = stub_glClearNamedBufferDataEXT;
+	glClearNamedBufferSubDataEXT = stub_glClearNamedBufferSubDataEXT;
+	glDispatchCompute = stub_glDispatchCompute;
+	glDispatchComputeIndirect = stub_glDispatchComputeIndirect;
+	glCopyImageSubData = stub_glCopyImageSubData;
+	glTextureView = stub_glTextureView;
+	glBindVertexBuffer = stub_glBindVertexBuffer;
+	glVertexAttribFormat = stub_glVertexAttribFormat;
+	glVertexAttribIFormat = stub_glVertexAttribIFormat;
+	glVertexAttribLFormat = stub_glVertexAttribLFormat;
+	glVertexAttribBinding = stub_glVertexAttribBinding;
+	glVertexBindingDivisor = stub_glVertexBindingDivisor;
+	glVertexArrayBindVertexBufferEXT = stub_glVertexArrayBindVertexBufferEXT;
+	glVertexArrayVertexAttribFormatEXT = stub_glVertexArrayVertexAttribFormatEXT;
+	glVertexArrayVertexAttribIFormatEXT = stub_glVertexArrayVertexAttribIFormatEXT;
+	glVertexArrayVertexAttribLFormatEXT = stub_glVertexArrayVertexAttribLFormatEXT;
+	glVertexArrayVertexAttribBindingEXT = stub_glVertexArrayVertexAttribBindingEXT;
+	glVertexArrayVertexBindingDivisorEXT = stub_glVertexArrayVertexBindingDivisorEXT;
+	glFramebufferParameteri = stub_glFramebufferParameteri;
+	glGetFramebufferParameteriv = stub_glGetFramebufferParameteriv;
+	glNamedFramebufferParameteriEXT = stub_glNamedFramebufferParameteriEXT;
+	glGetNamedFramebufferParameterivEXT = stub_glGetNamedFramebufferParameterivEXT;
+	glGetInternalformati64v = stub_glGetInternalformati64v;
+	glInvalidateTexSubImage = stub_glInvalidateTexSubImage;
+	glInvalidateTexImage = stub_glInvalidateTexImage;
+	glInvalidateBufferSubData = stub_glInvalidateBufferSubData;
+	glInvalidateBufferData = stub_glInvalidateBufferData;
+	glInvalidateFramebuffer = stub_glInvalidateFramebuffer;
+	glInvalidateSubFramebuffer = stub_glInvalidateSubFramebuffer;
+	glMultiDrawArraysIndirect = stub_glMultiDrawArraysIndirect;
+	glMultiDrawElementsIndirect = stub_glMultiDrawElementsIndirect;
+	glGetProgramInterfaceiv = stub_glGetProgramInterfaceiv;
+	glGetProgramResourceIndex = stub_glGetProgramResourceIndex;
+	glGetProgramResourceName = stub_glGetProgramResourceName;
+	glGetProgramResourceiv = stub_glGetProgramResourceiv;
+	glGetProgramResourceLocation = stub_glGetProgramResourceLocation;
+	glGetProgramResourceLocationIndex = stub_glGetProgramResourceLocationIndex;
+	glShaderStorageBlockBinding = stub_glShaderStorageBlockBinding;
+	glTexBufferRange = stub_glTexBufferRange;
+	glTextureBufferRangeEXT = stub_glTextureBufferRangeEXT;
+	glTexStorage2DMultisample = stub_glTexStorage2DMultisample;
+	glTexStorage3DMultisample = stub_glTexStorage3DMultisample;
+	glTextureStorage2DMultisampleEXT = stub_glTextureStorage2DMultisampleEXT;
+	glTextureStorage3DMultisampleEXT = stub_glTextureStorage3DMultisampleEXT;
 	glBlendColorEXT = stub_glBlendColorEXT;
 	glPolygonOffsetEXT = stub_glPolygonOffsetEXT;
 	glTexImage3DEXT = stub_glTexImage3DEXT;
@@ -3980,6 +5342,8 @@ void glexfp::Reset() {
 	glPixelTransformParameterfEXT = stub_glPixelTransformParameterfEXT;
 	glPixelTransformParameterivEXT = stub_glPixelTransformParameterivEXT;
 	glPixelTransformParameterfvEXT = stub_glPixelTransformParameterfvEXT;
+	glGetPixelTransformParameterivEXT = stub_glGetPixelTransformParameterivEXT;
+	glGetPixelTransformParameterfvEXT = stub_glGetPixelTransformParameterfvEXT;
 	glSecondaryColor3bEXT = stub_glSecondaryColor3bEXT;
 	glSecondaryColor3bvEXT = stub_glSecondaryColor3bvEXT;
 	glSecondaryColor3dEXT = stub_glSecondaryColor3dEXT;
@@ -4553,6 +5917,7 @@ void glexfp::Reset() {
 	glGetVaryingLocationNV = stub_glGetVaryingLocationNV;
 	glGetActiveVaryingNV = stub_glGetActiveVaryingNV;
 	glGetTransformFeedbackVaryingNV = stub_glGetTransformFeedbackVaryingNV;
+	glTransformFeedbackStreamAttribsNV = stub_glTransformFeedbackStreamAttribsNV;
 	glUniformBufferEXT = stub_glUniformBufferEXT;
 	glGetUniformBufferSizeEXT = stub_glGetUniformBufferSizeEXT;
 	glGetUniformOffsetEXT = stub_glGetUniformOffsetEXT;
@@ -4738,6 +6103,9 @@ void glexfp::Reset() {
 	glNamedBufferSubDataEXT = stub_glNamedBufferSubDataEXT;
 	glMapNamedBufferEXT = stub_glMapNamedBufferEXT;
 	glUnmapNamedBufferEXT = stub_glUnmapNamedBufferEXT;
+	glMapNamedBufferRangeEXT = stub_glMapNamedBufferRangeEXT;
+	glFlushMappedNamedBufferRangeEXT = stub_glFlushMappedNamedBufferRangeEXT;
+	glNamedCopyBufferSubDataEXT = stub_glNamedCopyBufferSubDataEXT;
 	glGetNamedBufferParameterivEXT = stub_glGetNamedBufferParameterivEXT;
 	glGetNamedBufferPointervEXT = stub_glGetNamedBufferPointervEXT;
 	glGetNamedBufferSubDataEXT = stub_glGetNamedBufferSubDataEXT;
@@ -4764,6 +6132,23 @@ void glexfp::Reset() {
 	glNamedFramebufferTextureFaceEXT = stub_glNamedFramebufferTextureFaceEXT;
 	glTextureRenderbufferEXT = stub_glTextureRenderbufferEXT;
 	glMultiTexRenderbufferEXT = stub_glMultiTexRenderbufferEXT;
+	glProgramUniform1dEXT = stub_glProgramUniform1dEXT;
+	glProgramUniform2dEXT = stub_glProgramUniform2dEXT;
+	glProgramUniform3dEXT = stub_glProgramUniform3dEXT;
+	glProgramUniform4dEXT = stub_glProgramUniform4dEXT;
+	glProgramUniform1dvEXT = stub_glProgramUniform1dvEXT;
+	glProgramUniform2dvEXT = stub_glProgramUniform2dvEXT;
+	glProgramUniform3dvEXT = stub_glProgramUniform3dvEXT;
+	glProgramUniform4dvEXT = stub_glProgramUniform4dvEXT;
+	glProgramUniformMatrix2dvEXT = stub_glProgramUniformMatrix2dvEXT;
+	glProgramUniformMatrix3dvEXT = stub_glProgramUniformMatrix3dvEXT;
+	glProgramUniformMatrix4dvEXT = stub_glProgramUniformMatrix4dvEXT;
+	glProgramUniformMatrix2x3dvEXT = stub_glProgramUniformMatrix2x3dvEXT;
+	glProgramUniformMatrix2x4dvEXT = stub_glProgramUniformMatrix2x4dvEXT;
+	glProgramUniformMatrix3x2dvEXT = stub_glProgramUniformMatrix3x2dvEXT;
+	glProgramUniformMatrix3x4dvEXT = stub_glProgramUniformMatrix3x4dvEXT;
+	glProgramUniformMatrix4x2dvEXT = stub_glProgramUniformMatrix4x2dvEXT;
+	glProgramUniformMatrix4x3dvEXT = stub_glProgramUniformMatrix4x3dvEXT;
 	glGetMultisamplefvNV = stub_glGetMultisamplefvNV;
 	glSampleMaskIndexedNV = stub_glSampleMaskIndexedNV;
 	glTexRenderbufferNV = stub_glTexRenderbufferNV;
@@ -4804,6 +6189,208 @@ void glexfp::Reset() {
 	glObjectPurgeableAPPLE = stub_glObjectPurgeableAPPLE;
 	glObjectUnpurgeableAPPLE = stub_glObjectUnpurgeableAPPLE;
 	glGetObjectParameterivAPPLE = stub_glGetObjectParameterivAPPLE;
+	glBeginVideoCaptureNV = stub_glBeginVideoCaptureNV;
+	glBindVideoCaptureStreamBufferNV = stub_glBindVideoCaptureStreamBufferNV;
+	glBindVideoCaptureStreamTextureNV = stub_glBindVideoCaptureStreamTextureNV;
+	glEndVideoCaptureNV = stub_glEndVideoCaptureNV;
+	glGetVideoCaptureivNV = stub_glGetVideoCaptureivNV;
+	glGetVideoCaptureStreamivNV = stub_glGetVideoCaptureStreamivNV;
+	glGetVideoCaptureStreamfvNV = stub_glGetVideoCaptureStreamfvNV;
+	glGetVideoCaptureStreamdvNV = stub_glGetVideoCaptureStreamdvNV;
+	glVideoCaptureNV = stub_glVideoCaptureNV;
+	glVideoCaptureStreamParameterivNV = stub_glVideoCaptureStreamParameterivNV;
+	glVideoCaptureStreamParameterfvNV = stub_glVideoCaptureStreamParameterfvNV;
+	glVideoCaptureStreamParameterdvNV = stub_glVideoCaptureStreamParameterdvNV;
+	glCopyImageSubDataNV = stub_glCopyImageSubDataNV;
+	glUseShaderProgramEXT = stub_glUseShaderProgramEXT;
+	glActiveProgramEXT = stub_glActiveProgramEXT;
+	glCreateShaderProgramEXT = stub_glCreateShaderProgramEXT;
+	glMakeBufferResidentNV = stub_glMakeBufferResidentNV;
+	glMakeBufferNonResidentNV = stub_glMakeBufferNonResidentNV;
+	glIsBufferResidentNV = stub_glIsBufferResidentNV;
+	glMakeNamedBufferResidentNV = stub_glMakeNamedBufferResidentNV;
+	glMakeNamedBufferNonResidentNV = stub_glMakeNamedBufferNonResidentNV;
+	glIsNamedBufferResidentNV = stub_glIsNamedBufferResidentNV;
+	glGetBufferParameterui64vNV = stub_glGetBufferParameterui64vNV;
+	glGetNamedBufferParameterui64vNV = stub_glGetNamedBufferParameterui64vNV;
+	glGetIntegerui64vNV = stub_glGetIntegerui64vNV;
+	glUniformui64NV = stub_glUniformui64NV;
+	glUniformui64vNV = stub_glUniformui64vNV;
+	glGetUniformui64vNV = stub_glGetUniformui64vNV;
+	glProgramUniformui64NV = stub_glProgramUniformui64NV;
+	glProgramUniformui64vNV = stub_glProgramUniformui64vNV;
+	glBufferAddressRangeNV = stub_glBufferAddressRangeNV;
+	glVertexFormatNV = stub_glVertexFormatNV;
+	glNormalFormatNV = stub_glNormalFormatNV;
+	glColorFormatNV = stub_glColorFormatNV;
+	glIndexFormatNV = stub_glIndexFormatNV;
+	glTexCoordFormatNV = stub_glTexCoordFormatNV;
+	glEdgeFlagFormatNV = stub_glEdgeFlagFormatNV;
+	glSecondaryColorFormatNV = stub_glSecondaryColorFormatNV;
+	glFogCoordFormatNV = stub_glFogCoordFormatNV;
+	glVertexAttribFormatNV = stub_glVertexAttribFormatNV;
+	glVertexAttribIFormatNV = stub_glVertexAttribIFormatNV;
+	glGetIntegerui64i_vNV = stub_glGetIntegerui64i_vNV;
+	glTextureBarrierNV = stub_glTextureBarrierNV;
+	glBindImageTextureEXT = stub_glBindImageTextureEXT;
+	glMemoryBarrierEXT = stub_glMemoryBarrierEXT;
+	glVertexAttribL1dEXT = stub_glVertexAttribL1dEXT;
+	glVertexAttribL2dEXT = stub_glVertexAttribL2dEXT;
+	glVertexAttribL3dEXT = stub_glVertexAttribL3dEXT;
+	glVertexAttribL4dEXT = stub_glVertexAttribL4dEXT;
+	glVertexAttribL1dvEXT = stub_glVertexAttribL1dvEXT;
+	glVertexAttribL2dvEXT = stub_glVertexAttribL2dvEXT;
+	glVertexAttribL3dvEXT = stub_glVertexAttribL3dvEXT;
+	glVertexAttribL4dvEXT = stub_glVertexAttribL4dvEXT;
+	glVertexAttribLPointerEXT = stub_glVertexAttribLPointerEXT;
+	glGetVertexAttribLdvEXT = stub_glGetVertexAttribLdvEXT;
+	glVertexArrayVertexAttribLOffsetEXT = stub_glVertexArrayVertexAttribLOffsetEXT;
+	glProgramSubroutineParametersuivNV = stub_glProgramSubroutineParametersuivNV;
+	glGetProgramSubroutineParameteruivNV = stub_glGetProgramSubroutineParameteruivNV;
+	glUniform1i64NV = stub_glUniform1i64NV;
+	glUniform2i64NV = stub_glUniform2i64NV;
+	glUniform3i64NV = stub_glUniform3i64NV;
+	glUniform4i64NV = stub_glUniform4i64NV;
+	glUniform1i64vNV = stub_glUniform1i64vNV;
+	glUniform2i64vNV = stub_glUniform2i64vNV;
+	glUniform3i64vNV = stub_glUniform3i64vNV;
+	glUniform4i64vNV = stub_glUniform4i64vNV;
+	glUniform1ui64NV = stub_glUniform1ui64NV;
+	glUniform2ui64NV = stub_glUniform2ui64NV;
+	glUniform3ui64NV = stub_glUniform3ui64NV;
+	glUniform4ui64NV = stub_glUniform4ui64NV;
+	glUniform1ui64vNV = stub_glUniform1ui64vNV;
+	glUniform2ui64vNV = stub_glUniform2ui64vNV;
+	glUniform3ui64vNV = stub_glUniform3ui64vNV;
+	glUniform4ui64vNV = stub_glUniform4ui64vNV;
+	glGetUniformi64vNV = stub_glGetUniformi64vNV;
+	glProgramUniform1i64NV = stub_glProgramUniform1i64NV;
+	glProgramUniform2i64NV = stub_glProgramUniform2i64NV;
+	glProgramUniform3i64NV = stub_glProgramUniform3i64NV;
+	glProgramUniform4i64NV = stub_glProgramUniform4i64NV;
+	glProgramUniform1i64vNV = stub_glProgramUniform1i64vNV;
+	glProgramUniform2i64vNV = stub_glProgramUniform2i64vNV;
+	glProgramUniform3i64vNV = stub_glProgramUniform3i64vNV;
+	glProgramUniform4i64vNV = stub_glProgramUniform4i64vNV;
+	glProgramUniform1ui64NV = stub_glProgramUniform1ui64NV;
+	glProgramUniform2ui64NV = stub_glProgramUniform2ui64NV;
+	glProgramUniform3ui64NV = stub_glProgramUniform3ui64NV;
+	glProgramUniform4ui64NV = stub_glProgramUniform4ui64NV;
+	glProgramUniform1ui64vNV = stub_glProgramUniform1ui64vNV;
+	glProgramUniform2ui64vNV = stub_glProgramUniform2ui64vNV;
+	glProgramUniform3ui64vNV = stub_glProgramUniform3ui64vNV;
+	glProgramUniform4ui64vNV = stub_glProgramUniform4ui64vNV;
+	glVertexAttribL1i64NV = stub_glVertexAttribL1i64NV;
+	glVertexAttribL2i64NV = stub_glVertexAttribL2i64NV;
+	glVertexAttribL3i64NV = stub_glVertexAttribL3i64NV;
+	glVertexAttribL4i64NV = stub_glVertexAttribL4i64NV;
+	glVertexAttribL1i64vNV = stub_glVertexAttribL1i64vNV;
+	glVertexAttribL2i64vNV = stub_glVertexAttribL2i64vNV;
+	glVertexAttribL3i64vNV = stub_glVertexAttribL3i64vNV;
+	glVertexAttribL4i64vNV = stub_glVertexAttribL4i64vNV;
+	glVertexAttribL1ui64NV = stub_glVertexAttribL1ui64NV;
+	glVertexAttribL2ui64NV = stub_glVertexAttribL2ui64NV;
+	glVertexAttribL3ui64NV = stub_glVertexAttribL3ui64NV;
+	glVertexAttribL4ui64NV = stub_glVertexAttribL4ui64NV;
+	glVertexAttribL1ui64vNV = stub_glVertexAttribL1ui64vNV;
+	glVertexAttribL2ui64vNV = stub_glVertexAttribL2ui64vNV;
+	glVertexAttribL3ui64vNV = stub_glVertexAttribL3ui64vNV;
+	glVertexAttribL4ui64vNV = stub_glVertexAttribL4ui64vNV;
+	glGetVertexAttribLi64vNV = stub_glGetVertexAttribLi64vNV;
+	glGetVertexAttribLui64vNV = stub_glGetVertexAttribLui64vNV;
+	glVertexAttribLFormatNV = stub_glVertexAttribLFormatNV;
+	glGenNamesAMD = stub_glGenNamesAMD;
+	glDeleteNamesAMD = stub_glDeleteNamesAMD;
+	glIsNameAMD = stub_glIsNameAMD;
+	glDebugMessageEnableAMD = stub_glDebugMessageEnableAMD;
+	glDebugMessageInsertAMD = stub_glDebugMessageInsertAMD;
+	glDebugMessageCallbackAMD = stub_glDebugMessageCallbackAMD;
+	glGetDebugMessageLogAMD = stub_glGetDebugMessageLogAMD;
+	glVDPAUInitNV = stub_glVDPAUInitNV;
+	glVDPAUFiniNV = stub_glVDPAUFiniNV;
+	glVDPAURegisterVideoSurfaceNV = stub_glVDPAURegisterVideoSurfaceNV;
+	glVDPAURegisterOutputSurfaceNV = stub_glVDPAURegisterOutputSurfaceNV;
+	glVDPAUIsSurfaceNV = stub_glVDPAUIsSurfaceNV;
+	glVDPAUUnregisterSurfaceNV = stub_glVDPAUUnregisterSurfaceNV;
+	glVDPAUGetSurfaceivNV = stub_glVDPAUGetSurfaceivNV;
+	glVDPAUSurfaceAccessNV = stub_glVDPAUSurfaceAccessNV;
+	glVDPAUMapSurfacesNV = stub_glVDPAUMapSurfacesNV;
+	glVDPAUUnmapSurfacesNV = stub_glVDPAUUnmapSurfacesNV;
+	glTexImage2DMultisampleCoverageNV = stub_glTexImage2DMultisampleCoverageNV;
+	glTexImage3DMultisampleCoverageNV = stub_glTexImage3DMultisampleCoverageNV;
+	glTextureImage2DMultisampleNV = stub_glTextureImage2DMultisampleNV;
+	glTextureImage3DMultisampleNV = stub_glTextureImage3DMultisampleNV;
+	glTextureImage2DMultisampleCoverageNV = stub_glTextureImage2DMultisampleCoverageNV;
+	glTextureImage3DMultisampleCoverageNV = stub_glTextureImage3DMultisampleCoverageNV;
+	glSetMultisamplefvAMD = stub_glSetMultisamplefvAMD;
+	glImportSyncEXT = stub_glImportSyncEXT;
+	glMultiDrawArraysIndirectAMD = stub_glMultiDrawArraysIndirectAMD;
+	glMultiDrawElementsIndirectAMD = stub_glMultiDrawElementsIndirectAMD;
+	glGenPathsNV = stub_glGenPathsNV;
+	glDeletePathsNV = stub_glDeletePathsNV;
+	glIsPathNV = stub_glIsPathNV;
+	glPathCommandsNV = stub_glPathCommandsNV;
+	glPathCoordsNV = stub_glPathCoordsNV;
+	glPathSubCommandsNV = stub_glPathSubCommandsNV;
+	glPathSubCoordsNV = stub_glPathSubCoordsNV;
+	glPathStringNV = stub_glPathStringNV;
+	glPathGlyphsNV = stub_glPathGlyphsNV;
+	glPathGlyphRangeNV = stub_glPathGlyphRangeNV;
+	glWeightPathsNV = stub_glWeightPathsNV;
+	glCopyPathNV = stub_glCopyPathNV;
+	glInterpolatePathsNV = stub_glInterpolatePathsNV;
+	glTransformPathNV = stub_glTransformPathNV;
+	glPathParameterivNV = stub_glPathParameterivNV;
+	glPathParameteriNV = stub_glPathParameteriNV;
+	glPathParameterfvNV = stub_glPathParameterfvNV;
+	glPathParameterfNV = stub_glPathParameterfNV;
+	glPathDashArrayNV = stub_glPathDashArrayNV;
+	glPathStencilFuncNV = stub_glPathStencilFuncNV;
+	glPathStencilDepthOffsetNV = stub_glPathStencilDepthOffsetNV;
+	glStencilFillPathNV = stub_glStencilFillPathNV;
+	glStencilStrokePathNV = stub_glStencilStrokePathNV;
+	glStencilFillPathInstancedNV = stub_glStencilFillPathInstancedNV;
+	glStencilStrokePathInstancedNV = stub_glStencilStrokePathInstancedNV;
+	glPathCoverDepthFuncNV = stub_glPathCoverDepthFuncNV;
+	glPathColorGenNV = stub_glPathColorGenNV;
+	glPathTexGenNV = stub_glPathTexGenNV;
+	glPathFogGenNV = stub_glPathFogGenNV;
+	glCoverFillPathNV = stub_glCoverFillPathNV;
+	glCoverStrokePathNV = stub_glCoverStrokePathNV;
+	glCoverFillPathInstancedNV = stub_glCoverFillPathInstancedNV;
+	glCoverStrokePathInstancedNV = stub_glCoverStrokePathInstancedNV;
+	glGetPathParameterivNV = stub_glGetPathParameterivNV;
+	glGetPathParameterfvNV = stub_glGetPathParameterfvNV;
+	glGetPathCommandsNV = stub_glGetPathCommandsNV;
+	glGetPathCoordsNV = stub_glGetPathCoordsNV;
+	glGetPathDashArrayNV = stub_glGetPathDashArrayNV;
+	glGetPathMetricsNV = stub_glGetPathMetricsNV;
+	glGetPathMetricRangeNV = stub_glGetPathMetricRangeNV;
+	glGetPathSpacingNV = stub_glGetPathSpacingNV;
+	glGetPathColorGenivNV = stub_glGetPathColorGenivNV;
+	glGetPathColorGenfvNV = stub_glGetPathColorGenfvNV;
+	glGetPathTexGenivNV = stub_glGetPathTexGenivNV;
+	glGetPathTexGenfvNV = stub_glGetPathTexGenfvNV;
+	glIsPointInFillPathNV = stub_glIsPointInFillPathNV;
+	glIsPointInStrokePathNV = stub_glIsPointInStrokePathNV;
+	glGetPathLengthNV = stub_glGetPathLengthNV;
+	glPointAlongPathNV = stub_glPointAlongPathNV;
+	glStencilOpValueAMD = stub_glStencilOpValueAMD;
+	glGetTextureHandleNV = stub_glGetTextureHandleNV;
+	glGetTextureSamplerHandleNV = stub_glGetTextureSamplerHandleNV;
+	glMakeTextureHandleResidentNV = stub_glMakeTextureHandleResidentNV;
+	glMakeTextureHandleNonResidentNV = stub_glMakeTextureHandleNonResidentNV;
+	glGetImageHandleNV = stub_glGetImageHandleNV;
+	glMakeImageHandleResidentNV = stub_glMakeImageHandleResidentNV;
+	glMakeImageHandleNonResidentNV = stub_glMakeImageHandleNonResidentNV;
+	glUniformHandleui64NV = stub_glUniformHandleui64NV;
+	glUniformHandleui64vNV = stub_glUniformHandleui64vNV;
+	glProgramUniformHandleui64NV = stub_glProgramUniformHandleui64NV;
+	glProgramUniformHandleui64vNV = stub_glProgramUniformHandleui64vNV;
+	glIsTextureHandleResidentNV = stub_glIsTextureHandleResidentNV;
+	glIsImageHandleResidentNV = stub_glIsImageHandleResidentNV;
+	glTexStorageSparseAMD = stub_glTexStorageSparseAMD;
+	glTextureStorageSparseAMD = stub_glTextureStorageSparseAMD;
 }//Reset
 
 //----------------------------------------------------------------------------
@@ -6366,19 +7953,39 @@ bool glexfp::Load() {
 		glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glProgramParameteri");
-	if (p) {
-		glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC)p;
-		m_count++;
-	}
 	p = glXGetProcAddress((const unsigned char*)"glFramebufferTexture");
 	if (p) {
 		glFramebufferTexture = (PFNGLFRAMEBUFFERTEXTUREPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glFramebufferTextureFace");
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribDivisor");
 	if (p) {
-		glFramebufferTextureFace = (PFNGLFRAMEBUFFERTEXTUREFACEPROC)p;
+		glVertexAttribDivisor = (PFNGLVERTEXATTRIBDIVISORPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMinSampleShading");
+	if (p) {
+		glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationi");
+	if (p) {
+		glBlendEquationi = (PFNGLBLENDEQUATIONIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationSeparatei");
+	if (p) {
+		glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFunci");
+	if (p) {
+		glBlendFunci = (PFNGLBLENDFUNCIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparatei");
+	if (p) {
+		glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glActiveTextureARB");
@@ -7691,29 +9298,1469 @@ bool glexfp::Load() {
 		glSampleMaski = (PFNGLSAMPLEMASKIPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glBlendEquationi");
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationiARB");
 	if (p) {
-		glBlendEquationi = (PFNGLBLENDEQUATIONIPROC)p;
+		glBlendEquationiARB = (PFNGLBLENDEQUATIONIARBPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glBlendEquationSeparatei");
+	p = glXGetProcAddress((const unsigned char*)"glBlendEquationSeparateiARB");
 	if (p) {
-		glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC)p;
+		glBlendEquationSeparateiARB = (PFNGLBLENDEQUATIONSEPARATEIARBPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glBlendFunci");
+	p = glXGetProcAddress((const unsigned char*)"glBlendFunciARB");
 	if (p) {
-		glBlendFunci = (PFNGLBLENDFUNCIPROC)p;
+		glBlendFunciARB = (PFNGLBLENDFUNCIARBPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparatei");
+	p = glXGetProcAddress((const unsigned char*)"glBlendFuncSeparateiARB");
 	if (p) {
-		glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC)p;
+		glBlendFuncSeparateiARB = (PFNGLBLENDFUNCSEPARATEIARBPROC)p;
 		m_count++;
 	}
-	p = glXGetProcAddress((const unsigned char*)"glMinSampleShading");
+	p = glXGetProcAddress((const unsigned char*)"glMinSampleShadingARB");
 	if (p) {
-		glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC)p;
+		glMinSampleShadingARB = (PFNGLMINSAMPLESHADINGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedStringARB");
+	if (p) {
+		glNamedStringARB = (PFNGLNAMEDSTRINGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteNamedStringARB");
+	if (p) {
+		glDeleteNamedStringARB = (PFNGLDELETENAMEDSTRINGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCompileShaderIncludeARB");
+	if (p) {
+		glCompileShaderIncludeARB = (PFNGLCOMPILESHADERINCLUDEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsNamedStringARB");
+	if (p) {
+		glIsNamedStringARB = (PFNGLISNAMEDSTRINGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedStringARB");
+	if (p) {
+		glGetNamedStringARB = (PFNGLGETNAMEDSTRINGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedStringivARB");
+	if (p) {
+		glGetNamedStringivARB = (PFNGLGETNAMEDSTRINGIVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindFragDataLocationIndexed");
+	if (p) {
+		glBindFragDataLocationIndexed = (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFragDataIndex");
+	if (p) {
+		glGetFragDataIndex = (PFNGLGETFRAGDATAINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenSamplers");
+	if (p) {
+		glGenSamplers = (PFNGLGENSAMPLERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteSamplers");
+	if (p) {
+		glDeleteSamplers = (PFNGLDELETESAMPLERSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsSampler");
+	if (p) {
+		glIsSampler = (PFNGLISSAMPLERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindSampler");
+	if (p) {
+		glBindSampler = (PFNGLBINDSAMPLERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameteri");
+	if (p) {
+		glSamplerParameteri = (PFNGLSAMPLERPARAMETERIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameteriv");
+	if (p) {
+		glSamplerParameteriv = (PFNGLSAMPLERPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameterf");
+	if (p) {
+		glSamplerParameterf = (PFNGLSAMPLERPARAMETERFPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameterfv");
+	if (p) {
+		glSamplerParameterfv = (PFNGLSAMPLERPARAMETERFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameterIiv");
+	if (p) {
+		glSamplerParameterIiv = (PFNGLSAMPLERPARAMETERIIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSamplerParameterIuiv");
+	if (p) {
+		glSamplerParameterIuiv = (PFNGLSAMPLERPARAMETERIUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSamplerParameteriv");
+	if (p) {
+		glGetSamplerParameteriv = (PFNGLGETSAMPLERPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSamplerParameterIiv");
+	if (p) {
+		glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSamplerParameterfv");
+	if (p) {
+		glGetSamplerParameterfv = (PFNGLGETSAMPLERPARAMETERFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSamplerParameterIuiv");
+	if (p) {
+		glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glQueryCounter");
+	if (p) {
+		glQueryCounter = (PFNGLQUERYCOUNTERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetQueryObjecti64v");
+	if (p) {
+		glGetQueryObjecti64v = (PFNGLGETQUERYOBJECTI64VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetQueryObjectui64v");
+	if (p) {
+		glGetQueryObjectui64v = (PFNGLGETQUERYOBJECTUI64VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP2ui");
+	if (p) {
+		glVertexP2ui = (PFNGLVERTEXP2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP2uiv");
+	if (p) {
+		glVertexP2uiv = (PFNGLVERTEXP2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP3ui");
+	if (p) {
+		glVertexP3ui = (PFNGLVERTEXP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP3uiv");
+	if (p) {
+		glVertexP3uiv = (PFNGLVERTEXP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP4ui");
+	if (p) {
+		glVertexP4ui = (PFNGLVERTEXP4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexP4uiv");
+	if (p) {
+		glVertexP4uiv = (PFNGLVERTEXP4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP1ui");
+	if (p) {
+		glTexCoordP1ui = (PFNGLTEXCOORDP1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP1uiv");
+	if (p) {
+		glTexCoordP1uiv = (PFNGLTEXCOORDP1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP2ui");
+	if (p) {
+		glTexCoordP2ui = (PFNGLTEXCOORDP2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP2uiv");
+	if (p) {
+		glTexCoordP2uiv = (PFNGLTEXCOORDP2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP3ui");
+	if (p) {
+		glTexCoordP3ui = (PFNGLTEXCOORDP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP3uiv");
+	if (p) {
+		glTexCoordP3uiv = (PFNGLTEXCOORDP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP4ui");
+	if (p) {
+		glTexCoordP4ui = (PFNGLTEXCOORDP4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordP4uiv");
+	if (p) {
+		glTexCoordP4uiv = (PFNGLTEXCOORDP4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP1ui");
+	if (p) {
+		glMultiTexCoordP1ui = (PFNGLMULTITEXCOORDP1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP1uiv");
+	if (p) {
+		glMultiTexCoordP1uiv = (PFNGLMULTITEXCOORDP1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP2ui");
+	if (p) {
+		glMultiTexCoordP2ui = (PFNGLMULTITEXCOORDP2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP2uiv");
+	if (p) {
+		glMultiTexCoordP2uiv = (PFNGLMULTITEXCOORDP2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP3ui");
+	if (p) {
+		glMultiTexCoordP3ui = (PFNGLMULTITEXCOORDP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP3uiv");
+	if (p) {
+		glMultiTexCoordP3uiv = (PFNGLMULTITEXCOORDP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP4ui");
+	if (p) {
+		glMultiTexCoordP4ui = (PFNGLMULTITEXCOORDP4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiTexCoordP4uiv");
+	if (p) {
+		glMultiTexCoordP4uiv = (PFNGLMULTITEXCOORDP4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNormalP3ui");
+	if (p) {
+		glNormalP3ui = (PFNGLNORMALP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNormalP3uiv");
+	if (p) {
+		glNormalP3uiv = (PFNGLNORMALP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorP3ui");
+	if (p) {
+		glColorP3ui = (PFNGLCOLORP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorP3uiv");
+	if (p) {
+		glColorP3uiv = (PFNGLCOLORP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorP4ui");
+	if (p) {
+		glColorP4ui = (PFNGLCOLORP4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorP4uiv");
+	if (p) {
+		glColorP4uiv = (PFNGLCOLORP4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSecondaryColorP3ui");
+	if (p) {
+		glSecondaryColorP3ui = (PFNGLSECONDARYCOLORP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSecondaryColorP3uiv");
+	if (p) {
+		glSecondaryColorP3uiv = (PFNGLSECONDARYCOLORP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP1ui");
+	if (p) {
+		glVertexAttribP1ui = (PFNGLVERTEXATTRIBP1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP1uiv");
+	if (p) {
+		glVertexAttribP1uiv = (PFNGLVERTEXATTRIBP1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP2ui");
+	if (p) {
+		glVertexAttribP2ui = (PFNGLVERTEXATTRIBP2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP2uiv");
+	if (p) {
+		glVertexAttribP2uiv = (PFNGLVERTEXATTRIBP2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP3ui");
+	if (p) {
+		glVertexAttribP3ui = (PFNGLVERTEXATTRIBP3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP3uiv");
+	if (p) {
+		glVertexAttribP3uiv = (PFNGLVERTEXATTRIBP3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP4ui");
+	if (p) {
+		glVertexAttribP4ui = (PFNGLVERTEXATTRIBP4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribP4uiv");
+	if (p) {
+		glVertexAttribP4uiv = (PFNGLVERTEXATTRIBP4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawArraysIndirect");
+	if (p) {
+		glDrawArraysIndirect = (PFNGLDRAWARRAYSINDIRECTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsIndirect");
+	if (p) {
+		glDrawElementsIndirect = (PFNGLDRAWELEMENTSINDIRECTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1d");
+	if (p) {
+		glUniform1d = (PFNGLUNIFORM1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2d");
+	if (p) {
+		glUniform2d = (PFNGLUNIFORM2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3d");
+	if (p) {
+		glUniform3d = (PFNGLUNIFORM3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4d");
+	if (p) {
+		glUniform4d = (PFNGLUNIFORM4DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1dv");
+	if (p) {
+		glUniform1dv = (PFNGLUNIFORM1DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2dv");
+	if (p) {
+		glUniform2dv = (PFNGLUNIFORM2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3dv");
+	if (p) {
+		glUniform3dv = (PFNGLUNIFORM3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4dv");
+	if (p) {
+		glUniform4dv = (PFNGLUNIFORM4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix2dv");
+	if (p) {
+		glUniformMatrix2dv = (PFNGLUNIFORMMATRIX2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix3dv");
+	if (p) {
+		glUniformMatrix3dv = (PFNGLUNIFORMMATRIX3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix4dv");
+	if (p) {
+		glUniformMatrix4dv = (PFNGLUNIFORMMATRIX4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix2x3dv");
+	if (p) {
+		glUniformMatrix2x3dv = (PFNGLUNIFORMMATRIX2X3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix2x4dv");
+	if (p) {
+		glUniformMatrix2x4dv = (PFNGLUNIFORMMATRIX2X4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix3x2dv");
+	if (p) {
+		glUniformMatrix3x2dv = (PFNGLUNIFORMMATRIX3X2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix3x4dv");
+	if (p) {
+		glUniformMatrix3x4dv = (PFNGLUNIFORMMATRIX3X4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix4x2dv");
+	if (p) {
+		glUniformMatrix4x2dv = (PFNGLUNIFORMMATRIX4X2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformMatrix4x3dv");
+	if (p) {
+		glUniformMatrix4x3dv = (PFNGLUNIFORMMATRIX4X3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformdv");
+	if (p) {
+		glGetUniformdv = (PFNGLGETUNIFORMDVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSubroutineUniformLocation");
+	if (p) {
+		glGetSubroutineUniformLocation = (PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetSubroutineIndex");
+	if (p) {
+		glGetSubroutineIndex = (PFNGLGETSUBROUTINEINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveSubroutineUniformiv");
+	if (p) {
+		glGetActiveSubroutineUniformiv = (PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveSubroutineUniformName");
+	if (p) {
+		glGetActiveSubroutineUniformName = (PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveSubroutineName");
+	if (p) {
+		glGetActiveSubroutineName = (PFNGLGETACTIVESUBROUTINENAMEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformSubroutinesuiv");
+	if (p) {
+		glUniformSubroutinesuiv = (PFNGLUNIFORMSUBROUTINESUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformSubroutineuiv");
+	if (p) {
+		glGetUniformSubroutineuiv = (PFNGLGETUNIFORMSUBROUTINEUIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramStageiv");
+	if (p) {
+		glGetProgramStageiv = (PFNGLGETPROGRAMSTAGEIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPatchParameteri");
+	if (p) {
+		glPatchParameteri = (PFNGLPATCHPARAMETERIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPatchParameterfv");
+	if (p) {
+		glPatchParameterfv = (PFNGLPATCHPARAMETERFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindTransformFeedback");
+	if (p) {
+		glBindTransformFeedback = (PFNGLBINDTRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteTransformFeedbacks");
+	if (p) {
+		glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenTransformFeedbacks");
+	if (p) {
+		glGenTransformFeedbacks = (PFNGLGENTRANSFORMFEEDBACKSPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsTransformFeedback");
+	if (p) {
+		glIsTransformFeedback = (PFNGLISTRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPauseTransformFeedback");
+	if (p) {
+		glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glResumeTransformFeedback");
+	if (p) {
+		glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawTransformFeedback");
+	if (p) {
+		glDrawTransformFeedback = (PFNGLDRAWTRANSFORMFEEDBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawTransformFeedbackStream");
+	if (p) {
+		glDrawTransformFeedbackStream = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginQueryIndexed");
+	if (p) {
+		glBeginQueryIndexed = (PFNGLBEGINQUERYINDEXEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndQueryIndexed");
+	if (p) {
+		glEndQueryIndexed = (PFNGLENDQUERYINDEXEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetQueryIndexediv");
+	if (p) {
+		glGetQueryIndexediv = (PFNGLGETQUERYINDEXEDIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glReleaseShaderCompiler");
+	if (p) {
+		glReleaseShaderCompiler = (PFNGLRELEASESHADERCOMPILERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glShaderBinary");
+	if (p) {
+		glShaderBinary = (PFNGLSHADERBINARYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetShaderPrecisionFormat");
+	if (p) {
+		glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDepthRangef");
+	if (p) {
+		glDepthRangef = (PFNGLDEPTHRANGEFPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearDepthf");
+	if (p) {
+		glClearDepthf = (PFNGLCLEARDEPTHFPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramBinary");
+	if (p) {
+		glGetProgramBinary = (PFNGLGETPROGRAMBINARYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramBinary");
+	if (p) {
+		glProgramBinary = (PFNGLPROGRAMBINARYPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramParameteri");
+	if (p) {
+		glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUseProgramStages");
+	if (p) {
+		glUseProgramStages = (PFNGLUSEPROGRAMSTAGESPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glActiveShaderProgram");
+	if (p) {
+		glActiveShaderProgram = (PFNGLACTIVESHADERPROGRAMPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCreateShaderProgramv");
+	if (p) {
+		glCreateShaderProgramv = (PFNGLCREATESHADERPROGRAMVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindProgramPipeline");
+	if (p) {
+		glBindProgramPipeline = (PFNGLBINDPROGRAMPIPELINEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteProgramPipelines");
+	if (p) {
+		glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenProgramPipelines");
+	if (p) {
+		glGenProgramPipelines = (PFNGLGENPROGRAMPIPELINESPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsProgramPipeline");
+	if (p) {
+		glIsProgramPipeline = (PFNGLISPROGRAMPIPELINEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramPipelineiv");
+	if (p) {
+		glGetProgramPipelineiv = (PFNGLGETPROGRAMPIPELINEIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1i");
+	if (p) {
+		glProgramUniform1i = (PFNGLPROGRAMUNIFORM1IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1iv");
+	if (p) {
+		glProgramUniform1iv = (PFNGLPROGRAMUNIFORM1IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1f");
+	if (p) {
+		glProgramUniform1f = (PFNGLPROGRAMUNIFORM1FPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1fv");
+	if (p) {
+		glProgramUniform1fv = (PFNGLPROGRAMUNIFORM1FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1d");
+	if (p) {
+		glProgramUniform1d = (PFNGLPROGRAMUNIFORM1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1dv");
+	if (p) {
+		glProgramUniform1dv = (PFNGLPROGRAMUNIFORM1DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1ui");
+	if (p) {
+		glProgramUniform1ui = (PFNGLPROGRAMUNIFORM1UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1uiv");
+	if (p) {
+		glProgramUniform1uiv = (PFNGLPROGRAMUNIFORM1UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2i");
+	if (p) {
+		glProgramUniform2i = (PFNGLPROGRAMUNIFORM2IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2iv");
+	if (p) {
+		glProgramUniform2iv = (PFNGLPROGRAMUNIFORM2IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2f");
+	if (p) {
+		glProgramUniform2f = (PFNGLPROGRAMUNIFORM2FPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2fv");
+	if (p) {
+		glProgramUniform2fv = (PFNGLPROGRAMUNIFORM2FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2d");
+	if (p) {
+		glProgramUniform2d = (PFNGLPROGRAMUNIFORM2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2dv");
+	if (p) {
+		glProgramUniform2dv = (PFNGLPROGRAMUNIFORM2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2ui");
+	if (p) {
+		glProgramUniform2ui = (PFNGLPROGRAMUNIFORM2UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2uiv");
+	if (p) {
+		glProgramUniform2uiv = (PFNGLPROGRAMUNIFORM2UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3i");
+	if (p) {
+		glProgramUniform3i = (PFNGLPROGRAMUNIFORM3IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3iv");
+	if (p) {
+		glProgramUniform3iv = (PFNGLPROGRAMUNIFORM3IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3f");
+	if (p) {
+		glProgramUniform3f = (PFNGLPROGRAMUNIFORM3FPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3fv");
+	if (p) {
+		glProgramUniform3fv = (PFNGLPROGRAMUNIFORM3FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3d");
+	if (p) {
+		glProgramUniform3d = (PFNGLPROGRAMUNIFORM3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3dv");
+	if (p) {
+		glProgramUniform3dv = (PFNGLPROGRAMUNIFORM3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3ui");
+	if (p) {
+		glProgramUniform3ui = (PFNGLPROGRAMUNIFORM3UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3uiv");
+	if (p) {
+		glProgramUniform3uiv = (PFNGLPROGRAMUNIFORM3UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4i");
+	if (p) {
+		glProgramUniform4i = (PFNGLPROGRAMUNIFORM4IPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4iv");
+	if (p) {
+		glProgramUniform4iv = (PFNGLPROGRAMUNIFORM4IVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4f");
+	if (p) {
+		glProgramUniform4f = (PFNGLPROGRAMUNIFORM4FPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4fv");
+	if (p) {
+		glProgramUniform4fv = (PFNGLPROGRAMUNIFORM4FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4d");
+	if (p) {
+		glProgramUniform4d = (PFNGLPROGRAMUNIFORM4DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4dv");
+	if (p) {
+		glProgramUniform4dv = (PFNGLPROGRAMUNIFORM4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4ui");
+	if (p) {
+		glProgramUniform4ui = (PFNGLPROGRAMUNIFORM4UIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4uiv");
+	if (p) {
+		glProgramUniform4uiv = (PFNGLPROGRAMUNIFORM4UIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2fv");
+	if (p) {
+		glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3fv");
+	if (p) {
+		glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4fv");
+	if (p) {
+		glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2dv");
+	if (p) {
+		glProgramUniformMatrix2dv = (PFNGLPROGRAMUNIFORMMATRIX2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3dv");
+	if (p) {
+		glProgramUniformMatrix3dv = (PFNGLPROGRAMUNIFORMMATRIX3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4dv");
+	if (p) {
+		glProgramUniformMatrix4dv = (PFNGLPROGRAMUNIFORMMATRIX4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x3fv");
+	if (p) {
+		glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x2fv");
+	if (p) {
+		glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x4fv");
+	if (p) {
+		glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x2fv");
+	if (p) {
+		glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x4fv");
+	if (p) {
+		glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x3fv");
+	if (p) {
+		glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x3dv");
+	if (p) {
+		glProgramUniformMatrix2x3dv = (PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x2dv");
+	if (p) {
+		glProgramUniformMatrix3x2dv = (PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x4dv");
+	if (p) {
+		glProgramUniformMatrix2x4dv = (PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x2dv");
+	if (p) {
+		glProgramUniformMatrix4x2dv = (PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x4dv");
+	if (p) {
+		glProgramUniformMatrix3x4dv = (PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x3dv");
+	if (p) {
+		glProgramUniformMatrix4x3dv = (PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glValidateProgramPipeline");
+	if (p) {
+		glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramPipelineInfoLog");
+	if (p) {
+		glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1d");
+	if (p) {
+		glVertexAttribL1d = (PFNGLVERTEXATTRIBL1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2d");
+	if (p) {
+		glVertexAttribL2d = (PFNGLVERTEXATTRIBL2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3d");
+	if (p) {
+		glVertexAttribL3d = (PFNGLVERTEXATTRIBL3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4d");
+	if (p) {
+		glVertexAttribL4d = (PFNGLVERTEXATTRIBL4DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1dv");
+	if (p) {
+		glVertexAttribL1dv = (PFNGLVERTEXATTRIBL1DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2dv");
+	if (p) {
+		glVertexAttribL2dv = (PFNGLVERTEXATTRIBL2DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3dv");
+	if (p) {
+		glVertexAttribL3dv = (PFNGLVERTEXATTRIBL3DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4dv");
+	if (p) {
+		glVertexAttribL4dv = (PFNGLVERTEXATTRIBL4DVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribLPointer");
+	if (p) {
+		glVertexAttribLPointer = (PFNGLVERTEXATTRIBLPOINTERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribLdv");
+	if (p) {
+		glGetVertexAttribLdv = (PFNGLGETVERTEXATTRIBLDVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glViewportArrayv");
+	if (p) {
+		glViewportArrayv = (PFNGLVIEWPORTARRAYVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glViewportIndexedf");
+	if (p) {
+		glViewportIndexedf = (PFNGLVIEWPORTINDEXEDFPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glViewportIndexedfv");
+	if (p) {
+		glViewportIndexedfv = (PFNGLVIEWPORTINDEXEDFVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glScissorArrayv");
+	if (p) {
+		glScissorArrayv = (PFNGLSCISSORARRAYVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glScissorIndexed");
+	if (p) {
+		glScissorIndexed = (PFNGLSCISSORINDEXEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glScissorIndexedv");
+	if (p) {
+		glScissorIndexedv = (PFNGLSCISSORINDEXEDVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDepthRangeArrayv");
+	if (p) {
+		glDepthRangeArrayv = (PFNGLDEPTHRANGEARRAYVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDepthRangeIndexed");
+	if (p) {
+		glDepthRangeIndexed = (PFNGLDEPTHRANGEINDEXEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFloati_v");
+	if (p) {
+		glGetFloati_v = (PFNGLGETFLOATI_VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetDoublei_v");
+	if (p) {
+		glGetDoublei_v = (PFNGLGETDOUBLEI_VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCreateSyncFromCLeventARB");
+	if (p) {
+		glCreateSyncFromCLeventARB = (PFNGLCREATESYNCFROMCLEVENTARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageControlARB");
+	if (p) {
+		glDebugMessageControlARB = (PFNGLDEBUGMESSAGECONTROLARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageInsertARB");
+	if (p) {
+		glDebugMessageInsertARB = (PFNGLDEBUGMESSAGEINSERTARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageCallbackARB");
+	if (p) {
+		glDebugMessageCallbackARB = (PFNGLDEBUGMESSAGECALLBACKARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetDebugMessageLogARB");
+	if (p) {
+		glGetDebugMessageLogARB = (PFNGLGETDEBUGMESSAGELOGARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetGraphicsResetStatusARB");
+	if (p) {
+		glGetGraphicsResetStatusARB = (PFNGLGETGRAPHICSRESETSTATUSARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnMapdvARB");
+	if (p) {
+		glGetnMapdvARB = (PFNGLGETNMAPDVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnMapfvARB");
+	if (p) {
+		glGetnMapfvARB = (PFNGLGETNMAPFVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnMapivARB");
+	if (p) {
+		glGetnMapivARB = (PFNGLGETNMAPIVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnPixelMapfvARB");
+	if (p) {
+		glGetnPixelMapfvARB = (PFNGLGETNPIXELMAPFVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnPixelMapuivARB");
+	if (p) {
+		glGetnPixelMapuivARB = (PFNGLGETNPIXELMAPUIVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnPixelMapusvARB");
+	if (p) {
+		glGetnPixelMapusvARB = (PFNGLGETNPIXELMAPUSVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnPolygonStippleARB");
+	if (p) {
+		glGetnPolygonStippleARB = (PFNGLGETNPOLYGONSTIPPLEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnColorTableARB");
+	if (p) {
+		glGetnColorTableARB = (PFNGLGETNCOLORTABLEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnConvolutionFilterARB");
+	if (p) {
+		glGetnConvolutionFilterARB = (PFNGLGETNCONVOLUTIONFILTERARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnSeparableFilterARB");
+	if (p) {
+		glGetnSeparableFilterARB = (PFNGLGETNSEPARABLEFILTERARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnHistogramARB");
+	if (p) {
+		glGetnHistogramARB = (PFNGLGETNHISTOGRAMARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnMinmaxARB");
+	if (p) {
+		glGetnMinmaxARB = (PFNGLGETNMINMAXARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnTexImageARB");
+	if (p) {
+		glGetnTexImageARB = (PFNGLGETNTEXIMAGEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glReadnPixelsARB");
+	if (p) {
+		glReadnPixelsARB = (PFNGLREADNPIXELSARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnCompressedTexImageARB");
+	if (p) {
+		glGetnCompressedTexImageARB = (PFNGLGETNCOMPRESSEDTEXIMAGEARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnUniformfvARB");
+	if (p) {
+		glGetnUniformfvARB = (PFNGLGETNUNIFORMFVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnUniformivARB");
+	if (p) {
+		glGetnUniformivARB = (PFNGLGETNUNIFORMIVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnUniformuivARB");
+	if (p) {
+		glGetnUniformuivARB = (PFNGLGETNUNIFORMUIVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetnUniformdvARB");
+	if (p) {
+		glGetnUniformdvARB = (PFNGLGETNUNIFORMDVARBPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawArraysInstancedBaseInstance");
+	if (p) {
+		glDrawArraysInstancedBaseInstance = (PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsInstancedBaseInstance");
+	if (p) {
+		glDrawElementsInstancedBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawElementsInstancedBaseVertexBaseInstance");
+	if (p) {
+		glDrawElementsInstancedBaseVertexBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawTransformFeedbackInstanced");
+	if (p) {
+		glDrawTransformFeedbackInstanced = (PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDrawTransformFeedbackStreamInstanced");
+	if (p) {
+		glDrawTransformFeedbackStreamInstanced = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetInternalformativ");
+	if (p) {
+		glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetActiveAtomicCounterBufferiv");
+	if (p) {
+		glGetActiveAtomicCounterBufferiv = (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindImageTexture");
+	if (p) {
+		glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMemoryBarrier");
+	if (p) {
+		glMemoryBarrier = (PFNGLMEMORYBARRIERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorage1D");
+	if (p) {
+		glTexStorage1D = (PFNGLTEXSTORAGE1DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorage2D");
+	if (p) {
+		glTexStorage2D = (PFNGLTEXSTORAGE2DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorage3D");
+	if (p) {
+		glTexStorage3D = (PFNGLTEXSTORAGE3DPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorage1DEXT");
+	if (p) {
+		glTextureStorage1DEXT = (PFNGLTEXTURESTORAGE1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorage2DEXT");
+	if (p) {
+		glTextureStorage2DEXT = (PFNGLTEXTURESTORAGE2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorage3DEXT");
+	if (p) {
+		glTextureStorage3DEXT = (PFNGLTEXTURESTORAGE3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageControl");
+	if (p) {
+		glDebugMessageControl = (PFNGLDEBUGMESSAGECONTROLPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageInsert");
+	if (p) {
+		glDebugMessageInsert = (PFNGLDEBUGMESSAGEINSERTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageCallback");
+	if (p) {
+		glDebugMessageCallback = (PFNGLDEBUGMESSAGECALLBACKPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetDebugMessageLog");
+	if (p) {
+		glGetDebugMessageLog = (PFNGLGETDEBUGMESSAGELOGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPushDebugGroup");
+	if (p) {
+		glPushDebugGroup = (PFNGLPUSHDEBUGGROUPPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPopDebugGroup");
+	if (p) {
+		glPopDebugGroup = (PFNGLPOPDEBUGGROUPPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glObjectLabel");
+	if (p) {
+		glObjectLabel = (PFNGLOBJECTLABELPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetObjectLabel");
+	if (p) {
+		glGetObjectLabel = (PFNGLGETOBJECTLABELPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glObjectPtrLabel");
+	if (p) {
+		glObjectPtrLabel = (PFNGLOBJECTPTRLABELPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetObjectPtrLabel");
+	if (p) {
+		glGetObjectPtrLabel = (PFNGLGETOBJECTPTRLABELPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferData");
+	if (p) {
+		glClearBufferData = (PFNGLCLEARBUFFERDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearBufferSubData");
+	if (p) {
+		glClearBufferSubData = (PFNGLCLEARBUFFERSUBDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearNamedBufferDataEXT");
+	if (p) {
+		glClearNamedBufferDataEXT = (PFNGLCLEARNAMEDBUFFERDATAEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glClearNamedBufferSubDataEXT");
+	if (p) {
+		glClearNamedBufferSubDataEXT = (PFNGLCLEARNAMEDBUFFERSUBDATAEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDispatchCompute");
+	if (p) {
+		glDispatchCompute = (PFNGLDISPATCHCOMPUTEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDispatchComputeIndirect");
+	if (p) {
+		glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyImageSubData");
+	if (p) {
+		glCopyImageSubData = (PFNGLCOPYIMAGESUBDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureView");
+	if (p) {
+		glTextureView = (PFNGLTEXTUREVIEWPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindVertexBuffer");
+	if (p) {
+		glBindVertexBuffer = (PFNGLBINDVERTEXBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribFormat");
+	if (p) {
+		glVertexAttribFormat = (PFNGLVERTEXATTRIBFORMATPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribIFormat");
+	if (p) {
+		glVertexAttribIFormat = (PFNGLVERTEXATTRIBIFORMATPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribLFormat");
+	if (p) {
+		glVertexAttribLFormat = (PFNGLVERTEXATTRIBLFORMATPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribBinding");
+	if (p) {
+		glVertexAttribBinding = (PFNGLVERTEXATTRIBBINDINGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexBindingDivisor");
+	if (p) {
+		glVertexBindingDivisor = (PFNGLVERTEXBINDINGDIVISORPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayBindVertexBufferEXT");
+	if (p) {
+		glVertexArrayBindVertexBufferEXT = (PFNGLVERTEXARRAYBINDVERTEXBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexAttribFormatEXT");
+	if (p) {
+		glVertexArrayVertexAttribFormatEXT = (PFNGLVERTEXARRAYVERTEXATTRIBFORMATEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexAttribIFormatEXT");
+	if (p) {
+		glVertexArrayVertexAttribIFormatEXT = (PFNGLVERTEXARRAYVERTEXATTRIBIFORMATEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexAttribLFormatEXT");
+	if (p) {
+		glVertexArrayVertexAttribLFormatEXT = (PFNGLVERTEXARRAYVERTEXATTRIBLFORMATEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexAttribBindingEXT");
+	if (p) {
+		glVertexArrayVertexAttribBindingEXT = (PFNGLVERTEXARRAYVERTEXATTRIBBINDINGEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexBindingDivisorEXT");
+	if (p) {
+		glVertexArrayVertexBindingDivisorEXT = (PFNGLVERTEXARRAYVERTEXBINDINGDIVISOREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFramebufferParameteri");
+	if (p) {
+		glFramebufferParameteri = (PFNGLFRAMEBUFFERPARAMETERIPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetFramebufferParameteriv");
+	if (p) {
+		glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedFramebufferParameteriEXT");
+	if (p) {
+		glNamedFramebufferParameteriEXT = (PFNGLNAMEDFRAMEBUFFERPARAMETERIEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedFramebufferParameterivEXT");
+	if (p) {
+		glGetNamedFramebufferParameterivEXT = (PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetInternalformati64v");
+	if (p) {
+		glGetInternalformati64v = (PFNGLGETINTERNALFORMATI64VPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateTexSubImage");
+	if (p) {
+		glInvalidateTexSubImage = (PFNGLINVALIDATETEXSUBIMAGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateTexImage");
+	if (p) {
+		glInvalidateTexImage = (PFNGLINVALIDATETEXIMAGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateBufferSubData");
+	if (p) {
+		glInvalidateBufferSubData = (PFNGLINVALIDATEBUFFERSUBDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateBufferData");
+	if (p) {
+		glInvalidateBufferData = (PFNGLINVALIDATEBUFFERDATAPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateFramebuffer");
+	if (p) {
+		glInvalidateFramebuffer = (PFNGLINVALIDATEFRAMEBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInvalidateSubFramebuffer");
+	if (p) {
+		glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiDrawArraysIndirect");
+	if (p) {
+		glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiDrawElementsIndirect");
+	if (p) {
+		glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramInterfaceiv");
+	if (p) {
+		glGetProgramInterfaceiv = (PFNGLGETPROGRAMINTERFACEIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramResourceIndex");
+	if (p) {
+		glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramResourceName");
+	if (p) {
+		glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramResourceiv");
+	if (p) {
+		glGetProgramResourceiv = (PFNGLGETPROGRAMRESOURCEIVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramResourceLocation");
+	if (p) {
+		glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramResourceLocationIndex");
+	if (p) {
+		glGetProgramResourceLocationIndex = (PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glShaderStorageBlockBinding");
+	if (p) {
+		glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexBufferRange");
+	if (p) {
+		glTexBufferRange = (PFNGLTEXBUFFERRANGEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureBufferRangeEXT");
+	if (p) {
+		glTextureBufferRangeEXT = (PFNGLTEXTUREBUFFERRANGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorage2DMultisample");
+	if (p) {
+		glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorage3DMultisample");
+	if (p) {
+		glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorage2DMultisampleEXT");
+	if (p) {
+		glTextureStorage2DMultisampleEXT = (PFNGLTEXTURESTORAGE2DMULTISAMPLEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorage3DMultisampleEXT");
+	if (p) {
+		glTextureStorage3DMultisampleEXT = (PFNGLTEXTURESTORAGE3DMULTISAMPLEEXTPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glBlendColorEXT");
@@ -8509,6 +11556,16 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glPixelTransformParameterfvEXT");
 	if (p) {
 		glPixelTransformParameterfvEXT = (PFNGLPIXELTRANSFORMPARAMETERFVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPixelTransformParameterivEXT");
+	if (p) {
+		glGetPixelTransformParameterivEXT = (PFNGLGETPIXELTRANSFORMPARAMETERIVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPixelTransformParameterfvEXT");
+	if (p) {
+		glGetPixelTransformParameterfvEXT = (PFNGLGETPIXELTRANSFORMPARAMETERFVEXTPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glSecondaryColor3bEXT");
@@ -11376,6 +14433,11 @@ bool glexfp::Load() {
 		glGetTransformFeedbackVaryingNV = (PFNGLGETTRANSFORMFEEDBACKVARYINGNVPROC)p;
 		m_count++;
 	}
+	p = glXGetProcAddress((const unsigned char*)"glTransformFeedbackStreamAttribsNV");
+	if (p) {
+		glTransformFeedbackStreamAttribsNV = (PFNGLTRANSFORMFEEDBACKSTREAMATTRIBSNVPROC)p;
+		m_count++;
+	}
 	p = glXGetProcAddress((const unsigned char*)"glUniformBufferEXT");
 	if (p) {
 		glUniformBufferEXT = (PFNGLUNIFORMBUFFEREXTPROC)p;
@@ -12301,6 +15363,21 @@ bool glexfp::Load() {
 		glUnmapNamedBufferEXT = (PFNGLUNMAPNAMEDBUFFEREXTPROC)p;
 		m_count++;
 	}
+	p = glXGetProcAddress((const unsigned char*)"glMapNamedBufferRangeEXT");
+	if (p) {
+		glMapNamedBufferRangeEXT = (PFNGLMAPNAMEDBUFFERRANGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFlushMappedNamedBufferRangeEXT");
+	if (p) {
+		glFlushMappedNamedBufferRangeEXT = (PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNamedCopyBufferSubDataEXT");
+	if (p) {
+		glNamedCopyBufferSubDataEXT = (PFNGLNAMEDCOPYBUFFERSUBDATAEXTPROC)p;
+		m_count++;
+	}
 	p = glXGetProcAddress((const unsigned char*)"glGetNamedBufferParameterivEXT");
 	if (p) {
 		glGetNamedBufferParameterivEXT = (PFNGLGETNAMEDBUFFERPARAMETERIVEXTPROC)p;
@@ -12429,6 +15506,91 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glMultiTexRenderbufferEXT");
 	if (p) {
 		glMultiTexRenderbufferEXT = (PFNGLMULTITEXRENDERBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1dEXT");
+	if (p) {
+		glProgramUniform1dEXT = (PFNGLPROGRAMUNIFORM1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2dEXT");
+	if (p) {
+		glProgramUniform2dEXT = (PFNGLPROGRAMUNIFORM2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3dEXT");
+	if (p) {
+		glProgramUniform3dEXT = (PFNGLPROGRAMUNIFORM3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4dEXT");
+	if (p) {
+		glProgramUniform4dEXT = (PFNGLPROGRAMUNIFORM4DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1dvEXT");
+	if (p) {
+		glProgramUniform1dvEXT = (PFNGLPROGRAMUNIFORM1DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2dvEXT");
+	if (p) {
+		glProgramUniform2dvEXT = (PFNGLPROGRAMUNIFORM2DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3dvEXT");
+	if (p) {
+		glProgramUniform3dvEXT = (PFNGLPROGRAMUNIFORM3DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4dvEXT");
+	if (p) {
+		glProgramUniform4dvEXT = (PFNGLPROGRAMUNIFORM4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2dvEXT");
+	if (p) {
+		glProgramUniformMatrix2dvEXT = (PFNGLPROGRAMUNIFORMMATRIX2DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3dvEXT");
+	if (p) {
+		glProgramUniformMatrix3dvEXT = (PFNGLPROGRAMUNIFORMMATRIX3DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4dvEXT");
+	if (p) {
+		glProgramUniformMatrix4dvEXT = (PFNGLPROGRAMUNIFORMMATRIX4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x3dvEXT");
+	if (p) {
+		glProgramUniformMatrix2x3dvEXT = (PFNGLPROGRAMUNIFORMMATRIX2X3DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix2x4dvEXT");
+	if (p) {
+		glProgramUniformMatrix2x4dvEXT = (PFNGLPROGRAMUNIFORMMATRIX2X4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x2dvEXT");
+	if (p) {
+		glProgramUniformMatrix3x2dvEXT = (PFNGLPROGRAMUNIFORMMATRIX3X2DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix3x4dvEXT");
+	if (p) {
+		glProgramUniformMatrix3x4dvEXT = (PFNGLPROGRAMUNIFORMMATRIX3X4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x2dvEXT");
+	if (p) {
+		glProgramUniformMatrix4x2dvEXT = (PFNGLPROGRAMUNIFORMMATRIX4X2DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformMatrix4x3dvEXT");
+	if (p) {
+		glProgramUniformMatrix4x3dvEXT = (PFNGLPROGRAMUNIFORMMATRIX4X3DVEXTPROC)p;
 		m_count++;
 	}
 	p = glXGetProcAddress((const unsigned char*)"glGetMultisamplefvNV");
@@ -12629,6 +15791,1016 @@ bool glexfp::Load() {
 	p = glXGetProcAddress((const unsigned char*)"glGetObjectParameterivAPPLE");
 	if (p) {
 		glGetObjectParameterivAPPLE = (PFNGLGETOBJECTPARAMETERIVAPPLEPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBeginVideoCaptureNV");
+	if (p) {
+		glBeginVideoCaptureNV = (PFNGLBEGINVIDEOCAPTURENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindVideoCaptureStreamBufferNV");
+	if (p) {
+		glBindVideoCaptureStreamBufferNV = (PFNGLBINDVIDEOCAPTURESTREAMBUFFERNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindVideoCaptureStreamTextureNV");
+	if (p) {
+		glBindVideoCaptureStreamTextureNV = (PFNGLBINDVIDEOCAPTURESTREAMTEXTURENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEndVideoCaptureNV");
+	if (p) {
+		glEndVideoCaptureNV = (PFNGLENDVIDEOCAPTURENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoCaptureivNV");
+	if (p) {
+		glGetVideoCaptureivNV = (PFNGLGETVIDEOCAPTUREIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoCaptureStreamivNV");
+	if (p) {
+		glGetVideoCaptureStreamivNV = (PFNGLGETVIDEOCAPTURESTREAMIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoCaptureStreamfvNV");
+	if (p) {
+		glGetVideoCaptureStreamfvNV = (PFNGLGETVIDEOCAPTURESTREAMFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVideoCaptureStreamdvNV");
+	if (p) {
+		glGetVideoCaptureStreamdvNV = (PFNGLGETVIDEOCAPTURESTREAMDVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVideoCaptureNV");
+	if (p) {
+		glVideoCaptureNV = (PFNGLVIDEOCAPTURENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVideoCaptureStreamParameterivNV");
+	if (p) {
+		glVideoCaptureStreamParameterivNV = (PFNGLVIDEOCAPTURESTREAMPARAMETERIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVideoCaptureStreamParameterfvNV");
+	if (p) {
+		glVideoCaptureStreamParameterfvNV = (PFNGLVIDEOCAPTURESTREAMPARAMETERFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVideoCaptureStreamParameterdvNV");
+	if (p) {
+		glVideoCaptureStreamParameterdvNV = (PFNGLVIDEOCAPTURESTREAMPARAMETERDVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyImageSubDataNV");
+	if (p) {
+		glCopyImageSubDataNV = (PFNGLCOPYIMAGESUBDATANVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUseShaderProgramEXT");
+	if (p) {
+		glUseShaderProgramEXT = (PFNGLUSESHADERPROGRAMEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glActiveProgramEXT");
+	if (p) {
+		glActiveProgramEXT = (PFNGLACTIVEPROGRAMEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCreateShaderProgramEXT");
+	if (p) {
+		glCreateShaderProgramEXT = (PFNGLCREATESHADERPROGRAMEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeBufferResidentNV");
+	if (p) {
+		glMakeBufferResidentNV = (PFNGLMAKEBUFFERRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeBufferNonResidentNV");
+	if (p) {
+		glMakeBufferNonResidentNV = (PFNGLMAKEBUFFERNONRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsBufferResidentNV");
+	if (p) {
+		glIsBufferResidentNV = (PFNGLISBUFFERRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeNamedBufferResidentNV");
+	if (p) {
+		glMakeNamedBufferResidentNV = (PFNGLMAKENAMEDBUFFERRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeNamedBufferNonResidentNV");
+	if (p) {
+		glMakeNamedBufferNonResidentNV = (PFNGLMAKENAMEDBUFFERNONRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsNamedBufferResidentNV");
+	if (p) {
+		glIsNamedBufferResidentNV = (PFNGLISNAMEDBUFFERRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetBufferParameterui64vNV");
+	if (p) {
+		glGetBufferParameterui64vNV = (PFNGLGETBUFFERPARAMETERUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetNamedBufferParameterui64vNV");
+	if (p) {
+		glGetNamedBufferParameterui64vNV = (PFNGLGETNAMEDBUFFERPARAMETERUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetIntegerui64vNV");
+	if (p) {
+		glGetIntegerui64vNV = (PFNGLGETINTEGERUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformui64NV");
+	if (p) {
+		glUniformui64NV = (PFNGLUNIFORMUI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformui64vNV");
+	if (p) {
+		glUniformui64vNV = (PFNGLUNIFORMUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformui64vNV");
+	if (p) {
+		glGetUniformui64vNV = (PFNGLGETUNIFORMUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformui64NV");
+	if (p) {
+		glProgramUniformui64NV = (PFNGLPROGRAMUNIFORMUI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformui64vNV");
+	if (p) {
+		glProgramUniformui64vNV = (PFNGLPROGRAMUNIFORMUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBufferAddressRangeNV");
+	if (p) {
+		glBufferAddressRangeNV = (PFNGLBUFFERADDRESSRANGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexFormatNV");
+	if (p) {
+		glVertexFormatNV = (PFNGLVERTEXFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glNormalFormatNV");
+	if (p) {
+		glNormalFormatNV = (PFNGLNORMALFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glColorFormatNV");
+	if (p) {
+		glColorFormatNV = (PFNGLCOLORFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIndexFormatNV");
+	if (p) {
+		glIndexFormatNV = (PFNGLINDEXFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexCoordFormatNV");
+	if (p) {
+		glTexCoordFormatNV = (PFNGLTEXCOORDFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glEdgeFlagFormatNV");
+	if (p) {
+		glEdgeFlagFormatNV = (PFNGLEDGEFLAGFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSecondaryColorFormatNV");
+	if (p) {
+		glSecondaryColorFormatNV = (PFNGLSECONDARYCOLORFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glFogCoordFormatNV");
+	if (p) {
+		glFogCoordFormatNV = (PFNGLFOGCOORDFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribFormatNV");
+	if (p) {
+		glVertexAttribFormatNV = (PFNGLVERTEXATTRIBFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribIFormatNV");
+	if (p) {
+		glVertexAttribIFormatNV = (PFNGLVERTEXATTRIBIFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetIntegerui64i_vNV");
+	if (p) {
+		glGetIntegerui64i_vNV = (PFNGLGETINTEGERUI64I_VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureBarrierNV");
+	if (p) {
+		glTextureBarrierNV = (PFNGLTEXTUREBARRIERNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glBindImageTextureEXT");
+	if (p) {
+		glBindImageTextureEXT = (PFNGLBINDIMAGETEXTUREEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMemoryBarrierEXT");
+	if (p) {
+		glMemoryBarrierEXT = (PFNGLMEMORYBARRIEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1dEXT");
+	if (p) {
+		glVertexAttribL1dEXT = (PFNGLVERTEXATTRIBL1DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2dEXT");
+	if (p) {
+		glVertexAttribL2dEXT = (PFNGLVERTEXATTRIBL2DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3dEXT");
+	if (p) {
+		glVertexAttribL3dEXT = (PFNGLVERTEXATTRIBL3DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4dEXT");
+	if (p) {
+		glVertexAttribL4dEXT = (PFNGLVERTEXATTRIBL4DEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1dvEXT");
+	if (p) {
+		glVertexAttribL1dvEXT = (PFNGLVERTEXATTRIBL1DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2dvEXT");
+	if (p) {
+		glVertexAttribL2dvEXT = (PFNGLVERTEXATTRIBL2DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3dvEXT");
+	if (p) {
+		glVertexAttribL3dvEXT = (PFNGLVERTEXATTRIBL3DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4dvEXT");
+	if (p) {
+		glVertexAttribL4dvEXT = (PFNGLVERTEXATTRIBL4DVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribLPointerEXT");
+	if (p) {
+		glVertexAttribLPointerEXT = (PFNGLVERTEXATTRIBLPOINTEREXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribLdvEXT");
+	if (p) {
+		glGetVertexAttribLdvEXT = (PFNGLGETVERTEXATTRIBLDVEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexArrayVertexAttribLOffsetEXT");
+	if (p) {
+		glVertexArrayVertexAttribLOffsetEXT = (PFNGLVERTEXARRAYVERTEXATTRIBLOFFSETEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramSubroutineParametersuivNV");
+	if (p) {
+		glProgramSubroutineParametersuivNV = (PFNGLPROGRAMSUBROUTINEPARAMETERSUIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetProgramSubroutineParameteruivNV");
+	if (p) {
+		glGetProgramSubroutineParameteruivNV = (PFNGLGETPROGRAMSUBROUTINEPARAMETERUIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1i64NV");
+	if (p) {
+		glUniform1i64NV = (PFNGLUNIFORM1I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2i64NV");
+	if (p) {
+		glUniform2i64NV = (PFNGLUNIFORM2I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3i64NV");
+	if (p) {
+		glUniform3i64NV = (PFNGLUNIFORM3I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4i64NV");
+	if (p) {
+		glUniform4i64NV = (PFNGLUNIFORM4I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1i64vNV");
+	if (p) {
+		glUniform1i64vNV = (PFNGLUNIFORM1I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2i64vNV");
+	if (p) {
+		glUniform2i64vNV = (PFNGLUNIFORM2I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3i64vNV");
+	if (p) {
+		glUniform3i64vNV = (PFNGLUNIFORM3I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4i64vNV");
+	if (p) {
+		glUniform4i64vNV = (PFNGLUNIFORM4I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1ui64NV");
+	if (p) {
+		glUniform1ui64NV = (PFNGLUNIFORM1UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2ui64NV");
+	if (p) {
+		glUniform2ui64NV = (PFNGLUNIFORM2UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3ui64NV");
+	if (p) {
+		glUniform3ui64NV = (PFNGLUNIFORM3UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4ui64NV");
+	if (p) {
+		glUniform4ui64NV = (PFNGLUNIFORM4UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform1ui64vNV");
+	if (p) {
+		glUniform1ui64vNV = (PFNGLUNIFORM1UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform2ui64vNV");
+	if (p) {
+		glUniform2ui64vNV = (PFNGLUNIFORM2UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform3ui64vNV");
+	if (p) {
+		glUniform3ui64vNV = (PFNGLUNIFORM3UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniform4ui64vNV");
+	if (p) {
+		glUniform4ui64vNV = (PFNGLUNIFORM4UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetUniformi64vNV");
+	if (p) {
+		glGetUniformi64vNV = (PFNGLGETUNIFORMI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1i64NV");
+	if (p) {
+		glProgramUniform1i64NV = (PFNGLPROGRAMUNIFORM1I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2i64NV");
+	if (p) {
+		glProgramUniform2i64NV = (PFNGLPROGRAMUNIFORM2I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3i64NV");
+	if (p) {
+		glProgramUniform3i64NV = (PFNGLPROGRAMUNIFORM3I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4i64NV");
+	if (p) {
+		glProgramUniform4i64NV = (PFNGLPROGRAMUNIFORM4I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1i64vNV");
+	if (p) {
+		glProgramUniform1i64vNV = (PFNGLPROGRAMUNIFORM1I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2i64vNV");
+	if (p) {
+		glProgramUniform2i64vNV = (PFNGLPROGRAMUNIFORM2I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3i64vNV");
+	if (p) {
+		glProgramUniform3i64vNV = (PFNGLPROGRAMUNIFORM3I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4i64vNV");
+	if (p) {
+		glProgramUniform4i64vNV = (PFNGLPROGRAMUNIFORM4I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1ui64NV");
+	if (p) {
+		glProgramUniform1ui64NV = (PFNGLPROGRAMUNIFORM1UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2ui64NV");
+	if (p) {
+		glProgramUniform2ui64NV = (PFNGLPROGRAMUNIFORM2UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3ui64NV");
+	if (p) {
+		glProgramUniform3ui64NV = (PFNGLPROGRAMUNIFORM3UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4ui64NV");
+	if (p) {
+		glProgramUniform4ui64NV = (PFNGLPROGRAMUNIFORM4UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform1ui64vNV");
+	if (p) {
+		glProgramUniform1ui64vNV = (PFNGLPROGRAMUNIFORM1UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform2ui64vNV");
+	if (p) {
+		glProgramUniform2ui64vNV = (PFNGLPROGRAMUNIFORM2UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform3ui64vNV");
+	if (p) {
+		glProgramUniform3ui64vNV = (PFNGLPROGRAMUNIFORM3UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniform4ui64vNV");
+	if (p) {
+		glProgramUniform4ui64vNV = (PFNGLPROGRAMUNIFORM4UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1i64NV");
+	if (p) {
+		glVertexAttribL1i64NV = (PFNGLVERTEXATTRIBL1I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2i64NV");
+	if (p) {
+		glVertexAttribL2i64NV = (PFNGLVERTEXATTRIBL2I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3i64NV");
+	if (p) {
+		glVertexAttribL3i64NV = (PFNGLVERTEXATTRIBL3I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4i64NV");
+	if (p) {
+		glVertexAttribL4i64NV = (PFNGLVERTEXATTRIBL4I64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1i64vNV");
+	if (p) {
+		glVertexAttribL1i64vNV = (PFNGLVERTEXATTRIBL1I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2i64vNV");
+	if (p) {
+		glVertexAttribL2i64vNV = (PFNGLVERTEXATTRIBL2I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3i64vNV");
+	if (p) {
+		glVertexAttribL3i64vNV = (PFNGLVERTEXATTRIBL3I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4i64vNV");
+	if (p) {
+		glVertexAttribL4i64vNV = (PFNGLVERTEXATTRIBL4I64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1ui64NV");
+	if (p) {
+		glVertexAttribL1ui64NV = (PFNGLVERTEXATTRIBL1UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2ui64NV");
+	if (p) {
+		glVertexAttribL2ui64NV = (PFNGLVERTEXATTRIBL2UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3ui64NV");
+	if (p) {
+		glVertexAttribL3ui64NV = (PFNGLVERTEXATTRIBL3UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4ui64NV");
+	if (p) {
+		glVertexAttribL4ui64NV = (PFNGLVERTEXATTRIBL4UI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL1ui64vNV");
+	if (p) {
+		glVertexAttribL1ui64vNV = (PFNGLVERTEXATTRIBL1UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL2ui64vNV");
+	if (p) {
+		glVertexAttribL2ui64vNV = (PFNGLVERTEXATTRIBL2UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL3ui64vNV");
+	if (p) {
+		glVertexAttribL3ui64vNV = (PFNGLVERTEXATTRIBL3UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribL4ui64vNV");
+	if (p) {
+		glVertexAttribL4ui64vNV = (PFNGLVERTEXATTRIBL4UI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribLi64vNV");
+	if (p) {
+		glGetVertexAttribLi64vNV = (PFNGLGETVERTEXATTRIBLI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetVertexAttribLui64vNV");
+	if (p) {
+		glGetVertexAttribLui64vNV = (PFNGLGETVERTEXATTRIBLUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVertexAttribLFormatNV");
+	if (p) {
+		glVertexAttribLFormatNV = (PFNGLVERTEXATTRIBLFORMATNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenNamesAMD");
+	if (p) {
+		glGenNamesAMD = (PFNGLGENNAMESAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeleteNamesAMD");
+	if (p) {
+		glDeleteNamesAMD = (PFNGLDELETENAMESAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsNameAMD");
+	if (p) {
+		glIsNameAMD = (PFNGLISNAMEAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageEnableAMD");
+	if (p) {
+		glDebugMessageEnableAMD = (PFNGLDEBUGMESSAGEENABLEAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageInsertAMD");
+	if (p) {
+		glDebugMessageInsertAMD = (PFNGLDEBUGMESSAGEINSERTAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDebugMessageCallbackAMD");
+	if (p) {
+		glDebugMessageCallbackAMD = (PFNGLDEBUGMESSAGECALLBACKAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetDebugMessageLogAMD");
+	if (p) {
+		glGetDebugMessageLogAMD = (PFNGLGETDEBUGMESSAGELOGAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUInitNV");
+	if (p) {
+		glVDPAUInitNV = (PFNGLVDPAUINITNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUFiniNV");
+	if (p) {
+		glVDPAUFiniNV = (PFNGLVDPAUFININVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAURegisterVideoSurfaceNV");
+	if (p) {
+		glVDPAURegisterVideoSurfaceNV = (PFNGLVDPAUREGISTERVIDEOSURFACENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAURegisterOutputSurfaceNV");
+	if (p) {
+		glVDPAURegisterOutputSurfaceNV = (PFNGLVDPAUREGISTEROUTPUTSURFACENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUIsSurfaceNV");
+	if (p) {
+		glVDPAUIsSurfaceNV = (PFNGLVDPAUISSURFACENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUUnregisterSurfaceNV");
+	if (p) {
+		glVDPAUUnregisterSurfaceNV = (PFNGLVDPAUUNREGISTERSURFACENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUGetSurfaceivNV");
+	if (p) {
+		glVDPAUGetSurfaceivNV = (PFNGLVDPAUGETSURFACEIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUSurfaceAccessNV");
+	if (p) {
+		glVDPAUSurfaceAccessNV = (PFNGLVDPAUSURFACEACCESSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUMapSurfacesNV");
+	if (p) {
+		glVDPAUMapSurfacesNV = (PFNGLVDPAUMAPSURFACESNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glVDPAUUnmapSurfacesNV");
+	if (p) {
+		glVDPAUUnmapSurfacesNV = (PFNGLVDPAUUNMAPSURFACESNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexImage2DMultisampleCoverageNV");
+	if (p) {
+		glTexImage2DMultisampleCoverageNV = (PFNGLTEXIMAGE2DMULTISAMPLECOVERAGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexImage3DMultisampleCoverageNV");
+	if (p) {
+		glTexImage3DMultisampleCoverageNV = (PFNGLTEXIMAGE3DMULTISAMPLECOVERAGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage2DMultisampleNV");
+	if (p) {
+		glTextureImage2DMultisampleNV = (PFNGLTEXTUREIMAGE2DMULTISAMPLENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage3DMultisampleNV");
+	if (p) {
+		glTextureImage3DMultisampleNV = (PFNGLTEXTUREIMAGE3DMULTISAMPLENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage2DMultisampleCoverageNV");
+	if (p) {
+		glTextureImage2DMultisampleCoverageNV = (PFNGLTEXTUREIMAGE2DMULTISAMPLECOVERAGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureImage3DMultisampleCoverageNV");
+	if (p) {
+		glTextureImage3DMultisampleCoverageNV = (PFNGLTEXTUREIMAGE3DMULTISAMPLECOVERAGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glSetMultisamplefvAMD");
+	if (p) {
+		glSetMultisamplefvAMD = (PFNGLSETMULTISAMPLEFVAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glImportSyncEXT");
+	if (p) {
+		glImportSyncEXT = (PFNGLIMPORTSYNCEXTPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiDrawArraysIndirectAMD");
+	if (p) {
+		glMultiDrawArraysIndirectAMD = (PFNGLMULTIDRAWARRAYSINDIRECTAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMultiDrawElementsIndirectAMD");
+	if (p) {
+		glMultiDrawElementsIndirectAMD = (PFNGLMULTIDRAWELEMENTSINDIRECTAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGenPathsNV");
+	if (p) {
+		glGenPathsNV = (PFNGLGENPATHSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glDeletePathsNV");
+	if (p) {
+		glDeletePathsNV = (PFNGLDELETEPATHSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsPathNV");
+	if (p) {
+		glIsPathNV = (PFNGLISPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathCommandsNV");
+	if (p) {
+		glPathCommandsNV = (PFNGLPATHCOMMANDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathCoordsNV");
+	if (p) {
+		glPathCoordsNV = (PFNGLPATHCOORDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathSubCommandsNV");
+	if (p) {
+		glPathSubCommandsNV = (PFNGLPATHSUBCOMMANDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathSubCoordsNV");
+	if (p) {
+		glPathSubCoordsNV = (PFNGLPATHSUBCOORDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathStringNV");
+	if (p) {
+		glPathStringNV = (PFNGLPATHSTRINGNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathGlyphsNV");
+	if (p) {
+		glPathGlyphsNV = (PFNGLPATHGLYPHSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathGlyphRangeNV");
+	if (p) {
+		glPathGlyphRangeNV = (PFNGLPATHGLYPHRANGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glWeightPathsNV");
+	if (p) {
+		glWeightPathsNV = (PFNGLWEIGHTPATHSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCopyPathNV");
+	if (p) {
+		glCopyPathNV = (PFNGLCOPYPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glInterpolatePathsNV");
+	if (p) {
+		glInterpolatePathsNV = (PFNGLINTERPOLATEPATHSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTransformPathNV");
+	if (p) {
+		glTransformPathNV = (PFNGLTRANSFORMPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathParameterivNV");
+	if (p) {
+		glPathParameterivNV = (PFNGLPATHPARAMETERIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathParameteriNV");
+	if (p) {
+		glPathParameteriNV = (PFNGLPATHPARAMETERINVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathParameterfvNV");
+	if (p) {
+		glPathParameterfvNV = (PFNGLPATHPARAMETERFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathParameterfNV");
+	if (p) {
+		glPathParameterfNV = (PFNGLPATHPARAMETERFNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathDashArrayNV");
+	if (p) {
+		glPathDashArrayNV = (PFNGLPATHDASHARRAYNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathStencilFuncNV");
+	if (p) {
+		glPathStencilFuncNV = (PFNGLPATHSTENCILFUNCNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathStencilDepthOffsetNV");
+	if (p) {
+		glPathStencilDepthOffsetNV = (PFNGLPATHSTENCILDEPTHOFFSETNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glStencilFillPathNV");
+	if (p) {
+		glStencilFillPathNV = (PFNGLSTENCILFILLPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glStencilStrokePathNV");
+	if (p) {
+		glStencilStrokePathNV = (PFNGLSTENCILSTROKEPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glStencilFillPathInstancedNV");
+	if (p) {
+		glStencilFillPathInstancedNV = (PFNGLSTENCILFILLPATHINSTANCEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glStencilStrokePathInstancedNV");
+	if (p) {
+		glStencilStrokePathInstancedNV = (PFNGLSTENCILSTROKEPATHINSTANCEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathCoverDepthFuncNV");
+	if (p) {
+		glPathCoverDepthFuncNV = (PFNGLPATHCOVERDEPTHFUNCNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathColorGenNV");
+	if (p) {
+		glPathColorGenNV = (PFNGLPATHCOLORGENNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathTexGenNV");
+	if (p) {
+		glPathTexGenNV = (PFNGLPATHTEXGENNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPathFogGenNV");
+	if (p) {
+		glPathFogGenNV = (PFNGLPATHFOGGENNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCoverFillPathNV");
+	if (p) {
+		glCoverFillPathNV = (PFNGLCOVERFILLPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCoverStrokePathNV");
+	if (p) {
+		glCoverStrokePathNV = (PFNGLCOVERSTROKEPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCoverFillPathInstancedNV");
+	if (p) {
+		glCoverFillPathInstancedNV = (PFNGLCOVERFILLPATHINSTANCEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glCoverStrokePathInstancedNV");
+	if (p) {
+		glCoverStrokePathInstancedNV = (PFNGLCOVERSTROKEPATHINSTANCEDNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathParameterivNV");
+	if (p) {
+		glGetPathParameterivNV = (PFNGLGETPATHPARAMETERIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathParameterfvNV");
+	if (p) {
+		glGetPathParameterfvNV = (PFNGLGETPATHPARAMETERFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathCommandsNV");
+	if (p) {
+		glGetPathCommandsNV = (PFNGLGETPATHCOMMANDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathCoordsNV");
+	if (p) {
+		glGetPathCoordsNV = (PFNGLGETPATHCOORDSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathDashArrayNV");
+	if (p) {
+		glGetPathDashArrayNV = (PFNGLGETPATHDASHARRAYNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathMetricsNV");
+	if (p) {
+		glGetPathMetricsNV = (PFNGLGETPATHMETRICSNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathMetricRangeNV");
+	if (p) {
+		glGetPathMetricRangeNV = (PFNGLGETPATHMETRICRANGENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathSpacingNV");
+	if (p) {
+		glGetPathSpacingNV = (PFNGLGETPATHSPACINGNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathColorGenivNV");
+	if (p) {
+		glGetPathColorGenivNV = (PFNGLGETPATHCOLORGENIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathColorGenfvNV");
+	if (p) {
+		glGetPathColorGenfvNV = (PFNGLGETPATHCOLORGENFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathTexGenivNV");
+	if (p) {
+		glGetPathTexGenivNV = (PFNGLGETPATHTEXGENIVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathTexGenfvNV");
+	if (p) {
+		glGetPathTexGenfvNV = (PFNGLGETPATHTEXGENFVNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsPointInFillPathNV");
+	if (p) {
+		glIsPointInFillPathNV = (PFNGLISPOINTINFILLPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsPointInStrokePathNV");
+	if (p) {
+		glIsPointInStrokePathNV = (PFNGLISPOINTINSTROKEPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetPathLengthNV");
+	if (p) {
+		glGetPathLengthNV = (PFNGLGETPATHLENGTHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glPointAlongPathNV");
+	if (p) {
+		glPointAlongPathNV = (PFNGLPOINTALONGPATHNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glStencilOpValueAMD");
+	if (p) {
+		glStencilOpValueAMD = (PFNGLSTENCILOPVALUEAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureHandleNV");
+	if (p) {
+		glGetTextureHandleNV = (PFNGLGETTEXTUREHANDLENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetTextureSamplerHandleNV");
+	if (p) {
+		glGetTextureSamplerHandleNV = (PFNGLGETTEXTURESAMPLERHANDLENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeTextureHandleResidentNV");
+	if (p) {
+		glMakeTextureHandleResidentNV = (PFNGLMAKETEXTUREHANDLERESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeTextureHandleNonResidentNV");
+	if (p) {
+		glMakeTextureHandleNonResidentNV = (PFNGLMAKETEXTUREHANDLENONRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glGetImageHandleNV");
+	if (p) {
+		glGetImageHandleNV = (PFNGLGETIMAGEHANDLENVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeImageHandleResidentNV");
+	if (p) {
+		glMakeImageHandleResidentNV = (PFNGLMAKEIMAGEHANDLERESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glMakeImageHandleNonResidentNV");
+	if (p) {
+		glMakeImageHandleNonResidentNV = (PFNGLMAKEIMAGEHANDLENONRESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformHandleui64NV");
+	if (p) {
+		glUniformHandleui64NV = (PFNGLUNIFORMHANDLEUI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glUniformHandleui64vNV");
+	if (p) {
+		glUniformHandleui64vNV = (PFNGLUNIFORMHANDLEUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformHandleui64NV");
+	if (p) {
+		glProgramUniformHandleui64NV = (PFNGLPROGRAMUNIFORMHANDLEUI64NVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glProgramUniformHandleui64vNV");
+	if (p) {
+		glProgramUniformHandleui64vNV = (PFNGLPROGRAMUNIFORMHANDLEUI64VNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsTextureHandleResidentNV");
+	if (p) {
+		glIsTextureHandleResidentNV = (PFNGLISTEXTUREHANDLERESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glIsImageHandleResidentNV");
+	if (p) {
+		glIsImageHandleResidentNV = (PFNGLISIMAGEHANDLERESIDENTNVPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTexStorageSparseAMD");
+	if (p) {
+		glTexStorageSparseAMD = (PFNGLTEXSTORAGESPARSEAMDPROC)p;
+		m_count++;
+	}
+	p = glXGetProcAddress((const unsigned char*)"glTextureStorageSparseAMD");
+	if (p) {
+		glTextureStorageSparseAMD = (PFNGLTEXTURESTORAGESPARSEAMDPROC)p;
 		m_count++;
 	}
 	return (m_count > 0);
