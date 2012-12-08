@@ -1,7 +1,3 @@
-#if defined(_DEBUG) && !defined(MODEL_NO_VLD)
-#include <VLD\vld.h>
-#endif
-
 #include "MyApp.h"
 
 static MyApp theApp;
