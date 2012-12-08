@@ -48,4 +48,5 @@ copy src\wglext.h dist\inc
 copy src\Model.h dist\inc
 copy src\Dialog.h dist\inc
 copy src\Joystick.h dist\inc
+copy src\port.h dist\inc
 
