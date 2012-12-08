@@ -53,8 +53,6 @@
  */
 
 #include "port.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
 
 // Defines namespace used by GXBASE classes
 //

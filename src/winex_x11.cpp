@@ -28,7 +28,6 @@
 #include <string.h>
 #include <X11/Xlib.h>
 #include <X11/cursorfont.h>
-#include <GL/glx.h>
 #include "winex_x11.h"
 #include "GLWindow.h"
 #include "ErrDbg.h"
