@@ -1,7 +1,8 @@
 @echo off
 if exist %usr%\include goto checkdir
 
-echo ERROR Check usr directory and variable
+echo ERROR: Please specify the installation path by
+echo defining the USR environment variable first
 pause
 goto exit
 
