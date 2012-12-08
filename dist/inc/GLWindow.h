@@ -309,6 +309,14 @@ public:
 	int GetAccumBits() const;
 
 	/**
+	 * Pass a set of OpenGL context creation attributes for use when
+	 * creating the context. These are in the same format expected by
+	 * the wglCreateContextAttribsARB() call. This function should
+	 * be called from the window constructor.
+	 */
+	void SetContextAttribs( const int *attribs );
+
+	/**
 	 * Return width of window in pixels.
 	 */
 	int Width()  const;
