@@ -41,12 +41,13 @@ copy src\GXBase.h dist\inc
 copy src\GLWindow.h dist\inc
 copy src\Image.h dist\inc
 copy src\GLWindowEx.h dist\inc
-copy src\glex.h dist\inc
-copy src\glexfp.h dist\inc
-copy src\glext.h dist\inc
-copy src\wglext.h dist\inc
 copy src\Model.h dist\inc
 copy src\Dialog.h dist\inc
 copy src\Joystick.h dist\inc
 copy src\port.h dist\inc
 
+rem Copy GL extension headers
+copy glext_gen\win32\glex.h dist\inc
+copy glext_gen\win32\glexfp.h dist\inc
+copy glext_gen\GL\glext.h dist\inc
+copy glext_gen\GL\wglext.h dist\inc
