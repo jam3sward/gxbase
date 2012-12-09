@@ -57,6 +57,13 @@ using namespace gxbase;
 
 //-----------------------------------------------------------------------------
 
+#ifdef __WIN32__
+#if !defined(GXBASE_JPEG_IPIC) && !defined(GXBASE_JPEG_IJG)
+// default to IPIC on WIN32 if nothing is selected
+#define GXBASE_JPEG_IPIC
+#endif
+#endif//__WIN32
+
 #if defined(GXBASE_JPEG_IPIC)
 	//-- using IPicture to load JPG (and some other) formats
 	#include <direct.h>		// getcwd
