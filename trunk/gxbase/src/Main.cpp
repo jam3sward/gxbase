@@ -400,10 +400,6 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 		return 0;
 	}
 
-	// limit to 10ms minimum on all systems
-	// [JT] why?
-	if (ms < 10) ms=10;
-
 #ifdef __WIN32__
 	// we don't use a window handle because it would be tedious to manage
 	// switching timers around when the user creates/destroys/switches main
@@ -417,7 +413,7 @@ unsigned Main::SetTimerPeriod(unsigned ms) {
 	}
 #endif
 
-	// store it (we cap to 10ms on all systems currently)
+	// store it
 	m_timerPeriod = ms;
 
 #ifndef __WIN32__

@@ -111,8 +111,6 @@ public:
 	 * zero disables the timer.
 	 * The return value is the actual timer period in milliseconds.
 	 * The resolution, accuracy and minimum period depend on the O/S.
-	 * For example, the timer is limited to a minimum period of 10ms
-	 * on Windows 2000/XP.
 	 */
 	unsigned SetTimerPeriod(unsigned ms);
 
