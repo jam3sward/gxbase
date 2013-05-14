@@ -363,8 +363,10 @@ public:
 	 * When fullscreen mode is enabled, the window will be expanded to
 	 * fill the screen, and any window borders and decorations are removed.
 	 * When disabled, the window reverts to its original size and shape.
+	 * The display parameter can be used to request that the fullscreen
+	 * window is opened on a particular display.
 	 */
-	bool SetFullscreen(bool bFull=true);
+	bool SetFullscreen( bool fullScreen=true, unsigned display=1 );
 
 	/**
 	 * Returns true if the window is in fullscreen mode, false otherwise.

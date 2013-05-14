@@ -26,6 +26,7 @@
 
 #include "winex_w32.h"
 #include "Main.h"
+#include "GetMonitorRect.h"
 using namespace gxbase;
 
 //-----------------------------------------------------------------------------
@@ -202,23 +203,14 @@ bool WindowEx::CreateGL() {
 		//dwStyle &= ~(WS_CAPTION | WS_SIZEBOX);
 		dwStyle = WS_POPUP | WS_CLIPCHILDREN | WS_CLIPSIBLINGS;
 
-		DEVMODE dm;
-		// query display settings
-		if (!EnumDisplaySettings(
-			NULL,					// current display device
-			ENUM_CURRENT_SETTINGS,	// current display settings
-			&dm)
-		) {
-			dbg_printf("EnumDisplaySettings failed\n");
-			dm.dmPelsWidth  = 640;	// fallback
-			dm.dmPelsHeight = 480;
-		}
+		// get rectangle for specified display (or default to primary)
+		GetMonitorRect screen( m_wantDisplay );
 
 		// window size: fill screen
-		x = 0;
-		y = 0;
-		w = dm.dmPelsWidth,
-		h = dm.dmPelsHeight;
+		x = screen.left;
+		y = screen.top;
+		w = screen.width();
+		h = screen.height();
 
 		// JWW 16/11/03 set these for later restore
 		m_oldRect.left  = 0;
@@ -388,17 +380,18 @@ void WindowEx::DeleteGL() {
 
 
 
-bool WindowEx::SetFullscreen(bool bFull) {
+bool WindowEx::SetFullscreen( bool fullScreen, unsigned display ) {
 	HWND hWnd = m_hwnd;
 
 	// if we don't have an HDC, just store setting for later
 	if (!hWnd) {
-		m_bWantFull = bFull;
+		m_bWantFull   = fullScreen;
+		m_wantDisplay = display;
 		return true;
 	}
 
 	// anything to do?
-	if (bFull == m_bIsFull) return true;
+	if ( fullScreen == m_bIsFull ) return true;
 
 	// get current window style, so we can modify it
 	DWORD dwStyle = GetWindowLong(hWnd, GWL_STYLE);
@@ -407,24 +400,11 @@ bool WindowEx::SetFullscreen(bool bFull) {
 		return false;
 	}
 
-	if (bFull) {
+	if (fullScreen) {
 		//-- enter fullscreen mode --
 
-		DEVMODE dm;
-		// query display settings
-		if (!EnumDisplaySettings(
-			NULL,					// current display device
-			ENUM_CURRENT_SETTINGS,	// current display settings
-			&dm)
-		) {
-			dbg_printf("EnumDisplaySettings failed\n");
-			return false;
-		}
-
-		// window size: fill screen
-		int
-			width  = dm.dmPelsWidth,
-			height = dm.dmPelsHeight;
+		// get rectangle for specified display (or default to primary)
+		GetMonitorRect screen( display );
 
 		// save window rect.
 		if ( !GetWindowRect(hWnd, &(m_oldRect)) ) {
@@ -440,12 +420,17 @@ bool WindowEx::SetFullscreen(bool bFull) {
 			dbg_W32LastError("SetWindowLong(GWL_STYLE) failed");
 		}
 		// resize window and bring to top
-		if ( !SetWindowPos ( hWnd, HWND_TOP, 0,0, width,height, 0 ) ) {
+		if ( !SetWindowPos (
+			hWnd, HWND_TOP,
+			screen.left, screen.top, screen.width(), screen.height(),
+			0
+		) ) {
 			dbg_W32LastError("SetWindowPos failed");
 		}
 
-		m_bWantFull = true;
-		m_bIsFull   = true;
+		m_bWantFull   = true;
+		m_wantDisplay = display;
+		m_bIsFull     = true;
 		return true;
 	} else {
 		//-- leave fullscreen mode --
@@ -471,8 +456,9 @@ bool WindowEx::SetFullscreen(bool bFull) {
 			dbg_W32LastError("SetWindowPos failed");
 		}
 
-		m_bWantFull = false;
-		m_bIsFull   = false;
+		m_bWantFull   = false;
+		m_wantDisplay = display;
+		m_bIsFull     = false;
 		return true;
 	}
 }

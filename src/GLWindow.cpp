@@ -703,8 +703,8 @@ const char *GLWindow::GetTitle() const {
  * fill the screen, and any window borders and decorations are removed.
  * When disabled, the window reverts to its original size and shape.
  */
-bool GLWindow::SetFullscreen(bool bFull) {
-	return extra->SetFullscreen(bFull);
+bool GLWindow::SetFullscreen( bool fullScreen, unsigned display ) {
+	return extra->SetFullscreen( fullScreen, display );
 }//SetFullscreen
 
 /**

@@ -77,6 +77,7 @@ public:
 	bool	m_bShow;	///< show window when created?
 	bool	m_bRedraw;	///< redraw pending?
 	bool	m_bWantFull;///< want fullscreen mode?
+	unsigned m_wantDisplay;	///< preferred display for fullscreen mode
 	bool	m_bIsFull;	///< is fullscreen mode?
 	bool	m_bOnTop;	///< is window top-most?
 	bool	m_bNonClient;///< is cursor in non-client?
@@ -139,7 +140,7 @@ public:
 	bool CreateGL();
 	void DeleteGL();
 
-	bool SetFullscreen(bool bFull);
+	bool SetFullscreen( bool fullScreen, unsigned display );
 
 	bool HaveContext() const;
 	bool Safe2ChangePF() const;
