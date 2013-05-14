@@ -257,7 +257,7 @@ void WindowEx::DeleteGL()
  * the XF86VidMode extension. And if all else fails, it just resizes the window to
  * occupy the whole screen.
  */
-bool WindowEx::SetFullscreen(bool fullscr)
+bool WindowEx::SetFullscreen( bool fullscr, unsigned /*display*/ )
 {
 	if(m_bIsFull == fullscr) {
 		return true;

@@ -83,7 +83,7 @@ public:
 	bool CreateGL();
 	void DeleteGL();
 
-	bool SetFullscreen(bool full);
+	bool SetFullscreen( bool fullScreen, unsigned display=1 );
 
 	bool HaveContext() const;
 	bool Safe2ChangePF() const;

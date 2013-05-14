@@ -196,6 +196,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GetMonitorRect.cpp" />
     <ClCompile Include="src\load3ds\3dsdef.cpp" />
     <ClCompile Include="src\App.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug Multithreaded DLL|Win32'">Disabled</Optimization>
@@ -271,6 +272,7 @@
     <ClCompile Include="src\winex_w32.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GetMonitorRect.h" />
     <ClInclude Include="src\load3ds\3dsdef.h" />
     <ClInclude Include="src\App.h" />
     <ClInclude Include="src\load3ds\Box3f.h" />
