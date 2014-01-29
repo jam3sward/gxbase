@@ -384,13 +384,13 @@ bool WindowEx::MakeCurrent(bool current)
 	static std::stack<GLXContext> ctx_stack;
 
 	if(current) {
-		dbg_printf("MakeCurrent: %d\n", (int)ctx);
+		dbg_printf("MakeCurrent: %p\n", reinterpret_cast<void*>(ctx) );
 		ctx_stack.push(glXGetCurrentContext());
 		glXMakeCurrent(dpy, win, ctx);
 	} else {
 		GLXContext prev = ctx_stack.top();
 		ctx_stack.pop();
-		dbg_printf("MakeCurrent: %d\n", (int)prev);
+		dbg_printf("MakeCurrent: %p\n", reinterpret_cast<void*>(prev) );
 		glXMakeCurrent(dpy, prev ? win : 0, prev);
 	}
 	return true;
