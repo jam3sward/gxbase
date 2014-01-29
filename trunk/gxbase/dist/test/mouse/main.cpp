@@ -14,6 +14,8 @@ public:
 		m_bDragBgn= false;
 		m_fRot[0] = 0.0f;
 		m_fRot[1] = 0.0f;
+        m_zoom = 1.0;
+        m_squash = 1.0;
 	}
 
 	void OnCreate() {
@@ -24,6 +26,7 @@ public:
 		glShadeModel(GL_FLAT);
 		GLfloat lightPos[] = {0.42f, 0.57f, 0.71f, 0.0f};
 		glLightfv(GL_LIGHT0, GL_POSITION, lightPos);
+        glEnable(GL_NORMALIZE);
 	}
 
 	void ViewSystem() {
@@ -43,6 +46,7 @@ public:
 		glPushMatrix();
 			glRotatef(m_fRot[0], 0,1,0);
 			glRotatef(m_fRot[1],-1,0,0);
+            glScalef(m_zoom*m_squash, m_zoom, m_zoom);
 			if (m_quadric) gluSphere(m_quadric, 0.5, 6,6);
 		glPopMatrix();
 
@@ -69,6 +73,11 @@ public:
 		}
 	}
 
+    void OnMouseWheel(double x, double y) {
+        m_zoom += x / 10.0;
+        m_squash += x / 10.0;
+    }
+
 	void OnKeyboard(int key, bool down) {
 		if (down) switch(tolower(key)) {
 			case 'n': SetCursor(CRNone);  break;
@@ -92,6 +101,8 @@ private:
 	bool  m_bDragBgn;
 	float m_fDragOrg[2];
 	float m_fRot[2];
+    double m_zoom;
+    double m_squash;
 };
 
 class MyApp :public App {

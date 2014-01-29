@@ -851,6 +851,44 @@ LRESULT WindowEx::msgMouseMove(HWND /*hWnd*/, WPARAM /*wParam*/, LPARAM lParam) 
 
 //-----------------------------------------------------------------------------
 
+LRESULT WindowEx::msgMouseWheel(
+    HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
+) {
+    // make context current
+	if ( MakeCurrent() ) {
+		// pass mouse move event to user code
+		if ( m_pWindow != 0 ) {
+            // calculate amount of movement
+            double delta =
+                static_cast<double>( GET_WHEEL_DELTA_WPARAM(wParam) ) /
+                static_cast<double>( WHEEL_DELTA );
+
+            // we get separate messages for horizontal and vertical movement,
+            // which means that the OnMouseWheel() function may be called
+            // twice with zero in one of the two parameters
+            switch (uMsg) {
+            case WM_MOUSEHWHEEL:
+                // horizontal movement
+                m_pWindow->OnMouseWheel( delta, 0.0 );
+                break;
+
+            case WM_MOUSEWHEEL:
+                // vertical movement
+                m_pWindow->OnMouseWheel( 0.0, delta );
+                break;
+            }
+        }
+
+		// release context
+		MakeCurrent(false);
+    }
+
+    // we have handled the message
+    return 0;
+}//msgMouseWheel
+
+//-----------------------------------------------------------------------------
+
 LRESULT WindowEx::msgNCMouseMove(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 	m_bNonClient=true;
 	return DefWindowProc(hWnd,uMsg,wParam,lParam);
@@ -995,6 +1033,12 @@ LRESULT WindowEx::WindowProc(
 
 	case WM_MOUSEMOVE:
 		return msgMouseMove(hWnd,wParam,lParam);
+
+    case WM_MOUSEWHEEL:
+        return msgMouseWheel(hWnd,uMsg,wParam,lParam);
+
+    case WM_MOUSEHWHEEL:
+        return msgMouseWheel(hWnd,uMsg,wParam,lParam);
 
 	case WM_NCMOUSEMOVE:
 		return msgNCMouseMove(hWnd,uMsg,wParam,lParam);

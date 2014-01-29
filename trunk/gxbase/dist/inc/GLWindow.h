@@ -116,6 +116,17 @@ public:
 	 */
 	virtual void OnMouseMove(int x, int y);
 
+    /**
+     * The OnMouseWheel function is called when the mouse wheel is
+     * moved. The parameters indicate the amount of relative
+     * movement on the horizontal (X) and vertical (Y) axis.
+     * Positive Y movement is up (away from the user) and positive
+     * X movement is right (when facing the mouse). The scale is
+     * 1 unit per 'notch' of wheel movement. Note that some mice
+     * and trackpads allow fractional movement.
+     */
+    virtual void OnMouseWheel( double deltaX, double deltaY );
+
 	/**
 	 * The OnKeyboard function is called when a key is pressed or
 	 * released. The 'key' parameter is the keyboard code, and the
