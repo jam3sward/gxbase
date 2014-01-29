@@ -28,6 +28,12 @@
 #include <assert.h>
 #include <vector>
 
+
+#ifndef __WIN32__
+#include <sys/types.h>
+#include <unistd.h>
+#endif
+
 #include "GXBase.h"
 #include "ErrDbg.h"
 #include "App.h"
