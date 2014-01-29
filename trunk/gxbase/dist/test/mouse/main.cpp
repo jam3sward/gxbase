@@ -74,7 +74,7 @@ public:
 	}
 
     void OnMouseWheel(double x, double y) {
-        m_zoom += x / 10.0;
+        m_zoom += y / 10.0;
         m_squash += x / 10.0;
     }
 
