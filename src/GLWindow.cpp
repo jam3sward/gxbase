@@ -100,6 +100,9 @@ void GLWindow::OnMouseMove(int /*x*/, int /*y*/) {
 	//dbg_printf("GLWindow::OnMouseMove(%d,%d)\n", x,y);
 }
 
+void GLWindow::OnMouseWheel( double /*deltaX*/, double /*deltaY*/ ) {
+}
+
 void GLWindow::OnKeyboard(int key, bool down) {
 	dbg_printf("GLWindow::OnKeyboard(%d,%d)\n", key, (int)(down?1:0));
 }
