@@ -62,8 +62,13 @@
 #endif//__cplusplus
 
 // For MS VC++ only (includes VC6 and VS.NET), and not building a LIB
+// we will automatically link the libraries
 //
-#if defined(_MSC_VER) && !defined(_LIB) // auto-link
+// The _CONSOLE is added to work around an issue with the application
+// wizard in VS2013 which defines _LIB for console applications:
+// https://connect.microsoft.com/VisualStudio/feedback/details/843945
+//
+#if defined(_MSC_VER) && (!defined(_LIB) || (defined(_CONSOLE))) // auto-link
 	// Automatically link OpenGL and GLU
 	#pragma comment (lib, "opengl32")
 	#pragma comment (lib, "glu32")
