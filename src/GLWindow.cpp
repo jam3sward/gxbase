@@ -773,6 +773,7 @@ unsigned int GLWindow::Printf(const char* format, ...) {
 	if (res < 0) {
 		// an error occurred
 		delete [] buffer;
+        buffer = nullptr;
 	} else {
 		// got some text in the buffer (maybe truncated)
 		if (res == 1) {

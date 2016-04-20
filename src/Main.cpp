@@ -77,7 +77,7 @@ int Main::Execute(int argc, char **argv) {
 
 	// initialise COM if we are using IPicture control
 #if defined(__WIN32__) && defined(GXBASE_JPEG_IPIC)
-	CoInitialize(0);
+    static_cast<void>( CoInitialize(0) );
 #endif
 
 	// JWW 24/02/05 added more meaningful message than assert
@@ -448,7 +448,7 @@ LRESULT CALLBACK Main::WindowProc(
 		// and store in GWL_USERDATA so that we can retrieve it later.
 		WindowEx* pWndEx=(WindowEx*)(((LPCREATESTRUCT)lParam)->lpCreateParams);
 		if (pWndEx) {
-			dbg_printf("WM_NCCREATE(pWindowEx=0x%08lX)\n", pWndEx);
+			dbg_printf("WM_NCCREATE(pWindowEx=%p)\n", pWndEx);
 
 			// store associated window class pointer in GWL_USERDATA
 			//SetWindowLong(hWnd, GWL_USERDATA, (LONG)pWndEx);
@@ -473,10 +473,10 @@ LRESULT CALLBACK Main::WindowProc(
  * program entry point when building WIN32 application
  */
 int WINAPI WinMain(
-	HINSTANCE /*hInstance*/,	// handle to current instance
-	HINSTANCE /*hPrevInstance*/,// handle to previous instance
-	LPSTR	  /*lpCmdLine*/,	// pointer to command line
-	int		  /*nCmdShow*/		// show state of window
+    _In_     HINSTANCE  /*hInstance*/,	    // handle to current instance
+    _In_opt_ HINSTANCE  /*hPrevInstance*/,  // handle to previous instance
+    _In_     LPSTR	    /*lpCmdLine*/,	    // pointer to command line
+    _In_     int	    /*nCmdShow*/		// show state of window
 ) {
 	dbg_printf("WinMain\n");
 	Main::Get()->SetConsole(false);

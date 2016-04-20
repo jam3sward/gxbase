@@ -980,7 +980,7 @@ bool ImageEx::LoadTGA(const char *name) {
 		// load the picture
 		CComPtr<IPictureDisp> pd;
 		hr = OleLoadPicturePath(
-			T2OLE(sPath), 0, 0, 0,
+			CT2OLE(sPath), 0, 0, 0,
 			IID_IPictureDisp, reinterpret_cast<void**>(&pd)
 		);
 		if (hr != S_OK) return false;
@@ -993,12 +993,17 @@ bool ImageEx::LoadTGA(const char *name) {
 		if (!hDC) return false;
 
 		// get width and height of picture
-		long hmWidth=0, hmHeight=0, nWidth, nHeight;
-		pic->get_Width (&hmWidth );
-		pic->get_Height(&hmHeight);
-		// convert to pixels
-		nWidth  = MulDiv(hmWidth, GetDeviceCaps(hDC, LOGPIXELSX), 2540);
-		nHeight = MulDiv(hmHeight,GetDeviceCaps(hDC, LOGPIXELSY), 2540);
+		long hmWidth=0, hmHeight=0;
+        
+        if (pic->get_Width( &hmWidth ) != S_OK)
+            hmWidth = 0;
+        
+        if (pic->get_Height( &hmHeight ) != S_OK)
+            hmHeight = 0;
+		
+        // convert to pixels
+		long nWidth  = MulDiv(hmWidth, GetDeviceCaps(hDC, LOGPIXELSX), 2540);
+		long nHeight = MulDiv(hmHeight,GetDeviceCaps(hDC, LOGPIXELSY), 2540);
 
 		// create bitmap info header
 		BITMAPINFO bmi;
@@ -1018,22 +1023,24 @@ bool ImageEx::LoadTGA(const char *name) {
 		HGDIOBJ hOld=0;
 		HBITMAP hBMP=0;
 		bool done=false;
-		do {
-			// create bitmap
-			void *pData=0;
-			hBMP = CreateDIBSection(hDC, &bmi, DIB_RGB_COLORS, &pData, 0,0);
-			if (!hBMP || (pData==NULL)) break;
+        do {
+            // create bitmap
+            void *pData = 0;
+            hBMP = CreateDIBSection( hDC, &bmi, DIB_RGB_COLORS, &pData, 0, 0 );
+            if (!hBMP || (pData == NULL)) break;
 
-			// render picture into BMP
-			hOld = SelectObject(hDC, hBMP);
+            // render picture into BMP
+            hOld = SelectObject( hDC, hBMP );
+
+            // rect used by FillRect below and to silence warning on Render
+            RECT rect{};
+            SetRect( &rect, 0, 0, nWidth, nHeight );
 
 			// if loading a metafile, fill the BMP with
 			// white before rendering
 			SHORT type = PICTYPE_BITMAP;
 			if ((pic->get_Type(&type)==S_OK) && (type != PICTYPE_BITMAP)) {
-				RECT rc;
-				SetRect(&rc,0,0,nWidth,nHeight);
-				FillRect(hDC, &rc, (HBRUSH)GetStockObject(WHITE_BRUSH));
+				FillRect(hDC, &rect, (HBRUSH)GetStockObject(WHITE_BRUSH));
 			}
 
 			// render into the BMP
@@ -1043,7 +1050,7 @@ bool ImageEx::LoadTGA(const char *name) {
 				nWidth,nHeight,		// destination size
 				0,hmHeight,			// source offset
 				hmWidth,-hmHeight,	// source size
-				0					// dest.ptr if hDC is metafile
+				&rect				// dest.ptr if hDC is metafile
 			) != S_OK) break;		// abort if we fail
 
 			// allocate storage for image
@@ -3510,9 +3517,9 @@ void Image::Blur() {
 		// copy first pixel of row
 		memcpy(dst, src, pixelSize);
 		// for each channel (eg. I,R,G,B,A depending on image type)
-		for (long c=0; c<pixelSize; c++) {
+		for (long channel=0; channel<pixelSize; channel++) {
 			// for channel c in every pixel in this row
-			for (x=pixelSize+c; x<((w-1)*pixelSize+c); x+=pixelSize) {
+			for (x=pixelSize+channel; x<((w-1)*pixelSize+channel); x+=pixelSize) {
 				WORD
 					a = (WORD)( src[x-pixelSize] ),		// left
 					b = (WORD)( src[x] ),				// centre

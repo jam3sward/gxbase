@@ -232,17 +232,17 @@ bool TObject::CalcNormals() {
 
 		// normal indices for face
 		int
-			na = face.normal[0],
-			nb = face.normal[1],
-			nc = face.normal[2];
+			n0 = face.normal[0],
+			n1 = face.normal[1],
+			n2 = face.normal[2];
 
 		// contribute to each attached normal, and count contributions
-		m_norms[na] += N;
-		count[na]++;
-		m_norms[nb] += N;
-		count[nb]++;
-		m_norms[nc] += N;
-		count[nc]++;
+		m_norms[n0] += N;
+		count[n0]++;
+		m_norms[n1] += N;
+		count[n1]++;
+		m_norms[n2] += N;
+		count[n2]++;
 	}//for(f)
 
 	/*for (f=0; f<m_faces.size(); f++)

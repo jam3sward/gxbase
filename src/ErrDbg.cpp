@@ -30,8 +30,11 @@ int s_dbgMsgLevel = 0;
 
 #ifdef __WIN32__
 void dbg_W32LastError(const char *message) {
-	LPVOID lpMsgBuf;
-	FormatMessage( 
+    if (message == nullptr)
+        message = "error";
+
+	LPVOID lpMsgBuf = nullptr;
+	if ( FormatMessage( 
 		FORMAT_MESSAGE_ALLOCATE_BUFFER | 
 		FORMAT_MESSAGE_FROM_SYSTEM	   | 
 		FORMAT_MESSAGE_IGNORE_INSERTS,
@@ -41,10 +44,13 @@ void dbg_W32LastError(const char *message) {
 		(LPTSTR) &lpMsgBuf,
 		0,
 		NULL 
-	);
-	dbg_printf("%s: %s", message, (LPCTSTR)lpMsgBuf);
-	// Free the buffer.
-	LocalFree( lpMsgBuf );
+    ) && (lpMsgBuf != nullptr) ) {
+	    dbg_printf("%s: %s", message, (LPCTSTR)lpMsgBuf);
+	    // Free the buffer.
+	    LocalFree( lpMsgBuf );
+    } else {
+        dbg_printf( "%s: %lu", message, GetLastError() );
+    }
 }//dbg_W32LastError
 #endif	// __WIN32__
 

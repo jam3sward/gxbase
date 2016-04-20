@@ -521,10 +521,10 @@ void ModelEx::ParseKFData(Chunk *pChunk) {
 			break;
 		case /*OBJECT_NODE_TAG*/ SCL_TRACK_TAG: {
 			dbg_printf("SCL_TRACK_TAG\n");
-			KFHeader head;
-			if (newChunk->Read(&head,sizeof(head),fp)) {
+			KFHeader header;
+			if (newChunk->Read(&header,sizeof(header),fp)) {
 				// we only read the first key
-				//for (int n=0; n<(int)head.keys; n++) {
+				//for (int n=0; n<(int)header.keys; n++) {
 					//WORD frameNum =
 					newChunk->ReadWord(fp);		// frameNum
 					newChunk->ReadDWord(fp);	// unknown
@@ -903,27 +903,27 @@ void ModelEx::ParseNTriObject(Chunk *pChunk, const string &name) {
 						//	object.SetMaterialID( m_model.FindMaterial(s) );
 						// TODO: handle per-face materials (not whole object)
 						// no.of faces
-						WORD nFaces = temp.ReadWord(fp);
+						WORD nSubFaces = temp.ReadWord(fp);
 						// JWW 21/11/03 modified to only assign materials if
 						// they are actually assigned to some faces (after
 						// DPWM reported problem with cue-chalk1-2.3ds)
 						int nMatId = m_model.FindMaterial(s);
-						if (nFaces) {
+                        if (nSubFaces) {
 							// find the material ID, and assign it to the object
 							object.SetMaterialID( nMatId );
 						}
-						dbg_printf("MSH_MAT_GROUP (%s,%d)\n", s.c_str(), (int)nFaces);
+                        dbg_printf( "MSH_MAT_GROUP (%s,%d)\n", s.c_str(), (int)nSubFaces );
 						// face indices
 						WORD nObFaces = (WORD)object.Faces().size();
 						//printf("nMatId=%d assigned to #(", nMatId);
-						for (WORD n=0; (n<nFaces)&&(n<nObFaces); n++) {
+                        for (WORD n = 0; (n<nSubFaces) && (n<nObFaces); n++) {
 							WORD faceNum = temp.ReadWord(fp);
 							// store face material ID
 							object.Faces()[faceNum].matid = nMatId;
 							//printf("%d,", (int)faceNum);
 						}
 						// JWW 21/11/03 this object contains sub-object textures
-						if (nFaces < nObFaces)
+                        if (nSubFaces < nObFaces)
 							object.SetSubObjTex(true);
 						//printf(")\n");
 						} break;
