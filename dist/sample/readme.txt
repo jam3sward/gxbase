@@ -1,5 +1,5 @@
 This folder contains a number of sample gxbase projects.
-They have associated VS.NET 2003 project files. Note that
+They have associated Visual Studio project files. Note that
 they include and link the gxbase library from:
   ..\..\inc
   ..\..\lib
