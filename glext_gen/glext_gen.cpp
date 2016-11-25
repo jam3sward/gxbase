@@ -239,8 +239,14 @@ string GetParamListPlain(const char *glFuncDecl) {
 		
 		string token( params.substr(pos,block-pos) );
 
+		// if we find '[' this is an array parameter
+		bool hasArray = (token.find_last_of('[') != token.npos);
+
 		size_t end = token.find_last_of("*& ");
 		if (end != token.npos) token.erase(end+1);
+
+		// if it's an array parameter, fake it by prefixing '*'
+		if (hasArray) token += "*";
 
 		output += token;
 
