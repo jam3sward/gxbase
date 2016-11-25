@@ -4,7 +4,7 @@
 
 /**
  * This is an automatically generated header file: do not edit
- * Generated 2199 functions on Wed Nov 14 21:38:27 2012
+ * Generated 2516 functions on Fri Nov 25 22:11:55 2016
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -25,53 +25,19 @@ public:
 public:
 	// GL extension functions
 
-	void glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
-	void glBlendEquation(GLenum mode);
-	void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices);
-	void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels);
+	void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void *indices);
+	void glTexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
 	void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glColorTable(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table);
-	void glColorTableParameterfv(GLenum target, GLenum pname, const GLfloat *params);
-	void glColorTableParameteriv(GLenum target, GLenum pname, const GLint *params);
-	void glCopyColorTable(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
-	void glGetColorTable(GLenum target, GLenum format, GLenum type, GLvoid *table);
-	void glGetColorTableParameterfv(GLenum target, GLenum pname, GLfloat *params);
-	void glGetColorTableParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glColorSubTable(GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data);
-	void glCopyColorSubTable(GLenum target, GLsizei start, GLint x, GLint y, GLsizei width);
-	void glConvolutionFilter1D(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image);
-	void glConvolutionFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image);
-	void glConvolutionParameterf(GLenum target, GLenum pname, GLfloat params);
-	void glConvolutionParameterfv(GLenum target, GLenum pname, const GLfloat *params);
-	void glConvolutionParameteri(GLenum target, GLenum pname, GLint params);
-	void glConvolutionParameteriv(GLenum target, GLenum pname, const GLint *params);
-	void glCopyConvolutionFilter1D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
-	void glCopyConvolutionFilter2D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glGetConvolutionFilter(GLenum target, GLenum format, GLenum type, GLvoid *image);
-	void glGetConvolutionParameterfv(GLenum target, GLenum pname, GLfloat *params);
-	void glGetConvolutionParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glGetSeparableFilter(GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span);
-	void glSeparableFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column);
-	void glGetHistogram(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values);
-	void glGetHistogramParameterfv(GLenum target, GLenum pname, GLfloat *params);
-	void glGetHistogramParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glGetMinmax(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values);
-	void glGetMinmaxParameterfv(GLenum target, GLenum pname, GLfloat *params);
-	void glGetMinmaxParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glHistogram(GLenum target, GLsizei width, GLenum internalformat, GLboolean sink);
-	void glMinmax(GLenum target, GLenum internalformat, GLboolean sink);
-	void glResetHistogram(GLenum target);
-	void glResetMinmax(GLenum target);
 	void glActiveTexture(GLenum texture);
 	void glSampleCoverage(GLfloat value, GLboolean invert);
-	void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glGetCompressedTexImage(GLenum target, GLint level, GLvoid *img);
+	void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+	void glGetCompressedTexImage(GLenum target, GLint level, void *img);
 	void glClientActiveTexture(GLenum texture);
 	void glMultiTexCoord1d(GLenum target, GLdouble s);
 	void glMultiTexCoord1dv(GLenum target, const GLdouble *v);
@@ -111,7 +77,7 @@ public:
 	void glMultTransposeMatrixd(const GLdouble *m);
 	void glBlendFuncSeparate(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
 	void glMultiDrawArrays(GLenum mode, const GLint *first, const GLsizei *count, GLsizei drawcount);
-	void glMultiDrawElements(GLenum mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei drawcount);
+	void glMultiDrawElements(GLenum mode, const GLsizei *count, GLenum type, const void *const*indices, GLsizei drawcount);
 	void glPointParameterf(GLenum pname, GLfloat param);
 	void glPointParameterfv(GLenum pname, const GLfloat *params);
 	void glPointParameteri(GLenum pname, GLint param);
@@ -120,7 +86,7 @@ public:
 	void glFogCoordfv(const GLfloat *coord);
 	void glFogCoordd(GLdouble coord);
 	void glFogCoorddv(const GLdouble *coord);
-	void glFogCoordPointer(GLenum type, GLsizei stride, const GLvoid *pointer);
+	void glFogCoordPointer(GLenum type, GLsizei stride, const void *pointer);
 	void glSecondaryColor3b(GLbyte red, GLbyte green, GLbyte blue);
 	void glSecondaryColor3bv(const GLbyte *v);
 	void glSecondaryColor3d(GLdouble red, GLdouble green, GLdouble blue);
@@ -137,7 +103,7 @@ public:
 	void glSecondaryColor3uiv(const GLuint *v);
 	void glSecondaryColor3us(GLushort red, GLushort green, GLushort blue);
 	void glSecondaryColor3usv(const GLushort *v);
-	void glSecondaryColorPointer(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
+	void glSecondaryColorPointer(GLint size, GLenum type, GLsizei stride, const void *pointer);
 	void glWindowPos2d(GLdouble x, GLdouble y);
 	void glWindowPos2dv(const GLdouble *v);
 	void glWindowPos2f(GLfloat x, GLfloat y);
@@ -154,6 +120,8 @@ public:
 	void glWindowPos3iv(const GLint *v);
 	void glWindowPos3s(GLshort x, GLshort y, GLshort z);
 	void glWindowPos3sv(const GLshort *v);
+	void glBlendColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
+	void glBlendEquation(GLenum mode);
 	void glGenQueries(GLsizei n, GLuint *ids);
 	void glDeleteQueries(GLsizei n, const GLuint *ids);
 	GLboolean glIsQuery(GLuint id);
@@ -166,13 +134,13 @@ public:
 	void glDeleteBuffers(GLsizei n, const GLuint *buffers);
 	void glGenBuffers(GLsizei n, GLuint *buffers);
 	GLboolean glIsBuffer(GLuint buffer);
-	void glBufferData(GLenum target, GLsizeiptr size, const GLvoid *data, GLenum usage);
-	void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid *data);
-	void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid *data);
-	GLvoid* glMapBuffer(GLenum target, GLenum access);
+	void glBufferData(GLenum target, GLsizeiptr size, const void *data, GLenum usage);
+	void glBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void *data);
+	void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void *data);
+	void * glMapBuffer(GLenum target, GLenum access);
 	GLboolean glUnmapBuffer(GLenum target);
 	void glGetBufferParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glGetBufferPointerv(GLenum target, GLenum pname, GLvoid* *params);
+	void glGetBufferPointerv(GLenum target, GLenum pname, void **params);
 	void glBlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha);
 	void glDrawBuffers(GLsizei n, const GLenum *bufs);
 	void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass);
@@ -190,7 +158,7 @@ public:
 	void glEnableVertexAttribArray(GLuint index);
 	void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
 	void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
-	void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *obj);
+	void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders);
 	GLint glGetAttribLocation(GLuint program, const GLchar *name);
 	void glGetProgramiv(GLuint program, GLenum pname, GLint *params);
 	void glGetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei *length, GLchar *infoLog);
@@ -203,11 +171,11 @@ public:
 	void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params);
 	void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params);
 	void glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params);
-	void glGetVertexAttribPointerv(GLuint index, GLenum pname, GLvoid* *pointer);
+	void glGetVertexAttribPointerv(GLuint index, GLenum pname, void **pointer);
 	GLboolean glIsProgram(GLuint program);
 	GLboolean glIsShader(GLuint shader);
 	void glLinkProgram(GLuint program);
-	void glShaderSource(GLuint shader, GLsizei count, const GLchar* const *string, const GLint *length);
+	void glShaderSource(GLuint shader, GLsizei count, const GLchar *const*string, const GLint *length);
 	void glUseProgram(GLuint program);
 	void glUniform1f(GLint location, GLfloat v0);
 	void glUniform2f(GLint location, GLfloat v0, GLfloat v1);
@@ -265,7 +233,7 @@ public:
 	void glVertexAttrib4ubv(GLuint index, const GLubyte *v);
 	void glVertexAttrib4uiv(GLuint index, const GLuint *v);
 	void glVertexAttrib4usv(GLuint index, const GLushort *v);
-	void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer);
+	void glVertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void *pointer);
 	void glUniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 	void glUniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 	void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
@@ -282,12 +250,12 @@ public:
 	void glEndTransformFeedback(void);
 	void glBindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
 	void glBindBufferBase(GLenum target, GLuint index, GLuint buffer);
-	void glTransformFeedbackVaryings(GLuint program, GLsizei count, const GLchar* const *varyings, GLenum bufferMode);
+	void glTransformFeedbackVaryings(GLuint program, GLsizei count, const GLchar *const*varyings, GLenum bufferMode);
 	void glGetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
 	void glClampColor(GLenum target, GLenum clamp);
 	void glBeginConditionalRender(GLuint id, GLenum mode);
 	void glEndConditionalRender(void);
-	void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
+	void glVertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
 	void glGetVertexAttribIiv(GLuint index, GLenum pname, GLint *params);
 	void glGetVertexAttribIuiv(GLuint index, GLenum pname, GLuint *params);
 	void glVertexAttribI1i(GLuint index, GLint x);
@@ -330,225 +298,6 @@ public:
 	void glClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat *value);
 	void glClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
 	const GLubyte * glGetStringi(GLenum name, GLuint index);
-	void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount);
-	void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei instancecount);
-	void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer);
-	void glPrimitiveRestartIndex(GLuint index);
-	void glGetInteger64i_v(GLenum target, GLuint index, GLint64 *data);
-	void glGetBufferParameteri64v(GLenum target, GLenum pname, GLint64 *params);
-	void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level);
-	void glVertexAttribDivisor(GLuint index, GLuint divisor);
-	void glMinSampleShading(GLfloat value);
-	void glBlendEquationi(GLuint buf, GLenum mode);
-	void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
-	void glBlendFunci(GLuint buf, GLenum src, GLenum dst);
-	void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
-	void glActiveTextureARB(GLenum texture);
-	void glClientActiveTextureARB(GLenum texture);
-	void glMultiTexCoord1dARB(GLenum target, GLdouble s);
-	void glMultiTexCoord1dvARB(GLenum target, const GLdouble *v);
-	void glMultiTexCoord1fARB(GLenum target, GLfloat s);
-	void glMultiTexCoord1fvARB(GLenum target, const GLfloat *v);
-	void glMultiTexCoord1iARB(GLenum target, GLint s);
-	void glMultiTexCoord1ivARB(GLenum target, const GLint *v);
-	void glMultiTexCoord1sARB(GLenum target, GLshort s);
-	void glMultiTexCoord1svARB(GLenum target, const GLshort *v);
-	void glMultiTexCoord2dARB(GLenum target, GLdouble s, GLdouble t);
-	void glMultiTexCoord2dvARB(GLenum target, const GLdouble *v);
-	void glMultiTexCoord2fARB(GLenum target, GLfloat s, GLfloat t);
-	void glMultiTexCoord2fvARB(GLenum target, const GLfloat *v);
-	void glMultiTexCoord2iARB(GLenum target, GLint s, GLint t);
-	void glMultiTexCoord2ivARB(GLenum target, const GLint *v);
-	void glMultiTexCoord2sARB(GLenum target, GLshort s, GLshort t);
-	void glMultiTexCoord2svARB(GLenum target, const GLshort *v);
-	void glMultiTexCoord3dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r);
-	void glMultiTexCoord3dvARB(GLenum target, const GLdouble *v);
-	void glMultiTexCoord3fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r);
-	void glMultiTexCoord3fvARB(GLenum target, const GLfloat *v);
-	void glMultiTexCoord3iARB(GLenum target, GLint s, GLint t, GLint r);
-	void glMultiTexCoord3ivARB(GLenum target, const GLint *v);
-	void glMultiTexCoord3sARB(GLenum target, GLshort s, GLshort t, GLshort r);
-	void glMultiTexCoord3svARB(GLenum target, const GLshort *v);
-	void glMultiTexCoord4dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q);
-	void glMultiTexCoord4dvARB(GLenum target, const GLdouble *v);
-	void glMultiTexCoord4fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q);
-	void glMultiTexCoord4fvARB(GLenum target, const GLfloat *v);
-	void glMultiTexCoord4iARB(GLenum target, GLint s, GLint t, GLint r, GLint q);
-	void glMultiTexCoord4ivARB(GLenum target, const GLint *v);
-	void glMultiTexCoord4sARB(GLenum target, GLshort s, GLshort t, GLshort r, GLshort q);
-	void glMultiTexCoord4svARB(GLenum target, const GLshort *v);
-	void glLoadTransposeMatrixfARB(const GLfloat *m);
-	void glLoadTransposeMatrixdARB(const GLdouble *m);
-	void glMultTransposeMatrixfARB(const GLfloat *m);
-	void glMultTransposeMatrixdARB(const GLdouble *m);
-	void glSampleCoverageARB(GLfloat value, GLboolean invert);
-	void glCompressedTexImage3DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexImage2DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexImage1DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage3DARB(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage2DARB(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glCompressedTexSubImage1DARB(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data);
-	void glGetCompressedTexImageARB(GLenum target, GLint level, GLvoid *img);
-	void glPointParameterfARB(GLenum pname, GLfloat param);
-	void glPointParameterfvARB(GLenum pname, const GLfloat *params);
-	void glWeightbvARB(GLint size, const GLbyte *weights);
-	void glWeightsvARB(GLint size, const GLshort *weights);
-	void glWeightivARB(GLint size, const GLint *weights);
-	void glWeightfvARB(GLint size, const GLfloat *weights);
-	void glWeightdvARB(GLint size, const GLdouble *weights);
-	void glWeightubvARB(GLint size, const GLubyte *weights);
-	void glWeightusvARB(GLint size, const GLushort *weights);
-	void glWeightuivARB(GLint size, const GLuint *weights);
-	void glWeightPointerARB(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glVertexBlendARB(GLint count);
-	void glCurrentPaletteMatrixARB(GLint index);
-	void glMatrixIndexubvARB(GLint size, const GLubyte *indices);
-	void glMatrixIndexusvARB(GLint size, const GLushort *indices);
-	void glMatrixIndexuivARB(GLint size, const GLuint *indices);
-	void glMatrixIndexPointerARB(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glWindowPos2dARB(GLdouble x, GLdouble y);
-	void glWindowPos2dvARB(const GLdouble *v);
-	void glWindowPos2fARB(GLfloat x, GLfloat y);
-	void glWindowPos2fvARB(const GLfloat *v);
-	void glWindowPos2iARB(GLint x, GLint y);
-	void glWindowPos2ivARB(const GLint *v);
-	void glWindowPos2sARB(GLshort x, GLshort y);
-	void glWindowPos2svARB(const GLshort *v);
-	void glWindowPos3dARB(GLdouble x, GLdouble y, GLdouble z);
-	void glWindowPos3dvARB(const GLdouble *v);
-	void glWindowPos3fARB(GLfloat x, GLfloat y, GLfloat z);
-	void glWindowPos3fvARB(const GLfloat *v);
-	void glWindowPos3iARB(GLint x, GLint y, GLint z);
-	void glWindowPos3ivARB(const GLint *v);
-	void glWindowPos3sARB(GLshort x, GLshort y, GLshort z);
-	void glWindowPos3svARB(const GLshort *v);
-	void glVertexAttrib1dARB(GLuint index, GLdouble x);
-	void glVertexAttrib1dvARB(GLuint index, const GLdouble *v);
-	void glVertexAttrib1fARB(GLuint index, GLfloat x);
-	void glVertexAttrib1fvARB(GLuint index, const GLfloat *v);
-	void glVertexAttrib1sARB(GLuint index, GLshort x);
-	void glVertexAttrib1svARB(GLuint index, const GLshort *v);
-	void glVertexAttrib2dARB(GLuint index, GLdouble x, GLdouble y);
-	void glVertexAttrib2dvARB(GLuint index, const GLdouble *v);
-	void glVertexAttrib2fARB(GLuint index, GLfloat x, GLfloat y);
-	void glVertexAttrib2fvARB(GLuint index, const GLfloat *v);
-	void glVertexAttrib2sARB(GLuint index, GLshort x, GLshort y);
-	void glVertexAttrib2svARB(GLuint index, const GLshort *v);
-	void glVertexAttrib3dARB(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-	void glVertexAttrib3dvARB(GLuint index, const GLdouble *v);
-	void glVertexAttrib3fARB(GLuint index, GLfloat x, GLfloat y, GLfloat z);
-	void glVertexAttrib3fvARB(GLuint index, const GLfloat *v);
-	void glVertexAttrib3sARB(GLuint index, GLshort x, GLshort y, GLshort z);
-	void glVertexAttrib3svARB(GLuint index, const GLshort *v);
-	void glVertexAttrib4NbvARB(GLuint index, const GLbyte *v);
-	void glVertexAttrib4NivARB(GLuint index, const GLint *v);
-	void glVertexAttrib4NsvARB(GLuint index, const GLshort *v);
-	void glVertexAttrib4NubARB(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
-	void glVertexAttrib4NubvARB(GLuint index, const GLubyte *v);
-	void glVertexAttrib4NuivARB(GLuint index, const GLuint *v);
-	void glVertexAttrib4NusvARB(GLuint index, const GLushort *v);
-	void glVertexAttrib4bvARB(GLuint index, const GLbyte *v);
-	void glVertexAttrib4dARB(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glVertexAttrib4dvARB(GLuint index, const GLdouble *v);
-	void glVertexAttrib4fARB(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glVertexAttrib4fvARB(GLuint index, const GLfloat *v);
-	void glVertexAttrib4ivARB(GLuint index, const GLint *v);
-	void glVertexAttrib4sARB(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
-	void glVertexAttrib4svARB(GLuint index, const GLshort *v);
-	void glVertexAttrib4ubvARB(GLuint index, const GLubyte *v);
-	void glVertexAttrib4uivARB(GLuint index, const GLuint *v);
-	void glVertexAttrib4usvARB(GLuint index, const GLushort *v);
-	void glVertexAttribPointerARB(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer);
-	void glEnableVertexAttribArrayARB(GLuint index);
-	void glDisableVertexAttribArrayARB(GLuint index);
-	void glProgramStringARB(GLenum target, GLenum format, GLsizei len, const GLvoid *string);
-	void glBindProgramARB(GLenum target, GLuint program);
-	void glDeleteProgramsARB(GLsizei n, const GLuint *programs);
-	void glGenProgramsARB(GLsizei n, GLuint *programs);
-	void glProgramEnvParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glProgramEnvParameter4dvARB(GLenum target, GLuint index, const GLdouble *params);
-	void glProgramEnvParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glProgramEnvParameter4fvARB(GLenum target, GLuint index, const GLfloat *params);
-	void glProgramLocalParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glProgramLocalParameter4dvARB(GLenum target, GLuint index, const GLdouble *params);
-	void glProgramLocalParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glProgramLocalParameter4fvARB(GLenum target, GLuint index, const GLfloat *params);
-	void glGetProgramEnvParameterdvARB(GLenum target, GLuint index, GLdouble *params);
-	void glGetProgramEnvParameterfvARB(GLenum target, GLuint index, GLfloat *params);
-	void glGetProgramLocalParameterdvARB(GLenum target, GLuint index, GLdouble *params);
-	void glGetProgramLocalParameterfvARB(GLenum target, GLuint index, GLfloat *params);
-	void glGetProgramivARB(GLenum target, GLenum pname, GLint *params);
-	void glGetProgramStringARB(GLenum target, GLenum pname, GLvoid *string);
-	void glGetVertexAttribdvARB(GLuint index, GLenum pname, GLdouble *params);
-	void glGetVertexAttribfvARB(GLuint index, GLenum pname, GLfloat *params);
-	void glGetVertexAttribivARB(GLuint index, GLenum pname, GLint *params);
-	void glGetVertexAttribPointervARB(GLuint index, GLenum pname, GLvoid* *pointer);
-	GLboolean glIsProgramARB(GLuint program);
-	void glBindBufferARB(GLenum target, GLuint buffer);
-	void glDeleteBuffersARB(GLsizei n, const GLuint *buffers);
-	void glGenBuffersARB(GLsizei n, GLuint *buffers);
-	GLboolean glIsBufferARB(GLuint buffer);
-	void glBufferDataARB(GLenum target, GLsizeiptrARB size, const GLvoid *data, GLenum usage);
-	void glBufferSubDataARB(GLenum target, GLintptrARB offset, GLsizeiptrARB size, const GLvoid *data);
-	void glGetBufferSubDataARB(GLenum target, GLintptrARB offset, GLsizeiptrARB size, GLvoid *data);
-	GLvoid* glMapBufferARB(GLenum target, GLenum access);
-	GLboolean glUnmapBufferARB(GLenum target);
-	void glGetBufferParameterivARB(GLenum target, GLenum pname, GLint *params);
-	void glGetBufferPointervARB(GLenum target, GLenum pname, GLvoid* *params);
-	void glGenQueriesARB(GLsizei n, GLuint *ids);
-	void glDeleteQueriesARB(GLsizei n, const GLuint *ids);
-	GLboolean glIsQueryARB(GLuint id);
-	void glBeginQueryARB(GLenum target, GLuint id);
-	void glEndQueryARB(GLenum target);
-	void glGetQueryivARB(GLenum target, GLenum pname, GLint *params);
-	void glGetQueryObjectivARB(GLuint id, GLenum pname, GLint *params);
-	void glGetQueryObjectuivARB(GLuint id, GLenum pname, GLuint *params);
-	void glDeleteObjectARB(GLhandleARB obj);
-	GLhandleARB glGetHandleARB(GLenum pname);
-	void glDetachObjectARB(GLhandleARB containerObj, GLhandleARB attachedObj);
-	GLhandleARB glCreateShaderObjectARB(GLenum shaderType);
-	void glShaderSourceARB(GLhandleARB shaderObj, GLsizei count, const GLcharARB* *string, const GLint *length);
-	void glCompileShaderARB(GLhandleARB shaderObj);
-	GLhandleARB glCreateProgramObjectARB(void);
-	void glAttachObjectARB(GLhandleARB containerObj, GLhandleARB obj);
-	void glLinkProgramARB(GLhandleARB programObj);
-	void glUseProgramObjectARB(GLhandleARB programObj);
-	void glValidateProgramARB(GLhandleARB programObj);
-	void glUniform1fARB(GLint location, GLfloat v0);
-	void glUniform2fARB(GLint location, GLfloat v0, GLfloat v1);
-	void glUniform3fARB(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
-	void glUniform4fARB(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
-	void glUniform1iARB(GLint location, GLint v0);
-	void glUniform2iARB(GLint location, GLint v0, GLint v1);
-	void glUniform3iARB(GLint location, GLint v0, GLint v1, GLint v2);
-	void glUniform4iARB(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
-	void glUniform1fvARB(GLint location, GLsizei count, const GLfloat *value);
-	void glUniform2fvARB(GLint location, GLsizei count, const GLfloat *value);
-	void glUniform3fvARB(GLint location, GLsizei count, const GLfloat *value);
-	void glUniform4fvARB(GLint location, GLsizei count, const GLfloat *value);
-	void glUniform1ivARB(GLint location, GLsizei count, const GLint *value);
-	void glUniform2ivARB(GLint location, GLsizei count, const GLint *value);
-	void glUniform3ivARB(GLint location, GLsizei count, const GLint *value);
-	void glUniform4ivARB(GLint location, GLsizei count, const GLint *value);
-	void glUniformMatrix2fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glUniformMatrix3fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glUniformMatrix4fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glGetObjectParameterfvARB(GLhandleARB obj, GLenum pname, GLfloat *params);
-	void glGetObjectParameterivARB(GLhandleARB obj, GLenum pname, GLint *params);
-	void glGetInfoLogARB(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *infoLog);
-	void glGetAttachedObjectsARB(GLhandleARB containerObj, GLsizei maxCount, GLsizei *count, GLhandleARB *obj);
-	GLint glGetUniformLocationARB(GLhandleARB programObj, const GLcharARB *name);
-	void glGetActiveUniformARB(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name);
-	void glGetUniformfvARB(GLhandleARB programObj, GLint location, GLfloat *params);
-	void glGetUniformivARB(GLhandleARB programObj, GLint location, GLint *params);
-	void glGetShaderSourceARB(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *source);
-	void glBindAttribLocationARB(GLhandleARB programObj, GLuint index, const GLcharARB *name);
-	void glGetActiveAttribARB(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name);
-	GLint glGetAttribLocationARB(GLhandleARB programObj, const GLcharARB *name);
-	void glDrawBuffersARB(GLsizei n, const GLenum *bufs);
-	void glClampColorARB(GLenum target, GLenum clamp);
-	void glDrawArraysInstancedARB(GLenum mode, GLint first, GLsizei count, GLsizei primcount);
-	void glDrawElementsInstancedARB(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei primcount);
 	GLboolean glIsRenderbuffer(GLuint renderbuffer);
 	void glBindRenderbuffer(GLenum target, GLuint renderbuffer);
 	void glDeleteRenderbuffers(GLsizei n, const GLuint *renderbuffers);
@@ -569,53 +318,43 @@ public:
 	void glBlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
 	void glRenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
 	void glFramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
-	void glProgramParameteriARB(GLuint program, GLenum pname, GLint value);
-	void glFramebufferTextureARB(GLenum target, GLenum attachment, GLuint texture, GLint level);
-	void glFramebufferTextureLayerARB(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
-	void glFramebufferTextureFaceARB(GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
-	void glVertexAttribDivisorARB(GLuint index, GLuint divisor);
-	GLvoid* glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access);
+	void * glMapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access);
 	void glFlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length);
-	void glTexBufferARB(GLenum target, GLenum internalformat, GLuint buffer);
 	void glBindVertexArray(GLuint array);
 	void glDeleteVertexArrays(GLsizei n, const GLuint *arrays);
 	void glGenVertexArrays(GLsizei n, GLuint *arrays);
 	GLboolean glIsVertexArray(GLuint array);
-	void glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar* const *uniformNames, GLuint *uniformIndices);
+	void glDrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount);
+	void glDrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount);
+	void glTexBuffer(GLenum target, GLenum internalformat, GLuint buffer);
+	void glPrimitiveRestartIndex(GLuint index);
+	void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
+	void glGetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar *const*uniformNames, GLuint *uniformIndices);
 	void glGetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint *uniformIndices, GLenum pname, GLint *params);
 	void glGetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformName);
 	GLuint glGetUniformBlockIndex(GLuint program, const GLchar *uniformBlockName);
 	void glGetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params);
 	void glGetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length, GLchar *uniformBlockName);
 	void glUniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);
-	void glCopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
-	void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLint basevertex);
-	void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices, GLint basevertex);
-	void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei instancecount, GLint basevertex);
-	void glMultiDrawElementsBaseVertex(GLenum mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei drawcount, const GLint *basevertex);
+	void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, const void *indices, GLint basevertex);
+	void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void *indices, GLint basevertex);
+	void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLint basevertex);
+	void glMultiDrawElementsBaseVertex(GLenum mode, const GLsizei *count, GLenum type, const void *const*indices, GLsizei drawcount, const GLint *basevertex);
 	void glProvokingVertex(GLenum mode);
 	GLsync glFenceSync(GLenum condition, GLbitfield flags);
 	GLboolean glIsSync(GLsync sync);
 	void glDeleteSync(GLsync sync);
 	GLenum glClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout);
 	void glWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout);
-	void glGetInteger64v(GLenum pname, GLint64 *params);
+	void glGetInteger64v(GLenum pname, GLint64 *data);
 	void glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
-	void glTexImage2DMultisample(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-	void glTexImage3DMultisample(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+	void glGetInteger64i_v(GLenum target, GLuint index, GLint64 *data);
+	void glGetBufferParameteri64v(GLenum target, GLenum pname, GLint64 *params);
+	void glFramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level);
+	void glTexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+	void glTexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
 	void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val);
-	void glSampleMaski(GLuint index, GLbitfield mask);
-	void glBlendEquationiARB(GLuint buf, GLenum mode);
-	void glBlendEquationSeparateiARB(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
-	void glBlendFunciARB(GLuint buf, GLenum src, GLenum dst);
-	void glBlendFuncSeparateiARB(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
-	void glMinSampleShadingARB(GLfloat value);
-	void glNamedStringARB(GLenum type, GLint namelen, const GLchar *name, GLint stringlen, const GLchar *string);
-	void glDeleteNamedStringARB(GLint namelen, const GLchar *name);
-	void glCompileShaderIncludeARB(GLuint shader, GLsizei count, const GLchar* *path, const GLint *length);
-	GLboolean glIsNamedStringARB(GLint namelen, const GLchar *name);
-	void glGetNamedStringARB(GLint namelen, const GLchar *name, GLsizei bufSize, GLint *stringlen, GLchar *string);
-	void glGetNamedStringivARB(GLint namelen, const GLchar *name, GLenum pname, GLint *params);
+	void glSampleMaski(GLuint maskNumber, GLbitfield mask);
 	void glBindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const GLchar *name);
 	GLint glGetFragDataIndex(GLuint program, const GLchar *name);
 	void glGenSamplers(GLsizei count, GLuint *samplers);
@@ -635,6 +374,15 @@ public:
 	void glQueryCounter(GLuint id, GLenum target);
 	void glGetQueryObjecti64v(GLuint id, GLenum pname, GLint64 *params);
 	void glGetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 *params);
+	void glVertexAttribDivisor(GLuint index, GLuint divisor);
+	void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
+	void glVertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
+	void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
+	void glVertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
+	void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
+	void glVertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
+	void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
+	void glVertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
 	void glVertexP2ui(GLenum type, GLuint value);
 	void glVertexP2uiv(GLenum type, const GLuint *value);
 	void glVertexP3ui(GLenum type, GLuint value);
@@ -665,16 +413,13 @@ public:
 	void glColorP4uiv(GLenum type, const GLuint *color);
 	void glSecondaryColorP3ui(GLenum type, GLuint color);
 	void glSecondaryColorP3uiv(GLenum type, const GLuint *color);
-	void glVertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-	void glVertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
-	void glVertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-	void glVertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
-	void glVertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-	void glVertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
-	void glVertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-	void glVertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint *value);
-	void glDrawArraysIndirect(GLenum mode, const GLvoid *indirect);
-	void glDrawElementsIndirect(GLenum mode, GLenum type, const GLvoid *indirect);
+	void glMinSampleShading(GLfloat value);
+	void glBlendEquationi(GLuint buf, GLenum mode);
+	void glBlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
+	void glBlendFunci(GLuint buf, GLenum src, GLenum dst);
+	void glBlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
+	void glDrawArraysIndirect(GLenum mode, const void *indirect);
+	void glDrawElementsIndirect(GLenum mode, GLenum type, const void *indirect);
 	void glUniform1d(GLint location, GLdouble x);
 	void glUniform2d(GLint location, GLdouble x, GLdouble y);
 	void glUniform3d(GLint location, GLdouble x, GLdouble y, GLdouble z);
@@ -715,16 +460,16 @@ public:
 	void glEndQueryIndexed(GLenum target, GLuint index);
 	void glGetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint *params);
 	void glReleaseShaderCompiler(void);
-	void glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryformat, const GLvoid *binary, GLsizei length);
+	void glShaderBinary(GLsizei count, const GLuint *shaders, GLenum binaryformat, const void *binary, GLsizei length);
 	void glGetShaderPrecisionFormat(GLenum shadertype, GLenum precisiontype, GLint *range, GLint *precision);
 	void glDepthRangef(GLfloat n, GLfloat f);
 	void glClearDepthf(GLfloat d);
-	void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, GLvoid *binary);
-	void glProgramBinary(GLuint program, GLenum binaryFormat, const GLvoid *binary, GLsizei length);
+	void glGetProgramBinary(GLuint program, GLsizei bufSize, GLsizei *length, GLenum *binaryFormat, void *binary);
+	void glProgramBinary(GLuint program, GLenum binaryFormat, const void *binary, GLsizei length);
 	void glProgramParameteri(GLuint program, GLenum pname, GLint value);
 	void glUseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program);
 	void glActiveShaderProgram(GLuint pipeline, GLuint program);
-	GLuint glCreateShaderProgramv(GLenum type, GLsizei count, const GLchar* const *strings);
+	GLuint glCreateShaderProgramv(GLenum type, GLsizei count, const GLchar *const*strings);
 	void glBindProgramPipeline(GLuint pipeline);
 	void glDeleteProgramPipelines(GLsizei n, const GLuint *pipelines);
 	void glGenProgramPipelines(GLsizei n, GLuint *pipelines);
@@ -790,7 +535,7 @@ public:
 	void glVertexAttribL2dv(GLuint index, const GLdouble *v);
 	void glVertexAttribL3dv(GLuint index, const GLdouble *v);
 	void glVertexAttribL4dv(GLuint index, const GLdouble *v);
-	void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
+	void glVertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
 	void glGetVertexAttribLdv(GLuint index, GLenum pname, GLdouble *params);
 	void glViewportArrayv(GLuint first, GLsizei count, const GLfloat *v);
 	void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h);
@@ -802,36 +547,9 @@ public:
 	void glDepthRangeIndexed(GLuint index, GLdouble n, GLdouble f);
 	void glGetFloati_v(GLenum target, GLuint index, GLfloat *data);
 	void glGetDoublei_v(GLenum target, GLuint index, GLdouble *data);
-	GLsync glCreateSyncFromCLeventARB(struct _cl_context * context, struct _cl_event * event, GLbitfield flags);
-	void glDebugMessageControlARB(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
-	void glDebugMessageInsertARB(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf);
-	void glDebugMessageCallbackARB(GLDEBUGPROCARB callback, const GLvoid *userParam);
-	GLuint glGetDebugMessageLogARB(GLuint count, GLsizei bufsize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog);
-	GLenum glGetGraphicsResetStatusARB(void);
-	void glGetnMapdvARB(GLenum target, GLenum query, GLsizei bufSize, GLdouble *v);
-	void glGetnMapfvARB(GLenum target, GLenum query, GLsizei bufSize, GLfloat *v);
-	void glGetnMapivARB(GLenum target, GLenum query, GLsizei bufSize, GLint *v);
-	void glGetnPixelMapfvARB(GLenum map, GLsizei bufSize, GLfloat *values);
-	void glGetnPixelMapuivARB(GLenum map, GLsizei bufSize, GLuint *values);
-	void glGetnPixelMapusvARB(GLenum map, GLsizei bufSize, GLushort *values);
-	void glGetnPolygonStippleARB(GLsizei bufSize, GLubyte *pattern);
-	void glGetnColorTableARB(GLenum target, GLenum format, GLenum type, GLsizei bufSize, GLvoid *table);
-	void glGetnConvolutionFilterARB(GLenum target, GLenum format, GLenum type, GLsizei bufSize, GLvoid *image);
-	void glGetnSeparableFilterARB(GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, GLvoid *row, GLsizei columnBufSize, GLvoid *column, GLvoid *span);
-	void glGetnHistogramARB(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, GLvoid *values);
-	void glGetnMinmaxARB(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, GLvoid *values);
-	void glGetnTexImageARB(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, GLvoid *img);
-	void glReadnPixelsARB(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, GLvoid *data);
-	void glGetnCompressedTexImageARB(GLenum target, GLint lod, GLsizei bufSize, GLvoid *img);
-	void glGetnUniformfvARB(GLuint program, GLint location, GLsizei bufSize, GLfloat *params);
-	void glGetnUniformivARB(GLuint program, GLint location, GLsizei bufSize, GLint *params);
-	void glGetnUniformuivARB(GLuint program, GLint location, GLsizei bufSize, GLuint *params);
-	void glGetnUniformdvARB(GLuint program, GLint location, GLsizei bufSize, GLdouble *params);
 	void glDrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance);
 	void glDrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLuint baseinstance);
 	void glDrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance);
-	void glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount);
-	void glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount);
 	void glGetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint *params);
 	void glGetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint *params);
 	void glBindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format);
@@ -839,43 +557,15 @@ public:
 	void glTexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width);
 	void glTexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
 	void glTexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
-	void glTextureStorage1DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width);
-	void glTextureStorage2DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
-	void glTextureStorage3DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
-	void glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
-	void glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf);
-	void glDebugMessageCallback(GLDEBUGPROC callback, const void *userParam);
-	GLuint glGetDebugMessageLog(GLuint count, GLsizei bufsize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog);
-	void glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const GLchar *message);
-	void glPopDebugGroup(void);
-	void glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const GLchar *label);
-	void glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei *length, GLchar *label);
-	void glObjectPtrLabel(const void *ptr, GLsizei length, const GLchar *label);
-	void glGetObjectPtrLabel(const void *ptr, GLsizei bufSize, GLsizei *length, GLchar *label);
+	void glDrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount);
+	void glDrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount);
 	void glClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void *data);
 	void glClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data);
-	void glClearNamedBufferDataEXT(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data);
-	void glClearNamedBufferSubDataEXT(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, GLsizeiptr offset, GLsizeiptr size, const void *data);
 	void glDispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z);
 	void glDispatchComputeIndirect(GLintptr indirect);
 	void glCopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth);
-	void glTextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers);
-	void glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
-	void glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
-	void glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-	void glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-	void glVertexAttribBinding(GLuint attribindex, GLuint bindingindex);
-	void glVertexBindingDivisor(GLuint bindingindex, GLuint divisor);
-	void glVertexArrayBindVertexBufferEXT(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
-	void glVertexArrayVertexAttribFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
-	void glVertexArrayVertexAttribIFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-	void glVertexArrayVertexAttribLFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-	void glVertexArrayVertexAttribBindingEXT(GLuint vaobj, GLuint attribindex, GLuint bindingindex);
-	void glVertexArrayVertexBindingDivisorEXT(GLuint vaobj, GLuint bindingindex, GLuint divisor);
 	void glFramebufferParameteri(GLenum target, GLenum pname, GLint param);
 	void glGetFramebufferParameteriv(GLenum target, GLenum pname, GLint *params);
-	void glNamedFramebufferParameteriEXT(GLuint framebuffer, GLenum pname, GLint param);
-	void glGetNamedFramebufferParameterivEXT(GLuint framebuffer, GLenum pname, GLint *params);
 	void glGetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 *params);
 	void glInvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth);
 	void glInvalidateTexImage(GLuint texture, GLint level);
@@ -893,417 +583,738 @@ public:
 	GLint glGetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const GLchar *name);
 	void glShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding);
 	void glTexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
-	void glTextureBufferRangeEXT(GLuint texture, GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
 	void glTexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
 	void glTexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-	void glTextureStorage2DMultisampleEXT(GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-	void glTextureStorage3DMultisampleEXT(GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-	void glBlendColorEXT(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
-	void glPolygonOffsetEXT(GLfloat factor, GLfloat bias);
-	void glTexImage3DEXT(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTexSubImage3DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels);
-	void glGetTexFilterFuncSGIS(GLenum target, GLenum filter, GLfloat *weights);
-	void glTexFilterFuncSGIS(GLenum target, GLenum filter, GLsizei n, const GLfloat *weights);
-	void glTexSubImage1DEXT(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTexSubImage2DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels);
-	void glCopyTexImage1DEXT(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
-	void glCopyTexImage2DEXT(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
-	void glCopyTexSubImage1DEXT(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
-	void glCopyTexSubImage2DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glCopyTexSubImage3DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glGetHistogramEXT(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values);
-	void glGetHistogramParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
-	void glGetHistogramParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	void glGetMinmaxEXT(GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values);
-	void glGetMinmaxParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
-	void glGetMinmaxParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	void glHistogramEXT(GLenum target, GLsizei width, GLenum internalformat, GLboolean sink);
-	void glMinmaxEXT(GLenum target, GLenum internalformat, GLboolean sink);
-	void glResetHistogramEXT(GLenum target);
-	void glResetMinmaxEXT(GLenum target);
-	void glConvolutionFilter1DEXT(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image);
-	void glConvolutionFilter2DEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image);
-	void glConvolutionParameterfEXT(GLenum target, GLenum pname, GLfloat params);
-	void glConvolutionParameterfvEXT(GLenum target, GLenum pname, const GLfloat *params);
-	void glConvolutionParameteriEXT(GLenum target, GLenum pname, GLint params);
-	void glConvolutionParameterivEXT(GLenum target, GLenum pname, const GLint *params);
-	void glCopyConvolutionFilter1DEXT(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
-	void glCopyConvolutionFilter2DEXT(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glGetConvolutionFilterEXT(GLenum target, GLenum format, GLenum type, GLvoid *image);
-	void glGetConvolutionParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
-	void glGetConvolutionParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	void glGetSeparableFilterEXT(GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span);
-	void glSeparableFilter2DEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column);
-	void glColorTableSGI(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table);
-	void glColorTableParameterfvSGI(GLenum target, GLenum pname, const GLfloat *params);
-	void glColorTableParameterivSGI(GLenum target, GLenum pname, const GLint *params);
-	void glCopyColorTableSGI(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
-	void glGetColorTableSGI(GLenum target, GLenum format, GLenum type, GLvoid *table);
-	void glGetColorTableParameterfvSGI(GLenum target, GLenum pname, GLfloat *params);
-	void glGetColorTableParameterivSGI(GLenum target, GLenum pname, GLint *params);
-	void glPixelTexGenSGIX(GLenum mode);
-	void glPixelTexGenParameteriSGIS(GLenum pname, GLint param);
-	void glPixelTexGenParameterivSGIS(GLenum pname, const GLint *params);
-	void glPixelTexGenParameterfSGIS(GLenum pname, GLfloat param);
-	void glPixelTexGenParameterfvSGIS(GLenum pname, const GLfloat *params);
-	void glGetPixelTexGenParameterivSGIS(GLenum pname, GLint *params);
-	void glGetPixelTexGenParameterfvSGIS(GLenum pname, GLfloat *params);
-	void glTexImage4DSGIS(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTexSubImage4DSGIS(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint woffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLenum format, GLenum type, const GLvoid *pixels);
-	GLboolean glAreTexturesResidentEXT(GLsizei n, const GLuint *textures, GLboolean *residences);
-	void glBindTextureEXT(GLenum target, GLuint texture);
-	void glDeleteTexturesEXT(GLsizei n, const GLuint *textures);
-	void glGenTexturesEXT(GLsizei n, GLuint *textures);
-	GLboolean glIsTextureEXT(GLuint texture);
-	void glPrioritizeTexturesEXT(GLsizei n, const GLuint *textures, const GLclampf *priorities);
-	void glDetailTexFuncSGIS(GLenum target, GLsizei n, const GLfloat *points);
-	void glGetDetailTexFuncSGIS(GLenum target, GLfloat *points);
-	void glSharpenTexFuncSGIS(GLenum target, GLsizei n, const GLfloat *points);
-	void glGetSharpenTexFuncSGIS(GLenum target, GLfloat *points);
-	void glSampleMaskSGIS(GLclampf value, GLboolean invert);
-	void glSamplePatternSGIS(GLenum pattern);
-	void glArrayElementEXT(GLint i);
-	void glColorPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer);
-	void glDrawArraysEXT(GLenum mode, GLint first, GLsizei count);
-	void glEdgeFlagPointerEXT(GLsizei stride, GLsizei count, const GLboolean *pointer);
-	void glGetPointervEXT(GLenum pname, GLvoid* *params);
-	void glIndexPointerEXT(GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer);
-	void glNormalPointerEXT(GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer);
-	void glTexCoordPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer);
-	void glVertexPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const GLvoid *pointer);
-	void glBlendEquationEXT(GLenum mode);
-	void glSpriteParameterfSGIX(GLenum pname, GLfloat param);
-	void glSpriteParameterfvSGIX(GLenum pname, const GLfloat *params);
-	void glSpriteParameteriSGIX(GLenum pname, GLint param);
-	void glSpriteParameterivSGIX(GLenum pname, const GLint *params);
-	void glPointParameterfEXT(GLenum pname, GLfloat param);
-	void glPointParameterfvEXT(GLenum pname, const GLfloat *params);
-	void glPointParameterfSGIS(GLenum pname, GLfloat param);
-	void glPointParameterfvSGIS(GLenum pname, const GLfloat *params);
-	GLint glGetInstrumentsSGIX(void);
-	void glInstrumentsBufferSGIX(GLsizei size, GLint *buffer);
-	GLint glPollInstrumentsSGIX(GLint *marker_p);
-	void glReadInstrumentsSGIX(GLint marker);
-	void glStartInstrumentsSGIX(void);
-	void glStopInstrumentsSGIX(GLint marker);
-	void glFrameZoomSGIX(GLint factor);
-	void glTagSampleBufferSGIX(void);
-	void glDeformationMap3dSGIX(GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, GLdouble w1, GLdouble w2, GLint wstride, GLint worder, const GLdouble *points);
-	void glDeformationMap3fSGIX(GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, GLfloat w1, GLfloat w2, GLint wstride, GLint worder, const GLfloat *points);
-	void glDeformSGIX(GLbitfield mask);
-	void glLoadIdentityDeformationMapSGIX(GLbitfield mask);
-	void glReferencePlaneSGIX(const GLdouble *equation);
-	void glFlushRasterSGIX(void);
-	void glFogFuncSGIS(GLsizei n, const GLfloat *points);
-	void glGetFogFuncSGIS(GLfloat *points);
-	void glImageTransformParameteriHP(GLenum target, GLenum pname, GLint param);
-	void glImageTransformParameterfHP(GLenum target, GLenum pname, GLfloat param);
-	void glImageTransformParameterivHP(GLenum target, GLenum pname, const GLint *params);
-	void glImageTransformParameterfvHP(GLenum target, GLenum pname, const GLfloat *params);
-	void glGetImageTransformParameterivHP(GLenum target, GLenum pname, GLint *params);
-	void glGetImageTransformParameterfvHP(GLenum target, GLenum pname, GLfloat *params);
-	void glColorSubTableEXT(GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data);
-	void glCopyColorSubTableEXT(GLenum target, GLsizei start, GLint x, GLint y, GLsizei width);
-	void glHintPGI(GLenum target, GLint mode);
-	void glColorTableEXT(GLenum target, GLenum internalFormat, GLsizei width, GLenum format, GLenum type, const GLvoid *table);
-	void glGetColorTableEXT(GLenum target, GLenum format, GLenum type, GLvoid *data);
-	void glGetColorTableParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	void glGetColorTableParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
-	void glGetListParameterfvSGIX(GLuint list, GLenum pname, GLfloat *params);
-	void glGetListParameterivSGIX(GLuint list, GLenum pname, GLint *params);
-	void glListParameterfSGIX(GLuint list, GLenum pname, GLfloat param);
-	void glListParameterfvSGIX(GLuint list, GLenum pname, const GLfloat *params);
-	void glListParameteriSGIX(GLuint list, GLenum pname, GLint param);
-	void glListParameterivSGIX(GLuint list, GLenum pname, const GLint *params);
-	void glIndexMaterialEXT(GLenum face, GLenum mode);
-	void glIndexFuncEXT(GLenum func, GLclampf ref);
-	void glLockArraysEXT(GLint first, GLsizei count);
-	void glUnlockArraysEXT(void);
-	void glCullParameterdvEXT(GLenum pname, GLdouble *params);
-	void glCullParameterfvEXT(GLenum pname, GLfloat *params);
-	void glFragmentColorMaterialSGIX(GLenum face, GLenum mode);
-	void glFragmentLightfSGIX(GLenum light, GLenum pname, GLfloat param);
-	void glFragmentLightfvSGIX(GLenum light, GLenum pname, const GLfloat *params);
-	void glFragmentLightiSGIX(GLenum light, GLenum pname, GLint param);
-	void glFragmentLightivSGIX(GLenum light, GLenum pname, const GLint *params);
-	void glFragmentLightModelfSGIX(GLenum pname, GLfloat param);
-	void glFragmentLightModelfvSGIX(GLenum pname, const GLfloat *params);
-	void glFragmentLightModeliSGIX(GLenum pname, GLint param);
-	void glFragmentLightModelivSGIX(GLenum pname, const GLint *params);
-	void glFragmentMaterialfSGIX(GLenum face, GLenum pname, GLfloat param);
-	void glFragmentMaterialfvSGIX(GLenum face, GLenum pname, const GLfloat *params);
-	void glFragmentMaterialiSGIX(GLenum face, GLenum pname, GLint param);
-	void glFragmentMaterialivSGIX(GLenum face, GLenum pname, const GLint *params);
-	void glGetFragmentLightfvSGIX(GLenum light, GLenum pname, GLfloat *params);
-	void glGetFragmentLightivSGIX(GLenum light, GLenum pname, GLint *params);
-	void glGetFragmentMaterialfvSGIX(GLenum face, GLenum pname, GLfloat *params);
-	void glGetFragmentMaterialivSGIX(GLenum face, GLenum pname, GLint *params);
-	void glLightEnviSGIX(GLenum pname, GLint param);
-	void glDrawRangeElementsEXT(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices);
-	void glApplyTextureEXT(GLenum mode);
-	void glTextureLightEXT(GLenum pname);
-	void glTextureMaterialEXT(GLenum face, GLenum mode);
-	void glAsyncMarkerSGIX(GLuint marker);
-	GLint glFinishAsyncSGIX(GLuint *markerp);
-	GLint glPollAsyncSGIX(GLuint *markerp);
-	GLuint glGenAsyncMarkersSGIX(GLsizei range);
-	void glDeleteAsyncMarkersSGIX(GLuint marker, GLsizei range);
-	GLboolean glIsAsyncMarkerSGIX(GLuint marker);
-	void glVertexPointervINTEL(GLint size, GLenum type, const GLvoid* *pointer);
-	void glNormalPointervINTEL(GLenum type, const GLvoid* *pointer);
-	void glColorPointervINTEL(GLint size, GLenum type, const GLvoid* *pointer);
-	void glTexCoordPointervINTEL(GLint size, GLenum type, const GLvoid* *pointer);
-	void glPixelTransformParameteriEXT(GLenum target, GLenum pname, GLint param);
-	void glPixelTransformParameterfEXT(GLenum target, GLenum pname, GLfloat param);
-	void glPixelTransformParameterivEXT(GLenum target, GLenum pname, const GLint *params);
-	void glPixelTransformParameterfvEXT(GLenum target, GLenum pname, const GLfloat *params);
-	void glGetPixelTransformParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	void glGetPixelTransformParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
-	void glSecondaryColor3bEXT(GLbyte red, GLbyte green, GLbyte blue);
-	void glSecondaryColor3bvEXT(const GLbyte *v);
-	void glSecondaryColor3dEXT(GLdouble red, GLdouble green, GLdouble blue);
-	void glSecondaryColor3dvEXT(const GLdouble *v);
-	void glSecondaryColor3fEXT(GLfloat red, GLfloat green, GLfloat blue);
-	void glSecondaryColor3fvEXT(const GLfloat *v);
-	void glSecondaryColor3iEXT(GLint red, GLint green, GLint blue);
-	void glSecondaryColor3ivEXT(const GLint *v);
-	void glSecondaryColor3sEXT(GLshort red, GLshort green, GLshort blue);
-	void glSecondaryColor3svEXT(const GLshort *v);
-	void glSecondaryColor3ubEXT(GLubyte red, GLubyte green, GLubyte blue);
-	void glSecondaryColor3ubvEXT(const GLubyte *v);
-	void glSecondaryColor3uiEXT(GLuint red, GLuint green, GLuint blue);
-	void glSecondaryColor3uivEXT(const GLuint *v);
-	void glSecondaryColor3usEXT(GLushort red, GLushort green, GLushort blue);
-	void glSecondaryColor3usvEXT(const GLushort *v);
-	void glSecondaryColorPointerEXT(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glTextureNormalEXT(GLenum mode);
-	void glMultiDrawArraysEXT(GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
-	void glMultiDrawElementsEXT(GLenum mode, const GLsizei *count, GLenum type, const GLvoid* *indices, GLsizei primcount);
-	void glFogCoordfEXT(GLfloat coord);
-	void glFogCoordfvEXT(const GLfloat *coord);
-	void glFogCoorddEXT(GLdouble coord);
-	void glFogCoorddvEXT(const GLdouble *coord);
-	void glFogCoordPointerEXT(GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glTangent3bEXT(GLbyte tx, GLbyte ty, GLbyte tz);
-	void glTangent3bvEXT(const GLbyte *v);
-	void glTangent3dEXT(GLdouble tx, GLdouble ty, GLdouble tz);
-	void glTangent3dvEXT(const GLdouble *v);
-	void glTangent3fEXT(GLfloat tx, GLfloat ty, GLfloat tz);
-	void glTangent3fvEXT(const GLfloat *v);
-	void glTangent3iEXT(GLint tx, GLint ty, GLint tz);
-	void glTangent3ivEXT(const GLint *v);
-	void glTangent3sEXT(GLshort tx, GLshort ty, GLshort tz);
-	void glTangent3svEXT(const GLshort *v);
-	void glBinormal3bEXT(GLbyte bx, GLbyte by, GLbyte bz);
-	void glBinormal3bvEXT(const GLbyte *v);
-	void glBinormal3dEXT(GLdouble bx, GLdouble by, GLdouble bz);
-	void glBinormal3dvEXT(const GLdouble *v);
-	void glBinormal3fEXT(GLfloat bx, GLfloat by, GLfloat bz);
-	void glBinormal3fvEXT(const GLfloat *v);
-	void glBinormal3iEXT(GLint bx, GLint by, GLint bz);
-	void glBinormal3ivEXT(const GLint *v);
-	void glBinormal3sEXT(GLshort bx, GLshort by, GLshort bz);
-	void glBinormal3svEXT(const GLshort *v);
-	void glTangentPointerEXT(GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glBinormalPointerEXT(GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glFinishTextureSUNX(void);
-	void glGlobalAlphaFactorbSUN(GLbyte factor);
-	void glGlobalAlphaFactorsSUN(GLshort factor);
-	void glGlobalAlphaFactoriSUN(GLint factor);
-	void glGlobalAlphaFactorfSUN(GLfloat factor);
-	void glGlobalAlphaFactordSUN(GLdouble factor);
-	void glGlobalAlphaFactorubSUN(GLubyte factor);
-	void glGlobalAlphaFactorusSUN(GLushort factor);
-	void glGlobalAlphaFactoruiSUN(GLuint factor);
-	void glReplacementCodeuiSUN(GLuint code);
-	void glReplacementCodeusSUN(GLushort code);
-	void glReplacementCodeubSUN(GLubyte code);
-	void glReplacementCodeuivSUN(const GLuint *code);
-	void glReplacementCodeusvSUN(const GLushort *code);
-	void glReplacementCodeubvSUN(const GLubyte *code);
-	void glReplacementCodePointerSUN(GLenum type, GLsizei stride, const GLvoid* *pointer);
-	void glColor4ubVertex2fSUN(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y);
-	void glColor4ubVertex2fvSUN(const GLubyte *c, const GLfloat *v);
-	void glColor4ubVertex3fSUN(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
-	void glColor4ubVertex3fvSUN(const GLubyte *c, const GLfloat *v);
-	void glColor3fVertex3fSUN(GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
-	void glColor3fVertex3fvSUN(const GLfloat *c, const GLfloat *v);
-	void glNormal3fVertex3fSUN(GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glNormal3fVertex3fvSUN(const GLfloat *n, const GLfloat *v);
-	void glColor4fNormal3fVertex3fSUN(GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glColor4fNormal3fVertex3fvSUN(const GLfloat *c, const GLfloat *n, const GLfloat *v);
-	void glTexCoord2fVertex3fSUN(GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
-	void glTexCoord2fVertex3fvSUN(const GLfloat *tc, const GLfloat *v);
-	void glTexCoord4fVertex4fSUN(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glTexCoord4fVertex4fvSUN(const GLfloat *tc, const GLfloat *v);
-	void glTexCoord2fColor4ubVertex3fSUN(GLfloat s, GLfloat t, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
-	void glTexCoord2fColor4ubVertex3fvSUN(const GLfloat *tc, const GLubyte *c, const GLfloat *v);
-	void glTexCoord2fColor3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
-	void glTexCoord2fColor3fVertex3fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *v);
-	void glTexCoord2fNormal3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glTexCoord2fNormal3fVertex3fvSUN(const GLfloat *tc, const GLfloat *n, const GLfloat *v);
-	void glTexCoord2fColor4fNormal3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glTexCoord2fColor4fNormal3fVertex3fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
-	void glTexCoord4fColor4fNormal3fVertex4fSUN(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glTexCoord4fColor4fNormal3fVertex4fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
-	void glReplacementCodeuiVertex3fSUN(GLuint rc, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiVertex3fvSUN(const GLuint *rc, const GLfloat *v);
-	void glReplacementCodeuiColor4ubVertex3fSUN(GLuint rc, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiColor4ubVertex3fvSUN(const GLuint *rc, const GLubyte *c, const GLfloat *v);
-	void glReplacementCodeuiColor3fVertex3fSUN(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiColor3fVertex3fvSUN(const GLuint *rc, const GLfloat *c, const GLfloat *v);
-	void glReplacementCodeuiNormal3fVertex3fSUN(GLuint rc, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *n, const GLfloat *v);
-	void glReplacementCodeuiColor4fNormal3fVertex3fSUN(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiColor4fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
-	void glReplacementCodeuiTexCoord2fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiTexCoord2fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *v);
-	void glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *n, const GLfloat *v);
-	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
-	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
-	void glBlendFuncSeparateEXT(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
-	void glBlendFuncSeparateINGR(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
-	void glVertexWeightfEXT(GLfloat weight);
-	void glVertexWeightfvEXT(const GLfloat *weight);
-	void glVertexWeightPointerEXT(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glFlushVertexArrayRangeNV(void);
-	void glVertexArrayRangeNV(GLsizei length, const GLvoid *pointer);
-	void glCombinerParameterfvNV(GLenum pname, const GLfloat *params);
-	void glCombinerParameterfNV(GLenum pname, GLfloat param);
-	void glCombinerParameterivNV(GLenum pname, const GLint *params);
-	void glCombinerParameteriNV(GLenum pname, GLint param);
-	void glCombinerInputNV(GLenum stage, GLenum portion, GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage);
-	void glCombinerOutputNV(GLenum stage, GLenum portion, GLenum abOutput, GLenum cdOutput, GLenum sumOutput, GLenum scale, GLenum bias, GLboolean abDotProduct, GLboolean cdDotProduct, GLboolean muxSum);
-	void glFinalCombinerInputNV(GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage);
-	void glGetCombinerInputParameterfvNV(GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLfloat *params);
-	void glGetCombinerInputParameterivNV(GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLint *params);
-	void glGetCombinerOutputParameterfvNV(GLenum stage, GLenum portion, GLenum pname, GLfloat *params);
-	void glGetCombinerOutputParameterivNV(GLenum stage, GLenum portion, GLenum pname, GLint *params);
-	void glGetFinalCombinerInputParameterfvNV(GLenum variable, GLenum pname, GLfloat *params);
-	void glGetFinalCombinerInputParameterivNV(GLenum variable, GLenum pname, GLint *params);
-	void glResizeBuffersMESA(void);
-	void glWindowPos2dMESA(GLdouble x, GLdouble y);
-	void glWindowPos2dvMESA(const GLdouble *v);
-	void glWindowPos2fMESA(GLfloat x, GLfloat y);
-	void glWindowPos2fvMESA(const GLfloat *v);
-	void glWindowPos2iMESA(GLint x, GLint y);
-	void glWindowPos2ivMESA(const GLint *v);
-	void glWindowPos2sMESA(GLshort x, GLshort y);
-	void glWindowPos2svMESA(const GLshort *v);
-	void glWindowPos3dMESA(GLdouble x, GLdouble y, GLdouble z);
-	void glWindowPos3dvMESA(const GLdouble *v);
-	void glWindowPos3fMESA(GLfloat x, GLfloat y, GLfloat z);
-	void glWindowPos3fvMESA(const GLfloat *v);
-	void glWindowPos3iMESA(GLint x, GLint y, GLint z);
-	void glWindowPos3ivMESA(const GLint *v);
-	void glWindowPos3sMESA(GLshort x, GLshort y, GLshort z);
-	void glWindowPos3svMESA(const GLshort *v);
-	void glWindowPos4dMESA(GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glWindowPos4dvMESA(const GLdouble *v);
-	void glWindowPos4fMESA(GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glWindowPos4fvMESA(const GLfloat *v);
-	void glWindowPos4iMESA(GLint x, GLint y, GLint z, GLint w);
-	void glWindowPos4ivMESA(const GLint *v);
-	void glWindowPos4sMESA(GLshort x, GLshort y, GLshort z, GLshort w);
-	void glWindowPos4svMESA(const GLshort *v);
-	void glMultiModeDrawArraysIBM(const GLenum *mode, const GLint *first, const GLsizei *count, GLsizei primcount, GLint modestride);
-	void glMultiModeDrawElementsIBM(const GLenum *mode, const GLsizei *count, GLenum type, const GLvoid* const *indices, GLsizei primcount, GLint modestride);
-	void glColorPointerListIBM(GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glSecondaryColorPointerListIBM(GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glEdgeFlagPointerListIBM(GLint stride, const GLboolean* *pointer, GLint ptrstride);
-	void glFogCoordPointerListIBM(GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glIndexPointerListIBM(GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glNormalPointerListIBM(GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glTexCoordPointerListIBM(GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
-	void glVertexPointerListIBM(GLint size, GLenum type, GLint stride, const GLvoid* *pointer, GLint ptrstride);
+	void glTextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers);
+	void glBindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
+	void glVertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
+	void glVertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexAttribBinding(GLuint attribindex, GLuint bindingindex);
+	void glVertexBindingDivisor(GLuint bindingindex, GLuint divisor);
+	void glDebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
+	void glDebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf);
+	void glDebugMessageCallback(GLDEBUGPROC callback, const void *userParam);
+	GLuint glGetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog);
+	void glPushDebugGroup(GLenum source, GLuint id, GLsizei length, const GLchar *message);
+	void glPopDebugGroup(void);
+	void glObjectLabel(GLenum identifier, GLuint name, GLsizei length, const GLchar *label);
+	void glGetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei *length, GLchar *label);
+	void glObjectPtrLabel(const void *ptr, GLsizei length, const GLchar *label);
+	void glGetObjectPtrLabel(const void *ptr, GLsizei bufSize, GLsizei *length, GLchar *label);
+	void glBufferStorage(GLenum target, GLsizeiptr size, const void *data, GLbitfield flags);
+	void glClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void *data);
+	void glClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *data);
+	void glBindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint *buffers);
+	void glBindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizeiptr *sizes);
+	void glBindTextures(GLuint first, GLsizei count, const GLuint *textures);
+	void glBindSamplers(GLuint first, GLsizei count, const GLuint *samplers);
+	void glBindImageTextures(GLuint first, GLsizei count, const GLuint *textures);
+	void glBindVertexBuffers(GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides);
+	void glClipControl(GLenum origin, GLenum depth);
+	void glCreateTransformFeedbacks(GLsizei n, GLuint *ids);
+	void glTransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer);
+	void glTransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
+	void glGetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint *param);
+	void glGetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint *param);
+	void glGetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 *param);
+	void glCreateBuffers(GLsizei n, GLuint *buffers);
+	void glNamedBufferStorage(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags);
+	void glNamedBufferData(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage);
+	void glNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data);
+	void glCopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
+	void glClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data);
+	void glClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data);
+	void * glMapNamedBuffer(GLuint buffer, GLenum access);
+	void * glMapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access);
+	GLboolean glUnmapNamedBuffer(GLuint buffer);
+	void glFlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length);
+	void glGetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint *params);
+	void glGetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 *params);
+	void glGetNamedBufferPointerv(GLuint buffer, GLenum pname, void **params);
+	void glGetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data);
+	void glCreateFramebuffers(GLsizei n, GLuint *framebuffers);
+	void glNamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
+	void glNamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param);
+	void glNamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level);
+	void glNamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer);
+	void glNamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf);
+	void glNamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum *bufs);
+	void glNamedFramebufferReadBuffer(GLuint framebuffer, GLenum src);
+	void glInvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments);
+	void glInvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value);
+	void glClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value);
+	void glClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value);
+	void glClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
+	void glBlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
+	GLenum glCheckNamedFramebufferStatus(GLuint framebuffer, GLenum target);
+	void glGetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint *param);
+	void glGetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params);
+	void glCreateRenderbuffers(GLsizei n, GLuint *renderbuffers);
+	void glNamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
+	void glNamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
+	void glGetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint *params);
+	void glCreateTextures(GLenum target, GLsizei n, GLuint *textures);
+	void glTextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer);
+	void glTextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
+	void glTextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width);
+	void glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
+	void glTextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
+	void glTextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+	void glTextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+	void glTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
+	void glTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
+	void glTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
+	void glCompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+	void glCopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
+	void glCopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glCopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glTextureParameterf(GLuint texture, GLenum pname, GLfloat param);
+	void glTextureParameterfv(GLuint texture, GLenum pname, const GLfloat *param);
+	void glTextureParameteri(GLuint texture, GLenum pname, GLint param);
+	void glTextureParameterIiv(GLuint texture, GLenum pname, const GLint *params);
+	void glTextureParameterIuiv(GLuint texture, GLenum pname, const GLuint *params);
+	void glTextureParameteriv(GLuint texture, GLenum pname, const GLint *param);
+	void glGenerateTextureMipmap(GLuint texture);
+	void glBindTextureUnit(GLuint unit, GLuint texture);
+	void glGetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
+	void glGetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void *pixels);
+	void glGetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat *params);
+	void glGetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint *params);
+	void glGetTextureParameterfv(GLuint texture, GLenum pname, GLfloat *params);
+	void glGetTextureParameterIiv(GLuint texture, GLenum pname, GLint *params);
+	void glGetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint *params);
+	void glGetTextureParameteriv(GLuint texture, GLenum pname, GLint *params);
+	void glCreateVertexArrays(GLsizei n, GLuint *arrays);
+	void glDisableVertexArrayAttrib(GLuint vaobj, GLuint index);
+	void glEnableVertexArrayAttrib(GLuint vaobj, GLuint index);
+	void glVertexArrayElementBuffer(GLuint vaobj, GLuint buffer);
+	void glVertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
+	void glVertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers, const GLintptr *offsets, const GLsizei *strides);
+	void glVertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex);
+	void glVertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
+	void glVertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor);
+	void glGetVertexArrayiv(GLuint vaobj, GLenum pname, GLint *param);
+	void glGetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint *param);
+	void glGetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 *param);
+	void glCreateSamplers(GLsizei n, GLuint *samplers);
+	void glCreateProgramPipelines(GLsizei n, GLuint *pipelines);
+	void glCreateQueries(GLenum target, GLsizei n, GLuint *ids);
+	void glGetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
+	void glGetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
+	void glGetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
+	void glGetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
+	void glMemoryBarrierByRegion(GLbitfield barriers);
+	void glGetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
+	void glGetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void *pixels);
+	GLenum glGetGraphicsResetStatus(void);
+	void glGetnCompressedTexImage(GLenum target, GLint lod, GLsizei bufSize, void *pixels);
+	void glGetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *pixels);
+	void glGetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble *params);
+	void glGetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat *params);
+	void glGetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint *params);
+	void glGetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint *params);
+	void glReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data);
+	void glGetnMapdv(GLenum target, GLenum query, GLsizei bufSize, GLdouble *v);
+	void glGetnMapfv(GLenum target, GLenum query, GLsizei bufSize, GLfloat *v);
+	void glGetnMapiv(GLenum target, GLenum query, GLsizei bufSize, GLint *v);
+	void glGetnPixelMapfv(GLenum map, GLsizei bufSize, GLfloat *values);
+	void glGetnPixelMapuiv(GLenum map, GLsizei bufSize, GLuint *values);
+	void glGetnPixelMapusv(GLenum map, GLsizei bufSize, GLushort *values);
+	void glGetnPolygonStipple(GLsizei bufSize, GLubyte *pattern);
+	void glGetnColorTable(GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *table);
+	void glGetnConvolutionFilter(GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *image);
+	void glGetnSeparableFilter(GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, void *row, GLsizei columnBufSize, void *column, void *span);
+	void glGetnHistogram(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
+	void glGetnMinmax(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
+	void glTextureBarrier(void);
+	void glPrimitiveBoundingBoxARB(GLfloat minX, GLfloat minY, GLfloat minZ, GLfloat minW, GLfloat maxX, GLfloat maxY, GLfloat maxZ, GLfloat maxW);
+	GLuint64 glGetTextureHandleARB(GLuint texture);
+	GLuint64 glGetTextureSamplerHandleARB(GLuint texture, GLuint sampler);
+	void glMakeTextureHandleResidentARB(GLuint64 handle);
+	void glMakeTextureHandleNonResidentARB(GLuint64 handle);
+	GLuint64 glGetImageHandleARB(GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum format);
+	void glMakeImageHandleResidentARB(GLuint64 handle, GLenum access);
+	void glMakeImageHandleNonResidentARB(GLuint64 handle);
+	void glUniformHandleui64ARB(GLint location, GLuint64 value);
+	void glUniformHandleui64vARB(GLint location, GLsizei count, const GLuint64 *value);
+	void glProgramUniformHandleui64ARB(GLuint program, GLint location, GLuint64 value);
+	void glProgramUniformHandleui64vARB(GLuint program, GLint location, GLsizei count, const GLuint64 *values);
+	GLboolean glIsTextureHandleResidentARB(GLuint64 handle);
+	GLboolean glIsImageHandleResidentARB(GLuint64 handle);
+	void glVertexAttribL1ui64ARB(GLuint index, GLuint64EXT x);
+	void glVertexAttribL1ui64vARB(GLuint index, const GLuint64EXT *v);
+	void glGetVertexAttribLui64vARB(GLuint index, GLenum pname, GLuint64EXT *params);
+	GLsync glCreateSyncFromCLeventARB(struct _cl_context *context, struct _cl_event *event, GLbitfield flags);
+	void glClampColorARB(GLenum target, GLenum clamp);
+	void glDispatchComputeGroupSizeARB(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z, GLuint group_size_x, GLuint group_size_y, GLuint group_size_z);
+	void glDebugMessageControlARB(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
+	void glDebugMessageInsertARB(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar *buf);
+	void glDebugMessageCallbackARB(GLDEBUGPROCARB callback, const void *userParam);
+	GLuint glGetDebugMessageLogARB(GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids, GLenum *severities, GLsizei *lengths, GLchar *messageLog);
+	void glDrawBuffersARB(GLsizei n, const GLenum *bufs);
+	void glBlendEquationiARB(GLuint buf, GLenum mode);
+	void glBlendEquationSeparateiARB(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
+	void glBlendFunciARB(GLuint buf, GLenum src, GLenum dst);
+	void glBlendFuncSeparateiARB(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
+	void glDrawArraysInstancedARB(GLenum mode, GLint first, GLsizei count, GLsizei primcount);
+	void glDrawElementsInstancedARB(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei primcount);
+	void glProgramStringARB(GLenum target, GLenum format, GLsizei len, const void *string);
+	void glBindProgramARB(GLenum target, GLuint program);
+	void glDeleteProgramsARB(GLsizei n, const GLuint *programs);
+	void glGenProgramsARB(GLsizei n, GLuint *programs);
+	void glProgramEnvParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glProgramEnvParameter4dvARB(GLenum target, GLuint index, const GLdouble *params);
+	void glProgramEnvParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glProgramEnvParameter4fvARB(GLenum target, GLuint index, const GLfloat *params);
+	void glProgramLocalParameter4dARB(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glProgramLocalParameter4dvARB(GLenum target, GLuint index, const GLdouble *params);
+	void glProgramLocalParameter4fARB(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glProgramLocalParameter4fvARB(GLenum target, GLuint index, const GLfloat *params);
+	void glGetProgramEnvParameterdvARB(GLenum target, GLuint index, GLdouble *params);
+	void glGetProgramEnvParameterfvARB(GLenum target, GLuint index, GLfloat *params);
+	void glGetProgramLocalParameterdvARB(GLenum target, GLuint index, GLdouble *params);
+	void glGetProgramLocalParameterfvARB(GLenum target, GLuint index, GLfloat *params);
+	void glGetProgramivARB(GLenum target, GLenum pname, GLint *params);
+	void glGetProgramStringARB(GLenum target, GLenum pname, void *string);
+	GLboolean glIsProgramARB(GLuint program);
+	void glProgramParameteriARB(GLuint program, GLenum pname, GLint value);
+	void glFramebufferTextureARB(GLenum target, GLenum attachment, GLuint texture, GLint level);
+	void glFramebufferTextureLayerARB(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
+	void glFramebufferTextureFaceARB(GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
+	void glUniform1i64ARB(GLint location, GLint64 x);
+	void glUniform2i64ARB(GLint location, GLint64 x, GLint64 y);
+	void glUniform3i64ARB(GLint location, GLint64 x, GLint64 y, GLint64 z);
+	void glUniform4i64ARB(GLint location, GLint64 x, GLint64 y, GLint64 z, GLint64 w);
+	void glUniform1i64vARB(GLint location, GLsizei count, const GLint64 *value);
+	void glUniform2i64vARB(GLint location, GLsizei count, const GLint64 *value);
+	void glUniform3i64vARB(GLint location, GLsizei count, const GLint64 *value);
+	void glUniform4i64vARB(GLint location, GLsizei count, const GLint64 *value);
+	void glUniform1ui64ARB(GLint location, GLuint64 x);
+	void glUniform2ui64ARB(GLint location, GLuint64 x, GLuint64 y);
+	void glUniform3ui64ARB(GLint location, GLuint64 x, GLuint64 y, GLuint64 z);
+	void glUniform4ui64ARB(GLint location, GLuint64 x, GLuint64 y, GLuint64 z, GLuint64 w);
+	void glUniform1ui64vARB(GLint location, GLsizei count, const GLuint64 *value);
+	void glUniform2ui64vARB(GLint location, GLsizei count, const GLuint64 *value);
+	void glUniform3ui64vARB(GLint location, GLsizei count, const GLuint64 *value);
+	void glUniform4ui64vARB(GLint location, GLsizei count, const GLuint64 *value);
+	void glGetUniformi64vARB(GLuint program, GLint location, GLint64 *params);
+	void glGetUniformui64vARB(GLuint program, GLint location, GLuint64 *params);
+	void glGetnUniformi64vARB(GLuint program, GLint location, GLsizei bufSize, GLint64 *params);
+	void glGetnUniformui64vARB(GLuint program, GLint location, GLsizei bufSize, GLuint64 *params);
+	void glProgramUniform1i64ARB(GLuint program, GLint location, GLint64 x);
+	void glProgramUniform2i64ARB(GLuint program, GLint location, GLint64 x, GLint64 y);
+	void glProgramUniform3i64ARB(GLuint program, GLint location, GLint64 x, GLint64 y, GLint64 z);
+	void glProgramUniform4i64ARB(GLuint program, GLint location, GLint64 x, GLint64 y, GLint64 z, GLint64 w);
+	void glProgramUniform1i64vARB(GLuint program, GLint location, GLsizei count, const GLint64 *value);
+	void glProgramUniform2i64vARB(GLuint program, GLint location, GLsizei count, const GLint64 *value);
+	void glProgramUniform3i64vARB(GLuint program, GLint location, GLsizei count, const GLint64 *value);
+	void glProgramUniform4i64vARB(GLuint program, GLint location, GLsizei count, const GLint64 *value);
+	void glProgramUniform1ui64ARB(GLuint program, GLint location, GLuint64 x);
+	void glProgramUniform2ui64ARB(GLuint program, GLint location, GLuint64 x, GLuint64 y);
+	void glProgramUniform3ui64ARB(GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z);
+	void glProgramUniform4ui64ARB(GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z, GLuint64 w);
+	void glProgramUniform1ui64vARB(GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+	void glProgramUniform2ui64vARB(GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+	void glProgramUniform3ui64vARB(GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+	void glProgramUniform4ui64vARB(GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+	void glColorTable(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const void *table);
+	void glColorTableParameterfv(GLenum target, GLenum pname, const GLfloat *params);
+	void glColorTableParameteriv(GLenum target, GLenum pname, const GLint *params);
+	void glCopyColorTable(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
+	void glGetColorTable(GLenum target, GLenum format, GLenum type, void *table);
+	void glGetColorTableParameterfv(GLenum target, GLenum pname, GLfloat *params);
+	void glGetColorTableParameteriv(GLenum target, GLenum pname, GLint *params);
+	void glColorSubTable(GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const void *data);
+	void glCopyColorSubTable(GLenum target, GLsizei start, GLint x, GLint y, GLsizei width);
+	void glConvolutionFilter1D(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const void *image);
+	void glConvolutionFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *image);
+	void glConvolutionParameterf(GLenum target, GLenum pname, GLfloat params);
+	void glConvolutionParameterfv(GLenum target, GLenum pname, const GLfloat *params);
+	void glConvolutionParameteri(GLenum target, GLenum pname, GLint params);
+	void glConvolutionParameteriv(GLenum target, GLenum pname, const GLint *params);
+	void glCopyConvolutionFilter1D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
+	void glCopyConvolutionFilter2D(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glGetConvolutionFilter(GLenum target, GLenum format, GLenum type, void *image);
+	void glGetConvolutionParameterfv(GLenum target, GLenum pname, GLfloat *params);
+	void glGetConvolutionParameteriv(GLenum target, GLenum pname, GLint *params);
+	void glGetSeparableFilter(GLenum target, GLenum format, GLenum type, void *row, void *column, void *span);
+	void glSeparableFilter2D(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *row, const void *column);
+	void glGetHistogram(GLenum target, GLboolean reset, GLenum format, GLenum type, void *values);
+	void glGetHistogramParameterfv(GLenum target, GLenum pname, GLfloat *params);
+	void glGetHistogramParameteriv(GLenum target, GLenum pname, GLint *params);
+	void glGetMinmax(GLenum target, GLboolean reset, GLenum format, GLenum type, void *values);
+	void glGetMinmaxParameterfv(GLenum target, GLenum pname, GLfloat *params);
+	void glGetMinmaxParameteriv(GLenum target, GLenum pname, GLint *params);
+	void glHistogram(GLenum target, GLsizei width, GLenum internalformat, GLboolean sink);
+	void glMinmax(GLenum target, GLenum internalformat, GLboolean sink);
+	void glResetHistogram(GLenum target);
+	void glResetMinmax(GLenum target);
+	void glMultiDrawArraysIndirectCountARB(GLenum mode, GLintptr indirect, GLintptr drawcount, GLsizei maxdrawcount, GLsizei stride);
+	void glMultiDrawElementsIndirectCountARB(GLenum mode, GLenum type, GLintptr indirect, GLintptr drawcount, GLsizei maxdrawcount, GLsizei stride);
+	void glVertexAttribDivisorARB(GLuint index, GLuint divisor);
+	void glCurrentPaletteMatrixARB(GLint index);
+	void glMatrixIndexubvARB(GLint size, const GLubyte *indices);
+	void glMatrixIndexusvARB(GLint size, const GLushort *indices);
+	void glMatrixIndexuivARB(GLint size, const GLuint *indices);
+	void glMatrixIndexPointerARB(GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glSampleCoverageARB(GLfloat value, GLboolean invert);
+	void glActiveTextureARB(GLenum texture);
+	void glClientActiveTextureARB(GLenum texture);
+	void glMultiTexCoord1dARB(GLenum target, GLdouble s);
+	void glMultiTexCoord1dvARB(GLenum target, const GLdouble *v);
+	void glMultiTexCoord1fARB(GLenum target, GLfloat s);
+	void glMultiTexCoord1fvARB(GLenum target, const GLfloat *v);
+	void glMultiTexCoord1iARB(GLenum target, GLint s);
+	void glMultiTexCoord1ivARB(GLenum target, const GLint *v);
+	void glMultiTexCoord1sARB(GLenum target, GLshort s);
+	void glMultiTexCoord1svARB(GLenum target, const GLshort *v);
+	void glMultiTexCoord2dARB(GLenum target, GLdouble s, GLdouble t);
+	void glMultiTexCoord2dvARB(GLenum target, const GLdouble *v);
+	void glMultiTexCoord2fARB(GLenum target, GLfloat s, GLfloat t);
+	void glMultiTexCoord2fvARB(GLenum target, const GLfloat *v);
+	void glMultiTexCoord2iARB(GLenum target, GLint s, GLint t);
+	void glMultiTexCoord2ivARB(GLenum target, const GLint *v);
+	void glMultiTexCoord2sARB(GLenum target, GLshort s, GLshort t);
+	void glMultiTexCoord2svARB(GLenum target, const GLshort *v);
+	void glMultiTexCoord3dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r);
+	void glMultiTexCoord3dvARB(GLenum target, const GLdouble *v);
+	void glMultiTexCoord3fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r);
+	void glMultiTexCoord3fvARB(GLenum target, const GLfloat *v);
+	void glMultiTexCoord3iARB(GLenum target, GLint s, GLint t, GLint r);
+	void glMultiTexCoord3ivARB(GLenum target, const GLint *v);
+	void glMultiTexCoord3sARB(GLenum target, GLshort s, GLshort t, GLshort r);
+	void glMultiTexCoord3svARB(GLenum target, const GLshort *v);
+	void glMultiTexCoord4dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q);
+	void glMultiTexCoord4dvARB(GLenum target, const GLdouble *v);
+	void glMultiTexCoord4fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q);
+	void glMultiTexCoord4fvARB(GLenum target, const GLfloat *v);
+	void glMultiTexCoord4iARB(GLenum target, GLint s, GLint t, GLint r, GLint q);
+	void glMultiTexCoord4ivARB(GLenum target, const GLint *v);
+	void glMultiTexCoord4sARB(GLenum target, GLshort s, GLshort t, GLshort r, GLshort q);
+	void glMultiTexCoord4svARB(GLenum target, const GLshort *v);
+	void glGenQueriesARB(GLsizei n, GLuint *ids);
+	void glDeleteQueriesARB(GLsizei n, const GLuint *ids);
+	GLboolean glIsQueryARB(GLuint id);
+	void glBeginQueryARB(GLenum target, GLuint id);
+	void glEndQueryARB(GLenum target);
+	void glGetQueryivARB(GLenum target, GLenum pname, GLint *params);
+	void glGetQueryObjectivARB(GLuint id, GLenum pname, GLint *params);
+	void glGetQueryObjectuivARB(GLuint id, GLenum pname, GLuint *params);
+	void glMaxShaderCompilerThreadsARB(GLuint count);
+	void glPointParameterfARB(GLenum pname, GLfloat param);
+	void glPointParameterfvARB(GLenum pname, const GLfloat *params);
+	GLenum glGetGraphicsResetStatusARB(void);
+	void glGetnTexImageARB(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void *img);
+	void glReadnPixelsARB(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void *data);
+	void glGetnCompressedTexImageARB(GLenum target, GLint lod, GLsizei bufSize, void *img);
+	void glGetnUniformfvARB(GLuint program, GLint location, GLsizei bufSize, GLfloat *params);
+	void glGetnUniformivARB(GLuint program, GLint location, GLsizei bufSize, GLint *params);
+	void glGetnUniformuivARB(GLuint program, GLint location, GLsizei bufSize, GLuint *params);
+	void glGetnUniformdvARB(GLuint program, GLint location, GLsizei bufSize, GLdouble *params);
+	void glGetnMapdvARB(GLenum target, GLenum query, GLsizei bufSize, GLdouble *v);
+	void glGetnMapfvARB(GLenum target, GLenum query, GLsizei bufSize, GLfloat *v);
+	void glGetnMapivARB(GLenum target, GLenum query, GLsizei bufSize, GLint *v);
+	void glGetnPixelMapfvARB(GLenum map, GLsizei bufSize, GLfloat *values);
+	void glGetnPixelMapuivARB(GLenum map, GLsizei bufSize, GLuint *values);
+	void glGetnPixelMapusvARB(GLenum map, GLsizei bufSize, GLushort *values);
+	void glGetnPolygonStippleARB(GLsizei bufSize, GLubyte *pattern);
+	void glGetnColorTableARB(GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *table);
+	void glGetnConvolutionFilterARB(GLenum target, GLenum format, GLenum type, GLsizei bufSize, void *image);
+	void glGetnSeparableFilterARB(GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, void *row, GLsizei columnBufSize, void *column, void *span);
+	void glGetnHistogramARB(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
+	void glGetnMinmaxARB(GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void *values);
+	void glFramebufferSampleLocationsfvARB(GLenum target, GLuint start, GLsizei count, const GLfloat *v);
+	void glNamedFramebufferSampleLocationsfvARB(GLuint framebuffer, GLuint start, GLsizei count, const GLfloat *v);
+	void glEvaluateDepthValuesARB(void);
+	void glMinSampleShadingARB(GLfloat value);
+	void glDeleteObjectARB(GLhandleARB obj);
+	GLhandleARB glGetHandleARB(GLenum pname);
+	void glDetachObjectARB(GLhandleARB containerObj, GLhandleARB attachedObj);
+	GLhandleARB glCreateShaderObjectARB(GLenum shaderType);
+	void glShaderSourceARB(GLhandleARB shaderObj, GLsizei count, const GLcharARB **string, const GLint *length);
+	void glCompileShaderARB(GLhandleARB shaderObj);
+	GLhandleARB glCreateProgramObjectARB(void);
+	void glAttachObjectARB(GLhandleARB containerObj, GLhandleARB obj);
+	void glLinkProgramARB(GLhandleARB programObj);
+	void glUseProgramObjectARB(GLhandleARB programObj);
+	void glValidateProgramARB(GLhandleARB programObj);
+	void glUniform1fARB(GLint location, GLfloat v0);
+	void glUniform2fARB(GLint location, GLfloat v0, GLfloat v1);
+	void glUniform3fARB(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
+	void glUniform4fARB(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
+	void glUniform1iARB(GLint location, GLint v0);
+	void glUniform2iARB(GLint location, GLint v0, GLint v1);
+	void glUniform3iARB(GLint location, GLint v0, GLint v1, GLint v2);
+	void glUniform4iARB(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
+	void glUniform1fvARB(GLint location, GLsizei count, const GLfloat *value);
+	void glUniform2fvARB(GLint location, GLsizei count, const GLfloat *value);
+	void glUniform3fvARB(GLint location, GLsizei count, const GLfloat *value);
+	void glUniform4fvARB(GLint location, GLsizei count, const GLfloat *value);
+	void glUniform1ivARB(GLint location, GLsizei count, const GLint *value);
+	void glUniform2ivARB(GLint location, GLsizei count, const GLint *value);
+	void glUniform3ivARB(GLint location, GLsizei count, const GLint *value);
+	void glUniform4ivARB(GLint location, GLsizei count, const GLint *value);
+	void glUniformMatrix2fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glUniformMatrix3fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glUniformMatrix4fvARB(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glGetObjectParameterfvARB(GLhandleARB obj, GLenum pname, GLfloat *params);
+	void glGetObjectParameterivARB(GLhandleARB obj, GLenum pname, GLint *params);
+	void glGetInfoLogARB(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *infoLog);
+	void glGetAttachedObjectsARB(GLhandleARB containerObj, GLsizei maxCount, GLsizei *count, GLhandleARB *obj);
+	GLint glGetUniformLocationARB(GLhandleARB programObj, const GLcharARB *name);
+	void glGetActiveUniformARB(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name);
+	void glGetUniformfvARB(GLhandleARB programObj, GLint location, GLfloat *params);
+	void glGetUniformivARB(GLhandleARB programObj, GLint location, GLint *params);
+	void glGetShaderSourceARB(GLhandleARB obj, GLsizei maxLength, GLsizei *length, GLcharARB *source);
+	void glNamedStringARB(GLenum type, GLint namelen, const GLchar *name, GLint stringlen, const GLchar *string);
+	void glDeleteNamedStringARB(GLint namelen, const GLchar *name);
+	void glCompileShaderIncludeARB(GLuint shader, GLsizei count, const GLchar *const*path, const GLint *length);
+	GLboolean glIsNamedStringARB(GLint namelen, const GLchar *name);
+	void glGetNamedStringARB(GLint namelen, const GLchar *name, GLsizei bufSize, GLint *stringlen, GLchar *string);
+	void glGetNamedStringivARB(GLint namelen, const GLchar *name, GLenum pname, GLint *params);
+	void glBufferPageCommitmentARB(GLenum target, GLintptr offset, GLsizeiptr size, GLboolean commit);
+	void glNamedBufferPageCommitmentEXT(GLuint buffer, GLintptr offset, GLsizeiptr size, GLboolean commit);
+	void glNamedBufferPageCommitmentARB(GLuint buffer, GLintptr offset, GLsizeiptr size, GLboolean commit);
+	void glTexPageCommitmentARB(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLboolean commit);
+	void glTexBufferARB(GLenum target, GLenum internalformat, GLuint buffer);
+	void glCompressedTexImage3DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexImage2DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexImage1DARB(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage3DARB(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage2DARB(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+	void glCompressedTexSubImage1DARB(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *data);
+	void glGetCompressedTexImageARB(GLenum target, GLint level, void *img);
+	void glLoadTransposeMatrixfARB(const GLfloat *m);
+	void glLoadTransposeMatrixdARB(const GLdouble *m);
+	void glMultTransposeMatrixfARB(const GLfloat *m);
+	void glMultTransposeMatrixdARB(const GLdouble *m);
+	void glWeightbvARB(GLint size, const GLbyte *weights);
+	void glWeightsvARB(GLint size, const GLshort *weights);
+	void glWeightivARB(GLint size, const GLint *weights);
+	void glWeightfvARB(GLint size, const GLfloat *weights);
+	void glWeightdvARB(GLint size, const GLdouble *weights);
+	void glWeightubvARB(GLint size, const GLubyte *weights);
+	void glWeightusvARB(GLint size, const GLushort *weights);
+	void glWeightuivARB(GLint size, const GLuint *weights);
+	void glWeightPointerARB(GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glVertexBlendARB(GLint count);
+	void glBindBufferARB(GLenum target, GLuint buffer);
+	void glDeleteBuffersARB(GLsizei n, const GLuint *buffers);
+	void glGenBuffersARB(GLsizei n, GLuint *buffers);
+	GLboolean glIsBufferARB(GLuint buffer);
+	void glBufferDataARB(GLenum target, GLsizeiptrARB size, const void *data, GLenum usage);
+	void glBufferSubDataARB(GLenum target, GLintptrARB offset, GLsizeiptrARB size, const void *data);
+	void glGetBufferSubDataARB(GLenum target, GLintptrARB offset, GLsizeiptrARB size, void *data);
+	void * glMapBufferARB(GLenum target, GLenum access);
+	GLboolean glUnmapBufferARB(GLenum target);
+	void glGetBufferParameterivARB(GLenum target, GLenum pname, GLint *params);
+	void glGetBufferPointervARB(GLenum target, GLenum pname, void **params);
+	void glVertexAttrib1dARB(GLuint index, GLdouble x);
+	void glVertexAttrib1dvARB(GLuint index, const GLdouble *v);
+	void glVertexAttrib1fARB(GLuint index, GLfloat x);
+	void glVertexAttrib1fvARB(GLuint index, const GLfloat *v);
+	void glVertexAttrib1sARB(GLuint index, GLshort x);
+	void glVertexAttrib1svARB(GLuint index, const GLshort *v);
+	void glVertexAttrib2dARB(GLuint index, GLdouble x, GLdouble y);
+	void glVertexAttrib2dvARB(GLuint index, const GLdouble *v);
+	void glVertexAttrib2fARB(GLuint index, GLfloat x, GLfloat y);
+	void glVertexAttrib2fvARB(GLuint index, const GLfloat *v);
+	void glVertexAttrib2sARB(GLuint index, GLshort x, GLshort y);
+	void glVertexAttrib2svARB(GLuint index, const GLshort *v);
+	void glVertexAttrib3dARB(GLuint index, GLdouble x, GLdouble y, GLdouble z);
+	void glVertexAttrib3dvARB(GLuint index, const GLdouble *v);
+	void glVertexAttrib3fARB(GLuint index, GLfloat x, GLfloat y, GLfloat z);
+	void glVertexAttrib3fvARB(GLuint index, const GLfloat *v);
+	void glVertexAttrib3sARB(GLuint index, GLshort x, GLshort y, GLshort z);
+	void glVertexAttrib3svARB(GLuint index, const GLshort *v);
+	void glVertexAttrib4NbvARB(GLuint index, const GLbyte *v);
+	void glVertexAttrib4NivARB(GLuint index, const GLint *v);
+	void glVertexAttrib4NsvARB(GLuint index, const GLshort *v);
+	void glVertexAttrib4NubARB(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
+	void glVertexAttrib4NubvARB(GLuint index, const GLubyte *v);
+	void glVertexAttrib4NuivARB(GLuint index, const GLuint *v);
+	void glVertexAttrib4NusvARB(GLuint index, const GLushort *v);
+	void glVertexAttrib4bvARB(GLuint index, const GLbyte *v);
+	void glVertexAttrib4dARB(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glVertexAttrib4dvARB(GLuint index, const GLdouble *v);
+	void glVertexAttrib4fARB(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glVertexAttrib4fvARB(GLuint index, const GLfloat *v);
+	void glVertexAttrib4ivARB(GLuint index, const GLint *v);
+	void glVertexAttrib4sARB(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
+	void glVertexAttrib4svARB(GLuint index, const GLshort *v);
+	void glVertexAttrib4ubvARB(GLuint index, const GLubyte *v);
+	void glVertexAttrib4uivARB(GLuint index, const GLuint *v);
+	void glVertexAttrib4usvARB(GLuint index, const GLushort *v);
+	void glVertexAttribPointerARB(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void *pointer);
+	void glEnableVertexAttribArrayARB(GLuint index);
+	void glDisableVertexAttribArrayARB(GLuint index);
+	void glGetVertexAttribdvARB(GLuint index, GLenum pname, GLdouble *params);
+	void glGetVertexAttribfvARB(GLuint index, GLenum pname, GLfloat *params);
+	void glGetVertexAttribivARB(GLuint index, GLenum pname, GLint *params);
+	void glGetVertexAttribPointervARB(GLuint index, GLenum pname, void **pointer);
+	void glBindAttribLocationARB(GLhandleARB programObj, GLuint index, const GLcharARB *name);
+	void glGetActiveAttribARB(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length, GLint *size, GLenum *type, GLcharARB *name);
+	GLint glGetAttribLocationARB(GLhandleARB programObj, const GLcharARB *name);
+	void glWindowPos2dARB(GLdouble x, GLdouble y);
+	void glWindowPos2dvARB(const GLdouble *v);
+	void glWindowPos2fARB(GLfloat x, GLfloat y);
+	void glWindowPos2fvARB(const GLfloat *v);
+	void glWindowPos2iARB(GLint x, GLint y);
+	void glWindowPos2ivARB(const GLint *v);
+	void glWindowPos2sARB(GLshort x, GLshort y);
+	void glWindowPos2svARB(const GLshort *v);
+	void glWindowPos3dARB(GLdouble x, GLdouble y, GLdouble z);
+	void glWindowPos3dvARB(const GLdouble *v);
+	void glWindowPos3fARB(GLfloat x, GLfloat y, GLfloat z);
+	void glWindowPos3fvARB(const GLfloat *v);
+	void glWindowPos3iARB(GLint x, GLint y, GLint z);
+	void glWindowPos3ivARB(const GLint *v);
+	void glWindowPos3sARB(GLshort x, GLshort y, GLshort z);
+	void glWindowPos3svARB(const GLshort *v);
+	void glBlendBarrierKHR(void);
+	void glMultiTexCoord1bOES(GLenum texture, GLbyte s);
+	void glMultiTexCoord1bvOES(GLenum texture, const GLbyte *coords);
+	void glMultiTexCoord2bOES(GLenum texture, GLbyte s, GLbyte t);
+	void glMultiTexCoord2bvOES(GLenum texture, const GLbyte *coords);
+	void glMultiTexCoord3bOES(GLenum texture, GLbyte s, GLbyte t, GLbyte r);
+	void glMultiTexCoord3bvOES(GLenum texture, const GLbyte *coords);
+	void glMultiTexCoord4bOES(GLenum texture, GLbyte s, GLbyte t, GLbyte r, GLbyte q);
+	void glMultiTexCoord4bvOES(GLenum texture, const GLbyte *coords);
+	void glTexCoord1bOES(GLbyte s);
+	void glTexCoord1bvOES(const GLbyte *coords);
+	void glTexCoord2bOES(GLbyte s, GLbyte t);
+	void glTexCoord2bvOES(const GLbyte *coords);
+	void glTexCoord3bOES(GLbyte s, GLbyte t, GLbyte r);
+	void glTexCoord3bvOES(const GLbyte *coords);
+	void glTexCoord4bOES(GLbyte s, GLbyte t, GLbyte r, GLbyte q);
+	void glTexCoord4bvOES(const GLbyte *coords);
+	void glVertex2bOES(GLbyte x, GLbyte y);
+	void glVertex2bvOES(const GLbyte *coords);
+	void glVertex3bOES(GLbyte x, GLbyte y, GLbyte z);
+	void glVertex3bvOES(const GLbyte *coords);
+	void glVertex4bOES(GLbyte x, GLbyte y, GLbyte z, GLbyte w);
+	void glVertex4bvOES(const GLbyte *coords);
+	void glAlphaFuncxOES(GLenum func, GLfixed ref);
+	void glClearColorxOES(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
+	void glClearDepthxOES(GLfixed depth);
+	void glClipPlanexOES(GLenum plane, const GLfixed *equation);
+	void glColor4xOES(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
+	void glDepthRangexOES(GLfixed n, GLfixed f);
+	void glFogxOES(GLenum pname, GLfixed param);
+	void glFogxvOES(GLenum pname, const GLfixed *param);
+	void glFrustumxOES(GLfixed l, GLfixed r, GLfixed b, GLfixed t, GLfixed n, GLfixed f);
+	void glGetClipPlanexOES(GLenum plane, GLfixed *equation);
+	void glGetFixedvOES(GLenum pname, GLfixed *params);
+	void glGetTexEnvxvOES(GLenum target, GLenum pname, GLfixed *params);
+	void glGetTexParameterxvOES(GLenum target, GLenum pname, GLfixed *params);
+	void glLightModelxOES(GLenum pname, GLfixed param);
+	void glLightModelxvOES(GLenum pname, const GLfixed *param);
+	void glLightxOES(GLenum light, GLenum pname, GLfixed param);
+	void glLightxvOES(GLenum light, GLenum pname, const GLfixed *params);
+	void glLineWidthxOES(GLfixed width);
+	void glLoadMatrixxOES(const GLfixed *m);
+	void glMaterialxOES(GLenum face, GLenum pname, GLfixed param);
+	void glMaterialxvOES(GLenum face, GLenum pname, const GLfixed *param);
+	void glMultMatrixxOES(const GLfixed *m);
+	void glMultiTexCoord4xOES(GLenum texture, GLfixed s, GLfixed t, GLfixed r, GLfixed q);
+	void glNormal3xOES(GLfixed nx, GLfixed ny, GLfixed nz);
+	void glOrthoxOES(GLfixed l, GLfixed r, GLfixed b, GLfixed t, GLfixed n, GLfixed f);
+	void glPointParameterxvOES(GLenum pname, const GLfixed *params);
+	void glPointSizexOES(GLfixed size);
+	void glPolygonOffsetxOES(GLfixed factor, GLfixed units);
+	void glRotatexOES(GLfixed angle, GLfixed x, GLfixed y, GLfixed z);
+	void glScalexOES(GLfixed x, GLfixed y, GLfixed z);
+	void glTexEnvxOES(GLenum target, GLenum pname, GLfixed param);
+	void glTexEnvxvOES(GLenum target, GLenum pname, const GLfixed *params);
+	void glTexParameterxOES(GLenum target, GLenum pname, GLfixed param);
+	void glTexParameterxvOES(GLenum target, GLenum pname, const GLfixed *params);
+	void glTranslatexOES(GLfixed x, GLfixed y, GLfixed z);
+	void glAccumxOES(GLenum op, GLfixed value);
+	void glBitmapxOES(GLsizei width, GLsizei height, GLfixed xorig, GLfixed yorig, GLfixed xmove, GLfixed ymove, const GLubyte *bitmap);
+	void glBlendColorxOES(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
+	void glClearAccumxOES(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
+	void glColor3xOES(GLfixed red, GLfixed green, GLfixed blue);
+	void glColor3xvOES(const GLfixed *components);
+	void glColor4xvOES(const GLfixed *components);
+	void glConvolutionParameterxOES(GLenum target, GLenum pname, GLfixed param);
+	void glConvolutionParameterxvOES(GLenum target, GLenum pname, const GLfixed *params);
+	void glEvalCoord1xOES(GLfixed u);
+	void glEvalCoord1xvOES(const GLfixed *coords);
+	void glEvalCoord2xOES(GLfixed u, GLfixed v);
+	void glEvalCoord2xvOES(const GLfixed *coords);
+	void glFeedbackBufferxOES(GLsizei n, GLenum type, const GLfixed *buffer);
+	void glGetConvolutionParameterxvOES(GLenum target, GLenum pname, GLfixed *params);
+	void glGetHistogramParameterxvOES(GLenum target, GLenum pname, GLfixed *params);
+	void glGetLightxOES(GLenum light, GLenum pname, GLfixed *params);
+	void glGetMapxvOES(GLenum target, GLenum query, GLfixed *v);
+	void glGetMaterialxOES(GLenum face, GLenum pname, GLfixed param);
+	void glGetPixelMapxv(GLenum map, GLint size, GLfixed *values);
+	void glGetTexGenxvOES(GLenum coord, GLenum pname, GLfixed *params);
+	void glGetTexLevelParameterxvOES(GLenum target, GLint level, GLenum pname, GLfixed *params);
+	void glIndexxOES(GLfixed component);
+	void glIndexxvOES(const GLfixed *component);
+	void glLoadTransposeMatrixxOES(const GLfixed *m);
+	void glMap1xOES(GLenum target, GLfixed u1, GLfixed u2, GLint stride, GLint order, GLfixed points);
+	void glMap2xOES(GLenum target, GLfixed u1, GLfixed u2, GLint ustride, GLint uorder, GLfixed v1, GLfixed v2, GLint vstride, GLint vorder, GLfixed points);
+	void glMapGrid1xOES(GLint n, GLfixed u1, GLfixed u2);
+	void glMapGrid2xOES(GLint n, GLfixed u1, GLfixed u2, GLfixed v1, GLfixed v2);
+	void glMultTransposeMatrixxOES(const GLfixed *m);
+	void glMultiTexCoord1xOES(GLenum texture, GLfixed s);
+	void glMultiTexCoord1xvOES(GLenum texture, const GLfixed *coords);
+	void glMultiTexCoord2xOES(GLenum texture, GLfixed s, GLfixed t);
+	void glMultiTexCoord2xvOES(GLenum texture, const GLfixed *coords);
+	void glMultiTexCoord3xOES(GLenum texture, GLfixed s, GLfixed t, GLfixed r);
+	void glMultiTexCoord3xvOES(GLenum texture, const GLfixed *coords);
+	void glMultiTexCoord4xvOES(GLenum texture, const GLfixed *coords);
+	void glNormal3xvOES(const GLfixed *coords);
+	void glPassThroughxOES(GLfixed token);
+	void glPixelMapx(GLenum map, GLint size, const GLfixed *values);
+	void glPixelStorex(GLenum pname, GLfixed param);
+	void glPixelTransferxOES(GLenum pname, GLfixed param);
+	void glPixelZoomxOES(GLfixed xfactor, GLfixed yfactor);
+	void glPrioritizeTexturesxOES(GLsizei n, const GLuint *textures, const GLfixed *priorities);
+	void glRasterPos2xOES(GLfixed x, GLfixed y);
+	void glRasterPos2xvOES(const GLfixed *coords);
+	void glRasterPos3xOES(GLfixed x, GLfixed y, GLfixed z);
+	void glRasterPos3xvOES(const GLfixed *coords);
+	void glRasterPos4xOES(GLfixed x, GLfixed y, GLfixed z, GLfixed w);
+	void glRasterPos4xvOES(const GLfixed *coords);
+	void glRectxOES(GLfixed x1, GLfixed y1, GLfixed x2, GLfixed y2);
+	void glRectxvOES(const GLfixed *v1, const GLfixed *v2);
+	void glTexCoord1xOES(GLfixed s);
+	void glTexCoord1xvOES(const GLfixed *coords);
+	void glTexCoord2xOES(GLfixed s, GLfixed t);
+	void glTexCoord2xvOES(const GLfixed *coords);
+	void glTexCoord3xOES(GLfixed s, GLfixed t, GLfixed r);
+	void glTexCoord3xvOES(const GLfixed *coords);
+	void glTexCoord4xOES(GLfixed s, GLfixed t, GLfixed r, GLfixed q);
+	void glTexCoord4xvOES(const GLfixed *coords);
+	void glTexGenxOES(GLenum coord, GLenum pname, GLfixed param);
+	void glTexGenxvOES(GLenum coord, GLenum pname, const GLfixed *params);
+	void glVertex2xOES(GLfixed x);
+	void glVertex2xvOES(const GLfixed *coords);
+	void glVertex3xOES(GLfixed x, GLfixed y);
+	void glVertex3xvOES(const GLfixed *coords);
+	void glVertex4xOES(GLfixed x, GLfixed y, GLfixed z);
+	void glVertex4xvOES(const GLfixed *coords);
+	GLbitfield glQueryMatrixxOES(GLfixed *mantissa, GLint *exponent);
+	void glClearDepthfOES(GLclampf depth);
+	void glClipPlanefOES(GLenum plane, const GLfloat *equation);
+	void glDepthRangefOES(GLclampf n, GLclampf f);
+	void glFrustumfOES(GLfloat l, GLfloat r, GLfloat b, GLfloat t, GLfloat n, GLfloat f);
+	void glGetClipPlanefOES(GLenum plane, GLfloat *equation);
+	void glOrthofOES(GLfloat l, GLfloat r, GLfloat b, GLfloat t, GLfloat n, GLfloat f);
 	void glTbufferMask3DFX(GLuint mask);
-	void glSampleMaskEXT(GLclampf value, GLboolean invert);
-	void glSamplePatternEXT(GLenum pattern);
-	void glTextureColorMaskSGIS(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha);
-	void glIglooInterfaceSGIX(GLenum pname, const GLvoid *params);
-	void glDeleteFencesNV(GLsizei n, const GLuint *fences);
-	void glGenFencesNV(GLsizei n, GLuint *fences);
-	GLboolean glIsFenceNV(GLuint fence);
-	GLboolean glTestFenceNV(GLuint fence);
-	void glGetFenceivNV(GLuint fence, GLenum pname, GLint *params);
-	void glFinishFenceNV(GLuint fence);
-	void glSetFenceNV(GLuint fence, GLenum condition);
-	void glMapControlPointsNV(GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLint uorder, GLint vorder, GLboolean packed, const GLvoid *points);
-	void glMapParameterivNV(GLenum target, GLenum pname, const GLint *params);
-	void glMapParameterfvNV(GLenum target, GLenum pname, const GLfloat *params);
-	void glGetMapControlPointsNV(GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLboolean packed, GLvoid *points);
-	void glGetMapParameterivNV(GLenum target, GLenum pname, GLint *params);
-	void glGetMapParameterfvNV(GLenum target, GLenum pname, GLfloat *params);
-	void glGetMapAttribParameterivNV(GLenum target, GLuint index, GLenum pname, GLint *params);
-	void glGetMapAttribParameterfvNV(GLenum target, GLuint index, GLenum pname, GLfloat *params);
-	void glEvalMapsNV(GLenum target, GLenum mode);
-	void glCombinerStageParameterfvNV(GLenum stage, GLenum pname, const GLfloat *params);
-	void glGetCombinerStageParameterfvNV(GLenum stage, GLenum pname, GLfloat *params);
-	GLboolean glAreProgramsResidentNV(GLsizei n, const GLuint *programs, GLboolean *residences);
-	void glBindProgramNV(GLenum target, GLuint id);
-	void glDeleteProgramsNV(GLsizei n, const GLuint *programs);
-	void glExecuteProgramNV(GLenum target, GLuint id, const GLfloat *params);
-	void glGenProgramsNV(GLsizei n, GLuint *programs);
-	void glGetProgramParameterdvNV(GLenum target, GLuint index, GLenum pname, GLdouble *params);
-	void glGetProgramParameterfvNV(GLenum target, GLuint index, GLenum pname, GLfloat *params);
-	void glGetProgramivNV(GLuint id, GLenum pname, GLint *params);
-	void glGetProgramStringNV(GLuint id, GLenum pname, GLubyte *program);
-	void glGetTrackMatrixivNV(GLenum target, GLuint address, GLenum pname, GLint *params);
-	void glGetVertexAttribdvNV(GLuint index, GLenum pname, GLdouble *params);
-	void glGetVertexAttribfvNV(GLuint index, GLenum pname, GLfloat *params);
-	void glGetVertexAttribivNV(GLuint index, GLenum pname, GLint *params);
-	void glGetVertexAttribPointervNV(GLuint index, GLenum pname, GLvoid* *pointer);
-	GLboolean glIsProgramNV(GLuint id);
-	void glLoadProgramNV(GLenum target, GLuint id, GLsizei len, const GLubyte *program);
-	void glProgramParameter4dNV(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glProgramParameter4dvNV(GLenum target, GLuint index, const GLdouble *v);
-	void glProgramParameter4fNV(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glProgramParameter4fvNV(GLenum target, GLuint index, const GLfloat *v);
-	void glProgramParameters4dvNV(GLenum target, GLuint index, GLsizei count, const GLdouble *v);
-	void glProgramParameters4fvNV(GLenum target, GLuint index, GLsizei count, const GLfloat *v);
-	void glRequestResidentProgramsNV(GLsizei n, const GLuint *programs);
-	void glTrackMatrixNV(GLenum target, GLuint address, GLenum matrix, GLenum transform);
-	void glVertexAttribPointerNV(GLuint index, GLint fsize, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glVertexAttrib1dNV(GLuint index, GLdouble x);
-	void glVertexAttrib1dvNV(GLuint index, const GLdouble *v);
-	void glVertexAttrib1fNV(GLuint index, GLfloat x);
-	void glVertexAttrib1fvNV(GLuint index, const GLfloat *v);
-	void glVertexAttrib1sNV(GLuint index, GLshort x);
-	void glVertexAttrib1svNV(GLuint index, const GLshort *v);
-	void glVertexAttrib2dNV(GLuint index, GLdouble x, GLdouble y);
-	void glVertexAttrib2dvNV(GLuint index, const GLdouble *v);
-	void glVertexAttrib2fNV(GLuint index, GLfloat x, GLfloat y);
-	void glVertexAttrib2fvNV(GLuint index, const GLfloat *v);
-	void glVertexAttrib2sNV(GLuint index, GLshort x, GLshort y);
-	void glVertexAttrib2svNV(GLuint index, const GLshort *v);
-	void glVertexAttrib3dNV(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-	void glVertexAttrib3dvNV(GLuint index, const GLdouble *v);
-	void glVertexAttrib3fNV(GLuint index, GLfloat x, GLfloat y, GLfloat z);
-	void glVertexAttrib3fvNV(GLuint index, const GLfloat *v);
-	void glVertexAttrib3sNV(GLuint index, GLshort x, GLshort y, GLshort z);
-	void glVertexAttrib3svNV(GLuint index, const GLshort *v);
-	void glVertexAttrib4dNV(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glVertexAttrib4dvNV(GLuint index, const GLdouble *v);
-	void glVertexAttrib4fNV(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glVertexAttrib4fvNV(GLuint index, const GLfloat *v);
-	void glVertexAttrib4sNV(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
-	void glVertexAttrib4svNV(GLuint index, const GLshort *v);
-	void glVertexAttrib4ubNV(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
-	void glVertexAttrib4ubvNV(GLuint index, const GLubyte *v);
-	void glVertexAttribs1dvNV(GLuint index, GLsizei count, const GLdouble *v);
-	void glVertexAttribs1fvNV(GLuint index, GLsizei count, const GLfloat *v);
-	void glVertexAttribs1svNV(GLuint index, GLsizei count, const GLshort *v);
-	void glVertexAttribs2dvNV(GLuint index, GLsizei count, const GLdouble *v);
-	void glVertexAttribs2fvNV(GLuint index, GLsizei count, const GLfloat *v);
-	void glVertexAttribs2svNV(GLuint index, GLsizei count, const GLshort *v);
-	void glVertexAttribs3dvNV(GLuint index, GLsizei count, const GLdouble *v);
-	void glVertexAttribs3fvNV(GLuint index, GLsizei count, const GLfloat *v);
-	void glVertexAttribs3svNV(GLuint index, GLsizei count, const GLshort *v);
-	void glVertexAttribs4dvNV(GLuint index, GLsizei count, const GLdouble *v);
-	void glVertexAttribs4fvNV(GLuint index, GLsizei count, const GLfloat *v);
-	void glVertexAttribs4svNV(GLuint index, GLsizei count, const GLshort *v);
-	void glVertexAttribs4ubvNV(GLuint index, GLsizei count, const GLubyte *v);
+	void glDebugMessageEnableAMD(GLenum category, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
+	void glDebugMessageInsertAMD(GLenum category, GLenum severity, GLuint id, GLsizei length, const GLchar *buf);
+	void glDebugMessageCallbackAMD(GLDEBUGPROCAMD callback, void *userParam);
+	GLuint glGetDebugMessageLogAMD(GLuint count, GLsizei bufsize, GLenum *categories, GLuint *severities, GLuint *ids, GLsizei *lengths, GLchar *message);
+	void glBlendFuncIndexedAMD(GLuint buf, GLenum src, GLenum dst);
+	void glBlendFuncSeparateIndexedAMD(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
+	void glBlendEquationIndexedAMD(GLuint buf, GLenum mode);
+	void glBlendEquationSeparateIndexedAMD(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
+	void glUniform1i64NV(GLint location, GLint64EXT x);
+	void glUniform2i64NV(GLint location, GLint64EXT x, GLint64EXT y);
+	void glUniform3i64NV(GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z);
+	void glUniform4i64NV(GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
+	void glUniform1i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
+	void glUniform2i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
+	void glUniform3i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
+	void glUniform4i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
+	void glUniform1ui64NV(GLint location, GLuint64EXT x);
+	void glUniform2ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y);
+	void glUniform3ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
+	void glUniform4ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
+	void glUniform1ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
+	void glUniform2ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
+	void glUniform3ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
+	void glUniform4ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
+	void glGetUniformi64vNV(GLuint program, GLint location, GLint64EXT *params);
+	void glGetUniformui64vNV(GLuint program, GLint location, GLuint64EXT *params);
+	void glProgramUniform1i64NV(GLuint program, GLint location, GLint64EXT x);
+	void glProgramUniform2i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y);
+	void glProgramUniform3i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z);
+	void glProgramUniform4i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
+	void glProgramUniform1i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
+	void glProgramUniform2i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
+	void glProgramUniform3i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
+	void glProgramUniform4i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
+	void glProgramUniform1ui64NV(GLuint program, GLint location, GLuint64EXT x);
+	void glProgramUniform2ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y);
+	void glProgramUniform3ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
+	void glProgramUniform4ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
+	void glProgramUniform1ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+	void glProgramUniform2ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+	void glProgramUniform3ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+	void glProgramUniform4ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+	void glVertexAttribParameteriAMD(GLuint index, GLenum pname, GLint param);
+	void glMultiDrawArraysIndirectAMD(GLenum mode, const void *indirect, GLsizei primcount, GLsizei stride);
+	void glMultiDrawElementsIndirectAMD(GLenum mode, GLenum type, const void *indirect, GLsizei primcount, GLsizei stride);
+	void glGenNamesAMD(GLenum identifier, GLuint num, GLuint *names);
+	void glDeleteNamesAMD(GLenum identifier, GLuint num, const GLuint *names);
+	GLboolean glIsNameAMD(GLenum identifier, GLuint name);
+	void glQueryObjectParameteruiAMD(GLenum target, GLuint id, GLenum pname, GLuint param);
+	void glGetPerfMonitorGroupsAMD(GLint *numGroups, GLsizei groupsSize, GLuint *groups);
+	void glGetPerfMonitorCountersAMD(GLuint group, GLint *numCounters, GLint *maxActiveCounters, GLsizei counterSize, GLuint *counters);
+	void glGetPerfMonitorGroupStringAMD(GLuint group, GLsizei bufSize, GLsizei *length, GLchar *groupString);
+	void glGetPerfMonitorCounterStringAMD(GLuint group, GLuint counter, GLsizei bufSize, GLsizei *length, GLchar *counterString);
+	void glGetPerfMonitorCounterInfoAMD(GLuint group, GLuint counter, GLenum pname, void *data);
+	void glGenPerfMonitorsAMD(GLsizei n, GLuint *monitors);
+	void glDeletePerfMonitorsAMD(GLsizei n, GLuint *monitors);
+	void glSelectPerfMonitorCountersAMD(GLuint monitor, GLboolean enable, GLuint group, GLint numCounters, GLuint *counterList);
+	void glBeginPerfMonitorAMD(GLuint monitor);
+	void glEndPerfMonitorAMD(GLuint monitor);
+	void glGetPerfMonitorCounterDataAMD(GLuint monitor, GLenum pname, GLsizei dataSize, GLuint *data, GLint *bytesWritten);
+	void glSetMultisamplefvAMD(GLenum pname, GLuint index, const GLfloat *val);
+	void glTexStorageSparseAMD(GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags);
+	void glTextureStorageSparseAMD(GLuint texture, GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags);
+	void glStencilOpValueAMD(GLenum face, GLuint value);
+	void glTessellationFactorAMD(GLfloat factor);
+	void glTessellationModeAMD(GLenum mode);
+	void glElementPointerAPPLE(GLenum type, const void *pointer);
+	void glDrawElementArrayAPPLE(GLenum mode, GLint first, GLsizei count);
+	void glDrawRangeElementArrayAPPLE(GLenum mode, GLuint start, GLuint end, GLint first, GLsizei count);
+	void glMultiDrawElementArrayAPPLE(GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
+	void glMultiDrawRangeElementArrayAPPLE(GLenum mode, GLuint start, GLuint end, const GLint *first, const GLsizei *count, GLsizei primcount);
+	void glGenFencesAPPLE(GLsizei n, GLuint *fences);
+	void glDeleteFencesAPPLE(GLsizei n, const GLuint *fences);
+	void glSetFenceAPPLE(GLuint fence);
+	GLboolean glIsFenceAPPLE(GLuint fence);
+	GLboolean glTestFenceAPPLE(GLuint fence);
+	void glFinishFenceAPPLE(GLuint fence);
+	GLboolean glTestObjectAPPLE(GLenum object, GLuint name);
+	void glFinishObjectAPPLE(GLenum object, GLint name);
+	void glBufferParameteriAPPLE(GLenum target, GLenum pname, GLint param);
+	void glFlushMappedBufferRangeAPPLE(GLenum target, GLintptr offset, GLsizeiptr size);
+	GLenum glObjectPurgeableAPPLE(GLenum objectType, GLuint name, GLenum option);
+	GLenum glObjectUnpurgeableAPPLE(GLenum objectType, GLuint name, GLenum option);
+	void glGetObjectParameterivAPPLE(GLenum objectType, GLuint name, GLenum pname, GLint *params);
+	void glTextureRangeAPPLE(GLenum target, GLsizei length, const void *pointer);
+	void glGetTexParameterPointervAPPLE(GLenum target, GLenum pname, void **params);
+	void glBindVertexArrayAPPLE(GLuint array);
+	void glDeleteVertexArraysAPPLE(GLsizei n, const GLuint *arrays);
+	void glGenVertexArraysAPPLE(GLsizei n, GLuint *arrays);
+	GLboolean glIsVertexArrayAPPLE(GLuint array);
+	void glVertexArrayRangeAPPLE(GLsizei length, void *pointer);
+	void glFlushVertexArrayRangeAPPLE(GLsizei length, void *pointer);
+	void glVertexArrayParameteriAPPLE(GLenum pname, GLint param);
+	void glEnableVertexAttribAPPLE(GLuint index, GLenum pname);
+	void glDisableVertexAttribAPPLE(GLuint index, GLenum pname);
+	GLboolean glIsVertexAttribEnabledAPPLE(GLuint index, GLenum pname);
+	void glMapVertexAttrib1dAPPLE(GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint stride, GLint order, const GLdouble *points);
+	void glMapVertexAttrib1fAPPLE(GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint stride, GLint order, const GLfloat *points);
+	void glMapVertexAttrib2dAPPLE(GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, const GLdouble *points);
+	void glMapVertexAttrib2fAPPLE(GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, const GLfloat *points);
+	void glDrawBuffersATI(GLsizei n, const GLenum *bufs);
+	void glElementPointerATI(GLenum type, const void *pointer);
+	void glDrawElementArrayATI(GLenum mode, GLsizei count);
+	void glDrawRangeElementArrayATI(GLenum mode, GLuint start, GLuint end, GLsizei count);
 	void glTexBumpParameterivATI(GLenum pname, const GLint *param);
 	void glTexBumpParameterfvATI(GLenum pname, const GLfloat *param);
 	void glGetTexBumpParameterivATI(GLenum pname, GLint *param);
@@ -1322,11 +1333,15 @@ public:
 	void glAlphaFragmentOp2ATI(GLenum op, GLuint dst, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod);
 	void glAlphaFragmentOp3ATI(GLenum op, GLuint dst, GLuint dstMod, GLuint arg1, GLuint arg1Rep, GLuint arg1Mod, GLuint arg2, GLuint arg2Rep, GLuint arg2Mod, GLuint arg3, GLuint arg3Rep, GLuint arg3Mod);
 	void glSetFragmentShaderConstantATI(GLuint dst, const GLfloat *value);
+	void * glMapObjectBufferATI(GLuint buffer);
+	void glUnmapObjectBufferATI(GLuint buffer);
 	void glPNTrianglesiATI(GLenum pname, GLint param);
 	void glPNTrianglesfATI(GLenum pname, GLfloat param);
-	GLuint glNewObjectBufferATI(GLsizei size, const GLvoid *pointer, GLenum usage);
+	void glStencilOpSeparateATI(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass);
+	void glStencilFuncSeparateATI(GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask);
+	GLuint glNewObjectBufferATI(GLsizei size, const void *pointer, GLenum usage);
 	GLboolean glIsObjectBufferATI(GLuint buffer);
-	void glUpdateObjectBufferATI(GLuint buffer, GLuint offset, GLsizei size, const GLvoid *pointer, GLenum preserve);
+	void glUpdateObjectBufferATI(GLuint buffer, GLuint offset, GLsizei size, const void *pointer, GLenum preserve);
 	void glGetObjectBufferfvATI(GLuint buffer, GLenum pname, GLfloat *params);
 	void glGetObjectBufferivATI(GLuint buffer, GLenum pname, GLint *params);
 	void glFreeObjectBufferATI(GLuint buffer);
@@ -1336,48 +1351,9 @@ public:
 	void glVariantArrayObjectATI(GLuint id, GLenum type, GLsizei stride, GLuint buffer, GLuint offset);
 	void glGetVariantArrayObjectfvATI(GLuint id, GLenum pname, GLfloat *params);
 	void glGetVariantArrayObjectivATI(GLuint id, GLenum pname, GLint *params);
-	void glBeginVertexShaderEXT(void);
-	void glEndVertexShaderEXT(void);
-	void glBindVertexShaderEXT(GLuint id);
-	GLuint glGenVertexShadersEXT(GLuint range);
-	void glDeleteVertexShaderEXT(GLuint id);
-	void glShaderOp1EXT(GLenum op, GLuint res, GLuint arg1);
-	void glShaderOp2EXT(GLenum op, GLuint res, GLuint arg1, GLuint arg2);
-	void glShaderOp3EXT(GLenum op, GLuint res, GLuint arg1, GLuint arg2, GLuint arg3);
-	void glSwizzleEXT(GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW);
-	void glWriteMaskEXT(GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW);
-	void glInsertComponentEXT(GLuint res, GLuint src, GLuint num);
-	void glExtractComponentEXT(GLuint res, GLuint src, GLuint num);
-	GLuint glGenSymbolsEXT(GLenum datatype, GLenum storagetype, GLenum range, GLuint components);
-	void glSetInvariantEXT(GLuint id, GLenum type, const GLvoid *addr);
-	void glSetLocalConstantEXT(GLuint id, GLenum type, const GLvoid *addr);
-	void glVariantbvEXT(GLuint id, const GLbyte *addr);
-	void glVariantsvEXT(GLuint id, const GLshort *addr);
-	void glVariantivEXT(GLuint id, const GLint *addr);
-	void glVariantfvEXT(GLuint id, const GLfloat *addr);
-	void glVariantdvEXT(GLuint id, const GLdouble *addr);
-	void glVariantubvEXT(GLuint id, const GLubyte *addr);
-	void glVariantusvEXT(GLuint id, const GLushort *addr);
-	void glVariantuivEXT(GLuint id, const GLuint *addr);
-	void glVariantPointerEXT(GLuint id, GLenum type, GLuint stride, const GLvoid *addr);
-	void glEnableVariantClientStateEXT(GLuint id);
-	void glDisableVariantClientStateEXT(GLuint id);
-	GLuint glBindLightParameterEXT(GLenum light, GLenum value);
-	GLuint glBindMaterialParameterEXT(GLenum face, GLenum value);
-	GLuint glBindTexGenParameterEXT(GLenum unit, GLenum coord, GLenum value);
-	GLuint glBindTextureUnitParameterEXT(GLenum unit, GLenum value);
-	GLuint glBindParameterEXT(GLenum value);
-	GLboolean glIsVariantEnabledEXT(GLuint id, GLenum cap);
-	void glGetVariantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
-	void glGetVariantIntegervEXT(GLuint id, GLenum value, GLint *data);
-	void glGetVariantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
-	void glGetVariantPointervEXT(GLuint id, GLenum value, GLvoid* *data);
-	void glGetInvariantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
-	void glGetInvariantIntegervEXT(GLuint id, GLenum value, GLint *data);
-	void glGetInvariantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
-	void glGetLocalConstantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
-	void glGetLocalConstantIntegervEXT(GLuint id, GLenum value, GLint *data);
-	void glGetLocalConstantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
+	void glVertexAttribArrayObjectATI(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLuint buffer, GLuint offset);
+	void glGetVertexAttribArrayObjectfvATI(GLuint index, GLenum pname, GLfloat *params);
+	void glGetVertexAttribArrayObjectivATI(GLuint index, GLenum pname, GLint *params);
 	void glVertexStream1sATI(GLenum stream, GLshort x);
 	void glVertexStream1svATI(GLenum stream, const GLshort *coords);
 	void glVertexStream1iATI(GLenum stream, GLint x);
@@ -1423,47 +1399,678 @@ public:
 	void glClientActiveVertexStreamATI(GLenum stream);
 	void glVertexBlendEnviATI(GLenum pname, GLint param);
 	void glVertexBlendEnvfATI(GLenum pname, GLfloat param);
-	void glElementPointerATI(GLenum type, const GLvoid *pointer);
-	void glDrawElementArrayATI(GLenum mode, GLsizei count);
-	void glDrawRangeElementArrayATI(GLenum mode, GLuint start, GLuint end, GLsizei count);
-	void glDrawMeshArraysSUN(GLenum mode, GLint first, GLsizei count, GLsizei width);
-	void glGenOcclusionQueriesNV(GLsizei n, GLuint *ids);
-	void glDeleteOcclusionQueriesNV(GLsizei n, const GLuint *ids);
-	GLboolean glIsOcclusionQueryNV(GLuint id);
-	void glBeginOcclusionQueryNV(GLuint id);
-	void glEndOcclusionQueryNV(void);
-	void glGetOcclusionQueryivNV(GLuint id, GLenum pname, GLint *params);
-	void glGetOcclusionQueryuivNV(GLuint id, GLenum pname, GLuint *params);
-	void glPointParameteriNV(GLenum pname, GLint param);
-	void glPointParameterivNV(GLenum pname, const GLint *params);
+	void glUniformBufferEXT(GLuint program, GLint location, GLuint buffer);
+	GLint glGetUniformBufferSizeEXT(GLuint program, GLint location);
+	GLintptr glGetUniformOffsetEXT(GLuint program, GLint location);
+	void glBlendColorEXT(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
+	void glBlendEquationSeparateEXT(GLenum modeRGB, GLenum modeAlpha);
+	void glBlendFuncSeparateEXT(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
+	void glBlendEquationEXT(GLenum mode);
+	void glColorSubTableEXT(GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const void *data);
+	void glCopyColorSubTableEXT(GLenum target, GLsizei start, GLint x, GLint y, GLsizei width);
+	void glLockArraysEXT(GLint first, GLsizei count);
+	void glUnlockArraysEXT(void);
+	void glConvolutionFilter1DEXT(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const void *image);
+	void glConvolutionFilter2DEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *image);
+	void glConvolutionParameterfEXT(GLenum target, GLenum pname, GLfloat params);
+	void glConvolutionParameterfvEXT(GLenum target, GLenum pname, const GLfloat *params);
+	void glConvolutionParameteriEXT(GLenum target, GLenum pname, GLint params);
+	void glConvolutionParameterivEXT(GLenum target, GLenum pname, const GLint *params);
+	void glCopyConvolutionFilter1DEXT(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
+	void glCopyConvolutionFilter2DEXT(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glGetConvolutionFilterEXT(GLenum target, GLenum format, GLenum type, void *image);
+	void glGetConvolutionParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
+	void glGetConvolutionParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	void glGetSeparableFilterEXT(GLenum target, GLenum format, GLenum type, void *row, void *column, void *span);
+	void glSeparableFilter2DEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *row, const void *column);
+	void glTangent3bEXT(GLbyte tx, GLbyte ty, GLbyte tz);
+	void glTangent3bvEXT(const GLbyte *v);
+	void glTangent3dEXT(GLdouble tx, GLdouble ty, GLdouble tz);
+	void glTangent3dvEXT(const GLdouble *v);
+	void glTangent3fEXT(GLfloat tx, GLfloat ty, GLfloat tz);
+	void glTangent3fvEXT(const GLfloat *v);
+	void glTangent3iEXT(GLint tx, GLint ty, GLint tz);
+	void glTangent3ivEXT(const GLint *v);
+	void glTangent3sEXT(GLshort tx, GLshort ty, GLshort tz);
+	void glTangent3svEXT(const GLshort *v);
+	void glBinormal3bEXT(GLbyte bx, GLbyte by, GLbyte bz);
+	void glBinormal3bvEXT(const GLbyte *v);
+	void glBinormal3dEXT(GLdouble bx, GLdouble by, GLdouble bz);
+	void glBinormal3dvEXT(const GLdouble *v);
+	void glBinormal3fEXT(GLfloat bx, GLfloat by, GLfloat bz);
+	void glBinormal3fvEXT(const GLfloat *v);
+	void glBinormal3iEXT(GLint bx, GLint by, GLint bz);
+	void glBinormal3ivEXT(const GLint *v);
+	void glBinormal3sEXT(GLshort bx, GLshort by, GLshort bz);
+	void glBinormal3svEXT(const GLshort *v);
+	void glTangentPointerEXT(GLenum type, GLsizei stride, const void *pointer);
+	void glBinormalPointerEXT(GLenum type, GLsizei stride, const void *pointer);
+	void glCopyTexImage1DEXT(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
+	void glCopyTexImage2DEXT(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
+	void glCopyTexSubImage1DEXT(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
+	void glCopyTexSubImage2DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glCopyTexSubImage3DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glCullParameterdvEXT(GLenum pname, GLdouble *params);
+	void glCullParameterfvEXT(GLenum pname, GLfloat *params);
+	void glLabelObjectEXT(GLenum type, GLuint object, GLsizei length, const GLchar *label);
+	void glGetObjectLabelEXT(GLenum type, GLuint object, GLsizei bufSize, GLsizei *length, GLchar *label);
+	void glInsertEventMarkerEXT(GLsizei length, const GLchar *marker);
+	void glPushGroupMarkerEXT(GLsizei length, const GLchar *marker);
+	void glPopGroupMarkerEXT(void);
+	void glDepthBoundsEXT(GLclampd zmin, GLclampd zmax);
+	void glMatrixLoadfEXT(GLenum mode, const GLfloat *m);
+	void glMatrixLoaddEXT(GLenum mode, const GLdouble *m);
+	void glMatrixMultfEXT(GLenum mode, const GLfloat *m);
+	void glMatrixMultdEXT(GLenum mode, const GLdouble *m);
+	void glMatrixLoadIdentityEXT(GLenum mode);
+	void glMatrixRotatefEXT(GLenum mode, GLfloat angle, GLfloat x, GLfloat y, GLfloat z);
+	void glMatrixRotatedEXT(GLenum mode, GLdouble angle, GLdouble x, GLdouble y, GLdouble z);
+	void glMatrixScalefEXT(GLenum mode, GLfloat x, GLfloat y, GLfloat z);
+	void glMatrixScaledEXT(GLenum mode, GLdouble x, GLdouble y, GLdouble z);
+	void glMatrixTranslatefEXT(GLenum mode, GLfloat x, GLfloat y, GLfloat z);
+	void glMatrixTranslatedEXT(GLenum mode, GLdouble x, GLdouble y, GLdouble z);
+	void glMatrixFrustumEXT(GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar);
+	void glMatrixOrthoEXT(GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar);
+	void glMatrixPopEXT(GLenum mode);
+	void glMatrixPushEXT(GLenum mode);
+	void glClientAttribDefaultEXT(GLbitfield mask);
+	void glPushClientAttribDefaultEXT(GLbitfield mask);
+	void glTextureParameterfEXT(GLuint texture, GLenum target, GLenum pname, GLfloat param);
+	void glTextureParameterfvEXT(GLuint texture, GLenum target, GLenum pname, const GLfloat *params);
+	void glTextureParameteriEXT(GLuint texture, GLenum target, GLenum pname, GLint param);
+	void glTextureParameterivEXT(GLuint texture, GLenum target, GLenum pname, const GLint *params);
+	void glTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
+	void glTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
+	void glCopyTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
+	void glCopyTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
+	void glCopyTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
+	void glCopyTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glGetTextureImageEXT(GLuint texture, GLenum target, GLint level, GLenum format, GLenum type, void *pixels);
+	void glGetTextureParameterfvEXT(GLuint texture, GLenum target, GLenum pname, GLfloat *params);
+	void glGetTextureParameterivEXT(GLuint texture, GLenum target, GLenum pname, GLint *params);
+	void glGetTextureLevelParameterfvEXT(GLuint texture, GLenum target, GLint level, GLenum pname, GLfloat *params);
+	void glGetTextureLevelParameterivEXT(GLuint texture, GLenum target, GLint level, GLenum pname, GLint *params);
+	void glTextureImage3DEXT(GLuint texture, GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
+	void glCopyTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glBindMultiTextureEXT(GLenum texunit, GLenum target, GLuint texture);
+	void glMultiTexCoordPointerEXT(GLenum texunit, GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glMultiTexEnvfEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat param);
+	void glMultiTexEnvfvEXT(GLenum texunit, GLenum target, GLenum pname, const GLfloat *params);
+	void glMultiTexEnviEXT(GLenum texunit, GLenum target, GLenum pname, GLint param);
+	void glMultiTexEnvivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
+	void glMultiTexGendEXT(GLenum texunit, GLenum coord, GLenum pname, GLdouble param);
+	void glMultiTexGendvEXT(GLenum texunit, GLenum coord, GLenum pname, const GLdouble *params);
+	void glMultiTexGenfEXT(GLenum texunit, GLenum coord, GLenum pname, GLfloat param);
+	void glMultiTexGenfvEXT(GLenum texunit, GLenum coord, GLenum pname, const GLfloat *params);
+	void glMultiTexGeniEXT(GLenum texunit, GLenum coord, GLenum pname, GLint param);
+	void glMultiTexGenivEXT(GLenum texunit, GLenum coord, GLenum pname, const GLint *params);
+	void glGetMultiTexEnvfvEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat *params);
+	void glGetMultiTexEnvivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
+	void glGetMultiTexGendvEXT(GLenum texunit, GLenum coord, GLenum pname, GLdouble *params);
+	void glGetMultiTexGenfvEXT(GLenum texunit, GLenum coord, GLenum pname, GLfloat *params);
+	void glGetMultiTexGenivEXT(GLenum texunit, GLenum coord, GLenum pname, GLint *params);
+	void glMultiTexParameteriEXT(GLenum texunit, GLenum target, GLenum pname, GLint param);
+	void glMultiTexParameterivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
+	void glMultiTexParameterfEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat param);
+	void glMultiTexParameterfvEXT(GLenum texunit, GLenum target, GLenum pname, const GLfloat *params);
+	void glMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
+	void glMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
+	void glCopyMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
+	void glCopyMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
+	void glCopyMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
+	void glCopyMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glGetMultiTexImageEXT(GLenum texunit, GLenum target, GLint level, GLenum format, GLenum type, void *pixels);
+	void glGetMultiTexParameterfvEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat *params);
+	void glGetMultiTexParameterivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
+	void glGetMultiTexLevelParameterfvEXT(GLenum texunit, GLenum target, GLint level, GLenum pname, GLfloat *params);
+	void glGetMultiTexLevelParameterivEXT(GLenum texunit, GLenum target, GLint level, GLenum pname, GLint *params);
+	void glMultiTexImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
+	void glCopyMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
+	void glEnableClientStateIndexedEXT(GLenum array, GLuint index);
+	void glDisableClientStateIndexedEXT(GLenum array, GLuint index);
+	void glGetFloatIndexedvEXT(GLenum target, GLuint index, GLfloat *data);
+	void glGetDoubleIndexedvEXT(GLenum target, GLuint index, GLdouble *data);
+	void glGetPointerIndexedvEXT(GLenum target, GLuint index, void **data);
+	void glEnableIndexedEXT(GLenum target, GLuint index);
+	void glDisableIndexedEXT(GLenum target, GLuint index);
+	GLboolean glIsEnabledIndexedEXT(GLenum target, GLuint index);
+	void glGetIntegerIndexedvEXT(GLenum target, GLuint index, GLint *data);
+	void glGetBooleanIndexedvEXT(GLenum target, GLuint index, GLboolean *data);
+	void glCompressedTextureImage3DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *bits);
+	void glCompressedTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *bits);
+	void glCompressedTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *bits);
+	void glGetCompressedTextureImageEXT(GLuint texture, GLenum target, GLint lod, void *img);
+	void glCompressedMultiTexImage3DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void *bits);
+	void glCompressedMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void *bits);
+	void glCompressedMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void *bits);
+	void glCompressedMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void *bits);
+	void glGetCompressedMultiTexImageEXT(GLenum texunit, GLenum target, GLint lod, void *img);
+	void glMatrixLoadTransposefEXT(GLenum mode, const GLfloat *m);
+	void glMatrixLoadTransposedEXT(GLenum mode, const GLdouble *m);
+	void glMatrixMultTransposefEXT(GLenum mode, const GLfloat *m);
+	void glMatrixMultTransposedEXT(GLenum mode, const GLdouble *m);
+	void glNamedBufferDataEXT(GLuint buffer, GLsizeiptr size, const void *data, GLenum usage);
+	void glNamedBufferSubDataEXT(GLuint buffer, GLintptr offset, GLsizeiptr size, const void *data);
+	void * glMapNamedBufferEXT(GLuint buffer, GLenum access);
+	GLboolean glUnmapNamedBufferEXT(GLuint buffer);
+	void glGetNamedBufferParameterivEXT(GLuint buffer, GLenum pname, GLint *params);
+	void glGetNamedBufferPointervEXT(GLuint buffer, GLenum pname, void **params);
+	void glGetNamedBufferSubDataEXT(GLuint buffer, GLintptr offset, GLsizeiptr size, void *data);
+	void glProgramUniform1fEXT(GLuint program, GLint location, GLfloat v0);
+	void glProgramUniform2fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1);
+	void glProgramUniform3fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
+	void glProgramUniform4fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
+	void glProgramUniform1iEXT(GLuint program, GLint location, GLint v0);
+	void glProgramUniform2iEXT(GLuint program, GLint location, GLint v0, GLint v1);
+	void glProgramUniform3iEXT(GLuint program, GLint location, GLint v0, GLint v1, GLint v2);
+	void glProgramUniform4iEXT(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
+	void glProgramUniform1fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
+	void glProgramUniform2fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
+	void glProgramUniform3fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
+	void glProgramUniform4fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
+	void glProgramUniform1ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
+	void glProgramUniform2ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
+	void glProgramUniform3ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
+	void glProgramUniform4ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
+	void glProgramUniformMatrix2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix2x3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix3x2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix2x4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix4x2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix3x4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glProgramUniformMatrix4x3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
+	void glTextureBufferEXT(GLuint texture, GLenum target, GLenum internalformat, GLuint buffer);
+	void glMultiTexBufferEXT(GLenum texunit, GLenum target, GLenum internalformat, GLuint buffer);
+	void glTextureParameterIivEXT(GLuint texture, GLenum target, GLenum pname, const GLint *params);
+	void glTextureParameterIuivEXT(GLuint texture, GLenum target, GLenum pname, const GLuint *params);
+	void glGetTextureParameterIivEXT(GLuint texture, GLenum target, GLenum pname, GLint *params);
+	void glGetTextureParameterIuivEXT(GLuint texture, GLenum target, GLenum pname, GLuint *params);
+	void glMultiTexParameterIivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
+	void glMultiTexParameterIuivEXT(GLenum texunit, GLenum target, GLenum pname, const GLuint *params);
+	void glGetMultiTexParameterIivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
+	void glGetMultiTexParameterIuivEXT(GLenum texunit, GLenum target, GLenum pname, GLuint *params);
+	void glProgramUniform1uiEXT(GLuint program, GLint location, GLuint v0);
+	void glProgramUniform2uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1);
+	void glProgramUniform3uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2);
+	void glProgramUniform4uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
+	void glProgramUniform1uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
+	void glProgramUniform2uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
+	void glProgramUniform3uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
+	void glProgramUniform4uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
+	void glNamedProgramLocalParameters4fvEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLfloat *params);
+	void glNamedProgramLocalParameterI4iEXT(GLuint program, GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
+	void glNamedProgramLocalParameterI4ivEXT(GLuint program, GLenum target, GLuint index, const GLint *params);
+	void glNamedProgramLocalParametersI4ivEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLint *params);
+	void glNamedProgramLocalParameterI4uiEXT(GLuint program, GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
+	void glNamedProgramLocalParameterI4uivEXT(GLuint program, GLenum target, GLuint index, const GLuint *params);
+	void glNamedProgramLocalParametersI4uivEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLuint *params);
+	void glGetNamedProgramLocalParameterIivEXT(GLuint program, GLenum target, GLuint index, GLint *params);
+	void glGetNamedProgramLocalParameterIuivEXT(GLuint program, GLenum target, GLuint index, GLuint *params);
+	void glEnableClientStateiEXT(GLenum array, GLuint index);
+	void glDisableClientStateiEXT(GLenum array, GLuint index);
+	void glGetFloati_vEXT(GLenum pname, GLuint index, GLfloat *params);
+	void glGetDoublei_vEXT(GLenum pname, GLuint index, GLdouble *params);
+	void glGetPointeri_vEXT(GLenum pname, GLuint index, void **params);
+	void glNamedProgramStringEXT(GLuint program, GLenum target, GLenum format, GLsizei len, const void *string);
+	void glNamedProgramLocalParameter4dEXT(GLuint program, GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glNamedProgramLocalParameter4dvEXT(GLuint program, GLenum target, GLuint index, const GLdouble *params);
+	void glNamedProgramLocalParameter4fEXT(GLuint program, GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glNamedProgramLocalParameter4fvEXT(GLuint program, GLenum target, GLuint index, const GLfloat *params);
+	void glGetNamedProgramLocalParameterdvEXT(GLuint program, GLenum target, GLuint index, GLdouble *params);
+	void glGetNamedProgramLocalParameterfvEXT(GLuint program, GLenum target, GLuint index, GLfloat *params);
+	void glGetNamedProgramivEXT(GLuint program, GLenum target, GLenum pname, GLint *params);
+	void glGetNamedProgramStringEXT(GLuint program, GLenum target, GLenum pname, void *string);
+	void glNamedRenderbufferStorageEXT(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
+	void glGetNamedRenderbufferParameterivEXT(GLuint renderbuffer, GLenum pname, GLint *params);
+	void glNamedRenderbufferStorageMultisampleEXT(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
+	void glNamedRenderbufferStorageMultisampleCoverageEXT(GLuint renderbuffer, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height);
+	GLenum glCheckNamedFramebufferStatusEXT(GLuint framebuffer, GLenum target);
+	void glNamedFramebufferTexture1DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
+	void glNamedFramebufferTexture2DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
+	void glNamedFramebufferTexture3DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
+	void glNamedFramebufferRenderbufferEXT(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
+	void glGetNamedFramebufferAttachmentParameterivEXT(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params);
+	void glGenerateTextureMipmapEXT(GLuint texture, GLenum target);
+	void glGenerateMultiTexMipmapEXT(GLenum texunit, GLenum target);
+	void glFramebufferDrawBufferEXT(GLuint framebuffer, GLenum mode);
+	void glFramebufferDrawBuffersEXT(GLuint framebuffer, GLsizei n, const GLenum *bufs);
+	void glFramebufferReadBufferEXT(GLuint framebuffer, GLenum mode);
+	void glGetFramebufferParameterivEXT(GLuint framebuffer, GLenum pname, GLint *params);
+	void glNamedCopyBufferSubDataEXT(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
+	void glNamedFramebufferTextureEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level);
+	void glNamedFramebufferTextureLayerEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer);
+	void glNamedFramebufferTextureFaceEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLenum face);
+	void glTextureRenderbufferEXT(GLuint texture, GLenum target, GLuint renderbuffer);
+	void glMultiTexRenderbufferEXT(GLenum texunit, GLenum target, GLuint renderbuffer);
+	void glVertexArrayVertexOffsetEXT(GLuint vaobj, GLuint buffer, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayColorOffsetEXT(GLuint vaobj, GLuint buffer, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayEdgeFlagOffsetEXT(GLuint vaobj, GLuint buffer, GLsizei stride, GLintptr offset);
+	void glVertexArrayIndexOffsetEXT(GLuint vaobj, GLuint buffer, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayNormalOffsetEXT(GLuint vaobj, GLuint buffer, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayTexCoordOffsetEXT(GLuint vaobj, GLuint buffer, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayMultiTexCoordOffsetEXT(GLuint vaobj, GLuint buffer, GLenum texunit, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayFogCoordOffsetEXT(GLuint vaobj, GLuint buffer, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArraySecondaryColorOffsetEXT(GLuint vaobj, GLuint buffer, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glVertexArrayVertexAttribOffsetEXT(GLuint vaobj, GLuint buffer, GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLintptr offset);
+	void glVertexArrayVertexAttribIOffsetEXT(GLuint vaobj, GLuint buffer, GLuint index, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glEnableVertexArrayEXT(GLuint vaobj, GLenum array);
+	void glDisableVertexArrayEXT(GLuint vaobj, GLenum array);
+	void glEnableVertexArrayAttribEXT(GLuint vaobj, GLuint index);
+	void glDisableVertexArrayAttribEXT(GLuint vaobj, GLuint index);
+	void glGetVertexArrayIntegervEXT(GLuint vaobj, GLenum pname, GLint *param);
+	void glGetVertexArrayPointervEXT(GLuint vaobj, GLenum pname, void **param);
+	void glGetVertexArrayIntegeri_vEXT(GLuint vaobj, GLuint index, GLenum pname, GLint *param);
+	void glGetVertexArrayPointeri_vEXT(GLuint vaobj, GLuint index, GLenum pname, void **param);
+	void * glMapNamedBufferRangeEXT(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access);
+	void glFlushMappedNamedBufferRangeEXT(GLuint buffer, GLintptr offset, GLsizeiptr length);
+	void glNamedBufferStorageEXT(GLuint buffer, GLsizeiptr size, const void *data, GLbitfield flags);
+	void glClearNamedBufferDataEXT(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void *data);
+	void glClearNamedBufferSubDataEXT(GLuint buffer, GLenum internalformat, GLsizeiptr offset, GLsizeiptr size, GLenum format, GLenum type, const void *data);
+	void glNamedFramebufferParameteriEXT(GLuint framebuffer, GLenum pname, GLint param);
+	void glGetNamedFramebufferParameterivEXT(GLuint framebuffer, GLenum pname, GLint *params);
+	void glProgramUniform1dEXT(GLuint program, GLint location, GLdouble x);
+	void glProgramUniform2dEXT(GLuint program, GLint location, GLdouble x, GLdouble y);
+	void glProgramUniform3dEXT(GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z);
+	void glProgramUniform4dEXT(GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glProgramUniform1dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
+	void glProgramUniform2dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
+	void glProgramUniform3dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
+	void glProgramUniform4dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
+	void glProgramUniformMatrix2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix2x3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix2x4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix3x2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix3x4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix4x2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glProgramUniformMatrix4x3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
+	void glTextureBufferRangeEXT(GLuint texture, GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
+	void glTextureStorage1DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width);
+	void glTextureStorage2DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
+	void glTextureStorage3DEXT(GLuint texture, GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
+	void glTextureStorage2DMultisampleEXT(GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
+	void glTextureStorage3DMultisampleEXT(GLuint texture, GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+	void glVertexArrayBindVertexBufferEXT(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
+	void glVertexArrayVertexAttribFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
+	void glVertexArrayVertexAttribIFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexArrayVertexAttribLFormatEXT(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
+	void glVertexArrayVertexAttribBindingEXT(GLuint vaobj, GLuint attribindex, GLuint bindingindex);
+	void glVertexArrayVertexBindingDivisorEXT(GLuint vaobj, GLuint bindingindex, GLuint divisor);
+	void glVertexArrayVertexAttribLOffsetEXT(GLuint vaobj, GLuint buffer, GLuint index, GLint size, GLenum type, GLsizei stride, GLintptr offset);
+	void glTexturePageCommitmentEXT(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLboolean commit);
+	void glVertexArrayVertexAttribDivisorEXT(GLuint vaobj, GLuint index, GLuint divisor);
+	void glColorMaskIndexedEXT(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a);
+	void glDrawArraysInstancedEXT(GLenum mode, GLint start, GLsizei count, GLsizei primcount);
+	void glDrawElementsInstancedEXT(GLenum mode, GLsizei count, GLenum type, const void *indices, GLsizei primcount);
+	void glDrawRangeElementsEXT(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void *indices);
+	void glFogCoordfEXT(GLfloat coord);
+	void glFogCoordfvEXT(const GLfloat *coord);
+	void glFogCoorddEXT(GLdouble coord);
+	void glFogCoorddvEXT(const GLdouble *coord);
+	void glFogCoordPointerEXT(GLenum type, GLsizei stride, const void *pointer);
+	void glBlitFramebufferEXT(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
+	void glRenderbufferStorageMultisampleEXT(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
+	GLboolean glIsRenderbufferEXT(GLuint renderbuffer);
+	void glBindRenderbufferEXT(GLenum target, GLuint renderbuffer);
+	void glDeleteRenderbuffersEXT(GLsizei n, const GLuint *renderbuffers);
+	void glGenRenderbuffersEXT(GLsizei n, GLuint *renderbuffers);
+	void glRenderbufferStorageEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
+	void glGetRenderbufferParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	GLboolean glIsFramebufferEXT(GLuint framebuffer);
+	void glBindFramebufferEXT(GLenum target, GLuint framebuffer);
+	void glDeleteFramebuffersEXT(GLsizei n, const GLuint *framebuffers);
+	void glGenFramebuffersEXT(GLsizei n, GLuint *framebuffers);
+	GLenum glCheckFramebufferStatusEXT(GLenum target);
+	void glFramebufferTexture1DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
+	void glFramebufferTexture2DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
+	void glFramebufferTexture3DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
+	void glFramebufferRenderbufferEXT(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
+	void glGetFramebufferAttachmentParameterivEXT(GLenum target, GLenum attachment, GLenum pname, GLint *params);
+	void glGenerateMipmapEXT(GLenum target);
+	void glProgramParameteriEXT(GLuint program, GLenum pname, GLint value);
+	void glProgramEnvParameters4fvEXT(GLenum target, GLuint index, GLsizei count, const GLfloat *params);
+	void glProgramLocalParameters4fvEXT(GLenum target, GLuint index, GLsizei count, const GLfloat *params);
+	void glGetUniformuivEXT(GLuint program, GLint location, GLuint *params);
+	void glBindFragDataLocationEXT(GLuint program, GLuint color, const GLchar *name);
+	GLint glGetFragDataLocationEXT(GLuint program, const GLchar *name);
+	void glUniform1uiEXT(GLint location, GLuint v0);
+	void glUniform2uiEXT(GLint location, GLuint v0, GLuint v1);
+	void glUniform3uiEXT(GLint location, GLuint v0, GLuint v1, GLuint v2);
+	void glUniform4uiEXT(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
+	void glUniform1uivEXT(GLint location, GLsizei count, const GLuint *value);
+	void glUniform2uivEXT(GLint location, GLsizei count, const GLuint *value);
+	void glUniform3uivEXT(GLint location, GLsizei count, const GLuint *value);
+	void glUniform4uivEXT(GLint location, GLsizei count, const GLuint *value);
+	void glGetHistogramEXT(GLenum target, GLboolean reset, GLenum format, GLenum type, void *values);
+	void glGetHistogramParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
+	void glGetHistogramParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	void glGetMinmaxEXT(GLenum target, GLboolean reset, GLenum format, GLenum type, void *values);
+	void glGetMinmaxParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
+	void glGetMinmaxParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	void glHistogramEXT(GLenum target, GLsizei width, GLenum internalformat, GLboolean sink);
+	void glMinmaxEXT(GLenum target, GLenum internalformat, GLboolean sink);
+	void glResetHistogramEXT(GLenum target);
+	void glResetMinmaxEXT(GLenum target);
+	void glIndexFuncEXT(GLenum func, GLclampf ref);
+	void glIndexMaterialEXT(GLenum face, GLenum mode);
+	void glApplyTextureEXT(GLenum mode);
+	void glTextureLightEXT(GLenum pname);
+	void glTextureMaterialEXT(GLenum face, GLenum mode);
+	void glMultiDrawArraysEXT(GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
+	void glMultiDrawElementsEXT(GLenum mode, const GLsizei *count, GLenum type, const void *const*indices, GLsizei primcount);
+	void glSampleMaskEXT(GLclampf value, GLboolean invert);
+	void glSamplePatternEXT(GLenum pattern);
+	void glColorTableEXT(GLenum target, GLenum internalFormat, GLsizei width, GLenum format, GLenum type, const void *table);
+	void glGetColorTableEXT(GLenum target, GLenum format, GLenum type, void *data);
+	void glGetColorTableParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	void glGetColorTableParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
+	void glPixelTransformParameteriEXT(GLenum target, GLenum pname, GLint param);
+	void glPixelTransformParameterfEXT(GLenum target, GLenum pname, GLfloat param);
+	void glPixelTransformParameterivEXT(GLenum target, GLenum pname, const GLint *params);
+	void glPixelTransformParameterfvEXT(GLenum target, GLenum pname, const GLfloat *params);
+	void glGetPixelTransformParameterivEXT(GLenum target, GLenum pname, GLint *params);
+	void glGetPixelTransformParameterfvEXT(GLenum target, GLenum pname, GLfloat *params);
+	void glPointParameterfEXT(GLenum pname, GLfloat param);
+	void glPointParameterfvEXT(GLenum pname, const GLfloat *params);
+	void glPolygonOffsetEXT(GLfloat factor, GLfloat bias);
+	void glPolygonOffsetClampEXT(GLfloat factor, GLfloat units, GLfloat clamp);
+	void glProvokingVertexEXT(GLenum mode);
+	void glRasterSamplesEXT(GLuint samples, GLboolean fixedsamplelocations);
+	void glSecondaryColor3bEXT(GLbyte red, GLbyte green, GLbyte blue);
+	void glSecondaryColor3bvEXT(const GLbyte *v);
+	void glSecondaryColor3dEXT(GLdouble red, GLdouble green, GLdouble blue);
+	void glSecondaryColor3dvEXT(const GLdouble *v);
+	void glSecondaryColor3fEXT(GLfloat red, GLfloat green, GLfloat blue);
+	void glSecondaryColor3fvEXT(const GLfloat *v);
+	void glSecondaryColor3iEXT(GLint red, GLint green, GLint blue);
+	void glSecondaryColor3ivEXT(const GLint *v);
+	void glSecondaryColor3sEXT(GLshort red, GLshort green, GLshort blue);
+	void glSecondaryColor3svEXT(const GLshort *v);
+	void glSecondaryColor3ubEXT(GLubyte red, GLubyte green, GLubyte blue);
+	void glSecondaryColor3ubvEXT(const GLubyte *v);
+	void glSecondaryColor3uiEXT(GLuint red, GLuint green, GLuint blue);
+	void glSecondaryColor3uivEXT(const GLuint *v);
+	void glSecondaryColor3usEXT(GLushort red, GLushort green, GLushort blue);
+	void glSecondaryColor3usvEXT(const GLushort *v);
+	void glSecondaryColorPointerEXT(GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glUseShaderProgramEXT(GLenum type, GLuint program);
+	void glActiveProgramEXT(GLuint program);
+	GLuint glCreateShaderProgramEXT(GLenum type, const GLchar *string);
+	void glBindImageTextureEXT(GLuint index, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLint format);
+	void glMemoryBarrierEXT(GLbitfield barriers);
+	void glStencilClearTagEXT(GLsizei stencilTagBits, GLuint stencilClearTag);
 	void glActiveStencilFaceEXT(GLenum face);
-	void glElementPointerAPPLE(GLenum type, const GLvoid *pointer);
-	void glDrawElementArrayAPPLE(GLenum mode, GLint first, GLsizei count);
-	void glDrawRangeElementArrayAPPLE(GLenum mode, GLuint start, GLuint end, GLint first, GLsizei count);
-	void glMultiDrawElementArrayAPPLE(GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
-	void glMultiDrawRangeElementArrayAPPLE(GLenum mode, GLuint start, GLuint end, const GLint *first, const GLsizei *count, GLsizei primcount);
-	void glGenFencesAPPLE(GLsizei n, GLuint *fences);
-	void glDeleteFencesAPPLE(GLsizei n, const GLuint *fences);
-	void glSetFenceAPPLE(GLuint fence);
-	GLboolean glIsFenceAPPLE(GLuint fence);
-	GLboolean glTestFenceAPPLE(GLuint fence);
-	void glFinishFenceAPPLE(GLuint fence);
-	GLboolean glTestObjectAPPLE(GLenum object, GLuint name);
-	void glFinishObjectAPPLE(GLenum object, GLint name);
-	void glBindVertexArrayAPPLE(GLuint array);
-	void glDeleteVertexArraysAPPLE(GLsizei n, const GLuint *arrays);
-	void glGenVertexArraysAPPLE(GLsizei n, GLuint *arrays);
-	GLboolean glIsVertexArrayAPPLE(GLuint array);
-	void glVertexArrayRangeAPPLE(GLsizei length, GLvoid *pointer);
-	void glFlushVertexArrayRangeAPPLE(GLsizei length, GLvoid *pointer);
-	void glVertexArrayParameteriAPPLE(GLenum pname, GLint param);
-	void glDrawBuffersATI(GLsizei n, const GLenum *bufs);
+	void glTexSubImage1DEXT(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void *pixels);
+	void glTexSubImage2DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels);
+	void glTexImage3DEXT(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTexSubImage3DEXT(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void *pixels);
+	void glFramebufferTextureLayerEXT(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
+	void glTexBufferEXT(GLenum target, GLenum internalformat, GLuint buffer);
+	void glTexParameterIivEXT(GLenum target, GLenum pname, const GLint *params);
+	void glTexParameterIuivEXT(GLenum target, GLenum pname, const GLuint *params);
+	void glGetTexParameterIivEXT(GLenum target, GLenum pname, GLint *params);
+	void glGetTexParameterIuivEXT(GLenum target, GLenum pname, GLuint *params);
+	void glClearColorIiEXT(GLint red, GLint green, GLint blue, GLint alpha);
+	void glClearColorIuiEXT(GLuint red, GLuint green, GLuint blue, GLuint alpha);
+	GLboolean glAreTexturesResidentEXT(GLsizei n, const GLuint *textures, GLboolean *residences);
+	void glBindTextureEXT(GLenum target, GLuint texture);
+	void glDeleteTexturesEXT(GLsizei n, const GLuint *textures);
+	void glGenTexturesEXT(GLsizei n, GLuint *textures);
+	GLboolean glIsTextureEXT(GLuint texture);
+	void glPrioritizeTexturesEXT(GLsizei n, const GLuint *textures, const GLclampf *priorities);
+	void glTextureNormalEXT(GLenum mode);
+	void glGetQueryObjecti64vEXT(GLuint id, GLenum pname, GLint64 *params);
+	void glGetQueryObjectui64vEXT(GLuint id, GLenum pname, GLuint64 *params);
+	void glBeginTransformFeedbackEXT(GLenum primitiveMode);
+	void glEndTransformFeedbackEXT(void);
+	void glBindBufferRangeEXT(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
+	void glBindBufferOffsetEXT(GLenum target, GLuint index, GLuint buffer, GLintptr offset);
+	void glBindBufferBaseEXT(GLenum target, GLuint index, GLuint buffer);
+	void glTransformFeedbackVaryingsEXT(GLuint program, GLsizei count, const GLchar *const*varyings, GLenum bufferMode);
+	void glGetTransformFeedbackVaryingEXT(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
+	void glArrayElementEXT(GLint i);
+	void glColorPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const void *pointer);
+	void glDrawArraysEXT(GLenum mode, GLint first, GLsizei count);
+	void glEdgeFlagPointerEXT(GLsizei stride, GLsizei count, const GLboolean *pointer);
+	void glGetPointervEXT(GLenum pname, void **params);
+	void glIndexPointerEXT(GLenum type, GLsizei stride, GLsizei count, const void *pointer);
+	void glNormalPointerEXT(GLenum type, GLsizei stride, GLsizei count, const void *pointer);
+	void glTexCoordPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const void *pointer);
+	void glVertexPointerEXT(GLint size, GLenum type, GLsizei stride, GLsizei count, const void *pointer);
+	void glVertexAttribL1dEXT(GLuint index, GLdouble x);
+	void glVertexAttribL2dEXT(GLuint index, GLdouble x, GLdouble y);
+	void glVertexAttribL3dEXT(GLuint index, GLdouble x, GLdouble y, GLdouble z);
+	void glVertexAttribL4dEXT(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glVertexAttribL1dvEXT(GLuint index, const GLdouble *v);
+	void glVertexAttribL2dvEXT(GLuint index, const GLdouble *v);
+	void glVertexAttribL3dvEXT(GLuint index, const GLdouble *v);
+	void glVertexAttribL4dvEXT(GLuint index, const GLdouble *v);
+	void glVertexAttribLPointerEXT(GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glGetVertexAttribLdvEXT(GLuint index, GLenum pname, GLdouble *params);
+	void glBeginVertexShaderEXT(void);
+	void glEndVertexShaderEXT(void);
+	void glBindVertexShaderEXT(GLuint id);
+	GLuint glGenVertexShadersEXT(GLuint range);
+	void glDeleteVertexShaderEXT(GLuint id);
+	void glShaderOp1EXT(GLenum op, GLuint res, GLuint arg1);
+	void glShaderOp2EXT(GLenum op, GLuint res, GLuint arg1, GLuint arg2);
+	void glShaderOp3EXT(GLenum op, GLuint res, GLuint arg1, GLuint arg2, GLuint arg3);
+	void glSwizzleEXT(GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW);
+	void glWriteMaskEXT(GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW);
+	void glInsertComponentEXT(GLuint res, GLuint src, GLuint num);
+	void glExtractComponentEXT(GLuint res, GLuint src, GLuint num);
+	GLuint glGenSymbolsEXT(GLenum datatype, GLenum storagetype, GLenum range, GLuint components);
+	void glSetInvariantEXT(GLuint id, GLenum type, const void *addr);
+	void glSetLocalConstantEXT(GLuint id, GLenum type, const void *addr);
+	void glVariantbvEXT(GLuint id, const GLbyte *addr);
+	void glVariantsvEXT(GLuint id, const GLshort *addr);
+	void glVariantivEXT(GLuint id, const GLint *addr);
+	void glVariantfvEXT(GLuint id, const GLfloat *addr);
+	void glVariantdvEXT(GLuint id, const GLdouble *addr);
+	void glVariantubvEXT(GLuint id, const GLubyte *addr);
+	void glVariantusvEXT(GLuint id, const GLushort *addr);
+	void glVariantuivEXT(GLuint id, const GLuint *addr);
+	void glVariantPointerEXT(GLuint id, GLenum type, GLuint stride, const void *addr);
+	void glEnableVariantClientStateEXT(GLuint id);
+	void glDisableVariantClientStateEXT(GLuint id);
+	GLuint glBindLightParameterEXT(GLenum light, GLenum value);
+	GLuint glBindMaterialParameterEXT(GLenum face, GLenum value);
+	GLuint glBindTexGenParameterEXT(GLenum unit, GLenum coord, GLenum value);
+	GLuint glBindTextureUnitParameterEXT(GLenum unit, GLenum value);
+	GLuint glBindParameterEXT(GLenum value);
+	GLboolean glIsVariantEnabledEXT(GLuint id, GLenum cap);
+	void glGetVariantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
+	void glGetVariantIntegervEXT(GLuint id, GLenum value, GLint *data);
+	void glGetVariantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
+	void glGetVariantPointervEXT(GLuint id, GLenum value, void **data);
+	void glGetInvariantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
+	void glGetInvariantIntegervEXT(GLuint id, GLenum value, GLint *data);
+	void glGetInvariantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
+	void glGetLocalConstantBooleanvEXT(GLuint id, GLenum value, GLboolean *data);
+	void glGetLocalConstantIntegervEXT(GLuint id, GLenum value, GLint *data);
+	void glGetLocalConstantFloatvEXT(GLuint id, GLenum value, GLfloat *data);
+	void glVertexWeightfEXT(GLfloat weight);
+	void glVertexWeightfvEXT(const GLfloat *weight);
+	void glVertexWeightPointerEXT(GLint size, GLenum type, GLsizei stride, const void *pointer);
+	void glWindowRectanglesEXT(GLenum mode, GLsizei count, const GLint *box);
+	GLsync glImportSyncEXT(GLenum external_sync_type, GLintptr external_sync, GLbitfield flags);
+	void glFrameTerminatorGREMEDY(void);
+	void glStringMarkerGREMEDY(GLsizei len, const void *string);
+	void glImageTransformParameteriHP(GLenum target, GLenum pname, GLint param);
+	void glImageTransformParameterfHP(GLenum target, GLenum pname, GLfloat param);
+	void glImageTransformParameterivHP(GLenum target, GLenum pname, const GLint *params);
+	void glImageTransformParameterfvHP(GLenum target, GLenum pname, const GLfloat *params);
+	void glGetImageTransformParameterivHP(GLenum target, GLenum pname, GLint *params);
+	void glGetImageTransformParameterfvHP(GLenum target, GLenum pname, GLfloat *params);
+	void glMultiModeDrawArraysIBM(const GLenum *mode, const GLint *first, const GLsizei *count, GLsizei primcount, GLint modestride);
+	void glMultiModeDrawElementsIBM(const GLenum *mode, const GLsizei *count, GLenum type, const void *const*indices, GLsizei primcount, GLint modestride);
+	void glFlushStaticDataIBM(GLenum target);
+	void glColorPointerListIBM(GLint size, GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glSecondaryColorPointerListIBM(GLint size, GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glEdgeFlagPointerListIBM(GLint stride, const GLboolean **pointer, GLint ptrstride);
+	void glFogCoordPointerListIBM(GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glIndexPointerListIBM(GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glNormalPointerListIBM(GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glTexCoordPointerListIBM(GLint size, GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glVertexPointerListIBM(GLint size, GLenum type, GLint stride, const void **pointer, GLint ptrstride);
+	void glBlendFuncSeparateINGR(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
+	void glApplyFramebufferAttachmentCMAAINTEL(void);
+	void glSyncTextureINTEL(GLuint texture);
+	void glUnmapTexture2DINTEL(GLuint texture, GLint level);
+	void * glMapTexture2DINTEL(GLuint texture, GLint level, GLbitfield access, GLint *stride, GLenum *layout);
+	void glVertexPointervINTEL(GLint size, GLenum type, const void **pointer);
+	void glNormalPointervINTEL(GLenum type, const void **pointer);
+	void glColorPointervINTEL(GLint size, GLenum type, const void **pointer);
+	void glTexCoordPointervINTEL(GLint size, GLenum type, const void **pointer);
+	void glBeginPerfQueryINTEL(GLuint queryHandle);
+	void glCreatePerfQueryINTEL(GLuint queryId, GLuint *queryHandle);
+	void glDeletePerfQueryINTEL(GLuint queryHandle);
+	void glEndPerfQueryINTEL(GLuint queryHandle);
+	void glGetFirstPerfQueryIdINTEL(GLuint *queryId);
+	void glGetNextPerfQueryIdINTEL(GLuint queryId, GLuint *nextQueryId);
+	void glGetPerfCounterInfoINTEL(GLuint queryId, GLuint counterId, GLuint counterNameLength, GLchar *counterName, GLuint counterDescLength, GLchar *counterDesc, GLuint *counterOffset, GLuint *counterDataSize, GLuint *counterTypeEnum, GLuint *counterDataTypeEnum, GLuint64 *rawCounterMaxValue);
+	void glGetPerfQueryDataINTEL(GLuint queryHandle, GLuint flags, GLsizei dataSize, GLvoid *data, GLuint *bytesWritten);
+	void glGetPerfQueryIdByNameINTEL(GLchar *queryName, GLuint *queryId);
+	void glGetPerfQueryInfoINTEL(GLuint queryId, GLuint queryNameLength, GLchar *queryName, GLuint *dataSize, GLuint *noCounters, GLuint *noInstances, GLuint *capsMask);
+	void glResizeBuffersMESA(void);
+	void glWindowPos2dMESA(GLdouble x, GLdouble y);
+	void glWindowPos2dvMESA(const GLdouble *v);
+	void glWindowPos2fMESA(GLfloat x, GLfloat y);
+	void glWindowPos2fvMESA(const GLfloat *v);
+	void glWindowPos2iMESA(GLint x, GLint y);
+	void glWindowPos2ivMESA(const GLint *v);
+	void glWindowPos2sMESA(GLshort x, GLshort y);
+	void glWindowPos2svMESA(const GLshort *v);
+	void glWindowPos3dMESA(GLdouble x, GLdouble y, GLdouble z);
+	void glWindowPos3dvMESA(const GLdouble *v);
+	void glWindowPos3fMESA(GLfloat x, GLfloat y, GLfloat z);
+	void glWindowPos3fvMESA(const GLfloat *v);
+	void glWindowPos3iMESA(GLint x, GLint y, GLint z);
+	void glWindowPos3ivMESA(const GLint *v);
+	void glWindowPos3sMESA(GLshort x, GLshort y, GLshort z);
+	void glWindowPos3svMESA(const GLshort *v);
+	void glWindowPos4dMESA(GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glWindowPos4dvMESA(const GLdouble *v);
+	void glWindowPos4fMESA(GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glWindowPos4fvMESA(const GLfloat *v);
+	void glWindowPos4iMESA(GLint x, GLint y, GLint z, GLint w);
+	void glWindowPos4ivMESA(const GLint *v);
+	void glWindowPos4sMESA(GLshort x, GLshort y, GLshort z, GLshort w);
+	void glWindowPos4svMESA(const GLshort *v);
+	void glBeginConditionalRenderNVX(GLuint id);
+	void glEndConditionalRenderNVX(void);
+	void glMultiDrawArraysIndirectBindlessNV(GLenum mode, const void *indirect, GLsizei drawCount, GLsizei stride, GLint vertexBufferCount);
+	void glMultiDrawElementsIndirectBindlessNV(GLenum mode, GLenum type, const void *indirect, GLsizei drawCount, GLsizei stride, GLint vertexBufferCount);
+	void glMultiDrawArraysIndirectBindlessCountNV(GLenum mode, const void *indirect, GLsizei drawCount, GLsizei maxDrawCount, GLsizei stride, GLint vertexBufferCount);
+	void glMultiDrawElementsIndirectBindlessCountNV(GLenum mode, GLenum type, const void *indirect, GLsizei drawCount, GLsizei maxDrawCount, GLsizei stride, GLint vertexBufferCount);
+	GLuint64 glGetTextureHandleNV(GLuint texture);
+	GLuint64 glGetTextureSamplerHandleNV(GLuint texture, GLuint sampler);
+	void glMakeTextureHandleResidentNV(GLuint64 handle);
+	void glMakeTextureHandleNonResidentNV(GLuint64 handle);
+	GLuint64 glGetImageHandleNV(GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum format);
+	void glMakeImageHandleResidentNV(GLuint64 handle, GLenum access);
+	void glMakeImageHandleNonResidentNV(GLuint64 handle);
+	void glUniformHandleui64NV(GLint location, GLuint64 value);
+	void glUniformHandleui64vNV(GLint location, GLsizei count, const GLuint64 *value);
+	void glProgramUniformHandleui64NV(GLuint program, GLint location, GLuint64 value);
+	void glProgramUniformHandleui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64 *values);
+	GLboolean glIsTextureHandleResidentNV(GLuint64 handle);
+	GLboolean glIsImageHandleResidentNV(GLuint64 handle);
+	void glBlendParameteriNV(GLenum pname, GLint value);
+	void glBlendBarrierNV(void);
+	void glViewportPositionWScaleNV(GLuint index, GLfloat xcoeff, GLfloat ycoeff);
+	void glCreateStatesNV(GLsizei n, GLuint *states);
+	void glDeleteStatesNV(GLsizei n, const GLuint *states);
+	GLboolean glIsStateNV(GLuint state);
+	void glStateCaptureNV(GLuint state, GLenum mode);
+	GLuint glGetCommandHeaderNV(GLenum tokenID, GLuint size);
+	GLushort glGetStageIndexNV(GLenum shadertype);
+	void glDrawCommandsNV(GLenum primitiveMode, GLuint buffer, const GLintptr *indirects, const GLsizei *sizes, GLuint count);
+	void glDrawCommandsAddressNV(GLenum primitiveMode, const GLuint64 *indirects, const GLsizei *sizes, GLuint count);
+	void glDrawCommandsStatesNV(GLuint buffer, const GLintptr *indirects, const GLsizei *sizes, const GLuint *states, const GLuint *fbos, GLuint count);
+	void glDrawCommandsStatesAddressNV(const GLuint64 *indirects, const GLsizei *sizes, const GLuint *states, const GLuint *fbos, GLuint count);
+	void glCreateCommandListsNV(GLsizei n, GLuint *lists);
+	void glDeleteCommandListsNV(GLsizei n, const GLuint *lists);
+	GLboolean glIsCommandListNV(GLuint list);
+	void glListDrawCommandsStatesClientNV(GLuint list, GLuint segment, const void **indirects, const GLsizei *sizes, const GLuint *states, const GLuint *fbos, GLuint count);
+	void glCommandListSegmentsNV(GLuint list, GLuint segments);
+	void glCompileCommandListNV(GLuint list);
+	void glCallCommandListNV(GLuint list);
+	void glBeginConditionalRenderNV(GLuint id, GLenum mode);
+	void glEndConditionalRenderNV(void);
+	void glSubpixelPrecisionBiasNV(GLuint xbits, GLuint ybits);
+	void glConservativeRasterParameterfNV(GLenum pname, GLfloat value);
+	void glConservativeRasterParameteriNV(GLenum pname, GLint param);
+	void glCopyImageSubDataNV(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth);
+	void glDepthRangedNV(GLdouble zNear, GLdouble zFar);
+	void glClearDepthdNV(GLdouble depth);
+	void glDepthBoundsdNV(GLdouble zmin, GLdouble zmax);
+	void glDrawTextureNV(GLuint texture, GLuint sampler, GLfloat x0, GLfloat y0, GLfloat x1, GLfloat y1, GLfloat z, GLfloat s0, GLfloat t0, GLfloat s1, GLfloat t1);
+	void glMapControlPointsNV(GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLint uorder, GLint vorder, GLboolean packed, const void *points);
+	void glMapParameterivNV(GLenum target, GLenum pname, const GLint *params);
+	void glMapParameterfvNV(GLenum target, GLenum pname, const GLfloat *params);
+	void glGetMapControlPointsNV(GLenum target, GLuint index, GLenum type, GLsizei ustride, GLsizei vstride, GLboolean packed, void *points);
+	void glGetMapParameterivNV(GLenum target, GLenum pname, GLint *params);
+	void glGetMapParameterfvNV(GLenum target, GLenum pname, GLfloat *params);
+	void glGetMapAttribParameterivNV(GLenum target, GLuint index, GLenum pname, GLint *params);
+	void glGetMapAttribParameterfvNV(GLenum target, GLuint index, GLenum pname, GLfloat *params);
+	void glEvalMapsNV(GLenum target, GLenum mode);
+	void glGetMultisamplefvNV(GLenum pname, GLuint index, GLfloat *val);
+	void glSampleMaskIndexedNV(GLuint index, GLbitfield mask);
+	void glTexRenderbufferNV(GLenum target, GLuint renderbuffer);
+	void glDeleteFencesNV(GLsizei n, const GLuint *fences);
+	void glGenFencesNV(GLsizei n, GLuint *fences);
+	GLboolean glIsFenceNV(GLuint fence);
+	GLboolean glTestFenceNV(GLuint fence);
+	void glGetFenceivNV(GLuint fence, GLenum pname, GLint *params);
+	void glFinishFenceNV(GLuint fence);
+	void glSetFenceNV(GLuint fence, GLenum condition);
+	void glFragmentCoverageColorNV(GLuint color);
 	void glProgramNamedParameter4fNV(GLuint id, GLsizei len, const GLubyte *name, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glProgramNamedParameter4dNV(GLuint id, GLsizei len, const GLubyte *name, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
 	void glProgramNamedParameter4fvNV(GLuint id, GLsizei len, const GLubyte *name, const GLfloat *v);
+	void glProgramNamedParameter4dNV(GLuint id, GLsizei len, const GLubyte *name, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
 	void glProgramNamedParameter4dvNV(GLuint id, GLsizei len, const GLubyte *name, const GLdouble *v);
 	void glGetProgramNamedParameterfvNV(GLuint id, GLsizei len, const GLubyte *name, GLfloat *params);
 	void glGetProgramNamedParameterdvNV(GLuint id, GLsizei len, const GLubyte *name, GLdouble *params);
+	void glCoverageModulationTableNV(GLsizei n, const GLfloat *v);
+	void glGetCoverageModulationTableNV(GLsizei bufsize, GLfloat *v);
+	void glCoverageModulationNV(GLenum components);
+	void glRenderbufferStorageMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height);
+	void glProgramVertexLimitNV(GLenum target, GLint limit);
+	void glFramebufferTextureEXT(GLenum target, GLenum attachment, GLuint texture, GLint level);
+	void glFramebufferTextureFaceEXT(GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
+	void glProgramLocalParameterI4iNV(GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
+	void glProgramLocalParameterI4ivNV(GLenum target, GLuint index, const GLint *params);
+	void glProgramLocalParametersI4ivNV(GLenum target, GLuint index, GLsizei count, const GLint *params);
+	void glProgramLocalParameterI4uiNV(GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
+	void glProgramLocalParameterI4uivNV(GLenum target, GLuint index, const GLuint *params);
+	void glProgramLocalParametersI4uivNV(GLenum target, GLuint index, GLsizei count, const GLuint *params);
+	void glProgramEnvParameterI4iNV(GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
+	void glProgramEnvParameterI4ivNV(GLenum target, GLuint index, const GLint *params);
+	void glProgramEnvParametersI4ivNV(GLenum target, GLuint index, GLsizei count, const GLint *params);
+	void glProgramEnvParameterI4uiNV(GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
+	void glProgramEnvParameterI4uivNV(GLenum target, GLuint index, const GLuint *params);
+	void glProgramEnvParametersI4uivNV(GLenum target, GLuint index, GLsizei count, const GLuint *params);
+	void glGetProgramLocalParameterIivNV(GLenum target, GLuint index, GLint *params);
+	void glGetProgramLocalParameterIuivNV(GLenum target, GLuint index, GLuint *params);
+	void glGetProgramEnvParameterIivNV(GLenum target, GLuint index, GLint *params);
+	void glGetProgramEnvParameterIuivNV(GLenum target, GLuint index, GLuint *params);
+	void glProgramSubroutineParametersuivNV(GLenum target, GLsizei count, const GLuint *params);
+	void glGetProgramSubroutineParameteruivNV(GLenum target, GLuint index, GLuint *param);
 	void glVertex2hNV(GLhalfNV x, GLhalfNV y);
 	void glVertex2hvNV(const GLhalfNV *v);
 	void glVertex3hNV(GLhalfNV x, GLhalfNV y, GLhalfNV z);
@@ -1510,67 +2117,257 @@ public:
 	void glVertexAttribs2hvNV(GLuint index, GLsizei n, const GLhalfNV *v);
 	void glVertexAttribs3hvNV(GLuint index, GLsizei n, const GLhalfNV *v);
 	void glVertexAttribs4hvNV(GLuint index, GLsizei n, const GLhalfNV *v);
-	void glPixelDataRangeNV(GLenum target, GLsizei length, const GLvoid *pointer);
+	void glGetInternalformatSampleivNV(GLenum target, GLenum internalformat, GLsizei samples, GLenum pname, GLsizei bufSize, GLint *params);
+	void glGenOcclusionQueriesNV(GLsizei n, GLuint *ids);
+	void glDeleteOcclusionQueriesNV(GLsizei n, const GLuint *ids);
+	GLboolean glIsOcclusionQueryNV(GLuint id);
+	void glBeginOcclusionQueryNV(GLuint id);
+	void glEndOcclusionQueryNV(void);
+	void glGetOcclusionQueryivNV(GLuint id, GLenum pname, GLint *params);
+	void glGetOcclusionQueryuivNV(GLuint id, GLenum pname, GLuint *params);
+	void glProgramBufferParametersfvNV(GLenum target, GLuint bindingIndex, GLuint wordIndex, GLsizei count, const GLfloat *params);
+	void glProgramBufferParametersIivNV(GLenum target, GLuint bindingIndex, GLuint wordIndex, GLsizei count, const GLint *params);
+	void glProgramBufferParametersIuivNV(GLenum target, GLuint bindingIndex, GLuint wordIndex, GLsizei count, const GLuint *params);
+	GLuint glGenPathsNV(GLsizei range);
+	void glDeletePathsNV(GLuint path, GLsizei range);
+	GLboolean glIsPathNV(GLuint path);
+	void glPathCommandsNV(GLuint path, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const void *coords);
+	void glPathCoordsNV(GLuint path, GLsizei numCoords, GLenum coordType, const void *coords);
+	void glPathSubCommandsNV(GLuint path, GLsizei commandStart, GLsizei commandsToDelete, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const void *coords);
+	void glPathSubCoordsNV(GLuint path, GLsizei coordStart, GLsizei numCoords, GLenum coordType, const void *coords);
+	void glPathStringNV(GLuint path, GLenum format, GLsizei length, const void *pathString);
+	void glPathGlyphsNV(GLuint firstPathName, GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLsizei numGlyphs, GLenum type, const void *charcodes, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
+	void glPathGlyphRangeNV(GLuint firstPathName, GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint firstGlyph, GLsizei numGlyphs, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
+	void glWeightPathsNV(GLuint resultPath, GLsizei numPaths, const GLuint *paths, const GLfloat *weights);
+	void glCopyPathNV(GLuint resultPath, GLuint srcPath);
+	void glInterpolatePathsNV(GLuint resultPath, GLuint pathA, GLuint pathB, GLfloat weight);
+	void glTransformPathNV(GLuint resultPath, GLuint srcPath, GLenum transformType, const GLfloat *transformValues);
+	void glPathParameterivNV(GLuint path, GLenum pname, const GLint *value);
+	void glPathParameteriNV(GLuint path, GLenum pname, GLint value);
+	void glPathParameterfvNV(GLuint path, GLenum pname, const GLfloat *value);
+	void glPathParameterfNV(GLuint path, GLenum pname, GLfloat value);
+	void glPathDashArrayNV(GLuint path, GLsizei dashCount, const GLfloat *dashArray);
+	void glPathStencilFuncNV(GLenum func, GLint ref, GLuint mask);
+	void glPathStencilDepthOffsetNV(GLfloat factor, GLfloat units);
+	void glStencilFillPathNV(GLuint path, GLenum fillMode, GLuint mask);
+	void glStencilStrokePathNV(GLuint path, GLint reference, GLuint mask);
+	void glStencilFillPathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum transformType, const GLfloat *transformValues);
+	void glStencilStrokePathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum transformType, const GLfloat *transformValues);
+	void glPathCoverDepthFuncNV(GLenum func);
+	void glCoverFillPathNV(GLuint path, GLenum coverMode);
+	void glCoverStrokePathNV(GLuint path, GLenum coverMode);
+	void glCoverFillPathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
+	void glCoverStrokePathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
+	void glGetPathParameterivNV(GLuint path, GLenum pname, GLint *value);
+	void glGetPathParameterfvNV(GLuint path, GLenum pname, GLfloat *value);
+	void glGetPathCommandsNV(GLuint path, GLubyte *commands);
+	void glGetPathCoordsNV(GLuint path, GLfloat *coords);
+	void glGetPathDashArrayNV(GLuint path, GLfloat *dashArray);
+	void glGetPathMetricsNV(GLbitfield metricQueryMask, GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLsizei stride, GLfloat *metrics);
+	void glGetPathMetricRangeNV(GLbitfield metricQueryMask, GLuint firstPathName, GLsizei numPaths, GLsizei stride, GLfloat *metrics);
+	void glGetPathSpacingNV(GLenum pathListMode, GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLfloat advanceScale, GLfloat kerningScale, GLenum transformType, GLfloat *returnedSpacing);
+	GLboolean glIsPointInFillPathNV(GLuint path, GLuint mask, GLfloat x, GLfloat y);
+	GLboolean glIsPointInStrokePathNV(GLuint path, GLfloat x, GLfloat y);
+	GLfloat glGetPathLengthNV(GLuint path, GLsizei startSegment, GLsizei numSegments);
+	GLboolean glPointAlongPathNV(GLuint path, GLsizei startSegment, GLsizei numSegments, GLfloat distance, GLfloat *x, GLfloat *y, GLfloat *tangentX, GLfloat *tangentY);
+	void glMatrixLoad3x2fNV(GLenum matrixMode, const GLfloat *m);
+	void glMatrixLoad3x3fNV(GLenum matrixMode, const GLfloat *m);
+	void glMatrixLoadTranspose3x3fNV(GLenum matrixMode, const GLfloat *m);
+	void glMatrixMult3x2fNV(GLenum matrixMode, const GLfloat *m);
+	void glMatrixMult3x3fNV(GLenum matrixMode, const GLfloat *m);
+	void glMatrixMultTranspose3x3fNV(GLenum matrixMode, const GLfloat *m);
+	void glStencilThenCoverFillPathNV(GLuint path, GLenum fillMode, GLuint mask, GLenum coverMode);
+	void glStencilThenCoverStrokePathNV(GLuint path, GLint reference, GLuint mask, GLenum coverMode);
+	void glStencilThenCoverFillPathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
+	void glStencilThenCoverStrokePathInstancedNV(GLsizei numPaths, GLenum pathNameType, const void *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
+	GLenum glPathGlyphIndexRangeNV(GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint pathParameterTemplate, GLfloat emScale, GLuint baseAndCount[2]);
+	GLenum glPathGlyphIndexArrayNV(GLuint firstPathName, GLenum fontTarget, const void *fontName, GLbitfield fontStyle, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
+	GLenum glPathMemoryGlyphIndexArrayNV(GLuint firstPathName, GLenum fontTarget, GLsizeiptr fontSize, const void *fontData, GLsizei faceIndex, GLuint firstGlyphIndex, GLsizei numGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
+	void glProgramPathFragmentInputGenNV(GLuint program, GLint location, GLenum genMode, GLint components, const GLfloat *coeffs);
+	void glGetProgramResourcefvNV(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum *props, GLsizei bufSize, GLsizei *length, GLfloat *params);
+	void glPathColorGenNV(GLenum color, GLenum genMode, GLenum colorFormat, const GLfloat *coeffs);
+	void glPathTexGenNV(GLenum texCoordSet, GLenum genMode, GLint components, const GLfloat *coeffs);
+	void glPathFogGenNV(GLenum genMode);
+	void glGetPathColorGenivNV(GLenum color, GLenum pname, GLint *value);
+	void glGetPathColorGenfvNV(GLenum color, GLenum pname, GLfloat *value);
+	void glGetPathTexGenivNV(GLenum texCoordSet, GLenum pname, GLint *value);
+	void glGetPathTexGenfvNV(GLenum texCoordSet, GLenum pname, GLfloat *value);
+	void glPixelDataRangeNV(GLenum target, GLsizei length, const void *pointer);
 	void glFlushPixelDataRangeNV(GLenum target);
+	void glPointParameteriNV(GLenum pname, GLint param);
+	void glPointParameterivNV(GLenum pname, const GLint *params);
+	void glPresentFrameKeyedNV(GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLuint key0, GLenum target1, GLuint fill1, GLuint key1);
+	void glPresentFrameDualFillNV(GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLenum target1, GLuint fill1, GLenum target2, GLuint fill2, GLenum target3, GLuint fill3);
+	void glGetVideoivNV(GLuint video_slot, GLenum pname, GLint *params);
+	void glGetVideouivNV(GLuint video_slot, GLenum pname, GLuint *params);
+	void glGetVideoi64vNV(GLuint video_slot, GLenum pname, GLint64EXT *params);
+	void glGetVideoui64vNV(GLuint video_slot, GLenum pname, GLuint64EXT *params);
 	void glPrimitiveRestartNV(void);
 	void glPrimitiveRestartIndexNV(GLuint index);
-	GLvoid* glMapObjectBufferATI(GLuint buffer);
-	void glUnmapObjectBufferATI(GLuint buffer);
-	void glStencilOpSeparateATI(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass);
-	void glStencilFuncSeparateATI(GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask);
-	void glVertexAttribArrayObjectATI(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, GLuint buffer, GLuint offset);
-	void glGetVertexAttribArrayObjectfvATI(GLuint index, GLenum pname, GLfloat *params);
-	void glGetVertexAttribArrayObjectivATI(GLuint index, GLenum pname, GLint *params);
-	void glDepthBoundsEXT(GLclampd zmin, GLclampd zmax);
-	void glBlendEquationSeparateEXT(GLenum modeRGB, GLenum modeAlpha);
-	GLboolean glIsRenderbufferEXT(GLuint renderbuffer);
-	void glBindRenderbufferEXT(GLenum target, GLuint renderbuffer);
-	void glDeleteRenderbuffersEXT(GLsizei n, const GLuint *renderbuffers);
-	void glGenRenderbuffersEXT(GLsizei n, GLuint *renderbuffers);
-	void glRenderbufferStorageEXT(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
-	void glGetRenderbufferParameterivEXT(GLenum target, GLenum pname, GLint *params);
-	GLboolean glIsFramebufferEXT(GLuint framebuffer);
-	void glBindFramebufferEXT(GLenum target, GLuint framebuffer);
-	void glDeleteFramebuffersEXT(GLsizei n, const GLuint *framebuffers);
-	void glGenFramebuffersEXT(GLsizei n, GLuint *framebuffers);
-	GLenum glCheckFramebufferStatusEXT(GLenum target);
-	void glFramebufferTexture1DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-	void glFramebufferTexture2DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-	void glFramebufferTexture3DEXT(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
-	void glFramebufferRenderbufferEXT(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
-	void glGetFramebufferAttachmentParameterivEXT(GLenum target, GLenum attachment, GLenum pname, GLint *params);
-	void glGenerateMipmapEXT(GLenum target);
-	void glStringMarkerGREMEDY(GLsizei len, const GLvoid *string);
-	void glStencilClearTagEXT(GLsizei stencilTagBits, GLuint stencilClearTag);
-	void glBlitFramebufferEXT(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-	void glRenderbufferStorageMultisampleEXT(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
-	void glGetQueryObjecti64vEXT(GLuint id, GLenum pname, GLint64EXT *params);
-	void glGetQueryObjectui64vEXT(GLuint id, GLenum pname, GLuint64EXT *params);
-	void glProgramEnvParameters4fvEXT(GLenum target, GLuint index, GLsizei count, const GLfloat *params);
-	void glProgramLocalParameters4fvEXT(GLenum target, GLuint index, GLsizei count, const GLfloat *params);
-	void glBufferParameteriAPPLE(GLenum target, GLenum pname, GLint param);
-	void glFlushMappedBufferRangeAPPLE(GLenum target, GLintptr offset, GLsizeiptr size);
-	void glProgramLocalParameterI4iNV(GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
-	void glProgramLocalParameterI4ivNV(GLenum target, GLuint index, const GLint *params);
-	void glProgramLocalParametersI4ivNV(GLenum target, GLuint index, GLsizei count, const GLint *params);
-	void glProgramLocalParameterI4uiNV(GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
-	void glProgramLocalParameterI4uivNV(GLenum target, GLuint index, const GLuint *params);
-	void glProgramLocalParametersI4uivNV(GLenum target, GLuint index, GLsizei count, const GLuint *params);
-	void glProgramEnvParameterI4iNV(GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
-	void glProgramEnvParameterI4ivNV(GLenum target, GLuint index, const GLint *params);
-	void glProgramEnvParametersI4ivNV(GLenum target, GLuint index, GLsizei count, const GLint *params);
-	void glProgramEnvParameterI4uiNV(GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
-	void glProgramEnvParameterI4uivNV(GLenum target, GLuint index, const GLuint *params);
-	void glProgramEnvParametersI4uivNV(GLenum target, GLuint index, GLsizei count, const GLuint *params);
-	void glGetProgramLocalParameterIivNV(GLenum target, GLuint index, GLint *params);
-	void glGetProgramLocalParameterIuivNV(GLenum target, GLuint index, GLuint *params);
-	void glGetProgramEnvParameterIivNV(GLenum target, GLuint index, GLint *params);
-	void glGetProgramEnvParameterIuivNV(GLenum target, GLuint index, GLuint *params);
-	void glProgramVertexLimitNV(GLenum target, GLint limit);
-	void glFramebufferTextureEXT(GLenum target, GLenum attachment, GLuint texture, GLint level);
-	void glFramebufferTextureLayerEXT(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
-	void glFramebufferTextureFaceEXT(GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
-	void glProgramParameteriEXT(GLuint program, GLenum pname, GLint value);
+	void glCombinerParameterfvNV(GLenum pname, const GLfloat *params);
+	void glCombinerParameterfNV(GLenum pname, GLfloat param);
+	void glCombinerParameterivNV(GLenum pname, const GLint *params);
+	void glCombinerParameteriNV(GLenum pname, GLint param);
+	void glCombinerInputNV(GLenum stage, GLenum portion, GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage);
+	void glCombinerOutputNV(GLenum stage, GLenum portion, GLenum abOutput, GLenum cdOutput, GLenum sumOutput, GLenum scale, GLenum bias, GLboolean abDotProduct, GLboolean cdDotProduct, GLboolean muxSum);
+	void glFinalCombinerInputNV(GLenum variable, GLenum input, GLenum mapping, GLenum componentUsage);
+	void glGetCombinerInputParameterfvNV(GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLfloat *params);
+	void glGetCombinerInputParameterivNV(GLenum stage, GLenum portion, GLenum variable, GLenum pname, GLint *params);
+	void glGetCombinerOutputParameterfvNV(GLenum stage, GLenum portion, GLenum pname, GLfloat *params);
+	void glGetCombinerOutputParameterivNV(GLenum stage, GLenum portion, GLenum pname, GLint *params);
+	void glGetFinalCombinerInputParameterfvNV(GLenum variable, GLenum pname, GLfloat *params);
+	void glGetFinalCombinerInputParameterivNV(GLenum variable, GLenum pname, GLint *params);
+	void glCombinerStageParameterfvNV(GLenum stage, GLenum pname, const GLfloat *params);
+	void glGetCombinerStageParameterfvNV(GLenum stage, GLenum pname, GLfloat *params);
+	void glFramebufferSampleLocationsfvNV(GLenum target, GLuint start, GLsizei count, const GLfloat *v);
+	void glNamedFramebufferSampleLocationsfvNV(GLuint framebuffer, GLuint start, GLsizei count, const GLfloat *v);
+	void glResolveDepthValuesNV(void);
+	void glMakeBufferResidentNV(GLenum target, GLenum access);
+	void glMakeBufferNonResidentNV(GLenum target);
+	GLboolean glIsBufferResidentNV(GLenum target);
+	void glMakeNamedBufferResidentNV(GLuint buffer, GLenum access);
+	void glMakeNamedBufferNonResidentNV(GLuint buffer);
+	GLboolean glIsNamedBufferResidentNV(GLuint buffer);
+	void glGetBufferParameterui64vNV(GLenum target, GLenum pname, GLuint64EXT *params);
+	void glGetNamedBufferParameterui64vNV(GLuint buffer, GLenum pname, GLuint64EXT *params);
+	void glGetIntegerui64vNV(GLenum value, GLuint64EXT *result);
+	void glUniformui64NV(GLint location, GLuint64EXT value);
+	void glUniformui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
+	void glProgramUniformui64NV(GLuint program, GLint location, GLuint64EXT value);
+	void glProgramUniformui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
+	void glTextureBarrierNV(void);
+	void glTexImage2DMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+	void glTexImage3DMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+	void glTextureImage2DMultisampleNV(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+	void glTextureImage3DMultisampleNV(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+	void glTextureImage2DMultisampleCoverageNV(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
+	void glTextureImage3DMultisampleCoverageNV(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
+	void glBeginTransformFeedbackNV(GLenum primitiveMode);
+	void glEndTransformFeedbackNV(void);
+	void glTransformFeedbackAttribsNV(GLsizei count, const GLint *attribs, GLenum bufferMode);
+	void glBindBufferRangeNV(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
+	void glBindBufferOffsetNV(GLenum target, GLuint index, GLuint buffer, GLintptr offset);
+	void glBindBufferBaseNV(GLenum target, GLuint index, GLuint buffer);
+	void glTransformFeedbackVaryingsNV(GLuint program, GLsizei count, const GLint *locations, GLenum bufferMode);
+	void glActiveVaryingNV(GLuint program, const GLchar *name);
+	GLint glGetVaryingLocationNV(GLuint program, const GLchar *name);
+	void glGetActiveVaryingNV(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
+	void glGetTransformFeedbackVaryingNV(GLuint program, GLuint index, GLint *location);
+	void glTransformFeedbackStreamAttribsNV(GLsizei count, const GLint *attribs, GLsizei nbuffers, const GLint *bufstreams, GLenum bufferMode);
+	void glBindTransformFeedbackNV(GLenum target, GLuint id);
+	void glDeleteTransformFeedbacksNV(GLsizei n, const GLuint *ids);
+	void glGenTransformFeedbacksNV(GLsizei n, GLuint *ids);
+	GLboolean glIsTransformFeedbackNV(GLuint id);
+	void glPauseTransformFeedbackNV(void);
+	void glResumeTransformFeedbackNV(void);
+	void glDrawTransformFeedbackNV(GLenum mode, GLuint id);
+	void glVDPAUInitNV(const void *vdpDevice, const void *getProcAddress);
+	void glVDPAUFiniNV(void);
+	GLvdpauSurfaceNV glVDPAURegisterVideoSurfaceNV(const void *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
+	GLvdpauSurfaceNV glVDPAURegisterOutputSurfaceNV(const void *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
+	GLboolean glVDPAUIsSurfaceNV(GLvdpauSurfaceNV surface);
+	void glVDPAUUnregisterSurfaceNV(GLvdpauSurfaceNV surface);
+	void glVDPAUGetSurfaceivNV(GLvdpauSurfaceNV surface, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
+	void glVDPAUSurfaceAccessNV(GLvdpauSurfaceNV surface, GLenum access);
+	void glVDPAUMapSurfacesNV(GLsizei numSurfaces, const GLvdpauSurfaceNV *surfaces);
+	void glVDPAUUnmapSurfacesNV(GLsizei numSurface, const GLvdpauSurfaceNV *surfaces);
+	void glFlushVertexArrayRangeNV(void);
+	void glVertexArrayRangeNV(GLsizei length, const void *pointer);
+	void glVertexAttribL1i64NV(GLuint index, GLint64EXT x);
+	void glVertexAttribL2i64NV(GLuint index, GLint64EXT x, GLint64EXT y);
+	void glVertexAttribL3i64NV(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z);
+	void glVertexAttribL4i64NV(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
+	void glVertexAttribL1i64vNV(GLuint index, const GLint64EXT *v);
+	void glVertexAttribL2i64vNV(GLuint index, const GLint64EXT *v);
+	void glVertexAttribL3i64vNV(GLuint index, const GLint64EXT *v);
+	void glVertexAttribL4i64vNV(GLuint index, const GLint64EXT *v);
+	void glVertexAttribL1ui64NV(GLuint index, GLuint64EXT x);
+	void glVertexAttribL2ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y);
+	void glVertexAttribL3ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
+	void glVertexAttribL4ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
+	void glVertexAttribL1ui64vNV(GLuint index, const GLuint64EXT *v);
+	void glVertexAttribL2ui64vNV(GLuint index, const GLuint64EXT *v);
+	void glVertexAttribL3ui64vNV(GLuint index, const GLuint64EXT *v);
+	void glVertexAttribL4ui64vNV(GLuint index, const GLuint64EXT *v);
+	void glGetVertexAttribLi64vNV(GLuint index, GLenum pname, GLint64EXT *params);
+	void glGetVertexAttribLui64vNV(GLuint index, GLenum pname, GLuint64EXT *params);
+	void glVertexAttribLFormatNV(GLuint index, GLint size, GLenum type, GLsizei stride);
+	void glBufferAddressRangeNV(GLenum pname, GLuint index, GLuint64EXT address, GLsizeiptr length);
+	void glVertexFormatNV(GLint size, GLenum type, GLsizei stride);
+	void glNormalFormatNV(GLenum type, GLsizei stride);
+	void glColorFormatNV(GLint size, GLenum type, GLsizei stride);
+	void glIndexFormatNV(GLenum type, GLsizei stride);
+	void glTexCoordFormatNV(GLint size, GLenum type, GLsizei stride);
+	void glEdgeFlagFormatNV(GLsizei stride);
+	void glSecondaryColorFormatNV(GLint size, GLenum type, GLsizei stride);
+	void glFogCoordFormatNV(GLenum type, GLsizei stride);
+	void glVertexAttribFormatNV(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride);
+	void glVertexAttribIFormatNV(GLuint index, GLint size, GLenum type, GLsizei stride);
+	void glGetIntegerui64i_vNV(GLenum value, GLuint index, GLuint64EXT *result);
+	GLboolean glAreProgramsResidentNV(GLsizei n, const GLuint *programs, GLboolean *residences);
+	void glBindProgramNV(GLenum target, GLuint id);
+	void glDeleteProgramsNV(GLsizei n, const GLuint *programs);
+	void glExecuteProgramNV(GLenum target, GLuint id, const GLfloat *params);
+	void glGenProgramsNV(GLsizei n, GLuint *programs);
+	void glGetProgramParameterdvNV(GLenum target, GLuint index, GLenum pname, GLdouble *params);
+	void glGetProgramParameterfvNV(GLenum target, GLuint index, GLenum pname, GLfloat *params);
+	void glGetProgramivNV(GLuint id, GLenum pname, GLint *params);
+	void glGetProgramStringNV(GLuint id, GLenum pname, GLubyte *program);
+	void glGetTrackMatrixivNV(GLenum target, GLuint address, GLenum pname, GLint *params);
+	void glGetVertexAttribdvNV(GLuint index, GLenum pname, GLdouble *params);
+	void glGetVertexAttribfvNV(GLuint index, GLenum pname, GLfloat *params);
+	void glGetVertexAttribivNV(GLuint index, GLenum pname, GLint *params);
+	void glGetVertexAttribPointervNV(GLuint index, GLenum pname, void **pointer);
+	GLboolean glIsProgramNV(GLuint id);
+	void glLoadProgramNV(GLenum target, GLuint id, GLsizei len, const GLubyte *program);
+	void glProgramParameter4dNV(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glProgramParameter4dvNV(GLenum target, GLuint index, const GLdouble *v);
+	void glProgramParameter4fNV(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glProgramParameter4fvNV(GLenum target, GLuint index, const GLfloat *v);
+	void glProgramParameters4dvNV(GLenum target, GLuint index, GLsizei count, const GLdouble *v);
+	void glProgramParameters4fvNV(GLenum target, GLuint index, GLsizei count, const GLfloat *v);
+	void glRequestResidentProgramsNV(GLsizei n, const GLuint *programs);
+	void glTrackMatrixNV(GLenum target, GLuint address, GLenum matrix, GLenum transform);
+	void glVertexAttribPointerNV(GLuint index, GLint fsize, GLenum type, GLsizei stride, const void *pointer);
+	void glVertexAttrib1dNV(GLuint index, GLdouble x);
+	void glVertexAttrib1dvNV(GLuint index, const GLdouble *v);
+	void glVertexAttrib1fNV(GLuint index, GLfloat x);
+	void glVertexAttrib1fvNV(GLuint index, const GLfloat *v);
+	void glVertexAttrib1sNV(GLuint index, GLshort x);
+	void glVertexAttrib1svNV(GLuint index, const GLshort *v);
+	void glVertexAttrib2dNV(GLuint index, GLdouble x, GLdouble y);
+	void glVertexAttrib2dvNV(GLuint index, const GLdouble *v);
+	void glVertexAttrib2fNV(GLuint index, GLfloat x, GLfloat y);
+	void glVertexAttrib2fvNV(GLuint index, const GLfloat *v);
+	void glVertexAttrib2sNV(GLuint index, GLshort x, GLshort y);
+	void glVertexAttrib2svNV(GLuint index, const GLshort *v);
+	void glVertexAttrib3dNV(GLuint index, GLdouble x, GLdouble y, GLdouble z);
+	void glVertexAttrib3dvNV(GLuint index, const GLdouble *v);
+	void glVertexAttrib3fNV(GLuint index, GLfloat x, GLfloat y, GLfloat z);
+	void glVertexAttrib3fvNV(GLuint index, const GLfloat *v);
+	void glVertexAttrib3sNV(GLuint index, GLshort x, GLshort y, GLshort z);
+	void glVertexAttrib3svNV(GLuint index, const GLshort *v);
+	void glVertexAttrib4dNV(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
+	void glVertexAttrib4dvNV(GLuint index, const GLdouble *v);
+	void glVertexAttrib4fNV(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glVertexAttrib4fvNV(GLuint index, const GLfloat *v);
+	void glVertexAttrib4sNV(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
+	void glVertexAttrib4svNV(GLuint index, const GLshort *v);
+	void glVertexAttrib4ubNV(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
+	void glVertexAttrib4ubvNV(GLuint index, const GLubyte *v);
+	void glVertexAttribs1dvNV(GLuint index, GLsizei count, const GLdouble *v);
+	void glVertexAttribs1fvNV(GLuint index, GLsizei count, const GLfloat *v);
+	void glVertexAttribs1svNV(GLuint index, GLsizei count, const GLshort *v);
+	void glVertexAttribs2dvNV(GLuint index, GLsizei count, const GLdouble *v);
+	void glVertexAttribs2fvNV(GLuint index, GLsizei count, const GLfloat *v);
+	void glVertexAttribs2svNV(GLuint index, GLsizei count, const GLshort *v);
+	void glVertexAttribs3dvNV(GLuint index, GLsizei count, const GLdouble *v);
+	void glVertexAttribs3fvNV(GLuint index, GLsizei count, const GLfloat *v);
+	void glVertexAttribs3svNV(GLuint index, GLsizei count, const GLshort *v);
+	void glVertexAttribs4dvNV(GLuint index, GLsizei count, const GLdouble *v);
+	void glVertexAttribs4fvNV(GLuint index, GLsizei count, const GLfloat *v);
+	void glVertexAttribs4svNV(GLuint index, GLsizei count, const GLshort *v);
+	void glVertexAttribs4ubvNV(GLuint index, GLsizei count, const GLubyte *v);
 	void glVertexAttribI1iEXT(GLuint index, GLint x);
 	void glVertexAttribI2iEXT(GLuint index, GLint x, GLint y);
 	void glVertexAttribI3iEXT(GLuint index, GLint x, GLint y, GLint z);
@@ -1591,319 +2388,9 @@ public:
 	void glVertexAttribI4svEXT(GLuint index, const GLshort *v);
 	void glVertexAttribI4ubvEXT(GLuint index, const GLubyte *v);
 	void glVertexAttribI4usvEXT(GLuint index, const GLushort *v);
-	void glVertexAttribIPointerEXT(GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
+	void glVertexAttribIPointerEXT(GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
 	void glGetVertexAttribIivEXT(GLuint index, GLenum pname, GLint *params);
 	void glGetVertexAttribIuivEXT(GLuint index, GLenum pname, GLuint *params);
-	void glGetUniformuivEXT(GLuint program, GLint location, GLuint *params);
-	void glBindFragDataLocationEXT(GLuint program, GLuint color, const GLchar *name);
-	GLint glGetFragDataLocationEXT(GLuint program, const GLchar *name);
-	void glUniform1uiEXT(GLint location, GLuint v0);
-	void glUniform2uiEXT(GLint location, GLuint v0, GLuint v1);
-	void glUniform3uiEXT(GLint location, GLuint v0, GLuint v1, GLuint v2);
-	void glUniform4uiEXT(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
-	void glUniform1uivEXT(GLint location, GLsizei count, const GLuint *value);
-	void glUniform2uivEXT(GLint location, GLsizei count, const GLuint *value);
-	void glUniform3uivEXT(GLint location, GLsizei count, const GLuint *value);
-	void glUniform4uivEXT(GLint location, GLsizei count, const GLuint *value);
-	void glDrawArraysInstancedEXT(GLenum mode, GLint start, GLsizei count, GLsizei primcount);
-	void glDrawElementsInstancedEXT(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei primcount);
-	void glTexBufferEXT(GLenum target, GLenum internalformat, GLuint buffer);
-	void glDepthRangedNV(GLdouble zNear, GLdouble zFar);
-	void glClearDepthdNV(GLdouble depth);
-	void glDepthBoundsdNV(GLdouble zmin, GLdouble zmax);
-	void glRenderbufferStorageMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height);
-	void glProgramBufferParametersfvNV(GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLfloat *params);
-	void glProgramBufferParametersIivNV(GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLint *params);
-	void glProgramBufferParametersIuivNV(GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLuint *params);
-	void glColorMaskIndexedEXT(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a);
-	void glGetBooleanIndexedvEXT(GLenum target, GLuint index, GLboolean *data);
-	void glGetIntegerIndexedvEXT(GLenum target, GLuint index, GLint *data);
-	void glEnableIndexedEXT(GLenum target, GLuint index);
-	void glDisableIndexedEXT(GLenum target, GLuint index);
-	GLboolean glIsEnabledIndexedEXT(GLenum target, GLuint index);
-	void glBeginTransformFeedbackNV(GLenum primitiveMode);
-	void glEndTransformFeedbackNV(void);
-	void glTransformFeedbackAttribsNV(GLuint count, const GLint *attribs, GLenum bufferMode);
-	void glBindBufferRangeNV(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
-	void glBindBufferOffsetNV(GLenum target, GLuint index, GLuint buffer, GLintptr offset);
-	void glBindBufferBaseNV(GLenum target, GLuint index, GLuint buffer);
-	void glTransformFeedbackVaryingsNV(GLuint program, GLsizei count, const GLint *locations, GLenum bufferMode);
-	void glActiveVaryingNV(GLuint program, const GLchar *name);
-	GLint glGetVaryingLocationNV(GLuint program, const GLchar *name);
-	void glGetActiveVaryingNV(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
-	void glGetTransformFeedbackVaryingNV(GLuint program, GLuint index, GLint *location);
-	void glTransformFeedbackStreamAttribsNV(GLsizei count, const GLint *attribs, GLsizei nbuffers, const GLint *bufstreams, GLenum bufferMode);
-	void glUniformBufferEXT(GLuint program, GLint location, GLuint buffer);
-	GLint glGetUniformBufferSizeEXT(GLuint program, GLint location);
-	GLintptr glGetUniformOffsetEXT(GLuint program, GLint location);
-	void glTexParameterIivEXT(GLenum target, GLenum pname, const GLint *params);
-	void glTexParameterIuivEXT(GLenum target, GLenum pname, const GLuint *params);
-	void glGetTexParameterIivEXT(GLenum target, GLenum pname, GLint *params);
-	void glGetTexParameterIuivEXT(GLenum target, GLenum pname, GLuint *params);
-	void glClearColorIiEXT(GLint red, GLint green, GLint blue, GLint alpha);
-	void glClearColorIuiEXT(GLuint red, GLuint green, GLuint blue, GLuint alpha);
-	void glFrameTerminatorGREMEDY(void);
-	void glBeginConditionalRenderNV(GLuint id, GLenum mode);
-	void glEndConditionalRenderNV(void);
-	void glPresentFrameKeyedNV(GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLuint key0, GLenum target1, GLuint fill1, GLuint key1);
-	void glPresentFrameDualFillNV(GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLenum target1, GLuint fill1, GLenum target2, GLuint fill2, GLenum target3, GLuint fill3);
-	void glGetVideoivNV(GLuint video_slot, GLenum pname, GLint *params);
-	void glGetVideouivNV(GLuint video_slot, GLenum pname, GLuint *params);
-	void glGetVideoi64vNV(GLuint video_slot, GLenum pname, GLint64EXT *params);
-	void glGetVideoui64vNV(GLuint video_slot, GLenum pname, GLuint64EXT *params);
-	void glBeginTransformFeedbackEXT(GLenum primitiveMode);
-	void glEndTransformFeedbackEXT(void);
-	void glBindBufferRangeEXT(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
-	void glBindBufferOffsetEXT(GLenum target, GLuint index, GLuint buffer, GLintptr offset);
-	void glBindBufferBaseEXT(GLenum target, GLuint index, GLuint buffer);
-	void glTransformFeedbackVaryingsEXT(GLuint program, GLsizei count, const GLchar* *varyings, GLenum bufferMode);
-	void glGetTransformFeedbackVaryingEXT(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
-	void glClientAttribDefaultEXT(GLbitfield mask);
-	void glPushClientAttribDefaultEXT(GLbitfield mask);
-	void glMatrixLoadfEXT(GLenum mode, const GLfloat *m);
-	void glMatrixLoaddEXT(GLenum mode, const GLdouble *m);
-	void glMatrixMultfEXT(GLenum mode, const GLfloat *m);
-	void glMatrixMultdEXT(GLenum mode, const GLdouble *m);
-	void glMatrixLoadIdentityEXT(GLenum mode);
-	void glMatrixRotatefEXT(GLenum mode, GLfloat angle, GLfloat x, GLfloat y, GLfloat z);
-	void glMatrixRotatedEXT(GLenum mode, GLdouble angle, GLdouble x, GLdouble y, GLdouble z);
-	void glMatrixScalefEXT(GLenum mode, GLfloat x, GLfloat y, GLfloat z);
-	void glMatrixScaledEXT(GLenum mode, GLdouble x, GLdouble y, GLdouble z);
-	void glMatrixTranslatefEXT(GLenum mode, GLfloat x, GLfloat y, GLfloat z);
-	void glMatrixTranslatedEXT(GLenum mode, GLdouble x, GLdouble y, GLdouble z);
-	void glMatrixFrustumEXT(GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar);
-	void glMatrixOrthoEXT(GLenum mode, GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar);
-	void glMatrixPopEXT(GLenum mode);
-	void glMatrixPushEXT(GLenum mode);
-	void glMatrixLoadTransposefEXT(GLenum mode, const GLfloat *m);
-	void glMatrixLoadTransposedEXT(GLenum mode, const GLdouble *m);
-	void glMatrixMultTransposefEXT(GLenum mode, const GLfloat *m);
-	void glMatrixMultTransposedEXT(GLenum mode, const GLdouble *m);
-	void glTextureParameterfEXT(GLuint texture, GLenum target, GLenum pname, GLfloat param);
-	void glTextureParameterfvEXT(GLuint texture, GLenum target, GLenum pname, const GLfloat *params);
-	void glTextureParameteriEXT(GLuint texture, GLenum target, GLenum pname, GLint param);
-	void glTextureParameterivEXT(GLuint texture, GLenum target, GLenum pname, const GLint *params);
-	void glTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels);
-	void glCopyTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
-	void glCopyTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
-	void glCopyTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
-	void glCopyTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glGetTextureImageEXT(GLuint texture, GLenum target, GLint level, GLenum format, GLenum type, GLvoid *pixels);
-	void glGetTextureParameterfvEXT(GLuint texture, GLenum target, GLenum pname, GLfloat *params);
-	void glGetTextureParameterivEXT(GLuint texture, GLenum target, GLenum pname, GLint *params);
-	void glGetTextureLevelParameterfvEXT(GLuint texture, GLenum target, GLint level, GLenum pname, GLfloat *params);
-	void glGetTextureLevelParameterivEXT(GLuint texture, GLenum target, GLint level, GLenum pname, GLint *params);
-	void glTextureImage3DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels);
-	void glCopyTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glMultiTexParameterfEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat param);
-	void glMultiTexParameterfvEXT(GLenum texunit, GLenum target, GLenum pname, const GLfloat *params);
-	void glMultiTexParameteriEXT(GLenum texunit, GLenum target, GLenum pname, GLint param);
-	void glMultiTexParameterivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
-	void glMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *pixels);
-	void glMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *pixels);
-	void glCopyMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
-	void glCopyMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
-	void glCopyMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
-	void glCopyMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glGetMultiTexImageEXT(GLenum texunit, GLenum target, GLint level, GLenum format, GLenum type, GLvoid *pixels);
-	void glGetMultiTexParameterfvEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat *params);
-	void glGetMultiTexParameterivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
-	void glGetMultiTexLevelParameterfvEXT(GLenum texunit, GLenum target, GLint level, GLenum pname, GLfloat *params);
-	void glGetMultiTexLevelParameterivEXT(GLenum texunit, GLenum target, GLint level, GLenum pname, GLint *params);
-	void glMultiTexImage3DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels);
-	void glMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels);
-	void glCopyMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-	void glBindMultiTextureEXT(GLenum texunit, GLenum target, GLuint texture);
-	void glEnableClientStateIndexedEXT(GLenum array, GLuint index);
-	void glDisableClientStateIndexedEXT(GLenum array, GLuint index);
-	void glMultiTexCoordPointerEXT(GLenum texunit, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glMultiTexEnvfEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat param);
-	void glMultiTexEnvfvEXT(GLenum texunit, GLenum target, GLenum pname, const GLfloat *params);
-	void glMultiTexEnviEXT(GLenum texunit, GLenum target, GLenum pname, GLint param);
-	void glMultiTexEnvivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
-	void glMultiTexGendEXT(GLenum texunit, GLenum coord, GLenum pname, GLdouble param);
-	void glMultiTexGendvEXT(GLenum texunit, GLenum coord, GLenum pname, const GLdouble *params);
-	void glMultiTexGenfEXT(GLenum texunit, GLenum coord, GLenum pname, GLfloat param);
-	void glMultiTexGenfvEXT(GLenum texunit, GLenum coord, GLenum pname, const GLfloat *params);
-	void glMultiTexGeniEXT(GLenum texunit, GLenum coord, GLenum pname, GLint param);
-	void glMultiTexGenivEXT(GLenum texunit, GLenum coord, GLenum pname, const GLint *params);
-	void glGetMultiTexEnvfvEXT(GLenum texunit, GLenum target, GLenum pname, GLfloat *params);
-	void glGetMultiTexEnvivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
-	void glGetMultiTexGendvEXT(GLenum texunit, GLenum coord, GLenum pname, GLdouble *params);
-	void glGetMultiTexGenfvEXT(GLenum texunit, GLenum coord, GLenum pname, GLfloat *params);
-	void glGetMultiTexGenivEXT(GLenum texunit, GLenum coord, GLenum pname, GLint *params);
-	void glGetFloatIndexedvEXT(GLenum target, GLuint index, GLfloat *data);
-	void glGetDoubleIndexedvEXT(GLenum target, GLuint index, GLdouble *data);
-	void glGetPointerIndexedvEXT(GLenum target, GLuint index, GLvoid* *data);
-	void glCompressedTextureImage3DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedTextureImage2DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedTextureImage1DEXT(GLuint texture, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedTextureSubImage3DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedTextureSubImage2DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedTextureSubImage1DEXT(GLuint texture, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glGetCompressedTextureImageEXT(GLuint texture, GLenum target, GLint lod, GLvoid *img);
-	void glCompressedMultiTexImage3DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedMultiTexImage2DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedMultiTexImage1DEXT(GLenum texunit, GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedMultiTexSubImage3DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedMultiTexSubImage2DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glCompressedMultiTexSubImage1DEXT(GLenum texunit, GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *bits);
-	void glGetCompressedMultiTexImageEXT(GLenum texunit, GLenum target, GLint lod, GLvoid *img);
-	void glNamedProgramStringEXT(GLuint program, GLenum target, GLenum format, GLsizei len, const GLvoid *string);
-	void glNamedProgramLocalParameter4dEXT(GLuint program, GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glNamedProgramLocalParameter4dvEXT(GLuint program, GLenum target, GLuint index, const GLdouble *params);
-	void glNamedProgramLocalParameter4fEXT(GLuint program, GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-	void glNamedProgramLocalParameter4fvEXT(GLuint program, GLenum target, GLuint index, const GLfloat *params);
-	void glGetNamedProgramLocalParameterdvEXT(GLuint program, GLenum target, GLuint index, GLdouble *params);
-	void glGetNamedProgramLocalParameterfvEXT(GLuint program, GLenum target, GLuint index, GLfloat *params);
-	void glGetNamedProgramivEXT(GLuint program, GLenum target, GLenum pname, GLint *params);
-	void glGetNamedProgramStringEXT(GLuint program, GLenum target, GLenum pname, GLvoid *string);
-	void glNamedProgramLocalParameters4fvEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLfloat *params);
-	void glNamedProgramLocalParameterI4iEXT(GLuint program, GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w);
-	void glNamedProgramLocalParameterI4ivEXT(GLuint program, GLenum target, GLuint index, const GLint *params);
-	void glNamedProgramLocalParametersI4ivEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLint *params);
-	void glNamedProgramLocalParameterI4uiEXT(GLuint program, GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
-	void glNamedProgramLocalParameterI4uivEXT(GLuint program, GLenum target, GLuint index, const GLuint *params);
-	void glNamedProgramLocalParametersI4uivEXT(GLuint program, GLenum target, GLuint index, GLsizei count, const GLuint *params);
-	void glGetNamedProgramLocalParameterIivEXT(GLuint program, GLenum target, GLuint index, GLint *params);
-	void glGetNamedProgramLocalParameterIuivEXT(GLuint program, GLenum target, GLuint index, GLuint *params);
-	void glTextureParameterIivEXT(GLuint texture, GLenum target, GLenum pname, const GLint *params);
-	void glTextureParameterIuivEXT(GLuint texture, GLenum target, GLenum pname, const GLuint *params);
-	void glGetTextureParameterIivEXT(GLuint texture, GLenum target, GLenum pname, GLint *params);
-	void glGetTextureParameterIuivEXT(GLuint texture, GLenum target, GLenum pname, GLuint *params);
-	void glMultiTexParameterIivEXT(GLenum texunit, GLenum target, GLenum pname, const GLint *params);
-	void glMultiTexParameterIuivEXT(GLenum texunit, GLenum target, GLenum pname, const GLuint *params);
-	void glGetMultiTexParameterIivEXT(GLenum texunit, GLenum target, GLenum pname, GLint *params);
-	void glGetMultiTexParameterIuivEXT(GLenum texunit, GLenum target, GLenum pname, GLuint *params);
-	void glProgramUniform1fEXT(GLuint program, GLint location, GLfloat v0);
-	void glProgramUniform2fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1);
-	void glProgramUniform3fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
-	void glProgramUniform4fEXT(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
-	void glProgramUniform1iEXT(GLuint program, GLint location, GLint v0);
-	void glProgramUniform2iEXT(GLuint program, GLint location, GLint v0, GLint v1);
-	void glProgramUniform3iEXT(GLuint program, GLint location, GLint v0, GLint v1, GLint v2);
-	void glProgramUniform4iEXT(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
-	void glProgramUniform1fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
-	void glProgramUniform2fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
-	void glProgramUniform3fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
-	void glProgramUniform4fvEXT(GLuint program, GLint location, GLsizei count, const GLfloat *value);
-	void glProgramUniform1ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
-	void glProgramUniform2ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
-	void glProgramUniform3ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
-	void glProgramUniform4ivEXT(GLuint program, GLint location, GLsizei count, const GLint *value);
-	void glProgramUniformMatrix2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix2x3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix3x2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix2x4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix4x2fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix3x4fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniformMatrix4x3fvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-	void glProgramUniform1uiEXT(GLuint program, GLint location, GLuint v0);
-	void glProgramUniform2uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1);
-	void glProgramUniform3uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2);
-	void glProgramUniform4uiEXT(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
-	void glProgramUniform1uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
-	void glProgramUniform2uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
-	void glProgramUniform3uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
-	void glProgramUniform4uivEXT(GLuint program, GLint location, GLsizei count, const GLuint *value);
-	void glNamedBufferDataEXT(GLuint buffer, GLsizeiptr size, const GLvoid *data, GLenum usage);
-	void glNamedBufferSubDataEXT(GLuint buffer, GLintptr offset, GLsizeiptr size, const GLvoid *data);
-	GLvoid* glMapNamedBufferEXT(GLuint buffer, GLenum access);
-	GLboolean glUnmapNamedBufferEXT(GLuint buffer);
-	GLvoid* glMapNamedBufferRangeEXT(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access);
-	void glFlushMappedNamedBufferRangeEXT(GLuint buffer, GLintptr offset, GLsizeiptr length);
-	void glNamedCopyBufferSubDataEXT(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
-	void glGetNamedBufferParameterivEXT(GLuint buffer, GLenum pname, GLint *params);
-	void glGetNamedBufferPointervEXT(GLuint buffer, GLenum pname, GLvoid* *params);
-	void glGetNamedBufferSubDataEXT(GLuint buffer, GLintptr offset, GLsizeiptr size, GLvoid *data);
-	void glTextureBufferEXT(GLuint texture, GLenum target, GLenum internalformat, GLuint buffer);
-	void glMultiTexBufferEXT(GLenum texunit, GLenum target, GLenum internalformat, GLuint buffer);
-	void glNamedRenderbufferStorageEXT(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
-	void glGetNamedRenderbufferParameterivEXT(GLuint renderbuffer, GLenum pname, GLint *params);
-	GLenum glCheckNamedFramebufferStatusEXT(GLuint framebuffer, GLenum target);
-	void glNamedFramebufferTexture1DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-	void glNamedFramebufferTexture2DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-	void glNamedFramebufferTexture3DEXT(GLuint framebuffer, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
-	void glNamedFramebufferRenderbufferEXT(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
-	void glGetNamedFramebufferAttachmentParameterivEXT(GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params);
-	void glGenerateTextureMipmapEXT(GLuint texture, GLenum target);
-	void glGenerateMultiTexMipmapEXT(GLenum texunit, GLenum target);
-	void glFramebufferDrawBufferEXT(GLuint framebuffer, GLenum mode);
-	void glFramebufferDrawBuffersEXT(GLuint framebuffer, GLsizei n, const GLenum *bufs);
-	void glFramebufferReadBufferEXT(GLuint framebuffer, GLenum mode);
-	void glGetFramebufferParameterivEXT(GLuint framebuffer, GLenum pname, GLint *params);
-	void glNamedRenderbufferStorageMultisampleEXT(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
-	void glNamedRenderbufferStorageMultisampleCoverageEXT(GLuint renderbuffer, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height);
-	void glNamedFramebufferTextureEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level);
-	void glNamedFramebufferTextureLayerEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer);
-	void glNamedFramebufferTextureFaceEXT(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLenum face);
-	void glTextureRenderbufferEXT(GLuint texture, GLenum target, GLuint renderbuffer);
-	void glMultiTexRenderbufferEXT(GLenum texunit, GLenum target, GLuint renderbuffer);
-	void glProgramUniform1dEXT(GLuint program, GLint location, GLdouble x);
-	void glProgramUniform2dEXT(GLuint program, GLint location, GLdouble x, GLdouble y);
-	void glProgramUniform3dEXT(GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z);
-	void glProgramUniform4dEXT(GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glProgramUniform1dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
-	void glProgramUniform2dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
-	void glProgramUniform3dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
-	void glProgramUniform4dvEXT(GLuint program, GLint location, GLsizei count, const GLdouble *value);
-	void glProgramUniformMatrix2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix2x3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix2x4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix3x2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix3x4dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix4x2dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glProgramUniformMatrix4x3dvEXT(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble *value);
-	void glGetMultisamplefvNV(GLenum pname, GLuint index, GLfloat *val);
-	void glSampleMaskIndexedNV(GLuint index, GLbitfield mask);
-	void glTexRenderbufferNV(GLenum target, GLuint renderbuffer);
-	void glBindTransformFeedbackNV(GLenum target, GLuint id);
-	void glDeleteTransformFeedbacksNV(GLsizei n, const GLuint *ids);
-	void glGenTransformFeedbacksNV(GLsizei n, GLuint *ids);
-	GLboolean glIsTransformFeedbackNV(GLuint id);
-	void glPauseTransformFeedbackNV(void);
-	void glResumeTransformFeedbackNV(void);
-	void glDrawTransformFeedbackNV(GLenum mode, GLuint id);
-	void glGetPerfMonitorGroupsAMD(GLint *numGroups, GLsizei groupsSize, GLuint *groups);
-	void glGetPerfMonitorCountersAMD(GLuint group, GLint *numCounters, GLint *maxActiveCounters, GLsizei counterSize, GLuint *counters);
-	void glGetPerfMonitorGroupStringAMD(GLuint group, GLsizei bufSize, GLsizei *length, GLchar *groupString);
-	void glGetPerfMonitorCounterStringAMD(GLuint group, GLuint counter, GLsizei bufSize, GLsizei *length, GLchar *counterString);
-	void glGetPerfMonitorCounterInfoAMD(GLuint group, GLuint counter, GLenum pname, GLvoid *data);
-	void glGenPerfMonitorsAMD(GLsizei n, GLuint *monitors);
-	void glDeletePerfMonitorsAMD(GLsizei n, GLuint *monitors);
-	void glSelectPerfMonitorCountersAMD(GLuint monitor, GLboolean enable, GLuint group, GLint numCounters, GLuint *counterList);
-	void glBeginPerfMonitorAMD(GLuint monitor);
-	void glEndPerfMonitorAMD(GLuint monitor);
-	void glGetPerfMonitorCounterDataAMD(GLuint monitor, GLenum pname, GLsizei dataSize, GLuint *data, GLint *bytesWritten);
-	void glTessellationFactorAMD(GLfloat factor);
-	void glTessellationModeAMD(GLenum mode);
-	void glProvokingVertexEXT(GLenum mode);
-	void glBlendFuncIndexedAMD(GLuint buf, GLenum src, GLenum dst);
-	void glBlendFuncSeparateIndexedAMD(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
-	void glBlendEquationIndexedAMD(GLuint buf, GLenum mode);
-	void glBlendEquationSeparateIndexedAMD(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
-	void glTextureRangeAPPLE(GLenum target, GLsizei length, const GLvoid *pointer);
-	void glGetTexParameterPointervAPPLE(GLenum target, GLenum pname, GLvoid* *params);
-	void glEnableVertexAttribAPPLE(GLuint index, GLenum pname);
-	void glDisableVertexAttribAPPLE(GLuint index, GLenum pname);
-	GLboolean glIsVertexAttribEnabledAPPLE(GLuint index, GLenum pname);
-	void glMapVertexAttrib1dAPPLE(GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint stride, GLint order, const GLdouble *points);
-	void glMapVertexAttrib1fAPPLE(GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint stride, GLint order, const GLfloat *points);
-	void glMapVertexAttrib2dAPPLE(GLuint index, GLuint size, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, const GLdouble *points);
-	void glMapVertexAttrib2fAPPLE(GLuint index, GLuint size, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, const GLfloat *points);
-	GLenum glObjectPurgeableAPPLE(GLenum objectType, GLuint name, GLenum option);
-	GLenum glObjectUnpurgeableAPPLE(GLenum objectType, GLuint name, GLenum option);
-	void glGetObjectParameterivAPPLE(GLenum objectType, GLuint name, GLenum pname, GLint *params);
 	void glBeginVideoCaptureNV(GLuint video_capture_slot);
 	void glBindVideoCaptureStreamBufferNV(GLuint video_capture_slot, GLuint stream, GLenum frame_region, GLintptrARB offset);
 	void glBindVideoCaptureStreamTextureNV(GLuint video_capture_slot, GLuint stream, GLenum frame_region, GLenum target, GLuint texture);
@@ -1916,314 +2403,144 @@ public:
 	void glVideoCaptureStreamParameterivNV(GLuint video_capture_slot, GLuint stream, GLenum pname, const GLint *params);
 	void glVideoCaptureStreamParameterfvNV(GLuint video_capture_slot, GLuint stream, GLenum pname, const GLfloat *params);
 	void glVideoCaptureStreamParameterdvNV(GLuint video_capture_slot, GLuint stream, GLenum pname, const GLdouble *params);
-	void glCopyImageSubDataNV(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth);
-	void glUseShaderProgramEXT(GLenum type, GLuint program);
-	void glActiveProgramEXT(GLuint program);
-	GLuint glCreateShaderProgramEXT(GLenum type, const GLchar *string);
-	void glMakeBufferResidentNV(GLenum target, GLenum access);
-	void glMakeBufferNonResidentNV(GLenum target);
-	GLboolean glIsBufferResidentNV(GLenum target);
-	void glMakeNamedBufferResidentNV(GLuint buffer, GLenum access);
-	void glMakeNamedBufferNonResidentNV(GLuint buffer);
-	GLboolean glIsNamedBufferResidentNV(GLuint buffer);
-	void glGetBufferParameterui64vNV(GLenum target, GLenum pname, GLuint64EXT *params);
-	void glGetNamedBufferParameterui64vNV(GLuint buffer, GLenum pname, GLuint64EXT *params);
-	void glGetIntegerui64vNV(GLenum value, GLuint64EXT *result);
-	void glUniformui64NV(GLint location, GLuint64EXT value);
-	void glUniformui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
-	void glGetUniformui64vNV(GLuint program, GLint location, GLuint64EXT *params);
-	void glProgramUniformui64NV(GLuint program, GLint location, GLuint64EXT value);
-	void glProgramUniformui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
-	void glBufferAddressRangeNV(GLenum pname, GLuint index, GLuint64EXT address, GLsizeiptr length);
-	void glVertexFormatNV(GLint size, GLenum type, GLsizei stride);
-	void glNormalFormatNV(GLenum type, GLsizei stride);
-	void glColorFormatNV(GLint size, GLenum type, GLsizei stride);
-	void glIndexFormatNV(GLenum type, GLsizei stride);
-	void glTexCoordFormatNV(GLint size, GLenum type, GLsizei stride);
-	void glEdgeFlagFormatNV(GLsizei stride);
-	void glSecondaryColorFormatNV(GLint size, GLenum type, GLsizei stride);
-	void glFogCoordFormatNV(GLenum type, GLsizei stride);
-	void glVertexAttribFormatNV(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride);
-	void glVertexAttribIFormatNV(GLuint index, GLint size, GLenum type, GLsizei stride);
-	void glGetIntegerui64i_vNV(GLenum value, GLuint index, GLuint64EXT *result);
-	void glTextureBarrierNV(void);
-	void glBindImageTextureEXT(GLuint index, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLint format);
-	void glMemoryBarrierEXT(GLbitfield barriers);
-	void glVertexAttribL1dEXT(GLuint index, GLdouble x);
-	void glVertexAttribL2dEXT(GLuint index, GLdouble x, GLdouble y);
-	void glVertexAttribL3dEXT(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-	void glVertexAttribL4dEXT(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-	void glVertexAttribL1dvEXT(GLuint index, const GLdouble *v);
-	void glVertexAttribL2dvEXT(GLuint index, const GLdouble *v);
-	void glVertexAttribL3dvEXT(GLuint index, const GLdouble *v);
-	void glVertexAttribL4dvEXT(GLuint index, const GLdouble *v);
-	void glVertexAttribLPointerEXT(GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
-	void glGetVertexAttribLdvEXT(GLuint index, GLenum pname, GLdouble *params);
-	void glVertexArrayVertexAttribLOffsetEXT(GLuint vaobj, GLuint buffer, GLuint index, GLint size, GLenum type, GLsizei stride, GLintptr offset);
-	void glProgramSubroutineParametersuivNV(GLenum target, GLsizei count, const GLuint *params);
-	void glGetProgramSubroutineParameteruivNV(GLenum target, GLuint index, GLuint *param);
-	void glUniform1i64NV(GLint location, GLint64EXT x);
-	void glUniform2i64NV(GLint location, GLint64EXT x, GLint64EXT y);
-	void glUniform3i64NV(GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z);
-	void glUniform4i64NV(GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
-	void glUniform1i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
-	void glUniform2i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
-	void glUniform3i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
-	void glUniform4i64vNV(GLint location, GLsizei count, const GLint64EXT *value);
-	void glUniform1ui64NV(GLint location, GLuint64EXT x);
-	void glUniform2ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y);
-	void glUniform3ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
-	void glUniform4ui64NV(GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
-	void glUniform1ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
-	void glUniform2ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
-	void glUniform3ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
-	void glUniform4ui64vNV(GLint location, GLsizei count, const GLuint64EXT *value);
-	void glGetUniformi64vNV(GLuint program, GLint location, GLint64EXT *params);
-	void glProgramUniform1i64NV(GLuint program, GLint location, GLint64EXT x);
-	void glProgramUniform2i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y);
-	void glProgramUniform3i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z);
-	void glProgramUniform4i64NV(GLuint program, GLint location, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
-	void glProgramUniform1i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
-	void glProgramUniform2i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
-	void glProgramUniform3i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
-	void glProgramUniform4i64vNV(GLuint program, GLint location, GLsizei count, const GLint64EXT *value);
-	void glProgramUniform1ui64NV(GLuint program, GLint location, GLuint64EXT x);
-	void glProgramUniform2ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y);
-	void glProgramUniform3ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
-	void glProgramUniform4ui64NV(GLuint program, GLint location, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
-	void glProgramUniform1ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
-	void glProgramUniform2ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
-	void glProgramUniform3ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
-	void glProgramUniform4ui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64EXT *value);
-	void glVertexAttribL1i64NV(GLuint index, GLint64EXT x);
-	void glVertexAttribL2i64NV(GLuint index, GLint64EXT x, GLint64EXT y);
-	void glVertexAttribL3i64NV(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z);
-	void glVertexAttribL4i64NV(GLuint index, GLint64EXT x, GLint64EXT y, GLint64EXT z, GLint64EXT w);
-	void glVertexAttribL1i64vNV(GLuint index, const GLint64EXT *v);
-	void glVertexAttribL2i64vNV(GLuint index, const GLint64EXT *v);
-	void glVertexAttribL3i64vNV(GLuint index, const GLint64EXT *v);
-	void glVertexAttribL4i64vNV(GLuint index, const GLint64EXT *v);
-	void glVertexAttribL1ui64NV(GLuint index, GLuint64EXT x);
-	void glVertexAttribL2ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y);
-	void glVertexAttribL3ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z);
-	void glVertexAttribL4ui64NV(GLuint index, GLuint64EXT x, GLuint64EXT y, GLuint64EXT z, GLuint64EXT w);
-	void glVertexAttribL1ui64vNV(GLuint index, const GLuint64EXT *v);
-	void glVertexAttribL2ui64vNV(GLuint index, const GLuint64EXT *v);
-	void glVertexAttribL3ui64vNV(GLuint index, const GLuint64EXT *v);
-	void glVertexAttribL4ui64vNV(GLuint index, const GLuint64EXT *v);
-	void glGetVertexAttribLi64vNV(GLuint index, GLenum pname, GLint64EXT *params);
-	void glGetVertexAttribLui64vNV(GLuint index, GLenum pname, GLuint64EXT *params);
-	void glVertexAttribLFormatNV(GLuint index, GLint size, GLenum type, GLsizei stride);
-	void glGenNamesAMD(GLenum identifier, GLuint num, GLuint *names);
-	void glDeleteNamesAMD(GLenum identifier, GLuint num, const GLuint *names);
-	GLboolean glIsNameAMD(GLenum identifier, GLuint name);
-	void glDebugMessageEnableAMD(GLenum category, GLenum severity, GLsizei count, const GLuint *ids, GLboolean enabled);
-	void glDebugMessageInsertAMD(GLenum category, GLenum severity, GLuint id, GLsizei length, const GLchar *buf);
-	void glDebugMessageCallbackAMD(GLDEBUGPROCAMD callback, GLvoid *userParam);
-	GLuint glGetDebugMessageLogAMD(GLuint count, GLsizei bufsize, GLenum *categories, GLuint *severities, GLuint *ids, GLsizei *lengths, GLchar *message);
-	void glVDPAUInitNV(const GLvoid *vdpDevice, const GLvoid *getProcAddress);
-	void glVDPAUFiniNV(void);
-	GLvdpauSurfaceNV glVDPAURegisterVideoSurfaceNV(const GLvoid *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
-	GLvdpauSurfaceNV glVDPAURegisterOutputSurfaceNV(GLvoid *vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames);
-	void glVDPAUIsSurfaceNV(GLvdpauSurfaceNV surface);
-	void glVDPAUUnregisterSurfaceNV(GLvdpauSurfaceNV surface);
-	void glVDPAUGetSurfaceivNV(GLvdpauSurfaceNV surface, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
-	void glVDPAUSurfaceAccessNV(GLvdpauSurfaceNV surface, GLenum access);
-	void glVDPAUMapSurfacesNV(GLsizei numSurfaces, const GLvdpauSurfaceNV *surfaces);
-	void glVDPAUUnmapSurfacesNV(GLsizei numSurface, const GLvdpauSurfaceNV *surfaces);
-	void glTexImage2DMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
-	void glTexImage3DMultisampleCoverageNV(GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
-	void glTextureImage2DMultisampleNV(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
-	void glTextureImage3DMultisampleNV(GLuint texture, GLenum target, GLsizei samples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
-	void glTextureImage2DMultisampleCoverageNV(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLboolean fixedSampleLocations);
-	void glTextureImage3DMultisampleCoverageNV(GLuint texture, GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedSampleLocations);
-	void glSetMultisamplefvAMD(GLenum pname, GLuint index, const GLfloat *val);
-	GLsync glImportSyncEXT(GLenum external_sync_type, GLintptr external_sync, GLbitfield flags);
-	void glMultiDrawArraysIndirectAMD(GLenum mode, const GLvoid *indirect, GLsizei primcount, GLsizei stride);
-	void glMultiDrawElementsIndirectAMD(GLenum mode, GLenum type, const GLvoid *indirect, GLsizei primcount, GLsizei stride);
-	GLuint glGenPathsNV(GLsizei range);
-	void glDeletePathsNV(GLuint path, GLsizei range);
-	GLboolean glIsPathNV(GLuint path);
-	void glPathCommandsNV(GLuint path, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const GLvoid *coords);
-	void glPathCoordsNV(GLuint path, GLsizei numCoords, GLenum coordType, const GLvoid *coords);
-	void glPathSubCommandsNV(GLuint path, GLsizei commandStart, GLsizei commandsToDelete, GLsizei numCommands, const GLubyte *commands, GLsizei numCoords, GLenum coordType, const GLvoid *coords);
-	void glPathSubCoordsNV(GLuint path, GLsizei coordStart, GLsizei numCoords, GLenum coordType, const GLvoid *coords);
-	void glPathStringNV(GLuint path, GLenum format, GLsizei length, const GLvoid *pathString);
-	void glPathGlyphsNV(GLuint firstPathName, GLenum fontTarget, const GLvoid *fontName, GLbitfield fontStyle, GLsizei numGlyphs, GLenum type, const GLvoid *charcodes, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
-	void glPathGlyphRangeNV(GLuint firstPathName, GLenum fontTarget, const GLvoid *fontName, GLbitfield fontStyle, GLuint firstGlyph, GLsizei numGlyphs, GLenum handleMissingGlyphs, GLuint pathParameterTemplate, GLfloat emScale);
-	void glWeightPathsNV(GLuint resultPath, GLsizei numPaths, const GLuint *paths, const GLfloat *weights);
-	void glCopyPathNV(GLuint resultPath, GLuint srcPath);
-	void glInterpolatePathsNV(GLuint resultPath, GLuint pathA, GLuint pathB, GLfloat weight);
-	void glTransformPathNV(GLuint resultPath, GLuint srcPath, GLenum transformType, const GLfloat *transformValues);
-	void glPathParameterivNV(GLuint path, GLenum pname, const GLint *value);
-	void glPathParameteriNV(GLuint path, GLenum pname, GLint value);
-	void glPathParameterfvNV(GLuint path, GLenum pname, const GLfloat *value);
-	void glPathParameterfNV(GLuint path, GLenum pname, GLfloat value);
-	void glPathDashArrayNV(GLuint path, GLsizei dashCount, const GLfloat *dashArray);
-	void glPathStencilFuncNV(GLenum func, GLint ref, GLuint mask);
-	void glPathStencilDepthOffsetNV(GLfloat factor, GLfloat units);
-	void glStencilFillPathNV(GLuint path, GLenum fillMode, GLuint mask);
-	void glStencilStrokePathNV(GLuint path, GLint reference, GLuint mask);
-	void glStencilFillPathInstancedNV(GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum fillMode, GLuint mask, GLenum transformType, const GLfloat *transformValues);
-	void glStencilStrokePathInstancedNV(GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLint reference, GLuint mask, GLenum transformType, const GLfloat *transformValues);
-	void glPathCoverDepthFuncNV(GLenum func);
-	void glPathColorGenNV(GLenum color, GLenum genMode, GLenum colorFormat, const GLfloat *coeffs);
-	void glPathTexGenNV(GLenum texCoordSet, GLenum genMode, GLint components, const GLfloat *coeffs);
-	void glPathFogGenNV(GLenum genMode);
-	void glCoverFillPathNV(GLuint path, GLenum coverMode);
-	void glCoverStrokePathNV(GLuint path, GLenum coverMode);
-	void glCoverFillPathInstancedNV(GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
-	void glCoverStrokePathInstancedNV(GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLenum coverMode, GLenum transformType, const GLfloat *transformValues);
-	void glGetPathParameterivNV(GLuint path, GLenum pname, GLint *value);
-	void glGetPathParameterfvNV(GLuint path, GLenum pname, GLfloat *value);
-	void glGetPathCommandsNV(GLuint path, GLubyte *commands);
-	void glGetPathCoordsNV(GLuint path, GLfloat *coords);
-	void glGetPathDashArrayNV(GLuint path, GLfloat *dashArray);
-	void glGetPathMetricsNV(GLbitfield metricQueryMask, GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLsizei stride, GLfloat *metrics);
-	void glGetPathMetricRangeNV(GLbitfield metricQueryMask, GLuint firstPathName, GLsizei numPaths, GLsizei stride, GLfloat *metrics);
-	void glGetPathSpacingNV(GLenum pathListMode, GLsizei numPaths, GLenum pathNameType, const GLvoid *paths, GLuint pathBase, GLfloat advanceScale, GLfloat kerningScale, GLenum transformType, GLfloat *returnedSpacing);
-	void glGetPathColorGenivNV(GLenum color, GLenum pname, GLint *value);
-	void glGetPathColorGenfvNV(GLenum color, GLenum pname, GLfloat *value);
-	void glGetPathTexGenivNV(GLenum texCoordSet, GLenum pname, GLint *value);
-	void glGetPathTexGenfvNV(GLenum texCoordSet, GLenum pname, GLfloat *value);
-	GLboolean glIsPointInFillPathNV(GLuint path, GLuint mask, GLfloat x, GLfloat y);
-	GLboolean glIsPointInStrokePathNV(GLuint path, GLfloat x, GLfloat y);
-	GLfloat glGetPathLengthNV(GLuint path, GLsizei startSegment, GLsizei numSegments);
-	GLboolean glPointAlongPathNV(GLuint path, GLsizei startSegment, GLsizei numSegments, GLfloat distance, GLfloat *x, GLfloat *y, GLfloat *tangentX, GLfloat *tangentY);
-	void glStencilOpValueAMD(GLenum face, GLuint value);
-	GLuint64 glGetTextureHandleNV(GLuint texture);
-	GLuint64 glGetTextureSamplerHandleNV(GLuint texture, GLuint sampler);
-	void glMakeTextureHandleResidentNV(GLuint64 handle);
-	void glMakeTextureHandleNonResidentNV(GLuint64 handle);
-	GLuint64 glGetImageHandleNV(GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum format);
-	void glMakeImageHandleResidentNV(GLuint64 handle, GLenum access);
-	void glMakeImageHandleNonResidentNV(GLuint64 handle);
-	void glUniformHandleui64NV(GLint location, GLuint64 value);
-	void glUniformHandleui64vNV(GLint location, GLsizei count, const GLuint64 *value);
-	void glProgramUniformHandleui64NV(GLuint program, GLint location, GLuint64 value);
-	void glProgramUniformHandleui64vNV(GLuint program, GLint location, GLsizei count, const GLuint64 *values);
-	GLboolean glIsTextureHandleResidentNV(GLuint64 handle);
-	GLboolean glIsImageHandleResidentNV(GLuint64 handle);
-	void glTexStorageSparseAMD(GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags);
-	void glTextureStorageSparseAMD(GLuint texture, GLenum target, GLenum internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLsizei layers, GLbitfield flags);
-	HANDLE wglCreateBufferRegionARB(HDC hDC, int iLayerPlane, UINT uType);
-	VOID wglDeleteBufferRegionARB(HANDLE hRegion);
-	BOOL wglSaveBufferRegionARB(HANDLE hRegion, int x, int y, int width, int height);
-	BOOL wglRestoreBufferRegionARB(HANDLE hRegion, int x, int y, int width, int height, int xSrc, int ySrc);
-	const char * wglGetExtensionsStringARB(HDC hdc);
-	BOOL wglGetPixelFormatAttribivARB(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, int *piValues);
-	BOOL wglGetPixelFormatAttribfvARB(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, FLOAT *pfValues);
-	BOOL wglChoosePixelFormatARB(HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats);
-	BOOL wglMakeContextCurrentARB(HDC hDrawDC, HDC hReadDC, HGLRC hglrc);
-	HDC wglGetCurrentReadDCARB(void);
-	HPBUFFERARB wglCreatePbufferARB(HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList);
-	HDC wglGetPbufferDCARB(HPBUFFERARB hPbuffer);
-	int wglReleasePbufferDCARB(HPBUFFERARB hPbuffer, HDC hDC);
-	BOOL wglDestroyPbufferARB(HPBUFFERARB hPbuffer);
-	BOOL wglQueryPbufferARB(HPBUFFERARB hPbuffer, int iAttribute, int *piValue);
-	BOOL wglBindTexImageARB(HPBUFFERARB hPbuffer, int iBuffer);
-	BOOL wglReleaseTexImageARB(HPBUFFERARB hPbuffer, int iBuffer);
-	BOOL wglSetPbufferAttribARB(HPBUFFERARB hPbuffer, const int *piAttribList);
-	HGLRC wglCreateContextAttribsARB(HDC hDC, HGLRC hShareContext, const int *attribList);
-	GLboolean wglCreateDisplayColorTableEXT(GLushort id);
-	GLboolean wglLoadDisplayColorTableEXT(const GLushort *table, GLuint length);
-	GLboolean wglBindDisplayColorTableEXT(GLushort id);
-	VOID wglDestroyDisplayColorTableEXT(GLushort id);
-	const char * wglGetExtensionsStringEXT(void);
-	BOOL wglMakeContextCurrentEXT(HDC hDrawDC, HDC hReadDC, HGLRC hglrc);
-	HDC wglGetCurrentReadDCEXT(void);
-	HPBUFFEREXT wglCreatePbufferEXT(HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList);
-	HDC wglGetPbufferDCEXT(HPBUFFEREXT hPbuffer);
-	int wglReleasePbufferDCEXT(HPBUFFEREXT hPbuffer, HDC hDC);
-	BOOL wglDestroyPbufferEXT(HPBUFFEREXT hPbuffer);
-	BOOL wglQueryPbufferEXT(HPBUFFEREXT hPbuffer, int iAttribute, int *piValue);
-	BOOL wglGetPixelFormatAttribivEXT(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, int *piValues);
-	BOOL wglGetPixelFormatAttribfvEXT(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, FLOAT *pfValues);
-	BOOL wglChoosePixelFormatEXT(HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats);
-	BOOL wglSwapIntervalEXT(int interval);
-	int wglGetSwapIntervalEXT(void);
-	void* wglAllocateMemoryNV(GLsizei size, GLfloat readfreq, GLfloat writefreq, GLfloat priority);
-	void wglFreeMemoryNV(void *pointer);
-	BOOL wglGetSyncValuesOML(HDC hdc, INT64 *ust, INT64 *msc, INT64 *sbc);
-	BOOL wglGetMscRateOML(HDC hdc, INT32 *numerator, INT32 *denominator);
-	INT64 wglSwapBuffersMscOML(HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder);
-	INT64 wglSwapLayerBuffersMscOML(HDC hdc, int fuPlanes, INT64 target_msc, INT64 divisor, INT64 remainder);
-	BOOL wglWaitForMscOML(HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder, INT64 *ust, INT64 *msc, INT64 *sbc);
-	BOOL wglWaitForSbcOML(HDC hdc, INT64 target_sbc, INT64 *ust, INT64 *msc, INT64 *sbc);
-	BOOL wglGetDigitalVideoParametersI3D(HDC hDC, int iAttribute, int *piValue);
-	BOOL wglSetDigitalVideoParametersI3D(HDC hDC, int iAttribute, const int *piValue);
-	BOOL wglGetGammaTableParametersI3D(HDC hDC, int iAttribute, int *piValue);
-	BOOL wglSetGammaTableParametersI3D(HDC hDC, int iAttribute, const int *piValue);
-	BOOL wglGetGammaTableI3D(HDC hDC, int iEntries, USHORT *puRed, USHORT *puGreen, USHORT *puBlue);
-	BOOL wglSetGammaTableI3D(HDC hDC, int iEntries, const USHORT *puRed, const USHORT *puGreen, const USHORT *puBlue);
-	BOOL wglEnableGenlockI3D(HDC hDC);
-	BOOL wglDisableGenlockI3D(HDC hDC);
-	BOOL wglIsEnabledGenlockI3D(HDC hDC, BOOL *pFlag);
-	BOOL wglGenlockSourceI3D(HDC hDC, UINT uSource);
-	BOOL wglGetGenlockSourceI3D(HDC hDC, UINT *uSource);
-	BOOL wglGenlockSourceEdgeI3D(HDC hDC, UINT uEdge);
-	BOOL wglGetGenlockSourceEdgeI3D(HDC hDC, UINT *uEdge);
-	BOOL wglGenlockSampleRateI3D(HDC hDC, UINT uRate);
-	BOOL wglGetGenlockSampleRateI3D(HDC hDC, UINT *uRate);
-	BOOL wglGenlockSourceDelayI3D(HDC hDC, UINT uDelay);
-	BOOL wglGetGenlockSourceDelayI3D(HDC hDC, UINT *uDelay);
-	BOOL wglQueryGenlockMaxSourceDelayI3D(HDC hDC, UINT *uMaxLineDelay, UINT *uMaxPixelDelay);
-	LPVOID wglCreateImageBufferI3D(HDC hDC, DWORD dwSize, UINT uFlags);
-	BOOL wglDestroyImageBufferI3D(HDC hDC, LPVOID pAddress);
-	BOOL wglAssociateImageBufferEventsI3D(HDC hDC, const HANDLE *pEvent, const LPVOID *pAddress, const DWORD *pSize, UINT count);
-	BOOL wglReleaseImageBufferEventsI3D(HDC hDC, const LPVOID *pAddress, UINT count);
-	BOOL wglEnableFrameLockI3D(void);
-	BOOL wglDisableFrameLockI3D(void);
-	BOOL wglIsEnabledFrameLockI3D(BOOL *pFlag);
-	BOOL wglQueryFrameLockMasterI3D(BOOL *pFlag);
-	BOOL wglGetFrameUsageI3D(float *pUsage);
-	BOOL wglBeginFrameTrackingI3D(void);
-	BOOL wglEndFrameTrackingI3D(void);
-	BOOL wglQueryFrameTrackingI3D(DWORD *pFrameCount, DWORD *pMissedFrames, float *pLastMissedUsage);
-	BOOL wglSetStereoEmitterState3DL(HDC hDC, UINT uState);
-	int wglEnumerateVideoDevicesNV(HDC hDC, HVIDEOOUTPUTDEVICENV *phDeviceList);
-	BOOL wglBindVideoDeviceNV(HDC hDC, unsigned int uVideoSlot, HVIDEOOUTPUTDEVICENV hVideoDevice, const int *piAttribList);
-	BOOL wglQueryCurrentContextNV(int iAttribute, int *piValue);
-	BOOL wglGetVideoDeviceNV(HDC hDC, int numDevices, HPVIDEODEV *hVideoDevice);
-	BOOL wglReleaseVideoDeviceNV(HPVIDEODEV hVideoDevice);
-	BOOL wglBindVideoImageNV(HPVIDEODEV hVideoDevice, HPBUFFERARB hPbuffer, int iVideoBuffer);
-	BOOL wglReleaseVideoImageNV(HPBUFFERARB hPbuffer, int iVideoBuffer);
-	BOOL wglSendPbufferToVideoNV(HPBUFFERARB hPbuffer, int iBufferType, unsigned long *pulCounterPbuffer, BOOL bBlock);
-	BOOL wglGetVideoInfoNV(HPVIDEODEV hpVideoDevice, unsigned long *pulCounterOutputPbuffer, unsigned long *pulCounterOutputVideo);
-	BOOL wglJoinSwapGroupNV(HDC hDC, GLuint group);
-	BOOL wglBindSwapBarrierNV(GLuint group, GLuint barrier);
-	BOOL wglQuerySwapGroupNV(HDC hDC, GLuint *group, GLuint *barrier);
-	BOOL wglQueryMaxSwapGroupsNV(HDC hDC, GLuint *maxGroups, GLuint *maxBarriers);
-	BOOL wglQueryFrameCountNV(HDC hDC, GLuint *count);
-	BOOL wglResetFrameCountNV(HDC hDC);
-	BOOL wglEnumGpusNV(UINT iGpuIndex, HGPUNV *phGpu);
-	BOOL wglEnumGpuDevicesNV(HGPUNV hGpu, UINT iDeviceIndex, PGPU_DEVICE lpGpuDevice);
-	HDC wglCreateAffinityDCNV(const HGPUNV *phGpuList);
-	BOOL wglEnumGpusFromAffinityDCNV(HDC hAffinityDC, UINT iGpuIndex, HGPUNV *hGpu);
-	BOOL wglDeleteDCNV(HDC hdc);
-	UINT wglGetGPUIDsAMD(UINT maxCount, UINT *ids);
-	INT wglGetGPUInfoAMD(UINT id, int property, GLenum dataType, UINT size, void *data);
-	UINT wglGetContextGPUIDAMD(HGLRC hglrc);
-	HGLRC wglCreateAssociatedContextAMD(UINT id);
-	HGLRC wglCreateAssociatedContextAttribsAMD(UINT id, HGLRC hShareContext, const int *attribList);
-	BOOL wglDeleteAssociatedContextAMD(HGLRC hglrc);
-	BOOL wglMakeAssociatedContextCurrentAMD(HGLRC hglrc);
-	HGLRC wglGetCurrentAssociatedContextAMD(void);
-	VOID wglBlitContextFramebufferAMD(HGLRC dstCtx, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-	BOOL wglBindVideoCaptureDeviceNV(UINT uVideoSlot, HVIDEOINPUTDEVICENV hDevice);
-	UINT wglEnumerateVideoCaptureDevicesNV(HDC hDc, HVIDEOINPUTDEVICENV *phDeviceList);
-	BOOL wglLockVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice);
-	BOOL wglQueryVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice, int iAttribute, int *piValue);
-	BOOL wglReleaseVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice);
-	BOOL wglCopyImageSubDataNV(HGLRC hSrcRC, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, HGLRC hDstRC, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth);
-	BOOL wglDXSetResourceShareHandleNV(void *dxObject, HANDLE shareHandle);
-	HANDLE wglDXOpenDeviceNV(void *dxDevice);
-	BOOL wglDXCloseDeviceNV(HANDLE hDevice);
-	HANDLE wglDXRegisterObjectNV(HANDLE hDevice, void *dxObject, GLuint name, GLenum type, GLenum access);
-	BOOL wglDXUnregisterObjectNV(HANDLE hDevice, HANDLE hObject);
-	BOOL wglDXObjectAccessNV(HANDLE hObject, GLenum access);
-	BOOL wglDXLockObjectsNV(HANDLE hDevice, GLint count, HANDLE *hObjects);
-	BOOL wglDXUnlockObjectsNV(HANDLE hDevice, GLint count, HANDLE *hObjects);
+	void glViewportSwizzleNV(GLuint index, GLenum swizzlex, GLenum swizzley, GLenum swizzlez, GLenum swizzlew);
+	void glFramebufferTextureMultiviewOVR(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint baseViewIndex, GLsizei numViews);
+	void glHintPGI(GLenum target, GLint mode);
+	void glDetailTexFuncSGIS(GLenum target, GLsizei n, const GLfloat *points);
+	void glGetDetailTexFuncSGIS(GLenum target, GLfloat *points);
+	void glFogFuncSGIS(GLsizei n, const GLfloat *points);
+	void glGetFogFuncSGIS(GLfloat *points);
+	void glSampleMaskSGIS(GLclampf value, GLboolean invert);
+	void glSamplePatternSGIS(GLenum pattern);
+	void glPixelTexGenParameteriSGIS(GLenum pname, GLint param);
+	void glPixelTexGenParameterivSGIS(GLenum pname, const GLint *params);
+	void glPixelTexGenParameterfSGIS(GLenum pname, GLfloat param);
+	void glPixelTexGenParameterfvSGIS(GLenum pname, const GLfloat *params);
+	void glGetPixelTexGenParameterivSGIS(GLenum pname, GLint *params);
+	void glGetPixelTexGenParameterfvSGIS(GLenum pname, GLfloat *params);
+	void glPointParameterfSGIS(GLenum pname, GLfloat param);
+	void glPointParameterfvSGIS(GLenum pname, const GLfloat *params);
+	void glSharpenTexFuncSGIS(GLenum target, GLsizei n, const GLfloat *points);
+	void glGetSharpenTexFuncSGIS(GLenum target, GLfloat *points);
+	void glTexImage4DSGIS(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLint border, GLenum format, GLenum type, const void *pixels);
+	void glTexSubImage4DSGIS(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint woffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei size4d, GLenum format, GLenum type, const void *pixels);
+	void glTextureColorMaskSGIS(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha);
+	void glGetTexFilterFuncSGIS(GLenum target, GLenum filter, GLfloat *weights);
+	void glTexFilterFuncSGIS(GLenum target, GLenum filter, GLsizei n, const GLfloat *weights);
+	void glAsyncMarkerSGIX(GLuint marker);
+	GLint glFinishAsyncSGIX(GLuint *markerp);
+	GLint glPollAsyncSGIX(GLuint *markerp);
+	GLuint glGenAsyncMarkersSGIX(GLsizei range);
+	void glDeleteAsyncMarkersSGIX(GLuint marker, GLsizei range);
+	GLboolean glIsAsyncMarkerSGIX(GLuint marker);
+	void glFlushRasterSGIX(void);
+	void glFragmentColorMaterialSGIX(GLenum face, GLenum mode);
+	void glFragmentLightfSGIX(GLenum light, GLenum pname, GLfloat param);
+	void glFragmentLightfvSGIX(GLenum light, GLenum pname, const GLfloat *params);
+	void glFragmentLightiSGIX(GLenum light, GLenum pname, GLint param);
+	void glFragmentLightivSGIX(GLenum light, GLenum pname, const GLint *params);
+	void glFragmentLightModelfSGIX(GLenum pname, GLfloat param);
+	void glFragmentLightModelfvSGIX(GLenum pname, const GLfloat *params);
+	void glFragmentLightModeliSGIX(GLenum pname, GLint param);
+	void glFragmentLightModelivSGIX(GLenum pname, const GLint *params);
+	void glFragmentMaterialfSGIX(GLenum face, GLenum pname, GLfloat param);
+	void glFragmentMaterialfvSGIX(GLenum face, GLenum pname, const GLfloat *params);
+	void glFragmentMaterialiSGIX(GLenum face, GLenum pname, GLint param);
+	void glFragmentMaterialivSGIX(GLenum face, GLenum pname, const GLint *params);
+	void glGetFragmentLightfvSGIX(GLenum light, GLenum pname, GLfloat *params);
+	void glGetFragmentLightivSGIX(GLenum light, GLenum pname, GLint *params);
+	void glGetFragmentMaterialfvSGIX(GLenum face, GLenum pname, GLfloat *params);
+	void glGetFragmentMaterialivSGIX(GLenum face, GLenum pname, GLint *params);
+	void glLightEnviSGIX(GLenum pname, GLint param);
+	void glFrameZoomSGIX(GLint factor);
+	void glIglooInterfaceSGIX(GLenum pname, const void *params);
+	GLint glGetInstrumentsSGIX(void);
+	void glInstrumentsBufferSGIX(GLsizei size, GLint *buffer);
+	GLint glPollInstrumentsSGIX(GLint *marker_p);
+	void glReadInstrumentsSGIX(GLint marker);
+	void glStartInstrumentsSGIX(void);
+	void glStopInstrumentsSGIX(GLint marker);
+	void glGetListParameterfvSGIX(GLuint list, GLenum pname, GLfloat *params);
+	void glGetListParameterivSGIX(GLuint list, GLenum pname, GLint *params);
+	void glListParameterfSGIX(GLuint list, GLenum pname, GLfloat param);
+	void glListParameterfvSGIX(GLuint list, GLenum pname, const GLfloat *params);
+	void glListParameteriSGIX(GLuint list, GLenum pname, GLint param);
+	void glListParameterivSGIX(GLuint list, GLenum pname, const GLint *params);
+	void glPixelTexGenSGIX(GLenum mode);
+	void glDeformationMap3dSGIX(GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, GLdouble w1, GLdouble w2, GLint wstride, GLint worder, const GLdouble *points);
+	void glDeformationMap3fSGIX(GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, GLfloat w1, GLfloat w2, GLint wstride, GLint worder, const GLfloat *points);
+	void glDeformSGIX(GLbitfield mask);
+	void glLoadIdentityDeformationMapSGIX(GLbitfield mask);
+	void glReferencePlaneSGIX(const GLdouble *equation);
+	void glSpriteParameterfSGIX(GLenum pname, GLfloat param);
+	void glSpriteParameterfvSGIX(GLenum pname, const GLfloat *params);
+	void glSpriteParameteriSGIX(GLenum pname, GLint param);
+	void glSpriteParameterivSGIX(GLenum pname, const GLint *params);
+	void glTagSampleBufferSGIX(void);
+	void glColorTableSGI(GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const void *table);
+	void glColorTableParameterfvSGI(GLenum target, GLenum pname, const GLfloat *params);
+	void glColorTableParameterivSGI(GLenum target, GLenum pname, const GLint *params);
+	void glCopyColorTableSGI(GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width);
+	void glGetColorTableSGI(GLenum target, GLenum format, GLenum type, void *table);
+	void glGetColorTableParameterfvSGI(GLenum target, GLenum pname, GLfloat *params);
+	void glGetColorTableParameterivSGI(GLenum target, GLenum pname, GLint *params);
+	void glFinishTextureSUNX(void);
+	void glGlobalAlphaFactorbSUN(GLbyte factor);
+	void glGlobalAlphaFactorsSUN(GLshort factor);
+	void glGlobalAlphaFactoriSUN(GLint factor);
+	void glGlobalAlphaFactorfSUN(GLfloat factor);
+	void glGlobalAlphaFactordSUN(GLdouble factor);
+	void glGlobalAlphaFactorubSUN(GLubyte factor);
+	void glGlobalAlphaFactorusSUN(GLushort factor);
+	void glGlobalAlphaFactoruiSUN(GLuint factor);
+	void glDrawMeshArraysSUN(GLenum mode, GLint first, GLsizei count, GLsizei width);
+	void glReplacementCodeuiSUN(GLuint code);
+	void glReplacementCodeusSUN(GLushort code);
+	void glReplacementCodeubSUN(GLubyte code);
+	void glReplacementCodeuivSUN(const GLuint *code);
+	void glReplacementCodeusvSUN(const GLushort *code);
+	void glReplacementCodeubvSUN(const GLubyte *code);
+	void glReplacementCodePointerSUN(GLenum type, GLsizei stride, const void **pointer);
+	void glColor4ubVertex2fSUN(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y);
+	void glColor4ubVertex2fvSUN(const GLubyte *c, const GLfloat *v);
+	void glColor4ubVertex3fSUN(GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+	void glColor4ubVertex3fvSUN(const GLubyte *c, const GLfloat *v);
+	void glColor3fVertex3fSUN(GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+	void glColor3fVertex3fvSUN(const GLfloat *c, const GLfloat *v);
+	void glNormal3fVertex3fSUN(GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glNormal3fVertex3fvSUN(const GLfloat *n, const GLfloat *v);
+	void glColor4fNormal3fVertex3fSUN(GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glColor4fNormal3fVertex3fvSUN(const GLfloat *c, const GLfloat *n, const GLfloat *v);
+	void glTexCoord2fVertex3fSUN(GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
+	void glTexCoord2fVertex3fvSUN(const GLfloat *tc, const GLfloat *v);
+	void glTexCoord4fVertex4fSUN(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glTexCoord4fVertex4fvSUN(const GLfloat *tc, const GLfloat *v);
+	void glTexCoord2fColor4ubVertex3fSUN(GLfloat s, GLfloat t, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+	void glTexCoord2fColor4ubVertex3fvSUN(const GLfloat *tc, const GLubyte *c, const GLfloat *v);
+	void glTexCoord2fColor3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+	void glTexCoord2fColor3fVertex3fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *v);
+	void glTexCoord2fNormal3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glTexCoord2fNormal3fVertex3fvSUN(const GLfloat *tc, const GLfloat *n, const GLfloat *v);
+	void glTexCoord2fColor4fNormal3fVertex3fSUN(GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glTexCoord2fColor4fNormal3fVertex3fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+	void glTexCoord4fColor4fNormal3fVertex4fSUN(GLfloat s, GLfloat t, GLfloat p, GLfloat q, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+	void glTexCoord4fColor4fNormal3fVertex4fvSUN(const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+	void glReplacementCodeuiVertex3fSUN(GLuint rc, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiVertex3fvSUN(const GLuint *rc, const GLfloat *v);
+	void glReplacementCodeuiColor4ubVertex3fSUN(GLuint rc, GLubyte r, GLubyte g, GLubyte b, GLubyte a, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiColor4ubVertex3fvSUN(const GLuint *rc, const GLubyte *c, const GLfloat *v);
+	void glReplacementCodeuiColor3fVertex3fSUN(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiColor3fVertex3fvSUN(const GLuint *rc, const GLfloat *c, const GLfloat *v);
+	void glReplacementCodeuiNormal3fVertex3fSUN(GLuint rc, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *n, const GLfloat *v);
+	void glReplacementCodeuiColor4fNormal3fVertex3fSUN(GLuint rc, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiColor4fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+	void glReplacementCodeuiTexCoord2fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiTexCoord2fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *v);
+	void glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *n, const GLfloat *v);
+	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
+	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
 private:
 	// Private member variables
 	glexfp *m_pglex;
@@ -2256,156 +2573,20 @@ inline bool glex::Supports(const char *sExt) const {
 	return m_pglex->Supports(sExt);
 }
 
-inline void glex::glBlendColor(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glBlendColor(a,b,c,d);
-}
-
-inline void glex::glBlendEquation(GLenum  a) {
-	m_pglex->glBlendEquation(a);
-}
-
-inline void glex::glDrawRangeElements(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const GLvoid *f) {
+inline void glex::glDrawRangeElements(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const void *f) {
 	m_pglex->glDrawRangeElements(a,b,c,d,e,f);
 }
 
-inline void glex::glTexImage3D(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const GLvoid *j) {
+inline void glex::glTexImage3D(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const void *j) {
 	m_pglex->glTexImage3D(a,b,c,d,e,f,g,h,i,j);
 }
 
-inline void glex::glTexSubImage3D(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const GLvoid *k) {
+inline void glex::glTexSubImage3D(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const void *k) {
 	m_pglex->glTexSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
 }
 
 inline void glex::glCopyTexSubImage3D(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
 	m_pglex->glCopyTexSubImage3D(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glColorTable(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glColorTable(a,b,c,d,e,f);
-}
-
-inline void glex::glColorTableParameterfv(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glColorTableParameterfv(a,b,c);
-}
-
-inline void glex::glColorTableParameteriv(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glColorTableParameteriv(a,b,c);
-}
-
-inline void glex::glCopyColorTable(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyColorTable(a,b,c,d,e);
-}
-
-inline void glex::glGetColorTable(GLenum  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetColorTable(a,b,c,d);
-}
-
-inline void glex::glGetColorTableParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetColorTableParameterfv(a,b,c);
-}
-
-inline void glex::glGetColorTableParameteriv(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetColorTableParameteriv(a,b,c);
-}
-
-inline void glex::glColorSubTable(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glColorSubTable(a,b,c,d,e,f);
-}
-
-inline void glex::glCopyColorSubTable(GLenum  a, GLsizei  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyColorSubTable(a,b,c,d,e);
-}
-
-inline void glex::glConvolutionFilter1D(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glConvolutionFilter1D(a,b,c,d,e,f);
-}
-
-inline void glex::glConvolutionFilter2D(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const GLvoid *g) {
-	m_pglex->glConvolutionFilter2D(a,b,c,d,e,f,g);
-}
-
-inline void glex::glConvolutionParameterf(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glConvolutionParameterf(a,b,c);
-}
-
-inline void glex::glConvolutionParameterfv(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glConvolutionParameterfv(a,b,c);
-}
-
-inline void glex::glConvolutionParameteri(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glConvolutionParameteri(a,b,c);
-}
-
-inline void glex::glConvolutionParameteriv(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glConvolutionParameteriv(a,b,c);
-}
-
-inline void glex::glCopyConvolutionFilter1D(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyConvolutionFilter1D(a,b,c,d,e);
-}
-
-inline void glex::glCopyConvolutionFilter2D(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f) {
-	m_pglex->glCopyConvolutionFilter2D(a,b,c,d,e,f);
-}
-
-inline void glex::glGetConvolutionFilter(GLenum  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetConvolutionFilter(a,b,c,d);
-}
-
-inline void glex::glGetConvolutionParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetConvolutionParameterfv(a,b,c);
-}
-
-inline void glex::glGetConvolutionParameteriv(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetConvolutionParameteriv(a,b,c);
-}
-
-inline void glex::glGetSeparableFilter(GLenum  a, GLenum  b, GLenum  c, GLvoid *d, GLvoid *e, GLvoid *f) {
-	m_pglex->glGetSeparableFilter(a,b,c,d,e,f);
-}
-
-inline void glex::glSeparableFilter2D(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const GLvoid *g, const GLvoid *h) {
-	m_pglex->glSeparableFilter2D(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glGetHistogram(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLvoid *e) {
-	m_pglex->glGetHistogram(a,b,c,d,e);
-}
-
-inline void glex::glGetHistogramParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetHistogramParameterfv(a,b,c);
-}
-
-inline void glex::glGetHistogramParameteriv(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetHistogramParameteriv(a,b,c);
-}
-
-inline void glex::glGetMinmax(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLvoid *e) {
-	m_pglex->glGetMinmax(a,b,c,d,e);
-}
-
-inline void glex::glGetMinmaxParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetMinmaxParameterfv(a,b,c);
-}
-
-inline void glex::glGetMinmaxParameteriv(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetMinmaxParameteriv(a,b,c);
-}
-
-inline void glex::glHistogram(GLenum  a, GLsizei  b, GLenum  c, GLboolean  d) {
-	m_pglex->glHistogram(a,b,c,d);
-}
-
-inline void glex::glMinmax(GLenum  a, GLenum  b, GLboolean  c) {
-	m_pglex->glMinmax(a,b,c);
-}
-
-inline void glex::glResetHistogram(GLenum  a) {
-	m_pglex->glResetHistogram(a);
-}
-
-inline void glex::glResetMinmax(GLenum  a) {
-	m_pglex->glResetMinmax(a);
 }
 
 inline void glex::glActiveTexture(GLenum  a) {
@@ -2416,31 +2597,31 @@ inline void glex::glSampleCoverage(GLfloat  a, GLboolean  b) {
 	m_pglex->glSampleCoverage(a,b);
 }
 
-inline void glex::glCompressedTexImage3D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const GLvoid *i) {
+inline void glex::glCompressedTexImage3D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const void *i) {
 	m_pglex->glCompressedTexImage3D(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glCompressedTexImage2D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLsizei  g, const GLvoid *h) {
+inline void glex::glCompressedTexImage2D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLsizei  g, const void *h) {
 	m_pglex->glCompressedTexImage2D(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glCompressedTexImage1D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLint  e, GLsizei  f, const GLvoid *g) {
+inline void glex::glCompressedTexImage1D(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLint  e, GLsizei  f, const void *g) {
 	m_pglex->glCompressedTexImage1D(a,b,c,d,e,f,g);
 }
 
-inline void glex::glCompressedTexSubImage3D(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLsizei  j, const GLvoid *k) {
+inline void glex::glCompressedTexSubImage3D(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLsizei  j, const void *k) {
 	m_pglex->glCompressedTexSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glCompressedTexSubImage2D(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLsizei  h, const GLvoid *i) {
+inline void glex::glCompressedTexSubImage2D(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLsizei  h, const void *i) {
 	m_pglex->glCompressedTexSubImage2D(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glCompressedTexSubImage1D(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLsizei  f, const GLvoid *g) {
+inline void glex::glCompressedTexSubImage1D(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLsizei  f, const void *g) {
 	m_pglex->glCompressedTexSubImage1D(a,b,c,d,e,f,g);
 }
 
-inline void glex::glGetCompressedTexImage(GLenum  a, GLint  b, GLvoid *c) {
+inline void glex::glGetCompressedTexImage(GLenum  a, GLint  b, void *c) {
 	m_pglex->glGetCompressedTexImage(a,b,c);
 }
 
@@ -2600,7 +2781,7 @@ inline void glex::glMultiDrawArrays(GLenum  a, const GLint *b, const GLsizei *c,
 	m_pglex->glMultiDrawArrays(a,b,c,d);
 }
 
-inline void glex::glMultiDrawElements(GLenum  a, const GLsizei *b, GLenum  c, const GLvoid* const *d, GLsizei  e) {
+inline void glex::glMultiDrawElements(GLenum  a, const GLsizei *b, GLenum  c, const void *const*d, GLsizei  e) {
 	m_pglex->glMultiDrawElements(a,b,c,d,e);
 }
 
@@ -2636,7 +2817,7 @@ inline void glex::glFogCoorddv(const GLdouble *a) {
 	m_pglex->glFogCoorddv(a);
 }
 
-inline void glex::glFogCoordPointer(GLenum  a, GLsizei  b, const GLvoid *c) {
+inline void glex::glFogCoordPointer(GLenum  a, GLsizei  b, const void *c) {
 	m_pglex->glFogCoordPointer(a,b,c);
 }
 
@@ -2704,7 +2885,7 @@ inline void glex::glSecondaryColor3usv(const GLushort *a) {
 	m_pglex->glSecondaryColor3usv(a);
 }
 
-inline void glex::glSecondaryColorPointer(GLint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
+inline void glex::glSecondaryColorPointer(GLint  a, GLenum  b, GLsizei  c, const void *d) {
 	m_pglex->glSecondaryColorPointer(a,b,c,d);
 }
 
@@ -2772,6 +2953,14 @@ inline void glex::glWindowPos3sv(const GLshort *a) {
 	m_pglex->glWindowPos3sv(a);
 }
 
+inline void glex::glBlendColor(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glBlendColor(a,b,c,d);
+}
+
+inline void glex::glBlendEquation(GLenum  a) {
+	m_pglex->glBlendEquation(a);
+}
+
 inline void glex::glGenQueries(GLsizei  a, GLuint *b) {
 	m_pglex->glGenQueries(a,b);
 }
@@ -2820,19 +3009,19 @@ inline GLboolean glex::glIsBuffer(GLuint  a) {
 	return m_pglex->glIsBuffer(a);
 }
 
-inline void glex::glBufferData(GLenum  a, GLsizeiptr  b, const GLvoid *c, GLenum  d) {
+inline void glex::glBufferData(GLenum  a, GLsizeiptr  b, const void *c, GLenum  d) {
 	m_pglex->glBufferData(a,b,c,d);
 }
 
-inline void glex::glBufferSubData(GLenum  a, GLintptr  b, GLsizeiptr  c, const GLvoid *d) {
+inline void glex::glBufferSubData(GLenum  a, GLintptr  b, GLsizeiptr  c, const void *d) {
 	m_pglex->glBufferSubData(a,b,c,d);
 }
 
-inline void glex::glGetBufferSubData(GLenum  a, GLintptr  b, GLsizeiptr  c, GLvoid *d) {
+inline void glex::glGetBufferSubData(GLenum  a, GLintptr  b, GLsizeiptr  c, void *d) {
 	m_pglex->glGetBufferSubData(a,b,c,d);
 }
 
-inline GLvoid* glex::glMapBuffer(GLenum  a, GLenum  b) {
+inline void * glex::glMapBuffer(GLenum  a, GLenum  b) {
 	return m_pglex->glMapBuffer(a,b);
 }
 
@@ -2844,7 +3033,7 @@ inline void glex::glGetBufferParameteriv(GLenum  a, GLenum  b, GLint *c) {
 	m_pglex->glGetBufferParameteriv(a,b,c);
 }
 
-inline void glex::glGetBufferPointerv(GLenum  a, GLenum  b, GLvoid* *c) {
+inline void glex::glGetBufferPointerv(GLenum  a, GLenum  b, void **c) {
 	m_pglex->glGetBufferPointerv(a,b,c);
 }
 
@@ -2968,7 +3157,7 @@ inline void glex::glGetVertexAttribiv(GLuint  a, GLenum  b, GLint *c) {
 	m_pglex->glGetVertexAttribiv(a,b,c);
 }
 
-inline void glex::glGetVertexAttribPointerv(GLuint  a, GLenum  b, GLvoid* *c) {
+inline void glex::glGetVertexAttribPointerv(GLuint  a, GLenum  b, void **c) {
 	m_pglex->glGetVertexAttribPointerv(a,b,c);
 }
 
@@ -2984,7 +3173,7 @@ inline void glex::glLinkProgram(GLuint  a) {
 	m_pglex->glLinkProgram(a);
 }
 
-inline void glex::glShaderSource(GLuint  a, GLsizei  b, const GLchar* const *c, const GLint *d) {
+inline void glex::glShaderSource(GLuint  a, GLsizei  b, const GLchar *const*c, const GLint *d) {
 	m_pglex->glShaderSource(a,b,c,d);
 }
 
@@ -3216,7 +3405,7 @@ inline void glex::glVertexAttrib4usv(GLuint  a, const GLushort *b) {
 	m_pglex->glVertexAttrib4usv(a,b);
 }
 
-inline void glex::glVertexAttribPointer(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, const GLvoid *f) {
+inline void glex::glVertexAttribPointer(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, const void *f) {
 	m_pglex->glVertexAttribPointer(a,b,c,d,e,f);
 }
 
@@ -3284,7 +3473,7 @@ inline void glex::glBindBufferBase(GLenum  a, GLuint  b, GLuint  c) {
 	m_pglex->glBindBufferBase(a,b,c);
 }
 
-inline void glex::glTransformFeedbackVaryings(GLuint  a, GLsizei  b, const GLchar* const *c, GLenum  d) {
+inline void glex::glTransformFeedbackVaryings(GLuint  a, GLsizei  b, const GLchar *const*c, GLenum  d) {
 	m_pglex->glTransformFeedbackVaryings(a,b,c,d);
 }
 
@@ -3304,7 +3493,7 @@ inline void glex::glEndConditionalRender(void) {
 	m_pglex->glEndConditionalRender();
 }
 
-inline void glex::glVertexAttribIPointer(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
+inline void glex::glVertexAttribIPointer(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
 	m_pglex->glVertexAttribIPointer(a,b,c,d,e);
 }
 
@@ -3476,882 +3665,6 @@ inline const GLubyte * glex::glGetStringi(GLenum  a, GLuint  b) {
 	return m_pglex->glGetStringi(a,b);
 }
 
-inline void glex::glDrawArraysInstanced(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glDrawArraysInstanced(a,b,c,d);
-}
-
-inline void glex::glDrawElementsInstanced(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLsizei  e) {
-	m_pglex->glDrawElementsInstanced(a,b,c,d,e);
-}
-
-inline void glex::glTexBuffer(GLenum  a, GLenum  b, GLuint  c) {
-	m_pglex->glTexBuffer(a,b,c);
-}
-
-inline void glex::glPrimitiveRestartIndex(GLuint  a) {
-	m_pglex->glPrimitiveRestartIndex(a);
-}
-
-inline void glex::glGetInteger64i_v(GLenum  a, GLuint  b, GLint64 *c) {
-	m_pglex->glGetInteger64i_v(a,b,c);
-}
-
-inline void glex::glGetBufferParameteri64v(GLenum  a, GLenum  b, GLint64 *c) {
-	m_pglex->glGetBufferParameteri64v(a,b,c);
-}
-
-inline void glex::glFramebufferTexture(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
-	m_pglex->glFramebufferTexture(a,b,c,d);
-}
-
-inline void glex::glVertexAttribDivisor(GLuint  a, GLuint  b) {
-	m_pglex->glVertexAttribDivisor(a,b);
-}
-
-inline void glex::glMinSampleShading(GLfloat  a) {
-	m_pglex->glMinSampleShading(a);
-}
-
-inline void glex::glBlendEquationi(GLuint  a, GLenum  b) {
-	m_pglex->glBlendEquationi(a,b);
-}
-
-inline void glex::glBlendEquationSeparatei(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendEquationSeparatei(a,b,c);
-}
-
-inline void glex::glBlendFunci(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendFunci(a,b,c);
-}
-
-inline void glex::glBlendFuncSeparatei(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
-	m_pglex->glBlendFuncSeparatei(a,b,c,d,e);
-}
-
-inline void glex::glActiveTextureARB(GLenum  a) {
-	m_pglex->glActiveTextureARB(a);
-}
-
-inline void glex::glClientActiveTextureARB(GLenum  a) {
-	m_pglex->glClientActiveTextureARB(a);
-}
-
-inline void glex::glMultiTexCoord1dARB(GLenum  a, GLdouble  b) {
-	m_pglex->glMultiTexCoord1dARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1dvARB(GLenum  a, const GLdouble *b) {
-	m_pglex->glMultiTexCoord1dvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1fARB(GLenum  a, GLfloat  b) {
-	m_pglex->glMultiTexCoord1fARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1fvARB(GLenum  a, const GLfloat *b) {
-	m_pglex->glMultiTexCoord1fvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1iARB(GLenum  a, GLint  b) {
-	m_pglex->glMultiTexCoord1iARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1ivARB(GLenum  a, const GLint *b) {
-	m_pglex->glMultiTexCoord1ivARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1sARB(GLenum  a, GLshort  b) {
-	m_pglex->glMultiTexCoord1sARB(a,b);
-}
-
-inline void glex::glMultiTexCoord1svARB(GLenum  a, const GLshort *b) {
-	m_pglex->glMultiTexCoord1svARB(a,b);
-}
-
-inline void glex::glMultiTexCoord2dARB(GLenum  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glMultiTexCoord2dARB(a,b,c);
-}
-
-inline void glex::glMultiTexCoord2dvARB(GLenum  a, const GLdouble *b) {
-	m_pglex->glMultiTexCoord2dvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord2fARB(GLenum  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glMultiTexCoord2fARB(a,b,c);
-}
-
-inline void glex::glMultiTexCoord2fvARB(GLenum  a, const GLfloat *b) {
-	m_pglex->glMultiTexCoord2fvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord2iARB(GLenum  a, GLint  b, GLint  c) {
-	m_pglex->glMultiTexCoord2iARB(a,b,c);
-}
-
-inline void glex::glMultiTexCoord2ivARB(GLenum  a, const GLint *b) {
-	m_pglex->glMultiTexCoord2ivARB(a,b);
-}
-
-inline void glex::glMultiTexCoord2sARB(GLenum  a, GLshort  b, GLshort  c) {
-	m_pglex->glMultiTexCoord2sARB(a,b,c);
-}
-
-inline void glex::glMultiTexCoord2svARB(GLenum  a, const GLshort *b) {
-	m_pglex->glMultiTexCoord2svARB(a,b);
-}
-
-inline void glex::glMultiTexCoord3dARB(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glMultiTexCoord3dARB(a,b,c,d);
-}
-
-inline void glex::glMultiTexCoord3dvARB(GLenum  a, const GLdouble *b) {
-	m_pglex->glMultiTexCoord3dvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord3fARB(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glMultiTexCoord3fARB(a,b,c,d);
-}
-
-inline void glex::glMultiTexCoord3fvARB(GLenum  a, const GLfloat *b) {
-	m_pglex->glMultiTexCoord3fvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord3iARB(GLenum  a, GLint  b, GLint  c, GLint  d) {
-	m_pglex->glMultiTexCoord3iARB(a,b,c,d);
-}
-
-inline void glex::glMultiTexCoord3ivARB(GLenum  a, const GLint *b) {
-	m_pglex->glMultiTexCoord3ivARB(a,b);
-}
-
-inline void glex::glMultiTexCoord3sARB(GLenum  a, GLshort  b, GLshort  c, GLshort  d) {
-	m_pglex->glMultiTexCoord3sARB(a,b,c,d);
-}
-
-inline void glex::glMultiTexCoord3svARB(GLenum  a, const GLshort *b) {
-	m_pglex->glMultiTexCoord3svARB(a,b);
-}
-
-inline void glex::glMultiTexCoord4dARB(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glMultiTexCoord4dARB(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexCoord4dvARB(GLenum  a, const GLdouble *b) {
-	m_pglex->glMultiTexCoord4dvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord4fARB(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glMultiTexCoord4fARB(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexCoord4fvARB(GLenum  a, const GLfloat *b) {
-	m_pglex->glMultiTexCoord4fvARB(a,b);
-}
-
-inline void glex::glMultiTexCoord4iARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e) {
-	m_pglex->glMultiTexCoord4iARB(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexCoord4ivARB(GLenum  a, const GLint *b) {
-	m_pglex->glMultiTexCoord4ivARB(a,b);
-}
-
-inline void glex::glMultiTexCoord4sARB(GLenum  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
-	m_pglex->glMultiTexCoord4sARB(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexCoord4svARB(GLenum  a, const GLshort *b) {
-	m_pglex->glMultiTexCoord4svARB(a,b);
-}
-
-inline void glex::glLoadTransposeMatrixfARB(const GLfloat *a) {
-	m_pglex->glLoadTransposeMatrixfARB(a);
-}
-
-inline void glex::glLoadTransposeMatrixdARB(const GLdouble *a) {
-	m_pglex->glLoadTransposeMatrixdARB(a);
-}
-
-inline void glex::glMultTransposeMatrixfARB(const GLfloat *a) {
-	m_pglex->glMultTransposeMatrixfARB(a);
-}
-
-inline void glex::glMultTransposeMatrixdARB(const GLdouble *a) {
-	m_pglex->glMultTransposeMatrixdARB(a);
-}
-
-inline void glex::glSampleCoverageARB(GLfloat  a, GLboolean  b) {
-	m_pglex->glSampleCoverageARB(a,b);
-}
-
-inline void glex::glCompressedTexImage3DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const GLvoid *i) {
-	m_pglex->glCompressedTexImage3DARB(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCompressedTexImage2DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLsizei  g, const GLvoid *h) {
-	m_pglex->glCompressedTexImage2DARB(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glCompressedTexImage1DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLint  e, GLsizei  f, const GLvoid *g) {
-	m_pglex->glCompressedTexImage1DARB(a,b,c,d,e,f,g);
-}
-
-inline void glex::glCompressedTexSubImage3DARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLsizei  j, const GLvoid *k) {
-	m_pglex->glCompressedTexSubImage3DARB(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline void glex::glCompressedTexSubImage2DARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLsizei  h, const GLvoid *i) {
-	m_pglex->glCompressedTexSubImage2DARB(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCompressedTexSubImage1DARB(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLsizei  f, const GLvoid *g) {
-	m_pglex->glCompressedTexSubImage1DARB(a,b,c,d,e,f,g);
-}
-
-inline void glex::glGetCompressedTexImageARB(GLenum  a, GLint  b, GLvoid *c) {
-	m_pglex->glGetCompressedTexImageARB(a,b,c);
-}
-
-inline void glex::glPointParameterfARB(GLenum  a, GLfloat  b) {
-	m_pglex->glPointParameterfARB(a,b);
-}
-
-inline void glex::glPointParameterfvARB(GLenum  a, const GLfloat *b) {
-	m_pglex->glPointParameterfvARB(a,b);
-}
-
-inline void glex::glWeightbvARB(GLint  a, const GLbyte *b) {
-	m_pglex->glWeightbvARB(a,b);
-}
-
-inline void glex::glWeightsvARB(GLint  a, const GLshort *b) {
-	m_pglex->glWeightsvARB(a,b);
-}
-
-inline void glex::glWeightivARB(GLint  a, const GLint *b) {
-	m_pglex->glWeightivARB(a,b);
-}
-
-inline void glex::glWeightfvARB(GLint  a, const GLfloat *b) {
-	m_pglex->glWeightfvARB(a,b);
-}
-
-inline void glex::glWeightdvARB(GLint  a, const GLdouble *b) {
-	m_pglex->glWeightdvARB(a,b);
-}
-
-inline void glex::glWeightubvARB(GLint  a, const GLubyte *b) {
-	m_pglex->glWeightubvARB(a,b);
-}
-
-inline void glex::glWeightusvARB(GLint  a, const GLushort *b) {
-	m_pglex->glWeightusvARB(a,b);
-}
-
-inline void glex::glWeightuivARB(GLint  a, const GLuint *b) {
-	m_pglex->glWeightuivARB(a,b);
-}
-
-inline void glex::glWeightPointerARB(GLint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glWeightPointerARB(a,b,c,d);
-}
-
-inline void glex::glVertexBlendARB(GLint  a) {
-	m_pglex->glVertexBlendARB(a);
-}
-
-inline void glex::glCurrentPaletteMatrixARB(GLint  a) {
-	m_pglex->glCurrentPaletteMatrixARB(a);
-}
-
-inline void glex::glMatrixIndexubvARB(GLint  a, const GLubyte *b) {
-	m_pglex->glMatrixIndexubvARB(a,b);
-}
-
-inline void glex::glMatrixIndexusvARB(GLint  a, const GLushort *b) {
-	m_pglex->glMatrixIndexusvARB(a,b);
-}
-
-inline void glex::glMatrixIndexuivARB(GLint  a, const GLuint *b) {
-	m_pglex->glMatrixIndexuivARB(a,b);
-}
-
-inline void glex::glMatrixIndexPointerARB(GLint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glMatrixIndexPointerARB(a,b,c,d);
-}
-
-inline void glex::glWindowPos2dARB(GLdouble  a, GLdouble  b) {
-	m_pglex->glWindowPos2dARB(a,b);
-}
-
-inline void glex::glWindowPos2dvARB(const GLdouble *a) {
-	m_pglex->glWindowPos2dvARB(a);
-}
-
-inline void glex::glWindowPos2fARB(GLfloat  a, GLfloat  b) {
-	m_pglex->glWindowPos2fARB(a,b);
-}
-
-inline void glex::glWindowPos2fvARB(const GLfloat *a) {
-	m_pglex->glWindowPos2fvARB(a);
-}
-
-inline void glex::glWindowPos2iARB(GLint  a, GLint  b) {
-	m_pglex->glWindowPos2iARB(a,b);
-}
-
-inline void glex::glWindowPos2ivARB(const GLint *a) {
-	m_pglex->glWindowPos2ivARB(a);
-}
-
-inline void glex::glWindowPos2sARB(GLshort  a, GLshort  b) {
-	m_pglex->glWindowPos2sARB(a,b);
-}
-
-inline void glex::glWindowPos2svARB(const GLshort *a) {
-	m_pglex->glWindowPos2svARB(a);
-}
-
-inline void glex::glWindowPos3dARB(GLdouble  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glWindowPos3dARB(a,b,c);
-}
-
-inline void glex::glWindowPos3dvARB(const GLdouble *a) {
-	m_pglex->glWindowPos3dvARB(a);
-}
-
-inline void glex::glWindowPos3fARB(GLfloat  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glWindowPos3fARB(a,b,c);
-}
-
-inline void glex::glWindowPos3fvARB(const GLfloat *a) {
-	m_pglex->glWindowPos3fvARB(a);
-}
-
-inline void glex::glWindowPos3iARB(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glWindowPos3iARB(a,b,c);
-}
-
-inline void glex::glWindowPos3ivARB(const GLint *a) {
-	m_pglex->glWindowPos3ivARB(a);
-}
-
-inline void glex::glWindowPos3sARB(GLshort  a, GLshort  b, GLshort  c) {
-	m_pglex->glWindowPos3sARB(a,b,c);
-}
-
-inline void glex::glWindowPos3svARB(const GLshort *a) {
-	m_pglex->glWindowPos3svARB(a);
-}
-
-inline void glex::glVertexAttrib1dARB(GLuint  a, GLdouble  b) {
-	m_pglex->glVertexAttrib1dARB(a,b);
-}
-
-inline void glex::glVertexAttrib1dvARB(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib1dvARB(a,b);
-}
-
-inline void glex::glVertexAttrib1fARB(GLuint  a, GLfloat  b) {
-	m_pglex->glVertexAttrib1fARB(a,b);
-}
-
-inline void glex::glVertexAttrib1fvARB(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib1fvARB(a,b);
-}
-
-inline void glex::glVertexAttrib1sARB(GLuint  a, GLshort  b) {
-	m_pglex->glVertexAttrib1sARB(a,b);
-}
-
-inline void glex::glVertexAttrib1svARB(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib1svARB(a,b);
-}
-
-inline void glex::glVertexAttrib2dARB(GLuint  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glVertexAttrib2dARB(a,b,c);
-}
-
-inline void glex::glVertexAttrib2dvARB(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib2dvARB(a,b);
-}
-
-inline void glex::glVertexAttrib2fARB(GLuint  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glVertexAttrib2fARB(a,b,c);
-}
-
-inline void glex::glVertexAttrib2fvARB(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib2fvARB(a,b);
-}
-
-inline void glex::glVertexAttrib2sARB(GLuint  a, GLshort  b, GLshort  c) {
-	m_pglex->glVertexAttrib2sARB(a,b,c);
-}
-
-inline void glex::glVertexAttrib2svARB(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib2svARB(a,b);
-}
-
-inline void glex::glVertexAttrib3dARB(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glVertexAttrib3dARB(a,b,c,d);
-}
-
-inline void glex::glVertexAttrib3dvARB(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib3dvARB(a,b);
-}
-
-inline void glex::glVertexAttrib3fARB(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glVertexAttrib3fARB(a,b,c,d);
-}
-
-inline void glex::glVertexAttrib3fvARB(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib3fvARB(a,b);
-}
-
-inline void glex::glVertexAttrib3sARB(GLuint  a, GLshort  b, GLshort  c, GLshort  d) {
-	m_pglex->glVertexAttrib3sARB(a,b,c,d);
-}
-
-inline void glex::glVertexAttrib3svARB(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib3svARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NbvARB(GLuint  a, const GLbyte *b) {
-	m_pglex->glVertexAttrib4NbvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NivARB(GLuint  a, const GLint *b) {
-	m_pglex->glVertexAttrib4NivARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NsvARB(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib4NsvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NubARB(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e) {
-	m_pglex->glVertexAttrib4NubARB(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttrib4NubvARB(GLuint  a, const GLubyte *b) {
-	m_pglex->glVertexAttrib4NubvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NuivARB(GLuint  a, const GLuint *b) {
-	m_pglex->glVertexAttrib4NuivARB(a,b);
-}
-
-inline void glex::glVertexAttrib4NusvARB(GLuint  a, const GLushort *b) {
-	m_pglex->glVertexAttrib4NusvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4bvARB(GLuint  a, const GLbyte *b) {
-	m_pglex->glVertexAttrib4bvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4dARB(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glVertexAttrib4dARB(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttrib4dvARB(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib4dvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4fARB(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glVertexAttrib4fARB(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttrib4fvARB(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib4fvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4ivARB(GLuint  a, const GLint *b) {
-	m_pglex->glVertexAttrib4ivARB(a,b);
-}
-
-inline void glex::glVertexAttrib4sARB(GLuint  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
-	m_pglex->glVertexAttrib4sARB(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttrib4svARB(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib4svARB(a,b);
-}
-
-inline void glex::glVertexAttrib4ubvARB(GLuint  a, const GLubyte *b) {
-	m_pglex->glVertexAttrib4ubvARB(a,b);
-}
-
-inline void glex::glVertexAttrib4uivARB(GLuint  a, const GLuint *b) {
-	m_pglex->glVertexAttrib4uivARB(a,b);
-}
-
-inline void glex::glVertexAttrib4usvARB(GLuint  a, const GLushort *b) {
-	m_pglex->glVertexAttrib4usvARB(a,b);
-}
-
-inline void glex::glVertexAttribPointerARB(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, const GLvoid *f) {
-	m_pglex->glVertexAttribPointerARB(a,b,c,d,e,f);
-}
-
-inline void glex::glEnableVertexAttribArrayARB(GLuint  a) {
-	m_pglex->glEnableVertexAttribArrayARB(a);
-}
-
-inline void glex::glDisableVertexAttribArrayARB(GLuint  a) {
-	m_pglex->glDisableVertexAttribArrayARB(a);
-}
-
-inline void glex::glProgramStringARB(GLenum  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glProgramStringARB(a,b,c,d);
-}
-
-inline void glex::glBindProgramARB(GLenum  a, GLuint  b) {
-	m_pglex->glBindProgramARB(a,b);
-}
-
-inline void glex::glDeleteProgramsARB(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteProgramsARB(a,b);
-}
-
-inline void glex::glGenProgramsARB(GLsizei  a, GLuint *b) {
-	m_pglex->glGenProgramsARB(a,b);
-}
-
-inline void glex::glProgramEnvParameter4dARB(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
-	m_pglex->glProgramEnvParameter4dARB(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramEnvParameter4dvARB(GLenum  a, GLuint  b, const GLdouble *c) {
-	m_pglex->glProgramEnvParameter4dvARB(a,b,c);
-}
-
-inline void glex::glProgramEnvParameter4fARB(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glProgramEnvParameter4fARB(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramEnvParameter4fvARB(GLenum  a, GLuint  b, const GLfloat *c) {
-	m_pglex->glProgramEnvParameter4fvARB(a,b,c);
-}
-
-inline void glex::glProgramLocalParameter4dARB(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
-	m_pglex->glProgramLocalParameter4dARB(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramLocalParameter4dvARB(GLenum  a, GLuint  b, const GLdouble *c) {
-	m_pglex->glProgramLocalParameter4dvARB(a,b,c);
-}
-
-inline void glex::glProgramLocalParameter4fARB(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glProgramLocalParameter4fARB(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramLocalParameter4fvARB(GLenum  a, GLuint  b, const GLfloat *c) {
-	m_pglex->glProgramLocalParameter4fvARB(a,b,c);
-}
-
-inline void glex::glGetProgramEnvParameterdvARB(GLenum  a, GLuint  b, GLdouble *c) {
-	m_pglex->glGetProgramEnvParameterdvARB(a,b,c);
-}
-
-inline void glex::glGetProgramEnvParameterfvARB(GLenum  a, GLuint  b, GLfloat *c) {
-	m_pglex->glGetProgramEnvParameterfvARB(a,b,c);
-}
-
-inline void glex::glGetProgramLocalParameterdvARB(GLenum  a, GLuint  b, GLdouble *c) {
-	m_pglex->glGetProgramLocalParameterdvARB(a,b,c);
-}
-
-inline void glex::glGetProgramLocalParameterfvARB(GLenum  a, GLuint  b, GLfloat *c) {
-	m_pglex->glGetProgramLocalParameterfvARB(a,b,c);
-}
-
-inline void glex::glGetProgramivARB(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetProgramivARB(a,b,c);
-}
-
-inline void glex::glGetProgramStringARB(GLenum  a, GLenum  b, GLvoid *c) {
-	m_pglex->glGetProgramStringARB(a,b,c);
-}
-
-inline void glex::glGetVertexAttribdvARB(GLuint  a, GLenum  b, GLdouble *c) {
-	m_pglex->glGetVertexAttribdvARB(a,b,c);
-}
-
-inline void glex::glGetVertexAttribfvARB(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetVertexAttribfvARB(a,b,c);
-}
-
-inline void glex::glGetVertexAttribivARB(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetVertexAttribivARB(a,b,c);
-}
-
-inline void glex::glGetVertexAttribPointervARB(GLuint  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetVertexAttribPointervARB(a,b,c);
-}
-
-inline GLboolean glex::glIsProgramARB(GLuint  a) {
-	return m_pglex->glIsProgramARB(a);
-}
-
-inline void glex::glBindBufferARB(GLenum  a, GLuint  b) {
-	m_pglex->glBindBufferARB(a,b);
-}
-
-inline void glex::glDeleteBuffersARB(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteBuffersARB(a,b);
-}
-
-inline void glex::glGenBuffersARB(GLsizei  a, GLuint *b) {
-	m_pglex->glGenBuffersARB(a,b);
-}
-
-inline GLboolean glex::glIsBufferARB(GLuint  a) {
-	return m_pglex->glIsBufferARB(a);
-}
-
-inline void glex::glBufferDataARB(GLenum  a, GLsizeiptrARB  b, const GLvoid *c, GLenum  d) {
-	m_pglex->glBufferDataARB(a,b,c,d);
-}
-
-inline void glex::glBufferSubDataARB(GLenum  a, GLintptrARB  b, GLsizeiptrARB  c, const GLvoid *d) {
-	m_pglex->glBufferSubDataARB(a,b,c,d);
-}
-
-inline void glex::glGetBufferSubDataARB(GLenum  a, GLintptrARB  b, GLsizeiptrARB  c, GLvoid *d) {
-	m_pglex->glGetBufferSubDataARB(a,b,c,d);
-}
-
-inline GLvoid* glex::glMapBufferARB(GLenum  a, GLenum  b) {
-	return m_pglex->glMapBufferARB(a,b);
-}
-
-inline GLboolean glex::glUnmapBufferARB(GLenum  a) {
-	return m_pglex->glUnmapBufferARB(a);
-}
-
-inline void glex::glGetBufferParameterivARB(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetBufferParameterivARB(a,b,c);
-}
-
-inline void glex::glGetBufferPointervARB(GLenum  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetBufferPointervARB(a,b,c);
-}
-
-inline void glex::glGenQueriesARB(GLsizei  a, GLuint *b) {
-	m_pglex->glGenQueriesARB(a,b);
-}
-
-inline void glex::glDeleteQueriesARB(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteQueriesARB(a,b);
-}
-
-inline GLboolean glex::glIsQueryARB(GLuint  a) {
-	return m_pglex->glIsQueryARB(a);
-}
-
-inline void glex::glBeginQueryARB(GLenum  a, GLuint  b) {
-	m_pglex->glBeginQueryARB(a,b);
-}
-
-inline void glex::glEndQueryARB(GLenum  a) {
-	m_pglex->glEndQueryARB(a);
-}
-
-inline void glex::glGetQueryivARB(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetQueryivARB(a,b,c);
-}
-
-inline void glex::glGetQueryObjectivARB(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetQueryObjectivARB(a,b,c);
-}
-
-inline void glex::glGetQueryObjectuivARB(GLuint  a, GLenum  b, GLuint *c) {
-	m_pglex->glGetQueryObjectuivARB(a,b,c);
-}
-
-inline void glex::glDeleteObjectARB(GLhandleARB  a) {
-	m_pglex->glDeleteObjectARB(a);
-}
-
-inline GLhandleARB glex::glGetHandleARB(GLenum  a) {
-	return m_pglex->glGetHandleARB(a);
-}
-
-inline void glex::glDetachObjectARB(GLhandleARB  a, GLhandleARB  b) {
-	m_pglex->glDetachObjectARB(a,b);
-}
-
-inline GLhandleARB glex::glCreateShaderObjectARB(GLenum  a) {
-	return m_pglex->glCreateShaderObjectARB(a);
-}
-
-inline void glex::glShaderSourceARB(GLhandleARB  a, GLsizei  b, const GLcharARB* *c, const GLint *d) {
-	m_pglex->glShaderSourceARB(a,b,c,d);
-}
-
-inline void glex::glCompileShaderARB(GLhandleARB  a) {
-	m_pglex->glCompileShaderARB(a);
-}
-
-inline GLhandleARB glex::glCreateProgramObjectARB(void) {
-	return m_pglex->glCreateProgramObjectARB();
-}
-
-inline void glex::glAttachObjectARB(GLhandleARB  a, GLhandleARB  b) {
-	m_pglex->glAttachObjectARB(a,b);
-}
-
-inline void glex::glLinkProgramARB(GLhandleARB  a) {
-	m_pglex->glLinkProgramARB(a);
-}
-
-inline void glex::glUseProgramObjectARB(GLhandleARB  a) {
-	m_pglex->glUseProgramObjectARB(a);
-}
-
-inline void glex::glValidateProgramARB(GLhandleARB  a) {
-	m_pglex->glValidateProgramARB(a);
-}
-
-inline void glex::glUniform1fARB(GLint  a, GLfloat  b) {
-	m_pglex->glUniform1fARB(a,b);
-}
-
-inline void glex::glUniform2fARB(GLint  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glUniform2fARB(a,b,c);
-}
-
-inline void glex::glUniform3fARB(GLint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glUniform3fARB(a,b,c,d);
-}
-
-inline void glex::glUniform4fARB(GLint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glUniform4fARB(a,b,c,d,e);
-}
-
-inline void glex::glUniform1iARB(GLint  a, GLint  b) {
-	m_pglex->glUniform1iARB(a,b);
-}
-
-inline void glex::glUniform2iARB(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glUniform2iARB(a,b,c);
-}
-
-inline void glex::glUniform3iARB(GLint  a, GLint  b, GLint  c, GLint  d) {
-	m_pglex->glUniform3iARB(a,b,c,d);
-}
-
-inline void glex::glUniform4iARB(GLint  a, GLint  b, GLint  c, GLint  d, GLint  e) {
-	m_pglex->glUniform4iARB(a,b,c,d,e);
-}
-
-inline void glex::glUniform1fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glUniform1fvARB(a,b,c);
-}
-
-inline void glex::glUniform2fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glUniform2fvARB(a,b,c);
-}
-
-inline void glex::glUniform3fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glUniform3fvARB(a,b,c);
-}
-
-inline void glex::glUniform4fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glUniform4fvARB(a,b,c);
-}
-
-inline void glex::glUniform1ivARB(GLint  a, GLsizei  b, const GLint *c) {
-	m_pglex->glUniform1ivARB(a,b,c);
-}
-
-inline void glex::glUniform2ivARB(GLint  a, GLsizei  b, const GLint *c) {
-	m_pglex->glUniform2ivARB(a,b,c);
-}
-
-inline void glex::glUniform3ivARB(GLint  a, GLsizei  b, const GLint *c) {
-	m_pglex->glUniform3ivARB(a,b,c);
-}
-
-inline void glex::glUniform4ivARB(GLint  a, GLsizei  b, const GLint *c) {
-	m_pglex->glUniform4ivARB(a,b,c);
-}
-
-inline void glex::glUniformMatrix2fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
-	m_pglex->glUniformMatrix2fvARB(a,b,c,d);
-}
-
-inline void glex::glUniformMatrix3fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
-	m_pglex->glUniformMatrix3fvARB(a,b,c,d);
-}
-
-inline void glex::glUniformMatrix4fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
-	m_pglex->glUniformMatrix4fvARB(a,b,c,d);
-}
-
-inline void glex::glGetObjectParameterfvARB(GLhandleARB  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetObjectParameterfvARB(a,b,c);
-}
-
-inline void glex::glGetObjectParameterivARB(GLhandleARB  a, GLenum  b, GLint *c) {
-	m_pglex->glGetObjectParameterivARB(a,b,c);
-}
-
-inline void glex::glGetInfoLogARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLcharARB *d) {
-	m_pglex->glGetInfoLogARB(a,b,c,d);
-}
-
-inline void glex::glGetAttachedObjectsARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLhandleARB *d) {
-	m_pglex->glGetAttachedObjectsARB(a,b,c,d);
-}
-
-inline GLint glex::glGetUniformLocationARB(GLhandleARB  a, const GLcharARB *b) {
-	return m_pglex->glGetUniformLocationARB(a,b);
-}
-
-inline void glex::glGetActiveUniformARB(GLhandleARB  a, GLuint  b, GLsizei  c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
-	m_pglex->glGetActiveUniformARB(a,b,c,d,e,f,g);
-}
-
-inline void glex::glGetUniformfvARB(GLhandleARB  a, GLint  b, GLfloat *c) {
-	m_pglex->glGetUniformfvARB(a,b,c);
-}
-
-inline void glex::glGetUniformivARB(GLhandleARB  a, GLint  b, GLint *c) {
-	m_pglex->glGetUniformivARB(a,b,c);
-}
-
-inline void glex::glGetShaderSourceARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLcharARB *d) {
-	m_pglex->glGetShaderSourceARB(a,b,c,d);
-}
-
-inline void glex::glBindAttribLocationARB(GLhandleARB  a, GLuint  b, const GLcharARB *c) {
-	m_pglex->glBindAttribLocationARB(a,b,c);
-}
-
-inline void glex::glGetActiveAttribARB(GLhandleARB  a, GLuint  b, GLsizei  c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
-	m_pglex->glGetActiveAttribARB(a,b,c,d,e,f,g);
-}
-
-inline GLint glex::glGetAttribLocationARB(GLhandleARB  a, const GLcharARB *b) {
-	return m_pglex->glGetAttribLocationARB(a,b);
-}
-
-inline void glex::glDrawBuffersARB(GLsizei  a, const GLenum *b) {
-	m_pglex->glDrawBuffersARB(a,b);
-}
-
-inline void glex::glClampColorARB(GLenum  a, GLenum  b) {
-	m_pglex->glClampColorARB(a,b);
-}
-
-inline void glex::glDrawArraysInstancedARB(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glDrawArraysInstancedARB(a,b,c,d);
-}
-
-inline void glex::glDrawElementsInstancedARB(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLsizei  e) {
-	m_pglex->glDrawElementsInstancedARB(a,b,c,d,e);
-}
-
 inline GLboolean glex::glIsRenderbuffer(GLuint  a) {
 	return m_pglex->glIsRenderbuffer(a);
 }
@@ -4432,36 +3745,12 @@ inline void glex::glFramebufferTextureLayer(GLenum  a, GLenum  b, GLuint  c, GLi
 	m_pglex->glFramebufferTextureLayer(a,b,c,d,e);
 }
 
-inline void glex::glProgramParameteriARB(GLuint  a, GLenum  b, GLint  c) {
-	m_pglex->glProgramParameteriARB(a,b,c);
-}
-
-inline void glex::glFramebufferTextureARB(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
-	m_pglex->glFramebufferTextureARB(a,b,c,d);
-}
-
-inline void glex::glFramebufferTextureLayerARB(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
-	m_pglex->glFramebufferTextureLayerARB(a,b,c,d,e);
-}
-
-inline void glex::glFramebufferTextureFaceARB(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
-	m_pglex->glFramebufferTextureFaceARB(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttribDivisorARB(GLuint  a, GLuint  b) {
-	m_pglex->glVertexAttribDivisorARB(a,b);
-}
-
-inline GLvoid* glex::glMapBufferRange(GLenum  a, GLintptr  b, GLsizeiptr  c, GLbitfield  d) {
+inline void * glex::glMapBufferRange(GLenum  a, GLintptr  b, GLsizeiptr  c, GLbitfield  d) {
 	return m_pglex->glMapBufferRange(a,b,c,d);
 }
 
 inline void glex::glFlushMappedBufferRange(GLenum  a, GLintptr  b, GLsizeiptr  c) {
 	m_pglex->glFlushMappedBufferRange(a,b,c);
-}
-
-inline void glex::glTexBufferARB(GLenum  a, GLenum  b, GLuint  c) {
-	m_pglex->glTexBufferARB(a,b,c);
 }
 
 inline void glex::glBindVertexArray(GLuint  a) {
@@ -4480,7 +3769,27 @@ inline GLboolean glex::glIsVertexArray(GLuint  a) {
 	return m_pglex->glIsVertexArray(a);
 }
 
-inline void glex::glGetUniformIndices(GLuint  a, GLsizei  b, const GLchar* const *c, GLuint *d) {
+inline void glex::glDrawArraysInstanced(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glDrawArraysInstanced(a,b,c,d);
+}
+
+inline void glex::glDrawElementsInstanced(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLsizei  e) {
+	m_pglex->glDrawElementsInstanced(a,b,c,d,e);
+}
+
+inline void glex::glTexBuffer(GLenum  a, GLenum  b, GLuint  c) {
+	m_pglex->glTexBuffer(a,b,c);
+}
+
+inline void glex::glPrimitiveRestartIndex(GLuint  a) {
+	m_pglex->glPrimitiveRestartIndex(a);
+}
+
+inline void glex::glCopyBufferSubData(GLenum  a, GLenum  b, GLintptr  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glCopyBufferSubData(a,b,c,d,e);
+}
+
+inline void glex::glGetUniformIndices(GLuint  a, GLsizei  b, const GLchar *const*c, GLuint *d) {
 	m_pglex->glGetUniformIndices(a,b,c,d);
 }
 
@@ -4508,23 +3817,19 @@ inline void glex::glUniformBlockBinding(GLuint  a, GLuint  b, GLuint  c) {
 	m_pglex->glUniformBlockBinding(a,b,c);
 }
 
-inline void glex::glCopyBufferSubData(GLenum  a, GLenum  b, GLintptr  c, GLintptr  d, GLsizeiptr  e) {
-	m_pglex->glCopyBufferSubData(a,b,c,d,e);
-}
-
-inline void glex::glDrawElementsBaseVertex(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLint  e) {
+inline void glex::glDrawElementsBaseVertex(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLint  e) {
 	m_pglex->glDrawElementsBaseVertex(a,b,c,d,e);
 }
 
-inline void glex::glDrawRangeElementsBaseVertex(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const GLvoid *f, GLint  g) {
+inline void glex::glDrawRangeElementsBaseVertex(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const void *f, GLint  g) {
 	m_pglex->glDrawRangeElementsBaseVertex(a,b,c,d,e,f,g);
 }
 
-inline void glex::glDrawElementsInstancedBaseVertex(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLsizei  e, GLint  f) {
+inline void glex::glDrawElementsInstancedBaseVertex(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLsizei  e, GLint  f) {
 	m_pglex->glDrawElementsInstancedBaseVertex(a,b,c,d,e,f);
 }
 
-inline void glex::glMultiDrawElementsBaseVertex(GLenum  a, const GLsizei *b, GLenum  c, const GLvoid* const *d, GLsizei  e, const GLint *f) {
+inline void glex::glMultiDrawElementsBaseVertex(GLenum  a, const GLsizei *b, GLenum  c, const void *const*d, GLsizei  e, const GLint *f) {
 	m_pglex->glMultiDrawElementsBaseVertex(a,b,c,d,e,f);
 }
 
@@ -4560,11 +3865,23 @@ inline void glex::glGetSynciv(GLsync  a, GLenum  b, GLsizei  c, GLsizei *d, GLin
 	m_pglex->glGetSynciv(a,b,c,d,e);
 }
 
-inline void glex::glTexImage2DMultisample(GLenum  a, GLsizei  b, GLint  c, GLsizei  d, GLsizei  e, GLboolean  f) {
+inline void glex::glGetInteger64i_v(GLenum  a, GLuint  b, GLint64 *c) {
+	m_pglex->glGetInteger64i_v(a,b,c);
+}
+
+inline void glex::glGetBufferParameteri64v(GLenum  a, GLenum  b, GLint64 *c) {
+	m_pglex->glGetBufferParameteri64v(a,b,c);
+}
+
+inline void glex::glFramebufferTexture(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
+	m_pglex->glFramebufferTexture(a,b,c,d);
+}
+
+inline void glex::glTexImage2DMultisample(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLboolean  f) {
 	m_pglex->glTexImage2DMultisample(a,b,c,d,e,f);
 }
 
-inline void glex::glTexImage3DMultisample(GLenum  a, GLsizei  b, GLint  c, GLsizei  d, GLsizei  e, GLsizei  f, GLboolean  g) {
+inline void glex::glTexImage3DMultisample(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLboolean  g) {
 	m_pglex->glTexImage3DMultisample(a,b,c,d,e,f,g);
 }
 
@@ -4574,50 +3891,6 @@ inline void glex::glGetMultisamplefv(GLenum  a, GLuint  b, GLfloat *c) {
 
 inline void glex::glSampleMaski(GLuint  a, GLbitfield  b) {
 	m_pglex->glSampleMaski(a,b);
-}
-
-inline void glex::glBlendEquationiARB(GLuint  a, GLenum  b) {
-	m_pglex->glBlendEquationiARB(a,b);
-}
-
-inline void glex::glBlendEquationSeparateiARB(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendEquationSeparateiARB(a,b,c);
-}
-
-inline void glex::glBlendFunciARB(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendFunciARB(a,b,c);
-}
-
-inline void glex::glBlendFuncSeparateiARB(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
-	m_pglex->glBlendFuncSeparateiARB(a,b,c,d,e);
-}
-
-inline void glex::glMinSampleShadingARB(GLfloat  a) {
-	m_pglex->glMinSampleShadingARB(a);
-}
-
-inline void glex::glNamedStringARB(GLenum  a, GLint  b, const GLchar *c, GLint  d, const GLchar *e) {
-	m_pglex->glNamedStringARB(a,b,c,d,e);
-}
-
-inline void glex::glDeleteNamedStringARB(GLint  a, const GLchar *b) {
-	m_pglex->glDeleteNamedStringARB(a,b);
-}
-
-inline void glex::glCompileShaderIncludeARB(GLuint  a, GLsizei  b, const GLchar* *c, const GLint *d) {
-	m_pglex->glCompileShaderIncludeARB(a,b,c,d);
-}
-
-inline GLboolean glex::glIsNamedStringARB(GLint  a, const GLchar *b) {
-	return m_pglex->glIsNamedStringARB(a,b);
-}
-
-inline void glex::glGetNamedStringARB(GLint  a, const GLchar *b, GLsizei  c, GLint *d, GLchar *e) {
-	m_pglex->glGetNamedStringARB(a,b,c,d,e);
-}
-
-inline void glex::glGetNamedStringivARB(GLint  a, const GLchar *b, GLenum  c, GLint *d) {
-	m_pglex->glGetNamedStringivARB(a,b,c,d);
 }
 
 inline void glex::glBindFragDataLocationIndexed(GLuint  a, GLuint  b, GLuint  c, const GLchar *d) {
@@ -4694,6 +3967,42 @@ inline void glex::glGetQueryObjecti64v(GLuint  a, GLenum  b, GLint64 *c) {
 
 inline void glex::glGetQueryObjectui64v(GLuint  a, GLenum  b, GLuint64 *c) {
 	m_pglex->glGetQueryObjectui64v(a,b,c);
+}
+
+inline void glex::glVertexAttribDivisor(GLuint  a, GLuint  b) {
+	m_pglex->glVertexAttribDivisor(a,b);
+}
+
+inline void glex::glVertexAttribP1ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
+	m_pglex->glVertexAttribP1ui(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP1uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
+	m_pglex->glVertexAttribP1uiv(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP2ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
+	m_pglex->glVertexAttribP2ui(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP2uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
+	m_pglex->glVertexAttribP2uiv(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP3ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
+	m_pglex->glVertexAttribP3ui(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP3uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
+	m_pglex->glVertexAttribP3uiv(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP4ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
+	m_pglex->glVertexAttribP4ui(a,b,c,d);
+}
+
+inline void glex::glVertexAttribP4uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
+	m_pglex->glVertexAttribP4uiv(a,b,c,d);
 }
 
 inline void glex::glVertexP2ui(GLenum  a, GLuint  b) {
@@ -4816,43 +4125,31 @@ inline void glex::glSecondaryColorP3uiv(GLenum  a, const GLuint *b) {
 	m_pglex->glSecondaryColorP3uiv(a,b);
 }
 
-inline void glex::glVertexAttribP1ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
-	m_pglex->glVertexAttribP1ui(a,b,c,d);
+inline void glex::glMinSampleShading(GLfloat  a) {
+	m_pglex->glMinSampleShading(a);
 }
 
-inline void glex::glVertexAttribP1uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
-	m_pglex->glVertexAttribP1uiv(a,b,c,d);
+inline void glex::glBlendEquationi(GLuint  a, GLenum  b) {
+	m_pglex->glBlendEquationi(a,b);
 }
 
-inline void glex::glVertexAttribP2ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
-	m_pglex->glVertexAttribP2ui(a,b,c,d);
+inline void glex::glBlendEquationSeparatei(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendEquationSeparatei(a,b,c);
 }
 
-inline void glex::glVertexAttribP2uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
-	m_pglex->glVertexAttribP2uiv(a,b,c,d);
+inline void glex::glBlendFunci(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendFunci(a,b,c);
 }
 
-inline void glex::glVertexAttribP3ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
-	m_pglex->glVertexAttribP3ui(a,b,c,d);
+inline void glex::glBlendFuncSeparatei(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
+	m_pglex->glBlendFuncSeparatei(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttribP3uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
-	m_pglex->glVertexAttribP3uiv(a,b,c,d);
-}
-
-inline void glex::glVertexAttribP4ui(GLuint  a, GLenum  b, GLboolean  c, GLuint  d) {
-	m_pglex->glVertexAttribP4ui(a,b,c,d);
-}
-
-inline void glex::glVertexAttribP4uiv(GLuint  a, GLenum  b, GLboolean  c, const GLuint *d) {
-	m_pglex->glVertexAttribP4uiv(a,b,c,d);
-}
-
-inline void glex::glDrawArraysIndirect(GLenum  a, const GLvoid *b) {
+inline void glex::glDrawArraysIndirect(GLenum  a, const void *b) {
 	m_pglex->glDrawArraysIndirect(a,b);
 }
 
-inline void glex::glDrawElementsIndirect(GLenum  a, GLenum  b, const GLvoid *c) {
+inline void glex::glDrawElementsIndirect(GLenum  a, GLenum  b, const void *c) {
 	m_pglex->glDrawElementsIndirect(a,b,c);
 }
 
@@ -5016,7 +4313,7 @@ inline void glex::glReleaseShaderCompiler(void) {
 	m_pglex->glReleaseShaderCompiler();
 }
 
-inline void glex::glShaderBinary(GLsizei  a, const GLuint *b, GLenum  c, const GLvoid *d, GLsizei  e) {
+inline void glex::glShaderBinary(GLsizei  a, const GLuint *b, GLenum  c, const void *d, GLsizei  e) {
 	m_pglex->glShaderBinary(a,b,c,d,e);
 }
 
@@ -5032,11 +4329,11 @@ inline void glex::glClearDepthf(GLfloat  a) {
 	m_pglex->glClearDepthf(a);
 }
 
-inline void glex::glGetProgramBinary(GLuint  a, GLsizei  b, GLsizei *c, GLenum *d, GLvoid *e) {
+inline void glex::glGetProgramBinary(GLuint  a, GLsizei  b, GLsizei *c, GLenum *d, void *e) {
 	m_pglex->glGetProgramBinary(a,b,c,d,e);
 }
 
-inline void glex::glProgramBinary(GLuint  a, GLenum  b, const GLvoid *c, GLsizei  d) {
+inline void glex::glProgramBinary(GLuint  a, GLenum  b, const void *c, GLsizei  d) {
 	m_pglex->glProgramBinary(a,b,c,d);
 }
 
@@ -5052,7 +4349,7 @@ inline void glex::glActiveShaderProgram(GLuint  a, GLuint  b) {
 	m_pglex->glActiveShaderProgram(a,b);
 }
 
-inline GLuint glex::glCreateShaderProgramv(GLenum  a, GLsizei  b, const GLchar* const *c) {
+inline GLuint glex::glCreateShaderProgramv(GLenum  a, GLsizei  b, const GLchar *const*c) {
 	return m_pglex->glCreateShaderProgramv(a,b,c);
 }
 
@@ -5316,7 +4613,7 @@ inline void glex::glVertexAttribL4dv(GLuint  a, const GLdouble *b) {
 	m_pglex->glVertexAttribL4dv(a,b);
 }
 
-inline void glex::glVertexAttribLPointer(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
+inline void glex::glVertexAttribLPointer(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
 	m_pglex->glVertexAttribLPointer(a,b,c,d,e);
 }
 
@@ -5364,106 +4661,6 @@ inline void glex::glGetDoublei_v(GLenum  a, GLuint  b, GLdouble *c) {
 	m_pglex->glGetDoublei_v(a,b,c);
 }
 
-inline GLsync glex::glCreateSyncFromCLeventARB(struct _cl_context *  a, struct _cl_event *  b, GLbitfield  c) {
-	return m_pglex->glCreateSyncFromCLeventARB(a,b,c);
-}
-
-inline void glex::glDebugMessageControlARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, const GLuint *e, GLboolean  f) {
-	m_pglex->glDebugMessageControlARB(a,b,c,d,e,f);
-}
-
-inline void glex::glDebugMessageInsertARB(GLenum  a, GLenum  b, GLuint  c, GLenum  d, GLsizei  e, const GLchar *f) {
-	m_pglex->glDebugMessageInsertARB(a,b,c,d,e,f);
-}
-
-inline void glex::glDebugMessageCallbackARB(GLDEBUGPROCARB  a, const GLvoid *b) {
-	m_pglex->glDebugMessageCallbackARB(a,b);
-}
-
-inline GLuint glex::glGetDebugMessageLogARB(GLuint  a, GLsizei  b, GLenum *c, GLenum *d, GLuint *e, GLenum *f, GLsizei *g, GLchar *h) {
-	return m_pglex->glGetDebugMessageLogARB(a,b,c,d,e,f,g,h);
-}
-
-inline GLenum glex::glGetGraphicsResetStatusARB(void) {
-	return m_pglex->glGetGraphicsResetStatusARB();
-}
-
-inline void glex::glGetnMapdvARB(GLenum  a, GLenum  b, GLsizei  c, GLdouble *d) {
-	m_pglex->glGetnMapdvARB(a,b,c,d);
-}
-
-inline void glex::glGetnMapfvARB(GLenum  a, GLenum  b, GLsizei  c, GLfloat *d) {
-	m_pglex->glGetnMapfvARB(a,b,c,d);
-}
-
-inline void glex::glGetnMapivARB(GLenum  a, GLenum  b, GLsizei  c, GLint *d) {
-	m_pglex->glGetnMapivARB(a,b,c,d);
-}
-
-inline void glex::glGetnPixelMapfvARB(GLenum  a, GLsizei  b, GLfloat *c) {
-	m_pglex->glGetnPixelMapfvARB(a,b,c);
-}
-
-inline void glex::glGetnPixelMapuivARB(GLenum  a, GLsizei  b, GLuint *c) {
-	m_pglex->glGetnPixelMapuivARB(a,b,c);
-}
-
-inline void glex::glGetnPixelMapusvARB(GLenum  a, GLsizei  b, GLushort *c) {
-	m_pglex->glGetnPixelMapusvARB(a,b,c);
-}
-
-inline void glex::glGetnPolygonStippleARB(GLsizei  a, GLubyte *b) {
-	m_pglex->glGetnPolygonStippleARB(a,b);
-}
-
-inline void glex::glGetnColorTableARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, GLvoid *e) {
-	m_pglex->glGetnColorTableARB(a,b,c,d,e);
-}
-
-inline void glex::glGetnConvolutionFilterARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, GLvoid *e) {
-	m_pglex->glGetnConvolutionFilterARB(a,b,c,d,e);
-}
-
-inline void glex::glGetnSeparableFilterARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, GLvoid *e, GLsizei  f, GLvoid *g, GLvoid *h) {
-	m_pglex->glGetnSeparableFilterARB(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glGetnHistogramARB(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, GLvoid *f) {
-	m_pglex->glGetnHistogramARB(a,b,c,d,e,f);
-}
-
-inline void glex::glGetnMinmaxARB(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, GLvoid *f) {
-	m_pglex->glGetnMinmaxARB(a,b,c,d,e,f);
-}
-
-inline void glex::glGetnTexImageARB(GLenum  a, GLint  b, GLenum  c, GLenum  d, GLsizei  e, GLvoid *f) {
-	m_pglex->glGetnTexImageARB(a,b,c,d,e,f);
-}
-
-inline void glex::glReadnPixelsARB(GLint  a, GLint  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, GLsizei  g, GLvoid *h) {
-	m_pglex->glReadnPixelsARB(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glGetnCompressedTexImageARB(GLenum  a, GLint  b, GLsizei  c, GLvoid *d) {
-	m_pglex->glGetnCompressedTexImageARB(a,b,c,d);
-}
-
-inline void glex::glGetnUniformfvARB(GLuint  a, GLint  b, GLsizei  c, GLfloat *d) {
-	m_pglex->glGetnUniformfvARB(a,b,c,d);
-}
-
-inline void glex::glGetnUniformivARB(GLuint  a, GLint  b, GLsizei  c, GLint *d) {
-	m_pglex->glGetnUniformivARB(a,b,c,d);
-}
-
-inline void glex::glGetnUniformuivARB(GLuint  a, GLint  b, GLsizei  c, GLuint *d) {
-	m_pglex->glGetnUniformuivARB(a,b,c,d);
-}
-
-inline void glex::glGetnUniformdvARB(GLuint  a, GLint  b, GLsizei  c, GLdouble *d) {
-	m_pglex->glGetnUniformdvARB(a,b,c,d);
-}
-
 inline void glex::glDrawArraysInstancedBaseInstance(GLenum  a, GLint  b, GLsizei  c, GLsizei  d, GLuint  e) {
 	m_pglex->glDrawArraysInstancedBaseInstance(a,b,c,d,e);
 }
@@ -5474,14 +4671,6 @@ inline void glex::glDrawElementsInstancedBaseInstance(GLenum  a, GLsizei  b, GLe
 
 inline void glex::glDrawElementsInstancedBaseVertexBaseInstance(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLsizei  e, GLint  f, GLuint  g) {
 	m_pglex->glDrawElementsInstancedBaseVertexBaseInstance(a,b,c,d,e,f,g);
-}
-
-inline void glex::glDrawTransformFeedbackInstanced(GLenum  a, GLuint  b, GLsizei  c) {
-	m_pglex->glDrawTransformFeedbackInstanced(a,b,c);
-}
-
-inline void glex::glDrawTransformFeedbackStreamInstanced(GLenum  a, GLuint  b, GLuint  c, GLsizei  d) {
-	m_pglex->glDrawTransformFeedbackStreamInstanced(a,b,c,d);
 }
 
 inline void glex::glGetInternalformativ(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, GLint *e) {
@@ -5512,56 +4701,12 @@ inline void glex::glTexStorage3D(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, G
 	m_pglex->glTexStorage3D(a,b,c,d,e,f);
 }
 
-inline void glex::glTextureStorage1DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e) {
-	m_pglex->glTextureStorage1DEXT(a,b,c,d,e);
+inline void glex::glDrawTransformFeedbackInstanced(GLenum  a, GLuint  b, GLsizei  c) {
+	m_pglex->glDrawTransformFeedbackInstanced(a,b,c);
 }
 
-inline void glex::glTextureStorage2DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
-	m_pglex->glTextureStorage2DEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glTextureStorage3DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g) {
-	m_pglex->glTextureStorage3DEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glDebugMessageControl(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, const GLuint *e, GLboolean  f) {
-	m_pglex->glDebugMessageControl(a,b,c,d,e,f);
-}
-
-inline void glex::glDebugMessageInsert(GLenum  a, GLenum  b, GLuint  c, GLenum  d, GLsizei  e, const GLchar *f) {
-	m_pglex->glDebugMessageInsert(a,b,c,d,e,f);
-}
-
-inline void glex::glDebugMessageCallback(GLDEBUGPROC  a, const void *b) {
-	m_pglex->glDebugMessageCallback(a,b);
-}
-
-inline GLuint glex::glGetDebugMessageLog(GLuint  a, GLsizei  b, GLenum *c, GLenum *d, GLuint *e, GLenum *f, GLsizei *g, GLchar *h) {
-	return m_pglex->glGetDebugMessageLog(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glPushDebugGroup(GLenum  a, GLuint  b, GLsizei  c, const GLchar *d) {
-	m_pglex->glPushDebugGroup(a,b,c,d);
-}
-
-inline void glex::glPopDebugGroup(void) {
-	m_pglex->glPopDebugGroup();
-}
-
-inline void glex::glObjectLabel(GLenum  a, GLuint  b, GLsizei  c, const GLchar *d) {
-	m_pglex->glObjectLabel(a,b,c,d);
-}
-
-inline void glex::glGetObjectLabel(GLenum  a, GLuint  b, GLsizei  c, GLsizei *d, GLchar *e) {
-	m_pglex->glGetObjectLabel(a,b,c,d,e);
-}
-
-inline void glex::glObjectPtrLabel(const void *a, GLsizei  b, const GLchar *c) {
-	m_pglex->glObjectPtrLabel(a,b,c);
-}
-
-inline void glex::glGetObjectPtrLabel(const void *a, GLsizei  b, GLsizei *c, GLchar *d) {
-	m_pglex->glGetObjectPtrLabel(a,b,c,d);
+inline void glex::glDrawTransformFeedbackStreamInstanced(GLenum  a, GLuint  b, GLuint  c, GLsizei  d) {
+	m_pglex->glDrawTransformFeedbackStreamInstanced(a,b,c,d);
 }
 
 inline void glex::glClearBufferData(GLenum  a, GLenum  b, GLenum  c, GLenum  d, const void *e) {
@@ -5570,14 +4715,6 @@ inline void glex::glClearBufferData(GLenum  a, GLenum  b, GLenum  c, GLenum  d, 
 
 inline void glex::glClearBufferSubData(GLenum  a, GLenum  b, GLintptr  c, GLsizeiptr  d, GLenum  e, GLenum  f, const void *g) {
 	m_pglex->glClearBufferSubData(a,b,c,d,e,f,g);
-}
-
-inline void glex::glClearNamedBufferDataEXT(GLuint  a, GLenum  b, GLenum  c, GLenum  d, const void *e) {
-	m_pglex->glClearNamedBufferDataEXT(a,b,c,d,e);
-}
-
-inline void glex::glClearNamedBufferSubDataEXT(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLsizeiptr  e, GLsizeiptr  f, const void *g) {
-	m_pglex->glClearNamedBufferSubDataEXT(a,b,c,d,e,f,g);
 }
 
 inline void glex::glDispatchCompute(GLuint  a, GLuint  b, GLuint  c) {
@@ -5592,72 +4729,12 @@ inline void glex::glCopyImageSubData(GLuint  a, GLenum  b, GLint  c, GLint  d, G
 	m_pglex->glCopyImageSubData(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
 }
 
-inline void glex::glTextureView(GLuint  a, GLenum  b, GLuint  c, GLenum  d, GLuint  e, GLuint  f, GLuint  g, GLuint  h) {
-	m_pglex->glTextureView(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glBindVertexBuffer(GLuint  a, GLuint  b, GLintptr  c, GLsizei  d) {
-	m_pglex->glBindVertexBuffer(a,b,c,d);
-}
-
-inline void glex::glVertexAttribFormat(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLuint  e) {
-	m_pglex->glVertexAttribFormat(a,b,c,d,e);
-}
-
-inline void glex::glVertexAttribIFormat(GLuint  a, GLint  b, GLenum  c, GLuint  d) {
-	m_pglex->glVertexAttribIFormat(a,b,c,d);
-}
-
-inline void glex::glVertexAttribLFormat(GLuint  a, GLint  b, GLenum  c, GLuint  d) {
-	m_pglex->glVertexAttribLFormat(a,b,c,d);
-}
-
-inline void glex::glVertexAttribBinding(GLuint  a, GLuint  b) {
-	m_pglex->glVertexAttribBinding(a,b);
-}
-
-inline void glex::glVertexBindingDivisor(GLuint  a, GLuint  b) {
-	m_pglex->glVertexBindingDivisor(a,b);
-}
-
-inline void glex::glVertexArrayBindVertexBufferEXT(GLuint  a, GLuint  b, GLuint  c, GLintptr  d, GLsizei  e) {
-	m_pglex->glVertexArrayBindVertexBufferEXT(a,b,c,d,e);
-}
-
-inline void glex::glVertexArrayVertexAttribFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLboolean  e, GLuint  f) {
-	m_pglex->glVertexArrayVertexAttribFormatEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glVertexArrayVertexAttribIFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
-	m_pglex->glVertexArrayVertexAttribIFormatEXT(a,b,c,d,e);
-}
-
-inline void glex::glVertexArrayVertexAttribLFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
-	m_pglex->glVertexArrayVertexAttribLFormatEXT(a,b,c,d,e);
-}
-
-inline void glex::glVertexArrayVertexAttribBindingEXT(GLuint  a, GLuint  b, GLuint  c) {
-	m_pglex->glVertexArrayVertexAttribBindingEXT(a,b,c);
-}
-
-inline void glex::glVertexArrayVertexBindingDivisorEXT(GLuint  a, GLuint  b, GLuint  c) {
-	m_pglex->glVertexArrayVertexBindingDivisorEXT(a,b,c);
-}
-
 inline void glex::glFramebufferParameteri(GLenum  a, GLenum  b, GLint  c) {
 	m_pglex->glFramebufferParameteri(a,b,c);
 }
 
 inline void glex::glGetFramebufferParameteriv(GLenum  a, GLenum  b, GLint *c) {
 	m_pglex->glGetFramebufferParameteriv(a,b,c);
-}
-
-inline void glex::glNamedFramebufferParameteriEXT(GLuint  a, GLenum  b, GLint  c) {
-	m_pglex->glNamedFramebufferParameteriEXT(a,b,c);
-}
-
-inline void glex::glGetNamedFramebufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetNamedFramebufferParameterivEXT(a,b,c);
 }
 
 inline void glex::glGetInternalformati64v(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, GLint64 *e) {
@@ -5728,10 +4805,6 @@ inline void glex::glTexBufferRange(GLenum  a, GLenum  b, GLuint  c, GLintptr  d,
 	m_pglex->glTexBufferRange(a,b,c,d,e);
 }
 
-inline void glex::glTextureBufferRangeEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLintptr  e, GLsizeiptr  f) {
-	m_pglex->glTextureBufferRangeEXT(a,b,c,d,e,f);
-}
-
 inline void glex::glTexStorage2DMultisample(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLboolean  f) {
 	m_pglex->glTexStorage2DMultisample(a,b,c,d,e,f);
 }
@@ -5740,1636 +4813,2924 @@ inline void glex::glTexStorage3DMultisample(GLenum  a, GLsizei  b, GLenum  c, GL
 	m_pglex->glTexStorage3DMultisample(a,b,c,d,e,f,g);
 }
 
-inline void glex::glTextureStorage2DMultisampleEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLboolean  g) {
-	m_pglex->glTextureStorage2DMultisampleEXT(a,b,c,d,e,f,g);
+inline void glex::glTextureView(GLuint  a, GLenum  b, GLuint  c, GLenum  d, GLuint  e, GLuint  f, GLuint  g, GLuint  h) {
+	m_pglex->glTextureView(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glTextureStorage3DMultisampleEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
-	m_pglex->glTextureStorage3DMultisampleEXT(a,b,c,d,e,f,g,h);
+inline void glex::glBindVertexBuffer(GLuint  a, GLuint  b, GLintptr  c, GLsizei  d) {
+	m_pglex->glBindVertexBuffer(a,b,c,d);
 }
 
-inline void glex::glBlendColorEXT(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glBlendColorEXT(a,b,c,d);
+inline void glex::glVertexAttribFormat(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLuint  e) {
+	m_pglex->glVertexAttribFormat(a,b,c,d,e);
 }
 
-inline void glex::glPolygonOffsetEXT(GLfloat  a, GLfloat  b) {
-	m_pglex->glPolygonOffsetEXT(a,b);
+inline void glex::glVertexAttribIFormat(GLuint  a, GLint  b, GLenum  c, GLuint  d) {
+	m_pglex->glVertexAttribIFormat(a,b,c,d);
 }
 
-inline void glex::glTexImage3DEXT(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const GLvoid *j) {
-	m_pglex->glTexImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+inline void glex::glVertexAttribLFormat(GLuint  a, GLint  b, GLenum  c, GLuint  d) {
+	m_pglex->glVertexAttribLFormat(a,b,c,d);
 }
 
-inline void glex::glTexSubImage3DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const GLvoid *k) {
-	m_pglex->glTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
+inline void glex::glVertexAttribBinding(GLuint  a, GLuint  b) {
+	m_pglex->glVertexAttribBinding(a,b);
 }
 
-inline void glex::glGetTexFilterFuncSGIS(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetTexFilterFuncSGIS(a,b,c);
+inline void glex::glVertexBindingDivisor(GLuint  a, GLuint  b) {
+	m_pglex->glVertexBindingDivisor(a,b);
 }
 
-inline void glex::glTexFilterFuncSGIS(GLenum  a, GLenum  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glTexFilterFuncSGIS(a,b,c,d);
+inline void glex::glDebugMessageControl(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, const GLuint *e, GLboolean  f) {
+	m_pglex->glDebugMessageControl(a,b,c,d,e,f);
 }
 
-inline void glex::glTexSubImage1DEXT(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLenum  f, const GLvoid *g) {
-	m_pglex->glTexSubImage1DEXT(a,b,c,d,e,f,g);
+inline void glex::glDebugMessageInsert(GLenum  a, GLenum  b, GLuint  c, GLenum  d, GLsizei  e, const GLchar *f) {
+	m_pglex->glDebugMessageInsert(a,b,c,d,e,f);
 }
 
-inline void glex::glTexSubImage2DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLenum  h, const GLvoid *i) {
-	m_pglex->glTexSubImage2DEXT(a,b,c,d,e,f,g,h,i);
+inline void glex::glDebugMessageCallback(GLDEBUGPROC  a, const void *b) {
+	m_pglex->glDebugMessageCallback(a,b);
 }
 
-inline void glex::glCopyTexImage1DEXT(GLenum  a, GLint  b, GLenum  c, GLint  d, GLint  e, GLsizei  f, GLint  g) {
-	m_pglex->glCopyTexImage1DEXT(a,b,c,d,e,f,g);
+inline GLuint glex::glGetDebugMessageLog(GLuint  a, GLsizei  b, GLenum *c, GLenum *d, GLuint *e, GLenum *f, GLsizei *g, GLchar *h) {
+	return m_pglex->glGetDebugMessageLog(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glCopyTexImage2DEXT(GLenum  a, GLint  b, GLenum  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLint  h) {
-	m_pglex->glCopyTexImage2DEXT(a,b,c,d,e,f,g,h);
+inline void glex::glPushDebugGroup(GLenum  a, GLuint  b, GLsizei  c, const GLchar *d) {
+	m_pglex->glPushDebugGroup(a,b,c,d);
 }
 
-inline void glex::glCopyTexSubImage1DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f) {
-	m_pglex->glCopyTexSubImage1DEXT(a,b,c,d,e,f);
+inline void glex::glPopDebugGroup(void) {
+	m_pglex->glPopDebugGroup();
 }
 
-inline void glex::glCopyTexSubImage2DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h) {
-	m_pglex->glCopyTexSubImage2DEXT(a,b,c,d,e,f,g,h);
+inline void glex::glObjectLabel(GLenum  a, GLuint  b, GLsizei  c, const GLchar *d) {
+	m_pglex->glObjectLabel(a,b,c,d);
 }
 
-inline void glex::glCopyTexSubImage3DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
-	m_pglex->glCopyTexSubImage3DEXT(a,b,c,d,e,f,g,h,i);
+inline void glex::glGetObjectLabel(GLenum  a, GLuint  b, GLsizei  c, GLsizei *d, GLchar *e) {
+	m_pglex->glGetObjectLabel(a,b,c,d,e);
 }
 
-inline void glex::glGetHistogramEXT(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLvoid *e) {
-	m_pglex->glGetHistogramEXT(a,b,c,d,e);
+inline void glex::glObjectPtrLabel(const void *a, GLsizei  b, const GLchar *c) {
+	m_pglex->glObjectPtrLabel(a,b,c);
 }
 
-inline void glex::glGetHistogramParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetHistogramParameterfvEXT(a,b,c);
+inline void glex::glGetObjectPtrLabel(const void *a, GLsizei  b, GLsizei *c, GLchar *d) {
+	m_pglex->glGetObjectPtrLabel(a,b,c,d);
 }
 
-inline void glex::glGetHistogramParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetHistogramParameterivEXT(a,b,c);
+inline void glex::glBufferStorage(GLenum  a, GLsizeiptr  b, const void *c, GLbitfield  d) {
+	m_pglex->glBufferStorage(a,b,c,d);
 }
 
-inline void glex::glGetMinmaxEXT(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLvoid *e) {
-	m_pglex->glGetMinmaxEXT(a,b,c,d,e);
+inline void glex::glClearTexImage(GLuint  a, GLint  b, GLenum  c, GLenum  d, const void *e) {
+	m_pglex->glClearTexImage(a,b,c,d,e);
 }
 
-inline void glex::glGetMinmaxParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetMinmaxParameterfvEXT(a,b,c);
+inline void glex::glClearTexSubImage(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glClearTexSubImage(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glGetMinmaxParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetMinmaxParameterivEXT(a,b,c);
+inline void glex::glBindBuffersBase(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glBindBuffersBase(a,b,c,d);
 }
 
-inline void glex::glHistogramEXT(GLenum  a, GLsizei  b, GLenum  c, GLboolean  d) {
-	m_pglex->glHistogramEXT(a,b,c,d);
+inline void glex::glBindBuffersRange(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d, const GLintptr *e, const GLsizeiptr *f) {
+	m_pglex->glBindBuffersRange(a,b,c,d,e,f);
 }
 
-inline void glex::glMinmaxEXT(GLenum  a, GLenum  b, GLboolean  c) {
-	m_pglex->glMinmaxEXT(a,b,c);
+inline void glex::glBindTextures(GLuint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glBindTextures(a,b,c);
 }
 
-inline void glex::glResetHistogramEXT(GLenum  a) {
-	m_pglex->glResetHistogramEXT(a);
+inline void glex::glBindSamplers(GLuint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glBindSamplers(a,b,c);
 }
 
-inline void glex::glResetMinmaxEXT(GLenum  a) {
-	m_pglex->glResetMinmaxEXT(a);
+inline void glex::glBindImageTextures(GLuint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glBindImageTextures(a,b,c);
 }
 
-inline void glex::glConvolutionFilter1DEXT(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glConvolutionFilter1DEXT(a,b,c,d,e,f);
+inline void glex::glBindVertexBuffers(GLuint  a, GLsizei  b, const GLuint *c, const GLintptr *d, const GLsizei *e) {
+	m_pglex->glBindVertexBuffers(a,b,c,d,e);
 }
 
-inline void glex::glConvolutionFilter2DEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const GLvoid *g) {
-	m_pglex->glConvolutionFilter2DEXT(a,b,c,d,e,f,g);
+inline void glex::glClipControl(GLenum  a, GLenum  b) {
+	m_pglex->glClipControl(a,b);
 }
 
-inline void glex::glConvolutionParameterfEXT(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glConvolutionParameterfEXT(a,b,c);
+inline void glex::glCreateTransformFeedbacks(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateTransformFeedbacks(a,b);
 }
 
-inline void glex::glConvolutionParameterfvEXT(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glConvolutionParameterfvEXT(a,b,c);
+inline void glex::glTransformFeedbackBufferBase(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glTransformFeedbackBufferBase(a,b,c);
 }
 
-inline void glex::glConvolutionParameteriEXT(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glConvolutionParameteriEXT(a,b,c);
+inline void glex::glTransformFeedbackBufferRange(GLuint  a, GLuint  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glTransformFeedbackBufferRange(a,b,c,d,e);
 }
 
-inline void glex::glConvolutionParameterivEXT(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glConvolutionParameterivEXT(a,b,c);
+inline void glex::glGetTransformFeedbackiv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetTransformFeedbackiv(a,b,c);
 }
 
-inline void glex::glCopyConvolutionFilter1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyConvolutionFilter1DEXT(a,b,c,d,e);
+inline void glex::glGetTransformFeedbacki_v(GLuint  a, GLenum  b, GLuint  c, GLint *d) {
+	m_pglex->glGetTransformFeedbacki_v(a,b,c,d);
 }
 
-inline void glex::glCopyConvolutionFilter2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f) {
-	m_pglex->glCopyConvolutionFilter2DEXT(a,b,c,d,e,f);
+inline void glex::glGetTransformFeedbacki64_v(GLuint  a, GLenum  b, GLuint  c, GLint64 *d) {
+	m_pglex->glGetTransformFeedbacki64_v(a,b,c,d);
 }
 
-inline void glex::glGetConvolutionFilterEXT(GLenum  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetConvolutionFilterEXT(a,b,c,d);
+inline void glex::glCreateBuffers(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateBuffers(a,b);
 }
 
-inline void glex::glGetConvolutionParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetConvolutionParameterfvEXT(a,b,c);
+inline void glex::glNamedBufferStorage(GLuint  a, GLsizeiptr  b, const void *c, GLbitfield  d) {
+	m_pglex->glNamedBufferStorage(a,b,c,d);
 }
 
-inline void glex::glGetConvolutionParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetConvolutionParameterivEXT(a,b,c);
+inline void glex::glNamedBufferData(GLuint  a, GLsizeiptr  b, const void *c, GLenum  d) {
+	m_pglex->glNamedBufferData(a,b,c,d);
 }
 
-inline void glex::glGetSeparableFilterEXT(GLenum  a, GLenum  b, GLenum  c, GLvoid *d, GLvoid *e, GLvoid *f) {
-	m_pglex->glGetSeparableFilterEXT(a,b,c,d,e,f);
+inline void glex::glNamedBufferSubData(GLuint  a, GLintptr  b, GLsizeiptr  c, const void *d) {
+	m_pglex->glNamedBufferSubData(a,b,c,d);
 }
 
-inline void glex::glSeparableFilter2DEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const GLvoid *g, const GLvoid *h) {
-	m_pglex->glSeparableFilter2DEXT(a,b,c,d,e,f,g,h);
+inline void glex::glCopyNamedBufferSubData(GLuint  a, GLuint  b, GLintptr  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glCopyNamedBufferSubData(a,b,c,d,e);
 }
 
-inline void glex::glColorTableSGI(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glColorTableSGI(a,b,c,d,e,f);
+inline void glex::glClearNamedBufferData(GLuint  a, GLenum  b, GLenum  c, GLenum  d, const void *e) {
+	m_pglex->glClearNamedBufferData(a,b,c,d,e);
 }
 
-inline void glex::glColorTableParameterfvSGI(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glColorTableParameterfvSGI(a,b,c);
+inline void glex::glClearNamedBufferSubData(GLuint  a, GLenum  b, GLintptr  c, GLsizeiptr  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glClearNamedBufferSubData(a,b,c,d,e,f,g);
 }
 
-inline void glex::glColorTableParameterivSGI(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glColorTableParameterivSGI(a,b,c);
+inline void * glex::glMapNamedBuffer(GLuint  a, GLenum  b) {
+	return m_pglex->glMapNamedBuffer(a,b);
 }
 
-inline void glex::glCopyColorTableSGI(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyColorTableSGI(a,b,c,d,e);
+inline void * glex::glMapNamedBufferRange(GLuint  a, GLintptr  b, GLsizeiptr  c, GLbitfield  d) {
+	return m_pglex->glMapNamedBufferRange(a,b,c,d);
 }
 
-inline void glex::glGetColorTableSGI(GLenum  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetColorTableSGI(a,b,c,d);
+inline GLboolean glex::glUnmapNamedBuffer(GLuint  a) {
+	return m_pglex->glUnmapNamedBuffer(a);
 }
 
-inline void glex::glGetColorTableParameterfvSGI(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetColorTableParameterfvSGI(a,b,c);
+inline void glex::glFlushMappedNamedBufferRange(GLuint  a, GLintptr  b, GLsizeiptr  c) {
+	m_pglex->glFlushMappedNamedBufferRange(a,b,c);
 }
 
-inline void glex::glGetColorTableParameterivSGI(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetColorTableParameterivSGI(a,b,c);
+inline void glex::glGetNamedBufferParameteriv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedBufferParameteriv(a,b,c);
 }
 
-inline void glex::glPixelTexGenSGIX(GLenum  a) {
-	m_pglex->glPixelTexGenSGIX(a);
+inline void glex::glGetNamedBufferParameteri64v(GLuint  a, GLenum  b, GLint64 *c) {
+	m_pglex->glGetNamedBufferParameteri64v(a,b,c);
 }
 
-inline void glex::glPixelTexGenParameteriSGIS(GLenum  a, GLint  b) {
-	m_pglex->glPixelTexGenParameteriSGIS(a,b);
+inline void glex::glGetNamedBufferPointerv(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetNamedBufferPointerv(a,b,c);
 }
 
-inline void glex::glPixelTexGenParameterivSGIS(GLenum  a, const GLint *b) {
-	m_pglex->glPixelTexGenParameterivSGIS(a,b);
+inline void glex::glGetNamedBufferSubData(GLuint  a, GLintptr  b, GLsizeiptr  c, void *d) {
+	m_pglex->glGetNamedBufferSubData(a,b,c,d);
 }
 
-inline void glex::glPixelTexGenParameterfSGIS(GLenum  a, GLfloat  b) {
-	m_pglex->glPixelTexGenParameterfSGIS(a,b);
+inline void glex::glCreateFramebuffers(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateFramebuffers(a,b);
 }
 
-inline void glex::glPixelTexGenParameterfvSGIS(GLenum  a, const GLfloat *b) {
-	m_pglex->glPixelTexGenParameterfvSGIS(a,b);
+inline void glex::glNamedFramebufferRenderbuffer(GLuint  a, GLenum  b, GLenum  c, GLuint  d) {
+	m_pglex->glNamedFramebufferRenderbuffer(a,b,c,d);
 }
 
-inline void glex::glGetPixelTexGenParameterivSGIS(GLenum  a, GLint *b) {
-	m_pglex->glGetPixelTexGenParameterivSGIS(a,b);
+inline void glex::glNamedFramebufferParameteri(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glNamedFramebufferParameteri(a,b,c);
 }
 
-inline void glex::glGetPixelTexGenParameterfvSGIS(GLenum  a, GLfloat *b) {
-	m_pglex->glGetPixelTexGenParameterfvSGIS(a,b);
+inline void glex::glNamedFramebufferTexture(GLuint  a, GLenum  b, GLuint  c, GLint  d) {
+	m_pglex->glNamedFramebufferTexture(a,b,c,d);
 }
 
-inline void glex::glTexImage4DSGIS(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const GLvoid *k) {
-	m_pglex->glTexImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k);
+inline void glex::glNamedFramebufferTextureLayer(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
+	m_pglex->glNamedFramebufferTextureLayer(a,b,c,d,e);
 }
 
-inline void glex::glTexSubImage4DSGIS(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLsizei  j, GLenum  k, GLenum  l, const GLvoid *m) {
-	m_pglex->glTexSubImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k,l,m);
+inline void glex::glNamedFramebufferDrawBuffer(GLuint  a, GLenum  b) {
+	m_pglex->glNamedFramebufferDrawBuffer(a,b);
 }
 
-inline GLboolean glex::glAreTexturesResidentEXT(GLsizei  a, const GLuint *b, GLboolean *c) {
-	return m_pglex->glAreTexturesResidentEXT(a,b,c);
+inline void glex::glNamedFramebufferDrawBuffers(GLuint  a, GLsizei  b, const GLenum *c) {
+	m_pglex->glNamedFramebufferDrawBuffers(a,b,c);
 }
 
-inline void glex::glBindTextureEXT(GLenum  a, GLuint  b) {
-	m_pglex->glBindTextureEXT(a,b);
+inline void glex::glNamedFramebufferReadBuffer(GLuint  a, GLenum  b) {
+	m_pglex->glNamedFramebufferReadBuffer(a,b);
 }
 
-inline void glex::glDeleteTexturesEXT(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteTexturesEXT(a,b);
+inline void glex::glInvalidateNamedFramebufferData(GLuint  a, GLsizei  b, const GLenum *c) {
+	m_pglex->glInvalidateNamedFramebufferData(a,b,c);
 }
 
-inline void glex::glGenTexturesEXT(GLsizei  a, GLuint *b) {
-	m_pglex->glGenTexturesEXT(a,b);
+inline void glex::glInvalidateNamedFramebufferSubData(GLuint  a, GLsizei  b, const GLenum *c, GLint  d, GLint  e, GLsizei  f, GLsizei  g) {
+	m_pglex->glInvalidateNamedFramebufferSubData(a,b,c,d,e,f,g);
 }
 
-inline GLboolean glex::glIsTextureEXT(GLuint  a) {
-	return m_pglex->glIsTextureEXT(a);
+inline void glex::glClearNamedFramebufferiv(GLuint  a, GLenum  b, GLint  c, const GLint *d) {
+	m_pglex->glClearNamedFramebufferiv(a,b,c,d);
 }
 
-inline void glex::glPrioritizeTexturesEXT(GLsizei  a, const GLuint *b, const GLclampf *c) {
-	m_pglex->glPrioritizeTexturesEXT(a,b,c);
+inline void glex::glClearNamedFramebufferuiv(GLuint  a, GLenum  b, GLint  c, const GLuint *d) {
+	m_pglex->glClearNamedFramebufferuiv(a,b,c,d);
 }
 
-inline void glex::glDetailTexFuncSGIS(GLenum  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glDetailTexFuncSGIS(a,b,c);
+inline void glex::glClearNamedFramebufferfv(GLuint  a, GLenum  b, GLint  c, const GLfloat *d) {
+	m_pglex->glClearNamedFramebufferfv(a,b,c,d);
 }
 
-inline void glex::glGetDetailTexFuncSGIS(GLenum  a, GLfloat *b) {
-	m_pglex->glGetDetailTexFuncSGIS(a,b);
+inline void glex::glClearNamedFramebufferfi(GLuint  a, GLenum  b, GLint  c, GLfloat  d, GLint  e) {
+	m_pglex->glClearNamedFramebufferfi(a,b,c,d,e);
 }
 
-inline void glex::glSharpenTexFuncSGIS(GLenum  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glSharpenTexFuncSGIS(a,b,c);
+inline void glex::glBlitNamedFramebuffer(GLuint  a, GLuint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLint  i, GLint  j, GLbitfield  k, GLenum  l) {
+	m_pglex->glBlitNamedFramebuffer(a,b,c,d,e,f,g,h,i,j,k,l);
 }
 
-inline void glex::glGetSharpenTexFuncSGIS(GLenum  a, GLfloat *b) {
-	m_pglex->glGetSharpenTexFuncSGIS(a,b);
+inline GLenum glex::glCheckNamedFramebufferStatus(GLuint  a, GLenum  b) {
+	return m_pglex->glCheckNamedFramebufferStatus(a,b);
 }
 
-inline void glex::glSampleMaskSGIS(GLclampf  a, GLboolean  b) {
-	m_pglex->glSampleMaskSGIS(a,b);
+inline void glex::glGetNamedFramebufferParameteriv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedFramebufferParameteriv(a,b,c);
 }
 
-inline void glex::glSamplePatternSGIS(GLenum  a) {
-	m_pglex->glSamplePatternSGIS(a);
+inline void glex::glGetNamedFramebufferAttachmentParameteriv(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetNamedFramebufferAttachmentParameteriv(a,b,c,d);
 }
 
-inline void glex::glArrayElementEXT(GLint  a) {
-	m_pglex->glArrayElementEXT(a);
+inline void glex::glCreateRenderbuffers(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateRenderbuffers(a,b);
 }
 
-inline void glex::glColorPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glColorPointerEXT(a,b,c,d,e);
+inline void glex::glNamedRenderbufferStorage(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glNamedRenderbufferStorage(a,b,c,d);
 }
 
-inline void glex::glDrawArraysEXT(GLenum  a, GLint  b, GLsizei  c) {
-	m_pglex->glDrawArraysEXT(a,b,c);
+inline void glex::glNamedRenderbufferStorageMultisample(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
+	m_pglex->glNamedRenderbufferStorageMultisample(a,b,c,d,e);
 }
 
-inline void glex::glEdgeFlagPointerEXT(GLsizei  a, GLsizei  b, const GLboolean *c) {
-	m_pglex->glEdgeFlagPointerEXT(a,b,c);
+inline void glex::glGetNamedRenderbufferParameteriv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedRenderbufferParameteriv(a,b,c);
 }
 
-inline void glex::glGetPointervEXT(GLenum  a, GLvoid* *b) {
-	m_pglex->glGetPointervEXT(a,b);
+inline void glex::glCreateTextures(GLenum  a, GLsizei  b, GLuint *c) {
+	m_pglex->glCreateTextures(a,b,c);
 }
 
-inline void glex::glIndexPointerEXT(GLenum  a, GLsizei  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glIndexPointerEXT(a,b,c,d);
+inline void glex::glTextureBuffer(GLuint  a, GLenum  b, GLuint  c) {
+	m_pglex->glTextureBuffer(a,b,c);
 }
 
-inline void glex::glNormalPointerEXT(GLenum  a, GLsizei  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glNormalPointerEXT(a,b,c,d);
+inline void glex::glTextureBufferRange(GLuint  a, GLenum  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glTextureBufferRange(a,b,c,d,e);
 }
 
-inline void glex::glTexCoordPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glTexCoordPointerEXT(a,b,c,d,e);
+inline void glex::glTextureStorage1D(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d) {
+	m_pglex->glTextureStorage1D(a,b,c,d);
 }
 
-inline void glex::glVertexPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glVertexPointerEXT(a,b,c,d,e);
+inline void glex::glTextureStorage2D(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
+	m_pglex->glTextureStorage2D(a,b,c,d,e);
 }
 
-inline void glex::glBlendEquationEXT(GLenum  a) {
-	m_pglex->glBlendEquationEXT(a);
+inline void glex::glTextureStorage3D(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glTextureStorage3D(a,b,c,d,e,f);
 }
 
-inline void glex::glSpriteParameterfSGIX(GLenum  a, GLfloat  b) {
-	m_pglex->glSpriteParameterfSGIX(a,b);
+inline void glex::glTextureStorage2DMultisample(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLboolean  f) {
+	m_pglex->glTextureStorage2DMultisample(a,b,c,d,e,f);
 }
 
-inline void glex::glSpriteParameterfvSGIX(GLenum  a, const GLfloat *b) {
-	m_pglex->glSpriteParameterfvSGIX(a,b);
+inline void glex::glTextureStorage3DMultisample(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLboolean  g) {
+	m_pglex->glTextureStorage3DMultisample(a,b,c,d,e,f,g);
 }
 
-inline void glex::glSpriteParameteriSGIX(GLenum  a, GLint  b) {
-	m_pglex->glSpriteParameteriSGIX(a,b);
+inline void glex::glTextureSubImage1D(GLuint  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glTextureSubImage1D(a,b,c,d,e,f,g);
 }
 
-inline void glex::glSpriteParameterivSGIX(GLenum  a, const GLint *b) {
-	m_pglex->glSpriteParameterivSGIX(a,b);
+inline void glex::glTextureSubImage2D(GLuint  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLenum  h, const void *i) {
+	m_pglex->glTextureSubImage2D(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glPointParameterfEXT(GLenum  a, GLfloat  b) {
-	m_pglex->glPointParameterfEXT(a,b);
+inline void glex::glTextureSubImage3D(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glTextureSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glPointParameterfvEXT(GLenum  a, const GLfloat *b) {
-	m_pglex->glPointParameterfvEXT(a,b);
+inline void glex::glCompressedTextureSubImage1D(GLuint  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLsizei  f, const void *g) {
+	m_pglex->glCompressedTextureSubImage1D(a,b,c,d,e,f,g);
 }
 
-inline void glex::glPointParameterfSGIS(GLenum  a, GLfloat  b) {
-	m_pglex->glPointParameterfSGIS(a,b);
+inline void glex::glCompressedTextureSubImage2D(GLuint  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLsizei  h, const void *i) {
+	m_pglex->glCompressedTextureSubImage2D(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glPointParameterfvSGIS(GLenum  a, const GLfloat *b) {
-	m_pglex->glPointParameterfvSGIS(a,b);
+inline void glex::glCompressedTextureSubImage3D(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLsizei  j, const void *k) {
+	m_pglex->glCompressedTextureSubImage3D(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline GLint glex::glGetInstrumentsSGIX(void) {
-	return m_pglex->glGetInstrumentsSGIX();
+inline void glex::glCopyTextureSubImage1D(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f) {
+	m_pglex->glCopyTextureSubImage1D(a,b,c,d,e,f);
 }
 
-inline void glex::glInstrumentsBufferSGIX(GLsizei  a, GLint *b) {
-	m_pglex->glInstrumentsBufferSGIX(a,b);
+inline void glex::glCopyTextureSubImage2D(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h) {
+	m_pglex->glCopyTextureSubImage2D(a,b,c,d,e,f,g,h);
 }
 
-inline GLint glex::glPollInstrumentsSGIX(GLint *a) {
-	return m_pglex->glPollInstrumentsSGIX(a);
+inline void glex::glCopyTextureSubImage3D(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
+	m_pglex->glCopyTextureSubImage3D(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glReadInstrumentsSGIX(GLint  a) {
-	m_pglex->glReadInstrumentsSGIX(a);
+inline void glex::glTextureParameterf(GLuint  a, GLenum  b, GLfloat  c) {
+	m_pglex->glTextureParameterf(a,b,c);
 }
 
-inline void glex::glStartInstrumentsSGIX(void) {
-	m_pglex->glStartInstrumentsSGIX();
+inline void glex::glTextureParameterfv(GLuint  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glTextureParameterfv(a,b,c);
 }
 
-inline void glex::glStopInstrumentsSGIX(GLint  a) {
-	m_pglex->glStopInstrumentsSGIX(a);
+inline void glex::glTextureParameteri(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glTextureParameteri(a,b,c);
 }
 
-inline void glex::glFrameZoomSGIX(GLint  a) {
-	m_pglex->glFrameZoomSGIX(a);
+inline void glex::glTextureParameterIiv(GLuint  a, GLenum  b, const GLint *c) {
+	m_pglex->glTextureParameterIiv(a,b,c);
 }
 
-inline void glex::glTagSampleBufferSGIX(void) {
-	m_pglex->glTagSampleBufferSGIX();
+inline void glex::glTextureParameterIuiv(GLuint  a, GLenum  b, const GLuint *c) {
+	m_pglex->glTextureParameterIuiv(a,b,c);
 }
 
-inline void glex::glDeformationMap3dSGIX(GLenum  a, GLdouble  b, GLdouble  c, GLint  d, GLint  e, GLdouble  f, GLdouble  g, GLint  h, GLint  i, GLdouble  j, GLdouble  k, GLint  l, GLint  m, const GLdouble *n) {
-	m_pglex->glDeformationMap3dSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
+inline void glex::glTextureParameteriv(GLuint  a, GLenum  b, const GLint *c) {
+	m_pglex->glTextureParameteriv(a,b,c);
 }
 
-inline void glex::glDeformationMap3fSGIX(GLenum  a, GLfloat  b, GLfloat  c, GLint  d, GLint  e, GLfloat  f, GLfloat  g, GLint  h, GLint  i, GLfloat  j, GLfloat  k, GLint  l, GLint  m, const GLfloat *n) {
-	m_pglex->glDeformationMap3fSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
+inline void glex::glGenerateTextureMipmap(GLuint  a) {
+	m_pglex->glGenerateTextureMipmap(a);
 }
 
-inline void glex::glDeformSGIX(GLbitfield  a) {
-	m_pglex->glDeformSGIX(a);
+inline void glex::glBindTextureUnit(GLuint  a, GLuint  b) {
+	m_pglex->glBindTextureUnit(a,b);
 }
 
-inline void glex::glLoadIdentityDeformationMapSGIX(GLbitfield  a) {
-	m_pglex->glLoadIdentityDeformationMapSGIX(a);
+inline void glex::glGetTextureImage(GLuint  a, GLint  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetTextureImage(a,b,c,d,e,f);
 }
 
-inline void glex::glReferencePlaneSGIX(const GLdouble *a) {
-	m_pglex->glReferencePlaneSGIX(a);
+inline void glex::glGetCompressedTextureImage(GLuint  a, GLint  b, GLsizei  c, void *d) {
+	m_pglex->glGetCompressedTextureImage(a,b,c,d);
 }
 
-inline void glex::glFlushRasterSGIX(void) {
-	m_pglex->glFlushRasterSGIX();
+inline void glex::glGetTextureLevelParameterfv(GLuint  a, GLint  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetTextureLevelParameterfv(a,b,c,d);
 }
 
-inline void glex::glFogFuncSGIS(GLsizei  a, const GLfloat *b) {
-	m_pglex->glFogFuncSGIS(a,b);
+inline void glex::glGetTextureLevelParameteriv(GLuint  a, GLint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetTextureLevelParameteriv(a,b,c,d);
 }
 
-inline void glex::glGetFogFuncSGIS(GLfloat *a) {
-	m_pglex->glGetFogFuncSGIS(a);
+inline void glex::glGetTextureParameterfv(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetTextureParameterfv(a,b,c);
 }
 
-inline void glex::glImageTransformParameteriHP(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glImageTransformParameteriHP(a,b,c);
+inline void glex::glGetTextureParameterIiv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetTextureParameterIiv(a,b,c);
 }
 
-inline void glex::glImageTransformParameterfHP(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glImageTransformParameterfHP(a,b,c);
+inline void glex::glGetTextureParameterIuiv(GLuint  a, GLenum  b, GLuint *c) {
+	m_pglex->glGetTextureParameterIuiv(a,b,c);
 }
 
-inline void glex::glImageTransformParameterivHP(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glImageTransformParameterivHP(a,b,c);
+inline void glex::glGetTextureParameteriv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetTextureParameteriv(a,b,c);
 }
 
-inline void glex::glImageTransformParameterfvHP(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glImageTransformParameterfvHP(a,b,c);
+inline void glex::glCreateVertexArrays(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateVertexArrays(a,b);
 }
 
-inline void glex::glGetImageTransformParameterivHP(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetImageTransformParameterivHP(a,b,c);
+inline void glex::glDisableVertexArrayAttrib(GLuint  a, GLuint  b) {
+	m_pglex->glDisableVertexArrayAttrib(a,b);
 }
 
-inline void glex::glGetImageTransformParameterfvHP(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetImageTransformParameterfvHP(a,b,c);
+inline void glex::glEnableVertexArrayAttrib(GLuint  a, GLuint  b) {
+	m_pglex->glEnableVertexArrayAttrib(a,b);
 }
 
-inline void glex::glColorSubTableEXT(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glColorSubTableEXT(a,b,c,d,e,f);
+inline void glex::glVertexArrayElementBuffer(GLuint  a, GLuint  b) {
+	m_pglex->glVertexArrayElementBuffer(a,b);
 }
 
-inline void glex::glCopyColorSubTableEXT(GLenum  a, GLsizei  b, GLint  c, GLint  d, GLsizei  e) {
-	m_pglex->glCopyColorSubTableEXT(a,b,c,d,e);
+inline void glex::glVertexArrayVertexBuffer(GLuint  a, GLuint  b, GLuint  c, GLintptr  d, GLsizei  e) {
+	m_pglex->glVertexArrayVertexBuffer(a,b,c,d,e);
 }
 
-inline void glex::glHintPGI(GLenum  a, GLint  b) {
-	m_pglex->glHintPGI(a,b);
+inline void glex::glVertexArrayVertexBuffers(GLuint  a, GLuint  b, GLsizei  c, const GLuint *d, const GLintptr *e, const GLsizei *f) {
+	m_pglex->glVertexArrayVertexBuffers(a,b,c,d,e,f);
 }
 
-inline void glex::glColorTableEXT(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glColorTableEXT(a,b,c,d,e,f);
+inline void glex::glVertexArrayAttribBinding(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glVertexArrayAttribBinding(a,b,c);
 }
 
-inline void glex::glGetColorTableEXT(GLenum  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetColorTableEXT(a,b,c,d);
+inline void glex::glVertexArrayAttribFormat(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLboolean  e, GLuint  f) {
+	m_pglex->glVertexArrayAttribFormat(a,b,c,d,e,f);
 }
 
-inline void glex::glGetColorTableParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetColorTableParameterivEXT(a,b,c);
+inline void glex::glVertexArrayAttribIFormat(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
+	m_pglex->glVertexArrayAttribIFormat(a,b,c,d,e);
 }
 
-inline void glex::glGetColorTableParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetColorTableParameterfvEXT(a,b,c);
+inline void glex::glVertexArrayAttribLFormat(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
+	m_pglex->glVertexArrayAttribLFormat(a,b,c,d,e);
 }
 
-inline void glex::glGetListParameterfvSGIX(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetListParameterfvSGIX(a,b,c);
+inline void glex::glVertexArrayBindingDivisor(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glVertexArrayBindingDivisor(a,b,c);
 }
 
-inline void glex::glGetListParameterivSGIX(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetListParameterivSGIX(a,b,c);
+inline void glex::glGetVertexArrayiv(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVertexArrayiv(a,b,c);
 }
 
-inline void glex::glListParameterfSGIX(GLuint  a, GLenum  b, GLfloat  c) {
-	m_pglex->glListParameterfSGIX(a,b,c);
+inline void glex::glGetVertexArrayIndexediv(GLuint  a, GLuint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetVertexArrayIndexediv(a,b,c,d);
 }
 
-inline void glex::glListParameterfvSGIX(GLuint  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glListParameterfvSGIX(a,b,c);
+inline void glex::glGetVertexArrayIndexed64iv(GLuint  a, GLuint  b, GLenum  c, GLint64 *d) {
+	m_pglex->glGetVertexArrayIndexed64iv(a,b,c,d);
 }
 
-inline void glex::glListParameteriSGIX(GLuint  a, GLenum  b, GLint  c) {
-	m_pglex->glListParameteriSGIX(a,b,c);
+inline void glex::glCreateSamplers(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateSamplers(a,b);
 }
 
-inline void glex::glListParameterivSGIX(GLuint  a, GLenum  b, const GLint *c) {
-	m_pglex->glListParameterivSGIX(a,b,c);
+inline void glex::glCreateProgramPipelines(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateProgramPipelines(a,b);
 }
 
-inline void glex::glIndexMaterialEXT(GLenum  a, GLenum  b) {
-	m_pglex->glIndexMaterialEXT(a,b);
+inline void glex::glCreateQueries(GLenum  a, GLsizei  b, GLuint *c) {
+	m_pglex->glCreateQueries(a,b,c);
 }
 
-inline void glex::glIndexFuncEXT(GLenum  a, GLclampf  b) {
-	m_pglex->glIndexFuncEXT(a,b);
+inline void glex::glGetQueryBufferObjecti64v(GLuint  a, GLuint  b, GLenum  c, GLintptr  d) {
+	m_pglex->glGetQueryBufferObjecti64v(a,b,c,d);
 }
 
-inline void glex::glLockArraysEXT(GLint  a, GLsizei  b) {
-	m_pglex->glLockArraysEXT(a,b);
+inline void glex::glGetQueryBufferObjectiv(GLuint  a, GLuint  b, GLenum  c, GLintptr  d) {
+	m_pglex->glGetQueryBufferObjectiv(a,b,c,d);
 }
 
-inline void glex::glUnlockArraysEXT(void) {
-	m_pglex->glUnlockArraysEXT();
+inline void glex::glGetQueryBufferObjectui64v(GLuint  a, GLuint  b, GLenum  c, GLintptr  d) {
+	m_pglex->glGetQueryBufferObjectui64v(a,b,c,d);
 }
 
-inline void glex::glCullParameterdvEXT(GLenum  a, GLdouble *b) {
-	m_pglex->glCullParameterdvEXT(a,b);
+inline void glex::glGetQueryBufferObjectuiv(GLuint  a, GLuint  b, GLenum  c, GLintptr  d) {
+	m_pglex->glGetQueryBufferObjectuiv(a,b,c,d);
 }
 
-inline void glex::glCullParameterfvEXT(GLenum  a, GLfloat *b) {
-	m_pglex->glCullParameterfvEXT(a,b);
+inline void glex::glMemoryBarrierByRegion(GLbitfield  a) {
+	m_pglex->glMemoryBarrierByRegion(a);
 }
 
-inline void glex::glFragmentColorMaterialSGIX(GLenum  a, GLenum  b) {
-	m_pglex->glFragmentColorMaterialSGIX(a,b);
+inline void glex::glGetTextureSubImage(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, GLsizei  k, void *l) {
+	m_pglex->glGetTextureSubImage(a,b,c,d,e,f,g,h,i,j,k,l);
 }
 
-inline void glex::glFragmentLightfSGIX(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glFragmentLightfSGIX(a,b,c);
+inline void glex::glGetCompressedTextureSubImage(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLsizei  i, void *j) {
+	m_pglex->glGetCompressedTextureSubImage(a,b,c,d,e,f,g,h,i,j);
 }
 
-inline void glex::glFragmentLightfvSGIX(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glFragmentLightfvSGIX(a,b,c);
+inline GLenum glex::glGetGraphicsResetStatus(void) {
+	return m_pglex->glGetGraphicsResetStatus();
 }
 
-inline void glex::glFragmentLightiSGIX(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glFragmentLightiSGIX(a,b,c);
+inline void glex::glGetnCompressedTexImage(GLenum  a, GLint  b, GLsizei  c, void *d) {
+	m_pglex->glGetnCompressedTexImage(a,b,c,d);
 }
 
-inline void glex::glFragmentLightivSGIX(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glFragmentLightivSGIX(a,b,c);
+inline void glex::glGetnTexImage(GLenum  a, GLint  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnTexImage(a,b,c,d,e,f);
 }
 
-inline void glex::glFragmentLightModelfSGIX(GLenum  a, GLfloat  b) {
-	m_pglex->glFragmentLightModelfSGIX(a,b);
+inline void glex::glGetnUniformdv(GLuint  a, GLint  b, GLsizei  c, GLdouble *d) {
+	m_pglex->glGetnUniformdv(a,b,c,d);
 }
 
-inline void glex::glFragmentLightModelfvSGIX(GLenum  a, const GLfloat *b) {
-	m_pglex->glFragmentLightModelfvSGIX(a,b);
+inline void glex::glGetnUniformfv(GLuint  a, GLint  b, GLsizei  c, GLfloat *d) {
+	m_pglex->glGetnUniformfv(a,b,c,d);
 }
 
-inline void glex::glFragmentLightModeliSGIX(GLenum  a, GLint  b) {
-	m_pglex->glFragmentLightModeliSGIX(a,b);
+inline void glex::glGetnUniformiv(GLuint  a, GLint  b, GLsizei  c, GLint *d) {
+	m_pglex->glGetnUniformiv(a,b,c,d);
 }
 
-inline void glex::glFragmentLightModelivSGIX(GLenum  a, const GLint *b) {
-	m_pglex->glFragmentLightModelivSGIX(a,b);
+inline void glex::glGetnUniformuiv(GLuint  a, GLint  b, GLsizei  c, GLuint *d) {
+	m_pglex->glGetnUniformuiv(a,b,c,d);
 }
 
-inline void glex::glFragmentMaterialfSGIX(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glFragmentMaterialfSGIX(a,b,c);
+inline void glex::glReadnPixels(GLint  a, GLint  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, GLsizei  g, void *h) {
+	m_pglex->glReadnPixels(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glFragmentMaterialfvSGIX(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glFragmentMaterialfvSGIX(a,b,c);
+inline void glex::glGetnMapdv(GLenum  a, GLenum  b, GLsizei  c, GLdouble *d) {
+	m_pglex->glGetnMapdv(a,b,c,d);
 }
 
-inline void glex::glFragmentMaterialiSGIX(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glFragmentMaterialiSGIX(a,b,c);
+inline void glex::glGetnMapfv(GLenum  a, GLenum  b, GLsizei  c, GLfloat *d) {
+	m_pglex->glGetnMapfv(a,b,c,d);
 }
 
-inline void glex::glFragmentMaterialivSGIX(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glFragmentMaterialivSGIX(a,b,c);
+inline void glex::glGetnMapiv(GLenum  a, GLenum  b, GLsizei  c, GLint *d) {
+	m_pglex->glGetnMapiv(a,b,c,d);
 }
 
-inline void glex::glGetFragmentLightfvSGIX(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetFragmentLightfvSGIX(a,b,c);
+inline void glex::glGetnPixelMapfv(GLenum  a, GLsizei  b, GLfloat *c) {
+	m_pglex->glGetnPixelMapfv(a,b,c);
 }
 
-inline void glex::glGetFragmentLightivSGIX(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetFragmentLightivSGIX(a,b,c);
+inline void glex::glGetnPixelMapuiv(GLenum  a, GLsizei  b, GLuint *c) {
+	m_pglex->glGetnPixelMapuiv(a,b,c);
 }
 
-inline void glex::glGetFragmentMaterialfvSGIX(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetFragmentMaterialfvSGIX(a,b,c);
+inline void glex::glGetnPixelMapusv(GLenum  a, GLsizei  b, GLushort *c) {
+	m_pglex->glGetnPixelMapusv(a,b,c);
 }
 
-inline void glex::glGetFragmentMaterialivSGIX(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetFragmentMaterialivSGIX(a,b,c);
+inline void glex::glGetnPolygonStipple(GLsizei  a, GLubyte *b) {
+	m_pglex->glGetnPolygonStipple(a,b);
 }
 
-inline void glex::glLightEnviSGIX(GLenum  a, GLint  b) {
-	m_pglex->glLightEnviSGIX(a,b);
+inline void glex::glGetnColorTable(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e) {
+	m_pglex->glGetnColorTable(a,b,c,d,e);
 }
 
-inline void glex::glDrawRangeElementsEXT(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glDrawRangeElementsEXT(a,b,c,d,e,f);
+inline void glex::glGetnConvolutionFilter(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e) {
+	m_pglex->glGetnConvolutionFilter(a,b,c,d,e);
 }
 
-inline void glex::glApplyTextureEXT(GLenum  a) {
-	m_pglex->glApplyTextureEXT(a);
+inline void glex::glGetnSeparableFilter(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e, GLsizei  f, void *g, void *h) {
+	m_pglex->glGetnSeparableFilter(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glTextureLightEXT(GLenum  a) {
-	m_pglex->glTextureLightEXT(a);
+inline void glex::glGetnHistogram(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnHistogram(a,b,c,d,e,f);
 }
 
-inline void glex::glTextureMaterialEXT(GLenum  a, GLenum  b) {
-	m_pglex->glTextureMaterialEXT(a,b);
+inline void glex::glGetnMinmax(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnMinmax(a,b,c,d,e,f);
 }
 
-inline void glex::glAsyncMarkerSGIX(GLuint  a) {
-	m_pglex->glAsyncMarkerSGIX(a);
+inline void glex::glTextureBarrier(void) {
+	m_pglex->glTextureBarrier();
 }
 
-inline GLint glex::glFinishAsyncSGIX(GLuint *a) {
-	return m_pglex->glFinishAsyncSGIX(a);
+inline void glex::glPrimitiveBoundingBoxARB(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
+	m_pglex->glPrimitiveBoundingBoxARB(a,b,c,d,e,f,g,h);
 }
 
-inline GLint glex::glPollAsyncSGIX(GLuint *a) {
-	return m_pglex->glPollAsyncSGIX(a);
+inline GLuint64 glex::glGetTextureHandleARB(GLuint  a) {
+	return m_pglex->glGetTextureHandleARB(a);
 }
 
-inline GLuint glex::glGenAsyncMarkersSGIX(GLsizei  a) {
-	return m_pglex->glGenAsyncMarkersSGIX(a);
+inline GLuint64 glex::glGetTextureSamplerHandleARB(GLuint  a, GLuint  b) {
+	return m_pglex->glGetTextureSamplerHandleARB(a,b);
 }
 
-inline void glex::glDeleteAsyncMarkersSGIX(GLuint  a, GLsizei  b) {
-	m_pglex->glDeleteAsyncMarkersSGIX(a,b);
+inline void glex::glMakeTextureHandleResidentARB(GLuint64  a) {
+	m_pglex->glMakeTextureHandleResidentARB(a);
 }
 
-inline GLboolean glex::glIsAsyncMarkerSGIX(GLuint  a) {
-	return m_pglex->glIsAsyncMarkerSGIX(a);
+inline void glex::glMakeTextureHandleNonResidentARB(GLuint64  a) {
+	m_pglex->glMakeTextureHandleNonResidentARB(a);
 }
 
-inline void glex::glVertexPointervINTEL(GLint  a, GLenum  b, const GLvoid* *c) {
-	m_pglex->glVertexPointervINTEL(a,b,c);
+inline GLuint64 glex::glGetImageHandleARB(GLuint  a, GLint  b, GLboolean  c, GLint  d, GLenum  e) {
+	return m_pglex->glGetImageHandleARB(a,b,c,d,e);
 }
 
-inline void glex::glNormalPointervINTEL(GLenum  a, const GLvoid* *b) {
-	m_pglex->glNormalPointervINTEL(a,b);
+inline void glex::glMakeImageHandleResidentARB(GLuint64  a, GLenum  b) {
+	m_pglex->glMakeImageHandleResidentARB(a,b);
 }
 
-inline void glex::glColorPointervINTEL(GLint  a, GLenum  b, const GLvoid* *c) {
-	m_pglex->glColorPointervINTEL(a,b,c);
+inline void glex::glMakeImageHandleNonResidentARB(GLuint64  a) {
+	m_pglex->glMakeImageHandleNonResidentARB(a);
 }
 
-inline void glex::glTexCoordPointervINTEL(GLint  a, GLenum  b, const GLvoid* *c) {
-	m_pglex->glTexCoordPointervINTEL(a,b,c);
+inline void glex::glUniformHandleui64ARB(GLint  a, GLuint64  b) {
+	m_pglex->glUniformHandleui64ARB(a,b);
 }
 
-inline void glex::glPixelTransformParameteriEXT(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glPixelTransformParameteriEXT(a,b,c);
+inline void glex::glUniformHandleui64vARB(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniformHandleui64vARB(a,b,c);
 }
 
-inline void glex::glPixelTransformParameterfEXT(GLenum  a, GLenum  b, GLfloat  c) {
-	m_pglex->glPixelTransformParameterfEXT(a,b,c);
+inline void glex::glProgramUniformHandleui64ARB(GLuint  a, GLint  b, GLuint64  c) {
+	m_pglex->glProgramUniformHandleui64ARB(a,b,c);
 }
 
-inline void glex::glPixelTransformParameterivEXT(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glPixelTransformParameterivEXT(a,b,c);
+inline void glex::glProgramUniformHandleui64vARB(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniformHandleui64vARB(a,b,c,d);
 }
 
-inline void glex::glPixelTransformParameterfvEXT(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glPixelTransformParameterfvEXT(a,b,c);
+inline GLboolean glex::glIsTextureHandleResidentARB(GLuint64  a) {
+	return m_pglex->glIsTextureHandleResidentARB(a);
 }
 
-inline void glex::glGetPixelTransformParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetPixelTransformParameterivEXT(a,b,c);
+inline GLboolean glex::glIsImageHandleResidentARB(GLuint64  a) {
+	return m_pglex->glIsImageHandleResidentARB(a);
 }
 
-inline void glex::glGetPixelTransformParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetPixelTransformParameterfvEXT(a,b,c);
+inline void glex::glVertexAttribL1ui64ARB(GLuint  a, GLuint64EXT  b) {
+	m_pglex->glVertexAttribL1ui64ARB(a,b);
 }
 
-inline void glex::glSecondaryColor3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
-	m_pglex->glSecondaryColor3bEXT(a,b,c);
+inline void glex::glVertexAttribL1ui64vARB(GLuint  a, const GLuint64EXT *b) {
+	m_pglex->glVertexAttribL1ui64vARB(a,b);
 }
 
-inline void glex::glSecondaryColor3bvEXT(const GLbyte *a) {
-	m_pglex->glSecondaryColor3bvEXT(a);
+inline void glex::glGetVertexAttribLui64vARB(GLuint  a, GLenum  b, GLuint64EXT *c) {
+	m_pglex->glGetVertexAttribLui64vARB(a,b,c);
 }
 
-inline void glex::glSecondaryColor3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glSecondaryColor3dEXT(a,b,c);
+inline GLsync glex::glCreateSyncFromCLeventARB(struct _cl_context *a, struct _cl_event *b, GLbitfield  c) {
+	return m_pglex->glCreateSyncFromCLeventARB(a,b,c);
 }
 
-inline void glex::glSecondaryColor3dvEXT(const GLdouble *a) {
-	m_pglex->glSecondaryColor3dvEXT(a);
+inline void glex::glClampColorARB(GLenum  a, GLenum  b) {
+	m_pglex->glClampColorARB(a,b);
 }
 
-inline void glex::glSecondaryColor3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glSecondaryColor3fEXT(a,b,c);
+inline void glex::glDispatchComputeGroupSizeARB(GLuint  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
+	m_pglex->glDispatchComputeGroupSizeARB(a,b,c,d,e,f);
 }
 
-inline void glex::glSecondaryColor3fvEXT(const GLfloat *a) {
-	m_pglex->glSecondaryColor3fvEXT(a);
+inline void glex::glDebugMessageControlARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, const GLuint *e, GLboolean  f) {
+	m_pglex->glDebugMessageControlARB(a,b,c,d,e,f);
 }
 
-inline void glex::glSecondaryColor3iEXT(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glSecondaryColor3iEXT(a,b,c);
+inline void glex::glDebugMessageInsertARB(GLenum  a, GLenum  b, GLuint  c, GLenum  d, GLsizei  e, const GLchar *f) {
+	m_pglex->glDebugMessageInsertARB(a,b,c,d,e,f);
 }
 
-inline void glex::glSecondaryColor3ivEXT(const GLint *a) {
-	m_pglex->glSecondaryColor3ivEXT(a);
+inline void glex::glDebugMessageCallbackARB(GLDEBUGPROCARB  a, const void *b) {
+	m_pglex->glDebugMessageCallbackARB(a,b);
 }
 
-inline void glex::glSecondaryColor3sEXT(GLshort  a, GLshort  b, GLshort  c) {
-	m_pglex->glSecondaryColor3sEXT(a,b,c);
+inline GLuint glex::glGetDebugMessageLogARB(GLuint  a, GLsizei  b, GLenum *c, GLenum *d, GLuint *e, GLenum *f, GLsizei *g, GLchar *h) {
+	return m_pglex->glGetDebugMessageLogARB(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glSecondaryColor3svEXT(const GLshort *a) {
-	m_pglex->glSecondaryColor3svEXT(a);
+inline void glex::glDrawBuffersARB(GLsizei  a, const GLenum *b) {
+	m_pglex->glDrawBuffersARB(a,b);
 }
 
-inline void glex::glSecondaryColor3ubEXT(GLubyte  a, GLubyte  b, GLubyte  c) {
-	m_pglex->glSecondaryColor3ubEXT(a,b,c);
+inline void glex::glBlendEquationiARB(GLuint  a, GLenum  b) {
+	m_pglex->glBlendEquationiARB(a,b);
 }
 
-inline void glex::glSecondaryColor3ubvEXT(const GLubyte *a) {
-	m_pglex->glSecondaryColor3ubvEXT(a);
+inline void glex::glBlendEquationSeparateiARB(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendEquationSeparateiARB(a,b,c);
 }
 
-inline void glex::glSecondaryColor3uiEXT(GLuint  a, GLuint  b, GLuint  c) {
-	m_pglex->glSecondaryColor3uiEXT(a,b,c);
+inline void glex::glBlendFunciARB(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendFunciARB(a,b,c);
 }
 
-inline void glex::glSecondaryColor3uivEXT(const GLuint *a) {
-	m_pglex->glSecondaryColor3uivEXT(a);
+inline void glex::glBlendFuncSeparateiARB(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
+	m_pglex->glBlendFuncSeparateiARB(a,b,c,d,e);
 }
 
-inline void glex::glSecondaryColor3usEXT(GLushort  a, GLushort  b, GLushort  c) {
-	m_pglex->glSecondaryColor3usEXT(a,b,c);
+inline void glex::glDrawArraysInstancedARB(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glDrawArraysInstancedARB(a,b,c,d);
 }
 
-inline void glex::glSecondaryColor3usvEXT(const GLushort *a) {
-	m_pglex->glSecondaryColor3usvEXT(a);
+inline void glex::glDrawElementsInstancedARB(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLsizei  e) {
+	m_pglex->glDrawElementsInstancedARB(a,b,c,d,e);
 }
 
-inline void glex::glSecondaryColorPointerEXT(GLint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glSecondaryColorPointerEXT(a,b,c,d);
+inline void glex::glProgramStringARB(GLenum  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glProgramStringARB(a,b,c,d);
 }
 
-inline void glex::glTextureNormalEXT(GLenum  a) {
-	m_pglex->glTextureNormalEXT(a);
+inline void glex::glBindProgramARB(GLenum  a, GLuint  b) {
+	m_pglex->glBindProgramARB(a,b);
 }
 
-inline void glex::glMultiDrawArraysEXT(GLenum  a, const GLint *b, const GLsizei *c, GLsizei  d) {
-	m_pglex->glMultiDrawArraysEXT(a,b,c,d);
+inline void glex::glDeleteProgramsARB(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteProgramsARB(a,b);
 }
 
-inline void glex::glMultiDrawElementsEXT(GLenum  a, const GLsizei *b, GLenum  c, const GLvoid* *d, GLsizei  e) {
-	m_pglex->glMultiDrawElementsEXT(a,b,c,d,e);
+inline void glex::glGenProgramsARB(GLsizei  a, GLuint *b) {
+	m_pglex->glGenProgramsARB(a,b);
 }
 
-inline void glex::glFogCoordfEXT(GLfloat  a) {
-	m_pglex->glFogCoordfEXT(a);
+inline void glex::glProgramEnvParameter4dARB(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
+	m_pglex->glProgramEnvParameter4dARB(a,b,c,d,e,f);
 }
 
-inline void glex::glFogCoordfvEXT(const GLfloat *a) {
-	m_pglex->glFogCoordfvEXT(a);
+inline void glex::glProgramEnvParameter4dvARB(GLenum  a, GLuint  b, const GLdouble *c) {
+	m_pglex->glProgramEnvParameter4dvARB(a,b,c);
 }
 
-inline void glex::glFogCoorddEXT(GLdouble  a) {
-	m_pglex->glFogCoorddEXT(a);
+inline void glex::glProgramEnvParameter4fARB(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glProgramEnvParameter4fARB(a,b,c,d,e,f);
 }
 
-inline void glex::glFogCoorddvEXT(const GLdouble *a) {
-	m_pglex->glFogCoorddvEXT(a);
+inline void glex::glProgramEnvParameter4fvARB(GLenum  a, GLuint  b, const GLfloat *c) {
+	m_pglex->glProgramEnvParameter4fvARB(a,b,c);
 }
 
-inline void glex::glFogCoordPointerEXT(GLenum  a, GLsizei  b, const GLvoid *c) {
-	m_pglex->glFogCoordPointerEXT(a,b,c);
+inline void glex::glProgramLocalParameter4dARB(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
+	m_pglex->glProgramLocalParameter4dARB(a,b,c,d,e,f);
 }
 
-inline void glex::glTangent3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
-	m_pglex->glTangent3bEXT(a,b,c);
+inline void glex::glProgramLocalParameter4dvARB(GLenum  a, GLuint  b, const GLdouble *c) {
+	m_pglex->glProgramLocalParameter4dvARB(a,b,c);
 }
 
-inline void glex::glTangent3bvEXT(const GLbyte *a) {
-	m_pglex->glTangent3bvEXT(a);
+inline void glex::glProgramLocalParameter4fARB(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glProgramLocalParameter4fARB(a,b,c,d,e,f);
 }
 
-inline void glex::glTangent3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glTangent3dEXT(a,b,c);
+inline void glex::glProgramLocalParameter4fvARB(GLenum  a, GLuint  b, const GLfloat *c) {
+	m_pglex->glProgramLocalParameter4fvARB(a,b,c);
 }
 
-inline void glex::glTangent3dvEXT(const GLdouble *a) {
-	m_pglex->glTangent3dvEXT(a);
+inline void glex::glGetProgramEnvParameterdvARB(GLenum  a, GLuint  b, GLdouble *c) {
+	m_pglex->glGetProgramEnvParameterdvARB(a,b,c);
 }
 
-inline void glex::glTangent3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glTangent3fEXT(a,b,c);
+inline void glex::glGetProgramEnvParameterfvARB(GLenum  a, GLuint  b, GLfloat *c) {
+	m_pglex->glGetProgramEnvParameterfvARB(a,b,c);
 }
 
-inline void glex::glTangent3fvEXT(const GLfloat *a) {
-	m_pglex->glTangent3fvEXT(a);
+inline void glex::glGetProgramLocalParameterdvARB(GLenum  a, GLuint  b, GLdouble *c) {
+	m_pglex->glGetProgramLocalParameterdvARB(a,b,c);
 }
 
-inline void glex::glTangent3iEXT(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glTangent3iEXT(a,b,c);
+inline void glex::glGetProgramLocalParameterfvARB(GLenum  a, GLuint  b, GLfloat *c) {
+	m_pglex->glGetProgramLocalParameterfvARB(a,b,c);
 }
 
-inline void glex::glTangent3ivEXT(const GLint *a) {
-	m_pglex->glTangent3ivEXT(a);
+inline void glex::glGetProgramivARB(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetProgramivARB(a,b,c);
 }
 
-inline void glex::glTangent3sEXT(GLshort  a, GLshort  b, GLshort  c) {
-	m_pglex->glTangent3sEXT(a,b,c);
+inline void glex::glGetProgramStringARB(GLenum  a, GLenum  b, void *c) {
+	m_pglex->glGetProgramStringARB(a,b,c);
 }
 
-inline void glex::glTangent3svEXT(const GLshort *a) {
-	m_pglex->glTangent3svEXT(a);
+inline GLboolean glex::glIsProgramARB(GLuint  a) {
+	return m_pglex->glIsProgramARB(a);
 }
 
-inline void glex::glBinormal3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
-	m_pglex->glBinormal3bEXT(a,b,c);
+inline void glex::glProgramParameteriARB(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glProgramParameteriARB(a,b,c);
 }
 
-inline void glex::glBinormal3bvEXT(const GLbyte *a) {
-	m_pglex->glBinormal3bvEXT(a);
+inline void glex::glFramebufferTextureARB(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
+	m_pglex->glFramebufferTextureARB(a,b,c,d);
 }
 
-inline void glex::glBinormal3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glBinormal3dEXT(a,b,c);
+inline void glex::glFramebufferTextureLayerARB(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
+	m_pglex->glFramebufferTextureLayerARB(a,b,c,d,e);
 }
 
-inline void glex::glBinormal3dvEXT(const GLdouble *a) {
-	m_pglex->glBinormal3dvEXT(a);
+inline void glex::glFramebufferTextureFaceARB(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
+	m_pglex->glFramebufferTextureFaceARB(a,b,c,d,e);
 }
 
-inline void glex::glBinormal3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glBinormal3fEXT(a,b,c);
+inline void glex::glUniform1i64ARB(GLint  a, GLint64  b) {
+	m_pglex->glUniform1i64ARB(a,b);
 }
 
-inline void glex::glBinormal3fvEXT(const GLfloat *a) {
-	m_pglex->glBinormal3fvEXT(a);
+inline void glex::glUniform2i64ARB(GLint  a, GLint64  b, GLint64  c) {
+	m_pglex->glUniform2i64ARB(a,b,c);
 }
 
-inline void glex::glBinormal3iEXT(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glBinormal3iEXT(a,b,c);
+inline void glex::glUniform3i64ARB(GLint  a, GLint64  b, GLint64  c, GLint64  d) {
+	m_pglex->glUniform3i64ARB(a,b,c,d);
 }
 
-inline void glex::glBinormal3ivEXT(const GLint *a) {
-	m_pglex->glBinormal3ivEXT(a);
+inline void glex::glUniform4i64ARB(GLint  a, GLint64  b, GLint64  c, GLint64  d, GLint64  e) {
+	m_pglex->glUniform4i64ARB(a,b,c,d,e);
 }
 
-inline void glex::glBinormal3sEXT(GLshort  a, GLshort  b, GLshort  c) {
-	m_pglex->glBinormal3sEXT(a,b,c);
+inline void glex::glUniform1i64vARB(GLint  a, GLsizei  b, const GLint64 *c) {
+	m_pglex->glUniform1i64vARB(a,b,c);
 }
 
-inline void glex::glBinormal3svEXT(const GLshort *a) {
-	m_pglex->glBinormal3svEXT(a);
+inline void glex::glUniform2i64vARB(GLint  a, GLsizei  b, const GLint64 *c) {
+	m_pglex->glUniform2i64vARB(a,b,c);
 }
 
-inline void glex::glTangentPointerEXT(GLenum  a, GLsizei  b, const GLvoid *c) {
-	m_pglex->glTangentPointerEXT(a,b,c);
+inline void glex::glUniform3i64vARB(GLint  a, GLsizei  b, const GLint64 *c) {
+	m_pglex->glUniform3i64vARB(a,b,c);
 }
 
-inline void glex::glBinormalPointerEXT(GLenum  a, GLsizei  b, const GLvoid *c) {
-	m_pglex->glBinormalPointerEXT(a,b,c);
+inline void glex::glUniform4i64vARB(GLint  a, GLsizei  b, const GLint64 *c) {
+	m_pglex->glUniform4i64vARB(a,b,c);
 }
 
-inline void glex::glFinishTextureSUNX(void) {
-	m_pglex->glFinishTextureSUNX();
+inline void glex::glUniform1ui64ARB(GLint  a, GLuint64  b) {
+	m_pglex->glUniform1ui64ARB(a,b);
 }
 
-inline void glex::glGlobalAlphaFactorbSUN(GLbyte  a) {
-	m_pglex->glGlobalAlphaFactorbSUN(a);
+inline void glex::glUniform2ui64ARB(GLint  a, GLuint64  b, GLuint64  c) {
+	m_pglex->glUniform2ui64ARB(a,b,c);
 }
 
-inline void glex::glGlobalAlphaFactorsSUN(GLshort  a) {
-	m_pglex->glGlobalAlphaFactorsSUN(a);
+inline void glex::glUniform3ui64ARB(GLint  a, GLuint64  b, GLuint64  c, GLuint64  d) {
+	m_pglex->glUniform3ui64ARB(a,b,c,d);
 }
 
-inline void glex::glGlobalAlphaFactoriSUN(GLint  a) {
-	m_pglex->glGlobalAlphaFactoriSUN(a);
+inline void glex::glUniform4ui64ARB(GLint  a, GLuint64  b, GLuint64  c, GLuint64  d, GLuint64  e) {
+	m_pglex->glUniform4ui64ARB(a,b,c,d,e);
 }
 
-inline void glex::glGlobalAlphaFactorfSUN(GLfloat  a) {
-	m_pglex->glGlobalAlphaFactorfSUN(a);
+inline void glex::glUniform1ui64vARB(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniform1ui64vARB(a,b,c);
 }
 
-inline void glex::glGlobalAlphaFactordSUN(GLdouble  a) {
-	m_pglex->glGlobalAlphaFactordSUN(a);
+inline void glex::glUniform2ui64vARB(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniform2ui64vARB(a,b,c);
 }
 
-inline void glex::glGlobalAlphaFactorubSUN(GLubyte  a) {
-	m_pglex->glGlobalAlphaFactorubSUN(a);
+inline void glex::glUniform3ui64vARB(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniform3ui64vARB(a,b,c);
 }
 
-inline void glex::glGlobalAlphaFactorusSUN(GLushort  a) {
-	m_pglex->glGlobalAlphaFactorusSUN(a);
+inline void glex::glUniform4ui64vARB(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniform4ui64vARB(a,b,c);
 }
 
-inline void glex::glGlobalAlphaFactoruiSUN(GLuint  a) {
-	m_pglex->glGlobalAlphaFactoruiSUN(a);
+inline void glex::glGetUniformi64vARB(GLuint  a, GLint  b, GLint64 *c) {
+	m_pglex->glGetUniformi64vARB(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiSUN(GLuint  a) {
-	m_pglex->glReplacementCodeuiSUN(a);
+inline void glex::glGetUniformui64vARB(GLuint  a, GLint  b, GLuint64 *c) {
+	m_pglex->glGetUniformui64vARB(a,b,c);
 }
 
-inline void glex::glReplacementCodeusSUN(GLushort  a) {
-	m_pglex->glReplacementCodeusSUN(a);
+inline void glex::glGetnUniformi64vARB(GLuint  a, GLint  b, GLsizei  c, GLint64 *d) {
+	m_pglex->glGetnUniformi64vARB(a,b,c,d);
 }
 
-inline void glex::glReplacementCodeubSUN(GLubyte  a) {
-	m_pglex->glReplacementCodeubSUN(a);
+inline void glex::glGetnUniformui64vARB(GLuint  a, GLint  b, GLsizei  c, GLuint64 *d) {
+	m_pglex->glGetnUniformui64vARB(a,b,c,d);
 }
 
-inline void glex::glReplacementCodeuivSUN(const GLuint *a) {
-	m_pglex->glReplacementCodeuivSUN(a);
+inline void glex::glProgramUniform1i64ARB(GLuint  a, GLint  b, GLint64  c) {
+	m_pglex->glProgramUniform1i64ARB(a,b,c);
 }
 
-inline void glex::glReplacementCodeusvSUN(const GLushort *a) {
-	m_pglex->glReplacementCodeusvSUN(a);
+inline void glex::glProgramUniform2i64ARB(GLuint  a, GLint  b, GLint64  c, GLint64  d) {
+	m_pglex->glProgramUniform2i64ARB(a,b,c,d);
 }
 
-inline void glex::glReplacementCodeubvSUN(const GLubyte *a) {
-	m_pglex->glReplacementCodeubvSUN(a);
+inline void glex::glProgramUniform3i64ARB(GLuint  a, GLint  b, GLint64  c, GLint64  d, GLint64  e) {
+	m_pglex->glProgramUniform3i64ARB(a,b,c,d,e);
 }
 
-inline void glex::glReplacementCodePointerSUN(GLenum  a, GLsizei  b, const GLvoid* *c) {
-	m_pglex->glReplacementCodePointerSUN(a,b,c);
+inline void glex::glProgramUniform4i64ARB(GLuint  a, GLint  b, GLint64  c, GLint64  d, GLint64  e, GLint64  f) {
+	m_pglex->glProgramUniform4i64ARB(a,b,c,d,e,f);
 }
 
-inline void glex::glColor4ubVertex2fSUN(GLubyte  a, GLubyte  b, GLubyte  c, GLubyte  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glColor4ubVertex2fSUN(a,b,c,d,e,f);
+inline void glex::glProgramUniform1i64vARB(GLuint  a, GLint  b, GLsizei  c, const GLint64 *d) {
+	m_pglex->glProgramUniform1i64vARB(a,b,c,d);
 }
 
-inline void glex::glColor4ubVertex2fvSUN(const GLubyte *a, const GLfloat *b) {
-	m_pglex->glColor4ubVertex2fvSUN(a,b);
+inline void glex::glProgramUniform2i64vARB(GLuint  a, GLint  b, GLsizei  c, const GLint64 *d) {
+	m_pglex->glProgramUniform2i64vARB(a,b,c,d);
 }
 
-inline void glex::glColor4ubVertex3fSUN(GLubyte  a, GLubyte  b, GLubyte  c, GLubyte  d, GLfloat  e, GLfloat  f, GLfloat  g) {
-	m_pglex->glColor4ubVertex3fSUN(a,b,c,d,e,f,g);
+inline void glex::glProgramUniform3i64vARB(GLuint  a, GLint  b, GLsizei  c, const GLint64 *d) {
+	m_pglex->glProgramUniform3i64vARB(a,b,c,d);
 }
 
-inline void glex::glColor4ubVertex3fvSUN(const GLubyte *a, const GLfloat *b) {
-	m_pglex->glColor4ubVertex3fvSUN(a,b);
+inline void glex::glProgramUniform4i64vARB(GLuint  a, GLint  b, GLsizei  c, const GLint64 *d) {
+	m_pglex->glProgramUniform4i64vARB(a,b,c,d);
 }
 
-inline void glex::glColor3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glColor3fVertex3fSUN(a,b,c,d,e,f);
+inline void glex::glProgramUniform1ui64ARB(GLuint  a, GLint  b, GLuint64  c) {
+	m_pglex->glProgramUniform1ui64ARB(a,b,c);
 }
 
-inline void glex::glColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
-	m_pglex->glColor3fVertex3fvSUN(a,b);
+inline void glex::glProgramUniform2ui64ARB(GLuint  a, GLint  b, GLuint64  c, GLuint64  d) {
+	m_pglex->glProgramUniform2ui64ARB(a,b,c,d);
 }
 
-inline void glex::glNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glNormal3fVertex3fSUN(a,b,c,d,e,f);
+inline void glex::glProgramUniform3ui64ARB(GLuint  a, GLint  b, GLuint64  c, GLuint64  d, GLuint64  e) {
+	m_pglex->glProgramUniform3ui64ARB(a,b,c,d,e);
 }
 
-inline void glex::glNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
-	m_pglex->glNormal3fVertex3fvSUN(a,b);
+inline void glex::glProgramUniform4ui64ARB(GLuint  a, GLint  b, GLuint64  c, GLuint64  d, GLuint64  e, GLuint64  f) {
+	m_pglex->glProgramUniform4ui64ARB(a,b,c,d,e,f);
 }
 
-inline void glex::glColor4fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j) {
-	m_pglex->glColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j);
+inline void glex::glProgramUniform1ui64vARB(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniform1ui64vARB(a,b,c,d);
 }
 
-inline void glex::glColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glColor4fNormal3fVertex3fvSUN(a,b,c);
+inline void glex::glProgramUniform2ui64vARB(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniform2ui64vARB(a,b,c,d);
 }
 
-inline void glex::glTexCoord2fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glTexCoord2fVertex3fSUN(a,b,c,d,e);
+inline void glex::glProgramUniform3ui64vARB(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniform3ui64vARB(a,b,c,d);
 }
 
-inline void glex::glTexCoord2fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
-	m_pglex->glTexCoord2fVertex3fvSUN(a,b);
+inline void glex::glProgramUniform4ui64vARB(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniform4ui64vARB(a,b,c,d);
 }
 
-inline void glex::glTexCoord4fVertex4fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
-	m_pglex->glTexCoord4fVertex4fSUN(a,b,c,d,e,f,g,h);
+inline void glex::glColorTable(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glColorTable(a,b,c,d,e,f);
 }
 
-inline void glex::glTexCoord4fVertex4fvSUN(const GLfloat *a, const GLfloat *b) {
-	m_pglex->glTexCoord4fVertex4fvSUN(a,b);
+inline void glex::glColorTableParameterfv(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glColorTableParameterfv(a,b,c);
 }
 
-inline void glex::glTexCoord2fColor4ubVertex3fSUN(GLfloat  a, GLfloat  b, GLubyte  c, GLubyte  d, GLubyte  e, GLubyte  f, GLfloat  g, GLfloat  h, GLfloat  i) {
-	m_pglex->glTexCoord2fColor4ubVertex3fSUN(a,b,c,d,e,f,g,h,i);
+inline void glex::glColorTableParameteriv(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glColorTableParameteriv(a,b,c);
 }
 
-inline void glex::glTexCoord2fColor4ubVertex3fvSUN(const GLfloat *a, const GLubyte *b, const GLfloat *c) {
-	m_pglex->glTexCoord2fColor4ubVertex3fvSUN(a,b,c);
+inline void glex::glCopyColorTable(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyColorTable(a,b,c,d,e);
 }
 
-inline void glex::glTexCoord2fColor3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
-	m_pglex->glTexCoord2fColor3fVertex3fSUN(a,b,c,d,e,f,g,h);
+inline void glex::glGetColorTable(GLenum  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetColorTable(a,b,c,d);
 }
 
-inline void glex::glTexCoord2fColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glTexCoord2fColor3fVertex3fvSUN(a,b,c);
+inline void glex::glGetColorTableParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetColorTableParameterfv(a,b,c);
 }
 
-inline void glex::glTexCoord2fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
-	m_pglex->glTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h);
+inline void glex::glGetColorTableParameteriv(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetColorTableParameteriv(a,b,c);
 }
 
-inline void glex::glTexCoord2fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glTexCoord2fNormal3fVertex3fvSUN(a,b,c);
+inline void glex::glColorSubTable(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glColorSubTable(a,b,c,d,e,f);
 }
 
-inline void glex::glTexCoord2fColor4fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l) {
-	m_pglex->glTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l);
+inline void glex::glCopyColorSubTable(GLenum  a, GLsizei  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyColorSubTable(a,b,c,d,e);
 }
 
-inline void glex::glTexCoord2fColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
-	m_pglex->glTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d);
+inline void glex::glConvolutionFilter1D(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glConvolutionFilter1D(a,b,c,d,e,f);
 }
 
-inline void glex::glTexCoord4fColor4fNormal3fVertex4fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l, GLfloat  m, GLfloat  n, GLfloat  o) {
-	m_pglex->glTexCoord4fColor4fNormal3fVertex4fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
+inline void glex::glConvolutionFilter2D(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glConvolutionFilter2D(a,b,c,d,e,f,g);
 }
 
-inline void glex::glTexCoord4fColor4fNormal3fVertex4fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
-	m_pglex->glTexCoord4fColor4fNormal3fVertex4fvSUN(a,b,c,d);
+inline void glex::glConvolutionParameterf(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glConvolutionParameterf(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glReplacementCodeuiVertex3fSUN(a,b,c,d);
+inline void glex::glConvolutionParameterfv(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glConvolutionParameterfv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiVertex3fvSUN(const GLuint *a, const GLfloat *b) {
-	m_pglex->glReplacementCodeuiVertex3fvSUN(a,b);
+inline void glex::glConvolutionParameteri(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glConvolutionParameteri(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiColor4ubVertex3fSUN(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e, GLfloat  f, GLfloat  g, GLfloat  h) {
-	m_pglex->glReplacementCodeuiColor4ubVertex3fSUN(a,b,c,d,e,f,g,h);
+inline void glex::glConvolutionParameteriv(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glConvolutionParameteriv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiColor4ubVertex3fvSUN(const GLuint *a, const GLubyte *b, const GLfloat *c) {
-	m_pglex->glReplacementCodeuiColor4ubVertex3fvSUN(a,b,c);
+inline void glex::glCopyConvolutionFilter1D(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyConvolutionFilter1D(a,b,c,d,e);
 }
 
-inline void glex::glReplacementCodeuiColor3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
-	m_pglex->glReplacementCodeuiColor3fVertex3fSUN(a,b,c,d,e,f,g);
+inline void glex::glCopyConvolutionFilter2D(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glCopyConvolutionFilter2D(a,b,c,d,e,f);
 }
 
-inline void glex::glReplacementCodeuiColor3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glReplacementCodeuiColor3fVertex3fvSUN(a,b,c);
+inline void glex::glGetConvolutionFilter(GLenum  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetConvolutionFilter(a,b,c,d);
 }
 
-inline void glex::glReplacementCodeuiNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
-	m_pglex->glReplacementCodeuiNormal3fVertex3fSUN(a,b,c,d,e,f,g);
+inline void glex::glGetConvolutionParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetConvolutionParameterfv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glReplacementCodeuiNormal3fVertex3fvSUN(a,b,c);
+inline void glex::glGetConvolutionParameteriv(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetConvolutionParameteriv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiColor4fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k) {
-	m_pglex->glReplacementCodeuiColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k);
+inline void glex::glGetSeparableFilter(GLenum  a, GLenum  b, GLenum  c, void *d, void *e, void *f) {
+	m_pglex->glGetSeparableFilter(a,b,c,d,e,f);
 }
 
-inline void glex::glReplacementCodeuiColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
-	m_pglex->glReplacementCodeuiColor4fNormal3fVertex3fvSUN(a,b,c,d);
+inline void glex::glSeparableFilter2D(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const void *g, const void *h) {
+	m_pglex->glSeparableFilter2D(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glReplacementCodeuiTexCoord2fVertex3fSUN(a,b,c,d,e,f);
+inline void glex::glGetHistogram(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, void *e) {
+	m_pglex->glGetHistogram(a,b,c,d,e);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
-	m_pglex->glReplacementCodeuiTexCoord2fVertex3fvSUN(a,b,c);
+inline void glex::glGetHistogramParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetHistogramParameterfv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i) {
-	m_pglex->glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i);
+inline void glex::glGetHistogramParameteriv(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetHistogramParameteriv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
-	m_pglex->glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(a,b,c,d);
+inline void glex::glGetMinmax(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, void *e) {
+	m_pglex->glGetMinmax(a,b,c,d,e);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l, GLfloat  m) {
-	m_pglex->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m);
+inline void glex::glGetMinmaxParameterfv(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetMinmaxParameterfv(a,b,c);
 }
 
-inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d, const GLfloat *e) {
-	m_pglex->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d,e);
+inline void glex::glGetMinmaxParameteriv(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetMinmaxParameteriv(a,b,c);
 }
 
-inline void glex::glBlendFuncSeparateEXT(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
-	m_pglex->glBlendFuncSeparateEXT(a,b,c,d);
+inline void glex::glHistogram(GLenum  a, GLsizei  b, GLenum  c, GLboolean  d) {
+	m_pglex->glHistogram(a,b,c,d);
 }
 
-inline void glex::glBlendFuncSeparateINGR(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
-	m_pglex->glBlendFuncSeparateINGR(a,b,c,d);
+inline void glex::glMinmax(GLenum  a, GLenum  b, GLboolean  c) {
+	m_pglex->glMinmax(a,b,c);
 }
 
-inline void glex::glVertexWeightfEXT(GLfloat  a) {
-	m_pglex->glVertexWeightfEXT(a);
+inline void glex::glResetHistogram(GLenum  a) {
+	m_pglex->glResetHistogram(a);
 }
 
-inline void glex::glVertexWeightfvEXT(const GLfloat *a) {
-	m_pglex->glVertexWeightfvEXT(a);
+inline void glex::glResetMinmax(GLenum  a) {
+	m_pglex->glResetMinmax(a);
 }
 
-inline void glex::glVertexWeightPointerEXT(GLint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glVertexWeightPointerEXT(a,b,c,d);
+inline void glex::glMultiDrawArraysIndirectCountARB(GLenum  a, GLintptr  b, GLintptr  c, GLsizei  d, GLsizei  e) {
+	m_pglex->glMultiDrawArraysIndirectCountARB(a,b,c,d,e);
 }
 
-inline void glex::glFlushVertexArrayRangeNV(void) {
-	m_pglex->glFlushVertexArrayRangeNV();
+inline void glex::glMultiDrawElementsIndirectCountARB(GLenum  a, GLenum  b, GLintptr  c, GLintptr  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glMultiDrawElementsIndirectCountARB(a,b,c,d,e,f);
 }
 
-inline void glex::glVertexArrayRangeNV(GLsizei  a, const GLvoid *b) {
-	m_pglex->glVertexArrayRangeNV(a,b);
+inline void glex::glVertexAttribDivisorARB(GLuint  a, GLuint  b) {
+	m_pglex->glVertexAttribDivisorARB(a,b);
 }
 
-inline void glex::glCombinerParameterfvNV(GLenum  a, const GLfloat *b) {
-	m_pglex->glCombinerParameterfvNV(a,b);
+inline void glex::glCurrentPaletteMatrixARB(GLint  a) {
+	m_pglex->glCurrentPaletteMatrixARB(a);
 }
 
-inline void glex::glCombinerParameterfNV(GLenum  a, GLfloat  b) {
-	m_pglex->glCombinerParameterfNV(a,b);
+inline void glex::glMatrixIndexubvARB(GLint  a, const GLubyte *b) {
+	m_pglex->glMatrixIndexubvARB(a,b);
 }
 
-inline void glex::glCombinerParameterivNV(GLenum  a, const GLint *b) {
-	m_pglex->glCombinerParameterivNV(a,b);
+inline void glex::glMatrixIndexusvARB(GLint  a, const GLushort *b) {
+	m_pglex->glMatrixIndexusvARB(a,b);
 }
 
-inline void glex::glCombinerParameteriNV(GLenum  a, GLint  b) {
-	m_pglex->glCombinerParameteriNV(a,b);
+inline void glex::glMatrixIndexuivARB(GLint  a, const GLuint *b) {
+	m_pglex->glMatrixIndexuivARB(a,b);
 }
 
-inline void glex::glCombinerInputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
-	m_pglex->glCombinerInputNV(a,b,c,d,e,f);
+inline void glex::glMatrixIndexPointerARB(GLint  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glMatrixIndexPointerARB(a,b,c,d);
 }
 
-inline void glex::glCombinerOutputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f, GLenum  g, GLboolean  h, GLboolean  i, GLboolean  j) {
-	m_pglex->glCombinerOutputNV(a,b,c,d,e,f,g,h,i,j);
+inline void glex::glSampleCoverageARB(GLfloat  a, GLboolean  b) {
+	m_pglex->glSampleCoverageARB(a,b);
 }
 
-inline void glex::glFinalCombinerInputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
-	m_pglex->glFinalCombinerInputNV(a,b,c,d);
+inline void glex::glActiveTextureARB(GLenum  a) {
+	m_pglex->glActiveTextureARB(a);
 }
 
-inline void glex::glGetCombinerInputParameterfvNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLfloat *e) {
-	m_pglex->glGetCombinerInputParameterfvNV(a,b,c,d,e);
+inline void glex::glClientActiveTextureARB(GLenum  a) {
+	m_pglex->glClientActiveTextureARB(a);
 }
 
-inline void glex::glGetCombinerInputParameterivNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLint *e) {
-	m_pglex->glGetCombinerInputParameterivNV(a,b,c,d,e);
+inline void glex::glMultiTexCoord1dARB(GLenum  a, GLdouble  b) {
+	m_pglex->glMultiTexCoord1dARB(a,b);
 }
 
-inline void glex::glGetCombinerOutputParameterfvNV(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetCombinerOutputParameterfvNV(a,b,c,d);
+inline void glex::glMultiTexCoord1dvARB(GLenum  a, const GLdouble *b) {
+	m_pglex->glMultiTexCoord1dvARB(a,b);
 }
 
-inline void glex::glGetCombinerOutputParameterivNV(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetCombinerOutputParameterivNV(a,b,c,d);
+inline void glex::glMultiTexCoord1fARB(GLenum  a, GLfloat  b) {
+	m_pglex->glMultiTexCoord1fARB(a,b);
 }
 
-inline void glex::glGetFinalCombinerInputParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetFinalCombinerInputParameterfvNV(a,b,c);
+inline void glex::glMultiTexCoord1fvARB(GLenum  a, const GLfloat *b) {
+	m_pglex->glMultiTexCoord1fvARB(a,b);
 }
 
-inline void glex::glGetFinalCombinerInputParameterivNV(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetFinalCombinerInputParameterivNV(a,b,c);
+inline void glex::glMultiTexCoord1iARB(GLenum  a, GLint  b) {
+	m_pglex->glMultiTexCoord1iARB(a,b);
 }
 
-inline void glex::glResizeBuffersMESA(void) {
-	m_pglex->glResizeBuffersMESA();
+inline void glex::glMultiTexCoord1ivARB(GLenum  a, const GLint *b) {
+	m_pglex->glMultiTexCoord1ivARB(a,b);
 }
 
-inline void glex::glWindowPos2dMESA(GLdouble  a, GLdouble  b) {
-	m_pglex->glWindowPos2dMESA(a,b);
+inline void glex::glMultiTexCoord1sARB(GLenum  a, GLshort  b) {
+	m_pglex->glMultiTexCoord1sARB(a,b);
 }
 
-inline void glex::glWindowPos2dvMESA(const GLdouble *a) {
-	m_pglex->glWindowPos2dvMESA(a);
+inline void glex::glMultiTexCoord1svARB(GLenum  a, const GLshort *b) {
+	m_pglex->glMultiTexCoord1svARB(a,b);
 }
 
-inline void glex::glWindowPos2fMESA(GLfloat  a, GLfloat  b) {
-	m_pglex->glWindowPos2fMESA(a,b);
+inline void glex::glMultiTexCoord2dARB(GLenum  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glMultiTexCoord2dARB(a,b,c);
 }
 
-inline void glex::glWindowPos2fvMESA(const GLfloat *a) {
-	m_pglex->glWindowPos2fvMESA(a);
+inline void glex::glMultiTexCoord2dvARB(GLenum  a, const GLdouble *b) {
+	m_pglex->glMultiTexCoord2dvARB(a,b);
 }
 
-inline void glex::glWindowPos2iMESA(GLint  a, GLint  b) {
-	m_pglex->glWindowPos2iMESA(a,b);
+inline void glex::glMultiTexCoord2fARB(GLenum  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glMultiTexCoord2fARB(a,b,c);
 }
 
-inline void glex::glWindowPos2ivMESA(const GLint *a) {
-	m_pglex->glWindowPos2ivMESA(a);
+inline void glex::glMultiTexCoord2fvARB(GLenum  a, const GLfloat *b) {
+	m_pglex->glMultiTexCoord2fvARB(a,b);
 }
 
-inline void glex::glWindowPos2sMESA(GLshort  a, GLshort  b) {
-	m_pglex->glWindowPos2sMESA(a,b);
+inline void glex::glMultiTexCoord2iARB(GLenum  a, GLint  b, GLint  c) {
+	m_pglex->glMultiTexCoord2iARB(a,b,c);
 }
 
-inline void glex::glWindowPos2svMESA(const GLshort *a) {
-	m_pglex->glWindowPos2svMESA(a);
+inline void glex::glMultiTexCoord2ivARB(GLenum  a, const GLint *b) {
+	m_pglex->glMultiTexCoord2ivARB(a,b);
 }
 
-inline void glex::glWindowPos3dMESA(GLdouble  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glWindowPos3dMESA(a,b,c);
+inline void glex::glMultiTexCoord2sARB(GLenum  a, GLshort  b, GLshort  c) {
+	m_pglex->glMultiTexCoord2sARB(a,b,c);
 }
 
-inline void glex::glWindowPos3dvMESA(const GLdouble *a) {
-	m_pglex->glWindowPos3dvMESA(a);
+inline void glex::glMultiTexCoord2svARB(GLenum  a, const GLshort *b) {
+	m_pglex->glMultiTexCoord2svARB(a,b);
 }
 
-inline void glex::glWindowPos3fMESA(GLfloat  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glWindowPos3fMESA(a,b,c);
+inline void glex::glMultiTexCoord3dARB(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glMultiTexCoord3dARB(a,b,c,d);
 }
 
-inline void glex::glWindowPos3fvMESA(const GLfloat *a) {
-	m_pglex->glWindowPos3fvMESA(a);
+inline void glex::glMultiTexCoord3dvARB(GLenum  a, const GLdouble *b) {
+	m_pglex->glMultiTexCoord3dvARB(a,b);
 }
 
-inline void glex::glWindowPos3iMESA(GLint  a, GLint  b, GLint  c) {
-	m_pglex->glWindowPos3iMESA(a,b,c);
+inline void glex::glMultiTexCoord3fARB(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glMultiTexCoord3fARB(a,b,c,d);
 }
 
-inline void glex::glWindowPos3ivMESA(const GLint *a) {
-	m_pglex->glWindowPos3ivMESA(a);
+inline void glex::glMultiTexCoord3fvARB(GLenum  a, const GLfloat *b) {
+	m_pglex->glMultiTexCoord3fvARB(a,b);
 }
 
-inline void glex::glWindowPos3sMESA(GLshort  a, GLshort  b, GLshort  c) {
-	m_pglex->glWindowPos3sMESA(a,b,c);
+inline void glex::glMultiTexCoord3iARB(GLenum  a, GLint  b, GLint  c, GLint  d) {
+	m_pglex->glMultiTexCoord3iARB(a,b,c,d);
 }
 
-inline void glex::glWindowPos3svMESA(const GLshort *a) {
-	m_pglex->glWindowPos3svMESA(a);
+inline void glex::glMultiTexCoord3ivARB(GLenum  a, const GLint *b) {
+	m_pglex->glMultiTexCoord3ivARB(a,b);
 }
 
-inline void glex::glWindowPos4dMESA(GLdouble  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glWindowPos4dMESA(a,b,c,d);
+inline void glex::glMultiTexCoord3sARB(GLenum  a, GLshort  b, GLshort  c, GLshort  d) {
+	m_pglex->glMultiTexCoord3sARB(a,b,c,d);
 }
 
-inline void glex::glWindowPos4dvMESA(const GLdouble *a) {
-	m_pglex->glWindowPos4dvMESA(a);
+inline void glex::glMultiTexCoord3svARB(GLenum  a, const GLshort *b) {
+	m_pglex->glMultiTexCoord3svARB(a,b);
 }
 
-inline void glex::glWindowPos4fMESA(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glWindowPos4fMESA(a,b,c,d);
+inline void glex::glMultiTexCoord4dARB(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glMultiTexCoord4dARB(a,b,c,d,e);
 }
 
-inline void glex::glWindowPos4fvMESA(const GLfloat *a) {
-	m_pglex->glWindowPos4fvMESA(a);
+inline void glex::glMultiTexCoord4dvARB(GLenum  a, const GLdouble *b) {
+	m_pglex->glMultiTexCoord4dvARB(a,b);
 }
 
-inline void glex::glWindowPos4iMESA(GLint  a, GLint  b, GLint  c, GLint  d) {
-	m_pglex->glWindowPos4iMESA(a,b,c,d);
+inline void glex::glMultiTexCoord4fARB(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glMultiTexCoord4fARB(a,b,c,d,e);
 }
 
-inline void glex::glWindowPos4ivMESA(const GLint *a) {
-	m_pglex->glWindowPos4ivMESA(a);
+inline void glex::glMultiTexCoord4fvARB(GLenum  a, const GLfloat *b) {
+	m_pglex->glMultiTexCoord4fvARB(a,b);
 }
 
-inline void glex::glWindowPos4sMESA(GLshort  a, GLshort  b, GLshort  c, GLshort  d) {
-	m_pglex->glWindowPos4sMESA(a,b,c,d);
+inline void glex::glMultiTexCoord4iARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e) {
+	m_pglex->glMultiTexCoord4iARB(a,b,c,d,e);
 }
 
-inline void glex::glWindowPos4svMESA(const GLshort *a) {
-	m_pglex->glWindowPos4svMESA(a);
+inline void glex::glMultiTexCoord4ivARB(GLenum  a, const GLint *b) {
+	m_pglex->glMultiTexCoord4ivARB(a,b);
 }
 
-inline void glex::glMultiModeDrawArraysIBM(const GLenum *a, const GLint *b, const GLsizei *c, GLsizei  d, GLint  e) {
-	m_pglex->glMultiModeDrawArraysIBM(a,b,c,d,e);
+inline void glex::glMultiTexCoord4sARB(GLenum  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
+	m_pglex->glMultiTexCoord4sARB(a,b,c,d,e);
 }
 
-inline void glex::glMultiModeDrawElementsIBM(const GLenum *a, const GLsizei *b, GLenum  c, const GLvoid* const *d, GLsizei  e, GLint  f) {
-	m_pglex->glMultiModeDrawElementsIBM(a,b,c,d,e,f);
+inline void glex::glMultiTexCoord4svARB(GLenum  a, const GLshort *b) {
+	m_pglex->glMultiTexCoord4svARB(a,b);
 }
 
-inline void glex::glColorPointerListIBM(GLint  a, GLenum  b, GLint  c, const GLvoid* *d, GLint  e) {
-	m_pglex->glColorPointerListIBM(a,b,c,d,e);
+inline void glex::glGenQueriesARB(GLsizei  a, GLuint *b) {
+	m_pglex->glGenQueriesARB(a,b);
 }
 
-inline void glex::glSecondaryColorPointerListIBM(GLint  a, GLenum  b, GLint  c, const GLvoid* *d, GLint  e) {
-	m_pglex->glSecondaryColorPointerListIBM(a,b,c,d,e);
+inline void glex::glDeleteQueriesARB(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteQueriesARB(a,b);
 }
 
-inline void glex::glEdgeFlagPointerListIBM(GLint  a, const GLboolean* *b, GLint  c) {
-	m_pglex->glEdgeFlagPointerListIBM(a,b,c);
+inline GLboolean glex::glIsQueryARB(GLuint  a) {
+	return m_pglex->glIsQueryARB(a);
 }
 
-inline void glex::glFogCoordPointerListIBM(GLenum  a, GLint  b, const GLvoid* *c, GLint  d) {
-	m_pglex->glFogCoordPointerListIBM(a,b,c,d);
+inline void glex::glBeginQueryARB(GLenum  a, GLuint  b) {
+	m_pglex->glBeginQueryARB(a,b);
 }
 
-inline void glex::glIndexPointerListIBM(GLenum  a, GLint  b, const GLvoid* *c, GLint  d) {
-	m_pglex->glIndexPointerListIBM(a,b,c,d);
+inline void glex::glEndQueryARB(GLenum  a) {
+	m_pglex->glEndQueryARB(a);
 }
 
-inline void glex::glNormalPointerListIBM(GLenum  a, GLint  b, const GLvoid* *c, GLint  d) {
-	m_pglex->glNormalPointerListIBM(a,b,c,d);
+inline void glex::glGetQueryivARB(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetQueryivARB(a,b,c);
 }
 
-inline void glex::glTexCoordPointerListIBM(GLint  a, GLenum  b, GLint  c, const GLvoid* *d, GLint  e) {
-	m_pglex->glTexCoordPointerListIBM(a,b,c,d,e);
+inline void glex::glGetQueryObjectivARB(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetQueryObjectivARB(a,b,c);
 }
 
-inline void glex::glVertexPointerListIBM(GLint  a, GLenum  b, GLint  c, const GLvoid* *d, GLint  e) {
-	m_pglex->glVertexPointerListIBM(a,b,c,d,e);
+inline void glex::glGetQueryObjectuivARB(GLuint  a, GLenum  b, GLuint *c) {
+	m_pglex->glGetQueryObjectuivARB(a,b,c);
+}
+
+inline void glex::glMaxShaderCompilerThreadsARB(GLuint  a) {
+	m_pglex->glMaxShaderCompilerThreadsARB(a);
+}
+
+inline void glex::glPointParameterfARB(GLenum  a, GLfloat  b) {
+	m_pglex->glPointParameterfARB(a,b);
+}
+
+inline void glex::glPointParameterfvARB(GLenum  a, const GLfloat *b) {
+	m_pglex->glPointParameterfvARB(a,b);
+}
+
+inline GLenum glex::glGetGraphicsResetStatusARB(void) {
+	return m_pglex->glGetGraphicsResetStatusARB();
+}
+
+inline void glex::glGetnTexImageARB(GLenum  a, GLint  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnTexImageARB(a,b,c,d,e,f);
+}
+
+inline void glex::glReadnPixelsARB(GLint  a, GLint  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, GLsizei  g, void *h) {
+	m_pglex->glReadnPixelsARB(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glGetnCompressedTexImageARB(GLenum  a, GLint  b, GLsizei  c, void *d) {
+	m_pglex->glGetnCompressedTexImageARB(a,b,c,d);
+}
+
+inline void glex::glGetnUniformfvARB(GLuint  a, GLint  b, GLsizei  c, GLfloat *d) {
+	m_pglex->glGetnUniformfvARB(a,b,c,d);
+}
+
+inline void glex::glGetnUniformivARB(GLuint  a, GLint  b, GLsizei  c, GLint *d) {
+	m_pglex->glGetnUniformivARB(a,b,c,d);
+}
+
+inline void glex::glGetnUniformuivARB(GLuint  a, GLint  b, GLsizei  c, GLuint *d) {
+	m_pglex->glGetnUniformuivARB(a,b,c,d);
+}
+
+inline void glex::glGetnUniformdvARB(GLuint  a, GLint  b, GLsizei  c, GLdouble *d) {
+	m_pglex->glGetnUniformdvARB(a,b,c,d);
+}
+
+inline void glex::glGetnMapdvARB(GLenum  a, GLenum  b, GLsizei  c, GLdouble *d) {
+	m_pglex->glGetnMapdvARB(a,b,c,d);
+}
+
+inline void glex::glGetnMapfvARB(GLenum  a, GLenum  b, GLsizei  c, GLfloat *d) {
+	m_pglex->glGetnMapfvARB(a,b,c,d);
+}
+
+inline void glex::glGetnMapivARB(GLenum  a, GLenum  b, GLsizei  c, GLint *d) {
+	m_pglex->glGetnMapivARB(a,b,c,d);
+}
+
+inline void glex::glGetnPixelMapfvARB(GLenum  a, GLsizei  b, GLfloat *c) {
+	m_pglex->glGetnPixelMapfvARB(a,b,c);
+}
+
+inline void glex::glGetnPixelMapuivARB(GLenum  a, GLsizei  b, GLuint *c) {
+	m_pglex->glGetnPixelMapuivARB(a,b,c);
+}
+
+inline void glex::glGetnPixelMapusvARB(GLenum  a, GLsizei  b, GLushort *c) {
+	m_pglex->glGetnPixelMapusvARB(a,b,c);
+}
+
+inline void glex::glGetnPolygonStippleARB(GLsizei  a, GLubyte *b) {
+	m_pglex->glGetnPolygonStippleARB(a,b);
+}
+
+inline void glex::glGetnColorTableARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e) {
+	m_pglex->glGetnColorTableARB(a,b,c,d,e);
+}
+
+inline void glex::glGetnConvolutionFilterARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e) {
+	m_pglex->glGetnConvolutionFilterARB(a,b,c,d,e);
+}
+
+inline void glex::glGetnSeparableFilterARB(GLenum  a, GLenum  b, GLenum  c, GLsizei  d, void *e, GLsizei  f, void *g, void *h) {
+	m_pglex->glGetnSeparableFilterARB(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glGetnHistogramARB(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnHistogramARB(a,b,c,d,e,f);
+}
+
+inline void glex::glGetnMinmaxARB(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, GLsizei  e, void *f) {
+	m_pglex->glGetnMinmaxARB(a,b,c,d,e,f);
+}
+
+inline void glex::glFramebufferSampleLocationsfvARB(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glFramebufferSampleLocationsfvARB(a,b,c,d);
+}
+
+inline void glex::glNamedFramebufferSampleLocationsfvARB(GLuint  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glNamedFramebufferSampleLocationsfvARB(a,b,c,d);
+}
+
+inline void glex::glEvaluateDepthValuesARB(void) {
+	m_pglex->glEvaluateDepthValuesARB();
+}
+
+inline void glex::glMinSampleShadingARB(GLfloat  a) {
+	m_pglex->glMinSampleShadingARB(a);
+}
+
+inline void glex::glDeleteObjectARB(GLhandleARB  a) {
+	m_pglex->glDeleteObjectARB(a);
+}
+
+inline GLhandleARB glex::glGetHandleARB(GLenum  a) {
+	return m_pglex->glGetHandleARB(a);
+}
+
+inline void glex::glDetachObjectARB(GLhandleARB  a, GLhandleARB  b) {
+	m_pglex->glDetachObjectARB(a,b);
+}
+
+inline GLhandleARB glex::glCreateShaderObjectARB(GLenum  a) {
+	return m_pglex->glCreateShaderObjectARB(a);
+}
+
+inline void glex::glShaderSourceARB(GLhandleARB  a, GLsizei  b, const GLcharARB **c, const GLint *d) {
+	m_pglex->glShaderSourceARB(a,b,c,d);
+}
+
+inline void glex::glCompileShaderARB(GLhandleARB  a) {
+	m_pglex->glCompileShaderARB(a);
+}
+
+inline GLhandleARB glex::glCreateProgramObjectARB(void) {
+	return m_pglex->glCreateProgramObjectARB();
+}
+
+inline void glex::glAttachObjectARB(GLhandleARB  a, GLhandleARB  b) {
+	m_pglex->glAttachObjectARB(a,b);
+}
+
+inline void glex::glLinkProgramARB(GLhandleARB  a) {
+	m_pglex->glLinkProgramARB(a);
+}
+
+inline void glex::glUseProgramObjectARB(GLhandleARB  a) {
+	m_pglex->glUseProgramObjectARB(a);
+}
+
+inline void glex::glValidateProgramARB(GLhandleARB  a) {
+	m_pglex->glValidateProgramARB(a);
+}
+
+inline void glex::glUniform1fARB(GLint  a, GLfloat  b) {
+	m_pglex->glUniform1fARB(a,b);
+}
+
+inline void glex::glUniform2fARB(GLint  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glUniform2fARB(a,b,c);
+}
+
+inline void glex::glUniform3fARB(GLint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glUniform3fARB(a,b,c,d);
+}
+
+inline void glex::glUniform4fARB(GLint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glUniform4fARB(a,b,c,d,e);
+}
+
+inline void glex::glUniform1iARB(GLint  a, GLint  b) {
+	m_pglex->glUniform1iARB(a,b);
+}
+
+inline void glex::glUniform2iARB(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glUniform2iARB(a,b,c);
+}
+
+inline void glex::glUniform3iARB(GLint  a, GLint  b, GLint  c, GLint  d) {
+	m_pglex->glUniform3iARB(a,b,c,d);
+}
+
+inline void glex::glUniform4iARB(GLint  a, GLint  b, GLint  c, GLint  d, GLint  e) {
+	m_pglex->glUniform4iARB(a,b,c,d,e);
+}
+
+inline void glex::glUniform1fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glUniform1fvARB(a,b,c);
+}
+
+inline void glex::glUniform2fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glUniform2fvARB(a,b,c);
+}
+
+inline void glex::glUniform3fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glUniform3fvARB(a,b,c);
+}
+
+inline void glex::glUniform4fvARB(GLint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glUniform4fvARB(a,b,c);
+}
+
+inline void glex::glUniform1ivARB(GLint  a, GLsizei  b, const GLint *c) {
+	m_pglex->glUniform1ivARB(a,b,c);
+}
+
+inline void glex::glUniform2ivARB(GLint  a, GLsizei  b, const GLint *c) {
+	m_pglex->glUniform2ivARB(a,b,c);
+}
+
+inline void glex::glUniform3ivARB(GLint  a, GLsizei  b, const GLint *c) {
+	m_pglex->glUniform3ivARB(a,b,c);
+}
+
+inline void glex::glUniform4ivARB(GLint  a, GLsizei  b, const GLint *c) {
+	m_pglex->glUniform4ivARB(a,b,c);
+}
+
+inline void glex::glUniformMatrix2fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
+	m_pglex->glUniformMatrix2fvARB(a,b,c,d);
+}
+
+inline void glex::glUniformMatrix3fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
+	m_pglex->glUniformMatrix3fvARB(a,b,c,d);
+}
+
+inline void glex::glUniformMatrix4fvARB(GLint  a, GLsizei  b, GLboolean  c, const GLfloat *d) {
+	m_pglex->glUniformMatrix4fvARB(a,b,c,d);
+}
+
+inline void glex::glGetObjectParameterfvARB(GLhandleARB  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetObjectParameterfvARB(a,b,c);
+}
+
+inline void glex::glGetObjectParameterivARB(GLhandleARB  a, GLenum  b, GLint *c) {
+	m_pglex->glGetObjectParameterivARB(a,b,c);
+}
+
+inline void glex::glGetInfoLogARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLcharARB *d) {
+	m_pglex->glGetInfoLogARB(a,b,c,d);
+}
+
+inline void glex::glGetAttachedObjectsARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLhandleARB *d) {
+	m_pglex->glGetAttachedObjectsARB(a,b,c,d);
+}
+
+inline GLint glex::glGetUniformLocationARB(GLhandleARB  a, const GLcharARB *b) {
+	return m_pglex->glGetUniformLocationARB(a,b);
+}
+
+inline void glex::glGetActiveUniformARB(GLhandleARB  a, GLuint  b, GLsizei  c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
+	m_pglex->glGetActiveUniformARB(a,b,c,d,e,f,g);
+}
+
+inline void glex::glGetUniformfvARB(GLhandleARB  a, GLint  b, GLfloat *c) {
+	m_pglex->glGetUniformfvARB(a,b,c);
+}
+
+inline void glex::glGetUniformivARB(GLhandleARB  a, GLint  b, GLint *c) {
+	m_pglex->glGetUniformivARB(a,b,c);
+}
+
+inline void glex::glGetShaderSourceARB(GLhandleARB  a, GLsizei  b, GLsizei *c, GLcharARB *d) {
+	m_pglex->glGetShaderSourceARB(a,b,c,d);
+}
+
+inline void glex::glNamedStringARB(GLenum  a, GLint  b, const GLchar *c, GLint  d, const GLchar *e) {
+	m_pglex->glNamedStringARB(a,b,c,d,e);
+}
+
+inline void glex::glDeleteNamedStringARB(GLint  a, const GLchar *b) {
+	m_pglex->glDeleteNamedStringARB(a,b);
+}
+
+inline void glex::glCompileShaderIncludeARB(GLuint  a, GLsizei  b, const GLchar *const*c, const GLint *d) {
+	m_pglex->glCompileShaderIncludeARB(a,b,c,d);
+}
+
+inline GLboolean glex::glIsNamedStringARB(GLint  a, const GLchar *b) {
+	return m_pglex->glIsNamedStringARB(a,b);
+}
+
+inline void glex::glGetNamedStringARB(GLint  a, const GLchar *b, GLsizei  c, GLint *d, GLchar *e) {
+	m_pglex->glGetNamedStringARB(a,b,c,d,e);
+}
+
+inline void glex::glGetNamedStringivARB(GLint  a, const GLchar *b, GLenum  c, GLint *d) {
+	m_pglex->glGetNamedStringivARB(a,b,c,d);
+}
+
+inline void glex::glBufferPageCommitmentARB(GLenum  a, GLintptr  b, GLsizeiptr  c, GLboolean  d) {
+	m_pglex->glBufferPageCommitmentARB(a,b,c,d);
+}
+
+inline void glex::glNamedBufferPageCommitmentEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, GLboolean  d) {
+	m_pglex->glNamedBufferPageCommitmentEXT(a,b,c,d);
+}
+
+inline void glex::glNamedBufferPageCommitmentARB(GLuint  a, GLintptr  b, GLsizeiptr  c, GLboolean  d) {
+	m_pglex->glNamedBufferPageCommitmentARB(a,b,c,d);
+}
+
+inline void glex::glTexPageCommitmentARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLboolean  i) {
+	m_pglex->glTexPageCommitmentARB(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glTexBufferARB(GLenum  a, GLenum  b, GLuint  c) {
+	m_pglex->glTexBufferARB(a,b,c);
+}
+
+inline void glex::glCompressedTexImage3DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const void *i) {
+	m_pglex->glCompressedTexImage3DARB(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCompressedTexImage2DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLsizei  g, const void *h) {
+	m_pglex->glCompressedTexImage2DARB(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCompressedTexImage1DARB(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLint  e, GLsizei  f, const void *g) {
+	m_pglex->glCompressedTexImage1DARB(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCompressedTexSubImage3DARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLsizei  j, const void *k) {
+	m_pglex->glCompressedTexSubImage3DARB(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glCompressedTexSubImage2DARB(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLsizei  h, const void *i) {
+	m_pglex->glCompressedTexSubImage2DARB(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCompressedTexSubImage1DARB(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLsizei  f, const void *g) {
+	m_pglex->glCompressedTexSubImage1DARB(a,b,c,d,e,f,g);
+}
+
+inline void glex::glGetCompressedTexImageARB(GLenum  a, GLint  b, void *c) {
+	m_pglex->glGetCompressedTexImageARB(a,b,c);
+}
+
+inline void glex::glLoadTransposeMatrixfARB(const GLfloat *a) {
+	m_pglex->glLoadTransposeMatrixfARB(a);
+}
+
+inline void glex::glLoadTransposeMatrixdARB(const GLdouble *a) {
+	m_pglex->glLoadTransposeMatrixdARB(a);
+}
+
+inline void glex::glMultTransposeMatrixfARB(const GLfloat *a) {
+	m_pglex->glMultTransposeMatrixfARB(a);
+}
+
+inline void glex::glMultTransposeMatrixdARB(const GLdouble *a) {
+	m_pglex->glMultTransposeMatrixdARB(a);
+}
+
+inline void glex::glWeightbvARB(GLint  a, const GLbyte *b) {
+	m_pglex->glWeightbvARB(a,b);
+}
+
+inline void glex::glWeightsvARB(GLint  a, const GLshort *b) {
+	m_pglex->glWeightsvARB(a,b);
+}
+
+inline void glex::glWeightivARB(GLint  a, const GLint *b) {
+	m_pglex->glWeightivARB(a,b);
+}
+
+inline void glex::glWeightfvARB(GLint  a, const GLfloat *b) {
+	m_pglex->glWeightfvARB(a,b);
+}
+
+inline void glex::glWeightdvARB(GLint  a, const GLdouble *b) {
+	m_pglex->glWeightdvARB(a,b);
+}
+
+inline void glex::glWeightubvARB(GLint  a, const GLubyte *b) {
+	m_pglex->glWeightubvARB(a,b);
+}
+
+inline void glex::glWeightusvARB(GLint  a, const GLushort *b) {
+	m_pglex->glWeightusvARB(a,b);
+}
+
+inline void glex::glWeightuivARB(GLint  a, const GLuint *b) {
+	m_pglex->glWeightuivARB(a,b);
+}
+
+inline void glex::glWeightPointerARB(GLint  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glWeightPointerARB(a,b,c,d);
+}
+
+inline void glex::glVertexBlendARB(GLint  a) {
+	m_pglex->glVertexBlendARB(a);
+}
+
+inline void glex::glBindBufferARB(GLenum  a, GLuint  b) {
+	m_pglex->glBindBufferARB(a,b);
+}
+
+inline void glex::glDeleteBuffersARB(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteBuffersARB(a,b);
+}
+
+inline void glex::glGenBuffersARB(GLsizei  a, GLuint *b) {
+	m_pglex->glGenBuffersARB(a,b);
+}
+
+inline GLboolean glex::glIsBufferARB(GLuint  a) {
+	return m_pglex->glIsBufferARB(a);
+}
+
+inline void glex::glBufferDataARB(GLenum  a, GLsizeiptrARB  b, const void *c, GLenum  d) {
+	m_pglex->glBufferDataARB(a,b,c,d);
+}
+
+inline void glex::glBufferSubDataARB(GLenum  a, GLintptrARB  b, GLsizeiptrARB  c, const void *d) {
+	m_pglex->glBufferSubDataARB(a,b,c,d);
+}
+
+inline void glex::glGetBufferSubDataARB(GLenum  a, GLintptrARB  b, GLsizeiptrARB  c, void *d) {
+	m_pglex->glGetBufferSubDataARB(a,b,c,d);
+}
+
+inline void * glex::glMapBufferARB(GLenum  a, GLenum  b) {
+	return m_pglex->glMapBufferARB(a,b);
+}
+
+inline GLboolean glex::glUnmapBufferARB(GLenum  a) {
+	return m_pglex->glUnmapBufferARB(a);
+}
+
+inline void glex::glGetBufferParameterivARB(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetBufferParameterivARB(a,b,c);
+}
+
+inline void glex::glGetBufferPointervARB(GLenum  a, GLenum  b, void **c) {
+	m_pglex->glGetBufferPointervARB(a,b,c);
+}
+
+inline void glex::glVertexAttrib1dARB(GLuint  a, GLdouble  b) {
+	m_pglex->glVertexAttrib1dARB(a,b);
+}
+
+inline void glex::glVertexAttrib1dvARB(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib1dvARB(a,b);
+}
+
+inline void glex::glVertexAttrib1fARB(GLuint  a, GLfloat  b) {
+	m_pglex->glVertexAttrib1fARB(a,b);
+}
+
+inline void glex::glVertexAttrib1fvARB(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib1fvARB(a,b);
+}
+
+inline void glex::glVertexAttrib1sARB(GLuint  a, GLshort  b) {
+	m_pglex->glVertexAttrib1sARB(a,b);
+}
+
+inline void glex::glVertexAttrib1svARB(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib1svARB(a,b);
+}
+
+inline void glex::glVertexAttrib2dARB(GLuint  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glVertexAttrib2dARB(a,b,c);
+}
+
+inline void glex::glVertexAttrib2dvARB(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib2dvARB(a,b);
+}
+
+inline void glex::glVertexAttrib2fARB(GLuint  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glVertexAttrib2fARB(a,b,c);
+}
+
+inline void glex::glVertexAttrib2fvARB(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib2fvARB(a,b);
+}
+
+inline void glex::glVertexAttrib2sARB(GLuint  a, GLshort  b, GLshort  c) {
+	m_pglex->glVertexAttrib2sARB(a,b,c);
+}
+
+inline void glex::glVertexAttrib2svARB(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib2svARB(a,b);
+}
+
+inline void glex::glVertexAttrib3dARB(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glVertexAttrib3dARB(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3dvARB(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib3dvARB(a,b);
+}
+
+inline void glex::glVertexAttrib3fARB(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glVertexAttrib3fARB(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3fvARB(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib3fvARB(a,b);
+}
+
+inline void glex::glVertexAttrib3sARB(GLuint  a, GLshort  b, GLshort  c, GLshort  d) {
+	m_pglex->glVertexAttrib3sARB(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3svARB(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib3svARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NbvARB(GLuint  a, const GLbyte *b) {
+	m_pglex->glVertexAttrib4NbvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NivARB(GLuint  a, const GLint *b) {
+	m_pglex->glVertexAttrib4NivARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NsvARB(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib4NsvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NubARB(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e) {
+	m_pglex->glVertexAttrib4NubARB(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4NubvARB(GLuint  a, const GLubyte *b) {
+	m_pglex->glVertexAttrib4NubvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NuivARB(GLuint  a, const GLuint *b) {
+	m_pglex->glVertexAttrib4NuivARB(a,b);
+}
+
+inline void glex::glVertexAttrib4NusvARB(GLuint  a, const GLushort *b) {
+	m_pglex->glVertexAttrib4NusvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4bvARB(GLuint  a, const GLbyte *b) {
+	m_pglex->glVertexAttrib4bvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4dARB(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glVertexAttrib4dARB(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4dvARB(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib4dvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4fARB(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glVertexAttrib4fARB(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4fvARB(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib4fvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4ivARB(GLuint  a, const GLint *b) {
+	m_pglex->glVertexAttrib4ivARB(a,b);
+}
+
+inline void glex::glVertexAttrib4sARB(GLuint  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
+	m_pglex->glVertexAttrib4sARB(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4svARB(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib4svARB(a,b);
+}
+
+inline void glex::glVertexAttrib4ubvARB(GLuint  a, const GLubyte *b) {
+	m_pglex->glVertexAttrib4ubvARB(a,b);
+}
+
+inline void glex::glVertexAttrib4uivARB(GLuint  a, const GLuint *b) {
+	m_pglex->glVertexAttrib4uivARB(a,b);
+}
+
+inline void glex::glVertexAttrib4usvARB(GLuint  a, const GLushort *b) {
+	m_pglex->glVertexAttrib4usvARB(a,b);
+}
+
+inline void glex::glVertexAttribPointerARB(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, const void *f) {
+	m_pglex->glVertexAttribPointerARB(a,b,c,d,e,f);
+}
+
+inline void glex::glEnableVertexAttribArrayARB(GLuint  a) {
+	m_pglex->glEnableVertexAttribArrayARB(a);
+}
+
+inline void glex::glDisableVertexAttribArrayARB(GLuint  a) {
+	m_pglex->glDisableVertexAttribArrayARB(a);
+}
+
+inline void glex::glGetVertexAttribdvARB(GLuint  a, GLenum  b, GLdouble *c) {
+	m_pglex->glGetVertexAttribdvARB(a,b,c);
+}
+
+inline void glex::glGetVertexAttribfvARB(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetVertexAttribfvARB(a,b,c);
+}
+
+inline void glex::glGetVertexAttribivARB(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVertexAttribivARB(a,b,c);
+}
+
+inline void glex::glGetVertexAttribPointervARB(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetVertexAttribPointervARB(a,b,c);
+}
+
+inline void glex::glBindAttribLocationARB(GLhandleARB  a, GLuint  b, const GLcharARB *c) {
+	m_pglex->glBindAttribLocationARB(a,b,c);
+}
+
+inline void glex::glGetActiveAttribARB(GLhandleARB  a, GLuint  b, GLsizei  c, GLsizei *d, GLint *e, GLenum *f, GLcharARB *g) {
+	m_pglex->glGetActiveAttribARB(a,b,c,d,e,f,g);
+}
+
+inline GLint glex::glGetAttribLocationARB(GLhandleARB  a, const GLcharARB *b) {
+	return m_pglex->glGetAttribLocationARB(a,b);
+}
+
+inline void glex::glWindowPos2dARB(GLdouble  a, GLdouble  b) {
+	m_pglex->glWindowPos2dARB(a,b);
+}
+
+inline void glex::glWindowPos2dvARB(const GLdouble *a) {
+	m_pglex->glWindowPos2dvARB(a);
+}
+
+inline void glex::glWindowPos2fARB(GLfloat  a, GLfloat  b) {
+	m_pglex->glWindowPos2fARB(a,b);
+}
+
+inline void glex::glWindowPos2fvARB(const GLfloat *a) {
+	m_pglex->glWindowPos2fvARB(a);
+}
+
+inline void glex::glWindowPos2iARB(GLint  a, GLint  b) {
+	m_pglex->glWindowPos2iARB(a,b);
+}
+
+inline void glex::glWindowPos2ivARB(const GLint *a) {
+	m_pglex->glWindowPos2ivARB(a);
+}
+
+inline void glex::glWindowPos2sARB(GLshort  a, GLshort  b) {
+	m_pglex->glWindowPos2sARB(a,b);
+}
+
+inline void glex::glWindowPos2svARB(const GLshort *a) {
+	m_pglex->glWindowPos2svARB(a);
+}
+
+inline void glex::glWindowPos3dARB(GLdouble  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glWindowPos3dARB(a,b,c);
+}
+
+inline void glex::glWindowPos3dvARB(const GLdouble *a) {
+	m_pglex->glWindowPos3dvARB(a);
+}
+
+inline void glex::glWindowPos3fARB(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glWindowPos3fARB(a,b,c);
+}
+
+inline void glex::glWindowPos3fvARB(const GLfloat *a) {
+	m_pglex->glWindowPos3fvARB(a);
+}
+
+inline void glex::glWindowPos3iARB(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glWindowPos3iARB(a,b,c);
+}
+
+inline void glex::glWindowPos3ivARB(const GLint *a) {
+	m_pglex->glWindowPos3ivARB(a);
+}
+
+inline void glex::glWindowPos3sARB(GLshort  a, GLshort  b, GLshort  c) {
+	m_pglex->glWindowPos3sARB(a,b,c);
+}
+
+inline void glex::glWindowPos3svARB(const GLshort *a) {
+	m_pglex->glWindowPos3svARB(a);
+}
+
+inline void glex::glBlendBarrierKHR(void) {
+	m_pglex->glBlendBarrierKHR();
+}
+
+inline void glex::glMultiTexCoord1bOES(GLenum  a, GLbyte  b) {
+	m_pglex->glMultiTexCoord1bOES(a,b);
+}
+
+inline void glex::glMultiTexCoord1bvOES(GLenum  a, const GLbyte *b) {
+	m_pglex->glMultiTexCoord1bvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord2bOES(GLenum  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glMultiTexCoord2bOES(a,b,c);
+}
+
+inline void glex::glMultiTexCoord2bvOES(GLenum  a, const GLbyte *b) {
+	m_pglex->glMultiTexCoord2bvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord3bOES(GLenum  a, GLbyte  b, GLbyte  c, GLbyte  d) {
+	m_pglex->glMultiTexCoord3bOES(a,b,c,d);
+}
+
+inline void glex::glMultiTexCoord3bvOES(GLenum  a, const GLbyte *b) {
+	m_pglex->glMultiTexCoord3bvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord4bOES(GLenum  a, GLbyte  b, GLbyte  c, GLbyte  d, GLbyte  e) {
+	m_pglex->glMultiTexCoord4bOES(a,b,c,d,e);
+}
+
+inline void glex::glMultiTexCoord4bvOES(GLenum  a, const GLbyte *b) {
+	m_pglex->glMultiTexCoord4bvOES(a,b);
+}
+
+inline void glex::glTexCoord1bOES(GLbyte  a) {
+	m_pglex->glTexCoord1bOES(a);
+}
+
+inline void glex::glTexCoord1bvOES(const GLbyte *a) {
+	m_pglex->glTexCoord1bvOES(a);
+}
+
+inline void glex::glTexCoord2bOES(GLbyte  a, GLbyte  b) {
+	m_pglex->glTexCoord2bOES(a,b);
+}
+
+inline void glex::glTexCoord2bvOES(const GLbyte *a) {
+	m_pglex->glTexCoord2bvOES(a);
+}
+
+inline void glex::glTexCoord3bOES(GLbyte  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glTexCoord3bOES(a,b,c);
+}
+
+inline void glex::glTexCoord3bvOES(const GLbyte *a) {
+	m_pglex->glTexCoord3bvOES(a);
+}
+
+inline void glex::glTexCoord4bOES(GLbyte  a, GLbyte  b, GLbyte  c, GLbyte  d) {
+	m_pglex->glTexCoord4bOES(a,b,c,d);
+}
+
+inline void glex::glTexCoord4bvOES(const GLbyte *a) {
+	m_pglex->glTexCoord4bvOES(a);
+}
+
+inline void glex::glVertex2bOES(GLbyte  a, GLbyte  b) {
+	m_pglex->glVertex2bOES(a,b);
+}
+
+inline void glex::glVertex2bvOES(const GLbyte *a) {
+	m_pglex->glVertex2bvOES(a);
+}
+
+inline void glex::glVertex3bOES(GLbyte  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glVertex3bOES(a,b,c);
+}
+
+inline void glex::glVertex3bvOES(const GLbyte *a) {
+	m_pglex->glVertex3bvOES(a);
+}
+
+inline void glex::glVertex4bOES(GLbyte  a, GLbyte  b, GLbyte  c, GLbyte  d) {
+	m_pglex->glVertex4bOES(a,b,c,d);
+}
+
+inline void glex::glVertex4bvOES(const GLbyte *a) {
+	m_pglex->glVertex4bvOES(a);
+}
+
+inline void glex::glAlphaFuncxOES(GLenum  a, GLfixed  b) {
+	m_pglex->glAlphaFuncxOES(a,b);
+}
+
+inline void glex::glClearColorxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glClearColorxOES(a,b,c,d);
+}
+
+inline void glex::glClearDepthxOES(GLfixed  a) {
+	m_pglex->glClearDepthxOES(a);
+}
+
+inline void glex::glClipPlanexOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glClipPlanexOES(a,b);
+}
+
+inline void glex::glColor4xOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glColor4xOES(a,b,c,d);
+}
+
+inline void glex::glDepthRangexOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glDepthRangexOES(a,b);
+}
+
+inline void glex::glFogxOES(GLenum  a, GLfixed  b) {
+	m_pglex->glFogxOES(a,b);
+}
+
+inline void glex::glFogxvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glFogxvOES(a,b);
+}
+
+inline void glex::glFrustumxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d, GLfixed  e, GLfixed  f) {
+	m_pglex->glFrustumxOES(a,b,c,d,e,f);
+}
+
+inline void glex::glGetClipPlanexOES(GLenum  a, GLfixed *b) {
+	m_pglex->glGetClipPlanexOES(a,b);
+}
+
+inline void glex::glGetFixedvOES(GLenum  a, GLfixed *b) {
+	m_pglex->glGetFixedvOES(a,b);
+}
+
+inline void glex::glGetTexEnvxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetTexEnvxvOES(a,b,c);
+}
+
+inline void glex::glGetTexParameterxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetTexParameterxvOES(a,b,c);
+}
+
+inline void glex::glLightModelxOES(GLenum  a, GLfixed  b) {
+	m_pglex->glLightModelxOES(a,b);
+}
+
+inline void glex::glLightModelxvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glLightModelxvOES(a,b);
+}
+
+inline void glex::glLightxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glLightxOES(a,b,c);
+}
+
+inline void glex::glLightxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glLightxvOES(a,b,c);
+}
+
+inline void glex::glLineWidthxOES(GLfixed  a) {
+	m_pglex->glLineWidthxOES(a);
+}
+
+inline void glex::glLoadMatrixxOES(const GLfixed *a) {
+	m_pglex->glLoadMatrixxOES(a);
+}
+
+inline void glex::glMaterialxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glMaterialxOES(a,b,c);
+}
+
+inline void glex::glMaterialxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glMaterialxvOES(a,b,c);
+}
+
+inline void glex::glMultMatrixxOES(const GLfixed *a) {
+	m_pglex->glMultMatrixxOES(a);
+}
+
+inline void glex::glMultiTexCoord4xOES(GLenum  a, GLfixed  b, GLfixed  c, GLfixed  d, GLfixed  e) {
+	m_pglex->glMultiTexCoord4xOES(a,b,c,d,e);
+}
+
+inline void glex::glNormal3xOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glNormal3xOES(a,b,c);
+}
+
+inline void glex::glOrthoxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d, GLfixed  e, GLfixed  f) {
+	m_pglex->glOrthoxOES(a,b,c,d,e,f);
+}
+
+inline void glex::glPointParameterxvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glPointParameterxvOES(a,b);
+}
+
+inline void glex::glPointSizexOES(GLfixed  a) {
+	m_pglex->glPointSizexOES(a);
+}
+
+inline void glex::glPolygonOffsetxOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glPolygonOffsetxOES(a,b);
+}
+
+inline void glex::glRotatexOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glRotatexOES(a,b,c,d);
+}
+
+inline void glex::glScalexOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glScalexOES(a,b,c);
+}
+
+inline void glex::glTexEnvxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glTexEnvxOES(a,b,c);
+}
+
+inline void glex::glTexEnvxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glTexEnvxvOES(a,b,c);
+}
+
+inline void glex::glTexParameterxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glTexParameterxOES(a,b,c);
+}
+
+inline void glex::glTexParameterxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glTexParameterxvOES(a,b,c);
+}
+
+inline void glex::glTranslatexOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glTranslatexOES(a,b,c);
+}
+
+inline void glex::glAccumxOES(GLenum  a, GLfixed  b) {
+	m_pglex->glAccumxOES(a,b);
+}
+
+inline void glex::glBitmapxOES(GLsizei  a, GLsizei  b, GLfixed  c, GLfixed  d, GLfixed  e, GLfixed  f, const GLubyte *g) {
+	m_pglex->glBitmapxOES(a,b,c,d,e,f,g);
+}
+
+inline void glex::glBlendColorxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glBlendColorxOES(a,b,c,d);
+}
+
+inline void glex::glClearAccumxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glClearAccumxOES(a,b,c,d);
+}
+
+inline void glex::glColor3xOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glColor3xOES(a,b,c);
+}
+
+inline void glex::glColor3xvOES(const GLfixed *a) {
+	m_pglex->glColor3xvOES(a);
+}
+
+inline void glex::glColor4xvOES(const GLfixed *a) {
+	m_pglex->glColor4xvOES(a);
+}
+
+inline void glex::glConvolutionParameterxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glConvolutionParameterxOES(a,b,c);
+}
+
+inline void glex::glConvolutionParameterxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glConvolutionParameterxvOES(a,b,c);
+}
+
+inline void glex::glEvalCoord1xOES(GLfixed  a) {
+	m_pglex->glEvalCoord1xOES(a);
+}
+
+inline void glex::glEvalCoord1xvOES(const GLfixed *a) {
+	m_pglex->glEvalCoord1xvOES(a);
+}
+
+inline void glex::glEvalCoord2xOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glEvalCoord2xOES(a,b);
+}
+
+inline void glex::glEvalCoord2xvOES(const GLfixed *a) {
+	m_pglex->glEvalCoord2xvOES(a);
+}
+
+inline void glex::glFeedbackBufferxOES(GLsizei  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glFeedbackBufferxOES(a,b,c);
+}
+
+inline void glex::glGetConvolutionParameterxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetConvolutionParameterxvOES(a,b,c);
+}
+
+inline void glex::glGetHistogramParameterxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetHistogramParameterxvOES(a,b,c);
+}
+
+inline void glex::glGetLightxOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetLightxOES(a,b,c);
+}
+
+inline void glex::glGetMapxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetMapxvOES(a,b,c);
+}
+
+inline void glex::glGetMaterialxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glGetMaterialxOES(a,b,c);
+}
+
+inline void glex::glGetPixelMapxv(GLenum  a, GLint  b, GLfixed *c) {
+	m_pglex->glGetPixelMapxv(a,b,c);
+}
+
+inline void glex::glGetTexGenxvOES(GLenum  a, GLenum  b, GLfixed *c) {
+	m_pglex->glGetTexGenxvOES(a,b,c);
+}
+
+inline void glex::glGetTexLevelParameterxvOES(GLenum  a, GLint  b, GLenum  c, GLfixed *d) {
+	m_pglex->glGetTexLevelParameterxvOES(a,b,c,d);
+}
+
+inline void glex::glIndexxOES(GLfixed  a) {
+	m_pglex->glIndexxOES(a);
+}
+
+inline void glex::glIndexxvOES(const GLfixed *a) {
+	m_pglex->glIndexxvOES(a);
+}
+
+inline void glex::glLoadTransposeMatrixxOES(const GLfixed *a) {
+	m_pglex->glLoadTransposeMatrixxOES(a);
+}
+
+inline void glex::glMap1xOES(GLenum  a, GLfixed  b, GLfixed  c, GLint  d, GLint  e, GLfixed  f) {
+	m_pglex->glMap1xOES(a,b,c,d,e,f);
+}
+
+inline void glex::glMap2xOES(GLenum  a, GLfixed  b, GLfixed  c, GLint  d, GLint  e, GLfixed  f, GLfixed  g, GLint  h, GLint  i, GLfixed  j) {
+	m_pglex->glMap2xOES(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glMapGrid1xOES(GLint  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glMapGrid1xOES(a,b,c);
+}
+
+inline void glex::glMapGrid2xOES(GLint  a, GLfixed  b, GLfixed  c, GLfixed  d, GLfixed  e) {
+	m_pglex->glMapGrid2xOES(a,b,c,d,e);
+}
+
+inline void glex::glMultTransposeMatrixxOES(const GLfixed *a) {
+	m_pglex->glMultTransposeMatrixxOES(a);
+}
+
+inline void glex::glMultiTexCoord1xOES(GLenum  a, GLfixed  b) {
+	m_pglex->glMultiTexCoord1xOES(a,b);
+}
+
+inline void glex::glMultiTexCoord1xvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glMultiTexCoord1xvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord2xOES(GLenum  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glMultiTexCoord2xOES(a,b,c);
+}
+
+inline void glex::glMultiTexCoord2xvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glMultiTexCoord2xvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord3xOES(GLenum  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glMultiTexCoord3xOES(a,b,c,d);
+}
+
+inline void glex::glMultiTexCoord3xvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glMultiTexCoord3xvOES(a,b);
+}
+
+inline void glex::glMultiTexCoord4xvOES(GLenum  a, const GLfixed *b) {
+	m_pglex->glMultiTexCoord4xvOES(a,b);
+}
+
+inline void glex::glNormal3xvOES(const GLfixed *a) {
+	m_pglex->glNormal3xvOES(a);
+}
+
+inline void glex::glPassThroughxOES(GLfixed  a) {
+	m_pglex->glPassThroughxOES(a);
+}
+
+inline void glex::glPixelMapx(GLenum  a, GLint  b, const GLfixed *c) {
+	m_pglex->glPixelMapx(a,b,c);
+}
+
+inline void glex::glPixelStorex(GLenum  a, GLfixed  b) {
+	m_pglex->glPixelStorex(a,b);
+}
+
+inline void glex::glPixelTransferxOES(GLenum  a, GLfixed  b) {
+	m_pglex->glPixelTransferxOES(a,b);
+}
+
+inline void glex::glPixelZoomxOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glPixelZoomxOES(a,b);
+}
+
+inline void glex::glPrioritizeTexturesxOES(GLsizei  a, const GLuint *b, const GLfixed *c) {
+	m_pglex->glPrioritizeTexturesxOES(a,b,c);
+}
+
+inline void glex::glRasterPos2xOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glRasterPos2xOES(a,b);
+}
+
+inline void glex::glRasterPos2xvOES(const GLfixed *a) {
+	m_pglex->glRasterPos2xvOES(a);
+}
+
+inline void glex::glRasterPos3xOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glRasterPos3xOES(a,b,c);
+}
+
+inline void glex::glRasterPos3xvOES(const GLfixed *a) {
+	m_pglex->glRasterPos3xvOES(a);
+}
+
+inline void glex::glRasterPos4xOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glRasterPos4xOES(a,b,c,d);
+}
+
+inline void glex::glRasterPos4xvOES(const GLfixed *a) {
+	m_pglex->glRasterPos4xvOES(a);
+}
+
+inline void glex::glRectxOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glRectxOES(a,b,c,d);
+}
+
+inline void glex::glRectxvOES(const GLfixed *a, const GLfixed *b) {
+	m_pglex->glRectxvOES(a,b);
+}
+
+inline void glex::glTexCoord1xOES(GLfixed  a) {
+	m_pglex->glTexCoord1xOES(a);
+}
+
+inline void glex::glTexCoord1xvOES(const GLfixed *a) {
+	m_pglex->glTexCoord1xvOES(a);
+}
+
+inline void glex::glTexCoord2xOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glTexCoord2xOES(a,b);
+}
+
+inline void glex::glTexCoord2xvOES(const GLfixed *a) {
+	m_pglex->glTexCoord2xvOES(a);
+}
+
+inline void glex::glTexCoord3xOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glTexCoord3xOES(a,b,c);
+}
+
+inline void glex::glTexCoord3xvOES(const GLfixed *a) {
+	m_pglex->glTexCoord3xvOES(a);
+}
+
+inline void glex::glTexCoord4xOES(GLfixed  a, GLfixed  b, GLfixed  c, GLfixed  d) {
+	m_pglex->glTexCoord4xOES(a,b,c,d);
+}
+
+inline void glex::glTexCoord4xvOES(const GLfixed *a) {
+	m_pglex->glTexCoord4xvOES(a);
+}
+
+inline void glex::glTexGenxOES(GLenum  a, GLenum  b, GLfixed  c) {
+	m_pglex->glTexGenxOES(a,b,c);
+}
+
+inline void glex::glTexGenxvOES(GLenum  a, GLenum  b, const GLfixed *c) {
+	m_pglex->glTexGenxvOES(a,b,c);
+}
+
+inline void glex::glVertex2xOES(GLfixed  a) {
+	m_pglex->glVertex2xOES(a);
+}
+
+inline void glex::glVertex2xvOES(const GLfixed *a) {
+	m_pglex->glVertex2xvOES(a);
+}
+
+inline void glex::glVertex3xOES(GLfixed  a, GLfixed  b) {
+	m_pglex->glVertex3xOES(a,b);
+}
+
+inline void glex::glVertex3xvOES(const GLfixed *a) {
+	m_pglex->glVertex3xvOES(a);
+}
+
+inline void glex::glVertex4xOES(GLfixed  a, GLfixed  b, GLfixed  c) {
+	m_pglex->glVertex4xOES(a,b,c);
+}
+
+inline void glex::glVertex4xvOES(const GLfixed *a) {
+	m_pglex->glVertex4xvOES(a);
+}
+
+inline GLbitfield glex::glQueryMatrixxOES(GLfixed *a, GLint *b) {
+	return m_pglex->glQueryMatrixxOES(a,b);
+}
+
+inline void glex::glClearDepthfOES(GLclampf  a) {
+	m_pglex->glClearDepthfOES(a);
+}
+
+inline void glex::glClipPlanefOES(GLenum  a, const GLfloat *b) {
+	m_pglex->glClipPlanefOES(a,b);
+}
+
+inline void glex::glDepthRangefOES(GLclampf  a, GLclampf  b) {
+	m_pglex->glDepthRangefOES(a,b);
+}
+
+inline void glex::glFrustumfOES(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glFrustumfOES(a,b,c,d,e,f);
+}
+
+inline void glex::glGetClipPlanefOES(GLenum  a, GLfloat *b) {
+	m_pglex->glGetClipPlanefOES(a,b);
+}
+
+inline void glex::glOrthofOES(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glOrthofOES(a,b,c,d,e,f);
 }
 
 inline void glex::glTbufferMask3DFX(GLuint  a) {
 	m_pglex->glTbufferMask3DFX(a);
 }
 
-inline void glex::glSampleMaskEXT(GLclampf  a, GLboolean  b) {
-	m_pglex->glSampleMaskEXT(a,b);
+inline void glex::glDebugMessageEnableAMD(GLenum  a, GLenum  b, GLsizei  c, const GLuint *d, GLboolean  e) {
+	m_pglex->glDebugMessageEnableAMD(a,b,c,d,e);
 }
 
-inline void glex::glSamplePatternEXT(GLenum  a) {
-	m_pglex->glSamplePatternEXT(a);
+inline void glex::glDebugMessageInsertAMD(GLenum  a, GLenum  b, GLuint  c, GLsizei  d, const GLchar *e) {
+	m_pglex->glDebugMessageInsertAMD(a,b,c,d,e);
 }
 
-inline void glex::glTextureColorMaskSGIS(GLboolean  a, GLboolean  b, GLboolean  c, GLboolean  d) {
-	m_pglex->glTextureColorMaskSGIS(a,b,c,d);
+inline void glex::glDebugMessageCallbackAMD(GLDEBUGPROCAMD  a, void *b) {
+	m_pglex->glDebugMessageCallbackAMD(a,b);
 }
 
-inline void glex::glIglooInterfaceSGIX(GLenum  a, const GLvoid *b) {
-	m_pglex->glIglooInterfaceSGIX(a,b);
+inline GLuint glex::glGetDebugMessageLogAMD(GLuint  a, GLsizei  b, GLenum *c, GLuint *d, GLuint *e, GLsizei *f, GLchar *g) {
+	return m_pglex->glGetDebugMessageLogAMD(a,b,c,d,e,f,g);
 }
 
-inline void glex::glDeleteFencesNV(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteFencesNV(a,b);
+inline void glex::glBlendFuncIndexedAMD(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendFuncIndexedAMD(a,b,c);
 }
 
-inline void glex::glGenFencesNV(GLsizei  a, GLuint *b) {
-	m_pglex->glGenFencesNV(a,b);
+inline void glex::glBlendFuncSeparateIndexedAMD(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
+	m_pglex->glBlendFuncSeparateIndexedAMD(a,b,c,d,e);
 }
 
-inline GLboolean glex::glIsFenceNV(GLuint  a) {
-	return m_pglex->glIsFenceNV(a);
+inline void glex::glBlendEquationIndexedAMD(GLuint  a, GLenum  b) {
+	m_pglex->glBlendEquationIndexedAMD(a,b);
 }
 
-inline GLboolean glex::glTestFenceNV(GLuint  a) {
-	return m_pglex->glTestFenceNV(a);
+inline void glex::glBlendEquationSeparateIndexedAMD(GLuint  a, GLenum  b, GLenum  c) {
+	m_pglex->glBlendEquationSeparateIndexedAMD(a,b,c);
 }
 
-inline void glex::glGetFenceivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetFenceivNV(a,b,c);
+inline void glex::glUniform1i64NV(GLint  a, GLint64EXT  b) {
+	m_pglex->glUniform1i64NV(a,b);
 }
 
-inline void glex::glFinishFenceNV(GLuint  a) {
-	m_pglex->glFinishFenceNV(a);
+inline void glex::glUniform2i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c) {
+	m_pglex->glUniform2i64NV(a,b,c);
 }
 
-inline void glex::glSetFenceNV(GLuint  a, GLenum  b) {
-	m_pglex->glSetFenceNV(a,b);
+inline void glex::glUniform3i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d) {
+	m_pglex->glUniform3i64NV(a,b,c,d);
 }
 
-inline void glex::glMapControlPointsNV(GLenum  a, GLuint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLint  g, GLboolean  h, const GLvoid *i) {
-	m_pglex->glMapControlPointsNV(a,b,c,d,e,f,g,h,i);
+inline void glex::glUniform4i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
+	m_pglex->glUniform4i64NV(a,b,c,d,e);
 }
 
-inline void glex::glMapParameterivNV(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glMapParameterivNV(a,b,c);
+inline void glex::glUniform1i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
+	m_pglex->glUniform1i64vNV(a,b,c);
 }
 
-inline void glex::glMapParameterfvNV(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glMapParameterfvNV(a,b,c);
+inline void glex::glUniform2i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
+	m_pglex->glUniform2i64vNV(a,b,c);
 }
 
-inline void glex::glGetMapControlPointsNV(GLenum  a, GLuint  b, GLenum  c, GLsizei  d, GLsizei  e, GLboolean  f, GLvoid *g) {
-	m_pglex->glGetMapControlPointsNV(a,b,c,d,e,f,g);
+inline void glex::glUniform3i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
+	m_pglex->glUniform3i64vNV(a,b,c);
 }
 
-inline void glex::glGetMapParameterivNV(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetMapParameterivNV(a,b,c);
+inline void glex::glUniform4i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
+	m_pglex->glUniform4i64vNV(a,b,c);
 }
 
-inline void glex::glGetMapParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetMapParameterfvNV(a,b,c);
+inline void glex::glUniform1ui64NV(GLint  a, GLuint64EXT  b) {
+	m_pglex->glUniform1ui64NV(a,b);
 }
 
-inline void glex::glGetMapAttribParameterivNV(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
-	m_pglex->glGetMapAttribParameterivNV(a,b,c,d);
+inline void glex::glUniform2ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c) {
+	m_pglex->glUniform2ui64NV(a,b,c);
 }
 
-inline void glex::glGetMapAttribParameterfvNV(GLenum  a, GLuint  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetMapAttribParameterfvNV(a,b,c,d);
+inline void glex::glUniform3ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d) {
+	m_pglex->glUniform3ui64NV(a,b,c,d);
 }
 
-inline void glex::glEvalMapsNV(GLenum  a, GLenum  b) {
-	m_pglex->glEvalMapsNV(a,b);
+inline void glex::glUniform4ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
+	m_pglex->glUniform4ui64NV(a,b,c,d,e);
 }
 
-inline void glex::glCombinerStageParameterfvNV(GLenum  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glCombinerStageParameterfvNV(a,b,c);
+inline void glex::glUniform1ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
+	m_pglex->glUniform1ui64vNV(a,b,c);
 }
 
-inline void glex::glGetCombinerStageParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetCombinerStageParameterfvNV(a,b,c);
+inline void glex::glUniform2ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
+	m_pglex->glUniform2ui64vNV(a,b,c);
 }
 
-inline GLboolean glex::glAreProgramsResidentNV(GLsizei  a, const GLuint *b, GLboolean *c) {
-	return m_pglex->glAreProgramsResidentNV(a,b,c);
+inline void glex::glUniform3ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
+	m_pglex->glUniform3ui64vNV(a,b,c);
 }
 
-inline void glex::glBindProgramNV(GLenum  a, GLuint  b) {
-	m_pglex->glBindProgramNV(a,b);
+inline void glex::glUniform4ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
+	m_pglex->glUniform4ui64vNV(a,b,c);
 }
 
-inline void glex::glDeleteProgramsNV(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteProgramsNV(a,b);
+inline void glex::glGetUniformi64vNV(GLuint  a, GLint  b, GLint64EXT *c) {
+	m_pglex->glGetUniformi64vNV(a,b,c);
 }
 
-inline void glex::glExecuteProgramNV(GLenum  a, GLuint  b, const GLfloat *c) {
-	m_pglex->glExecuteProgramNV(a,b,c);
+inline void glex::glGetUniformui64vNV(GLuint  a, GLint  b, GLuint64EXT *c) {
+	m_pglex->glGetUniformui64vNV(a,b,c);
 }
 
-inline void glex::glGenProgramsNV(GLsizei  a, GLuint *b) {
-	m_pglex->glGenProgramsNV(a,b);
+inline void glex::glProgramUniform1i64NV(GLuint  a, GLint  b, GLint64EXT  c) {
+	m_pglex->glProgramUniform1i64NV(a,b,c);
 }
 
-inline void glex::glGetProgramParameterdvNV(GLenum  a, GLuint  b, GLenum  c, GLdouble *d) {
-	m_pglex->glGetProgramParameterdvNV(a,b,c,d);
+inline void glex::glProgramUniform2i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d) {
+	m_pglex->glProgramUniform2i64NV(a,b,c,d);
 }
 
-inline void glex::glGetProgramParameterfvNV(GLenum  a, GLuint  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetProgramParameterfvNV(a,b,c,d);
+inline void glex::glProgramUniform3i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
+	m_pglex->glProgramUniform3i64NV(a,b,c,d,e);
 }
 
-inline void glex::glGetProgramivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetProgramivNV(a,b,c);
+inline void glex::glProgramUniform4i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e, GLint64EXT  f) {
+	m_pglex->glProgramUniform4i64NV(a,b,c,d,e,f);
 }
 
-inline void glex::glGetProgramStringNV(GLuint  a, GLenum  b, GLubyte *c) {
-	m_pglex->glGetProgramStringNV(a,b,c);
+inline void glex::glProgramUniform1i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
+	m_pglex->glProgramUniform1i64vNV(a,b,c,d);
 }
 
-inline void glex::glGetTrackMatrixivNV(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
-	m_pglex->glGetTrackMatrixivNV(a,b,c,d);
+inline void glex::glProgramUniform2i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
+	m_pglex->glProgramUniform2i64vNV(a,b,c,d);
 }
 
-inline void glex::glGetVertexAttribdvNV(GLuint  a, GLenum  b, GLdouble *c) {
-	m_pglex->glGetVertexAttribdvNV(a,b,c);
+inline void glex::glProgramUniform3i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
+	m_pglex->glProgramUniform3i64vNV(a,b,c,d);
 }
 
-inline void glex::glGetVertexAttribfvNV(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetVertexAttribfvNV(a,b,c);
+inline void glex::glProgramUniform4i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
+	m_pglex->glProgramUniform4i64vNV(a,b,c,d);
 }
 
-inline void glex::glGetVertexAttribivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetVertexAttribivNV(a,b,c);
+inline void glex::glProgramUniform1ui64NV(GLuint  a, GLint  b, GLuint64EXT  c) {
+	m_pglex->glProgramUniform1ui64NV(a,b,c);
 }
 
-inline void glex::glGetVertexAttribPointervNV(GLuint  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetVertexAttribPointervNV(a,b,c);
+inline void glex::glProgramUniform2ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d) {
+	m_pglex->glProgramUniform2ui64NV(a,b,c,d);
 }
 
-inline GLboolean glex::glIsProgramNV(GLuint  a) {
-	return m_pglex->glIsProgramNV(a);
+inline void glex::glProgramUniform3ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
+	m_pglex->glProgramUniform3ui64NV(a,b,c,d,e);
 }
 
-inline void glex::glLoadProgramNV(GLenum  a, GLuint  b, GLsizei  c, const GLubyte *d) {
-	m_pglex->glLoadProgramNV(a,b,c,d);
+inline void glex::glProgramUniform4ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e, GLuint64EXT  f) {
+	m_pglex->glProgramUniform4ui64NV(a,b,c,d,e,f);
 }
 
-inline void glex::glProgramParameter4dNV(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
-	m_pglex->glProgramParameter4dNV(a,b,c,d,e,f);
+inline void glex::glProgramUniform1ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
+	m_pglex->glProgramUniform1ui64vNV(a,b,c,d);
 }
 
-inline void glex::glProgramParameter4dvNV(GLenum  a, GLuint  b, const GLdouble *c) {
-	m_pglex->glProgramParameter4dvNV(a,b,c);
+inline void glex::glProgramUniform2ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
+	m_pglex->glProgramUniform2ui64vNV(a,b,c,d);
 }
 
-inline void glex::glProgramParameter4fNV(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glProgramParameter4fNV(a,b,c,d,e,f);
+inline void glex::glProgramUniform3ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
+	m_pglex->glProgramUniform3ui64vNV(a,b,c,d);
 }
 
-inline void glex::glProgramParameter4fvNV(GLenum  a, GLuint  b, const GLfloat *c) {
-	m_pglex->glProgramParameter4fvNV(a,b,c);
+inline void glex::glProgramUniform4ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
+	m_pglex->glProgramUniform4ui64vNV(a,b,c,d);
 }
 
-inline void glex::glProgramParameters4dvNV(GLenum  a, GLuint  b, GLsizei  c, const GLdouble *d) {
-	m_pglex->glProgramParameters4dvNV(a,b,c,d);
+inline void glex::glVertexAttribParameteriAMD(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glVertexAttribParameteriAMD(a,b,c);
 }
 
-inline void glex::glProgramParameters4fvNV(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramParameters4fvNV(a,b,c,d);
+inline void glex::glMultiDrawArraysIndirectAMD(GLenum  a, const void *b, GLsizei  c, GLsizei  d) {
+	m_pglex->glMultiDrawArraysIndirectAMD(a,b,c,d);
 }
 
-inline void glex::glRequestResidentProgramsNV(GLsizei  a, const GLuint *b) {
-	m_pglex->glRequestResidentProgramsNV(a,b);
+inline void glex::glMultiDrawElementsIndirectAMD(GLenum  a, GLenum  b, const void *c, GLsizei  d, GLsizei  e) {
+	m_pglex->glMultiDrawElementsIndirectAMD(a,b,c,d,e);
 }
 
-inline void glex::glTrackMatrixNV(GLenum  a, GLuint  b, GLenum  c, GLenum  d) {
-	m_pglex->glTrackMatrixNV(a,b,c,d);
+inline void glex::glGenNamesAMD(GLenum  a, GLuint  b, GLuint *c) {
+	m_pglex->glGenNamesAMD(a,b,c);
 }
 
-inline void glex::glVertexAttribPointerNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glVertexAttribPointerNV(a,b,c,d,e);
+inline void glex::glDeleteNamesAMD(GLenum  a, GLuint  b, const GLuint *c) {
+	m_pglex->glDeleteNamesAMD(a,b,c);
 }
 
-inline void glex::glVertexAttrib1dNV(GLuint  a, GLdouble  b) {
-	m_pglex->glVertexAttrib1dNV(a,b);
+inline GLboolean glex::glIsNameAMD(GLenum  a, GLuint  b) {
+	return m_pglex->glIsNameAMD(a,b);
 }
 
-inline void glex::glVertexAttrib1dvNV(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib1dvNV(a,b);
+inline void glex::glQueryObjectParameteruiAMD(GLenum  a, GLuint  b, GLenum  c, GLuint  d) {
+	m_pglex->glQueryObjectParameteruiAMD(a,b,c,d);
 }
 
-inline void glex::glVertexAttrib1fNV(GLuint  a, GLfloat  b) {
-	m_pglex->glVertexAttrib1fNV(a,b);
+inline void glex::glGetPerfMonitorGroupsAMD(GLint *a, GLsizei  b, GLuint *c) {
+	m_pglex->glGetPerfMonitorGroupsAMD(a,b,c);
 }
 
-inline void glex::glVertexAttrib1fvNV(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib1fvNV(a,b);
+inline void glex::glGetPerfMonitorCountersAMD(GLuint  a, GLint *b, GLint *c, GLsizei  d, GLuint *e) {
+	m_pglex->glGetPerfMonitorCountersAMD(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttrib1sNV(GLuint  a, GLshort  b) {
-	m_pglex->glVertexAttrib1sNV(a,b);
+inline void glex::glGetPerfMonitorGroupStringAMD(GLuint  a, GLsizei  b, GLsizei *c, GLchar *d) {
+	m_pglex->glGetPerfMonitorGroupStringAMD(a,b,c,d);
 }
 
-inline void glex::glVertexAttrib1svNV(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib1svNV(a,b);
+inline void glex::glGetPerfMonitorCounterStringAMD(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLchar *e) {
+	m_pglex->glGetPerfMonitorCounterStringAMD(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttrib2dNV(GLuint  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glVertexAttrib2dNV(a,b,c);
+inline void glex::glGetPerfMonitorCounterInfoAMD(GLuint  a, GLuint  b, GLenum  c, void *d) {
+	m_pglex->glGetPerfMonitorCounterInfoAMD(a,b,c,d);
 }
 
-inline void glex::glVertexAttrib2dvNV(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib2dvNV(a,b);
+inline void glex::glGenPerfMonitorsAMD(GLsizei  a, GLuint *b) {
+	m_pglex->glGenPerfMonitorsAMD(a,b);
 }
 
-inline void glex::glVertexAttrib2fNV(GLuint  a, GLfloat  b, GLfloat  c) {
-	m_pglex->glVertexAttrib2fNV(a,b,c);
+inline void glex::glDeletePerfMonitorsAMD(GLsizei  a, GLuint *b) {
+	m_pglex->glDeletePerfMonitorsAMD(a,b);
 }
 
-inline void glex::glVertexAttrib2fvNV(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib2fvNV(a,b);
+inline void glex::glSelectPerfMonitorCountersAMD(GLuint  a, GLboolean  b, GLuint  c, GLint  d, GLuint *e) {
+	m_pglex->glSelectPerfMonitorCountersAMD(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttrib2sNV(GLuint  a, GLshort  b, GLshort  c) {
-	m_pglex->glVertexAttrib2sNV(a,b,c);
+inline void glex::glBeginPerfMonitorAMD(GLuint  a) {
+	m_pglex->glBeginPerfMonitorAMD(a);
 }
 
-inline void glex::glVertexAttrib2svNV(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib2svNV(a,b);
+inline void glex::glEndPerfMonitorAMD(GLuint  a) {
+	m_pglex->glEndPerfMonitorAMD(a);
 }
 
-inline void glex::glVertexAttrib3dNV(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glVertexAttrib3dNV(a,b,c,d);
+inline void glex::glGetPerfMonitorCounterDataAMD(GLuint  a, GLenum  b, GLsizei  c, GLuint *d, GLint *e) {
+	m_pglex->glGetPerfMonitorCounterDataAMD(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttrib3dvNV(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib3dvNV(a,b);
+inline void glex::glSetMultisamplefvAMD(GLenum  a, GLuint  b, const GLfloat *c) {
+	m_pglex->glSetMultisamplefvAMD(a,b,c);
 }
 
-inline void glex::glVertexAttrib3fNV(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glVertexAttrib3fNV(a,b,c,d);
+inline void glex::glTexStorageSparseAMD(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLsizei  e, GLsizei  f, GLbitfield  g) {
+	m_pglex->glTexStorageSparseAMD(a,b,c,d,e,f,g);
 }
 
-inline void glex::glVertexAttrib3fvNV(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib3fvNV(a,b);
+inline void glex::glTextureStorageSparseAMD(GLuint  a, GLenum  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLsizei  g, GLbitfield  h) {
+	m_pglex->glTextureStorageSparseAMD(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glVertexAttrib3sNV(GLuint  a, GLshort  b, GLshort  c, GLshort  d) {
-	m_pglex->glVertexAttrib3sNV(a,b,c,d);
+inline void glex::glStencilOpValueAMD(GLenum  a, GLuint  b) {
+	m_pglex->glStencilOpValueAMD(a,b);
 }
 
-inline void glex::glVertexAttrib3svNV(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib3svNV(a,b);
+inline void glex::glTessellationFactorAMD(GLfloat  a) {
+	m_pglex->glTessellationFactorAMD(a);
 }
 
-inline void glex::glVertexAttrib4dNV(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glVertexAttrib4dNV(a,b,c,d,e);
+inline void glex::glTessellationModeAMD(GLenum  a) {
+	m_pglex->glTessellationModeAMD(a);
 }
 
-inline void glex::glVertexAttrib4dvNV(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttrib4dvNV(a,b);
+inline void glex::glElementPointerAPPLE(GLenum  a, const void *b) {
+	m_pglex->glElementPointerAPPLE(a,b);
 }
 
-inline void glex::glVertexAttrib4fNV(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glVertexAttrib4fNV(a,b,c,d,e);
+inline void glex::glDrawElementArrayAPPLE(GLenum  a, GLint  b, GLsizei  c) {
+	m_pglex->glDrawElementArrayAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttrib4fvNV(GLuint  a, const GLfloat *b) {
-	m_pglex->glVertexAttrib4fvNV(a,b);
+inline void glex::glDrawRangeElementArrayAPPLE(GLenum  a, GLuint  b, GLuint  c, GLint  d, GLsizei  e) {
+	m_pglex->glDrawRangeElementArrayAPPLE(a,b,c,d,e);
 }
 
-inline void glex::glVertexAttrib4sNV(GLuint  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
-	m_pglex->glVertexAttrib4sNV(a,b,c,d,e);
+inline void glex::glMultiDrawElementArrayAPPLE(GLenum  a, const GLint *b, const GLsizei *c, GLsizei  d) {
+	m_pglex->glMultiDrawElementArrayAPPLE(a,b,c,d);
 }
 
-inline void glex::glVertexAttrib4svNV(GLuint  a, const GLshort *b) {
-	m_pglex->glVertexAttrib4svNV(a,b);
+inline void glex::glMultiDrawRangeElementArrayAPPLE(GLenum  a, GLuint  b, GLuint  c, const GLint *d, const GLsizei *e, GLsizei  f) {
+	m_pglex->glMultiDrawRangeElementArrayAPPLE(a,b,c,d,e,f);
 }
 
-inline void glex::glVertexAttrib4ubNV(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e) {
-	m_pglex->glVertexAttrib4ubNV(a,b,c,d,e);
+inline void glex::glGenFencesAPPLE(GLsizei  a, GLuint *b) {
+	m_pglex->glGenFencesAPPLE(a,b);
 }
 
-inline void glex::glVertexAttrib4ubvNV(GLuint  a, const GLubyte *b) {
-	m_pglex->glVertexAttrib4ubvNV(a,b);
+inline void glex::glDeleteFencesAPPLE(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteFencesAPPLE(a,b);
 }
 
-inline void glex::glVertexAttribs1dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
-	m_pglex->glVertexAttribs1dvNV(a,b,c);
+inline void glex::glSetFenceAPPLE(GLuint  a) {
+	m_pglex->glSetFenceAPPLE(a);
 }
 
-inline void glex::glVertexAttribs1fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glVertexAttribs1fvNV(a,b,c);
+inline GLboolean glex::glIsFenceAPPLE(GLuint  a) {
+	return m_pglex->glIsFenceAPPLE(a);
 }
 
-inline void glex::glVertexAttribs1svNV(GLuint  a, GLsizei  b, const GLshort *c) {
-	m_pglex->glVertexAttribs1svNV(a,b,c);
+inline GLboolean glex::glTestFenceAPPLE(GLuint  a) {
+	return m_pglex->glTestFenceAPPLE(a);
 }
 
-inline void glex::glVertexAttribs2dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
-	m_pglex->glVertexAttribs2dvNV(a,b,c);
+inline void glex::glFinishFenceAPPLE(GLuint  a) {
+	m_pglex->glFinishFenceAPPLE(a);
 }
 
-inline void glex::glVertexAttribs2fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glVertexAttribs2fvNV(a,b,c);
+inline GLboolean glex::glTestObjectAPPLE(GLenum  a, GLuint  b) {
+	return m_pglex->glTestObjectAPPLE(a,b);
 }
 
-inline void glex::glVertexAttribs2svNV(GLuint  a, GLsizei  b, const GLshort *c) {
-	m_pglex->glVertexAttribs2svNV(a,b,c);
+inline void glex::glFinishObjectAPPLE(GLenum  a, GLint  b) {
+	m_pglex->glFinishObjectAPPLE(a,b);
 }
 
-inline void glex::glVertexAttribs3dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
-	m_pglex->glVertexAttribs3dvNV(a,b,c);
+inline void glex::glBufferParameteriAPPLE(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glBufferParameteriAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttribs3fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glVertexAttribs3fvNV(a,b,c);
+inline void glex::glFlushMappedBufferRangeAPPLE(GLenum  a, GLintptr  b, GLsizeiptr  c) {
+	m_pglex->glFlushMappedBufferRangeAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttribs3svNV(GLuint  a, GLsizei  b, const GLshort *c) {
-	m_pglex->glVertexAttribs3svNV(a,b,c);
+inline GLenum glex::glObjectPurgeableAPPLE(GLenum  a, GLuint  b, GLenum  c) {
+	return m_pglex->glObjectPurgeableAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttribs4dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
-	m_pglex->glVertexAttribs4dvNV(a,b,c);
+inline GLenum glex::glObjectUnpurgeableAPPLE(GLenum  a, GLuint  b, GLenum  c) {
+	return m_pglex->glObjectUnpurgeableAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttribs4fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glVertexAttribs4fvNV(a,b,c);
+inline void glex::glGetObjectParameterivAPPLE(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetObjectParameterivAPPLE(a,b,c,d);
 }
 
-inline void glex::glVertexAttribs4svNV(GLuint  a, GLsizei  b, const GLshort *c) {
-	m_pglex->glVertexAttribs4svNV(a,b,c);
+inline void glex::glTextureRangeAPPLE(GLenum  a, GLsizei  b, const void *c) {
+	m_pglex->glTextureRangeAPPLE(a,b,c);
 }
 
-inline void glex::glVertexAttribs4ubvNV(GLuint  a, GLsizei  b, const GLubyte *c) {
-	m_pglex->glVertexAttribs4ubvNV(a,b,c);
+inline void glex::glGetTexParameterPointervAPPLE(GLenum  a, GLenum  b, void **c) {
+	m_pglex->glGetTexParameterPointervAPPLE(a,b,c);
+}
+
+inline void glex::glBindVertexArrayAPPLE(GLuint  a) {
+	m_pglex->glBindVertexArrayAPPLE(a);
+}
+
+inline void glex::glDeleteVertexArraysAPPLE(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteVertexArraysAPPLE(a,b);
+}
+
+inline void glex::glGenVertexArraysAPPLE(GLsizei  a, GLuint *b) {
+	m_pglex->glGenVertexArraysAPPLE(a,b);
+}
+
+inline GLboolean glex::glIsVertexArrayAPPLE(GLuint  a) {
+	return m_pglex->glIsVertexArrayAPPLE(a);
+}
+
+inline void glex::glVertexArrayRangeAPPLE(GLsizei  a, void *b) {
+	m_pglex->glVertexArrayRangeAPPLE(a,b);
+}
+
+inline void glex::glFlushVertexArrayRangeAPPLE(GLsizei  a, void *b) {
+	m_pglex->glFlushVertexArrayRangeAPPLE(a,b);
+}
+
+inline void glex::glVertexArrayParameteriAPPLE(GLenum  a, GLint  b) {
+	m_pglex->glVertexArrayParameteriAPPLE(a,b);
+}
+
+inline void glex::glEnableVertexAttribAPPLE(GLuint  a, GLenum  b) {
+	m_pglex->glEnableVertexAttribAPPLE(a,b);
+}
+
+inline void glex::glDisableVertexAttribAPPLE(GLuint  a, GLenum  b) {
+	m_pglex->glDisableVertexAttribAPPLE(a,b);
+}
+
+inline GLboolean glex::glIsVertexAttribEnabledAPPLE(GLuint  a, GLenum  b) {
+	return m_pglex->glIsVertexAttribEnabledAPPLE(a,b);
+}
+
+inline void glex::glMapVertexAttrib1dAPPLE(GLuint  a, GLuint  b, GLdouble  c, GLdouble  d, GLint  e, GLint  f, const GLdouble *g) {
+	m_pglex->glMapVertexAttrib1dAPPLE(a,b,c,d,e,f,g);
+}
+
+inline void glex::glMapVertexAttrib1fAPPLE(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d, GLint  e, GLint  f, const GLfloat *g) {
+	m_pglex->glMapVertexAttrib1fAPPLE(a,b,c,d,e,f,g);
+}
+
+inline void glex::glMapVertexAttrib2dAPPLE(GLuint  a, GLuint  b, GLdouble  c, GLdouble  d, GLint  e, GLint  f, GLdouble  g, GLdouble  h, GLint  i, GLint  j, const GLdouble *k) {
+	m_pglex->glMapVertexAttrib2dAPPLE(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glMapVertexAttrib2fAPPLE(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d, GLint  e, GLint  f, GLfloat  g, GLfloat  h, GLint  i, GLint  j, const GLfloat *k) {
+	m_pglex->glMapVertexAttrib2fAPPLE(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glDrawBuffersATI(GLsizei  a, const GLenum *b) {
+	m_pglex->glDrawBuffersATI(a,b);
+}
+
+inline void glex::glElementPointerATI(GLenum  a, const void *b) {
+	m_pglex->glElementPointerATI(a,b);
+}
+
+inline void glex::glDrawElementArrayATI(GLenum  a, GLsizei  b) {
+	m_pglex->glDrawElementArrayATI(a,b);
+}
+
+inline void glex::glDrawRangeElementArrayATI(GLenum  a, GLuint  b, GLuint  c, GLsizei  d) {
+	m_pglex->glDrawRangeElementArrayATI(a,b,c,d);
 }
 
 inline void glex::glTexBumpParameterivATI(GLenum  a, const GLint *b) {
@@ -7444,6 +7805,14 @@ inline void glex::glSetFragmentShaderConstantATI(GLuint  a, const GLfloat *b) {
 	m_pglex->glSetFragmentShaderConstantATI(a,b);
 }
 
+inline void * glex::glMapObjectBufferATI(GLuint  a) {
+	return m_pglex->glMapObjectBufferATI(a);
+}
+
+inline void glex::glUnmapObjectBufferATI(GLuint  a) {
+	m_pglex->glUnmapObjectBufferATI(a);
+}
+
 inline void glex::glPNTrianglesiATI(GLenum  a, GLint  b) {
 	m_pglex->glPNTrianglesiATI(a,b);
 }
@@ -7452,7 +7821,15 @@ inline void glex::glPNTrianglesfATI(GLenum  a, GLfloat  b) {
 	m_pglex->glPNTrianglesfATI(a,b);
 }
 
-inline GLuint glex::glNewObjectBufferATI(GLsizei  a, const GLvoid *b, GLenum  c) {
+inline void glex::glStencilOpSeparateATI(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
+	m_pglex->glStencilOpSeparateATI(a,b,c,d);
+}
+
+inline void glex::glStencilFuncSeparateATI(GLenum  a, GLenum  b, GLint  c, GLuint  d) {
+	m_pglex->glStencilFuncSeparateATI(a,b,c,d);
+}
+
+inline GLuint glex::glNewObjectBufferATI(GLsizei  a, const void *b, GLenum  c) {
 	return m_pglex->glNewObjectBufferATI(a,b,c);
 }
 
@@ -7460,7 +7837,7 @@ inline GLboolean glex::glIsObjectBufferATI(GLuint  a) {
 	return m_pglex->glIsObjectBufferATI(a);
 }
 
-inline void glex::glUpdateObjectBufferATI(GLuint  a, GLuint  b, GLsizei  c, const GLvoid *d, GLenum  e) {
+inline void glex::glUpdateObjectBufferATI(GLuint  a, GLuint  b, GLsizei  c, const void *d, GLenum  e) {
 	m_pglex->glUpdateObjectBufferATI(a,b,c,d,e);
 }
 
@@ -7500,172 +7877,16 @@ inline void glex::glGetVariantArrayObjectivATI(GLuint  a, GLenum  b, GLint *c) {
 	m_pglex->glGetVariantArrayObjectivATI(a,b,c);
 }
 
-inline void glex::glBeginVertexShaderEXT(void) {
-	m_pglex->glBeginVertexShaderEXT();
+inline void glex::glVertexAttribArrayObjectATI(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, GLuint  f, GLuint  g) {
+	m_pglex->glVertexAttribArrayObjectATI(a,b,c,d,e,f,g);
 }
 
-inline void glex::glEndVertexShaderEXT(void) {
-	m_pglex->glEndVertexShaderEXT();
+inline void glex::glGetVertexAttribArrayObjectfvATI(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetVertexAttribArrayObjectfvATI(a,b,c);
 }
 
-inline void glex::glBindVertexShaderEXT(GLuint  a) {
-	m_pglex->glBindVertexShaderEXT(a);
-}
-
-inline GLuint glex::glGenVertexShadersEXT(GLuint  a) {
-	return m_pglex->glGenVertexShadersEXT(a);
-}
-
-inline void glex::glDeleteVertexShaderEXT(GLuint  a) {
-	m_pglex->glDeleteVertexShaderEXT(a);
-}
-
-inline void glex::glShaderOp1EXT(GLenum  a, GLuint  b, GLuint  c) {
-	m_pglex->glShaderOp1EXT(a,b,c);
-}
-
-inline void glex::glShaderOp2EXT(GLenum  a, GLuint  b, GLuint  c, GLuint  d) {
-	m_pglex->glShaderOp2EXT(a,b,c,d);
-}
-
-inline void glex::glShaderOp3EXT(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e) {
-	m_pglex->glShaderOp3EXT(a,b,c,d,e);
-}
-
-inline void glex::glSwizzleEXT(GLuint  a, GLuint  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
-	m_pglex->glSwizzleEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glWriteMaskEXT(GLuint  a, GLuint  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
-	m_pglex->glWriteMaskEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glInsertComponentEXT(GLuint  a, GLuint  b, GLuint  c) {
-	m_pglex->glInsertComponentEXT(a,b,c);
-}
-
-inline void glex::glExtractComponentEXT(GLuint  a, GLuint  b, GLuint  c) {
-	m_pglex->glExtractComponentEXT(a,b,c);
-}
-
-inline GLuint glex::glGenSymbolsEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
-	return m_pglex->glGenSymbolsEXT(a,b,c,d);
-}
-
-inline void glex::glSetInvariantEXT(GLuint  a, GLenum  b, const GLvoid *c) {
-	m_pglex->glSetInvariantEXT(a,b,c);
-}
-
-inline void glex::glSetLocalConstantEXT(GLuint  a, GLenum  b, const GLvoid *c) {
-	m_pglex->glSetLocalConstantEXT(a,b,c);
-}
-
-inline void glex::glVariantbvEXT(GLuint  a, const GLbyte *b) {
-	m_pglex->glVariantbvEXT(a,b);
-}
-
-inline void glex::glVariantsvEXT(GLuint  a, const GLshort *b) {
-	m_pglex->glVariantsvEXT(a,b);
-}
-
-inline void glex::glVariantivEXT(GLuint  a, const GLint *b) {
-	m_pglex->glVariantivEXT(a,b);
-}
-
-inline void glex::glVariantfvEXT(GLuint  a, const GLfloat *b) {
-	m_pglex->glVariantfvEXT(a,b);
-}
-
-inline void glex::glVariantdvEXT(GLuint  a, const GLdouble *b) {
-	m_pglex->glVariantdvEXT(a,b);
-}
-
-inline void glex::glVariantubvEXT(GLuint  a, const GLubyte *b) {
-	m_pglex->glVariantubvEXT(a,b);
-}
-
-inline void glex::glVariantusvEXT(GLuint  a, const GLushort *b) {
-	m_pglex->glVariantusvEXT(a,b);
-}
-
-inline void glex::glVariantuivEXT(GLuint  a, const GLuint *b) {
-	m_pglex->glVariantuivEXT(a,b);
-}
-
-inline void glex::glVariantPointerEXT(GLuint  a, GLenum  b, GLuint  c, const GLvoid *d) {
-	m_pglex->glVariantPointerEXT(a,b,c,d);
-}
-
-inline void glex::glEnableVariantClientStateEXT(GLuint  a) {
-	m_pglex->glEnableVariantClientStateEXT(a);
-}
-
-inline void glex::glDisableVariantClientStateEXT(GLuint  a) {
-	m_pglex->glDisableVariantClientStateEXT(a);
-}
-
-inline GLuint glex::glBindLightParameterEXT(GLenum  a, GLenum  b) {
-	return m_pglex->glBindLightParameterEXT(a,b);
-}
-
-inline GLuint glex::glBindMaterialParameterEXT(GLenum  a, GLenum  b) {
-	return m_pglex->glBindMaterialParameterEXT(a,b);
-}
-
-inline GLuint glex::glBindTexGenParameterEXT(GLenum  a, GLenum  b, GLenum  c) {
-	return m_pglex->glBindTexGenParameterEXT(a,b,c);
-}
-
-inline GLuint glex::glBindTextureUnitParameterEXT(GLenum  a, GLenum  b) {
-	return m_pglex->glBindTextureUnitParameterEXT(a,b);
-}
-
-inline GLuint glex::glBindParameterEXT(GLenum  a) {
-	return m_pglex->glBindParameterEXT(a);
-}
-
-inline GLboolean glex::glIsVariantEnabledEXT(GLuint  a, GLenum  b) {
-	return m_pglex->glIsVariantEnabledEXT(a,b);
-}
-
-inline void glex::glGetVariantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
-	m_pglex->glGetVariantBooleanvEXT(a,b,c);
-}
-
-inline void glex::glGetVariantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetVariantIntegervEXT(a,b,c);
-}
-
-inline void glex::glGetVariantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetVariantFloatvEXT(a,b,c);
-}
-
-inline void glex::glGetVariantPointervEXT(GLuint  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetVariantPointervEXT(a,b,c);
-}
-
-inline void glex::glGetInvariantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
-	m_pglex->glGetInvariantBooleanvEXT(a,b,c);
-}
-
-inline void glex::glGetInvariantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetInvariantIntegervEXT(a,b,c);
-}
-
-inline void glex::glGetInvariantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetInvariantFloatvEXT(a,b,c);
-}
-
-inline void glex::glGetLocalConstantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
-	m_pglex->glGetLocalConstantBooleanvEXT(a,b,c);
-}
-
-inline void glex::glGetLocalConstantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetLocalConstantIntegervEXT(a,b,c);
-}
-
-inline void glex::glGetLocalConstantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetLocalConstantFloatvEXT(a,b,c);
+inline void glex::glGetVertexAttribArrayObjectivATI(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVertexAttribArrayObjectivATI(a,b,c);
 }
 
 inline void glex::glVertexStream1sATI(GLenum  a, GLshort  b) {
@@ -7848,156 +8069,2580 @@ inline void glex::glVertexBlendEnvfATI(GLenum  a, GLfloat  b) {
 	m_pglex->glVertexBlendEnvfATI(a,b);
 }
 
-inline void glex::glElementPointerATI(GLenum  a, const GLvoid *b) {
-	m_pglex->glElementPointerATI(a,b);
+inline void glex::glUniformBufferEXT(GLuint  a, GLint  b, GLuint  c) {
+	m_pglex->glUniformBufferEXT(a,b,c);
 }
 
-inline void glex::glDrawElementArrayATI(GLenum  a, GLsizei  b) {
-	m_pglex->glDrawElementArrayATI(a,b);
+inline GLint glex::glGetUniformBufferSizeEXT(GLuint  a, GLint  b) {
+	return m_pglex->glGetUniformBufferSizeEXT(a,b);
 }
 
-inline void glex::glDrawRangeElementArrayATI(GLenum  a, GLuint  b, GLuint  c, GLsizei  d) {
-	m_pglex->glDrawRangeElementArrayATI(a,b,c,d);
+inline GLintptr glex::glGetUniformOffsetEXT(GLuint  a, GLint  b) {
+	return m_pglex->glGetUniformOffsetEXT(a,b);
 }
 
-inline void glex::glDrawMeshArraysSUN(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glDrawMeshArraysSUN(a,b,c,d);
+inline void glex::glBlendColorEXT(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glBlendColorEXT(a,b,c,d);
 }
 
-inline void glex::glGenOcclusionQueriesNV(GLsizei  a, GLuint *b) {
-	m_pglex->glGenOcclusionQueriesNV(a,b);
+inline void glex::glBlendEquationSeparateEXT(GLenum  a, GLenum  b) {
+	m_pglex->glBlendEquationSeparateEXT(a,b);
 }
 
-inline void glex::glDeleteOcclusionQueriesNV(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteOcclusionQueriesNV(a,b);
+inline void glex::glBlendFuncSeparateEXT(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
+	m_pglex->glBlendFuncSeparateEXT(a,b,c,d);
 }
 
-inline GLboolean glex::glIsOcclusionQueryNV(GLuint  a) {
-	return m_pglex->glIsOcclusionQueryNV(a);
+inline void glex::glBlendEquationEXT(GLenum  a) {
+	m_pglex->glBlendEquationEXT(a);
 }
 
-inline void glex::glBeginOcclusionQueryNV(GLuint  a) {
-	m_pglex->glBeginOcclusionQueryNV(a);
+inline void glex::glColorSubTableEXT(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glColorSubTableEXT(a,b,c,d,e,f);
 }
 
-inline void glex::glEndOcclusionQueryNV(void) {
-	m_pglex->glEndOcclusionQueryNV();
+inline void glex::glCopyColorSubTableEXT(GLenum  a, GLsizei  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyColorSubTableEXT(a,b,c,d,e);
 }
 
-inline void glex::glGetOcclusionQueryivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetOcclusionQueryivNV(a,b,c);
+inline void glex::glLockArraysEXT(GLint  a, GLsizei  b) {
+	m_pglex->glLockArraysEXT(a,b);
 }
 
-inline void glex::glGetOcclusionQueryuivNV(GLuint  a, GLenum  b, GLuint *c) {
-	m_pglex->glGetOcclusionQueryuivNV(a,b,c);
+inline void glex::glUnlockArraysEXT(void) {
+	m_pglex->glUnlockArraysEXT();
 }
 
-inline void glex::glPointParameteriNV(GLenum  a, GLint  b) {
-	m_pglex->glPointParameteriNV(a,b);
+inline void glex::glConvolutionFilter1DEXT(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glConvolutionFilter1DEXT(a,b,c,d,e,f);
 }
 
-inline void glex::glPointParameterivNV(GLenum  a, const GLint *b) {
-	m_pglex->glPointParameterivNV(a,b);
+inline void glex::glConvolutionFilter2DEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glConvolutionFilter2DEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glConvolutionParameterfEXT(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glConvolutionParameterfEXT(a,b,c);
+}
+
+inline void glex::glConvolutionParameterfvEXT(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glConvolutionParameterfvEXT(a,b,c);
+}
+
+inline void glex::glConvolutionParameteriEXT(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glConvolutionParameteriEXT(a,b,c);
+}
+
+inline void glex::glConvolutionParameterivEXT(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glConvolutionParameterivEXT(a,b,c);
+}
+
+inline void glex::glCopyConvolutionFilter1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyConvolutionFilter1DEXT(a,b,c,d,e);
+}
+
+inline void glex::glCopyConvolutionFilter2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glCopyConvolutionFilter2DEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glGetConvolutionFilterEXT(GLenum  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetConvolutionFilterEXT(a,b,c,d);
+}
+
+inline void glex::glGetConvolutionParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetConvolutionParameterfvEXT(a,b,c);
+}
+
+inline void glex::glGetConvolutionParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetConvolutionParameterivEXT(a,b,c);
+}
+
+inline void glex::glGetSeparableFilterEXT(GLenum  a, GLenum  b, GLenum  c, void *d, void *e, void *f) {
+	m_pglex->glGetSeparableFilterEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glSeparableFilter2DEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLenum  e, GLenum  f, const void *g, const void *h) {
+	m_pglex->glSeparableFilter2DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glTangent3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glTangent3bEXT(a,b,c);
+}
+
+inline void glex::glTangent3bvEXT(const GLbyte *a) {
+	m_pglex->glTangent3bvEXT(a);
+}
+
+inline void glex::glTangent3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glTangent3dEXT(a,b,c);
+}
+
+inline void glex::glTangent3dvEXT(const GLdouble *a) {
+	m_pglex->glTangent3dvEXT(a);
+}
+
+inline void glex::glTangent3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glTangent3fEXT(a,b,c);
+}
+
+inline void glex::glTangent3fvEXT(const GLfloat *a) {
+	m_pglex->glTangent3fvEXT(a);
+}
+
+inline void glex::glTangent3iEXT(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glTangent3iEXT(a,b,c);
+}
+
+inline void glex::glTangent3ivEXT(const GLint *a) {
+	m_pglex->glTangent3ivEXT(a);
+}
+
+inline void glex::glTangent3sEXT(GLshort  a, GLshort  b, GLshort  c) {
+	m_pglex->glTangent3sEXT(a,b,c);
+}
+
+inline void glex::glTangent3svEXT(const GLshort *a) {
+	m_pglex->glTangent3svEXT(a);
+}
+
+inline void glex::glBinormal3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glBinormal3bEXT(a,b,c);
+}
+
+inline void glex::glBinormal3bvEXT(const GLbyte *a) {
+	m_pglex->glBinormal3bvEXT(a);
+}
+
+inline void glex::glBinormal3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glBinormal3dEXT(a,b,c);
+}
+
+inline void glex::glBinormal3dvEXT(const GLdouble *a) {
+	m_pglex->glBinormal3dvEXT(a);
+}
+
+inline void glex::glBinormal3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glBinormal3fEXT(a,b,c);
+}
+
+inline void glex::glBinormal3fvEXT(const GLfloat *a) {
+	m_pglex->glBinormal3fvEXT(a);
+}
+
+inline void glex::glBinormal3iEXT(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glBinormal3iEXT(a,b,c);
+}
+
+inline void glex::glBinormal3ivEXT(const GLint *a) {
+	m_pglex->glBinormal3ivEXT(a);
+}
+
+inline void glex::glBinormal3sEXT(GLshort  a, GLshort  b, GLshort  c) {
+	m_pglex->glBinormal3sEXT(a,b,c);
+}
+
+inline void glex::glBinormal3svEXT(const GLshort *a) {
+	m_pglex->glBinormal3svEXT(a);
+}
+
+inline void glex::glTangentPointerEXT(GLenum  a, GLsizei  b, const void *c) {
+	m_pglex->glTangentPointerEXT(a,b,c);
+}
+
+inline void glex::glBinormalPointerEXT(GLenum  a, GLsizei  b, const void *c) {
+	m_pglex->glBinormalPointerEXT(a,b,c);
+}
+
+inline void glex::glCopyTexImage1DEXT(GLenum  a, GLint  b, GLenum  c, GLint  d, GLint  e, GLsizei  f, GLint  g) {
+	m_pglex->glCopyTexImage1DEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCopyTexImage2DEXT(GLenum  a, GLint  b, GLenum  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLint  h) {
+	m_pglex->glCopyTexImage2DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCopyTexSubImage1DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f) {
+	m_pglex->glCopyTexSubImage1DEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glCopyTexSubImage2DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h) {
+	m_pglex->glCopyTexSubImage2DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCopyTexSubImage3DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
+	m_pglex->glCopyTexSubImage3DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCullParameterdvEXT(GLenum  a, GLdouble *b) {
+	m_pglex->glCullParameterdvEXT(a,b);
+}
+
+inline void glex::glCullParameterfvEXT(GLenum  a, GLfloat *b) {
+	m_pglex->glCullParameterfvEXT(a,b);
+}
+
+inline void glex::glLabelObjectEXT(GLenum  a, GLuint  b, GLsizei  c, const GLchar *d) {
+	m_pglex->glLabelObjectEXT(a,b,c,d);
+}
+
+inline void glex::glGetObjectLabelEXT(GLenum  a, GLuint  b, GLsizei  c, GLsizei *d, GLchar *e) {
+	m_pglex->glGetObjectLabelEXT(a,b,c,d,e);
+}
+
+inline void glex::glInsertEventMarkerEXT(GLsizei  a, const GLchar *b) {
+	m_pglex->glInsertEventMarkerEXT(a,b);
+}
+
+inline void glex::glPushGroupMarkerEXT(GLsizei  a, const GLchar *b) {
+	m_pglex->glPushGroupMarkerEXT(a,b);
+}
+
+inline void glex::glPopGroupMarkerEXT(void) {
+	m_pglex->glPopGroupMarkerEXT();
+}
+
+inline void glex::glDepthBoundsEXT(GLclampd  a, GLclampd  b) {
+	m_pglex->glDepthBoundsEXT(a,b);
+}
+
+inline void glex::glMatrixLoadfEXT(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixLoadfEXT(a,b);
+}
+
+inline void glex::glMatrixLoaddEXT(GLenum  a, const GLdouble *b) {
+	m_pglex->glMatrixLoaddEXT(a,b);
+}
+
+inline void glex::glMatrixMultfEXT(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixMultfEXT(a,b);
+}
+
+inline void glex::glMatrixMultdEXT(GLenum  a, const GLdouble *b) {
+	m_pglex->glMatrixMultdEXT(a,b);
+}
+
+inline void glex::glMatrixLoadIdentityEXT(GLenum  a) {
+	m_pglex->glMatrixLoadIdentityEXT(a);
+}
+
+inline void glex::glMatrixRotatefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glMatrixRotatefEXT(a,b,c,d,e);
+}
+
+inline void glex::glMatrixRotatedEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glMatrixRotatedEXT(a,b,c,d,e);
+}
+
+inline void glex::glMatrixScalefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glMatrixScalefEXT(a,b,c,d);
+}
+
+inline void glex::glMatrixScaledEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glMatrixScaledEXT(a,b,c,d);
+}
+
+inline void glex::glMatrixTranslatefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glMatrixTranslatefEXT(a,b,c,d);
+}
+
+inline void glex::glMatrixTranslatedEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glMatrixTranslatedEXT(a,b,c,d);
+}
+
+inline void glex::glMatrixFrustumEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
+	m_pglex->glMatrixFrustumEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glMatrixOrthoEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
+	m_pglex->glMatrixOrthoEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glMatrixPopEXT(GLenum  a) {
+	m_pglex->glMatrixPopEXT(a);
+}
+
+inline void glex::glMatrixPushEXT(GLenum  a) {
+	m_pglex->glMatrixPushEXT(a);
+}
+
+inline void glex::glClientAttribDefaultEXT(GLbitfield  a) {
+	m_pglex->glClientAttribDefaultEXT(a);
+}
+
+inline void glex::glPushClientAttribDefaultEXT(GLbitfield  a) {
+	m_pglex->glPushClientAttribDefaultEXT(a);
+}
+
+inline void glex::glTextureParameterfEXT(GLuint  a, GLenum  b, GLenum  c, GLfloat  d) {
+	m_pglex->glTextureParameterfEXT(a,b,c,d);
+}
+
+inline void glex::glTextureParameterfvEXT(GLuint  a, GLenum  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glTextureParameterfvEXT(a,b,c,d);
+}
+
+inline void glex::glTextureParameteriEXT(GLuint  a, GLenum  b, GLenum  c, GLint  d) {
+	m_pglex->glTextureParameteriEXT(a,b,c,d);
+}
+
+inline void glex::glTextureParameterivEXT(GLuint  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glTextureParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLint  f, GLenum  g, GLenum  h, const void *i) {
+	m_pglex->glTextureImage1DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const void *j) {
+	m_pglex->glTextureImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLenum  g, const void *h) {
+	m_pglex->glTextureSubImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLenum  i, const void *j) {
+	m_pglex->glTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCopyTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLint  h) {
+	m_pglex->glCopyTextureImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCopyTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLint  i) {
+	m_pglex->glCopyTextureImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCopyTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g) {
+	m_pglex->glCopyTextureSubImage1DEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCopyTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
+	m_pglex->glCopyTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glGetTextureImageEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLenum  e, void *f) {
+	m_pglex->glGetTextureImageEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glGetTextureParameterfvEXT(GLuint  a, GLenum  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetTextureParameterfvEXT(a,b,c,d);
+}
+
+inline void glex::glGetTextureParameterivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetTextureParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glGetTextureLevelParameterfvEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLfloat *e) {
+	m_pglex->glGetTextureLevelParameterfvEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetTextureLevelParameterivEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint *e) {
+	m_pglex->glGetTextureLevelParameterivEXT(a,b,c,d,e);
+}
+
+inline void glex::glTextureImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glTextureImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLenum  k, const void *l) {
+	m_pglex->glTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+
+inline void glex::glCopyTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLsizei  i, GLsizei  j) {
+	m_pglex->glCopyTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glBindMultiTextureEXT(GLenum  a, GLenum  b, GLuint  c) {
+	m_pglex->glBindMultiTextureEXT(a,b,c);
+}
+
+inline void glex::glMultiTexCoordPointerEXT(GLenum  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
+	m_pglex->glMultiTexCoordPointerEXT(a,b,c,d,e);
+}
+
+inline void glex::glMultiTexEnvfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
+	m_pglex->glMultiTexEnvfEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexEnvfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glMultiTexEnvfvEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexEnviEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
+	m_pglex->glMultiTexEnviEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexEnvivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glMultiTexEnvivEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGendEXT(GLenum  a, GLenum  b, GLenum  c, GLdouble  d) {
+	m_pglex->glMultiTexGendEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGendvEXT(GLenum  a, GLenum  b, GLenum  c, const GLdouble *d) {
+	m_pglex->glMultiTexGendvEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGenfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
+	m_pglex->glMultiTexGenfEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGenfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glMultiTexGenfvEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGeniEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
+	m_pglex->glMultiTexGeniEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexGenivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glMultiTexGenivEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexEnvfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetMultiTexEnvfvEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexEnvivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetMultiTexEnvivEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexGendvEXT(GLenum  a, GLenum  b, GLenum  c, GLdouble *d) {
+	m_pglex->glGetMultiTexGendvEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexGenfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetMultiTexGenfvEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexGenivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetMultiTexGenivEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameteriEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
+	m_pglex->glMultiTexParameteriEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameterivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glMultiTexParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameterfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
+	m_pglex->glMultiTexParameterfEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameterfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glMultiTexParameterfvEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLint  f, GLenum  g, GLenum  h, const void *i) {
+	m_pglex->glMultiTexImage1DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const void *j) {
+	m_pglex->glMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLenum  g, const void *h) {
+	m_pglex->glMultiTexSubImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLenum  i, const void *j) {
+	m_pglex->glMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCopyMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLint  h) {
+	m_pglex->glCopyMultiTexImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCopyMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLint  i) {
+	m_pglex->glCopyMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCopyMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g) {
+	m_pglex->glCopyMultiTexSubImage1DEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCopyMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
+	m_pglex->glCopyMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glGetMultiTexImageEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLenum  e, void *f) {
+	m_pglex->glGetMultiTexImageEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glGetMultiTexParameterfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetMultiTexParameterfvEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexParameterivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetMultiTexParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexLevelParameterfvEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLfloat *e) {
+	m_pglex->glGetMultiTexLevelParameterfvEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetMultiTexLevelParameterivEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint *e) {
+	m_pglex->glGetMultiTexLevelParameterivEXT(a,b,c,d,e);
+}
+
+inline void glex::glMultiTexImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glMultiTexImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLenum  k, const void *l) {
+	m_pglex->glMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+
+inline void glex::glCopyMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLsizei  i, GLsizei  j) {
+	m_pglex->glCopyMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glEnableClientStateIndexedEXT(GLenum  a, GLuint  b) {
+	m_pglex->glEnableClientStateIndexedEXT(a,b);
+}
+
+inline void glex::glDisableClientStateIndexedEXT(GLenum  a, GLuint  b) {
+	m_pglex->glDisableClientStateIndexedEXT(a,b);
+}
+
+inline void glex::glGetFloatIndexedvEXT(GLenum  a, GLuint  b, GLfloat *c) {
+	m_pglex->glGetFloatIndexedvEXT(a,b,c);
+}
+
+inline void glex::glGetDoubleIndexedvEXT(GLenum  a, GLuint  b, GLdouble *c) {
+	m_pglex->glGetDoubleIndexedvEXT(a,b,c);
+}
+
+inline void glex::glGetPointerIndexedvEXT(GLenum  a, GLuint  b, void **c) {
+	m_pglex->glGetPointerIndexedvEXT(a,b,c);
+}
+
+inline void glex::glEnableIndexedEXT(GLenum  a, GLuint  b) {
+	m_pglex->glEnableIndexedEXT(a,b);
+}
+
+inline void glex::glDisableIndexedEXT(GLenum  a, GLuint  b) {
+	m_pglex->glDisableIndexedEXT(a,b);
+}
+
+inline GLboolean glex::glIsEnabledIndexedEXT(GLenum  a, GLuint  b) {
+	return m_pglex->glIsEnabledIndexedEXT(a,b);
+}
+
+inline void glex::glGetIntegerIndexedvEXT(GLenum  a, GLuint  b, GLint *c) {
+	m_pglex->glGetIntegerIndexedvEXT(a,b,c);
+}
+
+inline void glex::glGetBooleanIndexedvEXT(GLenum  a, GLuint  b, GLboolean *c) {
+	m_pglex->glGetBooleanIndexedvEXT(a,b,c);
+}
+
+inline void glex::glCompressedTextureImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLsizei  i, const void *j) {
+	m_pglex->glCompressedTextureImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCompressedTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const void *i) {
+	m_pglex->glCompressedTextureImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCompressedTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLsizei  g, const void *h) {
+	m_pglex->glCompressedTextureImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCompressedTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLsizei  k, const void *l) {
+	m_pglex->glCompressedTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+
+inline void glex::glCompressedTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLsizei  i, const void *j) {
+	m_pglex->glCompressedTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCompressedTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLsizei  g, const void *h) {
+	m_pglex->glCompressedTextureSubImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glGetCompressedTextureImageEXT(GLuint  a, GLenum  b, GLint  c, void *d) {
+	m_pglex->glGetCompressedTextureImageEXT(a,b,c,d);
+}
+
+inline void glex::glCompressedMultiTexImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLsizei  i, const void *j) {
+	m_pglex->glCompressedMultiTexImage3DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCompressedMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const void *i) {
+	m_pglex->glCompressedMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glCompressedMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLsizei  g, const void *h) {
+	m_pglex->glCompressedMultiTexImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glCompressedMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLsizei  k, const void *l) {
+	m_pglex->glCompressedMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
+}
+
+inline void glex::glCompressedMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLsizei  i, const void *j) {
+	m_pglex->glCompressedMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glCompressedMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLsizei  g, const void *h) {
+	m_pglex->glCompressedMultiTexSubImage1DEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glGetCompressedMultiTexImageEXT(GLenum  a, GLenum  b, GLint  c, void *d) {
+	m_pglex->glGetCompressedMultiTexImageEXT(a,b,c,d);
+}
+
+inline void glex::glMatrixLoadTransposefEXT(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixLoadTransposefEXT(a,b);
+}
+
+inline void glex::glMatrixLoadTransposedEXT(GLenum  a, const GLdouble *b) {
+	m_pglex->glMatrixLoadTransposedEXT(a,b);
+}
+
+inline void glex::glMatrixMultTransposefEXT(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixMultTransposefEXT(a,b);
+}
+
+inline void glex::glMatrixMultTransposedEXT(GLenum  a, const GLdouble *b) {
+	m_pglex->glMatrixMultTransposedEXT(a,b);
+}
+
+inline void glex::glNamedBufferDataEXT(GLuint  a, GLsizeiptr  b, const void *c, GLenum  d) {
+	m_pglex->glNamedBufferDataEXT(a,b,c,d);
+}
+
+inline void glex::glNamedBufferSubDataEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, const void *d) {
+	m_pglex->glNamedBufferSubDataEXT(a,b,c,d);
+}
+
+inline void * glex::glMapNamedBufferEXT(GLuint  a, GLenum  b) {
+	return m_pglex->glMapNamedBufferEXT(a,b);
+}
+
+inline GLboolean glex::glUnmapNamedBufferEXT(GLuint  a) {
+	return m_pglex->glUnmapNamedBufferEXT(a);
+}
+
+inline void glex::glGetNamedBufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedBufferParameterivEXT(a,b,c);
+}
+
+inline void glex::glGetNamedBufferPointervEXT(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetNamedBufferPointervEXT(a,b,c);
+}
+
+inline void glex::glGetNamedBufferSubDataEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, void *d) {
+	m_pglex->glGetNamedBufferSubDataEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform1fEXT(GLuint  a, GLint  b, GLfloat  c) {
+	m_pglex->glProgramUniform1fEXT(a,b,c);
+}
+
+inline void glex::glProgramUniform2fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glProgramUniform2fEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glProgramUniform3fEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniform4fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glProgramUniform4fEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramUniform1iEXT(GLuint  a, GLint  b, GLint  c) {
+	m_pglex->glProgramUniform1iEXT(a,b,c);
+}
+
+inline void glex::glProgramUniform2iEXT(GLuint  a, GLint  b, GLint  c, GLint  d) {
+	m_pglex->glProgramUniform2iEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3iEXT(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e) {
+	m_pglex->glProgramUniform3iEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniform4iEXT(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
+	m_pglex->glProgramUniform4iEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramUniform1fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramUniform1fvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform2fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramUniform2fvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramUniform3fvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform4fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramUniform4fvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform1ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramUniform1ivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform2ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramUniform2ivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramUniform3ivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform4ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramUniform4ivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniformMatrix2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix2fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix3fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix4fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix2x3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix2x3fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3x2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix3x2fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix2x4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix2x4fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4x2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix4x2fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3x4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix3x4fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4x3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
+	m_pglex->glProgramUniformMatrix4x3fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glTextureBufferEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d) {
+	m_pglex->glTextureBufferEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexBufferEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
+	m_pglex->glMultiTexBufferEXT(a,b,c,d);
+}
+
+inline void glex::glTextureParameterIivEXT(GLuint  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glTextureParameterIivEXT(a,b,c,d);
+}
+
+inline void glex::glTextureParameterIuivEXT(GLuint  a, GLenum  b, GLenum  c, const GLuint *d) {
+	m_pglex->glTextureParameterIuivEXT(a,b,c,d);
+}
+
+inline void glex::glGetTextureParameterIivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetTextureParameterIivEXT(a,b,c,d);
+}
+
+inline void glex::glGetTextureParameterIuivEXT(GLuint  a, GLenum  b, GLenum  c, GLuint *d) {
+	m_pglex->glGetTextureParameterIuivEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameterIivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
+	m_pglex->glMultiTexParameterIivEXT(a,b,c,d);
+}
+
+inline void glex::glMultiTexParameterIuivEXT(GLenum  a, GLenum  b, GLenum  c, const GLuint *d) {
+	m_pglex->glMultiTexParameterIuivEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexParameterIivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetMultiTexParameterIivEXT(a,b,c,d);
+}
+
+inline void glex::glGetMultiTexParameterIuivEXT(GLenum  a, GLenum  b, GLenum  c, GLuint *d) {
+	m_pglex->glGetMultiTexParameterIuivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform1uiEXT(GLuint  a, GLint  b, GLuint  c) {
+	m_pglex->glProgramUniform1uiEXT(a,b,c);
+}
+
+inline void glex::glProgramUniform2uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d) {
+	m_pglex->glProgramUniform2uiEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d, GLuint  e) {
+	m_pglex->glProgramUniform3uiEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniform4uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
+	m_pglex->glProgramUniform4uiEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramUniform1uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramUniform1uivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform2uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramUniform2uivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramUniform3uivEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform4uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramUniform4uivEXT(a,b,c,d);
+}
+
+inline void glex::glNamedProgramLocalParameters4fvEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLfloat *e) {
+	m_pglex->glNamedProgramLocalParameters4fvEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedProgramLocalParameterI4iEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLint  e, GLint  f, GLint  g) {
+	m_pglex->glNamedProgramLocalParameterI4iEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glNamedProgramLocalParameterI4ivEXT(GLuint  a, GLenum  b, GLuint  c, const GLint *d) {
+	m_pglex->glNamedProgramLocalParameterI4ivEXT(a,b,c,d);
+}
+
+inline void glex::glNamedProgramLocalParametersI4ivEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLint *e) {
+	m_pglex->glNamedProgramLocalParametersI4ivEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedProgramLocalParameterI4uiEXT(GLuint  a, GLenum  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f, GLuint  g) {
+	m_pglex->glNamedProgramLocalParameterI4uiEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glNamedProgramLocalParameterI4uivEXT(GLuint  a, GLenum  b, GLuint  c, const GLuint *d) {
+	m_pglex->glNamedProgramLocalParameterI4uivEXT(a,b,c,d);
+}
+
+inline void glex::glNamedProgramLocalParametersI4uivEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLuint *e) {
+	m_pglex->glNamedProgramLocalParametersI4uivEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetNamedProgramLocalParameterIivEXT(GLuint  a, GLenum  b, GLuint  c, GLint *d) {
+	m_pglex->glGetNamedProgramLocalParameterIivEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedProgramLocalParameterIuivEXT(GLuint  a, GLenum  b, GLuint  c, GLuint *d) {
+	m_pglex->glGetNamedProgramLocalParameterIuivEXT(a,b,c,d);
+}
+
+inline void glex::glEnableClientStateiEXT(GLenum  a, GLuint  b) {
+	m_pglex->glEnableClientStateiEXT(a,b);
+}
+
+inline void glex::glDisableClientStateiEXT(GLenum  a, GLuint  b) {
+	m_pglex->glDisableClientStateiEXT(a,b);
+}
+
+inline void glex::glGetFloati_vEXT(GLenum  a, GLuint  b, GLfloat *c) {
+	m_pglex->glGetFloati_vEXT(a,b,c);
+}
+
+inline void glex::glGetDoublei_vEXT(GLenum  a, GLuint  b, GLdouble *c) {
+	m_pglex->glGetDoublei_vEXT(a,b,c);
+}
+
+inline void glex::glGetPointeri_vEXT(GLenum  a, GLuint  b, void **c) {
+	m_pglex->glGetPointeri_vEXT(a,b,c);
+}
+
+inline void glex::glNamedProgramStringEXT(GLuint  a, GLenum  b, GLenum  c, GLsizei  d, const void *e) {
+	m_pglex->glNamedProgramStringEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedProgramLocalParameter4dEXT(GLuint  a, GLenum  b, GLuint  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
+	m_pglex->glNamedProgramLocalParameter4dEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glNamedProgramLocalParameter4dvEXT(GLuint  a, GLenum  b, GLuint  c, const GLdouble *d) {
+	m_pglex->glNamedProgramLocalParameter4dvEXT(a,b,c,d);
+}
+
+inline void glex::glNamedProgramLocalParameter4fEXT(GLuint  a, GLenum  b, GLuint  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
+	m_pglex->glNamedProgramLocalParameter4fEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glNamedProgramLocalParameter4fvEXT(GLuint  a, GLenum  b, GLuint  c, const GLfloat *d) {
+	m_pglex->glNamedProgramLocalParameter4fvEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedProgramLocalParameterdvEXT(GLuint  a, GLenum  b, GLuint  c, GLdouble *d) {
+	m_pglex->glGetNamedProgramLocalParameterdvEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedProgramLocalParameterfvEXT(GLuint  a, GLenum  b, GLuint  c, GLfloat *d) {
+	m_pglex->glGetNamedProgramLocalParameterfvEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedProgramivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetNamedProgramivEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedProgramStringEXT(GLuint  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetNamedProgramStringEXT(a,b,c,d);
+}
+
+inline void glex::glNamedRenderbufferStorageEXT(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glNamedRenderbufferStorageEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedRenderbufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedRenderbufferParameterivEXT(a,b,c);
+}
+
+inline void glex::glNamedRenderbufferStorageMultisampleEXT(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
+	m_pglex->glNamedRenderbufferStorageMultisampleEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedRenderbufferStorageMultisampleCoverageEXT(GLuint  a, GLsizei  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glNamedRenderbufferStorageMultisampleCoverageEXT(a,b,c,d,e,f);
+}
+
+inline GLenum glex::glCheckNamedFramebufferStatusEXT(GLuint  a, GLenum  b) {
+	return m_pglex->glCheckNamedFramebufferStatusEXT(a,b);
+}
+
+inline void glex::glNamedFramebufferTexture1DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
+	m_pglex->glNamedFramebufferTexture1DEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedFramebufferTexture2DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
+	m_pglex->glNamedFramebufferTexture2DEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedFramebufferTexture3DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e, GLint  f) {
+	m_pglex->glNamedFramebufferTexture3DEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glNamedFramebufferRenderbufferEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d) {
+	m_pglex->glNamedFramebufferRenderbufferEXT(a,b,c,d);
+}
+
+inline void glex::glGetNamedFramebufferAttachmentParameterivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetNamedFramebufferAttachmentParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glGenerateTextureMipmapEXT(GLuint  a, GLenum  b) {
+	m_pglex->glGenerateTextureMipmapEXT(a,b);
+}
+
+inline void glex::glGenerateMultiTexMipmapEXT(GLenum  a, GLenum  b) {
+	m_pglex->glGenerateMultiTexMipmapEXT(a,b);
+}
+
+inline void glex::glFramebufferDrawBufferEXT(GLuint  a, GLenum  b) {
+	m_pglex->glFramebufferDrawBufferEXT(a,b);
+}
+
+inline void glex::glFramebufferDrawBuffersEXT(GLuint  a, GLsizei  b, const GLenum *c) {
+	m_pglex->glFramebufferDrawBuffersEXT(a,b,c);
+}
+
+inline void glex::glFramebufferReadBufferEXT(GLuint  a, GLenum  b) {
+	m_pglex->glFramebufferReadBufferEXT(a,b);
+}
+
+inline void glex::glGetFramebufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetFramebufferParameterivEXT(a,b,c);
+}
+
+inline void glex::glNamedCopyBufferSubDataEXT(GLuint  a, GLuint  b, GLintptr  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glNamedCopyBufferSubDataEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedFramebufferTextureEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d) {
+	m_pglex->glNamedFramebufferTextureEXT(a,b,c,d);
+}
+
+inline void glex::glNamedFramebufferTextureLayerEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
+	m_pglex->glNamedFramebufferTextureLayerEXT(a,b,c,d,e);
+}
+
+inline void glex::glNamedFramebufferTextureFaceEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
+	m_pglex->glNamedFramebufferTextureFaceEXT(a,b,c,d,e);
+}
+
+inline void glex::glTextureRenderbufferEXT(GLuint  a, GLenum  b, GLuint  c) {
+	m_pglex->glTextureRenderbufferEXT(a,b,c);
+}
+
+inline void glex::glMultiTexRenderbufferEXT(GLenum  a, GLenum  b, GLuint  c) {
+	m_pglex->glMultiTexRenderbufferEXT(a,b,c);
+}
+
+inline void glex::glVertexArrayVertexOffsetEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLsizei  e, GLintptr  f) {
+	m_pglex->glVertexArrayVertexOffsetEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glVertexArrayColorOffsetEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLsizei  e, GLintptr  f) {
+	m_pglex->glVertexArrayColorOffsetEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glVertexArrayEdgeFlagOffsetEXT(GLuint  a, GLuint  b, GLsizei  c, GLintptr  d) {
+	m_pglex->glVertexArrayEdgeFlagOffsetEXT(a,b,c,d);
+}
+
+inline void glex::glVertexArrayIndexOffsetEXT(GLuint  a, GLuint  b, GLenum  c, GLsizei  d, GLintptr  e) {
+	m_pglex->glVertexArrayIndexOffsetEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArrayNormalOffsetEXT(GLuint  a, GLuint  b, GLenum  c, GLsizei  d, GLintptr  e) {
+	m_pglex->glVertexArrayNormalOffsetEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArrayTexCoordOffsetEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLsizei  e, GLintptr  f) {
+	m_pglex->glVertexArrayTexCoordOffsetEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glVertexArrayMultiTexCoordOffsetEXT(GLuint  a, GLuint  b, GLenum  c, GLint  d, GLenum  e, GLsizei  f, GLintptr  g) {
+	m_pglex->glVertexArrayMultiTexCoordOffsetEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glVertexArrayFogCoordOffsetEXT(GLuint  a, GLuint  b, GLenum  c, GLsizei  d, GLintptr  e) {
+	m_pglex->glVertexArrayFogCoordOffsetEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArraySecondaryColorOffsetEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLsizei  e, GLintptr  f) {
+	m_pglex->glVertexArraySecondaryColorOffsetEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glVertexArrayVertexAttribOffsetEXT(GLuint  a, GLuint  b, GLuint  c, GLint  d, GLenum  e, GLboolean  f, GLsizei  g, GLintptr  h) {
+	m_pglex->glVertexArrayVertexAttribOffsetEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glVertexArrayVertexAttribIOffsetEXT(GLuint  a, GLuint  b, GLuint  c, GLint  d, GLenum  e, GLsizei  f, GLintptr  g) {
+	m_pglex->glVertexArrayVertexAttribIOffsetEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glEnableVertexArrayEXT(GLuint  a, GLenum  b) {
+	m_pglex->glEnableVertexArrayEXT(a,b);
+}
+
+inline void glex::glDisableVertexArrayEXT(GLuint  a, GLenum  b) {
+	m_pglex->glDisableVertexArrayEXT(a,b);
+}
+
+inline void glex::glEnableVertexArrayAttribEXT(GLuint  a, GLuint  b) {
+	m_pglex->glEnableVertexArrayAttribEXT(a,b);
+}
+
+inline void glex::glDisableVertexArrayAttribEXT(GLuint  a, GLuint  b) {
+	m_pglex->glDisableVertexArrayAttribEXT(a,b);
+}
+
+inline void glex::glGetVertexArrayIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVertexArrayIntegervEXT(a,b,c);
+}
+
+inline void glex::glGetVertexArrayPointervEXT(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetVertexArrayPointervEXT(a,b,c);
+}
+
+inline void glex::glGetVertexArrayIntegeri_vEXT(GLuint  a, GLuint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetVertexArrayIntegeri_vEXT(a,b,c,d);
+}
+
+inline void glex::glGetVertexArrayPointeri_vEXT(GLuint  a, GLuint  b, GLenum  c, void **d) {
+	m_pglex->glGetVertexArrayPointeri_vEXT(a,b,c,d);
+}
+
+inline void * glex::glMapNamedBufferRangeEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, GLbitfield  d) {
+	return m_pglex->glMapNamedBufferRangeEXT(a,b,c,d);
+}
+
+inline void glex::glFlushMappedNamedBufferRangeEXT(GLuint  a, GLintptr  b, GLsizeiptr  c) {
+	m_pglex->glFlushMappedNamedBufferRangeEXT(a,b,c);
+}
+
+inline void glex::glNamedBufferStorageEXT(GLuint  a, GLsizeiptr  b, const void *c, GLbitfield  d) {
+	m_pglex->glNamedBufferStorageEXT(a,b,c,d);
+}
+
+inline void glex::glClearNamedBufferDataEXT(GLuint  a, GLenum  b, GLenum  c, GLenum  d, const void *e) {
+	m_pglex->glClearNamedBufferDataEXT(a,b,c,d,e);
+}
+
+inline void glex::glClearNamedBufferSubDataEXT(GLuint  a, GLenum  b, GLsizeiptr  c, GLsizeiptr  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glClearNamedBufferSubDataEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glNamedFramebufferParameteriEXT(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glNamedFramebufferParameteriEXT(a,b,c);
+}
+
+inline void glex::glGetNamedFramebufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetNamedFramebufferParameterivEXT(a,b,c);
+}
+
+inline void glex::glProgramUniform1dEXT(GLuint  a, GLint  b, GLdouble  c) {
+	m_pglex->glProgramUniform1dEXT(a,b,c);
+}
+
+inline void glex::glProgramUniform2dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glProgramUniform2dEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glProgramUniform3dEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniform4dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
+	m_pglex->glProgramUniform4dEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramUniform1dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
+	m_pglex->glProgramUniform1dvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform2dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
+	m_pglex->glProgramUniform2dvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform3dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
+	m_pglex->glProgramUniform3dvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniform4dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
+	m_pglex->glProgramUniform4dvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramUniformMatrix2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix2dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix3dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix4dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix2x3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix2x3dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix2x4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix2x4dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3x2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix3x2dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix3x4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix3x4dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4x2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix4x2dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramUniformMatrix4x3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
+	m_pglex->glProgramUniformMatrix4x3dvEXT(a,b,c,d,e);
+}
+
+inline void glex::glTextureBufferRangeEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLintptr  e, GLsizeiptr  f) {
+	m_pglex->glTextureBufferRangeEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glTextureStorage1DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e) {
+	m_pglex->glTextureStorage1DEXT(a,b,c,d,e);
+}
+
+inline void glex::glTextureStorage2DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glTextureStorage2DEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glTextureStorage3DEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g) {
+	m_pglex->glTextureStorage3DEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glTextureStorage2DMultisampleEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLboolean  g) {
+	m_pglex->glTextureStorage2DMultisampleEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glTextureStorage3DMultisampleEXT(GLuint  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
+	m_pglex->glTextureStorage3DMultisampleEXT(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glVertexArrayBindVertexBufferEXT(GLuint  a, GLuint  b, GLuint  c, GLintptr  d, GLsizei  e) {
+	m_pglex->glVertexArrayBindVertexBufferEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArrayVertexAttribFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLboolean  e, GLuint  f) {
+	m_pglex->glVertexArrayVertexAttribFormatEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glVertexArrayVertexAttribIFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
+	m_pglex->glVertexArrayVertexAttribIFormatEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArrayVertexAttribLFormatEXT(GLuint  a, GLuint  b, GLint  c, GLenum  d, GLuint  e) {
+	m_pglex->glVertexArrayVertexAttribLFormatEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexArrayVertexAttribBindingEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glVertexArrayVertexAttribBindingEXT(a,b,c);
+}
+
+inline void glex::glVertexArrayVertexBindingDivisorEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glVertexArrayVertexBindingDivisorEXT(a,b,c);
+}
+
+inline void glex::glVertexArrayVertexAttribLOffsetEXT(GLuint  a, GLuint  b, GLuint  c, GLint  d, GLenum  e, GLsizei  f, GLintptr  g) {
+	m_pglex->glVertexArrayVertexAttribLOffsetEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glTexturePageCommitmentEXT(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLboolean  i) {
+	m_pglex->glTexturePageCommitmentEXT(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glVertexArrayVertexAttribDivisorEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glVertexArrayVertexAttribDivisorEXT(a,b,c);
+}
+
+inline void glex::glColorMaskIndexedEXT(GLuint  a, GLboolean  b, GLboolean  c, GLboolean  d, GLboolean  e) {
+	m_pglex->glColorMaskIndexedEXT(a,b,c,d,e);
+}
+
+inline void glex::glDrawArraysInstancedEXT(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glDrawArraysInstancedEXT(a,b,c,d);
+}
+
+inline void glex::glDrawElementsInstancedEXT(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLsizei  e) {
+	m_pglex->glDrawElementsInstancedEXT(a,b,c,d,e);
+}
+
+inline void glex::glDrawRangeElementsEXT(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, GLenum  e, const void *f) {
+	m_pglex->glDrawRangeElementsEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glFogCoordfEXT(GLfloat  a) {
+	m_pglex->glFogCoordfEXT(a);
+}
+
+inline void glex::glFogCoordfvEXT(const GLfloat *a) {
+	m_pglex->glFogCoordfvEXT(a);
+}
+
+inline void glex::glFogCoorddEXT(GLdouble  a) {
+	m_pglex->glFogCoorddEXT(a);
+}
+
+inline void glex::glFogCoorddvEXT(const GLdouble *a) {
+	m_pglex->glFogCoorddvEXT(a);
+}
+
+inline void glex::glFogCoordPointerEXT(GLenum  a, GLsizei  b, const void *c) {
+	m_pglex->glFogCoordPointerEXT(a,b,c);
+}
+
+inline void glex::glBlitFramebufferEXT(GLint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLbitfield  i, GLenum  j) {
+	m_pglex->glBlitFramebufferEXT(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glRenderbufferStorageMultisampleEXT(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
+	m_pglex->glRenderbufferStorageMultisampleEXT(a,b,c,d,e);
+}
+
+inline GLboolean glex::glIsRenderbufferEXT(GLuint  a) {
+	return m_pglex->glIsRenderbufferEXT(a);
+}
+
+inline void glex::glBindRenderbufferEXT(GLenum  a, GLuint  b) {
+	m_pglex->glBindRenderbufferEXT(a,b);
+}
+
+inline void glex::glDeleteRenderbuffersEXT(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteRenderbuffersEXT(a,b);
+}
+
+inline void glex::glGenRenderbuffersEXT(GLsizei  a, GLuint *b) {
+	m_pglex->glGenRenderbuffersEXT(a,b);
+}
+
+inline void glex::glRenderbufferStorageEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glRenderbufferStorageEXT(a,b,c,d);
+}
+
+inline void glex::glGetRenderbufferParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetRenderbufferParameterivEXT(a,b,c);
+}
+
+inline GLboolean glex::glIsFramebufferEXT(GLuint  a) {
+	return m_pglex->glIsFramebufferEXT(a);
+}
+
+inline void glex::glBindFramebufferEXT(GLenum  a, GLuint  b) {
+	m_pglex->glBindFramebufferEXT(a,b);
+}
+
+inline void glex::glDeleteFramebuffersEXT(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteFramebuffersEXT(a,b);
+}
+
+inline void glex::glGenFramebuffersEXT(GLsizei  a, GLuint *b) {
+	m_pglex->glGenFramebuffersEXT(a,b);
+}
+
+inline GLenum glex::glCheckFramebufferStatusEXT(GLenum  a) {
+	return m_pglex->glCheckFramebufferStatusEXT(a);
+}
+
+inline void glex::glFramebufferTexture1DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
+	m_pglex->glFramebufferTexture1DEXT(a,b,c,d,e);
+}
+
+inline void glex::glFramebufferTexture2DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
+	m_pglex->glFramebufferTexture2DEXT(a,b,c,d,e);
+}
+
+inline void glex::glFramebufferTexture3DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e, GLint  f) {
+	m_pglex->glFramebufferTexture3DEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glFramebufferRenderbufferEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
+	m_pglex->glFramebufferRenderbufferEXT(a,b,c,d);
+}
+
+inline void glex::glGetFramebufferAttachmentParameterivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetFramebufferAttachmentParameterivEXT(a,b,c,d);
+}
+
+inline void glex::glGenerateMipmapEXT(GLenum  a) {
+	m_pglex->glGenerateMipmapEXT(a);
+}
+
+inline void glex::glProgramParameteriEXT(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glProgramParameteriEXT(a,b,c);
+}
+
+inline void glex::glProgramEnvParameters4fvEXT(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramEnvParameters4fvEXT(a,b,c,d);
+}
+
+inline void glex::glProgramLocalParameters4fvEXT(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramLocalParameters4fvEXT(a,b,c,d);
+}
+
+inline void glex::glGetUniformuivEXT(GLuint  a, GLint  b, GLuint *c) {
+	m_pglex->glGetUniformuivEXT(a,b,c);
+}
+
+inline void glex::glBindFragDataLocationEXT(GLuint  a, GLuint  b, const GLchar *c) {
+	m_pglex->glBindFragDataLocationEXT(a,b,c);
+}
+
+inline GLint glex::glGetFragDataLocationEXT(GLuint  a, const GLchar *b) {
+	return m_pglex->glGetFragDataLocationEXT(a,b);
+}
+
+inline void glex::glUniform1uiEXT(GLint  a, GLuint  b) {
+	m_pglex->glUniform1uiEXT(a,b);
+}
+
+inline void glex::glUniform2uiEXT(GLint  a, GLuint  b, GLuint  c) {
+	m_pglex->glUniform2uiEXT(a,b,c);
+}
+
+inline void glex::glUniform3uiEXT(GLint  a, GLuint  b, GLuint  c, GLuint  d) {
+	m_pglex->glUniform3uiEXT(a,b,c,d);
+}
+
+inline void glex::glUniform4uiEXT(GLint  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e) {
+	m_pglex->glUniform4uiEXT(a,b,c,d,e);
+}
+
+inline void glex::glUniform1uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glUniform1uivEXT(a,b,c);
+}
+
+inline void glex::glUniform2uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glUniform2uivEXT(a,b,c);
+}
+
+inline void glex::glUniform3uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glUniform3uivEXT(a,b,c);
+}
+
+inline void glex::glUniform4uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glUniform4uivEXT(a,b,c);
+}
+
+inline void glex::glGetHistogramEXT(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, void *e) {
+	m_pglex->glGetHistogramEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetHistogramParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetHistogramParameterfvEXT(a,b,c);
+}
+
+inline void glex::glGetHistogramParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetHistogramParameterivEXT(a,b,c);
+}
+
+inline void glex::glGetMinmaxEXT(GLenum  a, GLboolean  b, GLenum  c, GLenum  d, void *e) {
+	m_pglex->glGetMinmaxEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetMinmaxParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetMinmaxParameterfvEXT(a,b,c);
+}
+
+inline void glex::glGetMinmaxParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetMinmaxParameterivEXT(a,b,c);
+}
+
+inline void glex::glHistogramEXT(GLenum  a, GLsizei  b, GLenum  c, GLboolean  d) {
+	m_pglex->glHistogramEXT(a,b,c,d);
+}
+
+inline void glex::glMinmaxEXT(GLenum  a, GLenum  b, GLboolean  c) {
+	m_pglex->glMinmaxEXT(a,b,c);
+}
+
+inline void glex::glResetHistogramEXT(GLenum  a) {
+	m_pglex->glResetHistogramEXT(a);
+}
+
+inline void glex::glResetMinmaxEXT(GLenum  a) {
+	m_pglex->glResetMinmaxEXT(a);
+}
+
+inline void glex::glIndexFuncEXT(GLenum  a, GLclampf  b) {
+	m_pglex->glIndexFuncEXT(a,b);
+}
+
+inline void glex::glIndexMaterialEXT(GLenum  a, GLenum  b) {
+	m_pglex->glIndexMaterialEXT(a,b);
+}
+
+inline void glex::glApplyTextureEXT(GLenum  a) {
+	m_pglex->glApplyTextureEXT(a);
+}
+
+inline void glex::glTextureLightEXT(GLenum  a) {
+	m_pglex->glTextureLightEXT(a);
+}
+
+inline void glex::glTextureMaterialEXT(GLenum  a, GLenum  b) {
+	m_pglex->glTextureMaterialEXT(a,b);
+}
+
+inline void glex::glMultiDrawArraysEXT(GLenum  a, const GLint *b, const GLsizei *c, GLsizei  d) {
+	m_pglex->glMultiDrawArraysEXT(a,b,c,d);
+}
+
+inline void glex::glMultiDrawElementsEXT(GLenum  a, const GLsizei *b, GLenum  c, const void *const*d, GLsizei  e) {
+	m_pglex->glMultiDrawElementsEXT(a,b,c,d,e);
+}
+
+inline void glex::glSampleMaskEXT(GLclampf  a, GLboolean  b) {
+	m_pglex->glSampleMaskEXT(a,b);
+}
+
+inline void glex::glSamplePatternEXT(GLenum  a) {
+	m_pglex->glSamplePatternEXT(a);
+}
+
+inline void glex::glColorTableEXT(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glColorTableEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glGetColorTableEXT(GLenum  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetColorTableEXT(a,b,c,d);
+}
+
+inline void glex::glGetColorTableParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetColorTableParameterivEXT(a,b,c);
+}
+
+inline void glex::glGetColorTableParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetColorTableParameterfvEXT(a,b,c);
+}
+
+inline void glex::glPixelTransformParameteriEXT(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glPixelTransformParameteriEXT(a,b,c);
+}
+
+inline void glex::glPixelTransformParameterfEXT(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glPixelTransformParameterfEXT(a,b,c);
+}
+
+inline void glex::glPixelTransformParameterivEXT(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glPixelTransformParameterivEXT(a,b,c);
+}
+
+inline void glex::glPixelTransformParameterfvEXT(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glPixelTransformParameterfvEXT(a,b,c);
+}
+
+inline void glex::glGetPixelTransformParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetPixelTransformParameterivEXT(a,b,c);
+}
+
+inline void glex::glGetPixelTransformParameterfvEXT(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetPixelTransformParameterfvEXT(a,b,c);
+}
+
+inline void glex::glPointParameterfEXT(GLenum  a, GLfloat  b) {
+	m_pglex->glPointParameterfEXT(a,b);
+}
+
+inline void glex::glPointParameterfvEXT(GLenum  a, const GLfloat *b) {
+	m_pglex->glPointParameterfvEXT(a,b);
+}
+
+inline void glex::glPolygonOffsetEXT(GLfloat  a, GLfloat  b) {
+	m_pglex->glPolygonOffsetEXT(a,b);
+}
+
+inline void glex::glPolygonOffsetClampEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glPolygonOffsetClampEXT(a,b,c);
+}
+
+inline void glex::glProvokingVertexEXT(GLenum  a) {
+	m_pglex->glProvokingVertexEXT(a);
+}
+
+inline void glex::glRasterSamplesEXT(GLuint  a, GLboolean  b) {
+	m_pglex->glRasterSamplesEXT(a,b);
+}
+
+inline void glex::glSecondaryColor3bEXT(GLbyte  a, GLbyte  b, GLbyte  c) {
+	m_pglex->glSecondaryColor3bEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3bvEXT(const GLbyte *a) {
+	m_pglex->glSecondaryColor3bvEXT(a);
+}
+
+inline void glex::glSecondaryColor3dEXT(GLdouble  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glSecondaryColor3dEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3dvEXT(const GLdouble *a) {
+	m_pglex->glSecondaryColor3dvEXT(a);
+}
+
+inline void glex::glSecondaryColor3fEXT(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glSecondaryColor3fEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3fvEXT(const GLfloat *a) {
+	m_pglex->glSecondaryColor3fvEXT(a);
+}
+
+inline void glex::glSecondaryColor3iEXT(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glSecondaryColor3iEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3ivEXT(const GLint *a) {
+	m_pglex->glSecondaryColor3ivEXT(a);
+}
+
+inline void glex::glSecondaryColor3sEXT(GLshort  a, GLshort  b, GLshort  c) {
+	m_pglex->glSecondaryColor3sEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3svEXT(const GLshort *a) {
+	m_pglex->glSecondaryColor3svEXT(a);
+}
+
+inline void glex::glSecondaryColor3ubEXT(GLubyte  a, GLubyte  b, GLubyte  c) {
+	m_pglex->glSecondaryColor3ubEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3ubvEXT(const GLubyte *a) {
+	m_pglex->glSecondaryColor3ubvEXT(a);
+}
+
+inline void glex::glSecondaryColor3uiEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glSecondaryColor3uiEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3uivEXT(const GLuint *a) {
+	m_pglex->glSecondaryColor3uivEXT(a);
+}
+
+inline void glex::glSecondaryColor3usEXT(GLushort  a, GLushort  b, GLushort  c) {
+	m_pglex->glSecondaryColor3usEXT(a,b,c);
+}
+
+inline void glex::glSecondaryColor3usvEXT(const GLushort *a) {
+	m_pglex->glSecondaryColor3usvEXT(a);
+}
+
+inline void glex::glSecondaryColorPointerEXT(GLint  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glSecondaryColorPointerEXT(a,b,c,d);
+}
+
+inline void glex::glUseShaderProgramEXT(GLenum  a, GLuint  b) {
+	m_pglex->glUseShaderProgramEXT(a,b);
+}
+
+inline void glex::glActiveProgramEXT(GLuint  a) {
+	m_pglex->glActiveProgramEXT(a);
+}
+
+inline GLuint glex::glCreateShaderProgramEXT(GLenum  a, const GLchar *b) {
+	return m_pglex->glCreateShaderProgramEXT(a,b);
+}
+
+inline void glex::glBindImageTextureEXT(GLuint  a, GLuint  b, GLint  c, GLboolean  d, GLint  e, GLenum  f, GLint  g) {
+	m_pglex->glBindImageTextureEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glMemoryBarrierEXT(GLbitfield  a) {
+	m_pglex->glMemoryBarrierEXT(a);
+}
+
+inline void glex::glStencilClearTagEXT(GLsizei  a, GLuint  b) {
+	m_pglex->glStencilClearTagEXT(a,b);
 }
 
 inline void glex::glActiveStencilFaceEXT(GLenum  a) {
 	m_pglex->glActiveStencilFaceEXT(a);
 }
 
-inline void glex::glElementPointerAPPLE(GLenum  a, const GLvoid *b) {
-	m_pglex->glElementPointerAPPLE(a,b);
+inline void glex::glTexSubImage1DEXT(GLenum  a, GLint  b, GLint  c, GLsizei  d, GLenum  e, GLenum  f, const void *g) {
+	m_pglex->glTexSubImage1DEXT(a,b,c,d,e,f,g);
 }
 
-inline void glex::glDrawElementArrayAPPLE(GLenum  a, GLint  b, GLsizei  c) {
-	m_pglex->glDrawElementArrayAPPLE(a,b,c);
+inline void glex::glTexSubImage2DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLsizei  e, GLsizei  f, GLenum  g, GLenum  h, const void *i) {
+	m_pglex->glTexSubImage2DEXT(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glDrawRangeElementArrayAPPLE(GLenum  a, GLuint  b, GLuint  c, GLint  d, GLsizei  e) {
-	m_pglex->glDrawRangeElementArrayAPPLE(a,b,c,d,e);
+inline void glex::glTexImage3DEXT(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const void *j) {
+	m_pglex->glTexImage3DEXT(a,b,c,d,e,f,g,h,i,j);
 }
 
-inline void glex::glMultiDrawElementArrayAPPLE(GLenum  a, const GLint *b, const GLsizei *c, GLsizei  d) {
-	m_pglex->glMultiDrawElementArrayAPPLE(a,b,c,d);
+inline void glex::glTexSubImage3DEXT(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glMultiDrawRangeElementArrayAPPLE(GLenum  a, GLuint  b, GLuint  c, const GLint *d, const GLsizei *e, GLsizei  f) {
-	m_pglex->glMultiDrawRangeElementArrayAPPLE(a,b,c,d,e,f);
+inline void glex::glFramebufferTextureLayerEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
+	m_pglex->glFramebufferTextureLayerEXT(a,b,c,d,e);
 }
 
-inline void glex::glGenFencesAPPLE(GLsizei  a, GLuint *b) {
-	m_pglex->glGenFencesAPPLE(a,b);
+inline void glex::glTexBufferEXT(GLenum  a, GLenum  b, GLuint  c) {
+	m_pglex->glTexBufferEXT(a,b,c);
 }
 
-inline void glex::glDeleteFencesAPPLE(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteFencesAPPLE(a,b);
+inline void glex::glTexParameterIivEXT(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glTexParameterIivEXT(a,b,c);
 }
 
-inline void glex::glSetFenceAPPLE(GLuint  a) {
-	m_pglex->glSetFenceAPPLE(a);
+inline void glex::glTexParameterIuivEXT(GLenum  a, GLenum  b, const GLuint *c) {
+	m_pglex->glTexParameterIuivEXT(a,b,c);
 }
 
-inline GLboolean glex::glIsFenceAPPLE(GLuint  a) {
-	return m_pglex->glIsFenceAPPLE(a);
+inline void glex::glGetTexParameterIivEXT(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetTexParameterIivEXT(a,b,c);
 }
 
-inline GLboolean glex::glTestFenceAPPLE(GLuint  a) {
-	return m_pglex->glTestFenceAPPLE(a);
+inline void glex::glGetTexParameterIuivEXT(GLenum  a, GLenum  b, GLuint *c) {
+	m_pglex->glGetTexParameterIuivEXT(a,b,c);
 }
 
-inline void glex::glFinishFenceAPPLE(GLuint  a) {
-	m_pglex->glFinishFenceAPPLE(a);
+inline void glex::glClearColorIiEXT(GLint  a, GLint  b, GLint  c, GLint  d) {
+	m_pglex->glClearColorIiEXT(a,b,c,d);
 }
 
-inline GLboolean glex::glTestObjectAPPLE(GLenum  a, GLuint  b) {
-	return m_pglex->glTestObjectAPPLE(a,b);
+inline void glex::glClearColorIuiEXT(GLuint  a, GLuint  b, GLuint  c, GLuint  d) {
+	m_pglex->glClearColorIuiEXT(a,b,c,d);
 }
 
-inline void glex::glFinishObjectAPPLE(GLenum  a, GLint  b) {
-	m_pglex->glFinishObjectAPPLE(a,b);
+inline GLboolean glex::glAreTexturesResidentEXT(GLsizei  a, const GLuint *b, GLboolean *c) {
+	return m_pglex->glAreTexturesResidentEXT(a,b,c);
 }
 
-inline void glex::glBindVertexArrayAPPLE(GLuint  a) {
-	m_pglex->glBindVertexArrayAPPLE(a);
+inline void glex::glBindTextureEXT(GLenum  a, GLuint  b) {
+	m_pglex->glBindTextureEXT(a,b);
 }
 
-inline void glex::glDeleteVertexArraysAPPLE(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteVertexArraysAPPLE(a,b);
+inline void glex::glDeleteTexturesEXT(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteTexturesEXT(a,b);
 }
 
-inline void glex::glGenVertexArraysAPPLE(GLsizei  a, GLuint *b) {
-	m_pglex->glGenVertexArraysAPPLE(a,b);
+inline void glex::glGenTexturesEXT(GLsizei  a, GLuint *b) {
+	m_pglex->glGenTexturesEXT(a,b);
 }
 
-inline GLboolean glex::glIsVertexArrayAPPLE(GLuint  a) {
-	return m_pglex->glIsVertexArrayAPPLE(a);
+inline GLboolean glex::glIsTextureEXT(GLuint  a) {
+	return m_pglex->glIsTextureEXT(a);
 }
 
-inline void glex::glVertexArrayRangeAPPLE(GLsizei  a, GLvoid *b) {
-	m_pglex->glVertexArrayRangeAPPLE(a,b);
+inline void glex::glPrioritizeTexturesEXT(GLsizei  a, const GLuint *b, const GLclampf *c) {
+	m_pglex->glPrioritizeTexturesEXT(a,b,c);
 }
 
-inline void glex::glFlushVertexArrayRangeAPPLE(GLsizei  a, GLvoid *b) {
-	m_pglex->glFlushVertexArrayRangeAPPLE(a,b);
+inline void glex::glTextureNormalEXT(GLenum  a) {
+	m_pglex->glTextureNormalEXT(a);
 }
 
-inline void glex::glVertexArrayParameteriAPPLE(GLenum  a, GLint  b) {
-	m_pglex->glVertexArrayParameteriAPPLE(a,b);
+inline void glex::glGetQueryObjecti64vEXT(GLuint  a, GLenum  b, GLint64 *c) {
+	m_pglex->glGetQueryObjecti64vEXT(a,b,c);
 }
 
-inline void glex::glDrawBuffersATI(GLsizei  a, const GLenum *b) {
-	m_pglex->glDrawBuffersATI(a,b);
+inline void glex::glGetQueryObjectui64vEXT(GLuint  a, GLenum  b, GLuint64 *c) {
+	m_pglex->glGetQueryObjectui64vEXT(a,b,c);
+}
+
+inline void glex::glBeginTransformFeedbackEXT(GLenum  a) {
+	m_pglex->glBeginTransformFeedbackEXT(a);
+}
+
+inline void glex::glEndTransformFeedbackEXT(void) {
+	m_pglex->glEndTransformFeedbackEXT();
+}
+
+inline void glex::glBindBufferRangeEXT(GLenum  a, GLuint  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glBindBufferRangeEXT(a,b,c,d,e);
+}
+
+inline void glex::glBindBufferOffsetEXT(GLenum  a, GLuint  b, GLuint  c, GLintptr  d) {
+	m_pglex->glBindBufferOffsetEXT(a,b,c,d);
+}
+
+inline void glex::glBindBufferBaseEXT(GLenum  a, GLuint  b, GLuint  c) {
+	m_pglex->glBindBufferBaseEXT(a,b,c);
+}
+
+inline void glex::glTransformFeedbackVaryingsEXT(GLuint  a, GLsizei  b, const GLchar *const*c, GLenum  d) {
+	m_pglex->glTransformFeedbackVaryingsEXT(a,b,c,d);
+}
+
+inline void glex::glGetTransformFeedbackVaryingEXT(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLsizei *e, GLenum *f, GLchar *g) {
+	m_pglex->glGetTransformFeedbackVaryingEXT(a,b,c,d,e,f,g);
+}
+
+inline void glex::glArrayElementEXT(GLint  a) {
+	m_pglex->glArrayElementEXT(a);
+}
+
+inline void glex::glColorPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const void *e) {
+	m_pglex->glColorPointerEXT(a,b,c,d,e);
+}
+
+inline void glex::glDrawArraysEXT(GLenum  a, GLint  b, GLsizei  c) {
+	m_pglex->glDrawArraysEXT(a,b,c);
+}
+
+inline void glex::glEdgeFlagPointerEXT(GLsizei  a, GLsizei  b, const GLboolean *c) {
+	m_pglex->glEdgeFlagPointerEXT(a,b,c);
+}
+
+inline void glex::glGetPointervEXT(GLenum  a, void **b) {
+	m_pglex->glGetPointervEXT(a,b);
+}
+
+inline void glex::glIndexPointerEXT(GLenum  a, GLsizei  b, GLsizei  c, const void *d) {
+	m_pglex->glIndexPointerEXT(a,b,c,d);
+}
+
+inline void glex::glNormalPointerEXT(GLenum  a, GLsizei  b, GLsizei  c, const void *d) {
+	m_pglex->glNormalPointerEXT(a,b,c,d);
+}
+
+inline void glex::glTexCoordPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const void *e) {
+	m_pglex->glTexCoordPointerEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexPointerEXT(GLint  a, GLenum  b, GLsizei  c, GLsizei  d, const void *e) {
+	m_pglex->glVertexPointerEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttribL1dEXT(GLuint  a, GLdouble  b) {
+	m_pglex->glVertexAttribL1dEXT(a,b);
+}
+
+inline void glex::glVertexAttribL2dEXT(GLuint  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glVertexAttribL2dEXT(a,b,c);
+}
+
+inline void glex::glVertexAttribL3dEXT(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glVertexAttribL3dEXT(a,b,c,d);
+}
+
+inline void glex::glVertexAttribL4dEXT(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glVertexAttribL4dEXT(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttribL1dvEXT(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttribL1dvEXT(a,b);
+}
+
+inline void glex::glVertexAttribL2dvEXT(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttribL2dvEXT(a,b);
+}
+
+inline void glex::glVertexAttribL3dvEXT(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttribL3dvEXT(a,b);
+}
+
+inline void glex::glVertexAttribL4dvEXT(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttribL4dvEXT(a,b);
+}
+
+inline void glex::glVertexAttribLPointerEXT(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
+	m_pglex->glVertexAttribLPointerEXT(a,b,c,d,e);
+}
+
+inline void glex::glGetVertexAttribLdvEXT(GLuint  a, GLenum  b, GLdouble *c) {
+	m_pglex->glGetVertexAttribLdvEXT(a,b,c);
+}
+
+inline void glex::glBeginVertexShaderEXT(void) {
+	m_pglex->glBeginVertexShaderEXT();
+}
+
+inline void glex::glEndVertexShaderEXT(void) {
+	m_pglex->glEndVertexShaderEXT();
+}
+
+inline void glex::glBindVertexShaderEXT(GLuint  a) {
+	m_pglex->glBindVertexShaderEXT(a);
+}
+
+inline GLuint glex::glGenVertexShadersEXT(GLuint  a) {
+	return m_pglex->glGenVertexShadersEXT(a);
+}
+
+inline void glex::glDeleteVertexShaderEXT(GLuint  a) {
+	m_pglex->glDeleteVertexShaderEXT(a);
+}
+
+inline void glex::glShaderOp1EXT(GLenum  a, GLuint  b, GLuint  c) {
+	m_pglex->glShaderOp1EXT(a,b,c);
+}
+
+inline void glex::glShaderOp2EXT(GLenum  a, GLuint  b, GLuint  c, GLuint  d) {
+	m_pglex->glShaderOp2EXT(a,b,c,d);
+}
+
+inline void glex::glShaderOp3EXT(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e) {
+	m_pglex->glShaderOp3EXT(a,b,c,d,e);
+}
+
+inline void glex::glSwizzleEXT(GLuint  a, GLuint  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
+	m_pglex->glSwizzleEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glWriteMaskEXT(GLuint  a, GLuint  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
+	m_pglex->glWriteMaskEXT(a,b,c,d,e,f);
+}
+
+inline void glex::glInsertComponentEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glInsertComponentEXT(a,b,c);
+}
+
+inline void glex::glExtractComponentEXT(GLuint  a, GLuint  b, GLuint  c) {
+	m_pglex->glExtractComponentEXT(a,b,c);
+}
+
+inline GLuint glex::glGenSymbolsEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
+	return m_pglex->glGenSymbolsEXT(a,b,c,d);
+}
+
+inline void glex::glSetInvariantEXT(GLuint  a, GLenum  b, const void *c) {
+	m_pglex->glSetInvariantEXT(a,b,c);
+}
+
+inline void glex::glSetLocalConstantEXT(GLuint  a, GLenum  b, const void *c) {
+	m_pglex->glSetLocalConstantEXT(a,b,c);
+}
+
+inline void glex::glVariantbvEXT(GLuint  a, const GLbyte *b) {
+	m_pglex->glVariantbvEXT(a,b);
+}
+
+inline void glex::glVariantsvEXT(GLuint  a, const GLshort *b) {
+	m_pglex->glVariantsvEXT(a,b);
+}
+
+inline void glex::glVariantivEXT(GLuint  a, const GLint *b) {
+	m_pglex->glVariantivEXT(a,b);
+}
+
+inline void glex::glVariantfvEXT(GLuint  a, const GLfloat *b) {
+	m_pglex->glVariantfvEXT(a,b);
+}
+
+inline void glex::glVariantdvEXT(GLuint  a, const GLdouble *b) {
+	m_pglex->glVariantdvEXT(a,b);
+}
+
+inline void glex::glVariantubvEXT(GLuint  a, const GLubyte *b) {
+	m_pglex->glVariantubvEXT(a,b);
+}
+
+inline void glex::glVariantusvEXT(GLuint  a, const GLushort *b) {
+	m_pglex->glVariantusvEXT(a,b);
+}
+
+inline void glex::glVariantuivEXT(GLuint  a, const GLuint *b) {
+	m_pglex->glVariantuivEXT(a,b);
+}
+
+inline void glex::glVariantPointerEXT(GLuint  a, GLenum  b, GLuint  c, const void *d) {
+	m_pglex->glVariantPointerEXT(a,b,c,d);
+}
+
+inline void glex::glEnableVariantClientStateEXT(GLuint  a) {
+	m_pglex->glEnableVariantClientStateEXT(a);
+}
+
+inline void glex::glDisableVariantClientStateEXT(GLuint  a) {
+	m_pglex->glDisableVariantClientStateEXT(a);
+}
+
+inline GLuint glex::glBindLightParameterEXT(GLenum  a, GLenum  b) {
+	return m_pglex->glBindLightParameterEXT(a,b);
+}
+
+inline GLuint glex::glBindMaterialParameterEXT(GLenum  a, GLenum  b) {
+	return m_pglex->glBindMaterialParameterEXT(a,b);
+}
+
+inline GLuint glex::glBindTexGenParameterEXT(GLenum  a, GLenum  b, GLenum  c) {
+	return m_pglex->glBindTexGenParameterEXT(a,b,c);
+}
+
+inline GLuint glex::glBindTextureUnitParameterEXT(GLenum  a, GLenum  b) {
+	return m_pglex->glBindTextureUnitParameterEXT(a,b);
+}
+
+inline GLuint glex::glBindParameterEXT(GLenum  a) {
+	return m_pglex->glBindParameterEXT(a);
+}
+
+inline GLboolean glex::glIsVariantEnabledEXT(GLuint  a, GLenum  b) {
+	return m_pglex->glIsVariantEnabledEXT(a,b);
+}
+
+inline void glex::glGetVariantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
+	m_pglex->glGetVariantBooleanvEXT(a,b,c);
+}
+
+inline void glex::glGetVariantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVariantIntegervEXT(a,b,c);
+}
+
+inline void glex::glGetVariantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetVariantFloatvEXT(a,b,c);
+}
+
+inline void glex::glGetVariantPointervEXT(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetVariantPointervEXT(a,b,c);
+}
+
+inline void glex::glGetInvariantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
+	m_pglex->glGetInvariantBooleanvEXT(a,b,c);
+}
+
+inline void glex::glGetInvariantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetInvariantIntegervEXT(a,b,c);
+}
+
+inline void glex::glGetInvariantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetInvariantFloatvEXT(a,b,c);
+}
+
+inline void glex::glGetLocalConstantBooleanvEXT(GLuint  a, GLenum  b, GLboolean *c) {
+	m_pglex->glGetLocalConstantBooleanvEXT(a,b,c);
+}
+
+inline void glex::glGetLocalConstantIntegervEXT(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetLocalConstantIntegervEXT(a,b,c);
+}
+
+inline void glex::glGetLocalConstantFloatvEXT(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetLocalConstantFloatvEXT(a,b,c);
+}
+
+inline void glex::glVertexWeightfEXT(GLfloat  a) {
+	m_pglex->glVertexWeightfEXT(a);
+}
+
+inline void glex::glVertexWeightfvEXT(const GLfloat *a) {
+	m_pglex->glVertexWeightfvEXT(a);
+}
+
+inline void glex::glVertexWeightPointerEXT(GLint  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glVertexWeightPointerEXT(a,b,c,d);
+}
+
+inline void glex::glWindowRectanglesEXT(GLenum  a, GLsizei  b, const GLint *c) {
+	m_pglex->glWindowRectanglesEXT(a,b,c);
+}
+
+inline GLsync glex::glImportSyncEXT(GLenum  a, GLintptr  b, GLbitfield  c) {
+	return m_pglex->glImportSyncEXT(a,b,c);
+}
+
+inline void glex::glFrameTerminatorGREMEDY(void) {
+	m_pglex->glFrameTerminatorGREMEDY();
+}
+
+inline void glex::glStringMarkerGREMEDY(GLsizei  a, const void *b) {
+	m_pglex->glStringMarkerGREMEDY(a,b);
+}
+
+inline void glex::glImageTransformParameteriHP(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glImageTransformParameteriHP(a,b,c);
+}
+
+inline void glex::glImageTransformParameterfHP(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glImageTransformParameterfHP(a,b,c);
+}
+
+inline void glex::glImageTransformParameterivHP(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glImageTransformParameterivHP(a,b,c);
+}
+
+inline void glex::glImageTransformParameterfvHP(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glImageTransformParameterfvHP(a,b,c);
+}
+
+inline void glex::glGetImageTransformParameterivHP(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetImageTransformParameterivHP(a,b,c);
+}
+
+inline void glex::glGetImageTransformParameterfvHP(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetImageTransformParameterfvHP(a,b,c);
+}
+
+inline void glex::glMultiModeDrawArraysIBM(const GLenum *a, const GLint *b, const GLsizei *c, GLsizei  d, GLint  e) {
+	m_pglex->glMultiModeDrawArraysIBM(a,b,c,d,e);
+}
+
+inline void glex::glMultiModeDrawElementsIBM(const GLenum *a, const GLsizei *b, GLenum  c, const void *const*d, GLsizei  e, GLint  f) {
+	m_pglex->glMultiModeDrawElementsIBM(a,b,c,d,e,f);
+}
+
+inline void glex::glFlushStaticDataIBM(GLenum  a) {
+	m_pglex->glFlushStaticDataIBM(a);
+}
+
+inline void glex::glColorPointerListIBM(GLint  a, GLenum  b, GLint  c, const void **d, GLint  e) {
+	m_pglex->glColorPointerListIBM(a,b,c,d,e);
+}
+
+inline void glex::glSecondaryColorPointerListIBM(GLint  a, GLenum  b, GLint  c, const void **d, GLint  e) {
+	m_pglex->glSecondaryColorPointerListIBM(a,b,c,d,e);
+}
+
+inline void glex::glEdgeFlagPointerListIBM(GLint  a, const GLboolean **b, GLint  c) {
+	m_pglex->glEdgeFlagPointerListIBM(a,b,c);
+}
+
+inline void glex::glFogCoordPointerListIBM(GLenum  a, GLint  b, const void **c, GLint  d) {
+	m_pglex->glFogCoordPointerListIBM(a,b,c,d);
+}
+
+inline void glex::glIndexPointerListIBM(GLenum  a, GLint  b, const void **c, GLint  d) {
+	m_pglex->glIndexPointerListIBM(a,b,c,d);
+}
+
+inline void glex::glNormalPointerListIBM(GLenum  a, GLint  b, const void **c, GLint  d) {
+	m_pglex->glNormalPointerListIBM(a,b,c,d);
+}
+
+inline void glex::glTexCoordPointerListIBM(GLint  a, GLenum  b, GLint  c, const void **d, GLint  e) {
+	m_pglex->glTexCoordPointerListIBM(a,b,c,d,e);
+}
+
+inline void glex::glVertexPointerListIBM(GLint  a, GLenum  b, GLint  c, const void **d, GLint  e) {
+	m_pglex->glVertexPointerListIBM(a,b,c,d,e);
+}
+
+inline void glex::glBlendFuncSeparateINGR(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
+	m_pglex->glBlendFuncSeparateINGR(a,b,c,d);
+}
+
+inline void glex::glApplyFramebufferAttachmentCMAAINTEL(void) {
+	m_pglex->glApplyFramebufferAttachmentCMAAINTEL();
+}
+
+inline void glex::glSyncTextureINTEL(GLuint  a) {
+	m_pglex->glSyncTextureINTEL(a);
+}
+
+inline void glex::glUnmapTexture2DINTEL(GLuint  a, GLint  b) {
+	m_pglex->glUnmapTexture2DINTEL(a,b);
+}
+
+inline void * glex::glMapTexture2DINTEL(GLuint  a, GLint  b, GLbitfield  c, GLint *d, GLenum *e) {
+	return m_pglex->glMapTexture2DINTEL(a,b,c,d,e);
+}
+
+inline void glex::glVertexPointervINTEL(GLint  a, GLenum  b, const void **c) {
+	m_pglex->glVertexPointervINTEL(a,b,c);
+}
+
+inline void glex::glNormalPointervINTEL(GLenum  a, const void **b) {
+	m_pglex->glNormalPointervINTEL(a,b);
+}
+
+inline void glex::glColorPointervINTEL(GLint  a, GLenum  b, const void **c) {
+	m_pglex->glColorPointervINTEL(a,b,c);
+}
+
+inline void glex::glTexCoordPointervINTEL(GLint  a, GLenum  b, const void **c) {
+	m_pglex->glTexCoordPointervINTEL(a,b,c);
+}
+
+inline void glex::glBeginPerfQueryINTEL(GLuint  a) {
+	m_pglex->glBeginPerfQueryINTEL(a);
+}
+
+inline void glex::glCreatePerfQueryINTEL(GLuint  a, GLuint *b) {
+	m_pglex->glCreatePerfQueryINTEL(a,b);
+}
+
+inline void glex::glDeletePerfQueryINTEL(GLuint  a) {
+	m_pglex->glDeletePerfQueryINTEL(a);
+}
+
+inline void glex::glEndPerfQueryINTEL(GLuint  a) {
+	m_pglex->glEndPerfQueryINTEL(a);
+}
+
+inline void glex::glGetFirstPerfQueryIdINTEL(GLuint *a) {
+	m_pglex->glGetFirstPerfQueryIdINTEL(a);
+}
+
+inline void glex::glGetNextPerfQueryIdINTEL(GLuint  a, GLuint *b) {
+	m_pglex->glGetNextPerfQueryIdINTEL(a,b);
+}
+
+inline void glex::glGetPerfCounterInfoINTEL(GLuint  a, GLuint  b, GLuint  c, GLchar *d, GLuint  e, GLchar *f, GLuint *g, GLuint *h, GLuint *i, GLuint *j, GLuint64 *k) {
+	m_pglex->glGetPerfCounterInfoINTEL(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glGetPerfQueryDataINTEL(GLuint  a, GLuint  b, GLsizei  c, GLvoid *d, GLuint *e) {
+	m_pglex->glGetPerfQueryDataINTEL(a,b,c,d,e);
+}
+
+inline void glex::glGetPerfQueryIdByNameINTEL(GLchar *a, GLuint *b) {
+	m_pglex->glGetPerfQueryIdByNameINTEL(a,b);
+}
+
+inline void glex::glGetPerfQueryInfoINTEL(GLuint  a, GLuint  b, GLchar *c, GLuint *d, GLuint *e, GLuint *f, GLuint *g) {
+	m_pglex->glGetPerfQueryInfoINTEL(a,b,c,d,e,f,g);
+}
+
+inline void glex::glResizeBuffersMESA(void) {
+	m_pglex->glResizeBuffersMESA();
+}
+
+inline void glex::glWindowPos2dMESA(GLdouble  a, GLdouble  b) {
+	m_pglex->glWindowPos2dMESA(a,b);
+}
+
+inline void glex::glWindowPos2dvMESA(const GLdouble *a) {
+	m_pglex->glWindowPos2dvMESA(a);
+}
+
+inline void glex::glWindowPos2fMESA(GLfloat  a, GLfloat  b) {
+	m_pglex->glWindowPos2fMESA(a,b);
+}
+
+inline void glex::glWindowPos2fvMESA(const GLfloat *a) {
+	m_pglex->glWindowPos2fvMESA(a);
+}
+
+inline void glex::glWindowPos2iMESA(GLint  a, GLint  b) {
+	m_pglex->glWindowPos2iMESA(a,b);
+}
+
+inline void glex::glWindowPos2ivMESA(const GLint *a) {
+	m_pglex->glWindowPos2ivMESA(a);
+}
+
+inline void glex::glWindowPos2sMESA(GLshort  a, GLshort  b) {
+	m_pglex->glWindowPos2sMESA(a,b);
+}
+
+inline void glex::glWindowPos2svMESA(const GLshort *a) {
+	m_pglex->glWindowPos2svMESA(a);
+}
+
+inline void glex::glWindowPos3dMESA(GLdouble  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glWindowPos3dMESA(a,b,c);
+}
+
+inline void glex::glWindowPos3dvMESA(const GLdouble *a) {
+	m_pglex->glWindowPos3dvMESA(a);
+}
+
+inline void glex::glWindowPos3fMESA(GLfloat  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glWindowPos3fMESA(a,b,c);
+}
+
+inline void glex::glWindowPos3fvMESA(const GLfloat *a) {
+	m_pglex->glWindowPos3fvMESA(a);
+}
+
+inline void glex::glWindowPos3iMESA(GLint  a, GLint  b, GLint  c) {
+	m_pglex->glWindowPos3iMESA(a,b,c);
+}
+
+inline void glex::glWindowPos3ivMESA(const GLint *a) {
+	m_pglex->glWindowPos3ivMESA(a);
+}
+
+inline void glex::glWindowPos3sMESA(GLshort  a, GLshort  b, GLshort  c) {
+	m_pglex->glWindowPos3sMESA(a,b,c);
+}
+
+inline void glex::glWindowPos3svMESA(const GLshort *a) {
+	m_pglex->glWindowPos3svMESA(a);
+}
+
+inline void glex::glWindowPos4dMESA(GLdouble  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glWindowPos4dMESA(a,b,c,d);
+}
+
+inline void glex::glWindowPos4dvMESA(const GLdouble *a) {
+	m_pglex->glWindowPos4dvMESA(a);
+}
+
+inline void glex::glWindowPos4fMESA(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glWindowPos4fMESA(a,b,c,d);
+}
+
+inline void glex::glWindowPos4fvMESA(const GLfloat *a) {
+	m_pglex->glWindowPos4fvMESA(a);
+}
+
+inline void glex::glWindowPos4iMESA(GLint  a, GLint  b, GLint  c, GLint  d) {
+	m_pglex->glWindowPos4iMESA(a,b,c,d);
+}
+
+inline void glex::glWindowPos4ivMESA(const GLint *a) {
+	m_pglex->glWindowPos4ivMESA(a);
+}
+
+inline void glex::glWindowPos4sMESA(GLshort  a, GLshort  b, GLshort  c, GLshort  d) {
+	m_pglex->glWindowPos4sMESA(a,b,c,d);
+}
+
+inline void glex::glWindowPos4svMESA(const GLshort *a) {
+	m_pglex->glWindowPos4svMESA(a);
+}
+
+inline void glex::glBeginConditionalRenderNVX(GLuint  a) {
+	m_pglex->glBeginConditionalRenderNVX(a);
+}
+
+inline void glex::glEndConditionalRenderNVX(void) {
+	m_pglex->glEndConditionalRenderNVX();
+}
+
+inline void glex::glMultiDrawArraysIndirectBindlessNV(GLenum  a, const void *b, GLsizei  c, GLsizei  d, GLint  e) {
+	m_pglex->glMultiDrawArraysIndirectBindlessNV(a,b,c,d,e);
+}
+
+inline void glex::glMultiDrawElementsIndirectBindlessNV(GLenum  a, GLenum  b, const void *c, GLsizei  d, GLsizei  e, GLint  f) {
+	m_pglex->glMultiDrawElementsIndirectBindlessNV(a,b,c,d,e,f);
+}
+
+inline void glex::glMultiDrawArraysIndirectBindlessCountNV(GLenum  a, const void *b, GLsizei  c, GLsizei  d, GLsizei  e, GLint  f) {
+	m_pglex->glMultiDrawArraysIndirectBindlessCountNV(a,b,c,d,e,f);
+}
+
+inline void glex::glMultiDrawElementsIndirectBindlessCountNV(GLenum  a, GLenum  b, const void *c, GLsizei  d, GLsizei  e, GLsizei  f, GLint  g) {
+	m_pglex->glMultiDrawElementsIndirectBindlessCountNV(a,b,c,d,e,f,g);
+}
+
+inline GLuint64 glex::glGetTextureHandleNV(GLuint  a) {
+	return m_pglex->glGetTextureHandleNV(a);
+}
+
+inline GLuint64 glex::glGetTextureSamplerHandleNV(GLuint  a, GLuint  b) {
+	return m_pglex->glGetTextureSamplerHandleNV(a,b);
+}
+
+inline void glex::glMakeTextureHandleResidentNV(GLuint64  a) {
+	m_pglex->glMakeTextureHandleResidentNV(a);
+}
+
+inline void glex::glMakeTextureHandleNonResidentNV(GLuint64  a) {
+	m_pglex->glMakeTextureHandleNonResidentNV(a);
+}
+
+inline GLuint64 glex::glGetImageHandleNV(GLuint  a, GLint  b, GLboolean  c, GLint  d, GLenum  e) {
+	return m_pglex->glGetImageHandleNV(a,b,c,d,e);
+}
+
+inline void glex::glMakeImageHandleResidentNV(GLuint64  a, GLenum  b) {
+	m_pglex->glMakeImageHandleResidentNV(a,b);
+}
+
+inline void glex::glMakeImageHandleNonResidentNV(GLuint64  a) {
+	m_pglex->glMakeImageHandleNonResidentNV(a);
+}
+
+inline void glex::glUniformHandleui64NV(GLint  a, GLuint64  b) {
+	m_pglex->glUniformHandleui64NV(a,b);
+}
+
+inline void glex::glUniformHandleui64vNV(GLint  a, GLsizei  b, const GLuint64 *c) {
+	m_pglex->glUniformHandleui64vNV(a,b,c);
+}
+
+inline void glex::glProgramUniformHandleui64NV(GLuint  a, GLint  b, GLuint64  c) {
+	m_pglex->glProgramUniformHandleui64NV(a,b,c);
+}
+
+inline void glex::glProgramUniformHandleui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
+	m_pglex->glProgramUniformHandleui64vNV(a,b,c,d);
+}
+
+inline GLboolean glex::glIsTextureHandleResidentNV(GLuint64  a) {
+	return m_pglex->glIsTextureHandleResidentNV(a);
+}
+
+inline GLboolean glex::glIsImageHandleResidentNV(GLuint64  a) {
+	return m_pglex->glIsImageHandleResidentNV(a);
+}
+
+inline void glex::glBlendParameteriNV(GLenum  a, GLint  b) {
+	m_pglex->glBlendParameteriNV(a,b);
+}
+
+inline void glex::glBlendBarrierNV(void) {
+	m_pglex->glBlendBarrierNV();
+}
+
+inline void glex::glViewportPositionWScaleNV(GLuint  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glViewportPositionWScaleNV(a,b,c);
+}
+
+inline void glex::glCreateStatesNV(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateStatesNV(a,b);
+}
+
+inline void glex::glDeleteStatesNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteStatesNV(a,b);
+}
+
+inline GLboolean glex::glIsStateNV(GLuint  a) {
+	return m_pglex->glIsStateNV(a);
+}
+
+inline void glex::glStateCaptureNV(GLuint  a, GLenum  b) {
+	m_pglex->glStateCaptureNV(a,b);
+}
+
+inline GLuint glex::glGetCommandHeaderNV(GLenum  a, GLuint  b) {
+	return m_pglex->glGetCommandHeaderNV(a,b);
+}
+
+inline GLushort glex::glGetStageIndexNV(GLenum  a) {
+	return m_pglex->glGetStageIndexNV(a);
+}
+
+inline void glex::glDrawCommandsNV(GLenum  a, GLuint  b, const GLintptr *c, const GLsizei *d, GLuint  e) {
+	m_pglex->glDrawCommandsNV(a,b,c,d,e);
+}
+
+inline void glex::glDrawCommandsAddressNV(GLenum  a, const GLuint64 *b, const GLsizei *c, GLuint  d) {
+	m_pglex->glDrawCommandsAddressNV(a,b,c,d);
+}
+
+inline void glex::glDrawCommandsStatesNV(GLuint  a, const GLintptr *b, const GLsizei *c, const GLuint *d, const GLuint *e, GLuint  f) {
+	m_pglex->glDrawCommandsStatesNV(a,b,c,d,e,f);
+}
+
+inline void glex::glDrawCommandsStatesAddressNV(const GLuint64 *a, const GLsizei *b, const GLuint *c, const GLuint *d, GLuint  e) {
+	m_pglex->glDrawCommandsStatesAddressNV(a,b,c,d,e);
+}
+
+inline void glex::glCreateCommandListsNV(GLsizei  a, GLuint *b) {
+	m_pglex->glCreateCommandListsNV(a,b);
+}
+
+inline void glex::glDeleteCommandListsNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteCommandListsNV(a,b);
+}
+
+inline GLboolean glex::glIsCommandListNV(GLuint  a) {
+	return m_pglex->glIsCommandListNV(a);
+}
+
+inline void glex::glListDrawCommandsStatesClientNV(GLuint  a, GLuint  b, const void **c, const GLsizei *d, const GLuint *e, const GLuint *f, GLuint  g) {
+	m_pglex->glListDrawCommandsStatesClientNV(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCommandListSegmentsNV(GLuint  a, GLuint  b) {
+	m_pglex->glCommandListSegmentsNV(a,b);
+}
+
+inline void glex::glCompileCommandListNV(GLuint  a) {
+	m_pglex->glCompileCommandListNV(a);
+}
+
+inline void glex::glCallCommandListNV(GLuint  a) {
+	m_pglex->glCallCommandListNV(a);
+}
+
+inline void glex::glBeginConditionalRenderNV(GLuint  a, GLenum  b) {
+	m_pglex->glBeginConditionalRenderNV(a,b);
+}
+
+inline void glex::glEndConditionalRenderNV(void) {
+	m_pglex->glEndConditionalRenderNV();
+}
+
+inline void glex::glSubpixelPrecisionBiasNV(GLuint  a, GLuint  b) {
+	m_pglex->glSubpixelPrecisionBiasNV(a,b);
+}
+
+inline void glex::glConservativeRasterParameterfNV(GLenum  a, GLfloat  b) {
+	m_pglex->glConservativeRasterParameterfNV(a,b);
+}
+
+inline void glex::glConservativeRasterParameteriNV(GLenum  a, GLint  b) {
+	m_pglex->glConservativeRasterParameteriNV(a,b);
+}
+
+inline void glex::glCopyImageSubDataNV(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLuint  g, GLenum  h, GLint  i, GLint  j, GLint  k, GLint  l, GLsizei  m, GLsizei  n, GLsizei  o) {
+	m_pglex->glCopyImageSubDataNV(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
+}
+
+inline void glex::glDepthRangedNV(GLdouble  a, GLdouble  b) {
+	m_pglex->glDepthRangedNV(a,b);
+}
+
+inline void glex::glClearDepthdNV(GLdouble  a) {
+	m_pglex->glClearDepthdNV(a);
+}
+
+inline void glex::glDepthBoundsdNV(GLdouble  a, GLdouble  b) {
+	m_pglex->glDepthBoundsdNV(a,b);
+}
+
+inline void glex::glDrawTextureNV(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k) {
+	m_pglex->glDrawTextureNV(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glMapControlPointsNV(GLenum  a, GLuint  b, GLenum  c, GLsizei  d, GLsizei  e, GLint  f, GLint  g, GLboolean  h, const void *i) {
+	m_pglex->glMapControlPointsNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glMapParameterivNV(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glMapParameterivNV(a,b,c);
+}
+
+inline void glex::glMapParameterfvNV(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glMapParameterfvNV(a,b,c);
+}
+
+inline void glex::glGetMapControlPointsNV(GLenum  a, GLuint  b, GLenum  c, GLsizei  d, GLsizei  e, GLboolean  f, void *g) {
+	m_pglex->glGetMapControlPointsNV(a,b,c,d,e,f,g);
+}
+
+inline void glex::glGetMapParameterivNV(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetMapParameterivNV(a,b,c);
+}
+
+inline void glex::glGetMapParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetMapParameterfvNV(a,b,c);
+}
+
+inline void glex::glGetMapAttribParameterivNV(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetMapAttribParameterivNV(a,b,c,d);
+}
+
+inline void glex::glGetMapAttribParameterfvNV(GLenum  a, GLuint  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetMapAttribParameterfvNV(a,b,c,d);
+}
+
+inline void glex::glEvalMapsNV(GLenum  a, GLenum  b) {
+	m_pglex->glEvalMapsNV(a,b);
+}
+
+inline void glex::glGetMultisamplefvNV(GLenum  a, GLuint  b, GLfloat *c) {
+	m_pglex->glGetMultisamplefvNV(a,b,c);
+}
+
+inline void glex::glSampleMaskIndexedNV(GLuint  a, GLbitfield  b) {
+	m_pglex->glSampleMaskIndexedNV(a,b);
+}
+
+inline void glex::glTexRenderbufferNV(GLenum  a, GLuint  b) {
+	m_pglex->glTexRenderbufferNV(a,b);
+}
+
+inline void glex::glDeleteFencesNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteFencesNV(a,b);
+}
+
+inline void glex::glGenFencesNV(GLsizei  a, GLuint *b) {
+	m_pglex->glGenFencesNV(a,b);
+}
+
+inline GLboolean glex::glIsFenceNV(GLuint  a) {
+	return m_pglex->glIsFenceNV(a);
+}
+
+inline GLboolean glex::glTestFenceNV(GLuint  a) {
+	return m_pglex->glTestFenceNV(a);
+}
+
+inline void glex::glGetFenceivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetFenceivNV(a,b,c);
+}
+
+inline void glex::glFinishFenceNV(GLuint  a) {
+	m_pglex->glFinishFenceNV(a);
+}
+
+inline void glex::glSetFenceNV(GLuint  a, GLenum  b) {
+	m_pglex->glSetFenceNV(a,b);
+}
+
+inline void glex::glFragmentCoverageColorNV(GLuint  a) {
+	m_pglex->glFragmentCoverageColorNV(a);
 }
 
 inline void glex::glProgramNamedParameter4fNV(GLuint  a, GLsizei  b, const GLubyte *c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
 	m_pglex->glProgramNamedParameter4fNV(a,b,c,d,e,f,g);
 }
 
-inline void glex::glProgramNamedParameter4dNV(GLuint  a, GLsizei  b, const GLubyte *c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
-	m_pglex->glProgramNamedParameter4dNV(a,b,c,d,e,f,g);
-}
-
 inline void glex::glProgramNamedParameter4fvNV(GLuint  a, GLsizei  b, const GLubyte *c, const GLfloat *d) {
 	m_pglex->glProgramNamedParameter4fvNV(a,b,c,d);
+}
+
+inline void glex::glProgramNamedParameter4dNV(GLuint  a, GLsizei  b, const GLubyte *c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
+	m_pglex->glProgramNamedParameter4dNV(a,b,c,d,e,f,g);
 }
 
 inline void glex::glProgramNamedParameter4dvNV(GLuint  a, GLsizei  b, const GLubyte *c, const GLdouble *d) {
@@ -8010,6 +10655,106 @@ inline void glex::glGetProgramNamedParameterfvNV(GLuint  a, GLsizei  b, const GL
 
 inline void glex::glGetProgramNamedParameterdvNV(GLuint  a, GLsizei  b, const GLubyte *c, GLdouble *d) {
 	m_pglex->glGetProgramNamedParameterdvNV(a,b,c,d);
+}
+
+inline void glex::glCoverageModulationTableNV(GLsizei  a, const GLfloat *b) {
+	m_pglex->glCoverageModulationTableNV(a,b);
+}
+
+inline void glex::glGetCoverageModulationTableNV(GLsizei  a, GLfloat *b) {
+	m_pglex->glGetCoverageModulationTableNV(a,b);
+}
+
+inline void glex::glCoverageModulationNV(GLenum  a) {
+	m_pglex->glCoverageModulationNV(a);
+}
+
+inline void glex::glRenderbufferStorageMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
+	m_pglex->glRenderbufferStorageMultisampleCoverageNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramVertexLimitNV(GLenum  a, GLint  b) {
+	m_pglex->glProgramVertexLimitNV(a,b);
+}
+
+inline void glex::glFramebufferTextureEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
+	m_pglex->glFramebufferTextureEXT(a,b,c,d);
+}
+
+inline void glex::glFramebufferTextureFaceEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
+	m_pglex->glFramebufferTextureFaceEXT(a,b,c,d,e);
+}
+
+inline void glex::glProgramLocalParameterI4iNV(GLenum  a, GLuint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
+	m_pglex->glProgramLocalParameterI4iNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramLocalParameterI4ivNV(GLenum  a, GLuint  b, const GLint *c) {
+	m_pglex->glProgramLocalParameterI4ivNV(a,b,c);
+}
+
+inline void glex::glProgramLocalParametersI4ivNV(GLenum  a, GLuint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramLocalParametersI4ivNV(a,b,c,d);
+}
+
+inline void glex::glProgramLocalParameterI4uiNV(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
+	m_pglex->glProgramLocalParameterI4uiNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramLocalParameterI4uivNV(GLenum  a, GLuint  b, const GLuint *c) {
+	m_pglex->glProgramLocalParameterI4uivNV(a,b,c);
+}
+
+inline void glex::glProgramLocalParametersI4uivNV(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramLocalParametersI4uivNV(a,b,c,d);
+}
+
+inline void glex::glProgramEnvParameterI4iNV(GLenum  a, GLuint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
+	m_pglex->glProgramEnvParameterI4iNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramEnvParameterI4ivNV(GLenum  a, GLuint  b, const GLint *c) {
+	m_pglex->glProgramEnvParameterI4ivNV(a,b,c);
+}
+
+inline void glex::glProgramEnvParametersI4ivNV(GLenum  a, GLuint  b, GLsizei  c, const GLint *d) {
+	m_pglex->glProgramEnvParametersI4ivNV(a,b,c,d);
+}
+
+inline void glex::glProgramEnvParameterI4uiNV(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
+	m_pglex->glProgramEnvParameterI4uiNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramEnvParameterI4uivNV(GLenum  a, GLuint  b, const GLuint *c) {
+	m_pglex->glProgramEnvParameterI4uivNV(a,b,c);
+}
+
+inline void glex::glProgramEnvParametersI4uivNV(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d) {
+	m_pglex->glProgramEnvParametersI4uivNV(a,b,c,d);
+}
+
+inline void glex::glGetProgramLocalParameterIivNV(GLenum  a, GLuint  b, GLint *c) {
+	m_pglex->glGetProgramLocalParameterIivNV(a,b,c);
+}
+
+inline void glex::glGetProgramLocalParameterIuivNV(GLenum  a, GLuint  b, GLuint *c) {
+	m_pglex->glGetProgramLocalParameterIuivNV(a,b,c);
+}
+
+inline void glex::glGetProgramEnvParameterIivNV(GLenum  a, GLuint  b, GLint *c) {
+	m_pglex->glGetProgramEnvParameterIivNV(a,b,c);
+}
+
+inline void glex::glGetProgramEnvParameterIuivNV(GLenum  a, GLuint  b, GLuint *c) {
+	m_pglex->glGetProgramEnvParameterIuivNV(a,b,c);
+}
+
+inline void glex::glProgramSubroutineParametersuivNV(GLenum  a, GLsizei  b, const GLuint *c) {
+	m_pglex->glProgramSubroutineParametersuivNV(a,b,c);
+}
+
+inline void glex::glGetProgramSubroutineParameteruivNV(GLenum  a, GLuint  b, GLuint *c) {
+	m_pglex->glGetProgramSubroutineParameteruivNV(a,b,c);
 }
 
 inline void glex::glVertex2hNV(GLhalfNV  a, GLhalfNV  b) {
@@ -8196,12 +10941,344 @@ inline void glex::glVertexAttribs4hvNV(GLuint  a, GLsizei  b, const GLhalfNV *c)
 	m_pglex->glVertexAttribs4hvNV(a,b,c);
 }
 
-inline void glex::glPixelDataRangeNV(GLenum  a, GLsizei  b, const GLvoid *c) {
+inline void glex::glGetInternalformatSampleivNV(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLsizei  e, GLint *f) {
+	m_pglex->glGetInternalformatSampleivNV(a,b,c,d,e,f);
+}
+
+inline void glex::glGenOcclusionQueriesNV(GLsizei  a, GLuint *b) {
+	m_pglex->glGenOcclusionQueriesNV(a,b);
+}
+
+inline void glex::glDeleteOcclusionQueriesNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteOcclusionQueriesNV(a,b);
+}
+
+inline GLboolean glex::glIsOcclusionQueryNV(GLuint  a) {
+	return m_pglex->glIsOcclusionQueryNV(a);
+}
+
+inline void glex::glBeginOcclusionQueryNV(GLuint  a) {
+	m_pglex->glBeginOcclusionQueryNV(a);
+}
+
+inline void glex::glEndOcclusionQueryNV(void) {
+	m_pglex->glEndOcclusionQueryNV();
+}
+
+inline void glex::glGetOcclusionQueryivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetOcclusionQueryivNV(a,b,c);
+}
+
+inline void glex::glGetOcclusionQueryuivNV(GLuint  a, GLenum  b, GLuint *c) {
+	m_pglex->glGetOcclusionQueryuivNV(a,b,c);
+}
+
+inline void glex::glProgramBufferParametersfvNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLfloat *e) {
+	m_pglex->glProgramBufferParametersfvNV(a,b,c,d,e);
+}
+
+inline void glex::glProgramBufferParametersIivNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLint *e) {
+	m_pglex->glProgramBufferParametersIivNV(a,b,c,d,e);
+}
+
+inline void glex::glProgramBufferParametersIuivNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLuint *e) {
+	m_pglex->glProgramBufferParametersIuivNV(a,b,c,d,e);
+}
+
+inline GLuint glex::glGenPathsNV(GLsizei  a) {
+	return m_pglex->glGenPathsNV(a);
+}
+
+inline void glex::glDeletePathsNV(GLuint  a, GLsizei  b) {
+	m_pglex->glDeletePathsNV(a,b);
+}
+
+inline GLboolean glex::glIsPathNV(GLuint  a) {
+	return m_pglex->glIsPathNV(a);
+}
+
+inline void glex::glPathCommandsNV(GLuint  a, GLsizei  b, const GLubyte *c, GLsizei  d, GLenum  e, const void *f) {
+	m_pglex->glPathCommandsNV(a,b,c,d,e,f);
+}
+
+inline void glex::glPathCoordsNV(GLuint  a, GLsizei  b, GLenum  c, const void *d) {
+	m_pglex->glPathCoordsNV(a,b,c,d);
+}
+
+inline void glex::glPathSubCommandsNV(GLuint  a, GLsizei  b, GLsizei  c, GLsizei  d, const GLubyte *e, GLsizei  f, GLenum  g, const void *h) {
+	m_pglex->glPathSubCommandsNV(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glPathSubCoordsNV(GLuint  a, GLsizei  b, GLsizei  c, GLenum  d, const void *e) {
+	m_pglex->glPathSubCoordsNV(a,b,c,d,e);
+}
+
+inline void glex::glPathStringNV(GLuint  a, GLenum  b, GLsizei  c, const void *d) {
+	m_pglex->glPathStringNV(a,b,c,d);
+}
+
+inline void glex::glPathGlyphsNV(GLuint  a, GLenum  b, const void *c, GLbitfield  d, GLsizei  e, GLenum  f, const void *g, GLenum  h, GLuint  i, GLfloat  j) {
+	m_pglex->glPathGlyphsNV(a,b,c,d,e,f,g,h,i,j);
+}
+
+inline void glex::glPathGlyphRangeNV(GLuint  a, GLenum  b, const void *c, GLbitfield  d, GLuint  e, GLsizei  f, GLenum  g, GLuint  h, GLfloat  i) {
+	m_pglex->glPathGlyphRangeNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glWeightPathsNV(GLuint  a, GLsizei  b, const GLuint *c, const GLfloat *d) {
+	m_pglex->glWeightPathsNV(a,b,c,d);
+}
+
+inline void glex::glCopyPathNV(GLuint  a, GLuint  b) {
+	m_pglex->glCopyPathNV(a,b);
+}
+
+inline void glex::glInterpolatePathsNV(GLuint  a, GLuint  b, GLuint  c, GLfloat  d) {
+	m_pglex->glInterpolatePathsNV(a,b,c,d);
+}
+
+inline void glex::glTransformPathNV(GLuint  a, GLuint  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glTransformPathNV(a,b,c,d);
+}
+
+inline void glex::glPathParameterivNV(GLuint  a, GLenum  b, const GLint *c) {
+	m_pglex->glPathParameterivNV(a,b,c);
+}
+
+inline void glex::glPathParameteriNV(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glPathParameteriNV(a,b,c);
+}
+
+inline void glex::glPathParameterfvNV(GLuint  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glPathParameterfvNV(a,b,c);
+}
+
+inline void glex::glPathParameterfNV(GLuint  a, GLenum  b, GLfloat  c) {
+	m_pglex->glPathParameterfNV(a,b,c);
+}
+
+inline void glex::glPathDashArrayNV(GLuint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glPathDashArrayNV(a,b,c);
+}
+
+inline void glex::glPathStencilFuncNV(GLenum  a, GLint  b, GLuint  c) {
+	m_pglex->glPathStencilFuncNV(a,b,c);
+}
+
+inline void glex::glPathStencilDepthOffsetNV(GLfloat  a, GLfloat  b) {
+	m_pglex->glPathStencilDepthOffsetNV(a,b);
+}
+
+inline void glex::glStencilFillPathNV(GLuint  a, GLenum  b, GLuint  c) {
+	m_pglex->glStencilFillPathNV(a,b,c);
+}
+
+inline void glex::glStencilStrokePathNV(GLuint  a, GLint  b, GLuint  c) {
+	m_pglex->glStencilStrokePathNV(a,b,c);
+}
+
+inline void glex::glStencilFillPathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLenum  e, GLuint  f, GLenum  g, const GLfloat *h) {
+	m_pglex->glStencilFillPathInstancedNV(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glStencilStrokePathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLint  e, GLuint  f, GLenum  g, const GLfloat *h) {
+	m_pglex->glStencilStrokePathInstancedNV(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glPathCoverDepthFuncNV(GLenum  a) {
+	m_pglex->glPathCoverDepthFuncNV(a);
+}
+
+inline void glex::glCoverFillPathNV(GLuint  a, GLenum  b) {
+	m_pglex->glCoverFillPathNV(a,b);
+}
+
+inline void glex::glCoverStrokePathNV(GLuint  a, GLenum  b) {
+	m_pglex->glCoverStrokePathNV(a,b);
+}
+
+inline void glex::glCoverFillPathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLenum  e, GLenum  f, const GLfloat *g) {
+	m_pglex->glCoverFillPathInstancedNV(a,b,c,d,e,f,g);
+}
+
+inline void glex::glCoverStrokePathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLenum  e, GLenum  f, const GLfloat *g) {
+	m_pglex->glCoverStrokePathInstancedNV(a,b,c,d,e,f,g);
+}
+
+inline void glex::glGetPathParameterivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetPathParameterivNV(a,b,c);
+}
+
+inline void glex::glGetPathParameterfvNV(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetPathParameterfvNV(a,b,c);
+}
+
+inline void glex::glGetPathCommandsNV(GLuint  a, GLubyte *b) {
+	m_pglex->glGetPathCommandsNV(a,b);
+}
+
+inline void glex::glGetPathCoordsNV(GLuint  a, GLfloat *b) {
+	m_pglex->glGetPathCoordsNV(a,b);
+}
+
+inline void glex::glGetPathDashArrayNV(GLuint  a, GLfloat *b) {
+	m_pglex->glGetPathDashArrayNV(a,b);
+}
+
+inline void glex::glGetPathMetricsNV(GLbitfield  a, GLsizei  b, GLenum  c, const void *d, GLuint  e, GLsizei  f, GLfloat *g) {
+	m_pglex->glGetPathMetricsNV(a,b,c,d,e,f,g);
+}
+
+inline void glex::glGetPathMetricRangeNV(GLbitfield  a, GLuint  b, GLsizei  c, GLsizei  d, GLfloat *e) {
+	m_pglex->glGetPathMetricRangeNV(a,b,c,d,e);
+}
+
+inline void glex::glGetPathSpacingNV(GLenum  a, GLsizei  b, GLenum  c, const void *d, GLuint  e, GLfloat  f, GLfloat  g, GLenum  h, GLfloat *i) {
+	m_pglex->glGetPathSpacingNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline GLboolean glex::glIsPointInFillPathNV(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d) {
+	return m_pglex->glIsPointInFillPathNV(a,b,c,d);
+}
+
+inline GLboolean glex::glIsPointInStrokePathNV(GLuint  a, GLfloat  b, GLfloat  c) {
+	return m_pglex->glIsPointInStrokePathNV(a,b,c);
+}
+
+inline GLfloat glex::glGetPathLengthNV(GLuint  a, GLsizei  b, GLsizei  c) {
+	return m_pglex->glGetPathLengthNV(a,b,c);
+}
+
+inline GLboolean glex::glPointAlongPathNV(GLuint  a, GLsizei  b, GLsizei  c, GLfloat  d, GLfloat *e, GLfloat *f, GLfloat *g, GLfloat *h) {
+	return m_pglex->glPointAlongPathNV(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glMatrixLoad3x2fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixLoad3x2fNV(a,b);
+}
+
+inline void glex::glMatrixLoad3x3fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixLoad3x3fNV(a,b);
+}
+
+inline void glex::glMatrixLoadTranspose3x3fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixLoadTranspose3x3fNV(a,b);
+}
+
+inline void glex::glMatrixMult3x2fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixMult3x2fNV(a,b);
+}
+
+inline void glex::glMatrixMult3x3fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixMult3x3fNV(a,b);
+}
+
+inline void glex::glMatrixMultTranspose3x3fNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glMatrixMultTranspose3x3fNV(a,b);
+}
+
+inline void glex::glStencilThenCoverFillPathNV(GLuint  a, GLenum  b, GLuint  c, GLenum  d) {
+	m_pglex->glStencilThenCoverFillPathNV(a,b,c,d);
+}
+
+inline void glex::glStencilThenCoverStrokePathNV(GLuint  a, GLint  b, GLuint  c, GLenum  d) {
+	m_pglex->glStencilThenCoverStrokePathNV(a,b,c,d);
+}
+
+inline void glex::glStencilThenCoverFillPathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLenum  e, GLuint  f, GLenum  g, GLenum  h, const GLfloat *i) {
+	m_pglex->glStencilThenCoverFillPathInstancedNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glStencilThenCoverStrokePathInstancedNV(GLsizei  a, GLenum  b, const void *c, GLuint  d, GLint  e, GLuint  f, GLenum  g, GLenum  h, const GLfloat *i) {
+	m_pglex->glStencilThenCoverStrokePathInstancedNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline GLenum glex::glPathGlyphIndexRangeNV(GLenum  a, const void *b, GLbitfield  c, GLuint  d, GLfloat  e, GLuint *f) {
+	return m_pglex->glPathGlyphIndexRangeNV(a,b,c,d,e,f);
+}
+
+inline GLenum glex::glPathGlyphIndexArrayNV(GLuint  a, GLenum  b, const void *c, GLbitfield  d, GLuint  e, GLsizei  f, GLuint  g, GLfloat  h) {
+	return m_pglex->glPathGlyphIndexArrayNV(a,b,c,d,e,f,g,h);
+}
+
+inline GLenum glex::glPathMemoryGlyphIndexArrayNV(GLuint  a, GLenum  b, GLsizeiptr  c, const void *d, GLsizei  e, GLuint  f, GLsizei  g, GLuint  h, GLfloat  i) {
+	return m_pglex->glPathMemoryGlyphIndexArrayNV(a,b,c,d,e,f,g,h,i);
+}
+
+inline void glex::glProgramPathFragmentInputGenNV(GLuint  a, GLint  b, GLenum  c, GLint  d, const GLfloat *e) {
+	m_pglex->glProgramPathFragmentInputGenNV(a,b,c,d,e);
+}
+
+inline void glex::glGetProgramResourcefvNV(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLenum *e, GLsizei  f, GLsizei *g, GLfloat *h) {
+	m_pglex->glGetProgramResourcefvNV(a,b,c,d,e,f,g,h);
+}
+
+inline void glex::glPathColorGenNV(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
+	m_pglex->glPathColorGenNV(a,b,c,d);
+}
+
+inline void glex::glPathTexGenNV(GLenum  a, GLenum  b, GLint  c, const GLfloat *d) {
+	m_pglex->glPathTexGenNV(a,b,c,d);
+}
+
+inline void glex::glPathFogGenNV(GLenum  a) {
+	m_pglex->glPathFogGenNV(a);
+}
+
+inline void glex::glGetPathColorGenivNV(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetPathColorGenivNV(a,b,c);
+}
+
+inline void glex::glGetPathColorGenfvNV(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetPathColorGenfvNV(a,b,c);
+}
+
+inline void glex::glGetPathTexGenivNV(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetPathTexGenivNV(a,b,c);
+}
+
+inline void glex::glGetPathTexGenfvNV(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetPathTexGenfvNV(a,b,c);
+}
+
+inline void glex::glPixelDataRangeNV(GLenum  a, GLsizei  b, const void *c) {
 	m_pglex->glPixelDataRangeNV(a,b,c);
 }
 
 inline void glex::glFlushPixelDataRangeNV(GLenum  a) {
 	m_pglex->glFlushPixelDataRangeNV(a);
+}
+
+inline void glex::glPointParameteriNV(GLenum  a, GLint  b) {
+	m_pglex->glPointParameteriNV(a,b);
+}
+
+inline void glex::glPointParameterivNV(GLenum  a, const GLint *b) {
+	m_pglex->glPointParameterivNV(a,b);
+}
+
+inline void glex::glPresentFrameKeyedNV(GLuint  a, GLuint64EXT  b, GLuint  c, GLuint  d, GLenum  e, GLenum  f, GLuint  g, GLuint  h, GLenum  i, GLuint  j, GLuint  k) {
+	m_pglex->glPresentFrameKeyedNV(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline void glex::glPresentFrameDualFillNV(GLuint  a, GLuint64EXT  b, GLuint  c, GLuint  d, GLenum  e, GLenum  f, GLuint  g, GLenum  h, GLuint  i, GLenum  j, GLuint  k, GLenum  l, GLuint  m) {
+	m_pglex->glPresentFrameDualFillNV(a,b,c,d,e,f,g,h,i,j,k,l,m);
+}
+
+inline void glex::glGetVideoivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVideoivNV(a,b,c);
+}
+
+inline void glex::glGetVideouivNV(GLuint  a, GLenum  b, GLuint *c) {
+	m_pglex->glGetVideouivNV(a,b,c);
+}
+
+inline void glex::glGetVideoi64vNV(GLuint  a, GLenum  b, GLint64EXT *c) {
+	m_pglex->glGetVideoi64vNV(a,b,c);
+}
+
+inline void glex::glGetVideoui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
+	m_pglex->glGetVideoui64vNV(a,b,c);
 }
 
 inline void glex::glPrimitiveRestartNV(void) {
@@ -8212,232 +11289,660 @@ inline void glex::glPrimitiveRestartIndexNV(GLuint  a) {
 	m_pglex->glPrimitiveRestartIndexNV(a);
 }
 
-inline GLvoid* glex::glMapObjectBufferATI(GLuint  a) {
-	return m_pglex->glMapObjectBufferATI(a);
+inline void glex::glCombinerParameterfvNV(GLenum  a, const GLfloat *b) {
+	m_pglex->glCombinerParameterfvNV(a,b);
 }
 
-inline void glex::glUnmapObjectBufferATI(GLuint  a) {
-	m_pglex->glUnmapObjectBufferATI(a);
+inline void glex::glCombinerParameterfNV(GLenum  a, GLfloat  b) {
+	m_pglex->glCombinerParameterfNV(a,b);
 }
 
-inline void glex::glStencilOpSeparateATI(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
-	m_pglex->glStencilOpSeparateATI(a,b,c,d);
+inline void glex::glCombinerParameterivNV(GLenum  a, const GLint *b) {
+	m_pglex->glCombinerParameterivNV(a,b);
 }
 
-inline void glex::glStencilFuncSeparateATI(GLenum  a, GLenum  b, GLint  c, GLuint  d) {
-	m_pglex->glStencilFuncSeparateATI(a,b,c,d);
+inline void glex::glCombinerParameteriNV(GLenum  a, GLint  b) {
+	m_pglex->glCombinerParameteriNV(a,b);
 }
 
-inline void glex::glVertexAttribArrayObjectATI(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e, GLuint  f, GLuint  g) {
-	m_pglex->glVertexAttribArrayObjectATI(a,b,c,d,e,f,g);
+inline void glex::glCombinerInputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f) {
+	m_pglex->glCombinerInputNV(a,b,c,d,e,f);
 }
 
-inline void glex::glGetVertexAttribArrayObjectfvATI(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetVertexAttribArrayObjectfvATI(a,b,c);
+inline void glex::glCombinerOutputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e, GLenum  f, GLenum  g, GLboolean  h, GLboolean  i, GLboolean  j) {
+	m_pglex->glCombinerOutputNV(a,b,c,d,e,f,g,h,i,j);
 }
 
-inline void glex::glGetVertexAttribArrayObjectivATI(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetVertexAttribArrayObjectivATI(a,b,c);
+inline void glex::glFinalCombinerInputNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d) {
+	m_pglex->glFinalCombinerInputNV(a,b,c,d);
 }
 
-inline void glex::glDepthBoundsEXT(GLclampd  a, GLclampd  b) {
-	m_pglex->glDepthBoundsEXT(a,b);
+inline void glex::glGetCombinerInputParameterfvNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLfloat *e) {
+	m_pglex->glGetCombinerInputParameterfvNV(a,b,c,d,e);
 }
 
-inline void glex::glBlendEquationSeparateEXT(GLenum  a, GLenum  b) {
-	m_pglex->glBlendEquationSeparateEXT(a,b);
+inline void glex::glGetCombinerInputParameterivNV(GLenum  a, GLenum  b, GLenum  c, GLenum  d, GLint *e) {
+	m_pglex->glGetCombinerInputParameterivNV(a,b,c,d,e);
 }
 
-inline GLboolean glex::glIsRenderbufferEXT(GLuint  a) {
-	return m_pglex->glIsRenderbufferEXT(a);
+inline void glex::glGetCombinerOutputParameterfvNV(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetCombinerOutputParameterfvNV(a,b,c,d);
 }
 
-inline void glex::glBindRenderbufferEXT(GLenum  a, GLuint  b) {
-	m_pglex->glBindRenderbufferEXT(a,b);
+inline void glex::glGetCombinerOutputParameterivNV(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
+	m_pglex->glGetCombinerOutputParameterivNV(a,b,c,d);
 }
 
-inline void glex::glDeleteRenderbuffersEXT(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteRenderbuffersEXT(a,b);
+inline void glex::glGetFinalCombinerInputParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetFinalCombinerInputParameterfvNV(a,b,c);
 }
 
-inline void glex::glGenRenderbuffersEXT(GLsizei  a, GLuint *b) {
-	m_pglex->glGenRenderbuffersEXT(a,b);
+inline void glex::glGetFinalCombinerInputParameterivNV(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetFinalCombinerInputParameterivNV(a,b,c);
 }
 
-inline void glex::glRenderbufferStorageEXT(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glRenderbufferStorageEXT(a,b,c,d);
+inline void glex::glCombinerStageParameterfvNV(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glCombinerStageParameterfvNV(a,b,c);
 }
 
-inline void glex::glGetRenderbufferParameterivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetRenderbufferParameterivEXT(a,b,c);
+inline void glex::glGetCombinerStageParameterfvNV(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetCombinerStageParameterfvNV(a,b,c);
 }
 
-inline GLboolean glex::glIsFramebufferEXT(GLuint  a) {
-	return m_pglex->glIsFramebufferEXT(a);
+inline void glex::glFramebufferSampleLocationsfvNV(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glFramebufferSampleLocationsfvNV(a,b,c,d);
 }
 
-inline void glex::glBindFramebufferEXT(GLenum  a, GLuint  b) {
-	m_pglex->glBindFramebufferEXT(a,b);
+inline void glex::glNamedFramebufferSampleLocationsfvNV(GLuint  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glNamedFramebufferSampleLocationsfvNV(a,b,c,d);
 }
 
-inline void glex::glDeleteFramebuffersEXT(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteFramebuffersEXT(a,b);
+inline void glex::glResolveDepthValuesNV(void) {
+	m_pglex->glResolveDepthValuesNV();
 }
 
-inline void glex::glGenFramebuffersEXT(GLsizei  a, GLuint *b) {
-	m_pglex->glGenFramebuffersEXT(a,b);
+inline void glex::glMakeBufferResidentNV(GLenum  a, GLenum  b) {
+	m_pglex->glMakeBufferResidentNV(a,b);
 }
 
-inline GLenum glex::glCheckFramebufferStatusEXT(GLenum  a) {
-	return m_pglex->glCheckFramebufferStatusEXT(a);
+inline void glex::glMakeBufferNonResidentNV(GLenum  a) {
+	m_pglex->glMakeBufferNonResidentNV(a);
 }
 
-inline void glex::glFramebufferTexture1DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
-	m_pglex->glFramebufferTexture1DEXT(a,b,c,d,e);
+inline GLboolean glex::glIsBufferResidentNV(GLenum  a) {
+	return m_pglex->glIsBufferResidentNV(a);
 }
 
-inline void glex::glFramebufferTexture2DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
-	m_pglex->glFramebufferTexture2DEXT(a,b,c,d,e);
+inline void glex::glMakeNamedBufferResidentNV(GLuint  a, GLenum  b) {
+	m_pglex->glMakeNamedBufferResidentNV(a,b);
 }
 
-inline void glex::glFramebufferTexture3DEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d, GLint  e, GLint  f) {
-	m_pglex->glFramebufferTexture3DEXT(a,b,c,d,e,f);
+inline void glex::glMakeNamedBufferNonResidentNV(GLuint  a) {
+	m_pglex->glMakeNamedBufferNonResidentNV(a);
 }
 
-inline void glex::glFramebufferRenderbufferEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
-	m_pglex->glFramebufferRenderbufferEXT(a,b,c,d);
+inline GLboolean glex::glIsNamedBufferResidentNV(GLuint  a) {
+	return m_pglex->glIsNamedBufferResidentNV(a);
 }
 
-inline void glex::glGetFramebufferAttachmentParameterivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetFramebufferAttachmentParameterivEXT(a,b,c,d);
+inline void glex::glGetBufferParameterui64vNV(GLenum  a, GLenum  b, GLuint64EXT *c) {
+	m_pglex->glGetBufferParameterui64vNV(a,b,c);
 }
 
-inline void glex::glGenerateMipmapEXT(GLenum  a) {
-	m_pglex->glGenerateMipmapEXT(a);
+inline void glex::glGetNamedBufferParameterui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
+	m_pglex->glGetNamedBufferParameterui64vNV(a,b,c);
 }
 
-inline void glex::glStringMarkerGREMEDY(GLsizei  a, const GLvoid *b) {
-	m_pglex->glStringMarkerGREMEDY(a,b);
+inline void glex::glGetIntegerui64vNV(GLenum  a, GLuint64EXT *b) {
+	m_pglex->glGetIntegerui64vNV(a,b);
 }
 
-inline void glex::glStencilClearTagEXT(GLsizei  a, GLuint  b) {
-	m_pglex->glStencilClearTagEXT(a,b);
+inline void glex::glUniformui64NV(GLint  a, GLuint64EXT  b) {
+	m_pglex->glUniformui64NV(a,b);
 }
 
-inline void glex::glBlitFramebufferEXT(GLint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLbitfield  i, GLenum  j) {
-	m_pglex->glBlitFramebufferEXT(a,b,c,d,e,f,g,h,i,j);
+inline void glex::glUniformui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
+	m_pglex->glUniformui64vNV(a,b,c);
 }
 
-inline void glex::glRenderbufferStorageMultisampleEXT(GLenum  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
-	m_pglex->glRenderbufferStorageMultisampleEXT(a,b,c,d,e);
+inline void glex::glProgramUniformui64NV(GLuint  a, GLint  b, GLuint64EXT  c) {
+	m_pglex->glProgramUniformui64NV(a,b,c);
 }
 
-inline void glex::glGetQueryObjecti64vEXT(GLuint  a, GLenum  b, GLint64EXT *c) {
-	m_pglex->glGetQueryObjecti64vEXT(a,b,c);
+inline void glex::glProgramUniformui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
+	m_pglex->glProgramUniformui64vNV(a,b,c,d);
 }
 
-inline void glex::glGetQueryObjectui64vEXT(GLuint  a, GLenum  b, GLuint64EXT *c) {
-	m_pglex->glGetQueryObjectui64vEXT(a,b,c);
+inline void glex::glTextureBarrierNV(void) {
+	m_pglex->glTextureBarrierNV();
 }
 
-inline void glex::glProgramEnvParameters4fvEXT(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramEnvParameters4fvEXT(a,b,c,d);
+inline void glex::glTexImage2DMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLboolean  g) {
+	m_pglex->glTexImage2DMultisampleCoverageNV(a,b,c,d,e,f,g);
 }
 
-inline void glex::glProgramLocalParameters4fvEXT(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramLocalParameters4fvEXT(a,b,c,d);
+inline void glex::glTexImage3DMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
+	m_pglex->glTexImage3DMultisampleCoverageNV(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glBufferParameteriAPPLE(GLenum  a, GLenum  b, GLint  c) {
-	m_pglex->glBufferParameteriAPPLE(a,b,c);
+inline void glex::glTextureImage2DMultisampleNV(GLuint  a, GLenum  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLboolean  g) {
+	m_pglex->glTextureImage2DMultisampleNV(a,b,c,d,e,f,g);
 }
 
-inline void glex::glFlushMappedBufferRangeAPPLE(GLenum  a, GLintptr  b, GLsizeiptr  c) {
-	m_pglex->glFlushMappedBufferRangeAPPLE(a,b,c);
+inline void glex::glTextureImage3DMultisampleNV(GLuint  a, GLenum  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
+	m_pglex->glTextureImage3DMultisampleNV(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glProgramLocalParameterI4iNV(GLenum  a, GLuint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
-	m_pglex->glProgramLocalParameterI4iNV(a,b,c,d,e,f);
+inline void glex::glTextureImage2DMultisampleCoverageNV(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d, GLint  e, GLsizei  f, GLsizei  g, GLboolean  h) {
+	m_pglex->glTextureImage2DMultisampleCoverageNV(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glProgramLocalParameterI4ivNV(GLenum  a, GLuint  b, const GLint *c) {
-	m_pglex->glProgramLocalParameterI4ivNV(a,b,c);
+inline void glex::glTextureImage3DMultisampleCoverageNV(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLboolean  i) {
+	m_pglex->glTextureImage3DMultisampleCoverageNV(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glProgramLocalParametersI4ivNV(GLenum  a, GLuint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramLocalParametersI4ivNV(a,b,c,d);
+inline void glex::glBeginTransformFeedbackNV(GLenum  a) {
+	m_pglex->glBeginTransformFeedbackNV(a);
 }
 
-inline void glex::glProgramLocalParameterI4uiNV(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
-	m_pglex->glProgramLocalParameterI4uiNV(a,b,c,d,e,f);
+inline void glex::glEndTransformFeedbackNV(void) {
+	m_pglex->glEndTransformFeedbackNV();
 }
 
-inline void glex::glProgramLocalParameterI4uivNV(GLenum  a, GLuint  b, const GLuint *c) {
-	m_pglex->glProgramLocalParameterI4uivNV(a,b,c);
+inline void glex::glTransformFeedbackAttribsNV(GLsizei  a, const GLint *b, GLenum  c) {
+	m_pglex->glTransformFeedbackAttribsNV(a,b,c);
 }
 
-inline void glex::glProgramLocalParametersI4uivNV(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramLocalParametersI4uivNV(a,b,c,d);
+inline void glex::glBindBufferRangeNV(GLenum  a, GLuint  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
+	m_pglex->glBindBufferRangeNV(a,b,c,d,e);
 }
 
-inline void glex::glProgramEnvParameterI4iNV(GLenum  a, GLuint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
-	m_pglex->glProgramEnvParameterI4iNV(a,b,c,d,e,f);
+inline void glex::glBindBufferOffsetNV(GLenum  a, GLuint  b, GLuint  c, GLintptr  d) {
+	m_pglex->glBindBufferOffsetNV(a,b,c,d);
 }
 
-inline void glex::glProgramEnvParameterI4ivNV(GLenum  a, GLuint  b, const GLint *c) {
-	m_pglex->glProgramEnvParameterI4ivNV(a,b,c);
+inline void glex::glBindBufferBaseNV(GLenum  a, GLuint  b, GLuint  c) {
+	m_pglex->glBindBufferBaseNV(a,b,c);
 }
 
-inline void glex::glProgramEnvParametersI4ivNV(GLenum  a, GLuint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramEnvParametersI4ivNV(a,b,c,d);
+inline void glex::glTransformFeedbackVaryingsNV(GLuint  a, GLsizei  b, const GLint *c, GLenum  d) {
+	m_pglex->glTransformFeedbackVaryingsNV(a,b,c,d);
 }
 
-inline void glex::glProgramEnvParameterI4uiNV(GLenum  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
-	m_pglex->glProgramEnvParameterI4uiNV(a,b,c,d,e,f);
+inline void glex::glActiveVaryingNV(GLuint  a, const GLchar *b) {
+	m_pglex->glActiveVaryingNV(a,b);
 }
 
-inline void glex::glProgramEnvParameterI4uivNV(GLenum  a, GLuint  b, const GLuint *c) {
-	m_pglex->glProgramEnvParameterI4uivNV(a,b,c);
+inline GLint glex::glGetVaryingLocationNV(GLuint  a, const GLchar *b) {
+	return m_pglex->glGetVaryingLocationNV(a,b);
 }
 
-inline void glex::glProgramEnvParametersI4uivNV(GLenum  a, GLuint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramEnvParametersI4uivNV(a,b,c,d);
+inline void glex::glGetActiveVaryingNV(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLsizei *e, GLenum *f, GLchar *g) {
+	m_pglex->glGetActiveVaryingNV(a,b,c,d,e,f,g);
 }
 
-inline void glex::glGetProgramLocalParameterIivNV(GLenum  a, GLuint  b, GLint *c) {
-	m_pglex->glGetProgramLocalParameterIivNV(a,b,c);
+inline void glex::glGetTransformFeedbackVaryingNV(GLuint  a, GLuint  b, GLint *c) {
+	m_pglex->glGetTransformFeedbackVaryingNV(a,b,c);
 }
 
-inline void glex::glGetProgramLocalParameterIuivNV(GLenum  a, GLuint  b, GLuint *c) {
-	m_pglex->glGetProgramLocalParameterIuivNV(a,b,c);
+inline void glex::glTransformFeedbackStreamAttribsNV(GLsizei  a, const GLint *b, GLsizei  c, const GLint *d, GLenum  e) {
+	m_pglex->glTransformFeedbackStreamAttribsNV(a,b,c,d,e);
 }
 
-inline void glex::glGetProgramEnvParameterIivNV(GLenum  a, GLuint  b, GLint *c) {
-	m_pglex->glGetProgramEnvParameterIivNV(a,b,c);
+inline void glex::glBindTransformFeedbackNV(GLenum  a, GLuint  b) {
+	m_pglex->glBindTransformFeedbackNV(a,b);
 }
 
-inline void glex::glGetProgramEnvParameterIuivNV(GLenum  a, GLuint  b, GLuint *c) {
-	m_pglex->glGetProgramEnvParameterIuivNV(a,b,c);
+inline void glex::glDeleteTransformFeedbacksNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteTransformFeedbacksNV(a,b);
 }
 
-inline void glex::glProgramVertexLimitNV(GLenum  a, GLint  b) {
-	m_pglex->glProgramVertexLimitNV(a,b);
+inline void glex::glGenTransformFeedbacksNV(GLsizei  a, GLuint *b) {
+	m_pglex->glGenTransformFeedbacksNV(a,b);
 }
 
-inline void glex::glFramebufferTextureEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d) {
-	m_pglex->glFramebufferTextureEXT(a,b,c,d);
+inline GLboolean glex::glIsTransformFeedbackNV(GLuint  a) {
+	return m_pglex->glIsTransformFeedbackNV(a);
 }
 
-inline void glex::glFramebufferTextureLayerEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
-	m_pglex->glFramebufferTextureLayerEXT(a,b,c,d,e);
+inline void glex::glPauseTransformFeedbackNV(void) {
+	m_pglex->glPauseTransformFeedbackNV();
 }
 
-inline void glex::glFramebufferTextureFaceEXT(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
-	m_pglex->glFramebufferTextureFaceEXT(a,b,c,d,e);
+inline void glex::glResumeTransformFeedbackNV(void) {
+	m_pglex->glResumeTransformFeedbackNV();
 }
 
-inline void glex::glProgramParameteriEXT(GLuint  a, GLenum  b, GLint  c) {
-	m_pglex->glProgramParameteriEXT(a,b,c);
+inline void glex::glDrawTransformFeedbackNV(GLenum  a, GLuint  b) {
+	m_pglex->glDrawTransformFeedbackNV(a,b);
+}
+
+inline void glex::glVDPAUInitNV(const void *a, const void *b) {
+	m_pglex->glVDPAUInitNV(a,b);
+}
+
+inline void glex::glVDPAUFiniNV(void) {
+	m_pglex->glVDPAUFiniNV();
+}
+
+inline GLvdpauSurfaceNV glex::glVDPAURegisterVideoSurfaceNV(const void *a, GLenum  b, GLsizei  c, const GLuint *d) {
+	return m_pglex->glVDPAURegisterVideoSurfaceNV(a,b,c,d);
+}
+
+inline GLvdpauSurfaceNV glex::glVDPAURegisterOutputSurfaceNV(const void *a, GLenum  b, GLsizei  c, const GLuint *d) {
+	return m_pglex->glVDPAURegisterOutputSurfaceNV(a,b,c,d);
+}
+
+inline GLboolean glex::glVDPAUIsSurfaceNV(GLvdpauSurfaceNV  a) {
+	return m_pglex->glVDPAUIsSurfaceNV(a);
+}
+
+inline void glex::glVDPAUUnregisterSurfaceNV(GLvdpauSurfaceNV  a) {
+	m_pglex->glVDPAUUnregisterSurfaceNV(a);
+}
+
+inline void glex::glVDPAUGetSurfaceivNV(GLvdpauSurfaceNV  a, GLenum  b, GLsizei  c, GLsizei *d, GLint *e) {
+	m_pglex->glVDPAUGetSurfaceivNV(a,b,c,d,e);
+}
+
+inline void glex::glVDPAUSurfaceAccessNV(GLvdpauSurfaceNV  a, GLenum  b) {
+	m_pglex->glVDPAUSurfaceAccessNV(a,b);
+}
+
+inline void glex::glVDPAUMapSurfacesNV(GLsizei  a, const GLvdpauSurfaceNV *b) {
+	m_pglex->glVDPAUMapSurfacesNV(a,b);
+}
+
+inline void glex::glVDPAUUnmapSurfacesNV(GLsizei  a, const GLvdpauSurfaceNV *b) {
+	m_pglex->glVDPAUUnmapSurfacesNV(a,b);
+}
+
+inline void glex::glFlushVertexArrayRangeNV(void) {
+	m_pglex->glFlushVertexArrayRangeNV();
+}
+
+inline void glex::glVertexArrayRangeNV(GLsizei  a, const void *b) {
+	m_pglex->glVertexArrayRangeNV(a,b);
+}
+
+inline void glex::glVertexAttribL1i64NV(GLuint  a, GLint64EXT  b) {
+	m_pglex->glVertexAttribL1i64NV(a,b);
+}
+
+inline void glex::glVertexAttribL2i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c) {
+	m_pglex->glVertexAttribL2i64NV(a,b,c);
+}
+
+inline void glex::glVertexAttribL3i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d) {
+	m_pglex->glVertexAttribL3i64NV(a,b,c,d);
+}
+
+inline void glex::glVertexAttribL4i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
+	m_pglex->glVertexAttribL4i64NV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttribL1i64vNV(GLuint  a, const GLint64EXT *b) {
+	m_pglex->glVertexAttribL1i64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL2i64vNV(GLuint  a, const GLint64EXT *b) {
+	m_pglex->glVertexAttribL2i64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL3i64vNV(GLuint  a, const GLint64EXT *b) {
+	m_pglex->glVertexAttribL3i64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL4i64vNV(GLuint  a, const GLint64EXT *b) {
+	m_pglex->glVertexAttribL4i64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL1ui64NV(GLuint  a, GLuint64EXT  b) {
+	m_pglex->glVertexAttribL1ui64NV(a,b);
+}
+
+inline void glex::glVertexAttribL2ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c) {
+	m_pglex->glVertexAttribL2ui64NV(a,b,c);
+}
+
+inline void glex::glVertexAttribL3ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d) {
+	m_pglex->glVertexAttribL3ui64NV(a,b,c,d);
+}
+
+inline void glex::glVertexAttribL4ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
+	m_pglex->glVertexAttribL4ui64NV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttribL1ui64vNV(GLuint  a, const GLuint64EXT *b) {
+	m_pglex->glVertexAttribL1ui64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL2ui64vNV(GLuint  a, const GLuint64EXT *b) {
+	m_pglex->glVertexAttribL2ui64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL3ui64vNV(GLuint  a, const GLuint64EXT *b) {
+	m_pglex->glVertexAttribL3ui64vNV(a,b);
+}
+
+inline void glex::glVertexAttribL4ui64vNV(GLuint  a, const GLuint64EXT *b) {
+	m_pglex->glVertexAttribL4ui64vNV(a,b);
+}
+
+inline void glex::glGetVertexAttribLi64vNV(GLuint  a, GLenum  b, GLint64EXT *c) {
+	m_pglex->glGetVertexAttribLi64vNV(a,b,c);
+}
+
+inline void glex::glGetVertexAttribLui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
+	m_pglex->glGetVertexAttribLui64vNV(a,b,c);
+}
+
+inline void glex::glVertexAttribLFormatNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d) {
+	m_pglex->glVertexAttribLFormatNV(a,b,c,d);
+}
+
+inline void glex::glBufferAddressRangeNV(GLenum  a, GLuint  b, GLuint64EXT  c, GLsizeiptr  d) {
+	m_pglex->glBufferAddressRangeNV(a,b,c,d);
+}
+
+inline void glex::glVertexFormatNV(GLint  a, GLenum  b, GLsizei  c) {
+	m_pglex->glVertexFormatNV(a,b,c);
+}
+
+inline void glex::glNormalFormatNV(GLenum  a, GLsizei  b) {
+	m_pglex->glNormalFormatNV(a,b);
+}
+
+inline void glex::glColorFormatNV(GLint  a, GLenum  b, GLsizei  c) {
+	m_pglex->glColorFormatNV(a,b,c);
+}
+
+inline void glex::glIndexFormatNV(GLenum  a, GLsizei  b) {
+	m_pglex->glIndexFormatNV(a,b);
+}
+
+inline void glex::glTexCoordFormatNV(GLint  a, GLenum  b, GLsizei  c) {
+	m_pglex->glTexCoordFormatNV(a,b,c);
+}
+
+inline void glex::glEdgeFlagFormatNV(GLsizei  a) {
+	m_pglex->glEdgeFlagFormatNV(a);
+}
+
+inline void glex::glSecondaryColorFormatNV(GLint  a, GLenum  b, GLsizei  c) {
+	m_pglex->glSecondaryColorFormatNV(a,b,c);
+}
+
+inline void glex::glFogCoordFormatNV(GLenum  a, GLsizei  b) {
+	m_pglex->glFogCoordFormatNV(a,b);
+}
+
+inline void glex::glVertexAttribFormatNV(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e) {
+	m_pglex->glVertexAttribFormatNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttribIFormatNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d) {
+	m_pglex->glVertexAttribIFormatNV(a,b,c,d);
+}
+
+inline void glex::glGetIntegerui64i_vNV(GLenum  a, GLuint  b, GLuint64EXT *c) {
+	m_pglex->glGetIntegerui64i_vNV(a,b,c);
+}
+
+inline GLboolean glex::glAreProgramsResidentNV(GLsizei  a, const GLuint *b, GLboolean *c) {
+	return m_pglex->glAreProgramsResidentNV(a,b,c);
+}
+
+inline void glex::glBindProgramNV(GLenum  a, GLuint  b) {
+	m_pglex->glBindProgramNV(a,b);
+}
+
+inline void glex::glDeleteProgramsNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glDeleteProgramsNV(a,b);
+}
+
+inline void glex::glExecuteProgramNV(GLenum  a, GLuint  b, const GLfloat *c) {
+	m_pglex->glExecuteProgramNV(a,b,c);
+}
+
+inline void glex::glGenProgramsNV(GLsizei  a, GLuint *b) {
+	m_pglex->glGenProgramsNV(a,b);
+}
+
+inline void glex::glGetProgramParameterdvNV(GLenum  a, GLuint  b, GLenum  c, GLdouble *d) {
+	m_pglex->glGetProgramParameterdvNV(a,b,c,d);
+}
+
+inline void glex::glGetProgramParameterfvNV(GLenum  a, GLuint  b, GLenum  c, GLfloat *d) {
+	m_pglex->glGetProgramParameterfvNV(a,b,c,d);
+}
+
+inline void glex::glGetProgramivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetProgramivNV(a,b,c);
+}
+
+inline void glex::glGetProgramStringNV(GLuint  a, GLenum  b, GLubyte *c) {
+	m_pglex->glGetProgramStringNV(a,b,c);
+}
+
+inline void glex::glGetTrackMatrixivNV(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
+	m_pglex->glGetTrackMatrixivNV(a,b,c,d);
+}
+
+inline void glex::glGetVertexAttribdvNV(GLuint  a, GLenum  b, GLdouble *c) {
+	m_pglex->glGetVertexAttribdvNV(a,b,c);
+}
+
+inline void glex::glGetVertexAttribfvNV(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetVertexAttribfvNV(a,b,c);
+}
+
+inline void glex::glGetVertexAttribivNV(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetVertexAttribivNV(a,b,c);
+}
+
+inline void glex::glGetVertexAttribPointervNV(GLuint  a, GLenum  b, void **c) {
+	m_pglex->glGetVertexAttribPointervNV(a,b,c);
+}
+
+inline GLboolean glex::glIsProgramNV(GLuint  a) {
+	return m_pglex->glIsProgramNV(a);
+}
+
+inline void glex::glLoadProgramNV(GLenum  a, GLuint  b, GLsizei  c, const GLubyte *d) {
+	m_pglex->glLoadProgramNV(a,b,c,d);
+}
+
+inline void glex::glProgramParameter4dNV(GLenum  a, GLuint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
+	m_pglex->glProgramParameter4dNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramParameter4dvNV(GLenum  a, GLuint  b, const GLdouble *c) {
+	m_pglex->glProgramParameter4dvNV(a,b,c);
+}
+
+inline void glex::glProgramParameter4fNV(GLenum  a, GLuint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glProgramParameter4fNV(a,b,c,d,e,f);
+}
+
+inline void glex::glProgramParameter4fvNV(GLenum  a, GLuint  b, const GLfloat *c) {
+	m_pglex->glProgramParameter4fvNV(a,b,c);
+}
+
+inline void glex::glProgramParameters4dvNV(GLenum  a, GLuint  b, GLsizei  c, const GLdouble *d) {
+	m_pglex->glProgramParameters4dvNV(a,b,c,d);
+}
+
+inline void glex::glProgramParameters4fvNV(GLenum  a, GLuint  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glProgramParameters4fvNV(a,b,c,d);
+}
+
+inline void glex::glRequestResidentProgramsNV(GLsizei  a, const GLuint *b) {
+	m_pglex->glRequestResidentProgramsNV(a,b);
+}
+
+inline void glex::glTrackMatrixNV(GLenum  a, GLuint  b, GLenum  c, GLenum  d) {
+	m_pglex->glTrackMatrixNV(a,b,c,d);
+}
+
+inline void glex::glVertexAttribPointerNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
+	m_pglex->glVertexAttribPointerNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib1dNV(GLuint  a, GLdouble  b) {
+	m_pglex->glVertexAttrib1dNV(a,b);
+}
+
+inline void glex::glVertexAttrib1dvNV(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib1dvNV(a,b);
+}
+
+inline void glex::glVertexAttrib1fNV(GLuint  a, GLfloat  b) {
+	m_pglex->glVertexAttrib1fNV(a,b);
+}
+
+inline void glex::glVertexAttrib1fvNV(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib1fvNV(a,b);
+}
+
+inline void glex::glVertexAttrib1sNV(GLuint  a, GLshort  b) {
+	m_pglex->glVertexAttrib1sNV(a,b);
+}
+
+inline void glex::glVertexAttrib1svNV(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib1svNV(a,b);
+}
+
+inline void glex::glVertexAttrib2dNV(GLuint  a, GLdouble  b, GLdouble  c) {
+	m_pglex->glVertexAttrib2dNV(a,b,c);
+}
+
+inline void glex::glVertexAttrib2dvNV(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib2dvNV(a,b);
+}
+
+inline void glex::glVertexAttrib2fNV(GLuint  a, GLfloat  b, GLfloat  c) {
+	m_pglex->glVertexAttrib2fNV(a,b,c);
+}
+
+inline void glex::glVertexAttrib2fvNV(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib2fvNV(a,b);
+}
+
+inline void glex::glVertexAttrib2sNV(GLuint  a, GLshort  b, GLshort  c) {
+	m_pglex->glVertexAttrib2sNV(a,b,c);
+}
+
+inline void glex::glVertexAttrib2svNV(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib2svNV(a,b);
+}
+
+inline void glex::glVertexAttrib3dNV(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
+	m_pglex->glVertexAttrib3dNV(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3dvNV(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib3dvNV(a,b);
+}
+
+inline void glex::glVertexAttrib3fNV(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glVertexAttrib3fNV(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3fvNV(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib3fvNV(a,b);
+}
+
+inline void glex::glVertexAttrib3sNV(GLuint  a, GLshort  b, GLshort  c, GLshort  d) {
+	m_pglex->glVertexAttrib3sNV(a,b,c,d);
+}
+
+inline void glex::glVertexAttrib3svNV(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib3svNV(a,b);
+}
+
+inline void glex::glVertexAttrib4dNV(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
+	m_pglex->glVertexAttrib4dNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4dvNV(GLuint  a, const GLdouble *b) {
+	m_pglex->glVertexAttrib4dvNV(a,b);
+}
+
+inline void glex::glVertexAttrib4fNV(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glVertexAttrib4fNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4fvNV(GLuint  a, const GLfloat *b) {
+	m_pglex->glVertexAttrib4fvNV(a,b);
+}
+
+inline void glex::glVertexAttrib4sNV(GLuint  a, GLshort  b, GLshort  c, GLshort  d, GLshort  e) {
+	m_pglex->glVertexAttrib4sNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4svNV(GLuint  a, const GLshort *b) {
+	m_pglex->glVertexAttrib4svNV(a,b);
+}
+
+inline void glex::glVertexAttrib4ubNV(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e) {
+	m_pglex->glVertexAttrib4ubNV(a,b,c,d,e);
+}
+
+inline void glex::glVertexAttrib4ubvNV(GLuint  a, const GLubyte *b) {
+	m_pglex->glVertexAttrib4ubvNV(a,b);
+}
+
+inline void glex::glVertexAttribs1dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
+	m_pglex->glVertexAttribs1dvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs1fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glVertexAttribs1fvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs1svNV(GLuint  a, GLsizei  b, const GLshort *c) {
+	m_pglex->glVertexAttribs1svNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs2dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
+	m_pglex->glVertexAttribs2dvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs2fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glVertexAttribs2fvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs2svNV(GLuint  a, GLsizei  b, const GLshort *c) {
+	m_pglex->glVertexAttribs2svNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs3dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
+	m_pglex->glVertexAttribs3dvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs3fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glVertexAttribs3fvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs3svNV(GLuint  a, GLsizei  b, const GLshort *c) {
+	m_pglex->glVertexAttribs3svNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs4dvNV(GLuint  a, GLsizei  b, const GLdouble *c) {
+	m_pglex->glVertexAttribs4dvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs4fvNV(GLuint  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glVertexAttribs4fvNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs4svNV(GLuint  a, GLsizei  b, const GLshort *c) {
+	m_pglex->glVertexAttribs4svNV(a,b,c);
+}
+
+inline void glex::glVertexAttribs4ubvNV(GLuint  a, GLsizei  b, const GLubyte *c) {
+	m_pglex->glVertexAttribs4ubvNV(a,b,c);
 }
 
 inline void glex::glVertexAttribI1iEXT(GLuint  a, GLint  b) {
@@ -8520,7 +12025,7 @@ inline void glex::glVertexAttribI4usvEXT(GLuint  a, const GLushort *b) {
 	m_pglex->glVertexAttribI4usvEXT(a,b);
 }
 
-inline void glex::glVertexAttribIPointerEXT(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
+inline void glex::glVertexAttribIPointerEXT(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const void *e) {
 	m_pglex->glVertexAttribIPointerEXT(a,b,c,d,e);
 }
 
@@ -8530,1246 +12035,6 @@ inline void glex::glGetVertexAttribIivEXT(GLuint  a, GLenum  b, GLint *c) {
 
 inline void glex::glGetVertexAttribIuivEXT(GLuint  a, GLenum  b, GLuint *c) {
 	m_pglex->glGetVertexAttribIuivEXT(a,b,c);
-}
-
-inline void glex::glGetUniformuivEXT(GLuint  a, GLint  b, GLuint *c) {
-	m_pglex->glGetUniformuivEXT(a,b,c);
-}
-
-inline void glex::glBindFragDataLocationEXT(GLuint  a, GLuint  b, const GLchar *c) {
-	m_pglex->glBindFragDataLocationEXT(a,b,c);
-}
-
-inline GLint glex::glGetFragDataLocationEXT(GLuint  a, const GLchar *b) {
-	return m_pglex->glGetFragDataLocationEXT(a,b);
-}
-
-inline void glex::glUniform1uiEXT(GLint  a, GLuint  b) {
-	m_pglex->glUniform1uiEXT(a,b);
-}
-
-inline void glex::glUniform2uiEXT(GLint  a, GLuint  b, GLuint  c) {
-	m_pglex->glUniform2uiEXT(a,b,c);
-}
-
-inline void glex::glUniform3uiEXT(GLint  a, GLuint  b, GLuint  c, GLuint  d) {
-	m_pglex->glUniform3uiEXT(a,b,c,d);
-}
-
-inline void glex::glUniform4uiEXT(GLint  a, GLuint  b, GLuint  c, GLuint  d, GLuint  e) {
-	m_pglex->glUniform4uiEXT(a,b,c,d,e);
-}
-
-inline void glex::glUniform1uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
-	m_pglex->glUniform1uivEXT(a,b,c);
-}
-
-inline void glex::glUniform2uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
-	m_pglex->glUniform2uivEXT(a,b,c);
-}
-
-inline void glex::glUniform3uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
-	m_pglex->glUniform3uivEXT(a,b,c);
-}
-
-inline void glex::glUniform4uivEXT(GLint  a, GLsizei  b, const GLuint *c) {
-	m_pglex->glUniform4uivEXT(a,b,c);
-}
-
-inline void glex::glDrawArraysInstancedEXT(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glDrawArraysInstancedEXT(a,b,c,d);
-}
-
-inline void glex::glDrawElementsInstancedEXT(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLsizei  e) {
-	m_pglex->glDrawElementsInstancedEXT(a,b,c,d,e);
-}
-
-inline void glex::glTexBufferEXT(GLenum  a, GLenum  b, GLuint  c) {
-	m_pglex->glTexBufferEXT(a,b,c);
-}
-
-inline void glex::glDepthRangedNV(GLdouble  a, GLdouble  b) {
-	m_pglex->glDepthRangedNV(a,b);
-}
-
-inline void glex::glClearDepthdNV(GLdouble  a) {
-	m_pglex->glClearDepthdNV(a);
-}
-
-inline void glex::glDepthBoundsdNV(GLdouble  a, GLdouble  b) {
-	m_pglex->glDepthBoundsdNV(a,b);
-}
-
-inline void glex::glRenderbufferStorageMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
-	m_pglex->glRenderbufferStorageMultisampleCoverageNV(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramBufferParametersfvNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLfloat *e) {
-	m_pglex->glProgramBufferParametersfvNV(a,b,c,d,e);
-}
-
-inline void glex::glProgramBufferParametersIivNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLint *e) {
-	m_pglex->glProgramBufferParametersIivNV(a,b,c,d,e);
-}
-
-inline void glex::glProgramBufferParametersIuivNV(GLenum  a, GLuint  b, GLuint  c, GLsizei  d, const GLuint *e) {
-	m_pglex->glProgramBufferParametersIuivNV(a,b,c,d,e);
-}
-
-inline void glex::glColorMaskIndexedEXT(GLuint  a, GLboolean  b, GLboolean  c, GLboolean  d, GLboolean  e) {
-	m_pglex->glColorMaskIndexedEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetBooleanIndexedvEXT(GLenum  a, GLuint  b, GLboolean *c) {
-	m_pglex->glGetBooleanIndexedvEXT(a,b,c);
-}
-
-inline void glex::glGetIntegerIndexedvEXT(GLenum  a, GLuint  b, GLint *c) {
-	m_pglex->glGetIntegerIndexedvEXT(a,b,c);
-}
-
-inline void glex::glEnableIndexedEXT(GLenum  a, GLuint  b) {
-	m_pglex->glEnableIndexedEXT(a,b);
-}
-
-inline void glex::glDisableIndexedEXT(GLenum  a, GLuint  b) {
-	m_pglex->glDisableIndexedEXT(a,b);
-}
-
-inline GLboolean glex::glIsEnabledIndexedEXT(GLenum  a, GLuint  b) {
-	return m_pglex->glIsEnabledIndexedEXT(a,b);
-}
-
-inline void glex::glBeginTransformFeedbackNV(GLenum  a) {
-	m_pglex->glBeginTransformFeedbackNV(a);
-}
-
-inline void glex::glEndTransformFeedbackNV(void) {
-	m_pglex->glEndTransformFeedbackNV();
-}
-
-inline void glex::glTransformFeedbackAttribsNV(GLuint  a, const GLint *b, GLenum  c) {
-	m_pglex->glTransformFeedbackAttribsNV(a,b,c);
-}
-
-inline void glex::glBindBufferRangeNV(GLenum  a, GLuint  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
-	m_pglex->glBindBufferRangeNV(a,b,c,d,e);
-}
-
-inline void glex::glBindBufferOffsetNV(GLenum  a, GLuint  b, GLuint  c, GLintptr  d) {
-	m_pglex->glBindBufferOffsetNV(a,b,c,d);
-}
-
-inline void glex::glBindBufferBaseNV(GLenum  a, GLuint  b, GLuint  c) {
-	m_pglex->glBindBufferBaseNV(a,b,c);
-}
-
-inline void glex::glTransformFeedbackVaryingsNV(GLuint  a, GLsizei  b, const GLint *c, GLenum  d) {
-	m_pglex->glTransformFeedbackVaryingsNV(a,b,c,d);
-}
-
-inline void glex::glActiveVaryingNV(GLuint  a, const GLchar *b) {
-	m_pglex->glActiveVaryingNV(a,b);
-}
-
-inline GLint glex::glGetVaryingLocationNV(GLuint  a, const GLchar *b) {
-	return m_pglex->glGetVaryingLocationNV(a,b);
-}
-
-inline void glex::glGetActiveVaryingNV(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLsizei *e, GLenum *f, GLchar *g) {
-	m_pglex->glGetActiveVaryingNV(a,b,c,d,e,f,g);
-}
-
-inline void glex::glGetTransformFeedbackVaryingNV(GLuint  a, GLuint  b, GLint *c) {
-	m_pglex->glGetTransformFeedbackVaryingNV(a,b,c);
-}
-
-inline void glex::glTransformFeedbackStreamAttribsNV(GLsizei  a, const GLint *b, GLsizei  c, const GLint *d, GLenum  e) {
-	m_pglex->glTransformFeedbackStreamAttribsNV(a,b,c,d,e);
-}
-
-inline void glex::glUniformBufferEXT(GLuint  a, GLint  b, GLuint  c) {
-	m_pglex->glUniformBufferEXT(a,b,c);
-}
-
-inline GLint glex::glGetUniformBufferSizeEXT(GLuint  a, GLint  b) {
-	return m_pglex->glGetUniformBufferSizeEXT(a,b);
-}
-
-inline GLintptr glex::glGetUniformOffsetEXT(GLuint  a, GLint  b) {
-	return m_pglex->glGetUniformOffsetEXT(a,b);
-}
-
-inline void glex::glTexParameterIivEXT(GLenum  a, GLenum  b, const GLint *c) {
-	m_pglex->glTexParameterIivEXT(a,b,c);
-}
-
-inline void glex::glTexParameterIuivEXT(GLenum  a, GLenum  b, const GLuint *c) {
-	m_pglex->glTexParameterIuivEXT(a,b,c);
-}
-
-inline void glex::glGetTexParameterIivEXT(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetTexParameterIivEXT(a,b,c);
-}
-
-inline void glex::glGetTexParameterIuivEXT(GLenum  a, GLenum  b, GLuint *c) {
-	m_pglex->glGetTexParameterIuivEXT(a,b,c);
-}
-
-inline void glex::glClearColorIiEXT(GLint  a, GLint  b, GLint  c, GLint  d) {
-	m_pglex->glClearColorIiEXT(a,b,c,d);
-}
-
-inline void glex::glClearColorIuiEXT(GLuint  a, GLuint  b, GLuint  c, GLuint  d) {
-	m_pglex->glClearColorIuiEXT(a,b,c,d);
-}
-
-inline void glex::glFrameTerminatorGREMEDY(void) {
-	m_pglex->glFrameTerminatorGREMEDY();
-}
-
-inline void glex::glBeginConditionalRenderNV(GLuint  a, GLenum  b) {
-	m_pglex->glBeginConditionalRenderNV(a,b);
-}
-
-inline void glex::glEndConditionalRenderNV(void) {
-	m_pglex->glEndConditionalRenderNV();
-}
-
-inline void glex::glPresentFrameKeyedNV(GLuint  a, GLuint64EXT  b, GLuint  c, GLuint  d, GLenum  e, GLenum  f, GLuint  g, GLuint  h, GLenum  i, GLuint  j, GLuint  k) {
-	m_pglex->glPresentFrameKeyedNV(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline void glex::glPresentFrameDualFillNV(GLuint  a, GLuint64EXT  b, GLuint  c, GLuint  d, GLenum  e, GLenum  f, GLuint  g, GLenum  h, GLuint  i, GLenum  j, GLuint  k, GLenum  l, GLuint  m) {
-	m_pglex->glPresentFrameDualFillNV(a,b,c,d,e,f,g,h,i,j,k,l,m);
-}
-
-inline void glex::glGetVideoivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetVideoivNV(a,b,c);
-}
-
-inline void glex::glGetVideouivNV(GLuint  a, GLenum  b, GLuint *c) {
-	m_pglex->glGetVideouivNV(a,b,c);
-}
-
-inline void glex::glGetVideoi64vNV(GLuint  a, GLenum  b, GLint64EXT *c) {
-	m_pglex->glGetVideoi64vNV(a,b,c);
-}
-
-inline void glex::glGetVideoui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
-	m_pglex->glGetVideoui64vNV(a,b,c);
-}
-
-inline void glex::glBeginTransformFeedbackEXT(GLenum  a) {
-	m_pglex->glBeginTransformFeedbackEXT(a);
-}
-
-inline void glex::glEndTransformFeedbackEXT(void) {
-	m_pglex->glEndTransformFeedbackEXT();
-}
-
-inline void glex::glBindBufferRangeEXT(GLenum  a, GLuint  b, GLuint  c, GLintptr  d, GLsizeiptr  e) {
-	m_pglex->glBindBufferRangeEXT(a,b,c,d,e);
-}
-
-inline void glex::glBindBufferOffsetEXT(GLenum  a, GLuint  b, GLuint  c, GLintptr  d) {
-	m_pglex->glBindBufferOffsetEXT(a,b,c,d);
-}
-
-inline void glex::glBindBufferBaseEXT(GLenum  a, GLuint  b, GLuint  c) {
-	m_pglex->glBindBufferBaseEXT(a,b,c);
-}
-
-inline void glex::glTransformFeedbackVaryingsEXT(GLuint  a, GLsizei  b, const GLchar* *c, GLenum  d) {
-	m_pglex->glTransformFeedbackVaryingsEXT(a,b,c,d);
-}
-
-inline void glex::glGetTransformFeedbackVaryingEXT(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLsizei *e, GLenum *f, GLchar *g) {
-	m_pglex->glGetTransformFeedbackVaryingEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glClientAttribDefaultEXT(GLbitfield  a) {
-	m_pglex->glClientAttribDefaultEXT(a);
-}
-
-inline void glex::glPushClientAttribDefaultEXT(GLbitfield  a) {
-	m_pglex->glPushClientAttribDefaultEXT(a);
-}
-
-inline void glex::glMatrixLoadfEXT(GLenum  a, const GLfloat *b) {
-	m_pglex->glMatrixLoadfEXT(a,b);
-}
-
-inline void glex::glMatrixLoaddEXT(GLenum  a, const GLdouble *b) {
-	m_pglex->glMatrixLoaddEXT(a,b);
-}
-
-inline void glex::glMatrixMultfEXT(GLenum  a, const GLfloat *b) {
-	m_pglex->glMatrixMultfEXT(a,b);
-}
-
-inline void glex::glMatrixMultdEXT(GLenum  a, const GLdouble *b) {
-	m_pglex->glMatrixMultdEXT(a,b);
-}
-
-inline void glex::glMatrixLoadIdentityEXT(GLenum  a) {
-	m_pglex->glMatrixLoadIdentityEXT(a);
-}
-
-inline void glex::glMatrixRotatefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glMatrixRotatefEXT(a,b,c,d,e);
-}
-
-inline void glex::glMatrixRotatedEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glMatrixRotatedEXT(a,b,c,d,e);
-}
-
-inline void glex::glMatrixScalefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glMatrixScalefEXT(a,b,c,d);
-}
-
-inline void glex::glMatrixScaledEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glMatrixScaledEXT(a,b,c,d);
-}
-
-inline void glex::glMatrixTranslatefEXT(GLenum  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glMatrixTranslatefEXT(a,b,c,d);
-}
-
-inline void glex::glMatrixTranslatedEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glMatrixTranslatedEXT(a,b,c,d);
-}
-
-inline void glex::glMatrixFrustumEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
-	m_pglex->glMatrixFrustumEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glMatrixOrthoEXT(GLenum  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
-	m_pglex->glMatrixOrthoEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glMatrixPopEXT(GLenum  a) {
-	m_pglex->glMatrixPopEXT(a);
-}
-
-inline void glex::glMatrixPushEXT(GLenum  a) {
-	m_pglex->glMatrixPushEXT(a);
-}
-
-inline void glex::glMatrixLoadTransposefEXT(GLenum  a, const GLfloat *b) {
-	m_pglex->glMatrixLoadTransposefEXT(a,b);
-}
-
-inline void glex::glMatrixLoadTransposedEXT(GLenum  a, const GLdouble *b) {
-	m_pglex->glMatrixLoadTransposedEXT(a,b);
-}
-
-inline void glex::glMatrixMultTransposefEXT(GLenum  a, const GLfloat *b) {
-	m_pglex->glMatrixMultTransposefEXT(a,b);
-}
-
-inline void glex::glMatrixMultTransposedEXT(GLenum  a, const GLdouble *b) {
-	m_pglex->glMatrixMultTransposedEXT(a,b);
-}
-
-inline void glex::glTextureParameterfEXT(GLuint  a, GLenum  b, GLenum  c, GLfloat  d) {
-	m_pglex->glTextureParameterfEXT(a,b,c,d);
-}
-
-inline void glex::glTextureParameterfvEXT(GLuint  a, GLenum  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glTextureParameterfvEXT(a,b,c,d);
-}
-
-inline void glex::glTextureParameteriEXT(GLuint  a, GLenum  b, GLenum  c, GLint  d) {
-	m_pglex->glTextureParameteriEXT(a,b,c,d);
-}
-
-inline void glex::glTextureParameterivEXT(GLuint  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glTextureParameterivEXT(a,b,c,d);
-}
-
-inline void glex::glTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLenum  g, GLenum  h, const GLvoid *i) {
-	m_pglex->glTextureImage1DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const GLvoid *j) {
-	m_pglex->glTextureImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLenum  g, const GLvoid *h) {
-	m_pglex->glTextureSubImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLenum  i, const GLvoid *j) {
-	m_pglex->glTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCopyTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLint  h) {
-	m_pglex->glCopyTextureImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glCopyTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLint  i) {
-	m_pglex->glCopyTextureImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCopyTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g) {
-	m_pglex->glCopyTextureSubImage1DEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glCopyTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
-	m_pglex->glCopyTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glGetTextureImageEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLenum  e, GLvoid *f) {
-	m_pglex->glGetTextureImageEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glGetTextureParameterfvEXT(GLuint  a, GLenum  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetTextureParameterfvEXT(a,b,c,d);
-}
-
-inline void glex::glGetTextureParameterivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetTextureParameterivEXT(a,b,c,d);
-}
-
-inline void glex::glGetTextureLevelParameterfvEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLfloat *e) {
-	m_pglex->glGetTextureLevelParameterfvEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetTextureLevelParameterivEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLint *e) {
-	m_pglex->glGetTextureLevelParameterivEXT(a,b,c,d,e);
-}
-
-inline void glex::glTextureImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const GLvoid *k) {
-	m_pglex->glTextureImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline void glex::glTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLenum  k, const GLvoid *l) {
-	m_pglex->glTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
-}
-
-inline void glex::glCopyTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLsizei  i, GLsizei  j) {
-	m_pglex->glCopyTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glMultiTexParameterfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
-	m_pglex->glMultiTexParameterfEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexParameterfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glMultiTexParameterfvEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexParameteriEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
-	m_pglex->glMultiTexParameteriEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexParameterivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glMultiTexParameterivEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLenum  g, GLenum  h, const GLvoid *i) {
-	m_pglex->glMultiTexImage1DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLenum  h, GLenum  i, const GLvoid *j) {
-	m_pglex->glMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLenum  g, const GLvoid *h) {
-	m_pglex->glMultiTexSubImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLenum  i, const GLvoid *j) {
-	m_pglex->glMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCopyMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLint  h) {
-	m_pglex->glCopyMultiTexImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glCopyMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLint  i) {
-	m_pglex->glCopyMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCopyMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g) {
-	m_pglex->glCopyMultiTexSubImage1DEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glCopyMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLsizei  h, GLsizei  i) {
-	m_pglex->glCopyMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glGetMultiTexImageEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLenum  e, GLvoid *f) {
-	m_pglex->glGetMultiTexImageEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glGetMultiTexParameterfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetMultiTexParameterfvEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexParameterivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetMultiTexParameterivEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexLevelParameterfvEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLfloat *e) {
-	m_pglex->glGetMultiTexLevelParameterfvEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetMultiTexLevelParameterivEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLint *e) {
-	m_pglex->glGetMultiTexLevelParameterivEXT(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const GLvoid *k) {
-	m_pglex->glMultiTexImage3DEXT(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline void glex::glMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLenum  k, const GLvoid *l) {
-	m_pglex->glMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
-}
-
-inline void glex::glCopyMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLsizei  i, GLsizei  j) {
-	m_pglex->glCopyMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glBindMultiTextureEXT(GLenum  a, GLenum  b, GLuint  c) {
-	m_pglex->glBindMultiTextureEXT(a,b,c);
-}
-
-inline void glex::glEnableClientStateIndexedEXT(GLenum  a, GLuint  b) {
-	m_pglex->glEnableClientStateIndexedEXT(a,b);
-}
-
-inline void glex::glDisableClientStateIndexedEXT(GLenum  a, GLuint  b) {
-	m_pglex->glDisableClientStateIndexedEXT(a,b);
-}
-
-inline void glex::glMultiTexCoordPointerEXT(GLenum  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glMultiTexCoordPointerEXT(a,b,c,d,e);
-}
-
-inline void glex::glMultiTexEnvfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
-	m_pglex->glMultiTexEnvfEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexEnvfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glMultiTexEnvfvEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexEnviEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
-	m_pglex->glMultiTexEnviEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexEnvivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glMultiTexEnvivEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGendEXT(GLenum  a, GLenum  b, GLenum  c, GLdouble  d) {
-	m_pglex->glMultiTexGendEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGendvEXT(GLenum  a, GLenum  b, GLenum  c, const GLdouble *d) {
-	m_pglex->glMultiTexGendvEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGenfEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat  d) {
-	m_pglex->glMultiTexGenfEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGenfvEXT(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glMultiTexGenfvEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGeniEXT(GLenum  a, GLenum  b, GLenum  c, GLint  d) {
-	m_pglex->glMultiTexGeniEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexGenivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glMultiTexGenivEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexEnvfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetMultiTexEnvfvEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexEnvivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetMultiTexEnvivEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexGendvEXT(GLenum  a, GLenum  b, GLenum  c, GLdouble *d) {
-	m_pglex->glGetMultiTexGendvEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexGenfvEXT(GLenum  a, GLenum  b, GLenum  c, GLfloat *d) {
-	m_pglex->glGetMultiTexGenfvEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexGenivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetMultiTexGenivEXT(a,b,c,d);
-}
-
-inline void glex::glGetFloatIndexedvEXT(GLenum  a, GLuint  b, GLfloat *c) {
-	m_pglex->glGetFloatIndexedvEXT(a,b,c);
-}
-
-inline void glex::glGetDoubleIndexedvEXT(GLenum  a, GLuint  b, GLdouble *c) {
-	m_pglex->glGetDoubleIndexedvEXT(a,b,c);
-}
-
-inline void glex::glGetPointerIndexedvEXT(GLenum  a, GLuint  b, GLvoid* *c) {
-	m_pglex->glGetPointerIndexedvEXT(a,b,c);
-}
-
-inline void glex::glCompressedTextureImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLsizei  i, const GLvoid *j) {
-	m_pglex->glCompressedTextureImage3DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCompressedTextureImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const GLvoid *i) {
-	m_pglex->glCompressedTextureImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCompressedTextureImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLsizei  g, const GLvoid *h) {
-	m_pglex->glCompressedTextureImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glCompressedTextureSubImage3DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLsizei  k, const GLvoid *l) {
-	m_pglex->glCompressedTextureSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
-}
-
-inline void glex::glCompressedTextureSubImage2DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLsizei  i, const GLvoid *j) {
-	m_pglex->glCompressedTextureSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCompressedTextureSubImage1DEXT(GLuint  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLsizei  g, const GLvoid *h) {
-	m_pglex->glCompressedTextureSubImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glGetCompressedTextureImageEXT(GLuint  a, GLenum  b, GLint  c, GLvoid *d) {
-	m_pglex->glGetCompressedTextureImageEXT(a,b,c,d);
-}
-
-inline void glex::glCompressedMultiTexImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLsizei  i, const GLvoid *j) {
-	m_pglex->glCompressedMultiTexImage3DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCompressedMultiTexImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLsizei  f, GLint  g, GLsizei  h, const GLvoid *i) {
-	m_pglex->glCompressedMultiTexImage2DEXT(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glCompressedMultiTexImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLenum  d, GLsizei  e, GLint  f, GLsizei  g, const GLvoid *h) {
-	m_pglex->glCompressedMultiTexImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glCompressedMultiTexSubImage3DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLenum  j, GLsizei  k, const GLvoid *l) {
-	m_pglex->glCompressedMultiTexSubImage3DEXT(a,b,c,d,e,f,g,h,i,j,k,l);
-}
-
-inline void glex::glCompressedMultiTexSubImage2DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLsizei  f, GLsizei  g, GLenum  h, GLsizei  i, const GLvoid *j) {
-	m_pglex->glCompressedMultiTexSubImage2DEXT(a,b,c,d,e,f,g,h,i,j);
-}
-
-inline void glex::glCompressedMultiTexSubImage1DEXT(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e, GLenum  f, GLsizei  g, const GLvoid *h) {
-	m_pglex->glCompressedMultiTexSubImage1DEXT(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glGetCompressedMultiTexImageEXT(GLenum  a, GLenum  b, GLint  c, GLvoid *d) {
-	m_pglex->glGetCompressedMultiTexImageEXT(a,b,c,d);
-}
-
-inline void glex::glNamedProgramStringEXT(GLuint  a, GLenum  b, GLenum  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glNamedProgramStringEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedProgramLocalParameter4dEXT(GLuint  a, GLenum  b, GLuint  c, GLdouble  d, GLdouble  e, GLdouble  f, GLdouble  g) {
-	m_pglex->glNamedProgramLocalParameter4dEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glNamedProgramLocalParameter4dvEXT(GLuint  a, GLenum  b, GLuint  c, const GLdouble *d) {
-	m_pglex->glNamedProgramLocalParameter4dvEXT(a,b,c,d);
-}
-
-inline void glex::glNamedProgramLocalParameter4fEXT(GLuint  a, GLenum  b, GLuint  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
-	m_pglex->glNamedProgramLocalParameter4fEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glNamedProgramLocalParameter4fvEXT(GLuint  a, GLenum  b, GLuint  c, const GLfloat *d) {
-	m_pglex->glNamedProgramLocalParameter4fvEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedProgramLocalParameterdvEXT(GLuint  a, GLenum  b, GLuint  c, GLdouble *d) {
-	m_pglex->glGetNamedProgramLocalParameterdvEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedProgramLocalParameterfvEXT(GLuint  a, GLenum  b, GLuint  c, GLfloat *d) {
-	m_pglex->glGetNamedProgramLocalParameterfvEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedProgramivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetNamedProgramivEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedProgramStringEXT(GLuint  a, GLenum  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetNamedProgramStringEXT(a,b,c,d);
-}
-
-inline void glex::glNamedProgramLocalParameters4fvEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLfloat *e) {
-	m_pglex->glNamedProgramLocalParameters4fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedProgramLocalParameterI4iEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLint  e, GLint  f, GLint  g) {
-	m_pglex->glNamedProgramLocalParameterI4iEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glNamedProgramLocalParameterI4ivEXT(GLuint  a, GLenum  b, GLuint  c, const GLint *d) {
-	m_pglex->glNamedProgramLocalParameterI4ivEXT(a,b,c,d);
-}
-
-inline void glex::glNamedProgramLocalParametersI4ivEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLint *e) {
-	m_pglex->glNamedProgramLocalParametersI4ivEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedProgramLocalParameterI4uiEXT(GLuint  a, GLenum  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f, GLuint  g) {
-	m_pglex->glNamedProgramLocalParameterI4uiEXT(a,b,c,d,e,f,g);
-}
-
-inline void glex::glNamedProgramLocalParameterI4uivEXT(GLuint  a, GLenum  b, GLuint  c, const GLuint *d) {
-	m_pglex->glNamedProgramLocalParameterI4uivEXT(a,b,c,d);
-}
-
-inline void glex::glNamedProgramLocalParametersI4uivEXT(GLuint  a, GLenum  b, GLuint  c, GLsizei  d, const GLuint *e) {
-	m_pglex->glNamedProgramLocalParametersI4uivEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetNamedProgramLocalParameterIivEXT(GLuint  a, GLenum  b, GLuint  c, GLint *d) {
-	m_pglex->glGetNamedProgramLocalParameterIivEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedProgramLocalParameterIuivEXT(GLuint  a, GLenum  b, GLuint  c, GLuint *d) {
-	m_pglex->glGetNamedProgramLocalParameterIuivEXT(a,b,c,d);
-}
-
-inline void glex::glTextureParameterIivEXT(GLuint  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glTextureParameterIivEXT(a,b,c,d);
-}
-
-inline void glex::glTextureParameterIuivEXT(GLuint  a, GLenum  b, GLenum  c, const GLuint *d) {
-	m_pglex->glTextureParameterIuivEXT(a,b,c,d);
-}
-
-inline void glex::glGetTextureParameterIivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetTextureParameterIivEXT(a,b,c,d);
-}
-
-inline void glex::glGetTextureParameterIuivEXT(GLuint  a, GLenum  b, GLenum  c, GLuint *d) {
-	m_pglex->glGetTextureParameterIuivEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexParameterIivEXT(GLenum  a, GLenum  b, GLenum  c, const GLint *d) {
-	m_pglex->glMultiTexParameterIivEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexParameterIuivEXT(GLenum  a, GLenum  b, GLenum  c, const GLuint *d) {
-	m_pglex->glMultiTexParameterIuivEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexParameterIivEXT(GLenum  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetMultiTexParameterIivEXT(a,b,c,d);
-}
-
-inline void glex::glGetMultiTexParameterIuivEXT(GLenum  a, GLenum  b, GLenum  c, GLuint *d) {
-	m_pglex->glGetMultiTexParameterIuivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform1fEXT(GLuint  a, GLint  b, GLfloat  c) {
-	m_pglex->glProgramUniform1fEXT(a,b,c);
-}
-
-inline void glex::glProgramUniform2fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d) {
-	m_pglex->glProgramUniform2fEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d, GLfloat  e) {
-	m_pglex->glProgramUniform3fEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniform4fEXT(GLuint  a, GLint  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
-	m_pglex->glProgramUniform4fEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramUniform1iEXT(GLuint  a, GLint  b, GLint  c) {
-	m_pglex->glProgramUniform1iEXT(a,b,c);
-}
-
-inline void glex::glProgramUniform2iEXT(GLuint  a, GLint  b, GLint  c, GLint  d) {
-	m_pglex->glProgramUniform2iEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3iEXT(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e) {
-	m_pglex->glProgramUniform3iEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniform4iEXT(GLuint  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f) {
-	m_pglex->glProgramUniform4iEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramUniform1fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramUniform1fvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform2fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramUniform2fvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramUniform3fvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform4fvEXT(GLuint  a, GLint  b, GLsizei  c, const GLfloat *d) {
-	m_pglex->glProgramUniform4fvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform1ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramUniform1ivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform2ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramUniform2ivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramUniform3ivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform4ivEXT(GLuint  a, GLint  b, GLsizei  c, const GLint *d) {
-	m_pglex->glProgramUniform4ivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniformMatrix2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix2fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix3fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix4fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix2x3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix2x3fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3x2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix3x2fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix2x4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix2x4fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4x2fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix4x2fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3x4fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix3x4fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4x3fvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLfloat *e) {
-	m_pglex->glProgramUniformMatrix4x3fvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniform1uiEXT(GLuint  a, GLint  b, GLuint  c) {
-	m_pglex->glProgramUniform1uiEXT(a,b,c);
-}
-
-inline void glex::glProgramUniform2uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d) {
-	m_pglex->glProgramUniform2uiEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d, GLuint  e) {
-	m_pglex->glProgramUniform3uiEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniform4uiEXT(GLuint  a, GLint  b, GLuint  c, GLuint  d, GLuint  e, GLuint  f) {
-	m_pglex->glProgramUniform4uiEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramUniform1uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramUniform1uivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform2uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramUniform2uivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramUniform3uivEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform4uivEXT(GLuint  a, GLint  b, GLsizei  c, const GLuint *d) {
-	m_pglex->glProgramUniform4uivEXT(a,b,c,d);
-}
-
-inline void glex::glNamedBufferDataEXT(GLuint  a, GLsizeiptr  b, const GLvoid *c, GLenum  d) {
-	m_pglex->glNamedBufferDataEXT(a,b,c,d);
-}
-
-inline void glex::glNamedBufferSubDataEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, const GLvoid *d) {
-	m_pglex->glNamedBufferSubDataEXT(a,b,c,d);
-}
-
-inline GLvoid* glex::glMapNamedBufferEXT(GLuint  a, GLenum  b) {
-	return m_pglex->glMapNamedBufferEXT(a,b);
-}
-
-inline GLboolean glex::glUnmapNamedBufferEXT(GLuint  a) {
-	return m_pglex->glUnmapNamedBufferEXT(a);
-}
-
-inline GLvoid* glex::glMapNamedBufferRangeEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, GLbitfield  d) {
-	return m_pglex->glMapNamedBufferRangeEXT(a,b,c,d);
-}
-
-inline void glex::glFlushMappedNamedBufferRangeEXT(GLuint  a, GLintptr  b, GLsizeiptr  c) {
-	m_pglex->glFlushMappedNamedBufferRangeEXT(a,b,c);
-}
-
-inline void glex::glNamedCopyBufferSubDataEXT(GLuint  a, GLuint  b, GLintptr  c, GLintptr  d, GLsizeiptr  e) {
-	m_pglex->glNamedCopyBufferSubDataEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetNamedBufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetNamedBufferParameterivEXT(a,b,c);
-}
-
-inline void glex::glGetNamedBufferPointervEXT(GLuint  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetNamedBufferPointervEXT(a,b,c);
-}
-
-inline void glex::glGetNamedBufferSubDataEXT(GLuint  a, GLintptr  b, GLsizeiptr  c, GLvoid *d) {
-	m_pglex->glGetNamedBufferSubDataEXT(a,b,c,d);
-}
-
-inline void glex::glTextureBufferEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d) {
-	m_pglex->glTextureBufferEXT(a,b,c,d);
-}
-
-inline void glex::glMultiTexBufferEXT(GLenum  a, GLenum  b, GLenum  c, GLuint  d) {
-	m_pglex->glMultiTexBufferEXT(a,b,c,d);
-}
-
-inline void glex::glNamedRenderbufferStorageEXT(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d) {
-	m_pglex->glNamedRenderbufferStorageEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedRenderbufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetNamedRenderbufferParameterivEXT(a,b,c);
-}
-
-inline GLenum glex::glCheckNamedFramebufferStatusEXT(GLuint  a, GLenum  b) {
-	return m_pglex->glCheckNamedFramebufferStatusEXT(a,b);
-}
-
-inline void glex::glNamedFramebufferTexture1DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
-	m_pglex->glNamedFramebufferTexture1DEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedFramebufferTexture2DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e) {
-	m_pglex->glNamedFramebufferTexture2DEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedFramebufferTexture3DEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d, GLint  e, GLint  f) {
-	m_pglex->glNamedFramebufferTexture3DEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glNamedFramebufferRenderbufferEXT(GLuint  a, GLenum  b, GLenum  c, GLuint  d) {
-	m_pglex->glNamedFramebufferRenderbufferEXT(a,b,c,d);
-}
-
-inline void glex::glGetNamedFramebufferAttachmentParameterivEXT(GLuint  a, GLenum  b, GLenum  c, GLint *d) {
-	m_pglex->glGetNamedFramebufferAttachmentParameterivEXT(a,b,c,d);
-}
-
-inline void glex::glGenerateTextureMipmapEXT(GLuint  a, GLenum  b) {
-	m_pglex->glGenerateTextureMipmapEXT(a,b);
-}
-
-inline void glex::glGenerateMultiTexMipmapEXT(GLenum  a, GLenum  b) {
-	m_pglex->glGenerateMultiTexMipmapEXT(a,b);
-}
-
-inline void glex::glFramebufferDrawBufferEXT(GLuint  a, GLenum  b) {
-	m_pglex->glFramebufferDrawBufferEXT(a,b);
-}
-
-inline void glex::glFramebufferDrawBuffersEXT(GLuint  a, GLsizei  b, const GLenum *c) {
-	m_pglex->glFramebufferDrawBuffersEXT(a,b,c);
-}
-
-inline void glex::glFramebufferReadBufferEXT(GLuint  a, GLenum  b) {
-	m_pglex->glFramebufferReadBufferEXT(a,b);
-}
-
-inline void glex::glGetFramebufferParameterivEXT(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetFramebufferParameterivEXT(a,b,c);
-}
-
-inline void glex::glNamedRenderbufferStorageMultisampleEXT(GLuint  a, GLsizei  b, GLenum  c, GLsizei  d, GLsizei  e) {
-	m_pglex->glNamedRenderbufferStorageMultisampleEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedRenderbufferStorageMultisampleCoverageEXT(GLuint  a, GLsizei  b, GLsizei  c, GLenum  d, GLsizei  e, GLsizei  f) {
-	m_pglex->glNamedRenderbufferStorageMultisampleCoverageEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glNamedFramebufferTextureEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d) {
-	m_pglex->glNamedFramebufferTextureEXT(a,b,c,d);
-}
-
-inline void glex::glNamedFramebufferTextureLayerEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLint  e) {
-	m_pglex->glNamedFramebufferTextureLayerEXT(a,b,c,d,e);
-}
-
-inline void glex::glNamedFramebufferTextureFaceEXT(GLuint  a, GLenum  b, GLuint  c, GLint  d, GLenum  e) {
-	m_pglex->glNamedFramebufferTextureFaceEXT(a,b,c,d,e);
-}
-
-inline void glex::glTextureRenderbufferEXT(GLuint  a, GLenum  b, GLuint  c) {
-	m_pglex->glTextureRenderbufferEXT(a,b,c);
-}
-
-inline void glex::glMultiTexRenderbufferEXT(GLenum  a, GLenum  b, GLuint  c) {
-	m_pglex->glMultiTexRenderbufferEXT(a,b,c);
-}
-
-inline void glex::glProgramUniform1dEXT(GLuint  a, GLint  b, GLdouble  c) {
-	m_pglex->glProgramUniform1dEXT(a,b,c);
-}
-
-inline void glex::glProgramUniform2dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glProgramUniform2dEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glProgramUniform3dEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniform4dEXT(GLuint  a, GLint  b, GLdouble  c, GLdouble  d, GLdouble  e, GLdouble  f) {
-	m_pglex->glProgramUniform4dEXT(a,b,c,d,e,f);
-}
-
-inline void glex::glProgramUniform1dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
-	m_pglex->glProgramUniform1dvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform2dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
-	m_pglex->glProgramUniform2dvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform3dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
-	m_pglex->glProgramUniform3dvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniform4dvEXT(GLuint  a, GLint  b, GLsizei  c, const GLdouble *d) {
-	m_pglex->glProgramUniform4dvEXT(a,b,c,d);
-}
-
-inline void glex::glProgramUniformMatrix2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix2dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix3dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix4dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix2x3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix2x3dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix2x4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix2x4dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3x2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix3x2dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix3x4dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix3x4dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4x2dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix4x2dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glProgramUniformMatrix4x3dvEXT(GLuint  a, GLint  b, GLsizei  c, GLboolean  d, const GLdouble *e) {
-	m_pglex->glProgramUniformMatrix4x3dvEXT(a,b,c,d,e);
-}
-
-inline void glex::glGetMultisamplefvNV(GLenum  a, GLuint  b, GLfloat *c) {
-	m_pglex->glGetMultisamplefvNV(a,b,c);
-}
-
-inline void glex::glSampleMaskIndexedNV(GLuint  a, GLbitfield  b) {
-	m_pglex->glSampleMaskIndexedNV(a,b);
-}
-
-inline void glex::glTexRenderbufferNV(GLenum  a, GLuint  b) {
-	m_pglex->glTexRenderbufferNV(a,b);
-}
-
-inline void glex::glBindTransformFeedbackNV(GLenum  a, GLuint  b) {
-	m_pglex->glBindTransformFeedbackNV(a,b);
-}
-
-inline void glex::glDeleteTransformFeedbacksNV(GLsizei  a, const GLuint *b) {
-	m_pglex->glDeleteTransformFeedbacksNV(a,b);
-}
-
-inline void glex::glGenTransformFeedbacksNV(GLsizei  a, GLuint *b) {
-	m_pglex->glGenTransformFeedbacksNV(a,b);
-}
-
-inline GLboolean glex::glIsTransformFeedbackNV(GLuint  a) {
-	return m_pglex->glIsTransformFeedbackNV(a);
-}
-
-inline void glex::glPauseTransformFeedbackNV(void) {
-	m_pglex->glPauseTransformFeedbackNV();
-}
-
-inline void glex::glResumeTransformFeedbackNV(void) {
-	m_pglex->glResumeTransformFeedbackNV();
-}
-
-inline void glex::glDrawTransformFeedbackNV(GLenum  a, GLuint  b) {
-	m_pglex->glDrawTransformFeedbackNV(a,b);
-}
-
-inline void glex::glGetPerfMonitorGroupsAMD(GLint *a, GLsizei  b, GLuint *c) {
-	m_pglex->glGetPerfMonitorGroupsAMD(a,b,c);
-}
-
-inline void glex::glGetPerfMonitorCountersAMD(GLuint  a, GLint *b, GLint *c, GLsizei  d, GLuint *e) {
-	m_pglex->glGetPerfMonitorCountersAMD(a,b,c,d,e);
-}
-
-inline void glex::glGetPerfMonitorGroupStringAMD(GLuint  a, GLsizei  b, GLsizei *c, GLchar *d) {
-	m_pglex->glGetPerfMonitorGroupStringAMD(a,b,c,d);
-}
-
-inline void glex::glGetPerfMonitorCounterStringAMD(GLuint  a, GLuint  b, GLsizei  c, GLsizei *d, GLchar *e) {
-	m_pglex->glGetPerfMonitorCounterStringAMD(a,b,c,d,e);
-}
-
-inline void glex::glGetPerfMonitorCounterInfoAMD(GLuint  a, GLuint  b, GLenum  c, GLvoid *d) {
-	m_pglex->glGetPerfMonitorCounterInfoAMD(a,b,c,d);
-}
-
-inline void glex::glGenPerfMonitorsAMD(GLsizei  a, GLuint *b) {
-	m_pglex->glGenPerfMonitorsAMD(a,b);
-}
-
-inline void glex::glDeletePerfMonitorsAMD(GLsizei  a, GLuint *b) {
-	m_pglex->glDeletePerfMonitorsAMD(a,b);
-}
-
-inline void glex::glSelectPerfMonitorCountersAMD(GLuint  a, GLboolean  b, GLuint  c, GLint  d, GLuint *e) {
-	m_pglex->glSelectPerfMonitorCountersAMD(a,b,c,d,e);
-}
-
-inline void glex::glBeginPerfMonitorAMD(GLuint  a) {
-	m_pglex->glBeginPerfMonitorAMD(a);
-}
-
-inline void glex::glEndPerfMonitorAMD(GLuint  a) {
-	m_pglex->glEndPerfMonitorAMD(a);
-}
-
-inline void glex::glGetPerfMonitorCounterDataAMD(GLuint  a, GLenum  b, GLsizei  c, GLuint *d, GLint *e) {
-	m_pglex->glGetPerfMonitorCounterDataAMD(a,b,c,d,e);
-}
-
-inline void glex::glTessellationFactorAMD(GLfloat  a) {
-	m_pglex->glTessellationFactorAMD(a);
-}
-
-inline void glex::glTessellationModeAMD(GLenum  a) {
-	m_pglex->glTessellationModeAMD(a);
-}
-
-inline void glex::glProvokingVertexEXT(GLenum  a) {
-	m_pglex->glProvokingVertexEXT(a);
-}
-
-inline void glex::glBlendFuncIndexedAMD(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendFuncIndexedAMD(a,b,c);
-}
-
-inline void glex::glBlendFuncSeparateIndexedAMD(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
-	m_pglex->glBlendFuncSeparateIndexedAMD(a,b,c,d,e);
-}
-
-inline void glex::glBlendEquationIndexedAMD(GLuint  a, GLenum  b) {
-	m_pglex->glBlendEquationIndexedAMD(a,b);
-}
-
-inline void glex::glBlendEquationSeparateIndexedAMD(GLuint  a, GLenum  b, GLenum  c) {
-	m_pglex->glBlendEquationSeparateIndexedAMD(a,b,c);
-}
-
-inline void glex::glTextureRangeAPPLE(GLenum  a, GLsizei  b, const GLvoid *c) {
-	m_pglex->glTextureRangeAPPLE(a,b,c);
-}
-
-inline void glex::glGetTexParameterPointervAPPLE(GLenum  a, GLenum  b, GLvoid* *c) {
-	m_pglex->glGetTexParameterPointervAPPLE(a,b,c);
-}
-
-inline void glex::glEnableVertexAttribAPPLE(GLuint  a, GLenum  b) {
-	m_pglex->glEnableVertexAttribAPPLE(a,b);
-}
-
-inline void glex::glDisableVertexAttribAPPLE(GLuint  a, GLenum  b) {
-	m_pglex->glDisableVertexAttribAPPLE(a,b);
-}
-
-inline GLboolean glex::glIsVertexAttribEnabledAPPLE(GLuint  a, GLenum  b) {
-	return m_pglex->glIsVertexAttribEnabledAPPLE(a,b);
-}
-
-inline void glex::glMapVertexAttrib1dAPPLE(GLuint  a, GLuint  b, GLdouble  c, GLdouble  d, GLint  e, GLint  f, const GLdouble *g) {
-	m_pglex->glMapVertexAttrib1dAPPLE(a,b,c,d,e,f,g);
-}
-
-inline void glex::glMapVertexAttrib1fAPPLE(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d, GLint  e, GLint  f, const GLfloat *g) {
-	m_pglex->glMapVertexAttrib1fAPPLE(a,b,c,d,e,f,g);
-}
-
-inline void glex::glMapVertexAttrib2dAPPLE(GLuint  a, GLuint  b, GLdouble  c, GLdouble  d, GLint  e, GLint  f, GLdouble  g, GLdouble  h, GLint  i, GLint  j, const GLdouble *k) {
-	m_pglex->glMapVertexAttrib2dAPPLE(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline void glex::glMapVertexAttrib2fAPPLE(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d, GLint  e, GLint  f, GLfloat  g, GLfloat  h, GLint  i, GLint  j, const GLfloat *k) {
-	m_pglex->glMapVertexAttrib2fAPPLE(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline GLenum glex::glObjectPurgeableAPPLE(GLenum  a, GLuint  b, GLenum  c) {
-	return m_pglex->glObjectPurgeableAPPLE(a,b,c);
-}
-
-inline GLenum glex::glObjectUnpurgeableAPPLE(GLenum  a, GLuint  b, GLenum  c) {
-	return m_pglex->glObjectUnpurgeableAPPLE(a,b,c);
-}
-
-inline void glex::glGetObjectParameterivAPPLE(GLenum  a, GLuint  b, GLenum  c, GLint *d) {
-	m_pglex->glGetObjectParameterivAPPLE(a,b,c,d);
 }
 
 inline void glex::glBeginVideoCaptureNV(GLuint  a) {
@@ -9820,1236 +12085,556 @@ inline void glex::glVideoCaptureStreamParameterdvNV(GLuint  a, GLuint  b, GLenum
 	m_pglex->glVideoCaptureStreamParameterdvNV(a,b,c,d);
 }
 
-inline void glex::glCopyImageSubDataNV(GLuint  a, GLenum  b, GLint  c, GLint  d, GLint  e, GLint  f, GLuint  g, GLenum  h, GLint  i, GLint  j, GLint  k, GLint  l, GLsizei  m, GLsizei  n, GLsizei  o) {
-	m_pglex->glCopyImageSubDataNV(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
+inline void glex::glViewportSwizzleNV(GLuint  a, GLenum  b, GLenum  c, GLenum  d, GLenum  e) {
+	m_pglex->glViewportSwizzleNV(a,b,c,d,e);
 }
 
-inline void glex::glUseShaderProgramEXT(GLenum  a, GLuint  b) {
-	m_pglex->glUseShaderProgramEXT(a,b);
+inline void glex::glFramebufferTextureMultiviewOVR(GLenum  a, GLenum  b, GLuint  c, GLint  d, GLint  e, GLsizei  f) {
+	m_pglex->glFramebufferTextureMultiviewOVR(a,b,c,d,e,f);
 }
 
-inline void glex::glActiveProgramEXT(GLuint  a) {
-	m_pglex->glActiveProgramEXT(a);
+inline void glex::glHintPGI(GLenum  a, GLint  b) {
+	m_pglex->glHintPGI(a,b);
 }
 
-inline GLuint glex::glCreateShaderProgramEXT(GLenum  a, const GLchar *b) {
-	return m_pglex->glCreateShaderProgramEXT(a,b);
+inline void glex::glDetailTexFuncSGIS(GLenum  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glDetailTexFuncSGIS(a,b,c);
 }
 
-inline void glex::glMakeBufferResidentNV(GLenum  a, GLenum  b) {
-	m_pglex->glMakeBufferResidentNV(a,b);
+inline void glex::glGetDetailTexFuncSGIS(GLenum  a, GLfloat *b) {
+	m_pglex->glGetDetailTexFuncSGIS(a,b);
 }
 
-inline void glex::glMakeBufferNonResidentNV(GLenum  a) {
-	m_pglex->glMakeBufferNonResidentNV(a);
+inline void glex::glFogFuncSGIS(GLsizei  a, const GLfloat *b) {
+	m_pglex->glFogFuncSGIS(a,b);
 }
 
-inline GLboolean glex::glIsBufferResidentNV(GLenum  a) {
-	return m_pglex->glIsBufferResidentNV(a);
+inline void glex::glGetFogFuncSGIS(GLfloat *a) {
+	m_pglex->glGetFogFuncSGIS(a);
 }
 
-inline void glex::glMakeNamedBufferResidentNV(GLuint  a, GLenum  b) {
-	m_pglex->glMakeNamedBufferResidentNV(a,b);
+inline void glex::glSampleMaskSGIS(GLclampf  a, GLboolean  b) {
+	m_pglex->glSampleMaskSGIS(a,b);
 }
 
-inline void glex::glMakeNamedBufferNonResidentNV(GLuint  a) {
-	m_pglex->glMakeNamedBufferNonResidentNV(a);
+inline void glex::glSamplePatternSGIS(GLenum  a) {
+	m_pglex->glSamplePatternSGIS(a);
 }
 
-inline GLboolean glex::glIsNamedBufferResidentNV(GLuint  a) {
-	return m_pglex->glIsNamedBufferResidentNV(a);
+inline void glex::glPixelTexGenParameteriSGIS(GLenum  a, GLint  b) {
+	m_pglex->glPixelTexGenParameteriSGIS(a,b);
 }
 
-inline void glex::glGetBufferParameterui64vNV(GLenum  a, GLenum  b, GLuint64EXT *c) {
-	m_pglex->glGetBufferParameterui64vNV(a,b,c);
+inline void glex::glPixelTexGenParameterivSGIS(GLenum  a, const GLint *b) {
+	m_pglex->glPixelTexGenParameterivSGIS(a,b);
 }
 
-inline void glex::glGetNamedBufferParameterui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
-	m_pglex->glGetNamedBufferParameterui64vNV(a,b,c);
+inline void glex::glPixelTexGenParameterfSGIS(GLenum  a, GLfloat  b) {
+	m_pglex->glPixelTexGenParameterfSGIS(a,b);
 }
 
-inline void glex::glGetIntegerui64vNV(GLenum  a, GLuint64EXT *b) {
-	m_pglex->glGetIntegerui64vNV(a,b);
+inline void glex::glPixelTexGenParameterfvSGIS(GLenum  a, const GLfloat *b) {
+	m_pglex->glPixelTexGenParameterfvSGIS(a,b);
 }
 
-inline void glex::glUniformui64NV(GLint  a, GLuint64EXT  b) {
-	m_pglex->glUniformui64NV(a,b);
+inline void glex::glGetPixelTexGenParameterivSGIS(GLenum  a, GLint *b) {
+	m_pglex->glGetPixelTexGenParameterivSGIS(a,b);
 }
 
-inline void glex::glUniformui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
-	m_pglex->glUniformui64vNV(a,b,c);
+inline void glex::glGetPixelTexGenParameterfvSGIS(GLenum  a, GLfloat *b) {
+	m_pglex->glGetPixelTexGenParameterfvSGIS(a,b);
 }
 
-inline void glex::glGetUniformui64vNV(GLuint  a, GLint  b, GLuint64EXT *c) {
-	m_pglex->glGetUniformui64vNV(a,b,c);
+inline void glex::glPointParameterfSGIS(GLenum  a, GLfloat  b) {
+	m_pglex->glPointParameterfSGIS(a,b);
 }
 
-inline void glex::glProgramUniformui64NV(GLuint  a, GLint  b, GLuint64EXT  c) {
-	m_pglex->glProgramUniformui64NV(a,b,c);
+inline void glex::glPointParameterfvSGIS(GLenum  a, const GLfloat *b) {
+	m_pglex->glPointParameterfvSGIS(a,b);
 }
 
-inline void glex::glProgramUniformui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
-	m_pglex->glProgramUniformui64vNV(a,b,c,d);
+inline void glex::glSharpenTexFuncSGIS(GLenum  a, GLsizei  b, const GLfloat *c) {
+	m_pglex->glSharpenTexFuncSGIS(a,b,c);
 }
 
-inline void glex::glBufferAddressRangeNV(GLenum  a, GLuint  b, GLuint64EXT  c, GLsizeiptr  d) {
-	m_pglex->glBufferAddressRangeNV(a,b,c,d);
+inline void glex::glGetSharpenTexFuncSGIS(GLenum  a, GLfloat *b) {
+	m_pglex->glGetSharpenTexFuncSGIS(a,b);
 }
 
-inline void glex::glVertexFormatNV(GLint  a, GLenum  b, GLsizei  c) {
-	m_pglex->glVertexFormatNV(a,b,c);
+inline void glex::glTexImage4DSGIS(GLenum  a, GLint  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLsizei  g, GLint  h, GLenum  i, GLenum  j, const void *k) {
+	m_pglex->glTexImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glNormalFormatNV(GLenum  a, GLsizei  b) {
-	m_pglex->glNormalFormatNV(a,b);
+inline void glex::glTexSubImage4DSGIS(GLenum  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLsizei  g, GLsizei  h, GLsizei  i, GLsizei  j, GLenum  k, GLenum  l, const void *m) {
+	m_pglex->glTexSubImage4DSGIS(a,b,c,d,e,f,g,h,i,j,k,l,m);
 }
 
-inline void glex::glColorFormatNV(GLint  a, GLenum  b, GLsizei  c) {
-	m_pglex->glColorFormatNV(a,b,c);
+inline void glex::glTextureColorMaskSGIS(GLboolean  a, GLboolean  b, GLboolean  c, GLboolean  d) {
+	m_pglex->glTextureColorMaskSGIS(a,b,c,d);
 }
 
-inline void glex::glIndexFormatNV(GLenum  a, GLsizei  b) {
-	m_pglex->glIndexFormatNV(a,b);
+inline void glex::glGetTexFilterFuncSGIS(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetTexFilterFuncSGIS(a,b,c);
 }
 
-inline void glex::glTexCoordFormatNV(GLint  a, GLenum  b, GLsizei  c) {
-	m_pglex->glTexCoordFormatNV(a,b,c);
+inline void glex::glTexFilterFuncSGIS(GLenum  a, GLenum  b, GLsizei  c, const GLfloat *d) {
+	m_pglex->glTexFilterFuncSGIS(a,b,c,d);
 }
 
-inline void glex::glEdgeFlagFormatNV(GLsizei  a) {
-	m_pglex->glEdgeFlagFormatNV(a);
+inline void glex::glAsyncMarkerSGIX(GLuint  a) {
+	m_pglex->glAsyncMarkerSGIX(a);
 }
 
-inline void glex::glSecondaryColorFormatNV(GLint  a, GLenum  b, GLsizei  c) {
-	m_pglex->glSecondaryColorFormatNV(a,b,c);
+inline GLint glex::glFinishAsyncSGIX(GLuint *a) {
+	return m_pglex->glFinishAsyncSGIX(a);
 }
 
-inline void glex::glFogCoordFormatNV(GLenum  a, GLsizei  b) {
-	m_pglex->glFogCoordFormatNV(a,b);
+inline GLint glex::glPollAsyncSGIX(GLuint *a) {
+	return m_pglex->glPollAsyncSGIX(a);
 }
 
-inline void glex::glVertexAttribFormatNV(GLuint  a, GLint  b, GLenum  c, GLboolean  d, GLsizei  e) {
-	m_pglex->glVertexAttribFormatNV(a,b,c,d,e);
+inline GLuint glex::glGenAsyncMarkersSGIX(GLsizei  a) {
+	return m_pglex->glGenAsyncMarkersSGIX(a);
 }
 
-inline void glex::glVertexAttribIFormatNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d) {
-	m_pglex->glVertexAttribIFormatNV(a,b,c,d);
+inline void glex::glDeleteAsyncMarkersSGIX(GLuint  a, GLsizei  b) {
+	m_pglex->glDeleteAsyncMarkersSGIX(a,b);
 }
 
-inline void glex::glGetIntegerui64i_vNV(GLenum  a, GLuint  b, GLuint64EXT *c) {
-	m_pglex->glGetIntegerui64i_vNV(a,b,c);
+inline GLboolean glex::glIsAsyncMarkerSGIX(GLuint  a) {
+	return m_pglex->glIsAsyncMarkerSGIX(a);
 }
 
-inline void glex::glTextureBarrierNV(void) {
-	m_pglex->glTextureBarrierNV();
+inline void glex::glFlushRasterSGIX(void) {
+	m_pglex->glFlushRasterSGIX();
 }
 
-inline void glex::glBindImageTextureEXT(GLuint  a, GLuint  b, GLint  c, GLboolean  d, GLint  e, GLenum  f, GLint  g) {
-	m_pglex->glBindImageTextureEXT(a,b,c,d,e,f,g);
+inline void glex::glFragmentColorMaterialSGIX(GLenum  a, GLenum  b) {
+	m_pglex->glFragmentColorMaterialSGIX(a,b);
 }
 
-inline void glex::glMemoryBarrierEXT(GLbitfield  a) {
-	m_pglex->glMemoryBarrierEXT(a);
+inline void glex::glFragmentLightfSGIX(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glFragmentLightfSGIX(a,b,c);
 }
 
-inline void glex::glVertexAttribL1dEXT(GLuint  a, GLdouble  b) {
-	m_pglex->glVertexAttribL1dEXT(a,b);
+inline void glex::glFragmentLightfvSGIX(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glFragmentLightfvSGIX(a,b,c);
 }
 
-inline void glex::glVertexAttribL2dEXT(GLuint  a, GLdouble  b, GLdouble  c) {
-	m_pglex->glVertexAttribL2dEXT(a,b,c);
+inline void glex::glFragmentLightiSGIX(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glFragmentLightiSGIX(a,b,c);
 }
 
-inline void glex::glVertexAttribL3dEXT(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d) {
-	m_pglex->glVertexAttribL3dEXT(a,b,c,d);
+inline void glex::glFragmentLightivSGIX(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glFragmentLightivSGIX(a,b,c);
 }
 
-inline void glex::glVertexAttribL4dEXT(GLuint  a, GLdouble  b, GLdouble  c, GLdouble  d, GLdouble  e) {
-	m_pglex->glVertexAttribL4dEXT(a,b,c,d,e);
+inline void glex::glFragmentLightModelfSGIX(GLenum  a, GLfloat  b) {
+	m_pglex->glFragmentLightModelfSGIX(a,b);
 }
 
-inline void glex::glVertexAttribL1dvEXT(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttribL1dvEXT(a,b);
+inline void glex::glFragmentLightModelfvSGIX(GLenum  a, const GLfloat *b) {
+	m_pglex->glFragmentLightModelfvSGIX(a,b);
 }
 
-inline void glex::glVertexAttribL2dvEXT(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttribL2dvEXT(a,b);
+inline void glex::glFragmentLightModeliSGIX(GLenum  a, GLint  b) {
+	m_pglex->glFragmentLightModeliSGIX(a,b);
 }
 
-inline void glex::glVertexAttribL3dvEXT(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttribL3dvEXT(a,b);
+inline void glex::glFragmentLightModelivSGIX(GLenum  a, const GLint *b) {
+	m_pglex->glFragmentLightModelivSGIX(a,b);
 }
 
-inline void glex::glVertexAttribL4dvEXT(GLuint  a, const GLdouble *b) {
-	m_pglex->glVertexAttribL4dvEXT(a,b);
+inline void glex::glFragmentMaterialfSGIX(GLenum  a, GLenum  b, GLfloat  c) {
+	m_pglex->glFragmentMaterialfSGIX(a,b,c);
 }
 
-inline void glex::glVertexAttribLPointerEXT(GLuint  a, GLint  b, GLenum  c, GLsizei  d, const GLvoid *e) {
-	m_pglex->glVertexAttribLPointerEXT(a,b,c,d,e);
+inline void glex::glFragmentMaterialfvSGIX(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glFragmentMaterialfvSGIX(a,b,c);
 }
 
-inline void glex::glGetVertexAttribLdvEXT(GLuint  a, GLenum  b, GLdouble *c) {
-	m_pglex->glGetVertexAttribLdvEXT(a,b,c);
+inline void glex::glFragmentMaterialiSGIX(GLenum  a, GLenum  b, GLint  c) {
+	m_pglex->glFragmentMaterialiSGIX(a,b,c);
 }
 
-inline void glex::glVertexArrayVertexAttribLOffsetEXT(GLuint  a, GLuint  b, GLuint  c, GLint  d, GLenum  e, GLsizei  f, GLintptr  g) {
-	m_pglex->glVertexArrayVertexAttribLOffsetEXT(a,b,c,d,e,f,g);
+inline void glex::glFragmentMaterialivSGIX(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glFragmentMaterialivSGIX(a,b,c);
 }
 
-inline void glex::glProgramSubroutineParametersuivNV(GLenum  a, GLsizei  b, const GLuint *c) {
-	m_pglex->glProgramSubroutineParametersuivNV(a,b,c);
+inline void glex::glGetFragmentLightfvSGIX(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetFragmentLightfvSGIX(a,b,c);
 }
 
-inline void glex::glGetProgramSubroutineParameteruivNV(GLenum  a, GLuint  b, GLuint *c) {
-	m_pglex->glGetProgramSubroutineParameteruivNV(a,b,c);
+inline void glex::glGetFragmentLightivSGIX(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetFragmentLightivSGIX(a,b,c);
 }
 
-inline void glex::glUniform1i64NV(GLint  a, GLint64EXT  b) {
-	m_pglex->glUniform1i64NV(a,b);
+inline void glex::glGetFragmentMaterialfvSGIX(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetFragmentMaterialfvSGIX(a,b,c);
 }
 
-inline void glex::glUniform2i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c) {
-	m_pglex->glUniform2i64NV(a,b,c);
+inline void glex::glGetFragmentMaterialivSGIX(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetFragmentMaterialivSGIX(a,b,c);
 }
 
-inline void glex::glUniform3i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d) {
-	m_pglex->glUniform3i64NV(a,b,c,d);
+inline void glex::glLightEnviSGIX(GLenum  a, GLint  b) {
+	m_pglex->glLightEnviSGIX(a,b);
 }
 
-inline void glex::glUniform4i64NV(GLint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
-	m_pglex->glUniform4i64NV(a,b,c,d,e);
+inline void glex::glFrameZoomSGIX(GLint  a) {
+	m_pglex->glFrameZoomSGIX(a);
 }
 
-inline void glex::glUniform1i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
-	m_pglex->glUniform1i64vNV(a,b,c);
+inline void glex::glIglooInterfaceSGIX(GLenum  a, const void *b) {
+	m_pglex->glIglooInterfaceSGIX(a,b);
 }
 
-inline void glex::glUniform2i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
-	m_pglex->glUniform2i64vNV(a,b,c);
+inline GLint glex::glGetInstrumentsSGIX(void) {
+	return m_pglex->glGetInstrumentsSGIX();
 }
 
-inline void glex::glUniform3i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
-	m_pglex->glUniform3i64vNV(a,b,c);
+inline void glex::glInstrumentsBufferSGIX(GLsizei  a, GLint *b) {
+	m_pglex->glInstrumentsBufferSGIX(a,b);
 }
 
-inline void glex::glUniform4i64vNV(GLint  a, GLsizei  b, const GLint64EXT *c) {
-	m_pglex->glUniform4i64vNV(a,b,c);
+inline GLint glex::glPollInstrumentsSGIX(GLint *a) {
+	return m_pglex->glPollInstrumentsSGIX(a);
 }
 
-inline void glex::glUniform1ui64NV(GLint  a, GLuint64EXT  b) {
-	m_pglex->glUniform1ui64NV(a,b);
+inline void glex::glReadInstrumentsSGIX(GLint  a) {
+	m_pglex->glReadInstrumentsSGIX(a);
 }
 
-inline void glex::glUniform2ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c) {
-	m_pglex->glUniform2ui64NV(a,b,c);
+inline void glex::glStartInstrumentsSGIX(void) {
+	m_pglex->glStartInstrumentsSGIX();
 }
 
-inline void glex::glUniform3ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d) {
-	m_pglex->glUniform3ui64NV(a,b,c,d);
+inline void glex::glStopInstrumentsSGIX(GLint  a) {
+	m_pglex->glStopInstrumentsSGIX(a);
 }
 
-inline void glex::glUniform4ui64NV(GLint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
-	m_pglex->glUniform4ui64NV(a,b,c,d,e);
+inline void glex::glGetListParameterfvSGIX(GLuint  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetListParameterfvSGIX(a,b,c);
 }
 
-inline void glex::glUniform1ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
-	m_pglex->glUniform1ui64vNV(a,b,c);
+inline void glex::glGetListParameterivSGIX(GLuint  a, GLenum  b, GLint *c) {
+	m_pglex->glGetListParameterivSGIX(a,b,c);
 }
 
-inline void glex::glUniform2ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
-	m_pglex->glUniform2ui64vNV(a,b,c);
+inline void glex::glListParameterfSGIX(GLuint  a, GLenum  b, GLfloat  c) {
+	m_pglex->glListParameterfSGIX(a,b,c);
 }
 
-inline void glex::glUniform3ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
-	m_pglex->glUniform3ui64vNV(a,b,c);
+inline void glex::glListParameterfvSGIX(GLuint  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glListParameterfvSGIX(a,b,c);
 }
 
-inline void glex::glUniform4ui64vNV(GLint  a, GLsizei  b, const GLuint64EXT *c) {
-	m_pglex->glUniform4ui64vNV(a,b,c);
+inline void glex::glListParameteriSGIX(GLuint  a, GLenum  b, GLint  c) {
+	m_pglex->glListParameteriSGIX(a,b,c);
 }
 
-inline void glex::glGetUniformi64vNV(GLuint  a, GLint  b, GLint64EXT *c) {
-	m_pglex->glGetUniformi64vNV(a,b,c);
+inline void glex::glListParameterivSGIX(GLuint  a, GLenum  b, const GLint *c) {
+	m_pglex->glListParameterivSGIX(a,b,c);
 }
 
-inline void glex::glProgramUniform1i64NV(GLuint  a, GLint  b, GLint64EXT  c) {
-	m_pglex->glProgramUniform1i64NV(a,b,c);
+inline void glex::glPixelTexGenSGIX(GLenum  a) {
+	m_pglex->glPixelTexGenSGIX(a);
 }
 
-inline void glex::glProgramUniform2i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d) {
-	m_pglex->glProgramUniform2i64NV(a,b,c,d);
+inline void glex::glDeformationMap3dSGIX(GLenum  a, GLdouble  b, GLdouble  c, GLint  d, GLint  e, GLdouble  f, GLdouble  g, GLint  h, GLint  i, GLdouble  j, GLdouble  k, GLint  l, GLint  m, const GLdouble *n) {
+	m_pglex->glDeformationMap3dSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
 }
 
-inline void glex::glProgramUniform3i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
-	m_pglex->glProgramUniform3i64NV(a,b,c,d,e);
+inline void glex::glDeformationMap3fSGIX(GLenum  a, GLfloat  b, GLfloat  c, GLint  d, GLint  e, GLfloat  f, GLfloat  g, GLint  h, GLint  i, GLfloat  j, GLfloat  k, GLint  l, GLint  m, const GLfloat *n) {
+	m_pglex->glDeformationMap3fSGIX(a,b,c,d,e,f,g,h,i,j,k,l,m,n);
 }
 
-inline void glex::glProgramUniform4i64NV(GLuint  a, GLint  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e, GLint64EXT  f) {
-	m_pglex->glProgramUniform4i64NV(a,b,c,d,e,f);
+inline void glex::glDeformSGIX(GLbitfield  a) {
+	m_pglex->glDeformSGIX(a);
 }
 
-inline void glex::glProgramUniform1i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
-	m_pglex->glProgramUniform1i64vNV(a,b,c,d);
+inline void glex::glLoadIdentityDeformationMapSGIX(GLbitfield  a) {
+	m_pglex->glLoadIdentityDeformationMapSGIX(a);
 }
 
-inline void glex::glProgramUniform2i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
-	m_pglex->glProgramUniform2i64vNV(a,b,c,d);
+inline void glex::glReferencePlaneSGIX(const GLdouble *a) {
+	m_pglex->glReferencePlaneSGIX(a);
 }
 
-inline void glex::glProgramUniform3i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
-	m_pglex->glProgramUniform3i64vNV(a,b,c,d);
+inline void glex::glSpriteParameterfSGIX(GLenum  a, GLfloat  b) {
+	m_pglex->glSpriteParameterfSGIX(a,b);
 }
 
-inline void glex::glProgramUniform4i64vNV(GLuint  a, GLint  b, GLsizei  c, const GLint64EXT *d) {
-	m_pglex->glProgramUniform4i64vNV(a,b,c,d);
+inline void glex::glSpriteParameterfvSGIX(GLenum  a, const GLfloat *b) {
+	m_pglex->glSpriteParameterfvSGIX(a,b);
 }
 
-inline void glex::glProgramUniform1ui64NV(GLuint  a, GLint  b, GLuint64EXT  c) {
-	m_pglex->glProgramUniform1ui64NV(a,b,c);
+inline void glex::glSpriteParameteriSGIX(GLenum  a, GLint  b) {
+	m_pglex->glSpriteParameteriSGIX(a,b);
 }
 
-inline void glex::glProgramUniform2ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d) {
-	m_pglex->glProgramUniform2ui64NV(a,b,c,d);
+inline void glex::glSpriteParameterivSGIX(GLenum  a, const GLint *b) {
+	m_pglex->glSpriteParameterivSGIX(a,b);
 }
 
-inline void glex::glProgramUniform3ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
-	m_pglex->glProgramUniform3ui64NV(a,b,c,d,e);
+inline void glex::glTagSampleBufferSGIX(void) {
+	m_pglex->glTagSampleBufferSGIX();
 }
 
-inline void glex::glProgramUniform4ui64NV(GLuint  a, GLint  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e, GLuint64EXT  f) {
-	m_pglex->glProgramUniform4ui64NV(a,b,c,d,e,f);
+inline void glex::glColorTableSGI(GLenum  a, GLenum  b, GLsizei  c, GLenum  d, GLenum  e, const void *f) {
+	m_pglex->glColorTableSGI(a,b,c,d,e,f);
 }
 
-inline void glex::glProgramUniform1ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
-	m_pglex->glProgramUniform1ui64vNV(a,b,c,d);
+inline void glex::glColorTableParameterfvSGI(GLenum  a, GLenum  b, const GLfloat *c) {
+	m_pglex->glColorTableParameterfvSGI(a,b,c);
 }
 
-inline void glex::glProgramUniform2ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
-	m_pglex->glProgramUniform2ui64vNV(a,b,c,d);
+inline void glex::glColorTableParameterivSGI(GLenum  a, GLenum  b, const GLint *c) {
+	m_pglex->glColorTableParameterivSGI(a,b,c);
 }
 
-inline void glex::glProgramUniform3ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
-	m_pglex->glProgramUniform3ui64vNV(a,b,c,d);
+inline void glex::glCopyColorTableSGI(GLenum  a, GLenum  b, GLint  c, GLint  d, GLsizei  e) {
+	m_pglex->glCopyColorTableSGI(a,b,c,d,e);
 }
 
-inline void glex::glProgramUniform4ui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64EXT *d) {
-	m_pglex->glProgramUniform4ui64vNV(a,b,c,d);
+inline void glex::glGetColorTableSGI(GLenum  a, GLenum  b, GLenum  c, void *d) {
+	m_pglex->glGetColorTableSGI(a,b,c,d);
 }
 
-inline void glex::glVertexAttribL1i64NV(GLuint  a, GLint64EXT  b) {
-	m_pglex->glVertexAttribL1i64NV(a,b);
+inline void glex::glGetColorTableParameterfvSGI(GLenum  a, GLenum  b, GLfloat *c) {
+	m_pglex->glGetColorTableParameterfvSGI(a,b,c);
 }
 
-inline void glex::glVertexAttribL2i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c) {
-	m_pglex->glVertexAttribL2i64NV(a,b,c);
+inline void glex::glGetColorTableParameterivSGI(GLenum  a, GLenum  b, GLint *c) {
+	m_pglex->glGetColorTableParameterivSGI(a,b,c);
 }
 
-inline void glex::glVertexAttribL3i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d) {
-	m_pglex->glVertexAttribL3i64NV(a,b,c,d);
+inline void glex::glFinishTextureSUNX(void) {
+	m_pglex->glFinishTextureSUNX();
 }
 
-inline void glex::glVertexAttribL4i64NV(GLuint  a, GLint64EXT  b, GLint64EXT  c, GLint64EXT  d, GLint64EXT  e) {
-	m_pglex->glVertexAttribL4i64NV(a,b,c,d,e);
+inline void glex::glGlobalAlphaFactorbSUN(GLbyte  a) {
+	m_pglex->glGlobalAlphaFactorbSUN(a);
 }
 
-inline void glex::glVertexAttribL1i64vNV(GLuint  a, const GLint64EXT *b) {
-	m_pglex->glVertexAttribL1i64vNV(a,b);
+inline void glex::glGlobalAlphaFactorsSUN(GLshort  a) {
+	m_pglex->glGlobalAlphaFactorsSUN(a);
 }
 
-inline void glex::glVertexAttribL2i64vNV(GLuint  a, const GLint64EXT *b) {
-	m_pglex->glVertexAttribL2i64vNV(a,b);
+inline void glex::glGlobalAlphaFactoriSUN(GLint  a) {
+	m_pglex->glGlobalAlphaFactoriSUN(a);
 }
 
-inline void glex::glVertexAttribL3i64vNV(GLuint  a, const GLint64EXT *b) {
-	m_pglex->glVertexAttribL3i64vNV(a,b);
+inline void glex::glGlobalAlphaFactorfSUN(GLfloat  a) {
+	m_pglex->glGlobalAlphaFactorfSUN(a);
 }
 
-inline void glex::glVertexAttribL4i64vNV(GLuint  a, const GLint64EXT *b) {
-	m_pglex->glVertexAttribL4i64vNV(a,b);
+inline void glex::glGlobalAlphaFactordSUN(GLdouble  a) {
+	m_pglex->glGlobalAlphaFactordSUN(a);
 }
 
-inline void glex::glVertexAttribL1ui64NV(GLuint  a, GLuint64EXT  b) {
-	m_pglex->glVertexAttribL1ui64NV(a,b);
+inline void glex::glGlobalAlphaFactorubSUN(GLubyte  a) {
+	m_pglex->glGlobalAlphaFactorubSUN(a);
 }
 
-inline void glex::glVertexAttribL2ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c) {
-	m_pglex->glVertexAttribL2ui64NV(a,b,c);
+inline void glex::glGlobalAlphaFactorusSUN(GLushort  a) {
+	m_pglex->glGlobalAlphaFactorusSUN(a);
 }
 
-inline void glex::glVertexAttribL3ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d) {
-	m_pglex->glVertexAttribL3ui64NV(a,b,c,d);
+inline void glex::glGlobalAlphaFactoruiSUN(GLuint  a) {
+	m_pglex->glGlobalAlphaFactoruiSUN(a);
 }
 
-inline void glex::glVertexAttribL4ui64NV(GLuint  a, GLuint64EXT  b, GLuint64EXT  c, GLuint64EXT  d, GLuint64EXT  e) {
-	m_pglex->glVertexAttribL4ui64NV(a,b,c,d,e);
+inline void glex::glDrawMeshArraysSUN(GLenum  a, GLint  b, GLsizei  c, GLsizei  d) {
+	m_pglex->glDrawMeshArraysSUN(a,b,c,d);
 }
 
-inline void glex::glVertexAttribL1ui64vNV(GLuint  a, const GLuint64EXT *b) {
-	m_pglex->glVertexAttribL1ui64vNV(a,b);
+inline void glex::glReplacementCodeuiSUN(GLuint  a) {
+	m_pglex->glReplacementCodeuiSUN(a);
 }
 
-inline void glex::glVertexAttribL2ui64vNV(GLuint  a, const GLuint64EXT *b) {
-	m_pglex->glVertexAttribL2ui64vNV(a,b);
+inline void glex::glReplacementCodeusSUN(GLushort  a) {
+	m_pglex->glReplacementCodeusSUN(a);
 }
 
-inline void glex::glVertexAttribL3ui64vNV(GLuint  a, const GLuint64EXT *b) {
-	m_pglex->glVertexAttribL3ui64vNV(a,b);
+inline void glex::glReplacementCodeubSUN(GLubyte  a) {
+	m_pglex->glReplacementCodeubSUN(a);
 }
 
-inline void glex::glVertexAttribL4ui64vNV(GLuint  a, const GLuint64EXT *b) {
-	m_pglex->glVertexAttribL4ui64vNV(a,b);
+inline void glex::glReplacementCodeuivSUN(const GLuint *a) {
+	m_pglex->glReplacementCodeuivSUN(a);
 }
 
-inline void glex::glGetVertexAttribLi64vNV(GLuint  a, GLenum  b, GLint64EXT *c) {
-	m_pglex->glGetVertexAttribLi64vNV(a,b,c);
+inline void glex::glReplacementCodeusvSUN(const GLushort *a) {
+	m_pglex->glReplacementCodeusvSUN(a);
 }
 
-inline void glex::glGetVertexAttribLui64vNV(GLuint  a, GLenum  b, GLuint64EXT *c) {
-	m_pglex->glGetVertexAttribLui64vNV(a,b,c);
+inline void glex::glReplacementCodeubvSUN(const GLubyte *a) {
+	m_pglex->glReplacementCodeubvSUN(a);
 }
 
-inline void glex::glVertexAttribLFormatNV(GLuint  a, GLint  b, GLenum  c, GLsizei  d) {
-	m_pglex->glVertexAttribLFormatNV(a,b,c,d);
+inline void glex::glReplacementCodePointerSUN(GLenum  a, GLsizei  b, const void **c) {
+	m_pglex->glReplacementCodePointerSUN(a,b,c);
 }
 
-inline void glex::glGenNamesAMD(GLenum  a, GLuint  b, GLuint *c) {
-	m_pglex->glGenNamesAMD(a,b,c);
+inline void glex::glColor4ubVertex2fSUN(GLubyte  a, GLubyte  b, GLubyte  c, GLubyte  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glColor4ubVertex2fSUN(a,b,c,d,e,f);
 }
 
-inline void glex::glDeleteNamesAMD(GLenum  a, GLuint  b, const GLuint *c) {
-	m_pglex->glDeleteNamesAMD(a,b,c);
+inline void glex::glColor4ubVertex2fvSUN(const GLubyte *a, const GLfloat *b) {
+	m_pglex->glColor4ubVertex2fvSUN(a,b);
 }
 
-inline GLboolean glex::glIsNameAMD(GLenum  a, GLuint  b) {
-	return m_pglex->glIsNameAMD(a,b);
+inline void glex::glColor4ubVertex3fSUN(GLubyte  a, GLubyte  b, GLubyte  c, GLubyte  d, GLfloat  e, GLfloat  f, GLfloat  g) {
+	m_pglex->glColor4ubVertex3fSUN(a,b,c,d,e,f,g);
 }
 
-inline void glex::glDebugMessageEnableAMD(GLenum  a, GLenum  b, GLsizei  c, const GLuint *d, GLboolean  e) {
-	m_pglex->glDebugMessageEnableAMD(a,b,c,d,e);
+inline void glex::glColor4ubVertex3fvSUN(const GLubyte *a, const GLfloat *b) {
+	m_pglex->glColor4ubVertex3fvSUN(a,b);
 }
 
-inline void glex::glDebugMessageInsertAMD(GLenum  a, GLenum  b, GLuint  c, GLsizei  d, const GLchar *e) {
-	m_pglex->glDebugMessageInsertAMD(a,b,c,d,e);
+inline void glex::glColor3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glColor3fVertex3fSUN(a,b,c,d,e,f);
 }
 
-inline void glex::glDebugMessageCallbackAMD(GLDEBUGPROCAMD  a, GLvoid *b) {
-	m_pglex->glDebugMessageCallbackAMD(a,b);
+inline void glex::glColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	m_pglex->glColor3fVertex3fvSUN(a,b);
 }
 
-inline GLuint glex::glGetDebugMessageLogAMD(GLuint  a, GLsizei  b, GLenum *c, GLuint *d, GLuint *e, GLsizei *f, GLchar *g) {
-	return m_pglex->glGetDebugMessageLogAMD(a,b,c,d,e,f,g);
+inline void glex::glNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glNormal3fVertex3fSUN(a,b,c,d,e,f);
 }
 
-inline void glex::glVDPAUInitNV(const GLvoid *a, const GLvoid *b) {
-	m_pglex->glVDPAUInitNV(a,b);
+inline void glex::glNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	m_pglex->glNormal3fVertex3fvSUN(a,b);
 }
 
-inline void glex::glVDPAUFiniNV(void) {
-	m_pglex->glVDPAUFiniNV();
+inline void glex::glColor4fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j) {
+	m_pglex->glColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j);
 }
 
-inline GLvdpauSurfaceNV glex::glVDPAURegisterVideoSurfaceNV(const GLvoid *a, GLenum  b, GLsizei  c, const GLuint *d) {
-	return m_pglex->glVDPAURegisterVideoSurfaceNV(a,b,c,d);
+inline void glex::glColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glColor4fNormal3fVertex3fvSUN(a,b,c);
 }
 
-inline GLvdpauSurfaceNV glex::glVDPAURegisterOutputSurfaceNV(GLvoid *a, GLenum  b, GLsizei  c, const GLuint *d) {
-	return m_pglex->glVDPAURegisterOutputSurfaceNV(a,b,c,d);
+inline void glex::glTexCoord2fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e) {
+	m_pglex->glTexCoord2fVertex3fSUN(a,b,c,d,e);
 }
 
-inline void glex::glVDPAUIsSurfaceNV(GLvdpauSurfaceNV  a) {
-	m_pglex->glVDPAUIsSurfaceNV(a);
+inline void glex::glTexCoord2fVertex3fvSUN(const GLfloat *a, const GLfloat *b) {
+	m_pglex->glTexCoord2fVertex3fvSUN(a,b);
 }
 
-inline void glex::glVDPAUUnregisterSurfaceNV(GLvdpauSurfaceNV  a) {
-	m_pglex->glVDPAUUnregisterSurfaceNV(a);
+inline void glex::glTexCoord4fVertex4fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
+	m_pglex->glTexCoord4fVertex4fSUN(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glVDPAUGetSurfaceivNV(GLvdpauSurfaceNV  a, GLenum  b, GLsizei  c, GLsizei *d, GLint *e) {
-	m_pglex->glVDPAUGetSurfaceivNV(a,b,c,d,e);
+inline void glex::glTexCoord4fVertex4fvSUN(const GLfloat *a, const GLfloat *b) {
+	m_pglex->glTexCoord4fVertex4fvSUN(a,b);
 }
 
-inline void glex::glVDPAUSurfaceAccessNV(GLvdpauSurfaceNV  a, GLenum  b) {
-	m_pglex->glVDPAUSurfaceAccessNV(a,b);
+inline void glex::glTexCoord2fColor4ubVertex3fSUN(GLfloat  a, GLfloat  b, GLubyte  c, GLubyte  d, GLubyte  e, GLubyte  f, GLfloat  g, GLfloat  h, GLfloat  i) {
+	m_pglex->glTexCoord2fColor4ubVertex3fSUN(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glVDPAUMapSurfacesNV(GLsizei  a, const GLvdpauSurfaceNV *b) {
-	m_pglex->glVDPAUMapSurfacesNV(a,b);
+inline void glex::glTexCoord2fColor4ubVertex3fvSUN(const GLfloat *a, const GLubyte *b, const GLfloat *c) {
+	m_pglex->glTexCoord2fColor4ubVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glVDPAUUnmapSurfacesNV(GLsizei  a, const GLvdpauSurfaceNV *b) {
-	m_pglex->glVDPAUUnmapSurfacesNV(a,b);
+inline void glex::glTexCoord2fColor3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
+	m_pglex->glTexCoord2fColor3fVertex3fSUN(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glTexImage2DMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLboolean  g) {
-	m_pglex->glTexImage2DMultisampleCoverageNV(a,b,c,d,e,f,g);
+inline void glex::glTexCoord2fColor3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glTexCoord2fColor3fVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glTexImage3DMultisampleCoverageNV(GLenum  a, GLsizei  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
-	m_pglex->glTexImage3DMultisampleCoverageNV(a,b,c,d,e,f,g,h);
+inline void glex::glTexCoord2fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h) {
+	m_pglex->glTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h);
 }
 
-inline void glex::glTextureImage2DMultisampleNV(GLuint  a, GLenum  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLboolean  g) {
-	m_pglex->glTextureImage2DMultisampleNV(a,b,c,d,e,f,g);
+inline void glex::glTexCoord2fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glTexCoord2fNormal3fVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glTextureImage3DMultisampleNV(GLuint  a, GLenum  b, GLsizei  c, GLint  d, GLsizei  e, GLsizei  f, GLsizei  g, GLboolean  h) {
-	m_pglex->glTextureImage3DMultisampleNV(a,b,c,d,e,f,g,h);
+inline void glex::glTexCoord2fColor4fNormal3fVertex3fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l) {
+	m_pglex->glTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l);
 }
 
-inline void glex::glTextureImage2DMultisampleCoverageNV(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d, GLint  e, GLsizei  f, GLsizei  g, GLboolean  h) {
-	m_pglex->glTextureImage2DMultisampleCoverageNV(a,b,c,d,e,f,g,h);
+inline void glex::glTexCoord2fColor4fNormal3fVertex3fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	m_pglex->glTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d);
 }
 
-inline void glex::glTextureImage3DMultisampleCoverageNV(GLuint  a, GLenum  b, GLsizei  c, GLsizei  d, GLint  e, GLsizei  f, GLsizei  g, GLsizei  h, GLboolean  i) {
-	m_pglex->glTextureImage3DMultisampleCoverageNV(a,b,c,d,e,f,g,h,i);
+inline void glex::glTexCoord4fColor4fNormal3fVertex4fSUN(GLfloat  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l, GLfloat  m, GLfloat  n, GLfloat  o) {
+	m_pglex->glTexCoord4fColor4fNormal3fVertex4fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o);
 }
 
-inline void glex::glSetMultisamplefvAMD(GLenum  a, GLuint  b, const GLfloat *c) {
-	m_pglex->glSetMultisamplefvAMD(a,b,c);
+inline void glex::glTexCoord4fColor4fNormal3fVertex4fvSUN(const GLfloat *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	m_pglex->glTexCoord4fColor4fNormal3fVertex4fvSUN(a,b,c,d);
 }
 
-inline GLsync glex::glImportSyncEXT(GLenum  a, GLintptr  b, GLbitfield  c) {
-	return m_pglex->glImportSyncEXT(a,b,c);
+inline void glex::glReplacementCodeuiVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	m_pglex->glReplacementCodeuiVertex3fSUN(a,b,c,d);
 }
 
-inline void glex::glMultiDrawArraysIndirectAMD(GLenum  a, const GLvoid *b, GLsizei  c, GLsizei  d) {
-	m_pglex->glMultiDrawArraysIndirectAMD(a,b,c,d);
+inline void glex::glReplacementCodeuiVertex3fvSUN(const GLuint *a, const GLfloat *b) {
+	m_pglex->glReplacementCodeuiVertex3fvSUN(a,b);
 }
 
-inline void glex::glMultiDrawElementsIndirectAMD(GLenum  a, GLenum  b, const GLvoid *c, GLsizei  d, GLsizei  e) {
-	m_pglex->glMultiDrawElementsIndirectAMD(a,b,c,d,e);
+inline void glex::glReplacementCodeuiColor4ubVertex3fSUN(GLuint  a, GLubyte  b, GLubyte  c, GLubyte  d, GLubyte  e, GLfloat  f, GLfloat  g, GLfloat  h) {
+	m_pglex->glReplacementCodeuiColor4ubVertex3fSUN(a,b,c,d,e,f,g,h);
 }
 
-inline GLuint glex::glGenPathsNV(GLsizei  a) {
-	return m_pglex->glGenPathsNV(a);
+inline void glex::glReplacementCodeuiColor4ubVertex3fvSUN(const GLuint *a, const GLubyte *b, const GLfloat *c) {
+	m_pglex->glReplacementCodeuiColor4ubVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glDeletePathsNV(GLuint  a, GLsizei  b) {
-	m_pglex->glDeletePathsNV(a,b);
+inline void glex::glReplacementCodeuiColor3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
+	m_pglex->glReplacementCodeuiColor3fVertex3fSUN(a,b,c,d,e,f,g);
 }
 
-inline GLboolean glex::glIsPathNV(GLuint  a) {
-	return m_pglex->glIsPathNV(a);
+inline void glex::glReplacementCodeuiColor3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glReplacementCodeuiColor3fVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glPathCommandsNV(GLuint  a, GLsizei  b, const GLubyte *c, GLsizei  d, GLenum  e, const GLvoid *f) {
-	m_pglex->glPathCommandsNV(a,b,c,d,e,f);
+inline void glex::glReplacementCodeuiNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g) {
+	m_pglex->glReplacementCodeuiNormal3fVertex3fSUN(a,b,c,d,e,f,g);
 }
 
-inline void glex::glPathCoordsNV(GLuint  a, GLsizei  b, GLenum  c, const GLvoid *d) {
-	m_pglex->glPathCoordsNV(a,b,c,d);
+inline void glex::glReplacementCodeuiNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glReplacementCodeuiNormal3fVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glPathSubCommandsNV(GLuint  a, GLsizei  b, GLsizei  c, GLsizei  d, const GLubyte *e, GLsizei  f, GLenum  g, const GLvoid *h) {
-	m_pglex->glPathSubCommandsNV(a,b,c,d,e,f,g,h);
+inline void glex::glReplacementCodeuiColor4fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k) {
+	m_pglex->glReplacementCodeuiColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k);
 }
 
-inline void glex::glPathSubCoordsNV(GLuint  a, GLsizei  b, GLsizei  c, GLenum  d, const GLvoid *e) {
-	m_pglex->glPathSubCoordsNV(a,b,c,d,e);
+inline void glex::glReplacementCodeuiColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	m_pglex->glReplacementCodeuiColor4fNormal3fVertex3fvSUN(a,b,c,d);
 }
 
-inline void glex::glPathStringNV(GLuint  a, GLenum  b, GLsizei  c, const GLvoid *d) {
-	m_pglex->glPathStringNV(a,b,c,d);
+inline void glex::glReplacementCodeuiTexCoord2fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f) {
+	m_pglex->glReplacementCodeuiTexCoord2fVertex3fSUN(a,b,c,d,e,f);
 }
 
-inline void glex::glPathGlyphsNV(GLuint  a, GLenum  b, const GLvoid *c, GLbitfield  d, GLsizei  e, GLenum  f, const GLvoid *g, GLenum  h, GLuint  i, GLfloat  j) {
-	m_pglex->glPathGlyphsNV(a,b,c,d,e,f,g,h,i,j);
+inline void glex::glReplacementCodeuiTexCoord2fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c) {
+	m_pglex->glReplacementCodeuiTexCoord2fVertex3fvSUN(a,b,c);
 }
 
-inline void glex::glPathGlyphRangeNV(GLuint  a, GLenum  b, const GLvoid *c, GLbitfield  d, GLuint  e, GLsizei  f, GLenum  g, GLuint  h, GLfloat  i) {
-	m_pglex->glPathGlyphRangeNV(a,b,c,d,e,f,g,h,i);
+inline void glex::glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i) {
+	m_pglex->glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i);
 }
 
-inline void glex::glWeightPathsNV(GLuint  a, GLsizei  b, const GLuint *c, const GLfloat *d) {
-	m_pglex->glWeightPathsNV(a,b,c,d);
+inline void glex::glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d) {
+	m_pglex->glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(a,b,c,d);
 }
 
-inline void glex::glCopyPathNV(GLuint  a, GLuint  b) {
-	m_pglex->glCopyPathNV(a,b);
+inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint  a, GLfloat  b, GLfloat  c, GLfloat  d, GLfloat  e, GLfloat  f, GLfloat  g, GLfloat  h, GLfloat  i, GLfloat  j, GLfloat  k, GLfloat  l, GLfloat  m) {
+	m_pglex->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(a,b,c,d,e,f,g,h,i,j,k,l,m);
 }
 
-inline void glex::glInterpolatePathsNV(GLuint  a, GLuint  b, GLuint  c, GLfloat  d) {
-	m_pglex->glInterpolatePathsNV(a,b,c,d);
-}
-
-inline void glex::glTransformPathNV(GLuint  a, GLuint  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glTransformPathNV(a,b,c,d);
-}
-
-inline void glex::glPathParameterivNV(GLuint  a, GLenum  b, const GLint *c) {
-	m_pglex->glPathParameterivNV(a,b,c);
-}
-
-inline void glex::glPathParameteriNV(GLuint  a, GLenum  b, GLint  c) {
-	m_pglex->glPathParameteriNV(a,b,c);
-}
-
-inline void glex::glPathParameterfvNV(GLuint  a, GLenum  b, const GLfloat *c) {
-	m_pglex->glPathParameterfvNV(a,b,c);
-}
-
-inline void glex::glPathParameterfNV(GLuint  a, GLenum  b, GLfloat  c) {
-	m_pglex->glPathParameterfNV(a,b,c);
-}
-
-inline void glex::glPathDashArrayNV(GLuint  a, GLsizei  b, const GLfloat *c) {
-	m_pglex->glPathDashArrayNV(a,b,c);
-}
-
-inline void glex::glPathStencilFuncNV(GLenum  a, GLint  b, GLuint  c) {
-	m_pglex->glPathStencilFuncNV(a,b,c);
-}
-
-inline void glex::glPathStencilDepthOffsetNV(GLfloat  a, GLfloat  b) {
-	m_pglex->glPathStencilDepthOffsetNV(a,b);
-}
-
-inline void glex::glStencilFillPathNV(GLuint  a, GLenum  b, GLuint  c) {
-	m_pglex->glStencilFillPathNV(a,b,c);
-}
-
-inline void glex::glStencilStrokePathNV(GLuint  a, GLint  b, GLuint  c) {
-	m_pglex->glStencilStrokePathNV(a,b,c);
-}
-
-inline void glex::glStencilFillPathInstancedNV(GLsizei  a, GLenum  b, const GLvoid *c, GLuint  d, GLenum  e, GLuint  f, GLenum  g, const GLfloat *h) {
-	m_pglex->glStencilFillPathInstancedNV(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glStencilStrokePathInstancedNV(GLsizei  a, GLenum  b, const GLvoid *c, GLuint  d, GLint  e, GLuint  f, GLenum  g, const GLfloat *h) {
-	m_pglex->glStencilStrokePathInstancedNV(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glPathCoverDepthFuncNV(GLenum  a) {
-	m_pglex->glPathCoverDepthFuncNV(a);
-}
-
-inline void glex::glPathColorGenNV(GLenum  a, GLenum  b, GLenum  c, const GLfloat *d) {
-	m_pglex->glPathColorGenNV(a,b,c,d);
-}
-
-inline void glex::glPathTexGenNV(GLenum  a, GLenum  b, GLint  c, const GLfloat *d) {
-	m_pglex->glPathTexGenNV(a,b,c,d);
-}
-
-inline void glex::glPathFogGenNV(GLenum  a) {
-	m_pglex->glPathFogGenNV(a);
-}
-
-inline void glex::glCoverFillPathNV(GLuint  a, GLenum  b) {
-	m_pglex->glCoverFillPathNV(a,b);
-}
-
-inline void glex::glCoverStrokePathNV(GLuint  a, GLenum  b) {
-	m_pglex->glCoverStrokePathNV(a,b);
-}
-
-inline void glex::glCoverFillPathInstancedNV(GLsizei  a, GLenum  b, const GLvoid *c, GLuint  d, GLenum  e, GLenum  f, const GLfloat *g) {
-	m_pglex->glCoverFillPathInstancedNV(a,b,c,d,e,f,g);
-}
-
-inline void glex::glCoverStrokePathInstancedNV(GLsizei  a, GLenum  b, const GLvoid *c, GLuint  d, GLenum  e, GLenum  f, const GLfloat *g) {
-	m_pglex->glCoverStrokePathInstancedNV(a,b,c,d,e,f,g);
-}
-
-inline void glex::glGetPathParameterivNV(GLuint  a, GLenum  b, GLint *c) {
-	m_pglex->glGetPathParameterivNV(a,b,c);
-}
-
-inline void glex::glGetPathParameterfvNV(GLuint  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetPathParameterfvNV(a,b,c);
-}
-
-inline void glex::glGetPathCommandsNV(GLuint  a, GLubyte *b) {
-	m_pglex->glGetPathCommandsNV(a,b);
-}
-
-inline void glex::glGetPathCoordsNV(GLuint  a, GLfloat *b) {
-	m_pglex->glGetPathCoordsNV(a,b);
-}
-
-inline void glex::glGetPathDashArrayNV(GLuint  a, GLfloat *b) {
-	m_pglex->glGetPathDashArrayNV(a,b);
-}
-
-inline void glex::glGetPathMetricsNV(GLbitfield  a, GLsizei  b, GLenum  c, const GLvoid *d, GLuint  e, GLsizei  f, GLfloat *g) {
-	m_pglex->glGetPathMetricsNV(a,b,c,d,e,f,g);
-}
-
-inline void glex::glGetPathMetricRangeNV(GLbitfield  a, GLuint  b, GLsizei  c, GLsizei  d, GLfloat *e) {
-	m_pglex->glGetPathMetricRangeNV(a,b,c,d,e);
-}
-
-inline void glex::glGetPathSpacingNV(GLenum  a, GLsizei  b, GLenum  c, const GLvoid *d, GLuint  e, GLfloat  f, GLfloat  g, GLenum  h, GLfloat *i) {
-	m_pglex->glGetPathSpacingNV(a,b,c,d,e,f,g,h,i);
-}
-
-inline void glex::glGetPathColorGenivNV(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetPathColorGenivNV(a,b,c);
-}
-
-inline void glex::glGetPathColorGenfvNV(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetPathColorGenfvNV(a,b,c);
-}
-
-inline void glex::glGetPathTexGenivNV(GLenum  a, GLenum  b, GLint *c) {
-	m_pglex->glGetPathTexGenivNV(a,b,c);
-}
-
-inline void glex::glGetPathTexGenfvNV(GLenum  a, GLenum  b, GLfloat *c) {
-	m_pglex->glGetPathTexGenfvNV(a,b,c);
-}
-
-inline GLboolean glex::glIsPointInFillPathNV(GLuint  a, GLuint  b, GLfloat  c, GLfloat  d) {
-	return m_pglex->glIsPointInFillPathNV(a,b,c,d);
-}
-
-inline GLboolean glex::glIsPointInStrokePathNV(GLuint  a, GLfloat  b, GLfloat  c) {
-	return m_pglex->glIsPointInStrokePathNV(a,b,c);
-}
-
-inline GLfloat glex::glGetPathLengthNV(GLuint  a, GLsizei  b, GLsizei  c) {
-	return m_pglex->glGetPathLengthNV(a,b,c);
-}
-
-inline GLboolean glex::glPointAlongPathNV(GLuint  a, GLsizei  b, GLsizei  c, GLfloat  d, GLfloat *e, GLfloat *f, GLfloat *g, GLfloat *h) {
-	return m_pglex->glPointAlongPathNV(a,b,c,d,e,f,g,h);
-}
-
-inline void glex::glStencilOpValueAMD(GLenum  a, GLuint  b) {
-	m_pglex->glStencilOpValueAMD(a,b);
-}
-
-inline GLuint64 glex::glGetTextureHandleNV(GLuint  a) {
-	return m_pglex->glGetTextureHandleNV(a);
-}
-
-inline GLuint64 glex::glGetTextureSamplerHandleNV(GLuint  a, GLuint  b) {
-	return m_pglex->glGetTextureSamplerHandleNV(a,b);
-}
-
-inline void glex::glMakeTextureHandleResidentNV(GLuint64  a) {
-	m_pglex->glMakeTextureHandleResidentNV(a);
-}
-
-inline void glex::glMakeTextureHandleNonResidentNV(GLuint64  a) {
-	m_pglex->glMakeTextureHandleNonResidentNV(a);
-}
-
-inline GLuint64 glex::glGetImageHandleNV(GLuint  a, GLint  b, GLboolean  c, GLint  d, GLenum  e) {
-	return m_pglex->glGetImageHandleNV(a,b,c,d,e);
-}
-
-inline void glex::glMakeImageHandleResidentNV(GLuint64  a, GLenum  b) {
-	m_pglex->glMakeImageHandleResidentNV(a,b);
-}
-
-inline void glex::glMakeImageHandleNonResidentNV(GLuint64  a) {
-	m_pglex->glMakeImageHandleNonResidentNV(a);
-}
-
-inline void glex::glUniformHandleui64NV(GLint  a, GLuint64  b) {
-	m_pglex->glUniformHandleui64NV(a,b);
-}
-
-inline void glex::glUniformHandleui64vNV(GLint  a, GLsizei  b, const GLuint64 *c) {
-	m_pglex->glUniformHandleui64vNV(a,b,c);
-}
-
-inline void glex::glProgramUniformHandleui64NV(GLuint  a, GLint  b, GLuint64  c) {
-	m_pglex->glProgramUniformHandleui64NV(a,b,c);
-}
-
-inline void glex::glProgramUniformHandleui64vNV(GLuint  a, GLint  b, GLsizei  c, const GLuint64 *d) {
-	m_pglex->glProgramUniformHandleui64vNV(a,b,c,d);
-}
-
-inline GLboolean glex::glIsTextureHandleResidentNV(GLuint64  a) {
-	return m_pglex->glIsTextureHandleResidentNV(a);
-}
-
-inline GLboolean glex::glIsImageHandleResidentNV(GLuint64  a) {
-	return m_pglex->glIsImageHandleResidentNV(a);
-}
-
-inline void glex::glTexStorageSparseAMD(GLenum  a, GLenum  b, GLsizei  c, GLsizei  d, GLsizei  e, GLsizei  f, GLbitfield  g) {
-	m_pglex->glTexStorageSparseAMD(a,b,c,d,e,f,g);
-}
-
-inline void glex::glTextureStorageSparseAMD(GLuint  a, GLenum  b, GLenum  c, GLsizei  d, GLsizei  e, GLsizei  f, GLsizei  g, GLbitfield  h) {
-	m_pglex->glTextureStorageSparseAMD(a,b,c,d,e,f,g,h);
-}
-
-inline HANDLE glex::wglCreateBufferRegionARB(HDC  a, int  b, UINT  c) {
-	return m_pglex->wglCreateBufferRegionARB(a,b,c);
-}
-
-inline VOID glex::wglDeleteBufferRegionARB(HANDLE  a) {
-	m_pglex->wglDeleteBufferRegionARB(a);
-}
-
-inline BOOL glex::wglSaveBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e) {
-	return m_pglex->wglSaveBufferRegionARB(a,b,c,d,e);
-}
-
-inline BOOL glex::wglRestoreBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e, int  f, int  g) {
-	return m_pglex->wglRestoreBufferRegionARB(a,b,c,d,e,f,g);
-}
-
-inline const char * glex::wglGetExtensionsStringARB(HDC  a) {
-	return m_pglex->wglGetExtensionsStringARB(a);
-}
-
-inline BOOL glex::wglGetPixelFormatAttribivARB(HDC  a, int  b, int  c, UINT  d, const int *e, int *f) {
-	return m_pglex->wglGetPixelFormatAttribivARB(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglGetPixelFormatAttribfvARB(HDC  a, int  b, int  c, UINT  d, const int *e, FLOAT *f) {
-	return m_pglex->wglGetPixelFormatAttribfvARB(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglChoosePixelFormatARB(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
-	return m_pglex->wglChoosePixelFormatARB(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglMakeContextCurrentARB(HDC  a, HDC  b, HGLRC  c) {
-	return m_pglex->wglMakeContextCurrentARB(a,b,c);
-}
-
-inline HDC glex::wglGetCurrentReadDCARB(void) {
-	return m_pglex->wglGetCurrentReadDCARB();
-}
-
-inline HPBUFFERARB glex::wglCreatePbufferARB(HDC  a, int  b, int  c, int  d, const int *e) {
-	return m_pglex->wglCreatePbufferARB(a,b,c,d,e);
-}
-
-inline HDC glex::wglGetPbufferDCARB(HPBUFFERARB  a) {
-	return m_pglex->wglGetPbufferDCARB(a);
-}
-
-inline int glex::wglReleasePbufferDCARB(HPBUFFERARB  a, HDC  b) {
-	return m_pglex->wglReleasePbufferDCARB(a,b);
-}
-
-inline BOOL glex::wglDestroyPbufferARB(HPBUFFERARB  a) {
-	return m_pglex->wglDestroyPbufferARB(a);
-}
-
-inline BOOL glex::wglQueryPbufferARB(HPBUFFERARB  a, int  b, int *c) {
-	return m_pglex->wglQueryPbufferARB(a,b,c);
-}
-
-inline BOOL glex::wglBindTexImageARB(HPBUFFERARB  a, int  b) {
-	return m_pglex->wglBindTexImageARB(a,b);
-}
-
-inline BOOL glex::wglReleaseTexImageARB(HPBUFFERARB  a, int  b) {
-	return m_pglex->wglReleaseTexImageARB(a,b);
-}
-
-inline BOOL glex::wglSetPbufferAttribARB(HPBUFFERARB  a, const int *b) {
-	return m_pglex->wglSetPbufferAttribARB(a,b);
-}
-
-inline HGLRC glex::wglCreateContextAttribsARB(HDC  a, HGLRC  b, const int *c) {
-	return m_pglex->wglCreateContextAttribsARB(a,b,c);
-}
-
-inline GLboolean glex::wglCreateDisplayColorTableEXT(GLushort  a) {
-	return m_pglex->wglCreateDisplayColorTableEXT(a);
-}
-
-inline GLboolean glex::wglLoadDisplayColorTableEXT(const GLushort *a, GLuint  b) {
-	return m_pglex->wglLoadDisplayColorTableEXT(a,b);
-}
-
-inline GLboolean glex::wglBindDisplayColorTableEXT(GLushort  a) {
-	return m_pglex->wglBindDisplayColorTableEXT(a);
-}
-
-inline VOID glex::wglDestroyDisplayColorTableEXT(GLushort  a) {
-	m_pglex->wglDestroyDisplayColorTableEXT(a);
-}
-
-inline const char * glex::wglGetExtensionsStringEXT(void) {
-	return m_pglex->wglGetExtensionsStringEXT();
-}
-
-inline BOOL glex::wglMakeContextCurrentEXT(HDC  a, HDC  b, HGLRC  c) {
-	return m_pglex->wglMakeContextCurrentEXT(a,b,c);
-}
-
-inline HDC glex::wglGetCurrentReadDCEXT(void) {
-	return m_pglex->wglGetCurrentReadDCEXT();
-}
-
-inline HPBUFFEREXT glex::wglCreatePbufferEXT(HDC  a, int  b, int  c, int  d, const int *e) {
-	return m_pglex->wglCreatePbufferEXT(a,b,c,d,e);
-}
-
-inline HDC glex::wglGetPbufferDCEXT(HPBUFFEREXT  a) {
-	return m_pglex->wglGetPbufferDCEXT(a);
-}
-
-inline int glex::wglReleasePbufferDCEXT(HPBUFFEREXT  a, HDC  b) {
-	return m_pglex->wglReleasePbufferDCEXT(a,b);
-}
-
-inline BOOL glex::wglDestroyPbufferEXT(HPBUFFEREXT  a) {
-	return m_pglex->wglDestroyPbufferEXT(a);
-}
-
-inline BOOL glex::wglQueryPbufferEXT(HPBUFFEREXT  a, int  b, int *c) {
-	return m_pglex->wglQueryPbufferEXT(a,b,c);
-}
-
-inline BOOL glex::wglGetPixelFormatAttribivEXT(HDC  a, int  b, int  c, UINT  d, int *e, int *f) {
-	return m_pglex->wglGetPixelFormatAttribivEXT(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglGetPixelFormatAttribfvEXT(HDC  a, int  b, int  c, UINT  d, int *e, FLOAT *f) {
-	return m_pglex->wglGetPixelFormatAttribfvEXT(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglChoosePixelFormatEXT(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
-	return m_pglex->wglChoosePixelFormatEXT(a,b,c,d,e,f);
-}
-
-inline BOOL glex::wglSwapIntervalEXT(int  a) {
-	return m_pglex->wglSwapIntervalEXT(a);
-}
-
-inline int glex::wglGetSwapIntervalEXT(void) {
-	return m_pglex->wglGetSwapIntervalEXT();
-}
-
-inline void* glex::wglAllocateMemoryNV(GLsizei  a, GLfloat  b, GLfloat  c, GLfloat  d) {
-	return m_pglex->wglAllocateMemoryNV(a,b,c,d);
-}
-
-inline void glex::wglFreeMemoryNV(void *a) {
-	m_pglex->wglFreeMemoryNV(a);
-}
-
-inline BOOL glex::wglGetSyncValuesOML(HDC  a, INT64 *b, INT64 *c, INT64 *d) {
-	return m_pglex->wglGetSyncValuesOML(a,b,c,d);
-}
-
-inline BOOL glex::wglGetMscRateOML(HDC  a, INT32 *b, INT32 *c) {
-	return m_pglex->wglGetMscRateOML(a,b,c);
-}
-
-inline INT64 glex::wglSwapBuffersMscOML(HDC  a, INT64  b, INT64  c, INT64  d) {
-	return m_pglex->wglSwapBuffersMscOML(a,b,c,d);
-}
-
-inline INT64 glex::wglSwapLayerBuffersMscOML(HDC  a, int  b, INT64  c, INT64  d, INT64  e) {
-	return m_pglex->wglSwapLayerBuffersMscOML(a,b,c,d,e);
-}
-
-inline BOOL glex::wglWaitForMscOML(HDC  a, INT64  b, INT64  c, INT64  d, INT64 *e, INT64 *f, INT64 *g) {
-	return m_pglex->wglWaitForMscOML(a,b,c,d,e,f,g);
-}
-
-inline BOOL glex::wglWaitForSbcOML(HDC  a, INT64  b, INT64 *c, INT64 *d, INT64 *e) {
-	return m_pglex->wglWaitForSbcOML(a,b,c,d,e);
-}
-
-inline BOOL glex::wglGetDigitalVideoParametersI3D(HDC  a, int  b, int *c) {
-	return m_pglex->wglGetDigitalVideoParametersI3D(a,b,c);
-}
-
-inline BOOL glex::wglSetDigitalVideoParametersI3D(HDC  a, int  b, const int *c) {
-	return m_pglex->wglSetDigitalVideoParametersI3D(a,b,c);
-}
-
-inline BOOL glex::wglGetGammaTableParametersI3D(HDC  a, int  b, int *c) {
-	return m_pglex->wglGetGammaTableParametersI3D(a,b,c);
-}
-
-inline BOOL glex::wglSetGammaTableParametersI3D(HDC  a, int  b, const int *c) {
-	return m_pglex->wglSetGammaTableParametersI3D(a,b,c);
-}
-
-inline BOOL glex::wglGetGammaTableI3D(HDC  a, int  b, USHORT *c, USHORT *d, USHORT *e) {
-	return m_pglex->wglGetGammaTableI3D(a,b,c,d,e);
-}
-
-inline BOOL glex::wglSetGammaTableI3D(HDC  a, int  b, const USHORT *c, const USHORT *d, const USHORT *e) {
-	return m_pglex->wglSetGammaTableI3D(a,b,c,d,e);
-}
-
-inline BOOL glex::wglEnableGenlockI3D(HDC  a) {
-	return m_pglex->wglEnableGenlockI3D(a);
-}
-
-inline BOOL glex::wglDisableGenlockI3D(HDC  a) {
-	return m_pglex->wglDisableGenlockI3D(a);
-}
-
-inline BOOL glex::wglIsEnabledGenlockI3D(HDC  a, BOOL *b) {
-	return m_pglex->wglIsEnabledGenlockI3D(a,b);
-}
-
-inline BOOL glex::wglGenlockSourceI3D(HDC  a, UINT  b) {
-	return m_pglex->wglGenlockSourceI3D(a,b);
-}
-
-inline BOOL glex::wglGetGenlockSourceI3D(HDC  a, UINT *b) {
-	return m_pglex->wglGetGenlockSourceI3D(a,b);
-}
-
-inline BOOL glex::wglGenlockSourceEdgeI3D(HDC  a, UINT  b) {
-	return m_pglex->wglGenlockSourceEdgeI3D(a,b);
-}
-
-inline BOOL glex::wglGetGenlockSourceEdgeI3D(HDC  a, UINT *b) {
-	return m_pglex->wglGetGenlockSourceEdgeI3D(a,b);
-}
-
-inline BOOL glex::wglGenlockSampleRateI3D(HDC  a, UINT  b) {
-	return m_pglex->wglGenlockSampleRateI3D(a,b);
-}
-
-inline BOOL glex::wglGetGenlockSampleRateI3D(HDC  a, UINT *b) {
-	return m_pglex->wglGetGenlockSampleRateI3D(a,b);
-}
-
-inline BOOL glex::wglGenlockSourceDelayI3D(HDC  a, UINT  b) {
-	return m_pglex->wglGenlockSourceDelayI3D(a,b);
-}
-
-inline BOOL glex::wglGetGenlockSourceDelayI3D(HDC  a, UINT *b) {
-	return m_pglex->wglGetGenlockSourceDelayI3D(a,b);
-}
-
-inline BOOL glex::wglQueryGenlockMaxSourceDelayI3D(HDC  a, UINT *b, UINT *c) {
-	return m_pglex->wglQueryGenlockMaxSourceDelayI3D(a,b,c);
-}
-
-inline LPVOID glex::wglCreateImageBufferI3D(HDC  a, DWORD  b, UINT  c) {
-	return m_pglex->wglCreateImageBufferI3D(a,b,c);
-}
-
-inline BOOL glex::wglDestroyImageBufferI3D(HDC  a, LPVOID  b) {
-	return m_pglex->wglDestroyImageBufferI3D(a,b);
-}
-
-inline BOOL glex::wglAssociateImageBufferEventsI3D(HDC  a, const HANDLE *b, const LPVOID *c, const DWORD *d, UINT  e) {
-	return m_pglex->wglAssociateImageBufferEventsI3D(a,b,c,d,e);
-}
-
-inline BOOL glex::wglReleaseImageBufferEventsI3D(HDC  a, const LPVOID *b, UINT  c) {
-	return m_pglex->wglReleaseImageBufferEventsI3D(a,b,c);
-}
-
-inline BOOL glex::wglEnableFrameLockI3D(void) {
-	return m_pglex->wglEnableFrameLockI3D();
-}
-
-inline BOOL glex::wglDisableFrameLockI3D(void) {
-	return m_pglex->wglDisableFrameLockI3D();
-}
-
-inline BOOL glex::wglIsEnabledFrameLockI3D(BOOL *a) {
-	return m_pglex->wglIsEnabledFrameLockI3D(a);
-}
-
-inline BOOL glex::wglQueryFrameLockMasterI3D(BOOL *a) {
-	return m_pglex->wglQueryFrameLockMasterI3D(a);
-}
-
-inline BOOL glex::wglGetFrameUsageI3D(float *a) {
-	return m_pglex->wglGetFrameUsageI3D(a);
-}
-
-inline BOOL glex::wglBeginFrameTrackingI3D(void) {
-	return m_pglex->wglBeginFrameTrackingI3D();
-}
-
-inline BOOL glex::wglEndFrameTrackingI3D(void) {
-	return m_pglex->wglEndFrameTrackingI3D();
-}
-
-inline BOOL glex::wglQueryFrameTrackingI3D(DWORD *a, DWORD *b, float *c) {
-	return m_pglex->wglQueryFrameTrackingI3D(a,b,c);
-}
-
-inline BOOL glex::wglSetStereoEmitterState3DL(HDC  a, UINT  b) {
-	return m_pglex->wglSetStereoEmitterState3DL(a,b);
-}
-
-inline int glex::wglEnumerateVideoDevicesNV(HDC  a, HVIDEOOUTPUTDEVICENV *b) {
-	return m_pglex->wglEnumerateVideoDevicesNV(a,b);
-}
-
-inline BOOL glex::wglBindVideoDeviceNV(HDC  a, unsigned int  b, HVIDEOOUTPUTDEVICENV  c, const int *d) {
-	return m_pglex->wglBindVideoDeviceNV(a,b,c,d);
-}
-
-inline BOOL glex::wglQueryCurrentContextNV(int  a, int *b) {
-	return m_pglex->wglQueryCurrentContextNV(a,b);
-}
-
-inline BOOL glex::wglGetVideoDeviceNV(HDC  a, int  b, HPVIDEODEV *c) {
-	return m_pglex->wglGetVideoDeviceNV(a,b,c);
-}
-
-inline BOOL glex::wglReleaseVideoDeviceNV(HPVIDEODEV  a) {
-	return m_pglex->wglReleaseVideoDeviceNV(a);
-}
-
-inline BOOL glex::wglBindVideoImageNV(HPVIDEODEV  a, HPBUFFERARB  b, int  c) {
-	return m_pglex->wglBindVideoImageNV(a,b,c);
-}
-
-inline BOOL glex::wglReleaseVideoImageNV(HPBUFFERARB  a, int  b) {
-	return m_pglex->wglReleaseVideoImageNV(a,b);
-}
-
-inline BOOL glex::wglSendPbufferToVideoNV(HPBUFFERARB  a, int  b, unsigned long *c, BOOL  d) {
-	return m_pglex->wglSendPbufferToVideoNV(a,b,c,d);
-}
-
-inline BOOL glex::wglGetVideoInfoNV(HPVIDEODEV  a, unsigned long *b, unsigned long *c) {
-	return m_pglex->wglGetVideoInfoNV(a,b,c);
-}
-
-inline BOOL glex::wglJoinSwapGroupNV(HDC  a, GLuint  b) {
-	return m_pglex->wglJoinSwapGroupNV(a,b);
-}
-
-inline BOOL glex::wglBindSwapBarrierNV(GLuint  a, GLuint  b) {
-	return m_pglex->wglBindSwapBarrierNV(a,b);
-}
-
-inline BOOL glex::wglQuerySwapGroupNV(HDC  a, GLuint *b, GLuint *c) {
-	return m_pglex->wglQuerySwapGroupNV(a,b,c);
-}
-
-inline BOOL glex::wglQueryMaxSwapGroupsNV(HDC  a, GLuint *b, GLuint *c) {
-	return m_pglex->wglQueryMaxSwapGroupsNV(a,b,c);
-}
-
-inline BOOL glex::wglQueryFrameCountNV(HDC  a, GLuint *b) {
-	return m_pglex->wglQueryFrameCountNV(a,b);
-}
-
-inline BOOL glex::wglResetFrameCountNV(HDC  a) {
-	return m_pglex->wglResetFrameCountNV(a);
-}
-
-inline BOOL glex::wglEnumGpusNV(UINT  a, HGPUNV *b) {
-	return m_pglex->wglEnumGpusNV(a,b);
-}
-
-inline BOOL glex::wglEnumGpuDevicesNV(HGPUNV  a, UINT  b, PGPU_DEVICE  c) {
-	return m_pglex->wglEnumGpuDevicesNV(a,b,c);
-}
-
-inline HDC glex::wglCreateAffinityDCNV(const HGPUNV *a) {
-	return m_pglex->wglCreateAffinityDCNV(a);
-}
-
-inline BOOL glex::wglEnumGpusFromAffinityDCNV(HDC  a, UINT  b, HGPUNV *c) {
-	return m_pglex->wglEnumGpusFromAffinityDCNV(a,b,c);
-}
-
-inline BOOL glex::wglDeleteDCNV(HDC  a) {
-	return m_pglex->wglDeleteDCNV(a);
-}
-
-inline UINT glex::wglGetGPUIDsAMD(UINT  a, UINT *b) {
-	return m_pglex->wglGetGPUIDsAMD(a,b);
-}
-
-inline INT glex::wglGetGPUInfoAMD(UINT  a, int  b, GLenum  c, UINT  d, void *e) {
-	return m_pglex->wglGetGPUInfoAMD(a,b,c,d,e);
-}
-
-inline UINT glex::wglGetContextGPUIDAMD(HGLRC  a) {
-	return m_pglex->wglGetContextGPUIDAMD(a);
-}
-
-inline HGLRC glex::wglCreateAssociatedContextAMD(UINT  a) {
-	return m_pglex->wglCreateAssociatedContextAMD(a);
-}
-
-inline HGLRC glex::wglCreateAssociatedContextAttribsAMD(UINT  a, HGLRC  b, const int *c) {
-	return m_pglex->wglCreateAssociatedContextAttribsAMD(a,b,c);
-}
-
-inline BOOL glex::wglDeleteAssociatedContextAMD(HGLRC  a) {
-	return m_pglex->wglDeleteAssociatedContextAMD(a);
-}
-
-inline BOOL glex::wglMakeAssociatedContextCurrentAMD(HGLRC  a) {
-	return m_pglex->wglMakeAssociatedContextCurrentAMD(a);
-}
-
-inline HGLRC glex::wglGetCurrentAssociatedContextAMD(void) {
-	return m_pglex->wglGetCurrentAssociatedContextAMD();
-}
-
-inline VOID glex::wglBlitContextFramebufferAMD(HGLRC  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLint  i, GLbitfield  j, GLenum  k) {
-	m_pglex->wglBlitContextFramebufferAMD(a,b,c,d,e,f,g,h,i,j,k);
-}
-
-inline BOOL glex::wglBindVideoCaptureDeviceNV(UINT  a, HVIDEOINPUTDEVICENV  b) {
-	return m_pglex->wglBindVideoCaptureDeviceNV(a,b);
-}
-
-inline UINT glex::wglEnumerateVideoCaptureDevicesNV(HDC  a, HVIDEOINPUTDEVICENV *b) {
-	return m_pglex->wglEnumerateVideoCaptureDevicesNV(a,b);
-}
-
-inline BOOL glex::wglLockVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
-	return m_pglex->wglLockVideoCaptureDeviceNV(a,b);
-}
-
-inline BOOL glex::wglQueryVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b, int  c, int *d) {
-	return m_pglex->wglQueryVideoCaptureDeviceNV(a,b,c,d);
-}
-
-inline BOOL glex::wglReleaseVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
-	return m_pglex->wglReleaseVideoCaptureDeviceNV(a,b);
-}
-
-inline BOOL glex::wglCopyImageSubDataNV(HGLRC  a, GLuint  b, GLenum  c, GLint  d, GLint  e, GLint  f, GLint  g, HGLRC  h, GLuint  i, GLenum  j, GLint  k, GLint  l, GLint  m, GLint  n, GLsizei  o, GLsizei  p, GLsizei  q) {
-	return m_pglex->wglCopyImageSubDataNV(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q);
-}
-
-inline BOOL glex::wglDXSetResourceShareHandleNV(void *a, HANDLE  b) {
-	return m_pglex->wglDXSetResourceShareHandleNV(a,b);
-}
-
-inline HANDLE glex::wglDXOpenDeviceNV(void *a) {
-	return m_pglex->wglDXOpenDeviceNV(a);
-}
-
-inline BOOL glex::wglDXCloseDeviceNV(HANDLE  a) {
-	return m_pglex->wglDXCloseDeviceNV(a);
-}
-
-inline HANDLE glex::wglDXRegisterObjectNV(HANDLE  a, void *b, GLuint  c, GLenum  d, GLenum  e) {
-	return m_pglex->wglDXRegisterObjectNV(a,b,c,d,e);
-}
-
-inline BOOL glex::wglDXUnregisterObjectNV(HANDLE  a, HANDLE  b) {
-	return m_pglex->wglDXUnregisterObjectNV(a,b);
-}
-
-inline BOOL glex::wglDXObjectAccessNV(HANDLE  a, GLenum  b) {
-	return m_pglex->wglDXObjectAccessNV(a,b);
-}
-
-inline BOOL glex::wglDXLockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
-	return m_pglex->wglDXLockObjectsNV(a,b,c);
-}
-
-inline BOOL glex::wglDXUnlockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
-	return m_pglex->wglDXUnlockObjectsNV(a,b,c);
+inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d, const GLfloat *e) {
+	m_pglex->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d,e);
 }
 
 //----------------------------------------------------------------------------
