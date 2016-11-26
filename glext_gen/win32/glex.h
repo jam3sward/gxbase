@@ -4,7 +4,7 @@
 
 /**
  * This is an automatically generated header file: do not edit
- * Generated 2516 functions on Fri Nov 25 22:11:55 2016
+ * Generated 2635 functions on Sat Nov 26 01:34:23 2016
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -2541,6 +2541,125 @@ public:
 	void glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *n, const GLfloat *v);
 	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint rc, GLfloat s, GLfloat t, GLfloat r, GLfloat g, GLfloat b, GLfloat a, GLfloat nx, GLfloat ny, GLfloat nz, GLfloat x, GLfloat y, GLfloat z);
 	void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v);
+	HANDLE wglCreateBufferRegionARB(HDC hDC, int iLayerPlane, UINT uType);
+	VOID wglDeleteBufferRegionARB(HANDLE hRegion);
+	BOOL wglSaveBufferRegionARB(HANDLE hRegion, int x, int y, int width, int height);
+	BOOL wglRestoreBufferRegionARB(HANDLE hRegion, int x, int y, int width, int height, int xSrc, int ySrc);
+	HGLRC wglCreateContextAttribsARB(HDC hDC, HGLRC hShareContext, const int *attribList);
+	const char * wglGetExtensionsStringARB(HDC hdc);
+	BOOL wglMakeContextCurrentARB(HDC hDrawDC, HDC hReadDC, HGLRC hglrc);
+	HDC wglGetCurrentReadDCARB(void);
+	HPBUFFERARB wglCreatePbufferARB(HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList);
+	HDC wglGetPbufferDCARB(HPBUFFERARB hPbuffer);
+	int wglReleasePbufferDCARB(HPBUFFERARB hPbuffer, HDC hDC);
+	BOOL wglDestroyPbufferARB(HPBUFFERARB hPbuffer);
+	BOOL wglQueryPbufferARB(HPBUFFERARB hPbuffer, int iAttribute, int *piValue);
+	BOOL wglGetPixelFormatAttribivARB(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, int *piValues);
+	BOOL wglGetPixelFormatAttribfvARB(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, FLOAT *pfValues);
+	BOOL wglChoosePixelFormatARB(HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats);
+	BOOL wglBindTexImageARB(HPBUFFERARB hPbuffer, int iBuffer);
+	BOOL wglReleaseTexImageARB(HPBUFFERARB hPbuffer, int iBuffer);
+	BOOL wglSetPbufferAttribARB(HPBUFFERARB hPbuffer, const int *piAttribList);
+	BOOL wglSetStereoEmitterState3DL(HDC hDC, UINT uState);
+	UINT wglGetGPUIDsAMD(UINT maxCount, UINT *ids);
+	INT wglGetGPUInfoAMD(UINT id, int property, GLenum dataType, UINT size, void *data);
+	UINT wglGetContextGPUIDAMD(HGLRC hglrc);
+	HGLRC wglCreateAssociatedContextAMD(UINT id);
+	HGLRC wglCreateAssociatedContextAttribsAMD(UINT id, HGLRC hShareContext, const int *attribList);
+	BOOL wglDeleteAssociatedContextAMD(HGLRC hglrc);
+	BOOL wglMakeAssociatedContextCurrentAMD(HGLRC hglrc);
+	HGLRC wglGetCurrentAssociatedContextAMD(void);
+	VOID wglBlitContextFramebufferAMD(HGLRC dstCtx, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
+	GLboolean wglCreateDisplayColorTableEXT(GLushort id);
+	GLboolean wglLoadDisplayColorTableEXT(const GLushort *table, GLuint length);
+	GLboolean wglBindDisplayColorTableEXT(GLushort id);
+	VOID wglDestroyDisplayColorTableEXT(GLushort id);
+	const char * wglGetExtensionsStringEXT(void);
+	BOOL wglMakeContextCurrentEXT(HDC hDrawDC, HDC hReadDC, HGLRC hglrc);
+	HDC wglGetCurrentReadDCEXT(void);
+	HPBUFFEREXT wglCreatePbufferEXT(HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList);
+	HDC wglGetPbufferDCEXT(HPBUFFEREXT hPbuffer);
+	int wglReleasePbufferDCEXT(HPBUFFEREXT hPbuffer, HDC hDC);
+	BOOL wglDestroyPbufferEXT(HPBUFFEREXT hPbuffer);
+	BOOL wglQueryPbufferEXT(HPBUFFEREXT hPbuffer, int iAttribute, int *piValue);
+	BOOL wglGetPixelFormatAttribivEXT(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, int *piValues);
+	BOOL wglGetPixelFormatAttribfvEXT(HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, FLOAT *pfValues);
+	BOOL wglChoosePixelFormatEXT(HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats);
+	BOOL wglSwapIntervalEXT(int interval);
+	int wglGetSwapIntervalEXT(void);
+	BOOL wglGetDigitalVideoParametersI3D(HDC hDC, int iAttribute, int *piValue);
+	BOOL wglSetDigitalVideoParametersI3D(HDC hDC, int iAttribute, const int *piValue);
+	BOOL wglGetGammaTableParametersI3D(HDC hDC, int iAttribute, int *piValue);
+	BOOL wglSetGammaTableParametersI3D(HDC hDC, int iAttribute, const int *piValue);
+	BOOL wglGetGammaTableI3D(HDC hDC, int iEntries, USHORT *puRed, USHORT *puGreen, USHORT *puBlue);
+	BOOL wglSetGammaTableI3D(HDC hDC, int iEntries, const USHORT *puRed, const USHORT *puGreen, const USHORT *puBlue);
+	BOOL wglEnableGenlockI3D(HDC hDC);
+	BOOL wglDisableGenlockI3D(HDC hDC);
+	BOOL wglIsEnabledGenlockI3D(HDC hDC, BOOL *pFlag);
+	BOOL wglGenlockSourceI3D(HDC hDC, UINT uSource);
+	BOOL wglGetGenlockSourceI3D(HDC hDC, UINT *uSource);
+	BOOL wglGenlockSourceEdgeI3D(HDC hDC, UINT uEdge);
+	BOOL wglGetGenlockSourceEdgeI3D(HDC hDC, UINT *uEdge);
+	BOOL wglGenlockSampleRateI3D(HDC hDC, UINT uRate);
+	BOOL wglGetGenlockSampleRateI3D(HDC hDC, UINT *uRate);
+	BOOL wglGenlockSourceDelayI3D(HDC hDC, UINT uDelay);
+	BOOL wglGetGenlockSourceDelayI3D(HDC hDC, UINT *uDelay);
+	BOOL wglQueryGenlockMaxSourceDelayI3D(HDC hDC, UINT *uMaxLineDelay, UINT *uMaxPixelDelay);
+	LPVOID wglCreateImageBufferI3D(HDC hDC, DWORD dwSize, UINT uFlags);
+	BOOL wglDestroyImageBufferI3D(HDC hDC, LPVOID pAddress);
+	BOOL wglAssociateImageBufferEventsI3D(HDC hDC, const HANDLE *pEvent, const LPVOID *pAddress, const DWORD *pSize, UINT count);
+	BOOL wglReleaseImageBufferEventsI3D(HDC hDC, const LPVOID *pAddress, UINT count);
+	BOOL wglEnableFrameLockI3D(void);
+	BOOL wglDisableFrameLockI3D(void);
+	BOOL wglIsEnabledFrameLockI3D(BOOL *pFlag);
+	BOOL wglQueryFrameLockMasterI3D(BOOL *pFlag);
+	BOOL wglGetFrameUsageI3D(float *pUsage);
+	BOOL wglBeginFrameTrackingI3D(void);
+	BOOL wglEndFrameTrackingI3D(void);
+	BOOL wglQueryFrameTrackingI3D(DWORD *pFrameCount, DWORD *pMissedFrames, float *pLastMissedUsage);
+	BOOL wglDXSetResourceShareHandleNV(void *dxObject, HANDLE shareHandle);
+	HANDLE wglDXOpenDeviceNV(void *dxDevice);
+	BOOL wglDXCloseDeviceNV(HANDLE hDevice);
+	HANDLE wglDXRegisterObjectNV(HANDLE hDevice, void *dxObject, GLuint name, GLenum type, GLenum access);
+	BOOL wglDXUnregisterObjectNV(HANDLE hDevice, HANDLE hObject);
+	BOOL wglDXObjectAccessNV(HANDLE hObject, GLenum access);
+	BOOL wglDXLockObjectsNV(HANDLE hDevice, GLint count, HANDLE *hObjects);
+	BOOL wglDXUnlockObjectsNV(HANDLE hDevice, GLint count, HANDLE *hObjects);
+	BOOL wglCopyImageSubDataNV(HGLRC hSrcRC, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, HGLRC hDstRC, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth);
+	BOOL wglDelayBeforeSwapNV(HDC hDC, GLfloat seconds);
+	BOOL wglEnumGpusNV(UINT iGpuIndex, HGPUNV *phGpu);
+	BOOL wglEnumGpuDevicesNV(HGPUNV hGpu, UINT iDeviceIndex, PGPU_DEVICE lpGpuDevice);
+	HDC wglCreateAffinityDCNV(const HGPUNV *phGpuList);
+	BOOL wglEnumGpusFromAffinityDCNV(HDC hAffinityDC, UINT iGpuIndex, HGPUNV *hGpu);
+	BOOL wglDeleteDCNV(HDC hdc);
+	int wglEnumerateVideoDevicesNV(HDC hDC, HVIDEOOUTPUTDEVICENV *phDeviceList);
+	BOOL wglBindVideoDeviceNV(HDC hDC, unsigned int uVideoSlot, HVIDEOOUTPUTDEVICENV hVideoDevice, const int *piAttribList);
+	BOOL wglQueryCurrentContextNV(int iAttribute, int *piValue);
+	BOOL wglJoinSwapGroupNV(HDC hDC, GLuint group);
+	BOOL wglBindSwapBarrierNV(GLuint group, GLuint barrier);
+	BOOL wglQuerySwapGroupNV(HDC hDC, GLuint *group, GLuint *barrier);
+	BOOL wglQueryMaxSwapGroupsNV(HDC hDC, GLuint *maxGroups, GLuint *maxBarriers);
+	BOOL wglQueryFrameCountNV(HDC hDC, GLuint *count);
+	BOOL wglResetFrameCountNV(HDC hDC);
+	void * wglAllocateMemoryNV(GLsizei size, GLfloat readfreq, GLfloat writefreq, GLfloat priority);
+	void wglFreeMemoryNV(void *pointer);
+	BOOL wglBindVideoCaptureDeviceNV(UINT uVideoSlot, HVIDEOINPUTDEVICENV hDevice);
+	UINT wglEnumerateVideoCaptureDevicesNV(HDC hDc, HVIDEOINPUTDEVICENV *phDeviceList);
+	BOOL wglLockVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice);
+	BOOL wglQueryVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice, int iAttribute, int *piValue);
+	BOOL wglReleaseVideoCaptureDeviceNV(HDC hDc, HVIDEOINPUTDEVICENV hDevice);
+	BOOL wglGetVideoDeviceNV(HDC hDC, int numDevices, HPVIDEODEV *hVideoDevice);
+	BOOL wglReleaseVideoDeviceNV(HPVIDEODEV hVideoDevice);
+	BOOL wglBindVideoImageNV(HPVIDEODEV hVideoDevice, HPBUFFERARB hPbuffer, int iVideoBuffer);
+	BOOL wglReleaseVideoImageNV(HPBUFFERARB hPbuffer, int iVideoBuffer);
+	BOOL wglSendPbufferToVideoNV(HPBUFFERARB hPbuffer, int iBufferType, unsigned long *pulCounterPbuffer, BOOL bBlock);
+	BOOL wglGetVideoInfoNV(HPVIDEODEV hpVideoDevice, unsigned long *pulCounterOutputPbuffer, unsigned long *pulCounterOutputVideo);
+	BOOL wglGetSyncValuesOML(HDC hdc, INT64 *ust, INT64 *msc, INT64 *sbc);
+	BOOL wglGetMscRateOML(HDC hdc, INT32 *numerator, INT32 *denominator);
+	INT64 wglSwapBuffersMscOML(HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder);
+	INT64 wglSwapLayerBuffersMscOML(HDC hdc, int fuPlanes, INT64 target_msc, INT64 divisor, INT64 remainder);
+	BOOL wglWaitForMscOML(HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder, INT64 *ust, INT64 *msc, INT64 *sbc);
+	BOOL wglWaitForSbcOML(HDC hdc, INT64 target_sbc, INT64 *ust, INT64 *msc, INT64 *sbc);
 private:
 	// Private member variables
 	glexfp *m_pglex;
@@ -12635,6 +12754,482 @@ inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint
 
 inline void glex::glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d, const GLfloat *e) {
 	m_pglex->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d,e);
+}
+
+inline HANDLE glex::wglCreateBufferRegionARB(HDC  a, int  b, UINT  c) {
+	return m_pglex->wglCreateBufferRegionARB(a,b,c);
+}
+
+inline VOID glex::wglDeleteBufferRegionARB(HANDLE  a) {
+	m_pglex->wglDeleteBufferRegionARB(a);
+}
+
+inline BOOL glex::wglSaveBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e) {
+	return m_pglex->wglSaveBufferRegionARB(a,b,c,d,e);
+}
+
+inline BOOL glex::wglRestoreBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e, int  f, int  g) {
+	return m_pglex->wglRestoreBufferRegionARB(a,b,c,d,e,f,g);
+}
+
+inline HGLRC glex::wglCreateContextAttribsARB(HDC  a, HGLRC  b, const int *c) {
+	return m_pglex->wglCreateContextAttribsARB(a,b,c);
+}
+
+inline const char * glex::wglGetExtensionsStringARB(HDC  a) {
+	return m_pglex->wglGetExtensionsStringARB(a);
+}
+
+inline BOOL glex::wglMakeContextCurrentARB(HDC  a, HDC  b, HGLRC  c) {
+	return m_pglex->wglMakeContextCurrentARB(a,b,c);
+}
+
+inline HDC glex::wglGetCurrentReadDCARB(void) {
+	return m_pglex->wglGetCurrentReadDCARB();
+}
+
+inline HPBUFFERARB glex::wglCreatePbufferARB(HDC  a, int  b, int  c, int  d, const int *e) {
+	return m_pglex->wglCreatePbufferARB(a,b,c,d,e);
+}
+
+inline HDC glex::wglGetPbufferDCARB(HPBUFFERARB  a) {
+	return m_pglex->wglGetPbufferDCARB(a);
+}
+
+inline int glex::wglReleasePbufferDCARB(HPBUFFERARB  a, HDC  b) {
+	return m_pglex->wglReleasePbufferDCARB(a,b);
+}
+
+inline BOOL glex::wglDestroyPbufferARB(HPBUFFERARB  a) {
+	return m_pglex->wglDestroyPbufferARB(a);
+}
+
+inline BOOL glex::wglQueryPbufferARB(HPBUFFERARB  a, int  b, int *c) {
+	return m_pglex->wglQueryPbufferARB(a,b,c);
+}
+
+inline BOOL glex::wglGetPixelFormatAttribivARB(HDC  a, int  b, int  c, UINT  d, const int *e, int *f) {
+	return m_pglex->wglGetPixelFormatAttribivARB(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglGetPixelFormatAttribfvARB(HDC  a, int  b, int  c, UINT  d, const int *e, FLOAT *f) {
+	return m_pglex->wglGetPixelFormatAttribfvARB(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglChoosePixelFormatARB(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
+	return m_pglex->wglChoosePixelFormatARB(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglBindTexImageARB(HPBUFFERARB  a, int  b) {
+	return m_pglex->wglBindTexImageARB(a,b);
+}
+
+inline BOOL glex::wglReleaseTexImageARB(HPBUFFERARB  a, int  b) {
+	return m_pglex->wglReleaseTexImageARB(a,b);
+}
+
+inline BOOL glex::wglSetPbufferAttribARB(HPBUFFERARB  a, const int *b) {
+	return m_pglex->wglSetPbufferAttribARB(a,b);
+}
+
+inline BOOL glex::wglSetStereoEmitterState3DL(HDC  a, UINT  b) {
+	return m_pglex->wglSetStereoEmitterState3DL(a,b);
+}
+
+inline UINT glex::wglGetGPUIDsAMD(UINT  a, UINT *b) {
+	return m_pglex->wglGetGPUIDsAMD(a,b);
+}
+
+inline INT glex::wglGetGPUInfoAMD(UINT  a, int  b, GLenum  c, UINT  d, void *e) {
+	return m_pglex->wglGetGPUInfoAMD(a,b,c,d,e);
+}
+
+inline UINT glex::wglGetContextGPUIDAMD(HGLRC  a) {
+	return m_pglex->wglGetContextGPUIDAMD(a);
+}
+
+inline HGLRC glex::wglCreateAssociatedContextAMD(UINT  a) {
+	return m_pglex->wglCreateAssociatedContextAMD(a);
+}
+
+inline HGLRC glex::wglCreateAssociatedContextAttribsAMD(UINT  a, HGLRC  b, const int *c) {
+	return m_pglex->wglCreateAssociatedContextAttribsAMD(a,b,c);
+}
+
+inline BOOL glex::wglDeleteAssociatedContextAMD(HGLRC  a) {
+	return m_pglex->wglDeleteAssociatedContextAMD(a);
+}
+
+inline BOOL glex::wglMakeAssociatedContextCurrentAMD(HGLRC  a) {
+	return m_pglex->wglMakeAssociatedContextCurrentAMD(a);
+}
+
+inline HGLRC glex::wglGetCurrentAssociatedContextAMD(void) {
+	return m_pglex->wglGetCurrentAssociatedContextAMD();
+}
+
+inline VOID glex::wglBlitContextFramebufferAMD(HGLRC  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLint  i, GLbitfield  j, GLenum  k) {
+	m_pglex->wglBlitContextFramebufferAMD(a,b,c,d,e,f,g,h,i,j,k);
+}
+
+inline GLboolean glex::wglCreateDisplayColorTableEXT(GLushort  a) {
+	return m_pglex->wglCreateDisplayColorTableEXT(a);
+}
+
+inline GLboolean glex::wglLoadDisplayColorTableEXT(const GLushort *a, GLuint  b) {
+	return m_pglex->wglLoadDisplayColorTableEXT(a,b);
+}
+
+inline GLboolean glex::wglBindDisplayColorTableEXT(GLushort  a) {
+	return m_pglex->wglBindDisplayColorTableEXT(a);
+}
+
+inline VOID glex::wglDestroyDisplayColorTableEXT(GLushort  a) {
+	m_pglex->wglDestroyDisplayColorTableEXT(a);
+}
+
+inline const char * glex::wglGetExtensionsStringEXT(void) {
+	return m_pglex->wglGetExtensionsStringEXT();
+}
+
+inline BOOL glex::wglMakeContextCurrentEXT(HDC  a, HDC  b, HGLRC  c) {
+	return m_pglex->wglMakeContextCurrentEXT(a,b,c);
+}
+
+inline HDC glex::wglGetCurrentReadDCEXT(void) {
+	return m_pglex->wglGetCurrentReadDCEXT();
+}
+
+inline HPBUFFEREXT glex::wglCreatePbufferEXT(HDC  a, int  b, int  c, int  d, const int *e) {
+	return m_pglex->wglCreatePbufferEXT(a,b,c,d,e);
+}
+
+inline HDC glex::wglGetPbufferDCEXT(HPBUFFEREXT  a) {
+	return m_pglex->wglGetPbufferDCEXT(a);
+}
+
+inline int glex::wglReleasePbufferDCEXT(HPBUFFEREXT  a, HDC  b) {
+	return m_pglex->wglReleasePbufferDCEXT(a,b);
+}
+
+inline BOOL glex::wglDestroyPbufferEXT(HPBUFFEREXT  a) {
+	return m_pglex->wglDestroyPbufferEXT(a);
+}
+
+inline BOOL glex::wglQueryPbufferEXT(HPBUFFEREXT  a, int  b, int *c) {
+	return m_pglex->wglQueryPbufferEXT(a,b,c);
+}
+
+inline BOOL glex::wglGetPixelFormatAttribivEXT(HDC  a, int  b, int  c, UINT  d, int *e, int *f) {
+	return m_pglex->wglGetPixelFormatAttribivEXT(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglGetPixelFormatAttribfvEXT(HDC  a, int  b, int  c, UINT  d, int *e, FLOAT *f) {
+	return m_pglex->wglGetPixelFormatAttribfvEXT(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglChoosePixelFormatEXT(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
+	return m_pglex->wglChoosePixelFormatEXT(a,b,c,d,e,f);
+}
+
+inline BOOL glex::wglSwapIntervalEXT(int  a) {
+	return m_pglex->wglSwapIntervalEXT(a);
+}
+
+inline int glex::wglGetSwapIntervalEXT(void) {
+	return m_pglex->wglGetSwapIntervalEXT();
+}
+
+inline BOOL glex::wglGetDigitalVideoParametersI3D(HDC  a, int  b, int *c) {
+	return m_pglex->wglGetDigitalVideoParametersI3D(a,b,c);
+}
+
+inline BOOL glex::wglSetDigitalVideoParametersI3D(HDC  a, int  b, const int *c) {
+	return m_pglex->wglSetDigitalVideoParametersI3D(a,b,c);
+}
+
+inline BOOL glex::wglGetGammaTableParametersI3D(HDC  a, int  b, int *c) {
+	return m_pglex->wglGetGammaTableParametersI3D(a,b,c);
+}
+
+inline BOOL glex::wglSetGammaTableParametersI3D(HDC  a, int  b, const int *c) {
+	return m_pglex->wglSetGammaTableParametersI3D(a,b,c);
+}
+
+inline BOOL glex::wglGetGammaTableI3D(HDC  a, int  b, USHORT *c, USHORT *d, USHORT *e) {
+	return m_pglex->wglGetGammaTableI3D(a,b,c,d,e);
+}
+
+inline BOOL glex::wglSetGammaTableI3D(HDC  a, int  b, const USHORT *c, const USHORT *d, const USHORT *e) {
+	return m_pglex->wglSetGammaTableI3D(a,b,c,d,e);
+}
+
+inline BOOL glex::wglEnableGenlockI3D(HDC  a) {
+	return m_pglex->wglEnableGenlockI3D(a);
+}
+
+inline BOOL glex::wglDisableGenlockI3D(HDC  a) {
+	return m_pglex->wglDisableGenlockI3D(a);
+}
+
+inline BOOL glex::wglIsEnabledGenlockI3D(HDC  a, BOOL *b) {
+	return m_pglex->wglIsEnabledGenlockI3D(a,b);
+}
+
+inline BOOL glex::wglGenlockSourceI3D(HDC  a, UINT  b) {
+	return m_pglex->wglGenlockSourceI3D(a,b);
+}
+
+inline BOOL glex::wglGetGenlockSourceI3D(HDC  a, UINT *b) {
+	return m_pglex->wglGetGenlockSourceI3D(a,b);
+}
+
+inline BOOL glex::wglGenlockSourceEdgeI3D(HDC  a, UINT  b) {
+	return m_pglex->wglGenlockSourceEdgeI3D(a,b);
+}
+
+inline BOOL glex::wglGetGenlockSourceEdgeI3D(HDC  a, UINT *b) {
+	return m_pglex->wglGetGenlockSourceEdgeI3D(a,b);
+}
+
+inline BOOL glex::wglGenlockSampleRateI3D(HDC  a, UINT  b) {
+	return m_pglex->wglGenlockSampleRateI3D(a,b);
+}
+
+inline BOOL glex::wglGetGenlockSampleRateI3D(HDC  a, UINT *b) {
+	return m_pglex->wglGetGenlockSampleRateI3D(a,b);
+}
+
+inline BOOL glex::wglGenlockSourceDelayI3D(HDC  a, UINT  b) {
+	return m_pglex->wglGenlockSourceDelayI3D(a,b);
+}
+
+inline BOOL glex::wglGetGenlockSourceDelayI3D(HDC  a, UINT *b) {
+	return m_pglex->wglGetGenlockSourceDelayI3D(a,b);
+}
+
+inline BOOL glex::wglQueryGenlockMaxSourceDelayI3D(HDC  a, UINT *b, UINT *c) {
+	return m_pglex->wglQueryGenlockMaxSourceDelayI3D(a,b,c);
+}
+
+inline LPVOID glex::wglCreateImageBufferI3D(HDC  a, DWORD  b, UINT  c) {
+	return m_pglex->wglCreateImageBufferI3D(a,b,c);
+}
+
+inline BOOL glex::wglDestroyImageBufferI3D(HDC  a, LPVOID  b) {
+	return m_pglex->wglDestroyImageBufferI3D(a,b);
+}
+
+inline BOOL glex::wglAssociateImageBufferEventsI3D(HDC  a, const HANDLE *b, const LPVOID *c, const DWORD *d, UINT  e) {
+	return m_pglex->wglAssociateImageBufferEventsI3D(a,b,c,d,e);
+}
+
+inline BOOL glex::wglReleaseImageBufferEventsI3D(HDC  a, const LPVOID *b, UINT  c) {
+	return m_pglex->wglReleaseImageBufferEventsI3D(a,b,c);
+}
+
+inline BOOL glex::wglEnableFrameLockI3D(void) {
+	return m_pglex->wglEnableFrameLockI3D();
+}
+
+inline BOOL glex::wglDisableFrameLockI3D(void) {
+	return m_pglex->wglDisableFrameLockI3D();
+}
+
+inline BOOL glex::wglIsEnabledFrameLockI3D(BOOL *a) {
+	return m_pglex->wglIsEnabledFrameLockI3D(a);
+}
+
+inline BOOL glex::wglQueryFrameLockMasterI3D(BOOL *a) {
+	return m_pglex->wglQueryFrameLockMasterI3D(a);
+}
+
+inline BOOL glex::wglGetFrameUsageI3D(float *a) {
+	return m_pglex->wglGetFrameUsageI3D(a);
+}
+
+inline BOOL glex::wglBeginFrameTrackingI3D(void) {
+	return m_pglex->wglBeginFrameTrackingI3D();
+}
+
+inline BOOL glex::wglEndFrameTrackingI3D(void) {
+	return m_pglex->wglEndFrameTrackingI3D();
+}
+
+inline BOOL glex::wglQueryFrameTrackingI3D(DWORD *a, DWORD *b, float *c) {
+	return m_pglex->wglQueryFrameTrackingI3D(a,b,c);
+}
+
+inline BOOL glex::wglDXSetResourceShareHandleNV(void *a, HANDLE  b) {
+	return m_pglex->wglDXSetResourceShareHandleNV(a,b);
+}
+
+inline HANDLE glex::wglDXOpenDeviceNV(void *a) {
+	return m_pglex->wglDXOpenDeviceNV(a);
+}
+
+inline BOOL glex::wglDXCloseDeviceNV(HANDLE  a) {
+	return m_pglex->wglDXCloseDeviceNV(a);
+}
+
+inline HANDLE glex::wglDXRegisterObjectNV(HANDLE  a, void *b, GLuint  c, GLenum  d, GLenum  e) {
+	return m_pglex->wglDXRegisterObjectNV(a,b,c,d,e);
+}
+
+inline BOOL glex::wglDXUnregisterObjectNV(HANDLE  a, HANDLE  b) {
+	return m_pglex->wglDXUnregisterObjectNV(a,b);
+}
+
+inline BOOL glex::wglDXObjectAccessNV(HANDLE  a, GLenum  b) {
+	return m_pglex->wglDXObjectAccessNV(a,b);
+}
+
+inline BOOL glex::wglDXLockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
+	return m_pglex->wglDXLockObjectsNV(a,b,c);
+}
+
+inline BOOL glex::wglDXUnlockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
+	return m_pglex->wglDXUnlockObjectsNV(a,b,c);
+}
+
+inline BOOL glex::wglCopyImageSubDataNV(HGLRC  a, GLuint  b, GLenum  c, GLint  d, GLint  e, GLint  f, GLint  g, HGLRC  h, GLuint  i, GLenum  j, GLint  k, GLint  l, GLint  m, GLint  n, GLsizei  o, GLsizei  p, GLsizei  q) {
+	return m_pglex->wglCopyImageSubDataNV(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q);
+}
+
+inline BOOL glex::wglDelayBeforeSwapNV(HDC  a, GLfloat  b) {
+	return m_pglex->wglDelayBeforeSwapNV(a,b);
+}
+
+inline BOOL glex::wglEnumGpusNV(UINT  a, HGPUNV *b) {
+	return m_pglex->wglEnumGpusNV(a,b);
+}
+
+inline BOOL glex::wglEnumGpuDevicesNV(HGPUNV  a, UINT  b, PGPU_DEVICE  c) {
+	return m_pglex->wglEnumGpuDevicesNV(a,b,c);
+}
+
+inline HDC glex::wglCreateAffinityDCNV(const HGPUNV *a) {
+	return m_pglex->wglCreateAffinityDCNV(a);
+}
+
+inline BOOL glex::wglEnumGpusFromAffinityDCNV(HDC  a, UINT  b, HGPUNV *c) {
+	return m_pglex->wglEnumGpusFromAffinityDCNV(a,b,c);
+}
+
+inline BOOL glex::wglDeleteDCNV(HDC  a) {
+	return m_pglex->wglDeleteDCNV(a);
+}
+
+inline int glex::wglEnumerateVideoDevicesNV(HDC  a, HVIDEOOUTPUTDEVICENV *b) {
+	return m_pglex->wglEnumerateVideoDevicesNV(a,b);
+}
+
+inline BOOL glex::wglBindVideoDeviceNV(HDC  a, unsigned int  b, HVIDEOOUTPUTDEVICENV  c, const int *d) {
+	return m_pglex->wglBindVideoDeviceNV(a,b,c,d);
+}
+
+inline BOOL glex::wglQueryCurrentContextNV(int  a, int *b) {
+	return m_pglex->wglQueryCurrentContextNV(a,b);
+}
+
+inline BOOL glex::wglJoinSwapGroupNV(HDC  a, GLuint  b) {
+	return m_pglex->wglJoinSwapGroupNV(a,b);
+}
+
+inline BOOL glex::wglBindSwapBarrierNV(GLuint  a, GLuint  b) {
+	return m_pglex->wglBindSwapBarrierNV(a,b);
+}
+
+inline BOOL glex::wglQuerySwapGroupNV(HDC  a, GLuint *b, GLuint *c) {
+	return m_pglex->wglQuerySwapGroupNV(a,b,c);
+}
+
+inline BOOL glex::wglQueryMaxSwapGroupsNV(HDC  a, GLuint *b, GLuint *c) {
+	return m_pglex->wglQueryMaxSwapGroupsNV(a,b,c);
+}
+
+inline BOOL glex::wglQueryFrameCountNV(HDC  a, GLuint *b) {
+	return m_pglex->wglQueryFrameCountNV(a,b);
+}
+
+inline BOOL glex::wglResetFrameCountNV(HDC  a) {
+	return m_pglex->wglResetFrameCountNV(a);
+}
+
+inline void * glex::wglAllocateMemoryNV(GLsizei  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	return m_pglex->wglAllocateMemoryNV(a,b,c,d);
+}
+
+inline void glex::wglFreeMemoryNV(void *a) {
+	m_pglex->wglFreeMemoryNV(a);
+}
+
+inline BOOL glex::wglBindVideoCaptureDeviceNV(UINT  a, HVIDEOINPUTDEVICENV  b) {
+	return m_pglex->wglBindVideoCaptureDeviceNV(a,b);
+}
+
+inline UINT glex::wglEnumerateVideoCaptureDevicesNV(HDC  a, HVIDEOINPUTDEVICENV *b) {
+	return m_pglex->wglEnumerateVideoCaptureDevicesNV(a,b);
+}
+
+inline BOOL glex::wglLockVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
+	return m_pglex->wglLockVideoCaptureDeviceNV(a,b);
+}
+
+inline BOOL glex::wglQueryVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b, int  c, int *d) {
+	return m_pglex->wglQueryVideoCaptureDeviceNV(a,b,c,d);
+}
+
+inline BOOL glex::wglReleaseVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
+	return m_pglex->wglReleaseVideoCaptureDeviceNV(a,b);
+}
+
+inline BOOL glex::wglGetVideoDeviceNV(HDC  a, int  b, HPVIDEODEV *c) {
+	return m_pglex->wglGetVideoDeviceNV(a,b,c);
+}
+
+inline BOOL glex::wglReleaseVideoDeviceNV(HPVIDEODEV  a) {
+	return m_pglex->wglReleaseVideoDeviceNV(a);
+}
+
+inline BOOL glex::wglBindVideoImageNV(HPVIDEODEV  a, HPBUFFERARB  b, int  c) {
+	return m_pglex->wglBindVideoImageNV(a,b,c);
+}
+
+inline BOOL glex::wglReleaseVideoImageNV(HPBUFFERARB  a, int  b) {
+	return m_pglex->wglReleaseVideoImageNV(a,b);
+}
+
+inline BOOL glex::wglSendPbufferToVideoNV(HPBUFFERARB  a, int  b, unsigned long *c, BOOL  d) {
+	return m_pglex->wglSendPbufferToVideoNV(a,b,c,d);
+}
+
+inline BOOL glex::wglGetVideoInfoNV(HPVIDEODEV  a, unsigned long *b, unsigned long *c) {
+	return m_pglex->wglGetVideoInfoNV(a,b,c);
+}
+
+inline BOOL glex::wglGetSyncValuesOML(HDC  a, INT64 *b, INT64 *c, INT64 *d) {
+	return m_pglex->wglGetSyncValuesOML(a,b,c,d);
+}
+
+inline BOOL glex::wglGetMscRateOML(HDC  a, INT32 *b, INT32 *c) {
+	return m_pglex->wglGetMscRateOML(a,b,c);
+}
+
+inline INT64 glex::wglSwapBuffersMscOML(HDC  a, INT64  b, INT64  c, INT64  d) {
+	return m_pglex->wglSwapBuffersMscOML(a,b,c,d);
+}
+
+inline INT64 glex::wglSwapLayerBuffersMscOML(HDC  a, int  b, INT64  c, INT64  d, INT64  e) {
+	return m_pglex->wglSwapLayerBuffersMscOML(a,b,c,d,e);
+}
+
+inline BOOL glex::wglWaitForMscOML(HDC  a, INT64  b, INT64  c, INT64  d, INT64 *e, INT64 *f, INT64 *g) {
+	return m_pglex->wglWaitForMscOML(a,b,c,d,e,f,g);
+}
+
+inline BOOL glex::wglWaitForSbcOML(HDC  a, INT64  b, INT64 *c, INT64 *d, INT64 *e) {
+	return m_pglex->wglWaitForSbcOML(a,b,c,d,e);
 }
 
 //----------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 
 /**
  * This is an automatically generated file: do not edit
- * Generated on Fri Nov 25 22:11:55 2016
+ * Generated on Sat Nov 26 01:34:23 2016
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -26,7 +26,7 @@ long glexfp::Count() const {
 //----------------------------------------------------------------------------
 
 long glexfp::Known() const {
-	return 2516;
+	return 2635;
 }//Known
 
 //----------------------------------------------------------------------------
@@ -5195,6 +5195,359 @@ GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN
 }
 GLAPI void APIENTRY stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN (const GLuint *rc, const GLfloat *tc, const GLfloat *c, const GLfloat *n, const GLfloat *v) {
 }
+HANDLE WINAPI stub_wglCreateBufferRegionARB (HDC hDC, int iLayerPlane, UINT uType) {
+	return (HANDLE)0;
+}
+VOID WINAPI stub_wglDeleteBufferRegionARB (HANDLE hRegion) {
+}
+BOOL WINAPI stub_wglSaveBufferRegionARB (HANDLE hRegion, int x, int y, int width, int height) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglRestoreBufferRegionARB (HANDLE hRegion, int x, int y, int width, int height, int xSrc, int ySrc) {
+	return (BOOL)0;
+}
+HGLRC WINAPI stub_wglCreateContextAttribsARB (HDC hDC, HGLRC hShareContext, const int *attribList) {
+	return (HGLRC)0;
+}
+const char *WINAPI stub_wglGetExtensionsStringARB (HDC hdc) {
+	return (const char *)0;
+}
+BOOL WINAPI stub_wglMakeContextCurrentARB (HDC hDrawDC, HDC hReadDC, HGLRC hglrc) {
+	return (BOOL)0;
+}
+HDC WINAPI stub_wglGetCurrentReadDCARB (void) {
+	return (HDC)0;
+}
+HPBUFFERARB WINAPI stub_wglCreatePbufferARB (HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList) {
+	return (HPBUFFERARB)0;
+}
+HDC WINAPI stub_wglGetPbufferDCARB (HPBUFFERARB hPbuffer) {
+	return (HDC)0;
+}
+int WINAPI stub_wglReleasePbufferDCARB (HPBUFFERARB hPbuffer, HDC hDC) {
+	return (int)0;
+}
+BOOL WINAPI stub_wglDestroyPbufferARB (HPBUFFERARB hPbuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryPbufferARB (HPBUFFERARB hPbuffer, int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetPixelFormatAttribivARB (HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, int *piValues) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetPixelFormatAttribfvARB (HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, const int *piAttributes, FLOAT *pfValues) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglChoosePixelFormatARB (HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglBindTexImageARB (HPBUFFERARB hPbuffer, int iBuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglReleaseTexImageARB (HPBUFFERARB hPbuffer, int iBuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSetPbufferAttribARB (HPBUFFERARB hPbuffer, const int *piAttribList) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSetStereoEmitterState3DL (HDC hDC, UINT uState) {
+	return (BOOL)0;
+}
+UINT WINAPI stub_wglGetGPUIDsAMD (UINT maxCount, UINT *ids) {
+	return (UINT)0;
+}
+INT WINAPI stub_wglGetGPUInfoAMD (UINT id, int property, GLenum dataType, UINT size, void *data) {
+	return (INT)0;
+}
+UINT WINAPI stub_wglGetContextGPUIDAMD (HGLRC hglrc) {
+	return (UINT)0;
+}
+HGLRC WINAPI stub_wglCreateAssociatedContextAMD (UINT id) {
+	return (HGLRC)0;
+}
+HGLRC WINAPI stub_wglCreateAssociatedContextAttribsAMD (UINT id, HGLRC hShareContext, const int *attribList) {
+	return (HGLRC)0;
+}
+BOOL WINAPI stub_wglDeleteAssociatedContextAMD (HGLRC hglrc) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglMakeAssociatedContextCurrentAMD (HGLRC hglrc) {
+	return (BOOL)0;
+}
+HGLRC WINAPI stub_wglGetCurrentAssociatedContextAMD (void) {
+	return (HGLRC)0;
+}
+VOID WINAPI stub_wglBlitContextFramebufferAMD (HGLRC dstCtx, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter) {
+}
+GLboolean WINAPI stub_wglCreateDisplayColorTableEXT (GLushort id) {
+	return (GLboolean)0;
+}
+GLboolean WINAPI stub_wglLoadDisplayColorTableEXT (const GLushort *table, GLuint length) {
+	return (GLboolean)0;
+}
+GLboolean WINAPI stub_wglBindDisplayColorTableEXT (GLushort id) {
+	return (GLboolean)0;
+}
+VOID WINAPI stub_wglDestroyDisplayColorTableEXT (GLushort id) {
+}
+const char *WINAPI stub_wglGetExtensionsStringEXT (void) {
+	return (const char *)0;
+}
+BOOL WINAPI stub_wglMakeContextCurrentEXT (HDC hDrawDC, HDC hReadDC, HGLRC hglrc) {
+	return (BOOL)0;
+}
+HDC WINAPI stub_wglGetCurrentReadDCEXT (void) {
+	return (HDC)0;
+}
+HPBUFFEREXT WINAPI stub_wglCreatePbufferEXT (HDC hDC, int iPixelFormat, int iWidth, int iHeight, const int *piAttribList) {
+	return (HPBUFFEREXT)0;
+}
+HDC WINAPI stub_wglGetPbufferDCEXT (HPBUFFEREXT hPbuffer) {
+	return (HDC)0;
+}
+int WINAPI stub_wglReleasePbufferDCEXT (HPBUFFEREXT hPbuffer, HDC hDC) {
+	return (int)0;
+}
+BOOL WINAPI stub_wglDestroyPbufferEXT (HPBUFFEREXT hPbuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryPbufferEXT (HPBUFFEREXT hPbuffer, int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetPixelFormatAttribivEXT (HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, int *piValues) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetPixelFormatAttribfvEXT (HDC hdc, int iPixelFormat, int iLayerPlane, UINT nAttributes, int *piAttributes, FLOAT *pfValues) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglChoosePixelFormatEXT (HDC hdc, const int *piAttribIList, const FLOAT *pfAttribFList, UINT nMaxFormats, int *piFormats, UINT *nNumFormats) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSwapIntervalEXT (int interval) {
+	return (BOOL)0;
+}
+int WINAPI stub_wglGetSwapIntervalEXT (void) {
+	return (int)0;
+}
+BOOL WINAPI stub_wglGetDigitalVideoParametersI3D (HDC hDC, int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSetDigitalVideoParametersI3D (HDC hDC, int iAttribute, const int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGammaTableParametersI3D (HDC hDC, int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSetGammaTableParametersI3D (HDC hDC, int iAttribute, const int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGammaTableI3D (HDC hDC, int iEntries, USHORT *puRed, USHORT *puGreen, USHORT *puBlue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSetGammaTableI3D (HDC hDC, int iEntries, const USHORT *puRed, const USHORT *puGreen, const USHORT *puBlue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglEnableGenlockI3D (HDC hDC) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDisableGenlockI3D (HDC hDC) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglIsEnabledGenlockI3D (HDC hDC, BOOL *pFlag) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGenlockSourceI3D (HDC hDC, UINT uSource) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGenlockSourceI3D (HDC hDC, UINT *uSource) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGenlockSourceEdgeI3D (HDC hDC, UINT uEdge) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGenlockSourceEdgeI3D (HDC hDC, UINT *uEdge) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGenlockSampleRateI3D (HDC hDC, UINT uRate) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGenlockSampleRateI3D (HDC hDC, UINT *uRate) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGenlockSourceDelayI3D (HDC hDC, UINT uDelay) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetGenlockSourceDelayI3D (HDC hDC, UINT *uDelay) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryGenlockMaxSourceDelayI3D (HDC hDC, UINT *uMaxLineDelay, UINT *uMaxPixelDelay) {
+	return (BOOL)0;
+}
+LPVOID WINAPI stub_wglCreateImageBufferI3D (HDC hDC, DWORD dwSize, UINT uFlags) {
+	return (LPVOID)0;
+}
+BOOL WINAPI stub_wglDestroyImageBufferI3D (HDC hDC, LPVOID pAddress) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglAssociateImageBufferEventsI3D (HDC hDC, const HANDLE *pEvent, const LPVOID *pAddress, const DWORD *pSize, UINT count) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglReleaseImageBufferEventsI3D (HDC hDC, const LPVOID *pAddress, UINT count) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglEnableFrameLockI3D (void) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDisableFrameLockI3D (void) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglIsEnabledFrameLockI3D (BOOL *pFlag) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryFrameLockMasterI3D (BOOL *pFlag) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetFrameUsageI3D (float *pUsage) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglBeginFrameTrackingI3D (void) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglEndFrameTrackingI3D (void) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryFrameTrackingI3D (DWORD *pFrameCount, DWORD *pMissedFrames, float *pLastMissedUsage) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDXSetResourceShareHandleNV (void *dxObject, HANDLE shareHandle) {
+	return (BOOL)0;
+}
+HANDLE WINAPI stub_wglDXOpenDeviceNV (void *dxDevice) {
+	return (HANDLE)0;
+}
+BOOL WINAPI stub_wglDXCloseDeviceNV (HANDLE hDevice) {
+	return (BOOL)0;
+}
+HANDLE WINAPI stub_wglDXRegisterObjectNV (HANDLE hDevice, void *dxObject, GLuint name, GLenum type, GLenum access) {
+	return (HANDLE)0;
+}
+BOOL WINAPI stub_wglDXUnregisterObjectNV (HANDLE hDevice, HANDLE hObject) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDXObjectAccessNV (HANDLE hObject, GLenum access) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDXLockObjectsNV (HANDLE hDevice, GLint count, HANDLE *hObjects) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDXUnlockObjectsNV (HANDLE hDevice, GLint count, HANDLE *hObjects) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglCopyImageSubDataNV (HGLRC hSrcRC, GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, HGLRC hDstRC, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei width, GLsizei height, GLsizei depth) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDelayBeforeSwapNV (HDC hDC, GLfloat seconds) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglEnumGpusNV (UINT iGpuIndex, HGPUNV *phGpu) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglEnumGpuDevicesNV (HGPUNV hGpu, UINT iDeviceIndex, PGPU_DEVICE lpGpuDevice) {
+	return (BOOL)0;
+}
+HDC WINAPI stub_wglCreateAffinityDCNV (const HGPUNV *phGpuList) {
+	return (HDC)0;
+}
+BOOL WINAPI stub_wglEnumGpusFromAffinityDCNV (HDC hAffinityDC, UINT iGpuIndex, HGPUNV *hGpu) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglDeleteDCNV (HDC hdc) {
+	return (BOOL)0;
+}
+int WINAPI stub_wglEnumerateVideoDevicesNV (HDC hDC, HVIDEOOUTPUTDEVICENV *phDeviceList) {
+	return (int)0;
+}
+BOOL WINAPI stub_wglBindVideoDeviceNV (HDC hDC, unsigned int uVideoSlot, HVIDEOOUTPUTDEVICENV hVideoDevice, const int *piAttribList) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryCurrentContextNV (int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglJoinSwapGroupNV (HDC hDC, GLuint group) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglBindSwapBarrierNV (GLuint group, GLuint barrier) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQuerySwapGroupNV (HDC hDC, GLuint *group, GLuint *barrier) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryMaxSwapGroupsNV (HDC hDC, GLuint *maxGroups, GLuint *maxBarriers) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryFrameCountNV (HDC hDC, GLuint *count) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglResetFrameCountNV (HDC hDC) {
+	return (BOOL)0;
+}
+void *WINAPI stub_wglAllocateMemoryNV (GLsizei size, GLfloat readfreq, GLfloat writefreq, GLfloat priority) {
+	return (void *)0;
+}
+void WINAPI stub_wglFreeMemoryNV (void *pointer) {
+}
+BOOL WINAPI stub_wglBindVideoCaptureDeviceNV (UINT uVideoSlot, HVIDEOINPUTDEVICENV hDevice) {
+	return (BOOL)0;
+}
+UINT WINAPI stub_wglEnumerateVideoCaptureDevicesNV (HDC hDc, HVIDEOINPUTDEVICENV *phDeviceList) {
+	return (UINT)0;
+}
+BOOL WINAPI stub_wglLockVideoCaptureDeviceNV (HDC hDc, HVIDEOINPUTDEVICENV hDevice) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglQueryVideoCaptureDeviceNV (HDC hDc, HVIDEOINPUTDEVICENV hDevice, int iAttribute, int *piValue) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglReleaseVideoCaptureDeviceNV (HDC hDc, HVIDEOINPUTDEVICENV hDevice) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetVideoDeviceNV (HDC hDC, int numDevices, HPVIDEODEV *hVideoDevice) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglReleaseVideoDeviceNV (HPVIDEODEV hVideoDevice) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglBindVideoImageNV (HPVIDEODEV hVideoDevice, HPBUFFERARB hPbuffer, int iVideoBuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglReleaseVideoImageNV (HPBUFFERARB hPbuffer, int iVideoBuffer) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglSendPbufferToVideoNV (HPBUFFERARB hPbuffer, int iBufferType, unsigned long *pulCounterPbuffer, BOOL bBlock) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetVideoInfoNV (HPVIDEODEV hpVideoDevice, unsigned long *pulCounterOutputPbuffer, unsigned long *pulCounterOutputVideo) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetSyncValuesOML (HDC hdc, INT64 *ust, INT64 *msc, INT64 *sbc) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglGetMscRateOML (HDC hdc, INT32 *numerator, INT32 *denominator) {
+	return (BOOL)0;
+}
+INT64 WINAPI stub_wglSwapBuffersMscOML (HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder) {
+	return (INT64)0;
+}
+INT64 WINAPI stub_wglSwapLayerBuffersMscOML (HDC hdc, int fuPlanes, INT64 target_msc, INT64 divisor, INT64 remainder) {
+	return (INT64)0;
+}
+BOOL WINAPI stub_wglWaitForMscOML (HDC hdc, INT64 target_msc, INT64 divisor, INT64 remainder, INT64 *ust, INT64 *msc, INT64 *sbc) {
+	return (BOOL)0;
+}
+BOOL WINAPI stub_wglWaitForSbcOML (HDC hdc, INT64 target_sbc, INT64 *ust, INT64 *msc, INT64 *sbc) {
+	return (BOOL)0;
+}
 
 //----------------------------------------------------------------------------
 
@@ -7716,6 +8069,125 @@ void glexfp::Reset() {
 	glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN = stub_glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN;
 	glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN = stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN;
 	glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN = stub_glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN;
+	wglCreateBufferRegionARB = stub_wglCreateBufferRegionARB;
+	wglDeleteBufferRegionARB = stub_wglDeleteBufferRegionARB;
+	wglSaveBufferRegionARB = stub_wglSaveBufferRegionARB;
+	wglRestoreBufferRegionARB = stub_wglRestoreBufferRegionARB;
+	wglCreateContextAttribsARB = stub_wglCreateContextAttribsARB;
+	wglGetExtensionsStringARB = stub_wglGetExtensionsStringARB;
+	wglMakeContextCurrentARB = stub_wglMakeContextCurrentARB;
+	wglGetCurrentReadDCARB = stub_wglGetCurrentReadDCARB;
+	wglCreatePbufferARB = stub_wglCreatePbufferARB;
+	wglGetPbufferDCARB = stub_wglGetPbufferDCARB;
+	wglReleasePbufferDCARB = stub_wglReleasePbufferDCARB;
+	wglDestroyPbufferARB = stub_wglDestroyPbufferARB;
+	wglQueryPbufferARB = stub_wglQueryPbufferARB;
+	wglGetPixelFormatAttribivARB = stub_wglGetPixelFormatAttribivARB;
+	wglGetPixelFormatAttribfvARB = stub_wglGetPixelFormatAttribfvARB;
+	wglChoosePixelFormatARB = stub_wglChoosePixelFormatARB;
+	wglBindTexImageARB = stub_wglBindTexImageARB;
+	wglReleaseTexImageARB = stub_wglReleaseTexImageARB;
+	wglSetPbufferAttribARB = stub_wglSetPbufferAttribARB;
+	wglSetStereoEmitterState3DL = stub_wglSetStereoEmitterState3DL;
+	wglGetGPUIDsAMD = stub_wglGetGPUIDsAMD;
+	wglGetGPUInfoAMD = stub_wglGetGPUInfoAMD;
+	wglGetContextGPUIDAMD = stub_wglGetContextGPUIDAMD;
+	wglCreateAssociatedContextAMD = stub_wglCreateAssociatedContextAMD;
+	wglCreateAssociatedContextAttribsAMD = stub_wglCreateAssociatedContextAttribsAMD;
+	wglDeleteAssociatedContextAMD = stub_wglDeleteAssociatedContextAMD;
+	wglMakeAssociatedContextCurrentAMD = stub_wglMakeAssociatedContextCurrentAMD;
+	wglGetCurrentAssociatedContextAMD = stub_wglGetCurrentAssociatedContextAMD;
+	wglBlitContextFramebufferAMD = stub_wglBlitContextFramebufferAMD;
+	wglCreateDisplayColorTableEXT = stub_wglCreateDisplayColorTableEXT;
+	wglLoadDisplayColorTableEXT = stub_wglLoadDisplayColorTableEXT;
+	wglBindDisplayColorTableEXT = stub_wglBindDisplayColorTableEXT;
+	wglDestroyDisplayColorTableEXT = stub_wglDestroyDisplayColorTableEXT;
+	wglGetExtensionsStringEXT = stub_wglGetExtensionsStringEXT;
+	wglMakeContextCurrentEXT = stub_wglMakeContextCurrentEXT;
+	wglGetCurrentReadDCEXT = stub_wglGetCurrentReadDCEXT;
+	wglCreatePbufferEXT = stub_wglCreatePbufferEXT;
+	wglGetPbufferDCEXT = stub_wglGetPbufferDCEXT;
+	wglReleasePbufferDCEXT = stub_wglReleasePbufferDCEXT;
+	wglDestroyPbufferEXT = stub_wglDestroyPbufferEXT;
+	wglQueryPbufferEXT = stub_wglQueryPbufferEXT;
+	wglGetPixelFormatAttribivEXT = stub_wglGetPixelFormatAttribivEXT;
+	wglGetPixelFormatAttribfvEXT = stub_wglGetPixelFormatAttribfvEXT;
+	wglChoosePixelFormatEXT = stub_wglChoosePixelFormatEXT;
+	wglSwapIntervalEXT = stub_wglSwapIntervalEXT;
+	wglGetSwapIntervalEXT = stub_wglGetSwapIntervalEXT;
+	wglGetDigitalVideoParametersI3D = stub_wglGetDigitalVideoParametersI3D;
+	wglSetDigitalVideoParametersI3D = stub_wglSetDigitalVideoParametersI3D;
+	wglGetGammaTableParametersI3D = stub_wglGetGammaTableParametersI3D;
+	wglSetGammaTableParametersI3D = stub_wglSetGammaTableParametersI3D;
+	wglGetGammaTableI3D = stub_wglGetGammaTableI3D;
+	wglSetGammaTableI3D = stub_wglSetGammaTableI3D;
+	wglEnableGenlockI3D = stub_wglEnableGenlockI3D;
+	wglDisableGenlockI3D = stub_wglDisableGenlockI3D;
+	wglIsEnabledGenlockI3D = stub_wglIsEnabledGenlockI3D;
+	wglGenlockSourceI3D = stub_wglGenlockSourceI3D;
+	wglGetGenlockSourceI3D = stub_wglGetGenlockSourceI3D;
+	wglGenlockSourceEdgeI3D = stub_wglGenlockSourceEdgeI3D;
+	wglGetGenlockSourceEdgeI3D = stub_wglGetGenlockSourceEdgeI3D;
+	wglGenlockSampleRateI3D = stub_wglGenlockSampleRateI3D;
+	wglGetGenlockSampleRateI3D = stub_wglGetGenlockSampleRateI3D;
+	wglGenlockSourceDelayI3D = stub_wglGenlockSourceDelayI3D;
+	wglGetGenlockSourceDelayI3D = stub_wglGetGenlockSourceDelayI3D;
+	wglQueryGenlockMaxSourceDelayI3D = stub_wglQueryGenlockMaxSourceDelayI3D;
+	wglCreateImageBufferI3D = stub_wglCreateImageBufferI3D;
+	wglDestroyImageBufferI3D = stub_wglDestroyImageBufferI3D;
+	wglAssociateImageBufferEventsI3D = stub_wglAssociateImageBufferEventsI3D;
+	wglReleaseImageBufferEventsI3D = stub_wglReleaseImageBufferEventsI3D;
+	wglEnableFrameLockI3D = stub_wglEnableFrameLockI3D;
+	wglDisableFrameLockI3D = stub_wglDisableFrameLockI3D;
+	wglIsEnabledFrameLockI3D = stub_wglIsEnabledFrameLockI3D;
+	wglQueryFrameLockMasterI3D = stub_wglQueryFrameLockMasterI3D;
+	wglGetFrameUsageI3D = stub_wglGetFrameUsageI3D;
+	wglBeginFrameTrackingI3D = stub_wglBeginFrameTrackingI3D;
+	wglEndFrameTrackingI3D = stub_wglEndFrameTrackingI3D;
+	wglQueryFrameTrackingI3D = stub_wglQueryFrameTrackingI3D;
+	wglDXSetResourceShareHandleNV = stub_wglDXSetResourceShareHandleNV;
+	wglDXOpenDeviceNV = stub_wglDXOpenDeviceNV;
+	wglDXCloseDeviceNV = stub_wglDXCloseDeviceNV;
+	wglDXRegisterObjectNV = stub_wglDXRegisterObjectNV;
+	wglDXUnregisterObjectNV = stub_wglDXUnregisterObjectNV;
+	wglDXObjectAccessNV = stub_wglDXObjectAccessNV;
+	wglDXLockObjectsNV = stub_wglDXLockObjectsNV;
+	wglDXUnlockObjectsNV = stub_wglDXUnlockObjectsNV;
+	wglCopyImageSubDataNV = stub_wglCopyImageSubDataNV;
+	wglDelayBeforeSwapNV = stub_wglDelayBeforeSwapNV;
+	wglEnumGpusNV = stub_wglEnumGpusNV;
+	wglEnumGpuDevicesNV = stub_wglEnumGpuDevicesNV;
+	wglCreateAffinityDCNV = stub_wglCreateAffinityDCNV;
+	wglEnumGpusFromAffinityDCNV = stub_wglEnumGpusFromAffinityDCNV;
+	wglDeleteDCNV = stub_wglDeleteDCNV;
+	wglEnumerateVideoDevicesNV = stub_wglEnumerateVideoDevicesNV;
+	wglBindVideoDeviceNV = stub_wglBindVideoDeviceNV;
+	wglQueryCurrentContextNV = stub_wglQueryCurrentContextNV;
+	wglJoinSwapGroupNV = stub_wglJoinSwapGroupNV;
+	wglBindSwapBarrierNV = stub_wglBindSwapBarrierNV;
+	wglQuerySwapGroupNV = stub_wglQuerySwapGroupNV;
+	wglQueryMaxSwapGroupsNV = stub_wglQueryMaxSwapGroupsNV;
+	wglQueryFrameCountNV = stub_wglQueryFrameCountNV;
+	wglResetFrameCountNV = stub_wglResetFrameCountNV;
+	wglAllocateMemoryNV = stub_wglAllocateMemoryNV;
+	wglFreeMemoryNV = stub_wglFreeMemoryNV;
+	wglBindVideoCaptureDeviceNV = stub_wglBindVideoCaptureDeviceNV;
+	wglEnumerateVideoCaptureDevicesNV = stub_wglEnumerateVideoCaptureDevicesNV;
+	wglLockVideoCaptureDeviceNV = stub_wglLockVideoCaptureDeviceNV;
+	wglQueryVideoCaptureDeviceNV = stub_wglQueryVideoCaptureDeviceNV;
+	wglReleaseVideoCaptureDeviceNV = stub_wglReleaseVideoCaptureDeviceNV;
+	wglGetVideoDeviceNV = stub_wglGetVideoDeviceNV;
+	wglReleaseVideoDeviceNV = stub_wglReleaseVideoDeviceNV;
+	wglBindVideoImageNV = stub_wglBindVideoImageNV;
+	wglReleaseVideoImageNV = stub_wglReleaseVideoImageNV;
+	wglSendPbufferToVideoNV = stub_wglSendPbufferToVideoNV;
+	wglGetVideoInfoNV = stub_wglGetVideoInfoNV;
+	wglGetSyncValuesOML = stub_wglGetSyncValuesOML;
+	wglGetMscRateOML = stub_wglGetMscRateOML;
+	wglSwapBuffersMscOML = stub_wglSwapBuffersMscOML;
+	wglSwapLayerBuffersMscOML = stub_wglSwapLayerBuffersMscOML;
+	wglWaitForMscOML = stub_wglWaitForMscOML;
+	wglWaitForSbcOML = stub_wglWaitForSbcOML;
 }//Reset
 
 //----------------------------------------------------------------------------
@@ -20302,6 +20774,601 @@ bool glexfp::Load() {
 	p = wglGetProcAddress("glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN");
 	if (p) {
 		glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN = (PFNGLREPLACEMENTCODEUITEXCOORD2FCOLOR4FNORMAL3FVERTEX3FVSUNPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateBufferRegionARB");
+	if (p) {
+		wglCreateBufferRegionARB = (PFNWGLCREATEBUFFERREGIONARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDeleteBufferRegionARB");
+	if (p) {
+		wglDeleteBufferRegionARB = (PFNWGLDELETEBUFFERREGIONARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSaveBufferRegionARB");
+	if (p) {
+		wglSaveBufferRegionARB = (PFNWGLSAVEBUFFERREGIONARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglRestoreBufferRegionARB");
+	if (p) {
+		wglRestoreBufferRegionARB = (PFNWGLRESTOREBUFFERREGIONARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateContextAttribsARB");
+	if (p) {
+		wglCreateContextAttribsARB = (PFNWGLCREATECONTEXTATTRIBSARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetExtensionsStringARB");
+	if (p) {
+		wglGetExtensionsStringARB = (PFNWGLGETEXTENSIONSSTRINGARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglMakeContextCurrentARB");
+	if (p) {
+		wglMakeContextCurrentARB = (PFNWGLMAKECONTEXTCURRENTARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetCurrentReadDCARB");
+	if (p) {
+		wglGetCurrentReadDCARB = (PFNWGLGETCURRENTREADDCARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreatePbufferARB");
+	if (p) {
+		wglCreatePbufferARB = (PFNWGLCREATEPBUFFERARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPbufferDCARB");
+	if (p) {
+		wglGetPbufferDCARB = (PFNWGLGETPBUFFERDCARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleasePbufferDCARB");
+	if (p) {
+		wglReleasePbufferDCARB = (PFNWGLRELEASEPBUFFERDCARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDestroyPbufferARB");
+	if (p) {
+		wglDestroyPbufferARB = (PFNWGLDESTROYPBUFFERARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryPbufferARB");
+	if (p) {
+		wglQueryPbufferARB = (PFNWGLQUERYPBUFFERARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPixelFormatAttribivARB");
+	if (p) {
+		wglGetPixelFormatAttribivARB = (PFNWGLGETPIXELFORMATATTRIBIVARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPixelFormatAttribfvARB");
+	if (p) {
+		wglGetPixelFormatAttribfvARB = (PFNWGLGETPIXELFORMATATTRIBFVARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglChoosePixelFormatARB");
+	if (p) {
+		wglChoosePixelFormatARB = (PFNWGLCHOOSEPIXELFORMATARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindTexImageARB");
+	if (p) {
+		wglBindTexImageARB = (PFNWGLBINDTEXIMAGEARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleaseTexImageARB");
+	if (p) {
+		wglReleaseTexImageARB = (PFNWGLRELEASETEXIMAGEARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSetPbufferAttribARB");
+	if (p) {
+		wglSetPbufferAttribARB = (PFNWGLSETPBUFFERATTRIBARBPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSetStereoEmitterState3DL");
+	if (p) {
+		wglSetStereoEmitterState3DL = (PFNWGLSETSTEREOEMITTERSTATE3DLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGPUIDsAMD");
+	if (p) {
+		wglGetGPUIDsAMD = (PFNWGLGETGPUIDSAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGPUInfoAMD");
+	if (p) {
+		wglGetGPUInfoAMD = (PFNWGLGETGPUINFOAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetContextGPUIDAMD");
+	if (p) {
+		wglGetContextGPUIDAMD = (PFNWGLGETCONTEXTGPUIDAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateAssociatedContextAMD");
+	if (p) {
+		wglCreateAssociatedContextAMD = (PFNWGLCREATEASSOCIATEDCONTEXTAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateAssociatedContextAttribsAMD");
+	if (p) {
+		wglCreateAssociatedContextAttribsAMD = (PFNWGLCREATEASSOCIATEDCONTEXTATTRIBSAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDeleteAssociatedContextAMD");
+	if (p) {
+		wglDeleteAssociatedContextAMD = (PFNWGLDELETEASSOCIATEDCONTEXTAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglMakeAssociatedContextCurrentAMD");
+	if (p) {
+		wglMakeAssociatedContextCurrentAMD = (PFNWGLMAKEASSOCIATEDCONTEXTCURRENTAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetCurrentAssociatedContextAMD");
+	if (p) {
+		wglGetCurrentAssociatedContextAMD = (PFNWGLGETCURRENTASSOCIATEDCONTEXTAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBlitContextFramebufferAMD");
+	if (p) {
+		wglBlitContextFramebufferAMD = (PFNWGLBLITCONTEXTFRAMEBUFFERAMDPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateDisplayColorTableEXT");
+	if (p) {
+		wglCreateDisplayColorTableEXT = (PFNWGLCREATEDISPLAYCOLORTABLEEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglLoadDisplayColorTableEXT");
+	if (p) {
+		wglLoadDisplayColorTableEXT = (PFNWGLLOADDISPLAYCOLORTABLEEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindDisplayColorTableEXT");
+	if (p) {
+		wglBindDisplayColorTableEXT = (PFNWGLBINDDISPLAYCOLORTABLEEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDestroyDisplayColorTableEXT");
+	if (p) {
+		wglDestroyDisplayColorTableEXT = (PFNWGLDESTROYDISPLAYCOLORTABLEEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetExtensionsStringEXT");
+	if (p) {
+		wglGetExtensionsStringEXT = (PFNWGLGETEXTENSIONSSTRINGEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglMakeContextCurrentEXT");
+	if (p) {
+		wglMakeContextCurrentEXT = (PFNWGLMAKECONTEXTCURRENTEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetCurrentReadDCEXT");
+	if (p) {
+		wglGetCurrentReadDCEXT = (PFNWGLGETCURRENTREADDCEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreatePbufferEXT");
+	if (p) {
+		wglCreatePbufferEXT = (PFNWGLCREATEPBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPbufferDCEXT");
+	if (p) {
+		wglGetPbufferDCEXT = (PFNWGLGETPBUFFERDCEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleasePbufferDCEXT");
+	if (p) {
+		wglReleasePbufferDCEXT = (PFNWGLRELEASEPBUFFERDCEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDestroyPbufferEXT");
+	if (p) {
+		wglDestroyPbufferEXT = (PFNWGLDESTROYPBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryPbufferEXT");
+	if (p) {
+		wglQueryPbufferEXT = (PFNWGLQUERYPBUFFEREXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPixelFormatAttribivEXT");
+	if (p) {
+		wglGetPixelFormatAttribivEXT = (PFNWGLGETPIXELFORMATATTRIBIVEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetPixelFormatAttribfvEXT");
+	if (p) {
+		wglGetPixelFormatAttribfvEXT = (PFNWGLGETPIXELFORMATATTRIBFVEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglChoosePixelFormatEXT");
+	if (p) {
+		wglChoosePixelFormatEXT = (PFNWGLCHOOSEPIXELFORMATEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSwapIntervalEXT");
+	if (p) {
+		wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetSwapIntervalEXT");
+	if (p) {
+		wglGetSwapIntervalEXT = (PFNWGLGETSWAPINTERVALEXTPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetDigitalVideoParametersI3D");
+	if (p) {
+		wglGetDigitalVideoParametersI3D = (PFNWGLGETDIGITALVIDEOPARAMETERSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSetDigitalVideoParametersI3D");
+	if (p) {
+		wglSetDigitalVideoParametersI3D = (PFNWGLSETDIGITALVIDEOPARAMETERSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGammaTableParametersI3D");
+	if (p) {
+		wglGetGammaTableParametersI3D = (PFNWGLGETGAMMATABLEPARAMETERSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSetGammaTableParametersI3D");
+	if (p) {
+		wglSetGammaTableParametersI3D = (PFNWGLSETGAMMATABLEPARAMETERSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGammaTableI3D");
+	if (p) {
+		wglGetGammaTableI3D = (PFNWGLGETGAMMATABLEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSetGammaTableI3D");
+	if (p) {
+		wglSetGammaTableI3D = (PFNWGLSETGAMMATABLEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnableGenlockI3D");
+	if (p) {
+		wglEnableGenlockI3D = (PFNWGLENABLEGENLOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDisableGenlockI3D");
+	if (p) {
+		wglDisableGenlockI3D = (PFNWGLDISABLEGENLOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglIsEnabledGenlockI3D");
+	if (p) {
+		wglIsEnabledGenlockI3D = (PFNWGLISENABLEDGENLOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGenlockSourceI3D");
+	if (p) {
+		wglGenlockSourceI3D = (PFNWGLGENLOCKSOURCEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGenlockSourceI3D");
+	if (p) {
+		wglGetGenlockSourceI3D = (PFNWGLGETGENLOCKSOURCEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGenlockSourceEdgeI3D");
+	if (p) {
+		wglGenlockSourceEdgeI3D = (PFNWGLGENLOCKSOURCEEDGEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGenlockSourceEdgeI3D");
+	if (p) {
+		wglGetGenlockSourceEdgeI3D = (PFNWGLGETGENLOCKSOURCEEDGEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGenlockSampleRateI3D");
+	if (p) {
+		wglGenlockSampleRateI3D = (PFNWGLGENLOCKSAMPLERATEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGenlockSampleRateI3D");
+	if (p) {
+		wglGetGenlockSampleRateI3D = (PFNWGLGETGENLOCKSAMPLERATEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGenlockSourceDelayI3D");
+	if (p) {
+		wglGenlockSourceDelayI3D = (PFNWGLGENLOCKSOURCEDELAYI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetGenlockSourceDelayI3D");
+	if (p) {
+		wglGetGenlockSourceDelayI3D = (PFNWGLGETGENLOCKSOURCEDELAYI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryGenlockMaxSourceDelayI3D");
+	if (p) {
+		wglQueryGenlockMaxSourceDelayI3D = (PFNWGLQUERYGENLOCKMAXSOURCEDELAYI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateImageBufferI3D");
+	if (p) {
+		wglCreateImageBufferI3D = (PFNWGLCREATEIMAGEBUFFERI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDestroyImageBufferI3D");
+	if (p) {
+		wglDestroyImageBufferI3D = (PFNWGLDESTROYIMAGEBUFFERI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglAssociateImageBufferEventsI3D");
+	if (p) {
+		wglAssociateImageBufferEventsI3D = (PFNWGLASSOCIATEIMAGEBUFFEREVENTSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleaseImageBufferEventsI3D");
+	if (p) {
+		wglReleaseImageBufferEventsI3D = (PFNWGLRELEASEIMAGEBUFFEREVENTSI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnableFrameLockI3D");
+	if (p) {
+		wglEnableFrameLockI3D = (PFNWGLENABLEFRAMELOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDisableFrameLockI3D");
+	if (p) {
+		wglDisableFrameLockI3D = (PFNWGLDISABLEFRAMELOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglIsEnabledFrameLockI3D");
+	if (p) {
+		wglIsEnabledFrameLockI3D = (PFNWGLISENABLEDFRAMELOCKI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryFrameLockMasterI3D");
+	if (p) {
+		wglQueryFrameLockMasterI3D = (PFNWGLQUERYFRAMELOCKMASTERI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetFrameUsageI3D");
+	if (p) {
+		wglGetFrameUsageI3D = (PFNWGLGETFRAMEUSAGEI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBeginFrameTrackingI3D");
+	if (p) {
+		wglBeginFrameTrackingI3D = (PFNWGLBEGINFRAMETRACKINGI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEndFrameTrackingI3D");
+	if (p) {
+		wglEndFrameTrackingI3D = (PFNWGLENDFRAMETRACKINGI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryFrameTrackingI3D");
+	if (p) {
+		wglQueryFrameTrackingI3D = (PFNWGLQUERYFRAMETRACKINGI3DPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXSetResourceShareHandleNV");
+	if (p) {
+		wglDXSetResourceShareHandleNV = (PFNWGLDXSETRESOURCESHAREHANDLENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXOpenDeviceNV");
+	if (p) {
+		wglDXOpenDeviceNV = (PFNWGLDXOPENDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXCloseDeviceNV");
+	if (p) {
+		wglDXCloseDeviceNV = (PFNWGLDXCLOSEDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXRegisterObjectNV");
+	if (p) {
+		wglDXRegisterObjectNV = (PFNWGLDXREGISTEROBJECTNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXUnregisterObjectNV");
+	if (p) {
+		wglDXUnregisterObjectNV = (PFNWGLDXUNREGISTEROBJECTNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXObjectAccessNV");
+	if (p) {
+		wglDXObjectAccessNV = (PFNWGLDXOBJECTACCESSNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXLockObjectsNV");
+	if (p) {
+		wglDXLockObjectsNV = (PFNWGLDXLOCKOBJECTSNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDXUnlockObjectsNV");
+	if (p) {
+		wglDXUnlockObjectsNV = (PFNWGLDXUNLOCKOBJECTSNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCopyImageSubDataNV");
+	if (p) {
+		wglCopyImageSubDataNV = (PFNWGLCOPYIMAGESUBDATANVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDelayBeforeSwapNV");
+	if (p) {
+		wglDelayBeforeSwapNV = (PFNWGLDELAYBEFORESWAPNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnumGpusNV");
+	if (p) {
+		wglEnumGpusNV = (PFNWGLENUMGPUSNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnumGpuDevicesNV");
+	if (p) {
+		wglEnumGpuDevicesNV = (PFNWGLENUMGPUDEVICESNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglCreateAffinityDCNV");
+	if (p) {
+		wglCreateAffinityDCNV = (PFNWGLCREATEAFFINITYDCNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnumGpusFromAffinityDCNV");
+	if (p) {
+		wglEnumGpusFromAffinityDCNV = (PFNWGLENUMGPUSFROMAFFINITYDCNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglDeleteDCNV");
+	if (p) {
+		wglDeleteDCNV = (PFNWGLDELETEDCNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnumerateVideoDevicesNV");
+	if (p) {
+		wglEnumerateVideoDevicesNV = (PFNWGLENUMERATEVIDEODEVICESNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindVideoDeviceNV");
+	if (p) {
+		wglBindVideoDeviceNV = (PFNWGLBINDVIDEODEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryCurrentContextNV");
+	if (p) {
+		wglQueryCurrentContextNV = (PFNWGLQUERYCURRENTCONTEXTNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglJoinSwapGroupNV");
+	if (p) {
+		wglJoinSwapGroupNV = (PFNWGLJOINSWAPGROUPNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindSwapBarrierNV");
+	if (p) {
+		wglBindSwapBarrierNV = (PFNWGLBINDSWAPBARRIERNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQuerySwapGroupNV");
+	if (p) {
+		wglQuerySwapGroupNV = (PFNWGLQUERYSWAPGROUPNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryMaxSwapGroupsNV");
+	if (p) {
+		wglQueryMaxSwapGroupsNV = (PFNWGLQUERYMAXSWAPGROUPSNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryFrameCountNV");
+	if (p) {
+		wglQueryFrameCountNV = (PFNWGLQUERYFRAMECOUNTNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglResetFrameCountNV");
+	if (p) {
+		wglResetFrameCountNV = (PFNWGLRESETFRAMECOUNTNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglAllocateMemoryNV");
+	if (p) {
+		wglAllocateMemoryNV = (PFNWGLALLOCATEMEMORYNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglFreeMemoryNV");
+	if (p) {
+		wglFreeMemoryNV = (PFNWGLFREEMEMORYNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindVideoCaptureDeviceNV");
+	if (p) {
+		wglBindVideoCaptureDeviceNV = (PFNWGLBINDVIDEOCAPTUREDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglEnumerateVideoCaptureDevicesNV");
+	if (p) {
+		wglEnumerateVideoCaptureDevicesNV = (PFNWGLENUMERATEVIDEOCAPTUREDEVICESNVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglLockVideoCaptureDeviceNV");
+	if (p) {
+		wglLockVideoCaptureDeviceNV = (PFNWGLLOCKVIDEOCAPTUREDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglQueryVideoCaptureDeviceNV");
+	if (p) {
+		wglQueryVideoCaptureDeviceNV = (PFNWGLQUERYVIDEOCAPTUREDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleaseVideoCaptureDeviceNV");
+	if (p) {
+		wglReleaseVideoCaptureDeviceNV = (PFNWGLRELEASEVIDEOCAPTUREDEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetVideoDeviceNV");
+	if (p) {
+		wglGetVideoDeviceNV = (PFNWGLGETVIDEODEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleaseVideoDeviceNV");
+	if (p) {
+		wglReleaseVideoDeviceNV = (PFNWGLRELEASEVIDEODEVICENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglBindVideoImageNV");
+	if (p) {
+		wglBindVideoImageNV = (PFNWGLBINDVIDEOIMAGENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglReleaseVideoImageNV");
+	if (p) {
+		wglReleaseVideoImageNV = (PFNWGLRELEASEVIDEOIMAGENVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSendPbufferToVideoNV");
+	if (p) {
+		wglSendPbufferToVideoNV = (PFNWGLSENDPBUFFERTOVIDEONVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetVideoInfoNV");
+	if (p) {
+		wglGetVideoInfoNV = (PFNWGLGETVIDEOINFONVPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetSyncValuesOML");
+	if (p) {
+		wglGetSyncValuesOML = (PFNWGLGETSYNCVALUESOMLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglGetMscRateOML");
+	if (p) {
+		wglGetMscRateOML = (PFNWGLGETMSCRATEOMLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSwapBuffersMscOML");
+	if (p) {
+		wglSwapBuffersMscOML = (PFNWGLSWAPBUFFERSMSCOMLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglSwapLayerBuffersMscOML");
+	if (p) {
+		wglSwapLayerBuffersMscOML = (PFNWGLSWAPLAYERBUFFERSMSCOMLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglWaitForMscOML");
+	if (p) {
+		wglWaitForMscOML = (PFNWGLWAITFORMSCOMLPROC)p;
+		m_count++;
+	}
+	p = wglGetProcAddress("wglWaitForSbcOML");
+	if (p) {
+		wglWaitForSbcOML = (PFNWGLWAITFORSBCOMLPROC)p;
 		m_count++;
 	}
 	return (m_count > 0);

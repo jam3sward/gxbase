@@ -7,7 +7,7 @@
 
 /**
  * This is an automatically generated file: do not edit
- * Generated on Fri Nov 25 22:11:55 2016
+ * Generated on Sat Nov 26 01:34:23 2016
  * J.Ward, Computer Science, University of Hull, UK
  * Visit the OpenGL Extensions Registry for detailed
  * extension specifications:
@@ -7565,6 +7565,363 @@ inline void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(GLuint  a, G
 }
 inline void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(const GLuint *a, const GLfloat *b, const GLfloat *c, const GLfloat *d, const GLfloat *e) {
 	interceptor::getCurrentExt()->glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(a,b,c,d,e);
+}
+inline HANDLE wglCreateBufferRegionARB(HDC  a, int  b, UINT  c) {
+	return interceptor::getCurrentExt()->wglCreateBufferRegionARB(a,b,c);
+}
+inline VOID wglDeleteBufferRegionARB(HANDLE  a) {
+	interceptor::getCurrentExt()->wglDeleteBufferRegionARB(a);
+}
+inline BOOL wglSaveBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e) {
+	return interceptor::getCurrentExt()->wglSaveBufferRegionARB(a,b,c,d,e);
+}
+inline BOOL wglRestoreBufferRegionARB(HANDLE  a, int  b, int  c, int  d, int  e, int  f, int  g) {
+	return interceptor::getCurrentExt()->wglRestoreBufferRegionARB(a,b,c,d,e,f,g);
+}
+inline HGLRC wglCreateContextAttribsARB(HDC  a, HGLRC  b, const int *c) {
+	return interceptor::getCurrentExt()->wglCreateContextAttribsARB(a,b,c);
+}
+inline const char * wglGetExtensionsStringARB(HDC  a) {
+	return interceptor::getCurrentExt()->wglGetExtensionsStringARB(a);
+}
+inline BOOL wglMakeContextCurrentARB(HDC  a, HDC  b, HGLRC  c) {
+	return interceptor::getCurrentExt()->wglMakeContextCurrentARB(a,b,c);
+}
+inline HDC wglGetCurrentReadDCARB(void) {
+	return interceptor::getCurrentExt()->wglGetCurrentReadDCARB();
+}
+inline HPBUFFERARB wglCreatePbufferARB(HDC  a, int  b, int  c, int  d, const int *e) {
+	return interceptor::getCurrentExt()->wglCreatePbufferARB(a,b,c,d,e);
+}
+inline HDC wglGetPbufferDCARB(HPBUFFERARB  a) {
+	return interceptor::getCurrentExt()->wglGetPbufferDCARB(a);
+}
+inline int wglReleasePbufferDCARB(HPBUFFERARB  a, HDC  b) {
+	return interceptor::getCurrentExt()->wglReleasePbufferDCARB(a,b);
+}
+inline BOOL wglDestroyPbufferARB(HPBUFFERARB  a) {
+	return interceptor::getCurrentExt()->wglDestroyPbufferARB(a);
+}
+inline BOOL wglQueryPbufferARB(HPBUFFERARB  a, int  b, int *c) {
+	return interceptor::getCurrentExt()->wglQueryPbufferARB(a,b,c);
+}
+inline BOOL wglGetPixelFormatAttribivARB(HDC  a, int  b, int  c, UINT  d, const int *e, int *f) {
+	return interceptor::getCurrentExt()->wglGetPixelFormatAttribivARB(a,b,c,d,e,f);
+}
+inline BOOL wglGetPixelFormatAttribfvARB(HDC  a, int  b, int  c, UINT  d, const int *e, FLOAT *f) {
+	return interceptor::getCurrentExt()->wglGetPixelFormatAttribfvARB(a,b,c,d,e,f);
+}
+inline BOOL wglChoosePixelFormatARB(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
+	return interceptor::getCurrentExt()->wglChoosePixelFormatARB(a,b,c,d,e,f);
+}
+inline BOOL wglBindTexImageARB(HPBUFFERARB  a, int  b) {
+	return interceptor::getCurrentExt()->wglBindTexImageARB(a,b);
+}
+inline BOOL wglReleaseTexImageARB(HPBUFFERARB  a, int  b) {
+	return interceptor::getCurrentExt()->wglReleaseTexImageARB(a,b);
+}
+inline BOOL wglSetPbufferAttribARB(HPBUFFERARB  a, const int *b) {
+	return interceptor::getCurrentExt()->wglSetPbufferAttribARB(a,b);
+}
+inline BOOL wglSetStereoEmitterState3DL(HDC  a, UINT  b) {
+	return interceptor::getCurrentExt()->wglSetStereoEmitterState3DL(a,b);
+}
+inline UINT wglGetGPUIDsAMD(UINT  a, UINT *b) {
+	return interceptor::getCurrentExt()->wglGetGPUIDsAMD(a,b);
+}
+inline INT wglGetGPUInfoAMD(UINT  a, int  b, GLenum  c, UINT  d, void *e) {
+	return interceptor::getCurrentExt()->wglGetGPUInfoAMD(a,b,c,d,e);
+}
+inline UINT wglGetContextGPUIDAMD(HGLRC  a) {
+	return interceptor::getCurrentExt()->wglGetContextGPUIDAMD(a);
+}
+inline HGLRC wglCreateAssociatedContextAMD(UINT  a) {
+	return interceptor::getCurrentExt()->wglCreateAssociatedContextAMD(a);
+}
+inline HGLRC wglCreateAssociatedContextAttribsAMD(UINT  a, HGLRC  b, const int *c) {
+	return interceptor::getCurrentExt()->wglCreateAssociatedContextAttribsAMD(a,b,c);
+}
+inline BOOL wglDeleteAssociatedContextAMD(HGLRC  a) {
+	return interceptor::getCurrentExt()->wglDeleteAssociatedContextAMD(a);
+}
+inline BOOL wglMakeAssociatedContextCurrentAMD(HGLRC  a) {
+	return interceptor::getCurrentExt()->wglMakeAssociatedContextCurrentAMD(a);
+}
+inline HGLRC wglGetCurrentAssociatedContextAMD(void) {
+	return interceptor::getCurrentExt()->wglGetCurrentAssociatedContextAMD();
+}
+inline VOID wglBlitContextFramebufferAMD(HGLRC  a, GLint  b, GLint  c, GLint  d, GLint  e, GLint  f, GLint  g, GLint  h, GLint  i, GLbitfield  j, GLenum  k) {
+	interceptor::getCurrentExt()->wglBlitContextFramebufferAMD(a,b,c,d,e,f,g,h,i,j,k);
+}
+inline GLboolean wglCreateDisplayColorTableEXT(GLushort  a) {
+	return interceptor::getCurrentExt()->wglCreateDisplayColorTableEXT(a);
+}
+inline GLboolean wglLoadDisplayColorTableEXT(const GLushort *a, GLuint  b) {
+	return interceptor::getCurrentExt()->wglLoadDisplayColorTableEXT(a,b);
+}
+inline GLboolean wglBindDisplayColorTableEXT(GLushort  a) {
+	return interceptor::getCurrentExt()->wglBindDisplayColorTableEXT(a);
+}
+inline VOID wglDestroyDisplayColorTableEXT(GLushort  a) {
+	interceptor::getCurrentExt()->wglDestroyDisplayColorTableEXT(a);
+}
+inline const char * wglGetExtensionsStringEXT(void) {
+	return interceptor::getCurrentExt()->wglGetExtensionsStringEXT();
+}
+inline BOOL wglMakeContextCurrentEXT(HDC  a, HDC  b, HGLRC  c) {
+	return interceptor::getCurrentExt()->wglMakeContextCurrentEXT(a,b,c);
+}
+inline HDC wglGetCurrentReadDCEXT(void) {
+	return interceptor::getCurrentExt()->wglGetCurrentReadDCEXT();
+}
+inline HPBUFFEREXT wglCreatePbufferEXT(HDC  a, int  b, int  c, int  d, const int *e) {
+	return interceptor::getCurrentExt()->wglCreatePbufferEXT(a,b,c,d,e);
+}
+inline HDC wglGetPbufferDCEXT(HPBUFFEREXT  a) {
+	return interceptor::getCurrentExt()->wglGetPbufferDCEXT(a);
+}
+inline int wglReleasePbufferDCEXT(HPBUFFEREXT  a, HDC  b) {
+	return interceptor::getCurrentExt()->wglReleasePbufferDCEXT(a,b);
+}
+inline BOOL wglDestroyPbufferEXT(HPBUFFEREXT  a) {
+	return interceptor::getCurrentExt()->wglDestroyPbufferEXT(a);
+}
+inline BOOL wglQueryPbufferEXT(HPBUFFEREXT  a, int  b, int *c) {
+	return interceptor::getCurrentExt()->wglQueryPbufferEXT(a,b,c);
+}
+inline BOOL wglGetPixelFormatAttribivEXT(HDC  a, int  b, int  c, UINT  d, int *e, int *f) {
+	return interceptor::getCurrentExt()->wglGetPixelFormatAttribivEXT(a,b,c,d,e,f);
+}
+inline BOOL wglGetPixelFormatAttribfvEXT(HDC  a, int  b, int  c, UINT  d, int *e, FLOAT *f) {
+	return interceptor::getCurrentExt()->wglGetPixelFormatAttribfvEXT(a,b,c,d,e,f);
+}
+inline BOOL wglChoosePixelFormatEXT(HDC  a, const int *b, const FLOAT *c, UINT  d, int *e, UINT *f) {
+	return interceptor::getCurrentExt()->wglChoosePixelFormatEXT(a,b,c,d,e,f);
+}
+inline BOOL wglSwapIntervalEXT(int  a) {
+	return interceptor::getCurrentExt()->wglSwapIntervalEXT(a);
+}
+inline int wglGetSwapIntervalEXT(void) {
+	return interceptor::getCurrentExt()->wglGetSwapIntervalEXT();
+}
+inline BOOL wglGetDigitalVideoParametersI3D(HDC  a, int  b, int *c) {
+	return interceptor::getCurrentExt()->wglGetDigitalVideoParametersI3D(a,b,c);
+}
+inline BOOL wglSetDigitalVideoParametersI3D(HDC  a, int  b, const int *c) {
+	return interceptor::getCurrentExt()->wglSetDigitalVideoParametersI3D(a,b,c);
+}
+inline BOOL wglGetGammaTableParametersI3D(HDC  a, int  b, int *c) {
+	return interceptor::getCurrentExt()->wglGetGammaTableParametersI3D(a,b,c);
+}
+inline BOOL wglSetGammaTableParametersI3D(HDC  a, int  b, const int *c) {
+	return interceptor::getCurrentExt()->wglSetGammaTableParametersI3D(a,b,c);
+}
+inline BOOL wglGetGammaTableI3D(HDC  a, int  b, USHORT *c, USHORT *d, USHORT *e) {
+	return interceptor::getCurrentExt()->wglGetGammaTableI3D(a,b,c,d,e);
+}
+inline BOOL wglSetGammaTableI3D(HDC  a, int  b, const USHORT *c, const USHORT *d, const USHORT *e) {
+	return interceptor::getCurrentExt()->wglSetGammaTableI3D(a,b,c,d,e);
+}
+inline BOOL wglEnableGenlockI3D(HDC  a) {
+	return interceptor::getCurrentExt()->wglEnableGenlockI3D(a);
+}
+inline BOOL wglDisableGenlockI3D(HDC  a) {
+	return interceptor::getCurrentExt()->wglDisableGenlockI3D(a);
+}
+inline BOOL wglIsEnabledGenlockI3D(HDC  a, BOOL *b) {
+	return interceptor::getCurrentExt()->wglIsEnabledGenlockI3D(a,b);
+}
+inline BOOL wglGenlockSourceI3D(HDC  a, UINT  b) {
+	return interceptor::getCurrentExt()->wglGenlockSourceI3D(a,b);
+}
+inline BOOL wglGetGenlockSourceI3D(HDC  a, UINT *b) {
+	return interceptor::getCurrentExt()->wglGetGenlockSourceI3D(a,b);
+}
+inline BOOL wglGenlockSourceEdgeI3D(HDC  a, UINT  b) {
+	return interceptor::getCurrentExt()->wglGenlockSourceEdgeI3D(a,b);
+}
+inline BOOL wglGetGenlockSourceEdgeI3D(HDC  a, UINT *b) {
+	return interceptor::getCurrentExt()->wglGetGenlockSourceEdgeI3D(a,b);
+}
+inline BOOL wglGenlockSampleRateI3D(HDC  a, UINT  b) {
+	return interceptor::getCurrentExt()->wglGenlockSampleRateI3D(a,b);
+}
+inline BOOL wglGetGenlockSampleRateI3D(HDC  a, UINT *b) {
+	return interceptor::getCurrentExt()->wglGetGenlockSampleRateI3D(a,b);
+}
+inline BOOL wglGenlockSourceDelayI3D(HDC  a, UINT  b) {
+	return interceptor::getCurrentExt()->wglGenlockSourceDelayI3D(a,b);
+}
+inline BOOL wglGetGenlockSourceDelayI3D(HDC  a, UINT *b) {
+	return interceptor::getCurrentExt()->wglGetGenlockSourceDelayI3D(a,b);
+}
+inline BOOL wglQueryGenlockMaxSourceDelayI3D(HDC  a, UINT *b, UINT *c) {
+	return interceptor::getCurrentExt()->wglQueryGenlockMaxSourceDelayI3D(a,b,c);
+}
+inline LPVOID wglCreateImageBufferI3D(HDC  a, DWORD  b, UINT  c) {
+	return interceptor::getCurrentExt()->wglCreateImageBufferI3D(a,b,c);
+}
+inline BOOL wglDestroyImageBufferI3D(HDC  a, LPVOID  b) {
+	return interceptor::getCurrentExt()->wglDestroyImageBufferI3D(a,b);
+}
+inline BOOL wglAssociateImageBufferEventsI3D(HDC  a, const HANDLE *b, const LPVOID *c, const DWORD *d, UINT  e) {
+	return interceptor::getCurrentExt()->wglAssociateImageBufferEventsI3D(a,b,c,d,e);
+}
+inline BOOL wglReleaseImageBufferEventsI3D(HDC  a, const LPVOID *b, UINT  c) {
+	return interceptor::getCurrentExt()->wglReleaseImageBufferEventsI3D(a,b,c);
+}
+inline BOOL wglEnableFrameLockI3D(void) {
+	return interceptor::getCurrentExt()->wglEnableFrameLockI3D();
+}
+inline BOOL wglDisableFrameLockI3D(void) {
+	return interceptor::getCurrentExt()->wglDisableFrameLockI3D();
+}
+inline BOOL wglIsEnabledFrameLockI3D(BOOL *a) {
+	return interceptor::getCurrentExt()->wglIsEnabledFrameLockI3D(a);
+}
+inline BOOL wglQueryFrameLockMasterI3D(BOOL *a) {
+	return interceptor::getCurrentExt()->wglQueryFrameLockMasterI3D(a);
+}
+inline BOOL wglGetFrameUsageI3D(float *a) {
+	return interceptor::getCurrentExt()->wglGetFrameUsageI3D(a);
+}
+inline BOOL wglBeginFrameTrackingI3D(void) {
+	return interceptor::getCurrentExt()->wglBeginFrameTrackingI3D();
+}
+inline BOOL wglEndFrameTrackingI3D(void) {
+	return interceptor::getCurrentExt()->wglEndFrameTrackingI3D();
+}
+inline BOOL wglQueryFrameTrackingI3D(DWORD *a, DWORD *b, float *c) {
+	return interceptor::getCurrentExt()->wglQueryFrameTrackingI3D(a,b,c);
+}
+inline BOOL wglDXSetResourceShareHandleNV(void *a, HANDLE  b) {
+	return interceptor::getCurrentExt()->wglDXSetResourceShareHandleNV(a,b);
+}
+inline HANDLE wglDXOpenDeviceNV(void *a) {
+	return interceptor::getCurrentExt()->wglDXOpenDeviceNV(a);
+}
+inline BOOL wglDXCloseDeviceNV(HANDLE  a) {
+	return interceptor::getCurrentExt()->wglDXCloseDeviceNV(a);
+}
+inline HANDLE wglDXRegisterObjectNV(HANDLE  a, void *b, GLuint  c, GLenum  d, GLenum  e) {
+	return interceptor::getCurrentExt()->wglDXRegisterObjectNV(a,b,c,d,e);
+}
+inline BOOL wglDXUnregisterObjectNV(HANDLE  a, HANDLE  b) {
+	return interceptor::getCurrentExt()->wglDXUnregisterObjectNV(a,b);
+}
+inline BOOL wglDXObjectAccessNV(HANDLE  a, GLenum  b) {
+	return interceptor::getCurrentExt()->wglDXObjectAccessNV(a,b);
+}
+inline BOOL wglDXLockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
+	return interceptor::getCurrentExt()->wglDXLockObjectsNV(a,b,c);
+}
+inline BOOL wglDXUnlockObjectsNV(HANDLE  a, GLint  b, HANDLE *c) {
+	return interceptor::getCurrentExt()->wglDXUnlockObjectsNV(a,b,c);
+}
+inline BOOL wglCopyImageSubDataNV(HGLRC  a, GLuint  b, GLenum  c, GLint  d, GLint  e, GLint  f, GLint  g, HGLRC  h, GLuint  i, GLenum  j, GLint  k, GLint  l, GLint  m, GLint  n, GLsizei  o, GLsizei  p, GLsizei  q) {
+	return interceptor::getCurrentExt()->wglCopyImageSubDataNV(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q);
+}
+inline BOOL wglDelayBeforeSwapNV(HDC  a, GLfloat  b) {
+	return interceptor::getCurrentExt()->wglDelayBeforeSwapNV(a,b);
+}
+inline BOOL wglEnumGpusNV(UINT  a, HGPUNV *b) {
+	return interceptor::getCurrentExt()->wglEnumGpusNV(a,b);
+}
+inline BOOL wglEnumGpuDevicesNV(HGPUNV  a, UINT  b, PGPU_DEVICE  c) {
+	return interceptor::getCurrentExt()->wglEnumGpuDevicesNV(a,b,c);
+}
+inline HDC wglCreateAffinityDCNV(const HGPUNV *a) {
+	return interceptor::getCurrentExt()->wglCreateAffinityDCNV(a);
+}
+inline BOOL wglEnumGpusFromAffinityDCNV(HDC  a, UINT  b, HGPUNV *c) {
+	return interceptor::getCurrentExt()->wglEnumGpusFromAffinityDCNV(a,b,c);
+}
+inline BOOL wglDeleteDCNV(HDC  a) {
+	return interceptor::getCurrentExt()->wglDeleteDCNV(a);
+}
+inline int wglEnumerateVideoDevicesNV(HDC  a, HVIDEOOUTPUTDEVICENV *b) {
+	return interceptor::getCurrentExt()->wglEnumerateVideoDevicesNV(a,b);
+}
+inline BOOL wglBindVideoDeviceNV(HDC  a, unsigned int  b, HVIDEOOUTPUTDEVICENV  c, const int *d) {
+	return interceptor::getCurrentExt()->wglBindVideoDeviceNV(a,b,c,d);
+}
+inline BOOL wglQueryCurrentContextNV(int  a, int *b) {
+	return interceptor::getCurrentExt()->wglQueryCurrentContextNV(a,b);
+}
+inline BOOL wglJoinSwapGroupNV(HDC  a, GLuint  b) {
+	return interceptor::getCurrentExt()->wglJoinSwapGroupNV(a,b);
+}
+inline BOOL wglBindSwapBarrierNV(GLuint  a, GLuint  b) {
+	return interceptor::getCurrentExt()->wglBindSwapBarrierNV(a,b);
+}
+inline BOOL wglQuerySwapGroupNV(HDC  a, GLuint *b, GLuint *c) {
+	return interceptor::getCurrentExt()->wglQuerySwapGroupNV(a,b,c);
+}
+inline BOOL wglQueryMaxSwapGroupsNV(HDC  a, GLuint *b, GLuint *c) {
+	return interceptor::getCurrentExt()->wglQueryMaxSwapGroupsNV(a,b,c);
+}
+inline BOOL wglQueryFrameCountNV(HDC  a, GLuint *b) {
+	return interceptor::getCurrentExt()->wglQueryFrameCountNV(a,b);
+}
+inline BOOL wglResetFrameCountNV(HDC  a) {
+	return interceptor::getCurrentExt()->wglResetFrameCountNV(a);
+}
+inline void * wglAllocateMemoryNV(GLsizei  a, GLfloat  b, GLfloat  c, GLfloat  d) {
+	return interceptor::getCurrentExt()->wglAllocateMemoryNV(a,b,c,d);
+}
+inline void wglFreeMemoryNV(void *a) {
+	interceptor::getCurrentExt()->wglFreeMemoryNV(a);
+}
+inline BOOL wglBindVideoCaptureDeviceNV(UINT  a, HVIDEOINPUTDEVICENV  b) {
+	return interceptor::getCurrentExt()->wglBindVideoCaptureDeviceNV(a,b);
+}
+inline UINT wglEnumerateVideoCaptureDevicesNV(HDC  a, HVIDEOINPUTDEVICENV *b) {
+	return interceptor::getCurrentExt()->wglEnumerateVideoCaptureDevicesNV(a,b);
+}
+inline BOOL wglLockVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
+	return interceptor::getCurrentExt()->wglLockVideoCaptureDeviceNV(a,b);
+}
+inline BOOL wglQueryVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b, int  c, int *d) {
+	return interceptor::getCurrentExt()->wglQueryVideoCaptureDeviceNV(a,b,c,d);
+}
+inline BOOL wglReleaseVideoCaptureDeviceNV(HDC  a, HVIDEOINPUTDEVICENV  b) {
+	return interceptor::getCurrentExt()->wglReleaseVideoCaptureDeviceNV(a,b);
+}
+inline BOOL wglGetVideoDeviceNV(HDC  a, int  b, HPVIDEODEV *c) {
+	return interceptor::getCurrentExt()->wglGetVideoDeviceNV(a,b,c);
+}
+inline BOOL wglReleaseVideoDeviceNV(HPVIDEODEV  a) {
+	return interceptor::getCurrentExt()->wglReleaseVideoDeviceNV(a);
+}
+inline BOOL wglBindVideoImageNV(HPVIDEODEV  a, HPBUFFERARB  b, int  c) {
+	return interceptor::getCurrentExt()->wglBindVideoImageNV(a,b,c);
+}
+inline BOOL wglReleaseVideoImageNV(HPBUFFERARB  a, int  b) {
+	return interceptor::getCurrentExt()->wglReleaseVideoImageNV(a,b);
+}
+inline BOOL wglSendPbufferToVideoNV(HPBUFFERARB  a, int  b, unsigned long *c, BOOL  d) {
+	return interceptor::getCurrentExt()->wglSendPbufferToVideoNV(a,b,c,d);
+}
+inline BOOL wglGetVideoInfoNV(HPVIDEODEV  a, unsigned long *b, unsigned long *c) {
+	return interceptor::getCurrentExt()->wglGetVideoInfoNV(a,b,c);
+}
+inline BOOL wglGetSyncValuesOML(HDC  a, INT64 *b, INT64 *c, INT64 *d) {
+	return interceptor::getCurrentExt()->wglGetSyncValuesOML(a,b,c,d);
+}
+inline BOOL wglGetMscRateOML(HDC  a, INT32 *b, INT32 *c) {
+	return interceptor::getCurrentExt()->wglGetMscRateOML(a,b,c);
+}
+inline INT64 wglSwapBuffersMscOML(HDC  a, INT64  b, INT64  c, INT64  d) {
+	return interceptor::getCurrentExt()->wglSwapBuffersMscOML(a,b,c,d);
+}
+inline INT64 wglSwapLayerBuffersMscOML(HDC  a, int  b, INT64  c, INT64  d, INT64  e) {
+	return interceptor::getCurrentExt()->wglSwapLayerBuffersMscOML(a,b,c,d,e);
+}
+inline BOOL wglWaitForMscOML(HDC  a, INT64  b, INT64  c, INT64  d, INT64 *e, INT64 *f, INT64 *g) {
+	return interceptor::getCurrentExt()->wglWaitForMscOML(a,b,c,d,e,f,g);
+}
+inline BOOL wglWaitForSbcOML(HDC  a, INT64  b, INT64 *c, INT64 *d, INT64 *e) {
+	return interceptor::getCurrentExt()->wglWaitForSbcOML(a,b,c,d,e);
 }
 
 }//namespace glext
