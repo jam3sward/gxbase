@@ -88,10 +88,10 @@ bool Parse(const char *name) {
 	}
 
 	char str[1024]={};
-	while ( fscanf(fp, " %1023s", str)==1 ) {
+	// read a line from the file
+	while ( fgets(str, sizeof(str), fp) != NULL ) {
 		if ( str[0]=='#' ) {
 			// pre-processor: skip line
-			fgets(str, sizeof(str), fp);
 		} else if ( strstr(str, "/*")==str ) {
 			// start of comment: skip until */
 			// this is wrong, but it works without it anyway
@@ -99,8 +99,6 @@ bool Parse(const char *name) {
 		} else if ( strstr(str, "typedef") ) {
 			// start of typedef
 			string s(str);
-			fgets(str, sizeof(str), fp);	// get rest of line
-			s += string(str);
 			// does it have a ' PFNGL...' or ' PFNWGL' name?
 			if(strstr(str, " PFNGL")) {
 				g_pfn.push_back(s);
@@ -113,12 +111,11 @@ bool Parse(const char *name) {
 #endif
 		} else if (
 			(strstr(str, "GLAPI")==str)  ||		// SGI glext.h
+			(strstr(str, "WINAPI")!=NULL) ||	// W32 wglext.h
 			(strstr(str, "extern")==str)		// SGI wglext.h
 		) {
 			// start of function declaration
 			string s(str);
-			fgets(str, sizeof(str), fp);	// get rest of line
-			s += string(str);
 
 			bool ok = false;
 			const char *pName;
@@ -407,14 +404,16 @@ void writeFunctionPointers(FILE *fp) {
 		// function parameters (in brackets)
 		string parameters( GetParamList(g_func[n].c_str()) );
 
-		// output function pointer declaration, for example:
-		// typedef void (APIENTRYP PFNGLBLENDEQUATIONPROC) (GLenum mode);
-		fprintf(fp,
-			"typedef %s (APIENTRYP %s) %s;\n",
-			returnType.c_str(),		// return type
-			pointerType.c_str(),	// function name
-			parameters.c_str()		// function parameters
-		);
+		if (pointerType.find("wgl") != pointerType.npos) {
+			// output function pointer declaration, for example:
+			// typedef void (APIENTRYP PFNGLBLENDEQUATIONPROC) (GLenum mode);
+			fprintf(fp,
+				"typedef %s (APIENTRYP %s) %s;\n",
+				returnType.c_str(),		// return type
+				pointerType.c_str(),	// function name
+				parameters.c_str()		// function parameters
+			);
+		}
 	}
 }//writeFunctionPointers
 
